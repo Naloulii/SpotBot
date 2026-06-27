@@ -57,8 +57,8 @@ else:
         shutil.rmtree(DATA_DIR, ignore_errors=True)
         repo = Repo.clone_from(GITHUB_REPO_URL, DATA_DIR)
 
-# --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 5 minutes) ---
-@tasks.loop(minutes=5)
+# --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes) ---
+@tasks.loop(minutes=15)
 async def sauvegarde_periodique_github():
     try:
         # On récupère les éventuels changements distants pour éviter les conflits
