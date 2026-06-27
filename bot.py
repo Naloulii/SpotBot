@@ -22,48 +22,57 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # ==========================================
 SALON_MUSIQUE_ID = 1520393495544594472 
 
-# Le bot va chercher ces valeurs directement dans le système de l'hébergeur
+# Récupération des jetons secrets via l'hébergeur Cloud
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
 GITHUB_REPO_NAME = os.getenv("GITHUB_REPO_NAME")
 # ==========================================
 
-# Fichiers de stockage locaux
+# Configuration des chemins locaux dans le conteneur Docker
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATS_FILE = os.path.join(BASE_DIR, "stats.json")
-LIKES_FILE = os.path.join(BASE_DIR, "likes.json")
-CONFIG_FILE = os.path.join(BASE_DIR, "config.json")
-HISTORIQUE_FILE = os.path.join(BASE_DIR, "historique.json")
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
+STATS_FILE = os.path.join(DATA_DIR, "stats.json")
+LIKES_FILE = os.path.join(DATA_DIR, "likes.json")
+CONFIG_FILE = os.path.join(DATA_DIR, "config.json")
+HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
 
 # Dictionnaire pour suivre l'état des écoutes en cours sur Discord
 ecoutes_en_cours = {}
 
-# Connexion / Clonage automatique du dépôt GitHub
+# Connexion / Clonage automatique dans le sous-dossier sécurisé 'data'
 GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git"
-try:
-    repo = Repo(BASE_DIR)
-    print("📌 Dépôt Git local détecté et connecté.")
-except Exception:
-    print("🚀 Premier lancement sur le Cloud : Clonage du dépôt GitHub...")
-    repo = Repo.clone_from(GITHUB_REPO_URL, BASE_DIR)
+
+if not os.path.exists(DATA_DIR):
+    print("🚀 Premier lancement sur le Cloud : Création du dossier data et clonage...")
+    repo = Repo.clone_from(GITHUB_REPO_URL, DATA_DIR)
+else:
+    try:
+        repo = Repo(DATA_DIR)
+        print("📌 Dépôt Git local détecté dans /data.")
+    except Exception:
+        print("⚠️ Erreur dossier data, re-clonage automatique...")
+        import shutil
+        shutil.rmtree(DATA_DIR, ignore_errors=True)
+        repo = Repo.clone_from(GITHUB_REPO_URL, DATA_DIR)
 
 # --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 5 minutes) ---
 @tasks.loop(minutes=5)
 async def sauvegarde_periodique_github():
     try:
-        # On récupère les éventuels changements distants d'abord
+        # On récupère les éventuels changements distants pour éviter les conflits
         repo.remotes.origin.pull()
         
-        # Liste des fichiers de données à vérifier et sauvegarder
         fichiers_data = ["stats.json", "likes.json", "config.json", "historique.json"]
         fichiers_a_ajouter = []
         
         for f in fichiers_data:
-            if os.path.exists(os.path.join(BASE_DIR, f)):
+            if os.path.exists(os.path.join(DATA_DIR, f)):
                 fichiers_a_ajouter.append(f)
                 
         if fichiers_a_ajouter:
+            # On ajoute les fichiers relativement au sous-dossier géré par Git
             repo.index.add(fichiers_a_ajouter)
             maintenant = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
             repo.index.commit(f"🤖 Auto-Save : Synchronisation des données ({maintenant})")
@@ -106,7 +115,7 @@ def sauvegarder_historique(historique):
     with open(HISTORIQUE_FILE, "w") as f: json.dump(historique, f, indent=4)
 
 
-# Fonctions d'écriture structurée avec IDs et Pseudos
+# Fonctions d'écriture avec stockage structuré (ID + Pseudo)
 def enregistrer_stat_membre(membre):
     user_id = str(membre.id)
     stats = charger_stats()
@@ -149,7 +158,7 @@ def ajouter_a_l_historique(membre, titre, artiste, url):
     sauvegarder_historique(historique)
 
 
-# Fonction d'Aide unique automatique
+# Gestion de l'Embed de Guide unique automatique
 def generer_embed_aide():
     embed = discord.Embed(
         title="🎵 Bienvenue sur SpotBot ! 🤖",
@@ -198,7 +207,7 @@ async def verifier_et_mettre_a_jour_aide():
         sauvegarder_config(config)
 
 
-# Fonctions Utilitaires (Couleur & Progression)
+# Outils Graphiques (Couleurs d'albums & Barre)
 def obtenir_couleur_album(url_image):
     try:
         reponse = requests.get(url_image)
@@ -222,7 +231,7 @@ def generer_barre_progression(creation_time, duration):
     return f"{barre} `{int(temps_ecoule // 60)}:{int(temps_ecoule % 60):02d} / {int(durée_totale // 60)}:{int(durée_totale % 60):02d}`"
 
 
-# Interface du Bouton de Like
+# Composant du Bouton de Like
 class LikeView(discord.ui.View):
     def __init__(self, titre, artiste, url):
         super().__init__(timeout=None)
@@ -243,11 +252,11 @@ class LikeView(discord.ui.View):
 async def on_ready():
     print(f"SpotBot est en ligne : {bot.user.name}")
     try: await bot.tree.sync()
-    except Exception as e: print(f"Erreur sync : {e}")
+    except Exception as e: print(f"Erreur sync des commandes slash : {e}")
     
     await verifier_et_mettre_a_jour_aide()
     
-    # Nettoyage initial des fiches fantômes
+    # Nettoyage des fiches bloquées au démarrage
     salon = bot.get_channel(SALON_MUSIQUE_ID)
     config = charger_config()
     msg_aide_id = config.get("message_aide_id")
@@ -257,10 +266,10 @@ async def on_ready():
                 if message.author == bot.user and message.id != msg_aide_id and message.embeds:
                     await message.delete()
                     await asyncio.sleep(0.2)
-        except Exception as e: print(f"Erreur nettoyage : {e}")
+        except Exception as e: print(f"Erreur nettoyage initial : {e}")
         
     actualiser_messages.start()
-    sauvegarde_periodique_github.start() # Lance la boucle de sauvegarde GitHub
+    sauvegarde_periodique_github.start()
 
 @bot.event
 async def on_presence_update(before, after):
@@ -319,7 +328,7 @@ async def on_presence_update(before, after):
         except Exception: pass
         finally: del ecoutes_en_cours[user_id]
 
-@tasks.loop(seconds=15) # Optimisé à 15s pour économiser l'énergie de l'hébergeur
+@tasks.loop(seconds=15)
 async def actualiser_messages():
     salon = bot.get_channel(SALON_MUSIQUE_ID)
     if not salon: return
@@ -337,7 +346,7 @@ async def actualiser_messages():
         except Exception:
             if user_id in ecoutes_en_cours: del ecoutes_en_cours[user_id]
 
-# Commandes Slash Éphémères
+# Commandes App / Commandes Slash éphémères
 @bot.tree.command(name="top", description="Affiche le classement hebdomadaire des auditeurs")
 async def top_semaine(interaction: discord.Interaction):
     stats = charger_stats()
@@ -384,5 +393,5 @@ async def voir_historique(interaction: discord.Interaction):
     embed.set_footer(text=f"Affichage des 10 dernières écoutes (Total : {len(historique[user_id]['ecoutes'])})")
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
-# METS TON NOUVEAU TOKEN REGENERE ICI :
-bot.run("DISCORD_TOKEN")
+# Lancement sécurisé du bot
+bot.run(DISCORD_TOKEN)
