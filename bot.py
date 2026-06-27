@@ -231,6 +231,64 @@ def generer_barre_progression(creation_time, duration):
     return f"{barre} `{int(temps_ecoule // 60)}:{int(temps_ecoule % 60):02d} / {int(durée_totale // 60)}:{int(durée_totale % 60):02d}`"
 
 
+# Fonction globale d'analyse d'activité Spotify
+async def verifier_presence_spotify(membre):
+    salon = bot.get_channel(SALON_MUSIQUE_ID)
+    if not salon: return
+
+    spotify_activity = None
+    for activity in membre.activities:
+        if isinstance(activity, discord.Spotify):
+            spotify_activity = activity
+            break
+
+    user_id = str(membre.id)
+
+    if spotify_activity:
+        deja_en_cours = user_id in ecoutes_en_cours and ecoutes_en_cours[user_id]["track_id"] == spotify_activity.track_id
+
+        if not deja_en_cours:
+            enregistrer_stat_membre(membre)
+            ajouter_a_l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
+            couleur = obtenir_couleur_album(spotify_activity.album_cover_url)
+
+            embed = discord.Embed(
+                title=f"🎵 {membre.display_name} écoute :",
+                description=f"**Titre :** {spotify_activity.title}\n**Artiste :** {spotify_activity.artist}\n**Album :** {spotify_activity.album}",
+                color=couleur
+            )
+            embed.set_thumbnail(url=spotify_activity.album_cover_url)
+            
+            barre = generer_barre_progression(spotify_activity.start, spotify_activity.duration)
+            embed.add_field(name="Progression", value=barre, inline=False)
+            embed.add_field(name="Écouter sur Spotify", value=f"[Clique ici]({spotify_activity.track_url})", inline=False)
+
+            if user_id in ecoutes_en_cours:
+                try:
+                    ancien_msg = await salon.fetch_message(ecoutes_en_cours[user_id]["message_id"])
+                    await ancien_msg.delete()
+                except Exception: pass
+
+            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
+            message = await salon.send(embed=embed, view=view)
+            
+            ecoutes_en_cours[user_id] = {
+                "message_id": message.id,
+                "start_time": spotify_activity.start,
+                "track_id": spotify_activity.track_id,
+                "activity": spotify_activity,
+                "couleur": couleur
+            }
+
+    elif user_id in ecoutes_en_cours:
+        try:
+            message_id = ecoutes_en_cours[user_id]["message_id"]
+            msg_a_supprimer = await salon.fetch_message(message_id)
+            await msg_a_supprimer.delete()
+        except Exception: pass
+        finally: del ecoutes_en_cours[user_id]
+
+
 # Composant du Bouton de Like
 class LikeView(discord.ui.View):
     def __init__(self, titre, artiste, url):
@@ -268,65 +326,21 @@ async def on_ready():
                     await asyncio.sleep(0.2)
         except Exception as e: print(f"Erreur nettoyage initial : {e}")
         
+    # Scan global des écoutes déjà en cours sur tous les serveurs au démarrage
+    print("🔍 Scan des écoutes déjà en cours...")
+    for guild in bot.guilds:
+        for member in guild.members:
+            if not member.bot:
+                await verifier_presence_spotify(member)
+    print("✅ Scan terminé et statuts synchronisés.")
+        
     actualiser_messages.start()
     sauvegarde_periodique_github.start()
 
 @bot.event
 async def on_presence_update(before, after):
-    salon = bot.get_channel(SALON_MUSIQUE_ID)
-    if not salon: return
-
-    spotify_activity = None
-    for activity in after.activities:
-        if isinstance(activity, discord.Spotify):
-            spotify_activity = activity
-            break
-
-    user_id = str(after.id)
-
-    if spotify_activity:
-        deja_en_cours = user_id in ecoutes_en_cours and ecoutes_en_cours[user_id]["track_id"] == spotify_activity.track_id
-
-        if not deja_en_cours:
-            enregistrer_stat_membre(after)
-            ajouter_a_l_historique(after, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
-            couleur = obtenir_couleur_album(spotify_activity.album_cover_url)
-
-            embed = discord.Embed(
-                title=f"🎵 {after.display_name} écoute :",
-                description=f"**Titre :** {spotify_activity.title}\n**Artiste :** {spotify_activity.artist}\n**Album :** {spotify_activity.album}",
-                color=couleur
-            )
-            embed.set_thumbnail(url=spotify_activity.album_cover_url)
-            
-            barre = generer_barre_progression(spotify_activity.start, spotify_activity.duration)
-            embed.add_field(name="Progression", value=barre, inline=False)
-            embed.add_field(name="Écouter sur Spotify", value=f"[Clique ici]({spotify_activity.track_url})", inline=False)
-
-            if user_id in ecoutes_en_cours:
-                try:
-                    ancien_msg = await salon.fetch_message(ecoutes_en_cours[user_id]["message_id"])
-                    await ancien_msg.delete()
-                except Exception: pass
-
-            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
-            message = await salon.send(embed=embed, view=view)
-            
-            ecoutes_en_cours[user_id] = {
-                "message_id": message.id,
-                "start_time": spotify_activity.start,
-                "track_id": spotify_activity.track_id,
-                "activity": spotify_activity,
-                "couleur": couleur
-            }
-
-    elif user_id in ecoutes_en_cours:
-        try:
-            message_id = ecoutes_en_cours[user_id]["message_id"]
-            msg_a_supprimer = await salon.fetch_message(message_id)
-            await msg_a_supprimer.delete()
-        except Exception: pass
-        finally: del ecoutes_en_cours[user_id]
+    # Analyse directe de l'utilisateur à chaque mise à jour de présence
+    await verifier_presence_spotify(after)
 
 @tasks.loop(seconds=15)
 async def actualiser_messages():
