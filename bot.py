@@ -249,7 +249,7 @@ async def verifier_presence_spotify(membre):
 
         if not deja_en_cours:
             enregistrer_stat_membre(membre)
-            ajouter_a_ l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
+            ajouter_a_l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
             couleur = obtenir_couleur_album(spotify_activity.album_cover_url)
 
             embed = discord.Embed(
@@ -468,4 +468,5 @@ async def voir_historique(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 # Lancement sécurisé du bot
+bot.run(DISCORD_TOKEN)
 bot.run(DISCORD_TOKEN)
