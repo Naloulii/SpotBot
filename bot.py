@@ -426,13 +426,15 @@ async def top_semaine(interaction: discord.Interaction):
 
 @bot.tree.command(name="likes", description="Affiche la liste de tes morceaux likés")
 async def voir_likes(interaction: discord.Interaction):
+    # NOUVEAU : Dit à Discord de patienter le temps qu'on génère les boutons
+    await interaction.response.defer(ephemeral=True)
+    
     user_id = str(interaction.user.id)
     likes = charger_likes()
     if user_id not in likes or len(likes[user_id]["liste"]) == 0:
-        await interaction.response.send_message("🤍 Tu n'as pas encore liké de morceaux !", ephemeral=True)
+        await interaction.followup.send("🤍 Tu n'as pas encore liké de morceaux !", ephemeral=True)
         return
     
-    # On récupère les 10 derniers morceaux ajoutés aux favoris
     morceaux = likes[user_id]["liste"][-10:]
     
     embed = discord.Embed(
@@ -448,9 +450,9 @@ async def voir_likes(interaction: discord.Interaction):
     embed.description += texte
     embed.set_footer(text=f"Total : {len(likes[user_id]['liste'])} morceaux favoris")
     
-    # Injection de la vue avec les boutons dynamiques de gestion
     view = GestionLikesView(morceaux)
-    await interaction.response.send_message(embed=embed, view=view, ephemeral=True)
+    # NOUVEAU : On utilise followup à la place de response car on a fait un defer
+    await interaction.followup.send(embed=embed, view=view, ephemeral=True)
 
 @bot.tree.command(name="history", description="Affiche l'historique de tes écoutes récentes")
 async def voir_historique(interaction: discord.Interaction):
