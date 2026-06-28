@@ -249,7 +249,7 @@ async def verifier_presence_spotify(membre):
 
         if not deja_en_cours:
             enregistrer_stat_membre(membre)
-            ajouter_a_l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
+            ajouter_a_ l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
             couleur = obtenir_couleur_album(spotify_activity.album_cover_url)
 
             embed = discord.Embed(
@@ -289,7 +289,7 @@ async def verifier_presence_spotify(membre):
         finally: del ecoutes_en_cours[user_id]
 
 
-# Composant du Bouton de Like
+# Composant du Bouton de Like classique
 class LikeView(discord.ui.View):
     def __init__(self, titre, artiste, url):
         super().__init__(timeout=None)
@@ -304,6 +304,53 @@ class LikeView(discord.ui.View):
             await interaction.response.send_message(f"❤️ Ajouté à tes titres likés : **{self.titre}**", ephemeral=True)
         else:
             await interaction.response.send_message(f"💔 Retiré de tes titres likés : **{self.titre}**", ephemeral=True)
+
+
+# =======================================================
+# NOUVEAU : SYSTÈME INTERACTIF DE LISTE DE LIKES / UNLIKE
+# =======================================================
+class GestionLikesButton(discord.ui.Button):
+    def __init__(self, index, titre, artiste, url):
+        # Configuration dynamique des boutons individuels (1 à 15 maximum)
+        emojis_chiffres = {1: "1️⃣", 2: "2️⃣", 3: "3️⃣", 4: "4️⃣", 5: "5️⃣", 6: "6️⃣", 7: "7️⃣", 8: "8️⃣", 9: "9️⃣", 10: "🔟"}
+        super().__init__(
+            style=discord.ButtonStyle.secondary, 
+            label=f"Titre {index}", 
+            emoji=emojis_chiffres.get(index, "🎵")
+        )
+        self.index = index
+        self.titre = titre
+        self.artiste = artiste
+        self.url = url
+        self.est_actif = True # Suivi de l'état local du bouton (True = Liké, False = Unliké)
+
+    async def callback(self, interaction: discord.Interaction):
+        # Inversion de l'état dans le fichier JSON
+        enregistrer_like_membre(interaction.user, self.titre, self.artiste, self.url)
+        
+        if self.est_actif:
+            self.style = discord.ButtonStyle.danger
+            self.label = f"Re-Like {self.index}"
+            self.emoji = "❤️"
+            self.est_actif = False
+            await interaction.response.send_message(f"💔 Retiré de tes favoris : **{self.titre}** (Tu peux cliquer à nouveau sur le bouton rouge pour annuler).", ephemeral=True)
+        else:
+            self.style = discord.ButtonStyle.secondary
+            emojis_chiffres = {1: "1️⃣", 2: "2️⃣", 3: "3️⃣", 4: "4️⃣", 5: "5️⃣", 6: "6️⃣", 7: "7️⃣", 8: "8️⃣", 9: "9️⃣", 10: "🔟"}
+            self.label = f"Titre {self.index}"
+            self.emoji = emojis_chiffres.get(self.index, "🎵")
+            self.est_actif = True
+            await interaction.response.send_message(f"❤️ Ré-ajouté à tes favoris : **{self.titre}** !", ephemeral=True)
+            
+        # Met à jour visuellement le bouton dans la fenêtre sans fermer ni effacer le message
+        await interaction.message.edit(view=self.view)
+
+class GestionLikesView(discord.ui.View):
+    def __init__(self, morceaux_selectionnes):
+        super().__init__(timeout=60) # Expire après 60 secondes d'inactivité
+        for i, track in enumerate(morceaux_selectionnes, start=1):
+            self.add_item(GestionLikesButton(i, track['titre'], track['artiste'], track['url']))
+# =======================================================
 
 
 @bot.event
@@ -339,7 +386,6 @@ async def on_ready():
 
 @bot.event
 async def on_presence_update(before, after):
-    # Analyse directe de l'utilisateur à chaque mise à jour de présence
     await verifier_presence_spotify(after)
 
 @tasks.loop(seconds=15)
@@ -359,6 +405,7 @@ async def actualiser_messages():
             await msg.edit(embed=embed, view=view)
         except Exception:
             if user_id in ecoutes_en_cours: del ecoutes_en_cours[user_id]
+
 
 # Commandes App / Commandes Slash éphémères
 @bot.tree.command(name="top", description="Affiche le classement hebdomadaire des auditeurs")
@@ -384,13 +431,26 @@ async def voir_likes(interaction: discord.Interaction):
     if user_id not in likes or len(likes[user_id]["liste"]) == 0:
         await interaction.response.send_message("🤍 Tu n'as pas encore liké de morceaux !", ephemeral=True)
         return
-    embed = discord.Embed(title=f"❤️ Titres likés par {interaction.user.display_name}", color=discord.Color.red(), timestamp=datetime.datetime.now())
+    
+    # On récupère les 10 derniers morceaux ajoutés aux favoris
+    morceaux = likes[user_id]["liste"][-10:]
+    
+    embed = discord.Embed(
+        title=f"❤️ Titres likés par {interaction.user.display_name}", 
+        description="Clique sur le bouton numéroté en dessous pour **Retirer (Unlike)** un morceau de tes favoris.\n\n",
+        color=discord.Color.red(), 
+        timestamp=datetime.datetime.now()
+    )
+    
     texte = ""
-    for index, track in enumerate(likes[user_id]["liste"][-15:], start=1):
+    for index, track in enumerate(morceaux, start=1):
         texte += f"`{index}.` [{track['titre']}]({track['url']}) — *{track['artiste']}*\n"
-    embed.description = texte
+    embed.description += texte
     embed.set_footer(text=f"Total : {len(likes[user_id]['liste'])} morceaux favoris")
-    await interaction.response.send_message(embed=embed, ephemeral=True)
+    
+    # Injection de la vue avec les boutons dynamiques de gestion
+    view = GestionLikesView(morceaux)
+    await interaction.response.send_message(embed=embed, view=view, ephemeral=True)
 
 @bot.tree.command(name="history", description="Affiche l'historique de tes écoutes récentes")
 async def voir_historique(interaction: discord.Interaction):
