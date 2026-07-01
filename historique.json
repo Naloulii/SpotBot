@@ -1042,5 +1042,41 @@
                 "url": "https://open.spotify.com/track/7E739HROAiKhFdBbueMO5I"
             }
         ]
+    },
+    "702545968951722084": {
+        "username": "thv38.",
+        "display_name": "Luv",
+        "ecoutes": [
+            {
+                "date": "01/07/2026 15:43",
+                "titre": "cross my heart",
+                "artiste": "Artemas",
+                "url": "https://open.spotify.com/track/1GnTBbaFtxNkHEjUsWEdNu"
+            },
+            {
+                "date": "01/07/2026 15:41",
+                "titre": "RUNRUNRUN",
+                "artiste": "Dutch Melrose",
+                "url": "https://open.spotify.com/track/3jwQt00cvkN57H6ZR75W2K"
+            },
+            {
+                "date": "01/07/2026 15:38",
+                "titre": "Fantasy",
+                "artiste": "Bazzi",
+                "url": "https://open.spotify.com/track/1i36kkhmhBxf4lYJscg5zK"
+            },
+            {
+                "date": "01/07/2026 15:35",
+                "titre": "The Machine - Slowed",
+                "artiste": "Reed Wonder; Aurora Olivas",
+                "url": "https://open.spotify.com/track/2Jp6Sc9H8XfhVR82f0AzQW"
+            },
+            {
+                "date": "01/07/2026 15:34",
+                "titre": "don't worry babe",
+                "artiste": "Ex Habit",
+                "url": "https://open.spotify.com/track/59BWnlX2K9HJKw5I6AA6p2"
+            }
+        ]
     }
 }
