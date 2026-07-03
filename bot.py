@@ -38,8 +38,9 @@ LIKES_FILE = os.path.join(DATA_DIR, "likes.json")
 CONFIG_FILE = os.path.join(DATA_DIR, "config.json")
 HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
 
-# Dictionnaire pour suivre l'état des écoutes en cours sur Discord
+# Dictionnaires de suivi de l'état global
 ecoutes_en_cours = {}
+verrous_anti_spam = {} # Empêche les doubles déclenchements simultanés
 
 # Connexion / Clonage automatique dans le sous-dossier sécurisé 'data'
 GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git"
@@ -113,7 +114,6 @@ def sauvegarder_historique(historique):
     with open(HISTORIQUE_FILE, "w") as f: json.dump(historique, f, indent=4)
 
 
-# Fonctions d'écriture avec validations de temps
 def enregistrer_stat_membre(membre):
     user_id = str(membre.id)
     stats = charger_stats()
@@ -157,7 +157,7 @@ def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
         "artiste": artiste, 
         "url": url, 
         "track_id": track_id,
-        "status": "En cours d'écoute..."
+        "status": "En cours..."
     })
     historique[user_id]["ecoutes"] = historique[user_id]["ecoutes"][:100]
     sauvegarder_historique(historique)
@@ -167,8 +167,8 @@ def mettre_a_jour_historique_fin(membre, track_id, temps_ecoule, duree_totale):
     historique = charger_historique()
     if user_id in historique:
         for ecoute in historique[user_id]["ecoutes"]:
-            if ecoute.get("track_id") == track_id and ecoute["status"] == "En cours d'écoute...":
-                if temps_ecoule >= duree_totale or (temps_ecoule / duree_totale) >= 0.99:
+            if ecoute.get("track_id") == track_id and ecoute["status"] == "En cours...":
+                if temps_ecoule >= (duree_totale * 0.98):
                     ecoute["status"] = "Écouté en entier"
                 else:
                     m, s = divmod(int(temps_ecoule), 60)
@@ -225,10 +225,8 @@ async def classement_hebdomadaire_auto():
         json.dump(stats, f, indent=4)
 
     sauvegarder_stats({})
-    print(f"📉 [Top Hebdo] Reset des stats effectué et archivé sous stats_week_{num_semaine}.json")
 
 
-# Gestion de l'Embed de Guide unique automatique
 def generer_embed_aide():
     embed = discord.Embed(
         title="🎵 Bienvenue sur SpotBot ! 🤖",
@@ -277,7 +275,6 @@ async def verifier_et_mettre_a_jour_aide():
         sauvegarder_config(config)
 
 
-# Outils Graphiques (Couleurs d'albums & Barre)
 def obtenir_couleur_album(url_image):
     try:
         reponse = requests.get(url_image)
@@ -301,10 +298,19 @@ def generer_barre_progression(creation_time, duration):
     return f"{barre} `{int(temps_ecoule // 60)}:{int(temps_ecoule % 60):02d} / {int(durée_totale // 60)}:{int(durée_totale % 60):02d}`"
 
 
-# Fonction globale d'analyse d'activité Spotify
+# --- ANALYSE DE L'ACTIVITÉ (CORRIGÉE CONTRE LES DOUBLONS SUR LES SERVERS PARTAGÉS) ---
 async def verifier_presence_spotify(membre):
     salon = bot.get_channel(SALON_MUSIQUE_ID)
     if not salon: return
+
+    user_id = str(membre.id)
+    maintenant_timestamp = datetime.datetime.now().timestamp()
+
+    # ANTI-SPAM SYSTEM : Ignore les requêtes identiques espacées de moins de 3 secondes pour cet ID
+    if user_id in verrous_anti_spam:
+        if maintenant_timestamp - verrous_anti_spam[user_id] < 3:
+            return
+    verrous_anti_spam[user_id] = maintenant_timestamp
 
     spotify_activity = None
     for activity in membre.activities:
@@ -312,14 +318,11 @@ async def verifier_presence_spotify(membre):
             spotify_activity = activity
             break
 
-    user_id = str(membre.id)
-
     if spotify_activity:
+        # Est-ce exactement le même morceau déjà enregistré dans notre salon live ?
         deja_en_cours = user_id in ecoutes_en_cours and ecoutes_en_cours[user_id]["track_id"] == spotify_activity.track_id
 
         if not deja_en_cours:
-            # Enregistrement immédiat dans l'historique
-            ajouter_a_l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id)
             couleur = obtenir_couleur_album(spotify_activity.album_cover_url)
 
             embed = discord.Embed(
@@ -333,11 +336,11 @@ async def verifier_presence_spotify(membre):
             embed.add_field(name="Progression", value=barre, inline=False)
             embed.add_field(name="Écouter sur Spotify", value=f"[Clique ici]({spotify_activity.track_url})", inline=False)
 
-            # Si l'utilisateur change de musique d'un coup, on clôture proprement la précédente
+            # Si l'utilisateur change de musique d'un coup, on ferme l'ancienne proprement
             if user_id in ecoutes_en_cours:
                 infos_anciennes = ecoutes_en_cours[user_id]
-                now = datetime.datetime.now(datetime.timezone.utc)
-                temps_ecoule = (now - infos_anciennes["start_time"]).total_seconds()
+                now_utc = datetime.datetime.now(datetime.timezone.utc)
+                temps_ecoule = (now_utc - infos_anciennes["start_time"]).total_seconds()
                 
                 if infos_anciennes["duration"] > 0 and (temps_ecoule / infos_anciennes["duration"]) >= 0.90:
                     enregistrer_stat_membre(membre)
@@ -348,6 +351,9 @@ async def verifier_presence_spotify(membre):
                     ancien_msg = await salon.fetch_message(infos_anciennes["message_id"])
                     await ancien_msg.delete()
                 except Exception: pass
+
+            # Ajout unique dans l'historique au début de l'écoute
+            ajouter_a_l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id)
 
             view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
             message = await salon.send(embed=embed, view=view)
@@ -362,11 +368,13 @@ async def verifier_presence_spotify(membre):
             }
 
     elif user_id in ecoutes_en_cours:
+        # L'écoute s'est arrêtée
         infos = ecoutes_en_cours[user_id]
-        now = datetime.datetime.now(datetime.timezone.utc)
-        temps_ecoule = (now - infos["start_time"]).total_seconds()
+        now_utc = datetime.datetime.now(datetime.timezone.utc)
+        temps_ecoule = (now_utc - infos["start_time"]).total_seconds()
         duree_totale = infos["duration"]
 
+        # Sauvegarde du temps réel dans l'historique
         mettre_a_jour_historique_fin(membre, infos["track_id"], temps_ecoule, duree_totale)
 
         if duree_totale > 0 and (temps_ecoule / duree_totale) >= 0.90:
@@ -376,10 +384,10 @@ async def verifier_presence_spotify(membre):
             msg_a_supprimer = await salon.fetch_message(infos["message_id"])
             await msg_a_supprimer.delete()
         except Exception: pass
-        finally: del ecoutes_en_cours[user_id]
+        finally:
+            if user_id in ecoutes_en_cours: del ecoutes_en_cours[user_id]
 
 
-# Composant du Bouton de Like classique
 class LikeView(discord.ui.View):
     def __init__(self, titre, artiste, url):
         super().__init__(timeout=None)
@@ -414,13 +422,6 @@ async def on_ready():
                     await message.delete()
                     await asyncio.sleep(0.2)
         except Exception as e: print(f"Erreur nettoyage initial : {e}")
-        
-    print("🔍 Scan des écoutes déjà en cours...")
-    for guild in bot.guilds:
-        for member in guild.members:
-            if not member.bot:
-                await verifier_presence_spotify(member)
-    print("✅ Scan terminé et statuts synchronisés.")
         
     actualiser_messages.start()
     sauvegarde_periodique_github.start()
@@ -492,8 +493,9 @@ async def voir_historique(interaction: discord.Interaction):
     embed = discord.Embed(title=f"🕒 Historique d'écoute de {interaction.user.display_name}", color=discord.Color.blue(), timestamp=datetime.datetime.now())
     texte = ""
     for index, track in enumerate(historique[user_id]["ecoutes"][:10], start=1):
-        status = track.get('status', 'Écouté')
-        texte += f"`{track['date']}` : [{track['titre']}]({track['url']}) — *{track['artiste']}* ({status})\n"
+        # Affiche proprement le statut de temps (ex: "Écouté en entier" ou "Écouté pendant 1:24")
+        status = track.get('status', 'En cours...')
+        texte += f"`{track['date']}` : [{track['titre']}]({track['url']}) — *{track['artiste']}* (`{status}`)\n"
     embed.description = texte
     embed.set_footer(text=f"Affichage des 10 dernières écoutes (Total : {len(historique[user_id]['ecoutes'])})")
     await interaction.response.send_message(embed=embed, ephemeral=True)
