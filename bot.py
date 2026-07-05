@@ -143,7 +143,6 @@ def enregistrer_like_membre(membre, titre, artiste, url):
         sauvegarder_likes(likes)
         return True
 
-# Sécurisation anti-doublon stricte lors de l'insertion dans l'historique
 def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
     user_id = str(membre.id)
     historique = charger_historique()
@@ -152,14 +151,13 @@ def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
     historique[user_id]["username"] = membre.name
     historique[user_id]["display_name"] = membre.display_name
     
-    # Vérification anti-doublon temporel (Moins de 15 secondes d'intervalle avec le même ID)
     if historique[user_id]["ecoutes"]:
         derniere_ecoute = historique[user_id]["ecoutes"][0]
         if derniere_ecoute.get("track_id") == track_id:
             try:
                 date_derniere = datetime.datetime.strptime(derniere_ecoute["date"], "%d/%m/%Y %H:%M")
                 if (datetime.datetime.now() - date_derniere).total_seconds() < 15:
-                    return # C'est un doublon fantôme envoyé par Discord, on l'annule
+                    return 
             except Exception: pass
 
     maintenant = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
@@ -239,6 +237,7 @@ async def classement_hebdomadaire_auto():
     sauvegarder_stats({})
 
 
+# --- MESSAGE DE GUIDE PERMANENT CORRIGÉ AVEC LA PAGINATION ---
 def generer_embed_aide():
     embed = discord.Embed(
         title="🎵 Bienvenue sur SpotBot ! 🤖",
@@ -317,7 +316,6 @@ async def verifier_presence_spotify(membre):
     user_id = str(membre.id)
     maintenant_timestamp = datetime.datetime.now().timestamp()
 
-    # Filtre anti-spam d'instance d'événement Discord simultanée
     if user_id in verrous_anti_spam:
         if maintenant_timestamp - verrous_anti_spam[user_id] < 2:
             return
@@ -489,7 +487,6 @@ async def voir_likes(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-# --- NOUVELLE COMMANDE HISTORY AVEC PAGINATION AUTOMATIQUE ---
 @bot.tree.command(name="history", description="Affiche l'historique de tes écoutes par pages de 10 morceaux")
 @app_commands.describe(page="Le numéro de la page à afficher (Ex: 1, 2, 3...)")
 async def voir_historique(interaction: discord.Interaction, page: int = 1):
@@ -506,19 +503,16 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1):
     liste_totale = historique[user_id]["ecoutes"]
     total_elements = len(liste_totale)
     
-    # Calcul des index de découpage pour la page demandée
     elements_par_page = 10
     index_debut = (page - 1) * elements_par_page
     index_fin = index_debut + elements_par_page
     
-    # Extraction de la tranche
     morceaux_page = liste_totale[index_debut:index_fin]
     
     if not morceaux_page:
         await interaction.response.send_message(f"📂 La page `{page}` n'existe pas encore (Total : {total_elements} écoutes répertoriées).", ephemeral=True)
         return
 
-    # Calcul du nombre total de pages disponibles
     total_pages = (total_elements + elements_par_page - 1) // elements_par_page
 
     embed = discord.Embed(
@@ -528,7 +522,6 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1):
     )
     
     texte = ""
-    # On affiche l'index réel du classement global à côté du titre (ex: 11 à 20 pour la page 2)
     for index, track in enumerate(morceaux_page, start=index_debut + 1):
         status = track.get('status', 'En cours...')
         texte += f"`{index}.` `[{track['date']}]` [{track['titre']}]({track['url']}) — *{track['artiste']}*\n╰─ {status}\n\n"
