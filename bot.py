@@ -143,7 +143,6 @@ def enregistrer_like_membre(membre, titre, artiste, url):
         sauvegarder_likes(likes)
         return True
 
-# Sécurisation anti-doublon stricte lors de l'insertion dans l'historique
 def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
     user_id = str(membre.id)
     historique = charger_historique()
@@ -254,7 +253,7 @@ def generer_embed_aide():
         value=(
             "**/top** : Classement hebdomadaire des plus grands auditeurs. 🏆\n"
             "**/likes** : La liste complète de tes morceaux favoris. ❤️\n"
-            "**/history [page]** : Ton historique d'écoute par pages de 10 titres. 🕒"
+            "**/history [page] [membre]** : Historique d'écoute (le tien ou celui d'un ami via son @). 🕒"
         ),
         inline=False
     )
@@ -412,7 +411,6 @@ class LikeView(discord.ui.View):
 async def on_ready():
     print(f"SpotBot est en ligne : {bot.user.name}")
     
-    # FORCE la synchronisation complète sur Discord au démarrage
     try:
         print("🔄 Synchronisation forcée des commandes slash avec Discord...")
         synced = await bot.tree.sync()
@@ -493,18 +491,25 @@ async def voir_likes(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-# --- COMMANDE HISTORY PAR PAGES DE 10 ---
-@bot.tree.command(name="history", description="Affiche l'historique de tes écoutes par pages de 10 morceaux")
-@app_commands.describe(page="Le numéro de la page à afficher (Ex: 1, 2, 3...)")
-async def voir_historique(interaction: discord.Interaction, page: int = 1):
+# --- COMMANDE HISTORY MODIFIÉE AVEC OPTION DE RECHERCHE PAR MEMBRE ---
+@bot.tree.command(name="history", description="Affiche l'historique d'écoute par pages de 10 morceaux")
+@app_commands.describe(
+    page="Le numéro de la page à afficher (Ex: 1, 2, 3...)",
+    membre="Le membre Discord (@Nom) dont tu veux voir l'historique (Optionnel)"
+)
+async def voir_historique(interaction: discord.Interaction, page: int = 1, membre: discord.Member = None):
     if page < 1:
         page = 1
 
-    user_id = str(interaction.user.id)
+    # Si aucun membre n'est donné, on prend l'auteur de la commande par défaut
+    cible_membre = membre if membre else interaction.user
+    user_id = str(cible_membre.id)
+    
     historique = charger_historique()
     
     if user_id not in historique or len(historique[user_id]["ecoutes"]) == 0:
-        await interaction.response.send_message("🕒 Tu n'as pas encore d'historique d'écoute enregistré.", ephemeral=True)
+        nom_affiche = "Tu n'" if cible_membre == interaction.user else f"**{cible_membre.display_name}** n'"
+        await interaction.response.send_message(f"🕒 {nom_affiche}as pas encore d'historique d'écoute enregistré.", ephemeral=True)
         return
         
     liste_totale = historique[user_id]["ecoutes"]
@@ -517,13 +522,13 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1):
     morceaux_page = liste_totale[index_debut:index_fin]
     
     if not morceaux_page:
-        await interaction.response.send_message(f"📂 La page `{page}` n'existe pas encore (Total : {total_elements} écoutes répertoriées).", ephemeral=True)
+        await interaction.response.send_message(f"📂 La page `{page}` n'existe pas pour cet utilisateur (Total : {total_elements} écoutes).", ephemeral=True)
         return
 
     total_pages = (total_elements + elements_par_page - 1) // elements_par_page
 
     embed = discord.Embed(
-        title=f"🕒 Historique d'écoute — {interaction.user.display_name}", 
+        title=f"🕒 Historique d'écoute — {cible_membre.display_name}", 
         color=discord.Color.blue(), 
         timestamp=datetime.datetime.now()
     )
