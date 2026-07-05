@@ -23,7 +23,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # ==========================================
 SALON_MUSIQUE_ID = 1520393495544594472 
 
-# Récupération des jetons secrets via l'hébergeur Cloud
+# Récupération des jetons secrets via l'hébergeur Cloud (Railway)
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
@@ -143,6 +143,7 @@ def enregistrer_like_membre(membre, titre, artiste, url):
         sauvegarder_likes(likes)
         return True
 
+# Sécurisation anti-doublon stricte lors de l'insertion dans l'historique
 def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
     user_id = str(membre.id)
     historique = charger_historique()
@@ -237,7 +238,6 @@ async def classement_hebdomadaire_auto():
     sauvegarder_stats({})
 
 
-# --- MESSAGE DE GUIDE PERMANENT CORRIGÉ AVEC LA PAGINATION ---
 def generer_embed_aide():
     embed = discord.Embed(
         title="🎵 Bienvenue sur SpotBot ! 🤖",
@@ -411,8 +411,14 @@ class LikeView(discord.ui.View):
 @bot.event
 async def on_ready():
     print(f"SpotBot est en ligne : {bot.user.name}")
-    try: await bot.tree.sync()
-    except Exception as e: print(f"Erreur sync des commandes slash : {e}")
+    
+    # FORCE la synchronisation complète sur Discord au démarrage
+    try:
+        print("🔄 Synchronisation forcée des commandes slash avec Discord...")
+        synced = await bot.tree.sync()
+        print(f"✅ {len(synced)} commandes slash synchronisées avec succès !")
+    except Exception as e: 
+        print(f"Erreur sync des commandes slash : {e}")
     
     await verifier_et_mettre_a_jour_aide()
     
@@ -487,6 +493,7 @@ async def voir_likes(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
+# --- COMMANDE HISTORY PAR PAGES DE 10 ---
 @bot.tree.command(name="history", description="Affiche l'historique de tes écoutes par pages de 10 morceaux")
 @app_commands.describe(page="Le numéro de la page à afficher (Ex: 1, 2, 3...)")
 async def voir_historique(interaction: discord.Interaction, page: int = 1):
