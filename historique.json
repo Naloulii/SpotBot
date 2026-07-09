@@ -4,6 +4,14 @@
         "display_name": "Naloulii",
         "ecoutes": [
             {
+                "date": "09/07/2026 19:20",
+                "titre": "Daddy chocolat",
+                "artiste": "Koba LaD; Gazo",
+                "url": "https://open.spotify.com/track/4IbDTrLxImTJfZePAX2nKB",
+                "track_id": "4IbDTrLxImTJfZePAX2nKB",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 51s"
+            },
+            {
                 "date": "09/07/2026 08:37",
                 "titre": "PK TU M'AIMES\u00bf",
                 "artiste": "poissonchat",
@@ -129,6 +137,28 @@
                 "artiste": "Gambi",
                 "url": "https://open.spotify.com/track/1bWafkUCOp6luXRs1cm3w9",
                 "track_id": "1bWafkUCOp6luXRs1cm3w9",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            }
+        ]
+    },
+    "702545968951722084": {
+        "username": "thv38.",
+        "display_name": "Luv",
+        "ecoutes": [
+            {
+                "date": "09/07/2026 19:23",
+                "titre": "PASSENGER PRINCESS",
+                "artiste": "Nessa Barrett",
+                "url": "https://open.spotify.com/track/6ob8d5WCrcxYGwBy6wLeQ1",
+                "track_id": "6ob8d5WCrcxYGwBy6wLeQ1",
+                "status": "En cours..."
+            },
+            {
+                "date": "09/07/2026 19:18",
+                "titre": "Right Ways - Sped Up",
+                "artiste": "Nick Alexandr",
+                "url": "https://open.spotify.com/track/0lgSgnY4OLyzCqn9ZAIuEB",
+                "track_id": "0lgSgnY4OLyzCqn9ZAIuEB",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
