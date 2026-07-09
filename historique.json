@@ -146,12 +146,28 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "09/07/2026 19:28",
+                "titre": "Foreign Escape - Sped Up",
+                "artiste": "Nic Dean",
+                "url": "https://open.spotify.com/track/7BNHWUDHYIEohIlaOz7ZWc",
+                "track_id": "7BNHWUDHYIEohIlaOz7ZWc",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "09/07/2026 19:25",
+                "titre": "Meteor",
+                "artiste": "Kenya Grace",
+                "url": "https://open.spotify.com/track/7zEUX3Ekdl2Kd122Ayhbrs",
+                "track_id": "7zEUX3Ekdl2Kd122Ayhbrs",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "09/07/2026 19:23",
                 "titre": "PASSENGER PRINCESS",
                 "artiste": "Nessa Barrett",
                 "url": "https://open.spotify.com/track/6ob8d5WCrcxYGwBy6wLeQ1",
                 "track_id": "6ob8d5WCrcxYGwBy6wLeQ1",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "09/07/2026 19:18",
