@@ -202,12 +202,60 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "10/07/2026 16:37",
+                "titre": "Medicate Me",
+                "artiste": "Rain City Drive; Dayseeker",
+                "url": "https://open.spotify.com/track/1EusMjYm7PZftlZn87vPWE",
+                "track_id": "1EusMjYm7PZftlZn87vPWE",
+                "status": "En cours..."
+            },
+            {
+                "date": "10/07/2026 16:33",
+                "titre": "Grenade",
+                "artiste": "Bruno Mars",
+                "url": "https://open.spotify.com/track/4lLtanYk6tkMvooU0tWzG8",
+                "track_id": "4lLtanYk6tkMvooU0tWzG8",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:32",
+                "titre": "Babydoll",
+                "artiste": "Dominic Fike",
+                "url": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
+                "track_id": "7yNf9YjeO5JXUE3JEBgnYc",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:30",
+                "titre": "STRUCT - Slowed",
+                "artiste": "UdieNnx",
+                "url": "https://open.spotify.com/track/0qu88DVMYHhR64V2rsSdHF",
+                "track_id": "0qu88DVMYHhR64V2rsSdHF",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:28",
+                "titre": "ZYRE - SLOWED",
+                "artiste": "Zynyx; KREZUS",
+                "url": "https://open.spotify.com/track/35Xw1BCOJxh8RHN441jO2V",
+                "track_id": "35Xw1BCOJxh8RHN441jO2V",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:25",
+                "titre": "HYPNOTIZED",
+                "artiste": "ROZIII",
+                "url": "https://open.spotify.com/track/3GvNZhIG3QTye9xVKCXCiG",
+                "track_id": "3GvNZhIG3QTye9xVKCXCiG",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "10/07/2026 16:21",
                 "titre": "Cocaine Kisses",
                 "artiste": "Leezy",
                 "url": "https://open.spotify.com/track/16ZyUjopBCjFOtCNfyJD9U",
                 "track_id": "16ZyUjopBCjFOtCNfyJD9U",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "10/07/2026 16:18",
