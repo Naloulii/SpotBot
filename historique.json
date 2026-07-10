@@ -202,12 +202,44 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "10/07/2026 14:37",
+                "titre": "Pompeii",
+                "artiste": "Bastille",
+                "url": "https://open.spotify.com/track/4Ub8UsjWuewQrPhuepfVpd",
+                "track_id": "4Ub8UsjWuewQrPhuepfVpd",
+                "status": "En cours..."
+            },
+            {
+                "date": "10/07/2026 14:33",
+                "titre": "Things We Lost In The Fire",
+                "artiste": "Bastille",
+                "url": "https://open.spotify.com/track/6qOxF7JKKNegcuocn14ukr",
+                "track_id": "6qOxF7JKKNegcuocn14ukr",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 14:29",
+                "titre": "idfc",
+                "artiste": "blackbear",
+                "url": "https://open.spotify.com/track/6y6jbcPG4Yn3Du4moXaenr",
+                "track_id": "6y6jbcPG4Yn3Du4moXaenr",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 14:25",
+                "titre": "ordinary / horrifying",
+                "artiste": "updog",
+                "url": "https://open.spotify.com/track/7rP2JEZWJVorDsonOHnPCb",
+                "track_id": "7rP2JEZWJVorDsonOHnPCb",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "10/07/2026 14:23",
                 "titre": "Too Late",
                 "artiste": "Kaphy; SFRNG; Brogs",
                 "url": "https://open.spotify.com/track/4wwJBHYVyrxBSjMSURlWvr",
                 "track_id": "4wwJBHYVyrxBSjMSURlWvr",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "10/07/2026 14:18",
