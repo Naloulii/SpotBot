@@ -202,12 +202,44 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "10/07/2026 17:39",
+                "titre": "U Said",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/5pqmqD9kdWnTZUUGvUQnHc",
+                "track_id": "5pqmqD9kdWnTZUUGvUQnHc",
+                "status": "En cours..."
+            },
+            {
+                "date": "10/07/2026 17:36",
+                "titre": "Sex with My Ex",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/0H1Had94fszD13qsFsP1U5",
+                "track_id": "0H1Had94fszD13qsFsP1U5",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 17:32",
+                "titre": "Problems",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/3f3EHJg9siYsaTRaSbhGEg",
+                "track_id": "3f3EHJg9siYsaTRaSbhGEg",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 17:27",
+                "titre": "Broken Smile (My All)",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/1BCBBO8VUEFOb6RBct4XDp",
+                "track_id": "1BCBBO8VUEFOb6RBct4XDp",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "10/07/2026 17:24",
                 "titre": "IDGAF",
                 "artiste": "Lil Peep",
                 "url": "https://open.spotify.com/track/6zZhlOWizcEG1T7zsTdI6N",
                 "track_id": "6zZhlOWizcEG1T7zsTdI6N",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "10/07/2026 17:20",
