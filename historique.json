@@ -202,6 +202,38 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "10/07/2026 17:05",
+                "titre": "The Winner Takes It All",
+                "artiste": "ABBA",
+                "url": "https://open.spotify.com/track/3oEkrIfXfSh9zGnE7eBzSV",
+                "track_id": "3oEkrIfXfSh9zGnE7eBzSV",
+                "status": "En cours..."
+            },
+            {
+                "date": "10/07/2026 17:01",
+                "titre": "Our Last Summer",
+                "artiste": "ABBA",
+                "url": "https://open.spotify.com/track/6hHXft1nFyvfVv6UoRToPZ",
+                "track_id": "6hHXft1nFyvfVv6UoRToPZ",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:58",
+                "titre": "on ur mind",
+                "artiste": "Mike Crook",
+                "url": "https://open.spotify.com/track/2Aksrb43W1rt0VwJ9VKl6g",
+                "track_id": "2Aksrb43W1rt0VwJ9VKl6g",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:55",
+                "titre": "What if I miss you for the rest of my life?",
+                "artiste": "Janine Berdin",
+                "url": "https://open.spotify.com/track/432pM7gIHQmksVaU3B50pN",
+                "track_id": "432pM7gIHQmksVaU3B50pN",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "10/07/2026 16:51",
                 "titre": "Akatsuki no Requiem",
                 "artiste": "Linked Horizon",
