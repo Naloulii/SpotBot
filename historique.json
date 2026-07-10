@@ -202,12 +202,52 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "10/07/2026 14:53",
+                "titre": "don't worry babe",
+                "artiste": "Ex Habit",
+                "url": "https://open.spotify.com/track/59BWnlX2K9HJKw5I6AA6p2",
+                "track_id": "59BWnlX2K9HJKw5I6AA6p2",
+                "status": "En cours..."
+            },
+            {
+                "date": "10/07/2026 14:50",
+                "titre": "You Belong to Me",
+                "artiste": "Ari Abdul",
+                "url": "https://open.spotify.com/track/2y4R2HOGnYCBGIXNikvZDz",
+                "track_id": "2y4R2HOGnYCBGIXNikvZDz",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 14:46",
+                "titre": "HEAVEN AND BACK",
+                "artiste": "Chase Atlantic",
+                "url": "https://open.spotify.com/track/1JdQibdvxgcrB8Rv1KFndw",
+                "track_id": "1JdQibdvxgcrB8Rv1KFndw",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 14:43",
+                "titre": "Foreign Escape",
+                "artiste": "Nic Dean",
+                "url": "https://open.spotify.com/track/7vVQ6uPDlweo5WL3HfApso",
+                "track_id": "7vVQ6uPDlweo5WL3HfApso",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 14:41",
+                "titre": "You Were a Dream",
+                "artiste": "Artemas",
+                "url": "https://open.spotify.com/track/6wCGCDcuouCOMJy1pjINeb",
+                "track_id": "6wCGCDcuouCOMJy1pjINeb",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "10/07/2026 14:37",
                 "titre": "Pompeii",
                 "artiste": "Bastille",
                 "url": "https://open.spotify.com/track/4Ub8UsjWuewQrPhuepfVpd",
                 "track_id": "4Ub8UsjWuewQrPhuepfVpd",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "10/07/2026 14:33",
