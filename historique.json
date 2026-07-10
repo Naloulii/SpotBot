@@ -202,6 +202,30 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "10/07/2026 14:23",
+                "titre": "Too Late",
+                "artiste": "Kaphy; SFRNG; Brogs",
+                "url": "https://open.spotify.com/track/4wwJBHYVyrxBSjMSURlWvr",
+                "track_id": "4wwJBHYVyrxBSjMSURlWvr",
+                "status": "En cours..."
+            },
+            {
+                "date": "10/07/2026 14:18",
+                "titre": "Careless",
+                "artiste": "NEFFEX",
+                "url": "https://open.spotify.com/track/10y3BacWn9VXLAf9KLcKO0",
+                "track_id": "10y3BacWn9VXLAf9KLcKO0",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 14:15",
+                "titre": "Be Around",
+                "artiste": "Blooom",
+                "url": "https://open.spotify.com/track/3q3uWcAR3Uv50SKzLrg8G3",
+                "track_id": "3q3uWcAR3Uv50SKzLrg8G3",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "09/07/2026 19:28",
                 "titre": "Foreign Escape - Sped Up",
                 "artiste": "Nic Dean",
