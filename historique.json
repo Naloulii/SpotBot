@@ -202,12 +202,52 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "10/07/2026 16:51",
+                "titre": "Akatsuki no Requiem",
+                "artiste": "Linked Horizon",
+                "url": "https://open.spotify.com/track/2vH8JFJKfkAgZs1GFlOzGh",
+                "track_id": "2vH8JFJKfkAgZs1GFlOzGh",
+                "status": "En cours..."
+            },
+            {
+                "date": "10/07/2026 16:48",
+                "titre": "Akuma no Ko",
+                "artiste": "Ai Higuchi",
+                "url": "https://open.spotify.com/track/5cRKj1kynNFqiliT2ndZ3y",
+                "track_id": "5cRKj1kynNFqiliT2ndZ3y",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 3m 25s"
+            },
+            {
+                "date": "10/07/2026 16:45",
+                "titre": "L'inconnue",
+                "artiste": "Bekar",
+                "url": "https://open.spotify.com/track/6HpFYTYNzW8aJnYygnhXLH",
+                "track_id": "6HpFYTYNzW8aJnYygnhXLH",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:43",
+                "titre": "HEAVENLY JUMPSTYLE - Slowed",
+                "artiste": "TWXNY; Sxilwix; INNXCENCE",
+                "url": "https://open.spotify.com/track/2L13lNCrUn7djHt6XdE19l",
+                "track_id": "2L13lNCrUn7djHt6XdE19l",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "10/07/2026 16:40",
+                "titre": "Come Over",
+                "artiste": "BTS",
+                "url": "https://open.spotify.com/track/6uvw8GFIqdqaJ4Nr3kN8Rs",
+                "track_id": "6uvw8GFIqdqaJ4Nr3kN8Rs",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "10/07/2026 16:37",
                 "titre": "Medicate Me",
                 "artiste": "Rain City Drive; Dayseeker",
                 "url": "https://open.spotify.com/track/1EusMjYm7PZftlZn87vPWE",
                 "track_id": "1EusMjYm7PZftlZn87vPWE",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "10/07/2026 16:33",
