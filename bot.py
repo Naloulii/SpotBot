@@ -119,9 +119,10 @@ def enregistrer_stat_membre(membre):
     user_id = str(membre.id)
     stats = charger_stats()
     if user_id not in stats:
-        stats[user_id] = {"username": membre.name, "display_name": membre.display_name, "count": 0}
+        stats[user_id] = {"username": membre.name, "display_name": membre.display_name, "avatar_url": str(membre.display_avatar.url), "count": 0}
     stats[user_id]["username"] = membre.name
     stats[user_id]["display_name"] = membre.display_name
+    stats[user_id]["avatar_url"] = str(membre.display_avatar.url)
     stats[user_id]["count"] += 1
     sauvegarder_stats(stats)
 
@@ -129,9 +130,10 @@ def enregistrer_like_membre(membre, titre, artiste, url):
     user_id = str(membre.id)
     likes = charger_likes()
     if user_id not in likes:
-        likes[user_id] = {"username": membre.name, "display_name": membre.display_name, "liste": []}
+        likes[user_id] = {"username": membre.name, "display_name": membre.display_name, "avatar_url": str(membre.display_avatar.url), "liste": []}
     likes[user_id]["username"] = membre.name
     likes[user_id]["display_name"] = membre.display_name
+    likes[user_id]["avatar_url"] = str(membre.display_avatar.url)
     
     deja_like = any(track['url'] == url for track in likes[user_id]["liste"])
     if deja_like:
@@ -147,9 +149,10 @@ def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
     user_id = str(membre.id)
     historique = charger_historique()
     if user_id not in historique:
-        historique[user_id] = {"username": membre.name, "display_name": membre.display_name, "ecoutes": []}
+        historique[user_id] = {"username": membre.name, "display_name": membre.display_name, "avatar_url": str(membre.display_avatar.url), "ecoutes": []}
     historique[user_id]["username"] = membre.name
     historique[user_id]["display_name"] = membre.display_name
+    historique[user_id]["avatar_url"] = str(membre.display_avatar.url)
     
     if historique[user_id]["ecoutes"]:
         derniere_ecoute = historique[user_id]["ecoutes"][0]
