@@ -19,6 +19,7 @@ Doit tourner dans le même dossier que tes fichiers JSON
 import os
 import json
 import glob
+import time
 import requests
 import discord
 
@@ -95,22 +96,34 @@ async def migrer_fichier_utilisateurs(chemin_fichier, cle_liste=None):
 # ------------------------------------------------------------------
 
 def rechercher_image_artiste(nom_artiste):
-    try:
-        reponse = requests.get(
-            "https://api.deezer.com/search/artist",
-            params={"q": nom_artiste, "limit": 1},
-            timeout=10
-        )
-        reponse.raise_for_status()
-        data = reponse.json()
-        items = data.get("data", [])
-        if not items:
+    for tentative in range(3):
+        try:
+            reponse = requests.get(
+                "https://api.deezer.com/search/artist",
+                params={"q": nom_artiste, "limit": 1},
+                timeout=10
+            )
+            reponse.raise_for_status()
+            data = reponse.json()
+
+            # Deezer renvoie toujours du HTTP 200, même en cas de quota dépassé :
+            # l'erreur est cachée dans le JSON (data["error"]), pas dans le code HTTP.
+            if "error" in data:
+                print(f"⏳ Quota Deezer atteint pour '{nom_artiste}', nouvelle tentative dans 2s...")
+                time.sleep(2)
+                continue
+
+            items = data.get("data", [])
+            if not items:
+                return None
+            artiste = items[0]
+            return artiste.get("picture_medium") or artiste.get("picture")
+        except Exception as e:
+            print(f"⚠️ [Deezer] Erreur recherche artiste '{nom_artiste}' : {e}")
             return None
-        artiste = items[0]
-        return artiste.get("picture_medium") or artiste.get("picture")
-    except Exception as e:
-        print(f"⚠️ [Deezer] Erreur recherche artiste '{nom_artiste}' : {e}")
-        return None
+
+    print(f"❌ Abandon pour '{nom_artiste}' après plusieurs tentatives (quota).")
+    return None
 
 
 def migrer_artistes():
@@ -140,13 +153,16 @@ def migrer_artistes():
     modifie = False
     for nom in sorted(tous_les_noms):
         cle = nom.lower()
-        if cle in cache:
+        # On retente les artistes déjà en cache mais dont l'image n'a pas pu
+        # être trouvée la dernière fois (souvent à cause du quota Deezer)
+        if cle in cache and cache[cle].get("image_url"):
             continue
         image_url = rechercher_image_artiste(nom)
         cache[cle] = {"nom": nom, "image_url": image_url}
         modifie = True
         statut = "✅" if image_url else "❌"
         print(f"{statut} {nom}")
+        time.sleep(0.3)  # petite marge pour rester sous la limite de débit de Deezer
 
     if modifie:
         with open(ARTISTS_FILE, "w") as f:

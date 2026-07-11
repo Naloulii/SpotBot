@@ -1,6 +1,7 @@
 import os
 import io
 import json
+import time
 import asyncio
 import datetime
 import requests
@@ -129,23 +130,35 @@ def rechercher_image_artiste(nom_artiste):
     l'URL de sa photo de profil (ou None). Spotify a verrouillé son endpoint
     /v1/search derrière l'Extended Quota Mode (inatteignable pour une app perso),
     donc on passe par Deezer qui reste ouvert et gratuit."""
-    try:
-        reponse = requests.get(
-            "https://api.deezer.com/search/artist",
-            params={"q": nom_artiste, "limit": 1},
-            timeout=10
-        )
-        reponse.raise_for_status()
-        data = reponse.json()
-        items = data.get("data", [])
-        if not items:
+    for tentative in range(3):
+        try:
+            reponse = requests.get(
+                "https://api.deezer.com/search/artist",
+                params={"q": nom_artiste, "limit": 1},
+                timeout=10
+            )
+            reponse.raise_for_status()
+            data = reponse.json()
+
+            # Deezer renvoie toujours du HTTP 200, même en cas de quota dépassé :
+            # l'erreur est cachée dans le JSON (data["error"]), pas dans le code HTTP.
+            if "error" in data:
+                print(f"⏳ [Deezer] Quota atteint pour '{nom_artiste}', nouvelle tentative dans 2s...")
+                time.sleep(2)
+                continue
+
+            items = data.get("data", [])
+            if not items:
+                return None
+            artiste = items[0]
+            # picture_medium (250x250) est un bon compromis qualité/poids pour l'affichage
+            return artiste.get("picture_medium") or artiste.get("picture")
+        except Exception as e:
+            print(f"⚠️ [Deezer] Erreur recherche artiste '{nom_artiste}' : {e}")
             return None
-        artiste = items[0]
-        # picture_medium (250x250) est un bon compromis qualité/poids pour l'affichage
-        return artiste.get("picture_medium") or artiste.get("picture")
-    except Exception as e:
-        print(f"⚠️ [Deezer] Erreur recherche artiste '{nom_artiste}' : {e}")
-        return None
+
+    print(f"❌ [Deezer] Abandon pour '{nom_artiste}' après plusieurs tentatives (quota).")
+    return None
 
 
 def mettre_a_jour_cache_artistes(chaine_artistes):
@@ -163,7 +176,9 @@ def mettre_a_jour_cache_artistes(chaine_artistes):
 
     for nom in noms:
         cle = nom.lower()
-        if cle in cache:
+        # On retente les artistes déjà en cache mais dont l'image n'a pas pu
+        # être trouvée la dernière fois (souvent à cause du quota Deezer)
+        if cle in cache and cache[cle].get("image_url"):
             continue
         image_url = rechercher_image_artiste(nom)
         cache[cle] = {"nom": nom, "image_url": image_url}
