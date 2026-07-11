@@ -29,11 +29,16 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
 GITHUB_REPO_NAME = os.getenv("GITHUB_REPO_NAME")
+# Dépôt PUBLIC séparé, ne contenant QUE les JSON de données (aucun code, aucun
+# secret) — permet au dashboard HTML de les lire sans token, même hébergé
+# publiquement (GitHub Pages, etc.)
+GITHUB_PUBLIC_DATA_REPO_NAME = os.getenv("GITHUB_PUBLIC_DATA_REPO_NAME", "SpotBot-data")
 # ==========================================
 
 # Configuration des chemins locaux dans le conteneur Docker
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
+PUBLIC_DATA_DIR = os.path.join(BASE_DIR, "public_data")
 
 STATS_FILE = os.path.join(DATA_DIR, "stats.json")
 LIKES_FILE = os.path.join(DATA_DIR, "likes.json")
@@ -41,12 +46,16 @@ CONFIG_FILE = os.path.join(DATA_DIR, "config.json")
 HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
 
+# Fichiers à publier tels quels dans le dépôt public (aucune donnée sensible dedans)
+FICHIERS_PUBLICS = ["stats.json", "likes.json", "historique.json", "artists.json"]
+
 # Dictionnaires de suivi de l'état global
 ecoutes_en_cours = {}
 verrous_anti_spam = {} 
 
 # Connexion / Clonage automatique dans le sous-dossier sécurisé 'data'
 GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git"
+GITHUB_PUBLIC_DATA_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_PUBLIC_DATA_REPO_NAME}.git"
 
 if not os.path.exists(DATA_DIR):
     print("🚀 Premier lancement sur le Cloud : Création du dossier data et clonage...")
@@ -60,6 +69,20 @@ else:
         import shutil
         shutil.rmtree(DATA_DIR, ignore_errors=True)
         repo = Repo.clone_from(GITHUB_REPO_URL, DATA_DIR)
+
+# Dépôt PUBLIC (juste les JSON, pour que le dashboard HTML les lise sans token)
+if not os.path.exists(PUBLIC_DATA_DIR):
+    print("🚀 Clonage du dépôt public de données...")
+    public_repo = Repo.clone_from(GITHUB_PUBLIC_DATA_REPO_URL, PUBLIC_DATA_DIR)
+else:
+    try:
+        public_repo = Repo(PUBLIC_DATA_DIR)
+        print("📌 Dépôt Git public détecté dans /public_data.")
+    except Exception:
+        print("⚠️ Erreur dossier public_data, re-clonage automatique...")
+        import shutil
+        shutil.rmtree(PUBLIC_DATA_DIR, ignore_errors=True)
+        public_repo = Repo.clone_from(GITHUB_PUBLIC_DATA_REPO_URL, PUBLIC_DATA_DIR)
 
 # --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes) ---
 @tasks.loop(minutes=15)
@@ -82,6 +105,29 @@ async def sauvegarde_periodique_github():
             print(f"📦 [GitHub] Données synchronisées avec succès : {fichiers_a_ajouter}")
     except Exception as e:
         print(f"⚠️ [GitHub] Erreur de synchronisation automatique : {e}")
+
+    # Copie + push des JSON publics dans le dépôt séparé SpotBot-data
+    try:
+        import shutil as _shutil
+        public_repo.remotes.origin.pull()
+
+        fichiers_publies = []
+        for nom_fichier in FICHIERS_PUBLICS:
+            source = os.path.join(DATA_DIR, nom_fichier)
+            destination = os.path.join(PUBLIC_DATA_DIR, nom_fichier)
+            if os.path.exists(source):
+                _shutil.copyfile(source, destination)
+                fichiers_publies.append(nom_fichier)
+
+        if fichiers_publies:
+            public_repo.index.add(fichiers_publies)
+            if public_repo.is_dirty():
+                maintenant = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
+                public_repo.index.commit(f"🤖 Auto-Save : Données publiques ({maintenant})")
+                public_repo.remotes.origin.push()
+                print(f"📦 [GitHub public] Données publiées avec succès : {fichiers_publies}")
+    except Exception as e:
+        print(f"⚠️ [GitHub public] Erreur de synchronisation : {e}")
 
 # Fonctions de gestion de données locales (JSON)
 def charger_stats():
