@@ -9,4 +9,6 @@ COPY . .
 
 RUN pip install --no-cache-dir discord.py colorthief requests GitPython
 
+ENV PYTHONUNBUFFERED=1
+
 CMD ["python", "bot.py"]
