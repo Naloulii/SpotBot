@@ -109,7 +109,12 @@ async def sauvegarde_periodique_github():
     # Copie + push des JSON publics dans le dépôt séparé SpotBot-data
     try:
         import shutil as _shutil
-        public_repo.remotes.origin.pull()
+
+        try:
+            public_repo.remotes.origin.pull()
+        except Exception:
+            # Normal sur un dépôt tout neuf sans aucun commit : rien à tirer.
+            pass
 
         fichiers_publies = []
         for nom_fichier in FICHIERS_PUBLICS:
@@ -121,10 +126,21 @@ async def sauvegarde_periodique_github():
 
         if fichiers_publies:
             public_repo.index.add(fichiers_publies)
-            if public_repo.is_dirty():
+
+            try:
+                a_des_changements = public_repo.is_dirty() or not public_repo.head.is_valid()
+            except Exception:
+                a_des_changements = True  # repo tout neuf, sans HEAD : on commit forcément
+
+            if a_des_changements:
                 maintenant = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
                 public_repo.index.commit(f"🤖 Auto-Save : Données publiques ({maintenant})")
-                public_repo.remotes.origin.push()
+                try:
+                    public_repo.remotes.origin.push()
+                except Exception:
+                    # Premier push sur un dépôt vide : pas encore de branche de suivi configurée
+                    branche = public_repo.active_branch.name
+                    public_repo.git.push("--set-upstream", "origin", branche)
                 print(f"📦 [GitHub public] Données publiées avec succès : {fichiers_publies}")
     except Exception as e:
         print(f"⚠️ [GitHub public] Erreur de synchronisation : {e}")
