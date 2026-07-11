@@ -38,6 +38,7 @@ STATS_FILE = os.path.join(DATA_DIR, "stats.json")
 LIKES_FILE = os.path.join(DATA_DIR, "likes.json")
 CONFIG_FILE = os.path.join(DATA_DIR, "config.json")
 HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
+ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
 
 # Dictionnaires de suivi de l'état global
 ecoutes_en_cours = {}
@@ -114,6 +115,63 @@ def charger_historique():
 def sauvegarder_historique(historique):
     with open(HISTORIQUE_FILE, "w") as f: json.dump(historique, f, indent=4)
 
+def charger_artistes_cache():
+    try:
+        with open(ARTISTS_FILE, "r") as f: return json.load(f)
+    except FileNotFoundError: return {}
+
+def sauvegarder_artistes_cache(cache):
+    with open(ARTISTS_FILE, "w") as f: json.dump(cache, f, indent=4)
+
+
+def rechercher_image_artiste(nom_artiste):
+    """Cherche un artiste sur Deezer (API publique, aucune clé requise) et renvoie
+    l'URL de sa photo de profil (ou None). Spotify a verrouillé son endpoint
+    /v1/search derrière l'Extended Quota Mode (inatteignable pour une app perso),
+    donc on passe par Deezer qui reste ouvert et gratuit."""
+    try:
+        reponse = requests.get(
+            "https://api.deezer.com/search/artist",
+            params={"q": nom_artiste, "limit": 1},
+            timeout=10
+        )
+        reponse.raise_for_status()
+        data = reponse.json()
+        items = data.get("data", [])
+        if not items:
+            return None
+        artiste = items[0]
+        # picture_medium (250x250) est un bon compromis qualité/poids pour l'affichage
+        return artiste.get("picture_medium") or artiste.get("picture")
+    except Exception as e:
+        print(f"⚠️ [Deezer] Erreur recherche artiste '{nom_artiste}' : {e}")
+        return None
+
+
+def mettre_a_jour_cache_artistes(chaine_artistes):
+    """Reçoit la chaîne 'artiste1; artiste2' d'un morceau et complète artists.json
+    pour chaque artiste pas encore connu."""
+    if not chaine_artistes:
+        return
+
+    noms = [a.strip() for a in chaine_artistes.split(";") if a.strip()]
+    if not noms:
+        return
+
+    cache = charger_artistes_cache()
+    modifie = False
+
+    for nom in noms:
+        cle = nom.lower()
+        if cle in cache:
+            continue
+        image_url = rechercher_image_artiste(nom)
+        cache[cle] = {"nom": nom, "image_url": image_url}
+        modifie = True
+
+    if modifie:
+        sauvegarder_artistes_cache(cache)
+
 
 def enregistrer_stat_membre(membre):
     user_id = str(membre.id)
@@ -175,13 +233,17 @@ def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
     historique[user_id]["ecoutes"] = historique[user_id]["ecoutes"][:100]
     sauvegarder_historique(historique)
 
+    mettre_a_jour_cache_artistes(artiste)
+
 def mettre_a_jour_historique_fin(membre, track_id, temps_ecoule, duree_totale):
     user_id = str(membre.id)
     historique = charger_historique()
     if user_id in historique:
         for ecoute in historique[user_id]["ecoutes"]:
             if ecoute.get("track_id") == track_id and ecoute["status"] == "En cours...":
-                if temps_ecoule >= (duree_totale * 0.98):
+                # Même seuil que la validation du point (90%) pour éviter qu'un morceau
+                # compté comme "validé" s'affiche quand même comme "pas fini".
+                if duree_totale > 0 and (temps_ecoule / duree_totale) >= 0.96:
                     ecoute["status"] = "🎉 Écouté en entier"
                 else:
                     m, s = divmod(int(temps_ecoule), 60)
@@ -262,7 +324,7 @@ def generer_embed_aide():
     )
     embed.add_field(
         name="⭐ Fonctionnalités :",
-        value="• Clique sur le bouton **🤍 Like** sous une fiche pour la sauvegarder.\n• Clique sur **[Clique ici]** pour l'ouvrir sur Spotify.\n• *Pour obtenir un point au Top, tu dois écouter au moins 90% d'un morceau !*",
+        value="• Clique sur le bouton **🤍 Like** sous une fiche pour la sauvegarder.\n• Clique sur **[Clique ici]** pour l'ouvrir sur Spotify.\n• *Pour obtenir un point au Top, tu dois écouter au moins 96% d'un morceau !*",
         inline=False
     )
     return embed
@@ -351,7 +413,7 @@ async def verifier_presence_spotify(membre):
                 now_utc = datetime.datetime.now(datetime.timezone.utc)
                 temps_ecoule = (now_utc - infos_anciennes["start_time"]).total_seconds()
                 
-                if infos_anciennes["duration"] > 0 and (temps_ecoule / infos_anciennes["duration"]) >= 0.90:
+                if infos_anciennes["duration"] > 0 and (temps_ecoule / infos_anciennes["duration"]) >= 0.96:
                     enregistrer_stat_membre(membre)
                 
                 mettre_a_jour_historique_fin(membre, infos_anciennes["track_id"], temps_ecoule, infos_anciennes["duration"])
@@ -383,7 +445,7 @@ async def verifier_presence_spotify(membre):
 
         mettre_a_jour_historique_fin(membre, infos["track_id"], temps_ecoule, duree_totale)
 
-        if duree_totale > 0 and (temps_ecoule / duree_totale) >= 0.90:
+        if duree_totale > 0 and (temps_ecoule / duree_totale) >= 0.96:
             enregistrer_stat_membre(membre)
 
         try:
