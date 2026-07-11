@@ -174,7 +174,7 @@ def migrer_artistes():
 
 @client.event
 async def on_ready():
-    print(f"🤖 Connecté en tant que {client.user} — migration en cours...")
+    print(f"🤖 Connecté en tant que {client.user} — migration des avatars en cours...")
 
     # Fichiers principaux
     await migrer_fichier_utilisateurs(os.path.join(DATA_DIR, "stats.json"))
@@ -185,14 +185,19 @@ async def on_ready():
     for archive in glob.glob(os.path.join(DATA_DIR, "stats_week_*.json")):
         await migrer_fichier_utilisateurs(archive)
 
-    # Photos d'artistes (ne nécessite pas Discord, mais on le fait ici par simplicité)
-    migrer_artistes()
-
-    print("🎉 Migration terminée. Tu peux commit/push le dossier data et fermer ce script.")
+    print("🎉 Migration des avatars terminée.")
     await client.close()
 
 
 if __name__ == "__main__":
+    # 1) Photos d'artistes d'abord : aucun besoin de Discord, on la fait
+    #    entièrement AVANT d'ouvrir la connexion pour ne jamais bloquer
+    #    le heartbeat du gateway avec les appels réseau/délais de Deezer.
+    print("🎨 Migration des artistes (Deezer)...")
+    migrer_artistes()
+    print("🎉 Migration des artistes terminée.\n")
+
+    # 2) Avatars Discord ensuite : nécessite une connexion au bot
     if not DISCORD_TOKEN:
         raise SystemExit("❌ La variable d'environnement DISCORD_TOKEN n'est pas définie.")
     client.run(DISCORD_TOKEN)
