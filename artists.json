@@ -358,5 +358,13 @@
     "folie's": {
         "nom": "Folie's",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8ae5ac974fe313eecd7cd26a90057b0d/250x250-000000-80-0-0.jpg"
+    },
+    "bes": {
+        "nom": "BES",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d1a4177fdf148e23f5205701b2dace6/250x250-000000-80-0-0.jpg"
+    },
+    "sam sauvage": {
+        "nom": "Sam Sauvage",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6174443ceaec41d81335cd8b7b53d5c/250x250-000000-80-0-0.jpg"
     }
 }
