@@ -643,12 +643,28 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "12/07/2026 15:50",
+                "titre": "love me",
+                "artiste": "Ex Habit",
+                "url": "https://open.spotify.com/track/6Gpim0VEZc2UZRVcapsWIv",
+                "track_id": "6Gpim0VEZc2UZRVcapsWIv",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 06s"
+            },
+            {
+                "date": "12/07/2026 15:47",
+                "titre": "Who Do You Want",
+                "artiste": "Ex Habit",
+                "url": "https://open.spotify.com/track/131SfRMv57LKf8xtaSt39k",
+                "track_id": "131SfRMv57LKf8xtaSt39k",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "12/07/2026 15:45",
                 "titre": "don't worry babe",
                 "artiste": "Ex Habit",
                 "url": "https://open.spotify.com/track/59BWnlX2K9HJKw5I6AA6p2",
                 "track_id": "59BWnlX2K9HJKw5I6AA6p2",
-                "status": "En cours..."
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 43s"
             },
             {
                 "date": "12/07/2026 15:42",
