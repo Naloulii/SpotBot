@@ -643,12 +643,52 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "12/07/2026 23:01",
+                "titre": "You Belong to Me",
+                "artiste": "Ari Abdul",
+                "url": "https://open.spotify.com/track/2y4R2HOGnYCBGIXNikvZDz",
+                "track_id": "2y4R2HOGnYCBGIXNikvZDz",
+                "status": "En cours..."
+            },
+            {
+                "date": "12/07/2026 22:57",
+                "titre": "HEAVEN AND BACK",
+                "artiste": "Chase Atlantic",
+                "url": "https://open.spotify.com/track/1JdQibdvxgcrB8Rv1KFndw",
+                "track_id": "1JdQibdvxgcrB8Rv1KFndw",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 22:54",
+                "titre": "Foreign Escape",
+                "artiste": "Nic Dean",
+                "url": "https://open.spotify.com/track/7vVQ6uPDlweo5WL3HfApso",
+                "track_id": "7vVQ6uPDlweo5WL3HfApso",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 22:52",
+                "titre": "You Were a Dream",
+                "artiste": "Artemas",
+                "url": "https://open.spotify.com/track/6wCGCDcuouCOMJy1pjINeb",
+                "track_id": "6wCGCDcuouCOMJy1pjINeb",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 22:48",
+                "titre": "Pompeii",
+                "artiste": "Bastille",
+                "url": "https://open.spotify.com/track/4Ub8UsjWuewQrPhuepfVpd",
+                "track_id": "4Ub8UsjWuewQrPhuepfVpd",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "12/07/2026 22:46",
                 "titre": "Things We Lost In The Fire",
                 "artiste": "Bastille",
                 "url": "https://open.spotify.com/track/6qOxF7JKKNegcuocn14ukr",
                 "track_id": "6qOxF7JKKNegcuocn14ukr",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "12/07/2026 15:50",
@@ -1363,7 +1403,7 @@
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ],
-        "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/a5a76089446b91c1ceb48328bb3de187.png?size=1024"
+        "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024"
     },
     "1114517573283881020": {
         "username": "golden_maypole_11220",
