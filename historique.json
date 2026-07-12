@@ -4,6 +4,46 @@
         "display_name": "Naloulii",
         "ecoutes": [
             {
+                "date": "12/07/2026 10:30",
+                "titre": "LA QUOI ? (feat. La Mano 1.9)",
+                "artiste": "Nono La Grinta; La Mano 1.9",
+                "url": "https://open.spotify.com/track/5m9qUmxQDp9yuSysJT7nYu",
+                "track_id": "5m9qUmxQDp9yuSysJT7nYu",
+                "status": "En cours..."
+            },
+            {
+                "date": "12/07/2026 10:25",
+                "titre": "EL GEMANO",
+                "artiste": "Genezio; La Mano 1.9",
+                "url": "https://open.spotify.com/track/2s0ECLNrusYkBud3ZuoVrc",
+                "track_id": "2s0ECLNrusYkBud3ZuoVrc",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 10:23",
+                "titre": "I'm Sorry",
+                "artiste": "La Mano 1.9",
+                "url": "https://open.spotify.com/track/2ynH9ETEo4OgLxNLJrcMKP",
+                "track_id": "2ynH9ETEo4OgLxNLJrcMKP",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 10:22",
+                "titre": "ON TAPE",
+                "artiste": "Booska-P; La Mano 1.9",
+                "url": "https://open.spotify.com/track/3nZQzDAlBNrZyh2WoOfrKn",
+                "track_id": "3nZQzDAlBNrZyh2WoOfrKn",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 10:18",
+                "titre": "POP (feat. La Mano 1.9)",
+                "artiste": "Gazo; La Mano 1.9",
+                "url": "https://open.spotify.com/track/23fxyoCF4qEXS5RSZ8xWPq",
+                "track_id": "23fxyoCF4qEXS5RSZ8xWPq",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "11/07/2026 23:54",
                 "titre": "Jerrican (feat. La Mano 1.9)",
                 "artiste": "Guy2Bezbar; La Mano 1.9",
@@ -1020,5 +1060,20 @@
             }
         ],
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/a5a76089446b91c1ceb48328bb3de187.png?size=1024"
+    },
+    "1114517573283881020": {
+        "username": "golden_maypole_11220",
+        "display_name": "Piano",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1114517573283881020/311ebc8bc9b802b3003830476b843ab3.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "12/07/2026 10:27",
+                "titre": "No One Noticed",
+                "artiste": "The Mar\u00edas",
+                "url": "https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5",
+                "track_id": "3siwsiaEoU4Kuuc9WKMUy5",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 3m 15s"
+            }
+        ]
     }
 }
