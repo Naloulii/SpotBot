@@ -643,12 +643,44 @@
         "display_name": "Luv",
         "ecoutes": [
             {
+                "date": "12/07/2026 15:28",
+                "titre": "idfc",
+                "artiste": "blackbear",
+                "url": "https://open.spotify.com/track/6y6jbcPG4Yn3Du4moXaenr",
+                "track_id": "6y6jbcPG4Yn3Du4moXaenr",
+                "status": "En cours..."
+            },
+            {
+                "date": "12/07/2026 15:28",
+                "titre": "ordinary / horrifying",
+                "artiste": "updog",
+                "url": "https://open.spotify.com/track/7rP2JEZWJVorDsonOHnPCb",
+                "track_id": "7rP2JEZWJVorDsonOHnPCb",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 15:21",
+                "titre": "ordinary / horrifying",
+                "artiste": "updog",
+                "url": "https://open.spotify.com/track/7rP2JEZWJVorDsonOHnPCb",
+                "track_id": "7rP2JEZWJVorDsonOHnPCb",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "12/07/2026 15:18",
+                "titre": "Too Late",
+                "artiste": "Kaphy; SFRNG; Brogs",
+                "url": "https://open.spotify.com/track/4wwJBHYVyrxBSjMSURlWvr",
+                "track_id": "4wwJBHYVyrxBSjMSURlWvr",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "12/07/2026 15:13",
                 "titre": "Careless",
                 "artiste": "NEFFEX",
                 "url": "https://open.spotify.com/track/10y3BacWn9VXLAf9KLcKO0",
                 "track_id": "10y3BacWn9VXLAf9KLcKO0",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "12/07/2026 15:13",
