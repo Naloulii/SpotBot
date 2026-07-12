@@ -23,6 +23,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 #          CONFIGURATION SÉCURISÉE
 # ==========================================
 SALON_MUSIQUE_ID = 1520393495544594472 
+DASHBOARD_URL = "https://naloulii.github.io/SpotBot-data/"
 
 # Récupération des jetons secrets via l'hébergeur Cloud (Railway)
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
@@ -402,6 +403,11 @@ def generer_embed_aide():
     embed.add_field(
         name="⭐ Fonctionnalités :",
         value="• Clique sur le bouton **🤍 Like** sous une fiche pour la sauvegarder.\n• Clique sur **[Clique ici]** pour l'ouvrir sur Spotify.\n• *Pour obtenir un point au Top, tu dois écouter au moins 96% d'un morceau !*",
+        inline=False
+    )
+    embed.add_field(
+        name="📊 Dashboard complet :",
+        value=f"[Clique ici pour voir toutes les statistiques en détail]({DASHBOARD_URL})",
         inline=False
     )
     return embed
