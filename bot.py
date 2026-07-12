@@ -86,8 +86,10 @@ else:
         public_repo = Repo.clone_from(GITHUB_PUBLIC_DATA_REPO_URL, PUBLIC_DATA_DIR)
 
 # --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes) ---
-@tasks.loop(minutes=15)
-async def sauvegarde_periodique_github():
+def _sauvegarde_github_bloquante():
+    """Contient tous les appels Git synchrones (bloquants). Appelée via
+    asyncio.to_thread() pour ne jamais geler la boucle événementielle du bot
+    (et donc son heartbeat Discord) pendant les quelques secondes que ça prend."""
     try:
         repo.remotes.origin.pull()
         
@@ -145,6 +147,11 @@ async def sauvegarde_periodique_github():
                 print(f"📦 [GitHub public] Données publiées avec succès : {fichiers_publies}")
     except Exception as e:
         print(f"⚠️ [GitHub public] Erreur de synchronisation : {e}")
+
+
+@tasks.loop(minutes=15)
+async def sauvegarde_periodique_github():
+    await asyncio.to_thread(_sauvegarde_github_bloquante)
 
 # Fonctions de gestion de données locales (JSON)
 def charger_stats():
@@ -433,14 +440,25 @@ async def verifier_et_mettre_a_jour_aide():
         sauvegarder_config(config)
 
 
-def obtenir_couleur_album(url_image):
+couleur_cache = {}  # track_id -> discord.Color (évite de retélécharger/reprocesser l'image à chaque réécoute)
+
+def obtenir_couleur_album(url_image, track_id=None):
+    if track_id and track_id in couleur_cache:
+        return couleur_cache[track_id]
     try:
-        reponse = requests.get(url_image)
+        reponse = requests.get(url_image, timeout=10)
         img_bytes = io.BytesIO(reponse.content)
         color_thief = ColorThief(img_bytes)
-        rgb = color_thief.get_color(quality=1)
-        return discord.Color.from_rgb(rgb[0], rgb[1], rgb[2])
-    except Exception: return discord.Color.green()
+        # quality=8 : échantillonne 1 pixel sur 8 au lieu de tous les pixels (quality=1).
+        # Résultat visuellement identique pour un embed Discord, beaucoup moins de CPU.
+        rgb = color_thief.get_color(quality=8)
+        couleur = discord.Color.from_rgb(rgb[0], rgb[1], rgb[2])
+    except Exception:
+        couleur = discord.Color.green()
+
+    if track_id:
+        couleur_cache[track_id] = couleur
+    return couleur
 
 def generer_barre_progression(creation_time, duration):
     now = datetime.datetime.now(datetime.timezone.utc)
@@ -478,7 +496,7 @@ async def verifier_presence_spotify(membre):
         deja_en_cours = user_id in ecoutes_en_cours and ecoutes_en_cours[user_id]["track_id"] == spotify_activity.track_id
 
         if not deja_en_cours:
-            couleur = obtenir_couleur_album(spotify_activity.album_cover_url)
+            couleur = await asyncio.to_thread(obtenir_couleur_album, spotify_activity.album_cover_url, spotify_activity.track_id)
 
             embed = discord.Embed(
                 title=f"🎵 {membre.display_name} écoute :",
@@ -502,17 +520,18 @@ async def verifier_presence_spotify(membre):
                 mettre_a_jour_historique_fin(membre, infos_anciennes["track_id"], temps_ecoule, infos_anciennes["duration"])
 
                 try:
-                    ancien_msg = await salon.fetch_message(infos_anciennes["message_id"])
+                    ancien_msg = infos_anciennes.get("message_obj") or await salon.fetch_message(infos_anciennes["message_id"])
                     await ancien_msg.delete()
                 except Exception: pass
 
-            ajouter_a_l_historique(membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id)
+            await asyncio.to_thread(ajouter_a_l_historique, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id)
 
             view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
             message = await salon.send(embed=embed, view=view)
             
             ecoutes_en_cours[user_id] = {
                 "message_id": message.id,
+                "message_obj": message,
                 "start_time": spotify_activity.start,
                 "track_id": spotify_activity.track_id,
                 "duration": spotify_activity.duration.total_seconds(),
@@ -587,13 +606,13 @@ async def on_ready():
 async def on_presence_update(before, after):
     await verifier_presence_spotify(after)
 
-@tasks.loop(seconds=15)
+@tasks.loop(seconds=30)
 async def actualiser_messages():
     salon = bot.get_channel(SALON_MUSIQUE_ID)
     if not salon: return
     for user_id, infos in list(ecoutes_en_cours.items()):
         try:
-            msg = await salon.fetch_message(infos["message_id"])
+            msg = infos.get("message_obj") or await salon.fetch_message(infos["message_id"])
             spotify_activity = infos["activity"]
             embed = discord.Embed(title=msg.embeds[0].title, description=msg.embeds[0].description, color=infos["couleur"])
             embed.set_thumbnail(url=spotify_activity.album_cover_url)
