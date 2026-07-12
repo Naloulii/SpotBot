@@ -4,12 +4,28 @@
         "display_name": "Naloulii",
         "ecoutes": [
             {
+                "date": "12/07/2026 12:06",
+                "titre": "RALENTIR",
+                "artiste": "euhZ",
+                "url": "https://open.spotify.com/track/5DVM8yN6fpiYrPycdbXn7x",
+                "track_id": "5DVM8yN6fpiYrPycdbXn7x",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 17s"
+            },
+            {
+                "date": "12/07/2026 12:03",
+                "titre": "EGO.",
+                "artiste": "Sley9ueve",
+                "url": "https://open.spotify.com/track/1EAUUpy9n0TMPAb4AumwnB",
+                "track_id": "1EAUUpy9n0TMPAb4AumwnB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "12/07/2026 12:00",
                 "titre": "J'Suis Pas Bo",
                 "artiste": "Sam Sauvage",
                 "url": "https://open.spotify.com/track/1wPrfGvINb3lWrGbLWXedI",
                 "track_id": "1wPrfGvINb3lWrGbLWXedI",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "12/07/2026 11:58",

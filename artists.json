@@ -366,5 +366,13 @@
     "sam sauvage": {
         "nom": "Sam Sauvage",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e6174443ceaec41d81335cd8b7b53d5c/250x250-000000-80-0-0.jpg"
+    },
+    "sley9ueve": {
+        "nom": "Sley9ueve",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7c9545115a80bf171d22230e6f20bcb/250x250-000000-80-0-0.jpg"
+    },
+    "euhz": {
+        "nom": "euhZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/49df86acd002a4033a99a71775e50815/250x250-000000-80-0-0.jpg"
     }
 }
