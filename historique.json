@@ -5,12 +5,38 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 01:01",
+                "titre": "Ma jolie maison",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/301TUdLZZvNPFplmnWh0kb",
+                "track_id": "301TUdLZZvNPFplmnWh0kb",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 00:51",
+                "titre": "CH\u00c2TEAU FORT",
+                "artiste": "Luther",
+                "url": "https://open.spotify.com/track/4Iqh8atfjuYXTN5NckhNIg",
+                "track_id": "4Iqh8atfjuYXTN5NckhNIg",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 00:47",
+                "titre": "488",
+                "artiste": "Luidji",
+                "url": "https://open.spotify.com/track/6gqH1d1VyMuCyK0FEA2qkY",
+                "track_id": "6gqH1d1VyMuCyK0FEA2qkY",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 228.6
+            },
+            {
                 "date": "14/07/2026 00:45",
                 "titre": "texto",
                 "artiste": "aupinard",
                 "url": "https://open.spotify.com/track/1A5mybkJrvzcGBoOLflgsZ",
                 "track_id": "1A5mybkJrvzcGBoOLflgsZ",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 143.5
             },
             {
                 "date": "14/07/2026 00:06",
@@ -873,33 +899,6 @@
                 "track_id": "7KA4W4McWYRpgf0fWsJZWB",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 182.2
-            },
-            {
-                "date": "13/07/2026 12:46",
-                "titre": "Charbon tous les jours",
-                "artiste": "Zepo",
-                "url": "https://open.spotify.com/track/7rImS9ivEzj1GiEN5NffSf",
-                "track_id": "7rImS9ivEzj1GiEN5NffSf",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 102.6
-            },
-            {
-                "date": "13/07/2026 12:44",
-                "titre": "SOLEIL",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/6AoOzPhqx5LbtYfKBlBrEG",
-                "track_id": "6AoOzPhqx5LbtYfKBlBrEG",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 169.7
-            },
-            {
-                "date": "13/07/2026 12:40",
-                "titre": "BAD!",
-                "artiste": "Folie's",
-                "url": "https://open.spotify.com/track/3nq3hIQOwKHRgd44Y06Ijq",
-                "track_id": "3nq3hIQOwKHRgd44Y06Ijq",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 162.8
             }
         ]
     },
