@@ -498,5 +498,17 @@
     "magnolia park": {
         "nom": "Magnolia Park",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/90584dc28ceb29ebd7e289cbfe8d1ce4/250x250-000000-80-0-0.jpg"
+    },
+    "the plot in you": {
+        "nom": "The Plot In You",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56d32fb5ee7b6b3eff8bc7ee549d17bb/250x250-000000-80-0-0.jpg"
+    },
+    "bad omens": {
+        "nom": "Bad Omens",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8a185a7bd12ca20bb8d9e01ea699467d/250x250-000000-80-0-0.jpg"
+    },
+    "jimin": {
+        "nom": "Jimin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c687c50187d12f56a32ad9069a29b107/250x250-000000-80-0-0.jpg"
     }
 }

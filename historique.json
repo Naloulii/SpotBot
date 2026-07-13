@@ -875,12 +875,40 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 17:24",
+                "titre": "Like Crazy",
+                "artiste": "Jimin",
+                "url": "https://open.spotify.com/track/3Ua0m0YmEjrMi9XErKcNiR",
+                "track_id": "3Ua0m0YmEjrMi9XErKcNiR",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 24s",
+                "temps_ecoute_secondes": 84.8
+            },
+            {
+                "date": "13/07/2026 17:20",
+                "titre": "Never Know",
+                "artiste": "Bad Omens",
+                "url": "https://open.spotify.com/track/4ilaaaAMFcKJxDjyYVm74l",
+                "track_id": "4ilaaaAMFcKJxDjyYVm74l",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 216.9
+            },
+            {
+                "date": "13/07/2026 17:17",
+                "titre": "Closure",
+                "artiste": "The Plot In You",
+                "url": "https://open.spotify.com/track/1JkRR2HcXnUBCkVa8tFoAl",
+                "track_id": "1JkRR2HcXnUBCkVa8tFoAl",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 195.8
+            },
+            {
                 "date": "13/07/2026 17:14",
                 "titre": "SHALLOW",
                 "artiste": "Magnolia Park",
                 "url": "https://open.spotify.com/track/7hm7YOaz4CHZYAiYBDbf4m",
                 "track_id": "7hm7YOaz4CHZYAiYBDbf4m",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 210.9
             },
             {
                 "date": "13/07/2026 17:11",
@@ -1677,30 +1705,6 @@
                 "url": "https://open.spotify.com/track/5jl8wCqKCHCux0uWf3d7O9",
                 "track_id": "5jl8wCqKCHCux0uWf3d7O9",
                 "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 42s"
-            },
-            {
-                "date": "10/07/2026 21:48",
-                "titre": "U Said",
-                "artiste": "Lil Peep",
-                "url": "https://open.spotify.com/track/5pqmqD9kdWnTZUUGvUQnHc",
-                "track_id": "5pqmqD9kdWnTZUUGvUQnHc",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 19:39",
-                "titre": "U Said",
-                "artiste": "Lil Peep",
-                "url": "https://open.spotify.com/track/5pqmqD9kdWnTZUUGvUQnHc",
-                "track_id": "5pqmqD9kdWnTZUUGvUQnHc",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 47s"
-            },
-            {
-                "date": "10/07/2026 19:36",
-                "titre": "Sex with My Ex",
-                "artiste": "Lil Peep",
-                "url": "https://open.spotify.com/track/0H1Had94fszD13qsFsP1U5",
-                "track_id": "0H1Had94fszD13qsFsP1U5",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
