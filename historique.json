@@ -5,6 +5,32 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 17:59",
+                "titre": "27.06.25 (Magie)",
+                "artiste": "La Mano 1.9",
+                "url": "https://open.spotify.com/track/0HcmDNXoH14lxp0UI8H7Ut",
+                "track_id": "0HcmDNXoH14lxp0UI8H7Ut",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 17:56",
+                "titre": "Lac de Renens",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/2uBXaOlgXMOd6CU3CIW97h",
+                "track_id": "2uBXaOlgXMOd6CU3CIW97h",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 151.4
+            },
+            {
+                "date": "13/07/2026 17:55",
+                "titre": "G.A.N.G",
+                "artiste": "Tiakola; Niska; La Mano 1.9",
+                "url": "https://open.spotify.com/track/6YSVzHExxpiM7a2oTzoutK",
+                "track_id": "6YSVzHExxpiM7a2oTzoutK",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 189.4
+            },
+            {
                 "date": "13/07/2026 16:51",
                 "titre": "G.A.N.G",
                 "artiste": "Tiakola; Niska; La Mano 1.9",
@@ -842,30 +868,6 @@
                 "url": "https://open.spotify.com/track/0aBPVkS4iTRwqPai30solD",
                 "track_id": "0aBPVkS4iTRwqPai30solD",
                 "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 36s"
-            },
-            {
-                "date": "11/07/2026 19:44",
-                "titre": "Bomberman",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/0aBPVkS4iTRwqPai30solD",
-                "track_id": "0aBPVkS4iTRwqPai30solD",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 18:27",
-                "titre": "Sexy Woman",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/3rcYxqjhN14IdYmRwfWhbi",
-                "track_id": "3rcYxqjhN14IdYmRwfWhbi",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 18:21",
-                "titre": "STATION",
-                "artiste": "Tiakola; Genezio; Nemzzz",
-                "url": "https://open.spotify.com/track/7azhLleLOh0bgI1ZapgLsC",
-                "track_id": "7azhLleLOh0bgI1ZapgLsC",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
