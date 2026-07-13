@@ -24,7 +24,7 @@ intents.message_content = True
 # Définition de l'activité avec le bouton de redirection vers ton GitHub Pages
 activite_profil = discord.Activity(
     type=discord.ActivityType.playing,
-    name="SpotBot Dashboard",
+    name="SpotBot-data",
     buttons=[
         {
             "label": "Aller sur le Dashboard", 
@@ -614,16 +614,12 @@ async def on_ready():
                     await asyncio.sleep(0.2)
         except Exception as e: print(f"Erreur nettoyage initial : {e}")
         
+    # Force l'application de l'activité avec le bouton au démarrage
+    await bot.change_presence(status=discord.Status.online, activity=bot.activity)
+
     actualiser_messages.start()
     sauvegarde_periodique_github.start()
     classement_hebdomadaire_auto.start()
-
-@bot.event
-async def on_ready():
-    print(f"SpotBot est en ligne : {bot.user.name}")
-    
-    # Force l'application de l'activité avec le bouton au démarrage
-    await bot.change_presence(status=discord.Status.online, activity=bot.activity)
 
 @bot.event
 async def on_presence_update(before, after):
