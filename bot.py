@@ -7,7 +7,6 @@ import datetime
 import requests
 import discord
 import zoneinfo
-from datetime import datetime
 from discord import app_commands
 from discord.ext import commands, tasks
 from colorthief import ColorThief
@@ -387,7 +386,7 @@ def mettre_a_jour_historique_fin(membre, track_id, temps_ecoule, duree_totale):
 
 
 # --- TASK : TOUS LES LUNDIS 00:00 ---
-@tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=datetime.timezone.utc))
+@tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=zoneinfo.ZoneInfo("Europe/Paris")))
 async def classement_hebdomadaire_auto():
     if datetime.datetime.now().weekday() != 0:
         return
