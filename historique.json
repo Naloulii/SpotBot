@@ -5,6 +5,76 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 16:45",
+                "titre": "Jump",
+                "artiste": "L2B; iDS; La Mano 1.9",
+                "url": "https://open.spotify.com/track/2OwLtx7vxRiaZKZNaK1OwZ",
+                "track_id": "2OwLtx7vxRiaZKZNaK1OwZ",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 16:42",
+                "titre": "Jerrican (feat. La Mano 1.9)",
+                "artiste": "Guy2Bezbar; La Mano 1.9",
+                "url": "https://open.spotify.com/track/1Rn5zyHq4ocm7L5LSplVAB",
+                "track_id": "1Rn5zyHq4ocm7L5LSplVAB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 174.2
+            },
+            {
+                "date": "13/07/2026 16:38",
+                "titre": "LA QUOI ? (feat. La Mano 1.9)",
+                "artiste": "Nono La Grinta; La Mano 1.9",
+                "url": "https://open.spotify.com/track/5m9qUmxQDp9yuSysJT7nYu",
+                "track_id": "5m9qUmxQDp9yuSysJT7nYu",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 195.2
+            },
+            {
+                "date": "13/07/2026 16:35",
+                "titre": "Tout y est",
+                "artiste": "OBOY; La Mano 1.9; Jozii",
+                "url": "https://open.spotify.com/track/1W2zRAejDGNLqtqXpcrhVw",
+                "track_id": "1W2zRAejDGNLqtqXpcrhVw",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 169.0
+            },
+            {
+                "date": "13/07/2026 16:34",
+                "titre": "POP (feat. La Mano 1.9)",
+                "artiste": "Gazo; La Mano 1.9",
+                "url": "https://open.spotify.com/track/3QS5ROkb4aa4q4ggkgTFRO",
+                "track_id": "3QS5ROkb4aa4q4ggkgTFRO",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 16:34",
+                "titre": "POP (feat. La Mano 1.9)",
+                "artiste": "Gazo; La Mano 1.9",
+                "url": "https://open.spotify.com/track/23fxyoCF4qEXS5RSZ8xWPq",
+                "track_id": "23fxyoCF4qEXS5RSZ8xWPq",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 143.2
+            },
+            {
+                "date": "13/07/2026 16:34",
+                "titre": "POP (feat. La Mano 1.9)",
+                "artiste": "Gazo; La Mano 1.9",
+                "url": "https://open.spotify.com/track/3QS5ROkb4aa4q4ggkgTFRO",
+                "track_id": "3QS5ROkb4aa4q4ggkgTFRO",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 24s",
+                "temps_ecoute_secondes": 144.3
+            },
+            {
+                "date": "13/07/2026 16:32",
+                "titre": "POP (feat. La Mano 1.9)",
+                "artiste": "Gazo; La Mano 1.9",
+                "url": "https://open.spotify.com/track/23fxyoCF4qEXS5RSZ8xWPq",
+                "track_id": "23fxyoCF4qEXS5RSZ8xWPq",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 16s",
+                "temps_ecoute_secondes": 136.2
+            },
+            {
                 "date": "13/07/2026 16:28",
                 "titre": "LE PLAN",
                 "artiste": "JRK 19; La Mano 1.9",
@@ -793,70 +863,6 @@
                 "url": "https://open.spotify.com/track/5h8AeZDVehlypecICx9uTo",
                 "track_id": "5h8AeZDVehlypecICx9uTo",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 18:12",
-                "titre": "Encore",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/4NhwSlYxF4E1N6pcqnoZmk",
-                "track_id": "4NhwSlYxF4E1N6pcqnoZmk",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 18:09",
-                "titre": "VIP",
-                "artiste": "La Mano 1.9; XVI",
-                "url": "https://open.spotify.com/track/6RwydXnLDQQm7zJe2hNrel",
-                "track_id": "6RwydXnLDQQm7zJe2hNrel",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 17:39",
-                "titre": "Handek",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/0WsIZsmWvZssKc82Hd7BRb",
-                "track_id": "0WsIZsmWvZssKc82Hd7BRb",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 17:36",
-                "titre": "Mia Khalifa",
-                "artiste": "DJ Milane; La Mano 1.9",
-                "url": "https://open.spotify.com/track/0NZjUeXQFAU9ye8lwFHqUm",
-                "track_id": "0NZjUeXQFAU9ye8lwFHqUm",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 17:33",
-                "titre": "LVL UP",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/2RMy5nWvaQiBcJTWwdjG7t",
-                "track_id": "2RMy5nWvaQiBcJTWwdjG7t",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 17:30",
-                "titre": "R.A.T #2",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/2ol5ydCSSAWIJwNSZNhMzQ",
-                "track_id": "2ol5ydCSSAWIJwNSZNhMzQ",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 17:27",
-                "titre": "C\u00e9libataire",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/2PBYKNHnCdyMQEWnvIh1Cy",
-                "track_id": "2PBYKNHnCdyMQEWnvIh1Cy",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 17:23",
-                "titre": "Canon",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/7oaoh0QZ9sAmp5cFNfF7QE",
-                "track_id": "7oaoh0QZ9sAmp5cFNfF7QE",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
@@ -866,12 +872,48 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 16:44",
+                "titre": "Life is Beautiful",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/5rYpwP1dHWGVMrSZbTmt3e",
+                "track_id": "5rYpwP1dHWGVMrSZbTmt3e",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 16:40",
+                "titre": "girls",
+                "artiste": "Lil Peep; Horse Head",
+                "url": "https://open.spotify.com/track/6hxWB5a6jxTmi9etW4Iw62",
+                "track_id": "6hxWB5a6jxTmi9etW4Iw62",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 242.0
+            },
+            {
+                "date": "13/07/2026 16:36",
+                "titre": "crybaby",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/0wRc4hpab040vqOgjIkYpb",
+                "track_id": "0wRc4hpab040vqOgjIkYpb",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 249.0
+            },
+            {
+                "date": "13/07/2026 16:33",
+                "titre": "Star Shopping",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/5ePUUBW4kMKWoP3RItbiQB",
+                "track_id": "5ePUUBW4kMKWoP3RItbiQB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 143.5
+            },
+            {
                 "date": "13/07/2026 16:31",
                 "titre": "giving girls cocaine",
                 "artiste": "Lil Peep; Lil Tracy",
                 "url": "https://open.spotify.com/track/7CYiqFCysFb6V4aDgvNzC5",
                 "track_id": "7CYiqFCysFb6V4aDgvNzC5",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 157.1
             },
             {
                 "date": "13/07/2026 16:28",
@@ -1645,38 +1687,6 @@
                 "artiste": "Mike Crook",
                 "url": "https://open.spotify.com/track/2Aksrb43W1rt0VwJ9VKl6g",
                 "track_id": "2Aksrb43W1rt0VwJ9VKl6g",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:55",
-                "titre": "What if I miss you for the rest of my life?",
-                "artiste": "Janine Berdin",
-                "url": "https://open.spotify.com/track/432pM7gIHQmksVaU3B50pN",
-                "track_id": "432pM7gIHQmksVaU3B50pN",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:51",
-                "titre": "Akatsuki no Requiem",
-                "artiste": "Linked Horizon",
-                "url": "https://open.spotify.com/track/2vH8JFJKfkAgZs1GFlOzGh",
-                "track_id": "2vH8JFJKfkAgZs1GFlOzGh",
-                "status": "En cours..."
-            },
-            {
-                "date": "10/07/2026 18:48",
-                "titre": "Akuma no Ko",
-                "artiste": "Ai Higuchi",
-                "url": "https://open.spotify.com/track/5cRKj1kynNFqiliT2ndZ3y",
-                "track_id": "5cRKj1kynNFqiliT2ndZ3y",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 3m 25s"
-            },
-            {
-                "date": "10/07/2026 18:45",
-                "titre": "L'inconnue",
-                "artiste": "Bekar",
-                "url": "https://open.spotify.com/track/6HpFYTYNzW8aJnYygnhXLH",
-                "track_id": "6HpFYTYNzW8aJnYygnhXLH",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]

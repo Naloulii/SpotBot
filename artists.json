@@ -466,5 +466,21 @@
     "lightboy": {
         "nom": "LightBoy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/72ae082eb52f95fce4d67a0cb3cc0a21/250x250-000000-80-0-0.jpg"
+    },
+    "oboy": {
+        "nom": "OBOY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/511c3d666ef1db36d1bdc9d87f65cf89/250x250-000000-80-0-0.jpg"
+    },
+    "jozii": {
+        "nom": "Jozii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bcaccf10c1fc92a87b92c9202cbe9d27/250x250-000000-80-0-0.jpg"
+    },
+    "horse head": {
+        "nom": "Horse Head",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/46b57ba40f821433437898b65c021536/250x250-000000-80-0-0.jpg"
+    },
+    "ids": {
+        "nom": "iDS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/99f7bf1c5c22d69b60cfe5b6d676e564/250x250-000000-80-0-0.jpg"
     }
 }
