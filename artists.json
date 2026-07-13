@@ -522,5 +522,13 @@
     "a6el a6el a6el": {
         "nom": "A6el A6el A6el",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6df1aa51df93a3eb4dc57557ed2a39f4/250x250-000000-80-0-0.jpg"
+    },
+    "instagram followers": {
+        "nom": "Instagram Followers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "cielbleu": {
+        "nom": "Cielbleu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/96302ee80d600299e4801dca21f2ba22/250x250-000000-80-0-0.jpg"
     }
 }
