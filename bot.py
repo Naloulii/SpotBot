@@ -127,6 +127,14 @@ def _sauvegarde_github_bloquante():
                 _shutil.copyfile(source, destination)
                 fichiers_publies.append(nom_fichier)
 
+        # Archives hebdomadaires (stats_week_XX_2026.json) : elles aussi publiées
+        import glob as _glob
+        for archive_path in _glob.glob(os.path.join(DATA_DIR, "stats_week_*.json")):
+            nom_archive = os.path.basename(archive_path)
+            destination = os.path.join(PUBLIC_DATA_DIR, nom_archive)
+            _shutil.copyfile(archive_path, destination)
+            fichiers_publies.append(nom_archive)
+
         if fichiers_publies:
             public_repo.index.add(fichiers_publies)
 
