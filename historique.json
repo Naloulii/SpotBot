@@ -5,6 +5,59 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 12:57",
+                "titre": "J'Suis Pas Bo",
+                "artiste": "Sam Sauvage",
+                "url": "https://open.spotify.com/track/1wPrfGvINb3lWrGbLWXedI",
+                "track_id": "1wPrfGvINb3lWrGbLWXedI",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 12:55",
+                "titre": "Pardon Pour Mes Fautes",
+                "artiste": "LightBoy",
+                "url": "https://open.spotify.com/track/5uaSxqmoiqdgFPHDLFZmcI",
+                "track_id": "5uaSxqmoiqdgFPHDLFZmcI",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 141.8
+            },
+            {
+                "date": "13/07/2026 12:52",
+                "titre": "texto",
+                "artiste": "aupinard",
+                "url": "https://open.spotify.com/track/1A5mybkJrvzcGBoOLflgsZ",
+                "track_id": "1A5mybkJrvzcGBoOLflgsZ",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 144.6
+            },
+            {
+                "date": "13/07/2026 12:48",
+                "titre": "See You Again (feat. Kali Uchis)",
+                "artiste": "Tyler, The Creator; Kali Uchis",
+                "url": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
+                "track_id": "7KA4W4McWYRpgf0fWsJZWB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 182.2
+            },
+            {
+                "date": "13/07/2026 12:46",
+                "titre": "Charbon tous les jours",
+                "artiste": "Zepo",
+                "url": "https://open.spotify.com/track/7rImS9ivEzj1GiEN5NffSf",
+                "track_id": "7rImS9ivEzj1GiEN5NffSf",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 102.6
+            },
+            {
+                "date": "13/07/2026 12:44",
+                "titre": "SOLEIL",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/6AoOzPhqx5LbtYfKBlBrEG",
+                "track_id": "6AoOzPhqx5LbtYfKBlBrEG",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 169.7
+            },
+            {
                 "date": "13/07/2026 12:40",
                 "titre": "BAD!",
                 "artiste": "Folie's",
@@ -785,54 +838,6 @@
                 "artiste": "a6el",
                 "url": "https://open.spotify.com/track/7gmwFiZtsPyBT8wI2u6mGN",
                 "track_id": "7gmwFiZtsPyBT8wI2u6mGN",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 01:21",
-                "titre": "SOLEIL",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/6AoOzPhqx5LbtYfKBlBrEG",
-                "track_id": "6AoOzPhqx5LbtYfKBlBrEG",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "09/07/2026 21:20",
-                "titre": "Daddy chocolat",
-                "artiste": "Koba LaD; Gazo",
-                "url": "https://open.spotify.com/track/4IbDTrLxImTJfZePAX2nKB",
-                "track_id": "4IbDTrLxImTJfZePAX2nKB",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 51s"
-            },
-            {
-                "date": "09/07/2026 10:37",
-                "titre": "PK TU M'AIMES\u00bf",
-                "artiste": "poissonchat",
-                "url": "https://open.spotify.com/track/4BjXB85GcIKELfPvKytXrx",
-                "track_id": "4BjXB85GcIKELfPvKytXrx",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 24s"
-            },
-            {
-                "date": "09/07/2026 10:36",
-                "titre": "Loto",
-                "artiste": "H holborn",
-                "url": "https://open.spotify.com/track/4g2b4zaOqqOcwVLSOlCR9D",
-                "track_id": "4g2b4zaOqqOcwVLSOlCR9D",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "09/07/2026 10:35",
-                "titre": "Loto",
-                "artiste": "H holborn",
-                "url": "https://open.spotify.com/track/4g2b4zaOqqOcwVLSOlCR9D",
-                "track_id": "4g2b4zaOqqOcwVLSOlCR9D",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 11s"
-            },
-            {
-                "date": "09/07/2026 10:34",
-                "titre": "Lac de Renens",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/2uBXaOlgXMOd6CU3CIW97h",
-                "track_id": "2uBXaOlgXMOd6CU3CIW97h",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]

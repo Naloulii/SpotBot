@@ -450,5 +450,21 @@
     "luidji": {
         "nom": "Luidji",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d9dd12e27eef5186a56cdcfafefb80df/250x250-000000-80-0-0.jpg"
+    },
+    "zepo": {
+        "nom": "Zepo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4bcec0d32ff0a2433ce1cb69b104be30/250x250-000000-80-0-0.jpg"
+    },
+    "tyler, the creator": {
+        "nom": "Tyler, The Creator",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5eceecd683beab6dd901a7931294a121/250x250-000000-80-0-0.jpg"
+    },
+    "kali uchis": {
+        "nom": "Kali Uchis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9d0d52af2e1e4ec56b67b495b87fc4c0/250x250-000000-80-0-0.jpg"
+    },
+    "lightboy": {
+        "nom": "LightBoy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/72ae082eb52f95fce4d67a0cb3cc0a21/250x250-000000-80-0-0.jpg"
     }
 }
