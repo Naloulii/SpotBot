@@ -490,5 +490,13 @@
     "vance joy": {
         "nom": "Vance Joy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7193e13dea1bf3dfd91bf84005bebacf/250x250-000000-80-0-0.jpg"
+    },
+    "lo\u00efc nottet": {
+        "nom": "Lo\u00efc Nottet",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de58feefce8aae9f2afae5bd92ea88ed/250x250-000000-80-0-0.jpg"
+    },
+    "magnolia park": {
+        "nom": "Magnolia Park",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/90584dc28ceb29ebd7e289cbfe8d1ce4/250x250-000000-80-0-0.jpg"
     }
 }
