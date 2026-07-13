@@ -5,6 +5,50 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 16:15",
+                "titre": "PARISIENNE",
+                "artiste": "GIMS; La Mano 1.9",
+                "url": "https://open.spotify.com/track/0wLCA75tmsos5ZcVzqHFQ1",
+                "track_id": "0wLCA75tmsos5ZcVzqHFQ1",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 16:12",
+                "titre": "Businessman",
+                "artiste": "La Mano 1.9",
+                "url": "https://open.spotify.com/track/0lsTAaJDMe45X5hna0LwYg",
+                "track_id": "0lsTAaJDMe45X5hna0LwYg",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 181.6
+            },
+            {
+                "date": "13/07/2026 16:07",
+                "titre": "EL GEMANO",
+                "artiste": "Genezio; La Mano 1.9",
+                "url": "https://open.spotify.com/track/2s0ECLNrusYkBud3ZuoVrc",
+                "track_id": "2s0ECLNrusYkBud3ZuoVrc",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 250.3
+            },
+            {
+                "date": "13/07/2026 16:05",
+                "titre": "Sexy Woman",
+                "artiste": "La Mano 1.9",
+                "url": "https://open.spotify.com/track/3rcYxqjhN14IdYmRwfWhbi",
+                "track_id": "3rcYxqjhN14IdYmRwfWhbi",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 153.3
+            },
+            {
+                "date": "13/07/2026 16:02",
+                "titre": "PK TU M'AIMES\u00bf",
+                "artiste": "poissonchat",
+                "url": "https://open.spotify.com/track/4BjXB85GcIKELfPvKytXrx",
+                "track_id": "4BjXB85GcIKELfPvKytXrx",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 195.9
+            },
+            {
                 "date": "13/07/2026 15:58",
                 "titre": "Mauvaise t\u00eate",
                 "artiste": "a6el",
@@ -808,46 +852,6 @@
                 "url": "https://open.spotify.com/track/2ynH9ETEo4OgLxNLJrcMKP",
                 "track_id": "2ynH9ETEo4OgLxNLJrcMKP",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 16:38",
-                "titre": "Crime ensoleill\u00e9",
-                "artiste": "La Mano 1.9; Tiakola",
-                "url": "https://open.spotify.com/track/3nsHrMb2NzFvgIxsEc2eGa",
-                "track_id": "3nsHrMb2NzFvgIxsEc2eGa",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 16:35",
-                "titre": "PARISIENNE",
-                "artiste": "GIMS; La Mano 1.9",
-                "url": "https://open.spotify.com/track/0wLCA75tmsos5ZcVzqHFQ1",
-                "track_id": "0wLCA75tmsos5ZcVzqHFQ1",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 16:32",
-                "titre": "Businessman",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/0lsTAaJDMe45X5hna0LwYg",
-                "track_id": "0lsTAaJDMe45X5hna0LwYg",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 16:27",
-                "titre": "EL GEMANO",
-                "artiste": "Genezio; La Mano 1.9",
-                "url": "https://open.spotify.com/track/2s0ECLNrusYkBud3ZuoVrc",
-                "track_id": "2s0ECLNrusYkBud3ZuoVrc",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 16:25",
-                "titre": "Sexy Woman",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/3rcYxqjhN14IdYmRwfWhbi",
-                "track_id": "3rcYxqjhN14IdYmRwfWhbi",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
@@ -857,12 +861,39 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 16:13",
+                "titre": "Problems",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/3f3EHJg9siYsaTRaSbhGEg",
+                "track_id": "3f3EHJg9siYsaTRaSbhGEg",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 16:08",
+                "titre": "Broken Smile (My All)",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/1BCBBO8VUEFOb6RBct4XDp",
+                "track_id": "1BCBBO8VUEFOb6RBct4XDp",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 281.7
+            },
+            {
+                "date": "13/07/2026 16:04",
+                "titre": "IDGAF",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/6zZhlOWizcEG1T7zsTdI6N",
+                "track_id": "6zZhlOWizcEG1T7zsTdI6N",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 215.6
+            },
+            {
                 "date": "13/07/2026 16:01",
                 "titre": "Pay Gorn",
                 "artiste": "Bouzbor",
                 "url": "https://open.spotify.com/track/07JBrAV58SSVJI1mTslabw",
                 "track_id": "07JBrAV58SSVJI1mTslabw",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 204.1
             },
             {
                 "date": "13/07/2026 16:00",
@@ -1635,30 +1666,6 @@
                 "artiste": "UdieNnx",
                 "url": "https://open.spotify.com/track/0qu88DVMYHhR64V2rsSdHF",
                 "track_id": "0qu88DVMYHhR64V2rsSdHF",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:28",
-                "titre": "ZYRE - SLOWED",
-                "artiste": "Zynyx; KREZUS",
-                "url": "https://open.spotify.com/track/35Xw1BCOJxh8RHN441jO2V",
-                "track_id": "35Xw1BCOJxh8RHN441jO2V",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:25",
-                "titre": "HYPNOTIZED",
-                "artiste": "ROZIII",
-                "url": "https://open.spotify.com/track/3GvNZhIG3QTye9xVKCXCiG",
-                "track_id": "3GvNZhIG3QTye9xVKCXCiG",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:21",
-                "titre": "Cocaine Kisses",
-                "artiste": "Leezy",
-                "url": "https://open.spotify.com/track/16ZyUjopBCjFOtCNfyJD9U",
-                "track_id": "16ZyUjopBCjFOtCNfyJD9U",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
