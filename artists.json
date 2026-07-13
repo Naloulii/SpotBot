@@ -442,5 +442,9 @@
     "luv resval": {
         "nom": "Luv Resval",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1b440744ee59e944d2151d87187793a1/250x250-000000-80-0-0.jpg"
+    },
+    "waks": {
+        "nom": "Waks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3714131bf8fa298b9afe2bd3ecf3f188/250x250-000000-80-0-0.jpg"
     }
 }

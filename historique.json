@@ -5,12 +5,57 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 12:28",
+                "titre": "Grain de sel",
+                "artiste": "Apez",
+                "url": "https://open.spotify.com/track/4FnXTGsdtHxlQFSMB8kZsL",
+                "track_id": "4FnXTGsdtHxlQFSMB8kZsL",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 12:25",
+                "titre": "RALENTIR",
+                "artiste": "euhZ",
+                "url": "https://open.spotify.com/track/5DVM8yN6fpiYrPycdbXn7x",
+                "track_id": "5DVM8yN6fpiYrPycdbXn7x",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 162.8
+            },
+            {
+                "date": "13/07/2026 12:21",
+                "titre": "8 sur le tec",
+                "artiste": "Waks",
+                "url": "https://open.spotify.com/track/1S9Y5vdNyM7IzXtCP7Sz4v",
+                "track_id": "1S9Y5vdNyM7IzXtCP7Sz4v",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 249.6
+            },
+            {
+                "date": "13/07/2026 12:18",
+                "titre": "Enlac\u00e9",
+                "artiste": "Apez",
+                "url": "https://open.spotify.com/track/4T3vC95dlW6gylYO5aFiiD",
+                "track_id": "4T3vC95dlW6gylYO5aFiiD",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 196.3
+            },
+            {
+                "date": "13/07/2026 12:16",
+                "titre": "Ours polaire",
+                "artiste": "Apez",
+                "url": "https://open.spotify.com/track/0mVxyeqk9x7g3RxAMlgsEf",
+                "track_id": "0mVxyeqk9x7g3RxAMlgsEf",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 144.1
+            },
+            {
                 "date": "13/07/2026 12:13",
                 "titre": "L'amant",
                 "artiste": "Orrage",
                 "url": "https://open.spotify.com/track/5Cqzl9icEW51dxH81n4VT1",
                 "track_id": "5Cqzl9icEW51dxH81n4VT1",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 172.7
             },
             {
                 "date": "13/07/2026 12:09",
@@ -784,46 +829,6 @@
                 "url": "https://open.spotify.com/track/2CLe4twLMtjKwWzRYzGaIA",
                 "track_id": "2CLe4twLMtjKwWzRYzGaIA",
                 "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 33s"
-            },
-            {
-                "date": "07/07/2026 08:25",
-                "titre": "Matuidi Charo (PSG)",
-                "artiste": "Niska; Rako; Brigi; Trafiquinte; Madrane",
-                "url": "https://open.spotify.com/track/2CLe4twLMtjKwWzRYzGaIA",
-                "track_id": "2CLe4twLMtjKwWzRYzGaIA",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 59s"
-            },
-            {
-                "date": "07/07/2026 08:23",
-                "titre": "Matuidi Charo (PSG)",
-                "artiste": "Niska; Rako; Brigi; Trafiquinte; Madrane",
-                "url": "https://open.spotify.com/track/2CLe4twLMtjKwWzRYzGaIA",
-                "track_id": "2CLe4twLMtjKwWzRYzGaIA",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 16s"
-            },
-            {
-                "date": "05/07/2026 12:28",
-                "titre": "Chanel",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/3TKi9R2cUg56cLTym2SmjS",
-                "track_id": "3TKi9R2cUg56cLTym2SmjS",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 52s"
-            },
-            {
-                "date": "05/07/2026 12:25",
-                "titre": "NETF (Freestyle)",
-                "artiste": "Ndotz",
-                "url": "https://open.spotify.com/track/0olqABuiNf9yXhy3CyAIqo",
-                "track_id": "0olqABuiNf9yXhy3CyAIqo",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "05/07/2026 12:23",
-                "titre": "MON B\u00c9B\u00c9",
-                "artiste": "RnBoi",
-                "url": "https://open.spotify.com/track/1yGJ40k7HLF3odITZPoQs4",
-                "track_id": "1yGJ40k7HLF3odITZPoQs4",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
