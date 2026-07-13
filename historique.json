@@ -643,12 +643,52 @@
         "display_name": "Loov",
         "ecoutes": [
             {
+                "date": "13/07/2026 00:32",
+                "titre": "Cocaine Kisses",
+                "artiste": "Leezy",
+                "url": "https://open.spotify.com/track/16ZyUjopBCjFOtCNfyJD9U",
+                "track_id": "16ZyUjopBCjFOtCNfyJD9U",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 00:29",
+                "titre": "FEEL",
+                "artiste": "Beneld; BURY",
+                "url": "https://open.spotify.com/track/6F12MoUtqXHy8Pdy110YeS",
+                "track_id": "6F12MoUtqXHy8Pdy110YeS",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:26",
+                "titre": "Headache",
+                "artiste": "Asal",
+                "url": "https://open.spotify.com/track/6juffWW6TFI5geCgjU6Lvp",
+                "track_id": "6juffWW6TFI5geCgjU6Lvp",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:23",
+                "titre": "The Lost Soul Down X Lost Soul",
+                "artiste": "NBSPLV",
+                "url": "https://open.spotify.com/track/0kbBU3ey5IkKwPvDHXJOry",
+                "track_id": "0kbBU3ey5IkKwPvDHXJOry",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:20",
+                "titre": "Strangers",
+                "artiste": "Kenya Grace",
+                "url": "https://open.spotify.com/track/593knnQN4REEshx8th9zgK",
+                "track_id": "593knnQN4REEshx8th9zgK",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "13/07/2026 00:17",
                 "titre": "Again (feat. XXXTENTACION)",
                 "artiste": "Noah Cyrus; XXXTENTACION",
                 "url": "https://open.spotify.com/track/2S2od3hT7ceytw7d1pTRuE",
                 "track_id": "2S2od3hT7ceytw7d1pTRuE",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "13/07/2026 00:13",
@@ -1400,46 +1440,6 @@
                 "artiste": "Beneld; BURY",
                 "url": "https://open.spotify.com/track/79P25hZ9wYUnyJXWunchVc",
                 "track_id": "79P25hZ9wYUnyJXWunchVc",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:22",
-                "titre": "i lied",
-                "artiste": "Cheyanne; Ex Habit",
-                "url": "https://open.spotify.com/track/1VHxhs9gPqE2Bo1M5fy0pe",
-                "track_id": "1VHxhs9gPqE2Bo1M5fy0pe",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:19",
-                "titre": "Headache (sped up)",
-                "artiste": "Asal",
-                "url": "https://open.spotify.com/track/2anwQVRjPcy8CNo3fbgQ3d",
-                "track_id": "2anwQVRjPcy8CNo3fbgQ3d",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:17",
-                "titre": "love me - sped up",
-                "artiste": "Ex Habit",
-                "url": "https://open.spotify.com/track/54WjZup7UFtEoayKPdFeVi",
-                "track_id": "54WjZup7UFtEoayKPdFeVi",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:14",
-                "titre": "dirty little secret",
-                "artiste": "Artemas",
-                "url": "https://open.spotify.com/track/1lau6K2YSP5APtkzNJxVyB",
-                "track_id": "1lau6K2YSP5APtkzNJxVyB",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:11",
-                "titre": "babydoll",
-                "artiste": "Ella Boh",
-                "url": "https://open.spotify.com/track/5VD4kbG0ZSLLgxm6JwXjzK",
-                "track_id": "5VD4kbG0ZSLLgxm6JwXjzK",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ],
