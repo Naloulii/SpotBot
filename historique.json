@@ -643,12 +643,52 @@
         "display_name": "Loov",
         "ecoutes": [
             {
+                "date": "13/07/2026 00:17",
+                "titre": "Again (feat. XXXTENTACION)",
+                "artiste": "Noah Cyrus; XXXTENTACION",
+                "url": "https://open.spotify.com/track/2S2od3hT7ceytw7d1pTRuE",
+                "track_id": "2S2od3hT7ceytw7d1pTRuE",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 00:13",
+                "titre": "Sinners (feat. Thomas LaRosa)",
+                "artiste": "Ari Abdul; Thomas LaRosa",
+                "url": "https://open.spotify.com/track/0VOyLRYrUBufrXQibWBipR",
+                "track_id": "0VOyLRYrUBufrXQibWBipR",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:10",
+                "titre": "ALL I WANTED WAS U",
+                "artiste": "Ex Habit; Omido",
+                "url": "https://open.spotify.com/track/1bvh7jWjFw6QIYH7gzBfPE",
+                "track_id": "1bvh7jWjFw6QIYH7gzBfPE",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:08",
+                "titre": "prettygrunge.wav",
+                "artiste": "Artemas",
+                "url": "https://open.spotify.com/track/5NQw9mvEfBYOEmfl0A2A0i",
+                "track_id": "5NQw9mvEfBYOEmfl0A2A0i",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:05",
+                "titre": "Intoxicated",
+                "artiste": "Aaryan Shah",
+                "url": "https://open.spotify.com/track/4VNQE6pKQd0A2W7OjAsDHT",
+                "track_id": "4VNQE6pKQd0A2W7OjAsDHT",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "13/07/2026 00:01",
                 "titre": "Worship",
                 "artiste": "Ari Abdul",
                 "url": "https://open.spotify.com/track/6TURPlJoVlJBtTwFZo0RUr",
                 "track_id": "6TURPlJoVlJBtTwFZo0RUr",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "12/07/2026 23:58",
@@ -1400,46 +1440,6 @@
                 "artiste": "Ella Boh",
                 "url": "https://open.spotify.com/track/5VD4kbG0ZSLLgxm6JwXjzK",
                 "track_id": "5VD4kbG0ZSLLgxm6JwXjzK",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:09",
-                "titre": "if u think i'm pretty - slowed",
-                "artiste": "Artemas",
-                "url": "https://open.spotify.com/track/57Swu1i6RX65e5y6E2mq2i",
-                "track_id": "57Swu1i6RX65e5y6E2mq2i",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:07",
-                "titre": "Who Do You Want",
-                "artiste": "Ex Habit",
-                "url": "https://open.spotify.com/track/131SfRMv57LKf8xtaSt39k",
-                "track_id": "131SfRMv57LKf8xtaSt39k",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:04",
-                "titre": "cross my heart",
-                "artiste": "Artemas",
-                "url": "https://open.spotify.com/track/1GnTBbaFtxNkHEjUsWEdNu",
-                "track_id": "1GnTBbaFtxNkHEjUsWEdNu",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:02",
-                "titre": "RUNRUNRUN",
-                "artiste": "Dutch Melrose",
-                "url": "https://open.spotify.com/track/3jwQt00cvkN57H6ZR75W2K",
-                "track_id": "3jwQt00cvkN57H6ZR75W2K",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:00",
-                "titre": "Fantasy",
-                "artiste": "Bazzi",
-                "url": "https://open.spotify.com/track/1i36kkhmhBxf4lYJscg5zK",
-                "track_id": "1i36kkhmhBxf4lYJscg5zK",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ],
