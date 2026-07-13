@@ -5,12 +5,57 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 23:15",
+                "titre": "Nisekoi",
+                "artiste": "Sley9ueve",
+                "url": "https://open.spotify.com/track/5554Uzr7o3rI8sF9k11t5H",
+                "track_id": "5554Uzr7o3rI8sF9k11t5H",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 23:11",
+                "titre": "ADVENTURE",
+                "artiste": "euhZ",
+                "url": "https://open.spotify.com/track/3pSjG1TJMu41T3piIyDlPk",
+                "track_id": "3pSjG1TJMu41T3piIyDlPk",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 140.3
+            },
+            {
+                "date": "13/07/2026 23:07",
+                "titre": "AZNVR - une minute de musique",
+                "artiste": "Luv Resval",
+                "url": "https://open.spotify.com/track/6fI56wJCJGWQKdufHuj55s",
+                "track_id": "6fI56wJCJGWQKdufHuj55s",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 241.9
+            },
+            {
+                "date": "13/07/2026 23:06",
+                "titre": "Recul",
+                "artiste": "Dinnomo",
+                "url": "https://open.spotify.com/track/03s5sVCnCO5D88g7DieeiM",
+                "track_id": "03s5sVCnCO5D88g7DieeiM",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 99.0
+            },
+            {
+                "date": "13/07/2026 23:03",
+                "titre": "Ahegao - Speed Up Version",
+                "artiste": "linker2g; Naykii; Hidxn; MaxLinker",
+                "url": "https://open.spotify.com/track/6K44ycxX5RD2LaL6Cu3WPT",
+                "track_id": "6K44ycxX5RD2LaL6Cu3WPT",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 146.7
+            },
+            {
                 "date": "13/07/2026 23:00",
                 "titre": "le bus - A COLORS SHOW",
                 "artiste": "Wallace Cleaver",
                 "url": "https://open.spotify.com/track/6tA6dED3veeMWrXexuWpbg",
                 "track_id": "6tA6dED3veeMWrXexuWpbg",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 180.5
             },
             {
                 "date": "13/07/2026 22:57",
@@ -855,50 +900,6 @@
                 "track_id": "4Np5YI09eEJAoLVuzDVjGf",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 171.0
-            },
-            {
-                "date": "13/07/2026 11:13",
-                "titre": "P\u00e9cheur",
-                "artiste": "Cer'VO",
-                "url": "https://open.spotify.com/track/6izUSo8HVaXG0weXjBexRC",
-                "track_id": "6izUSo8HVaXG0weXjBexRC",
-                "status": "En cours..."
-            },
-            {
-                "date": "13/07/2026 11:11",
-                "titre": "Un peu de haine",
-                "artiste": "PLK",
-                "url": "https://open.spotify.com/track/5yYfCoMrhcuxMP9CAmA2rU",
-                "track_id": "5yYfCoMrhcuxMP9CAmA2rU",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 170.1
-            },
-            {
-                "date": "13/07/2026 11:08",
-                "titre": "Bonbon \u00e0 la menthe",
-                "artiste": "Jok'air; Mallaury",
-                "url": "https://open.spotify.com/track/30RmEyZdIYdYpSTkMtgtKt",
-                "track_id": "30RmEyZdIYdYpSTkMtgtKt",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 318.5
-            },
-            {
-                "date": "13/07/2026 11:03",
-                "titre": "G!RL",
-                "artiste": "4leks",
-                "url": "https://open.spotify.com/track/5kl1kFhli74wlFoqmyV7kd",
-                "track_id": "5kl1kFhli74wlFoqmyV7kd",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 105.7
-            },
-            {
-                "date": "13/07/2026 11:00",
-                "titre": "Tout Donner",
-                "artiste": "Fav\u00e9",
-                "url": "https://open.spotify.com/track/0RvF4npJE38MywylRspRV5",
-                "track_id": "0RvF4npJE38MywylRspRV5",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 176.2
             }
         ]
     },

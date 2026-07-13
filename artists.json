@@ -534,5 +534,25 @@
     "nekfeu": {
         "nom": "Nekfeu",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0c093e137a288db8d08133ecf092c213/250x250-000000-80-0-0.jpg"
+    },
+    "linker2g": {
+        "nom": "linker2g",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d83b02b9745b0b28d202295979115622/250x250-000000-80-0-0.jpg"
+    },
+    "naykii": {
+        "nom": "Naykii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2543e890cb1924c0e8ab766a9b4ff2c9/250x250-000000-80-0-0.jpg"
+    },
+    "hidxn": {
+        "nom": "Hidxn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b75b3f95511d6d4796a19d7db4968b9e/250x250-000000-80-0-0.jpg"
+    },
+    "maxlinker": {
+        "nom": "MaxLinker",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2a63941d1ec36a5d09e777bbe065c909/250x250-000000-80-0-0.jpg"
+    },
+    "dinnomo": {
+        "nom": "Dinnomo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94e966bef85dca14ea7f07803b5b1a6c/250x250-000000-80-0-0.jpg"
     }
 }
