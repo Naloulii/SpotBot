@@ -410,5 +410,25 @@
     "cer'vo": {
         "nom": "Cer'VO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4d0e7a16ce1455d977769f0ec452d636/250x250-000000-80-0-0.jpg"
+    },
+    "wallace cleaver": {
+        "nom": "Wallace Cleaver",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/987d2275ff78a691169897ff8abbefa2/250x250-000000-80-0-0.jpg"
+    },
+    "orrage": {
+        "nom": "Orrage",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0f89649e5b5bcf9c9f5dcc18d089aaea/250x250-000000-80-0-0.jpg"
+    },
+    "apez": {
+        "nom": "Apez",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ca29aa6484528cd9c0ae85ba5f6c1de7/250x250-000000-80-0-0.jpg"
+    },
+    "dal\u00ed": {
+        "nom": "Dal\u00ed",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/82c3085863fc25a1aa1278527bffae56/250x250-000000-80-0-0.jpg"
+    },
+    "krisy": {
+        "nom": "Krisy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dc66046b075a0af973026ce5039a769a/250x250-000000-80-0-0.jpg"
     }
 }

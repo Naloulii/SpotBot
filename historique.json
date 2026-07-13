@@ -5,6 +5,51 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 11:54",
+                "titre": "Jeune Julio",
+                "artiste": "Krisy",
+                "url": "https://open.spotify.com/track/2JFUeJeTOjBBjPxzbGv1bM",
+                "track_id": "2JFUeJeTOjBBjPxzbGv1bM",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 205.8
+            },
+            {
+                "date": "13/07/2026 11:52",
+                "titre": "D\u00e9testable",
+                "artiste": "Dal\u00ed",
+                "url": "https://open.spotify.com/track/1Xhh0KjyQCZGKhwafMjwpH",
+                "track_id": "1Xhh0KjyQCZGKhwafMjwpH",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 169.3
+            },
+            {
+                "date": "13/07/2026 11:48",
+                "titre": "Quotidien",
+                "artiste": "Apez",
+                "url": "https://open.spotify.com/track/7sBjuRwNujjYST4tBEEpIp",
+                "track_id": "7sBjuRwNujjYST4tBEEpIp",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 210.1
+            },
+            {
+                "date": "13/07/2026 11:45",
+                "titre": "Night",
+                "artiste": "Orrage",
+                "url": "https://open.spotify.com/track/7sboc4xpVyGIPKWQd5QfQ2",
+                "track_id": "7sboc4xpVyGIPKWQd5QfQ2",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 168.8
+            },
+            {
+                "date": "13/07/2026 11:44",
+                "titre": "est-ce que je l'aime ?",
+                "artiste": "Wallace Cleaver",
+                "url": "https://open.spotify.com/track/4Np5YI09eEJAoLVuzDVjGf",
+                "track_id": "4Np5YI09eEJAoLVuzDVjGf",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 171.0
+            },
+            {
                 "date": "13/07/2026 11:13",
                 "titre": "P\u00e9cheur",
                 "artiste": "Cer'VO",
