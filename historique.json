@@ -5,6 +5,32 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 22:43",
+                "titre": "N\u00e9ons rouges / Belles chansons",
+                "artiste": "Luidji",
+                "url": "https://open.spotify.com/track/5caUjWecFugMA5zUep6IOJ",
+                "track_id": "5caUjWecFugMA5zUep6IOJ",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 22:42",
+                "titre": "Avenue Porte Brunet 2",
+                "artiste": "JRK 19",
+                "url": "https://open.spotify.com/track/51WGCZfvo9Z4jnCFmhWOrc",
+                "track_id": "51WGCZfvo9Z4jnCFmhWOrc",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 39s",
+                "temps_ecoute_secondes": 39.5
+            },
+            {
+                "date": "13/07/2026 22:40",
+                "titre": "IL LE FALLAIT",
+                "artiste": "Fav\u00e9",
+                "url": "https://open.spotify.com/track/57AxbUYAJozsGdT6dflzwX",
+                "track_id": "57AxbUYAJozsGdT6dflzwX",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 166.1
+            },
+            {
                 "date": "13/07/2026 21:26",
                 "titre": "ALED",
                 "artiste": "Luther",
@@ -872,33 +898,6 @@
                 "track_id": "6c7G3yjW1Ol5GVMgElmXwE",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 153.9
-            },
-            {
-                "date": "13/07/2026 10:36",
-                "titre": "Pi\u00f1a colada",
-                "artiste": "BES",
-                "url": "https://open.spotify.com/track/2pIuOdAmLuoUwSGSnFHPzo",
-                "track_id": "2pIuOdAmLuoUwSGSnFHPzo",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 98.1
-            },
-            {
-                "date": "13/07/2026 10:31",
-                "titre": "revolver",
-                "artiste": "aupinard; a6el",
-                "url": "https://open.spotify.com/track/0ZsmQPfjB6s5PTTC8OJiGx",
-                "track_id": "0ZsmQPfjB6s5PTTC8OJiGx",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 226.1
-            },
-            {
-                "date": "13/07/2026 10:29",
-                "titre": "CHROMATIK",
-                "artiste": "Priilick",
-                "url": "https://open.spotify.com/track/7xWTy15bfLZi1p7L9bSvEt",
-                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 150.8
             }
         ]
     },
