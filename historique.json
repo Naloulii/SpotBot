@@ -5,12 +5,57 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 23:00",
+                "titre": "le bus - A COLORS SHOW",
+                "artiste": "Wallace Cleaver",
+                "url": "https://open.spotify.com/track/6tA6dED3veeMWrXexuWpbg",
+                "track_id": "6tA6dED3veeMWrXexuWpbg",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 22:57",
+                "titre": "TORIEL - VENI VIDI VIDE",
+                "artiste": "Luther",
+                "url": "https://open.spotify.com/track/2EriWBuBVODGuSF5PMO29I",
+                "track_id": "2EriWBuBVODGuSF5PMO29I",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 143.5
+            },
+            {
+                "date": "13/07/2026 22:54",
+                "titre": "Mc Laren",
+                "artiste": "Fav\u00e9",
+                "url": "https://open.spotify.com/track/7hmJrC4lsvbukRNdOPBbWi",
+                "track_id": "7hmJrC4lsvbukRNdOPBbWi",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 191.4
+            },
+            {
+                "date": "13/07/2026 22:50",
+                "titre": "Eg\u00e9rie",
+                "artiste": "Nekfeu",
+                "url": "https://open.spotify.com/track/6UeG6DogntZ1s89ejurXhT",
+                "track_id": "6UeG6DogntZ1s89ejurXhT",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 213.1
+            },
+            {
+                "date": "13/07/2026 22:48",
+                "titre": "Grandiose",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/7Hr0GFgE5i5oXtUru3snaR",
+                "track_id": "7Hr0GFgE5i5oXtUru3snaR",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 160.3
+            },
+            {
                 "date": "13/07/2026 22:43",
                 "titre": "N\u00e9ons rouges / Belles chansons",
                 "artiste": "Luidji",
                 "url": "https://open.spotify.com/track/5caUjWecFugMA5zUep6IOJ",
                 "track_id": "5caUjWecFugMA5zUep6IOJ",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 303.0
             },
             {
                 "date": "13/07/2026 22:42",
@@ -854,50 +899,6 @@
                 "track_id": "0RvF4npJE38MywylRspRV5",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 176.2
-            },
-            {
-                "date": "13/07/2026 11:00",
-                "titre": "DIX",
-                "artiste": "DadySnow",
-                "url": "https://open.spotify.com/track/29AMFmgKAVgaPwuLQqpuTp",
-                "track_id": "29AMFmgKAVgaPwuLQqpuTp",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 05s",
-                "temps_ecoute_secondes": 5.7
-            },
-            {
-                "date": "13/07/2026 10:59",
-                "titre": "UN AUTRE JOUR",
-                "artiste": "FEMTOGO",
-                "url": "https://open.spotify.com/track/5rKSFzy6TQtPX71xTw6k9P",
-                "track_id": "5rKSFzy6TQtPX71xTw6k9P",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 04s",
-                "temps_ecoute_secondes": 124.7
-            },
-            {
-                "date": "13/07/2026 10:44",
-                "titre": "Volets ferm\u00e9s",
-                "artiste": "BES",
-                "url": "https://open.spotify.com/track/4INibE4TNsZkWBXTSktSIi",
-                "track_id": "4INibE4TNsZkWBXTSktSIi",
-                "status": "En cours..."
-            },
-            {
-                "date": "13/07/2026 10:40",
-                "titre": "Jeu",
-                "artiste": "Fav\u00e9",
-                "url": "https://open.spotify.com/track/3QCkktUWF3AD6BJkyqByGn",
-                "track_id": "3QCkktUWF3AD6BJkyqByGn",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 177.6
-            },
-            {
-                "date": "13/07/2026 10:37",
-                "titre": "J'arr\u00eaterai jamais",
-                "artiste": "Priilick",
-                "url": "https://open.spotify.com/track/6c7G3yjW1Ol5GVMgElmXwE",
-                "track_id": "6c7G3yjW1Ol5GVMgElmXwE",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 153.9
             }
         ]
     },

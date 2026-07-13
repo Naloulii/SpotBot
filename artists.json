@@ -530,5 +530,9 @@
     "cielbleu": {
         "nom": "Cielbleu",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/96302ee80d600299e4801dca21f2ba22/250x250-000000-80-0-0.jpg"
+    },
+    "nekfeu": {
+        "nom": "Nekfeu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0c093e137a288db8d08133ecf092c213/250x250-000000-80-0-0.jpg"
     }
 }
