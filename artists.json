@@ -446,5 +446,9 @@
     "waks": {
         "nom": "Waks",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3714131bf8fa298b9afe2bd3ecf3f188/250x250-000000-80-0-0.jpg"
+    },
+    "luidji": {
+        "nom": "Luidji",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d9dd12e27eef5186a56cdcfafefb80df/250x250-000000-80-0-0.jpg"
     }
 }

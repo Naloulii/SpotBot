@@ -5,12 +5,49 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 12:40",
+                "titre": "BAD!",
+                "artiste": "Folie's",
+                "url": "https://open.spotify.com/track/3nq3hIQOwKHRgd44Y06Ijq",
+                "track_id": "3nq3hIQOwKHRgd44Y06Ijq",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 162.8
+            },
+            {
+                "date": "13/07/2026 12:36",
+                "titre": "488",
+                "artiste": "Luidji",
+                "url": "https://open.spotify.com/track/6gqH1d1VyMuCyK0FEA2qkY",
+                "track_id": "6gqH1d1VyMuCyK0FEA2qkY",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 228.9
+            },
+            {
+                "date": "13/07/2026 12:35",
+                "titre": "Pi\u00f1a colada",
+                "artiste": "BES",
+                "url": "https://open.spotify.com/track/2pIuOdAmLuoUwSGSnFHPzo",
+                "track_id": "2pIuOdAmLuoUwSGSnFHPzo",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 98.4
+            },
+            {
+                "date": "13/07/2026 12:32",
+                "titre": "P\u00e9pite",
+                "artiste": "Apez",
+                "url": "https://open.spotify.com/track/3QAdazeOz0pd1tIaozfQOh",
+                "track_id": "3QAdazeOz0pd1tIaozfQOh",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 162.5
+            },
+            {
                 "date": "13/07/2026 12:28",
                 "titre": "Grain de sel",
                 "artiste": "Apez",
                 "url": "https://open.spotify.com/track/4FnXTGsdtHxlQFSMB8kZsL",
                 "track_id": "4FnXTGsdtHxlQFSMB8kZsL",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 157.5
             },
             {
                 "date": "13/07/2026 12:25",
@@ -797,38 +834,6 @@
                 "url": "https://open.spotify.com/track/2uBXaOlgXMOd6CU3CIW97h",
                 "track_id": "2uBXaOlgXMOd6CU3CIW97h",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "09/07/2026 10:32",
-                "titre": "Not Allowed",
-                "artiste": "TV Girl",
-                "url": "https://open.spotify.com/track/3IznIgmXtrUaoPWpQTy5jB",
-                "track_id": "3IznIgmXtrUaoPWpQTy5jB",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 30s"
-            },
-            {
-                "date": "09/07/2026 10:32",
-                "titre": "Not Allowed",
-                "artiste": "TV Girl",
-                "url": "https://open.spotify.com/track/3IznIgmXtrUaoPWpQTy5jB",
-                "track_id": "3IznIgmXtrUaoPWpQTy5jB",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 11s"
-            },
-            {
-                "date": "08/07/2026 22:37",
-                "titre": "Daddy chocolat",
-                "artiste": "Koba LaD; Gazo",
-                "url": "https://open.spotify.com/track/4IbDTrLxImTJfZePAX2nKB",
-                "track_id": "4IbDTrLxImTJfZePAX2nKB",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 03s"
-            },
-            {
-                "date": "07/07/2026 08:25",
-                "titre": "Matuidi Charo (PSG)",
-                "artiste": "Niska; Rako; Brigi; Trafiquinte; Madrane",
-                "url": "https://open.spotify.com/track/2CLe4twLMtjKwWzRYzGaIA",
-                "track_id": "2CLe4twLMtjKwWzRYzGaIA",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 33s"
             }
         ]
     },
