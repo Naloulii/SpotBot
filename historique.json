@@ -5,12 +5,67 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 18:12",
+                "titre": "MOMENTS DE GALERE",
+                "artiste": "Fav\u00e9",
+                "url": "https://open.spotify.com/track/1UiGJOUNpsLeqx1w0gKTou",
+                "track_id": "1UiGJOUNpsLeqx1w0gKTou",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 144.3
+            },
+            {
+                "date": "13/07/2026 18:11",
+                "titre": "Pi\u00f1a colada",
+                "artiste": "BES",
+                "url": "https://open.spotify.com/track/2pIuOdAmLuoUwSGSnFHPzo",
+                "track_id": "2pIuOdAmLuoUwSGSnFHPzo",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 99.0
+            },
+            {
+                "date": "13/07/2026 18:07",
+                "titre": "revolver",
+                "artiste": "aupinard; a6el",
+                "url": "https://open.spotify.com/track/0ZsmQPfjB6s5PTTC8OJiGx",
+                "track_id": "0ZsmQPfjB6s5PTTC8OJiGx",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 225.9
+            },
+            {
+                "date": "13/07/2026 18:04",
+                "titre": "CHROMATIK",
+                "artiste": "Priilick",
+                "url": "https://open.spotify.com/track/7xWTy15bfLZi1p7L9bSvEt",
+                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 151.8
+            },
+            {
+                "date": "13/07/2026 18:02",
+                "titre": "Lac de Renens",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/2uBXaOlgXMOd6CU3CIW97h",
+                "track_id": "2uBXaOlgXMOd6CU3CIW97h",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 151.5
+            },
+            {
+                "date": "13/07/2026 18:01",
+                "titre": "Tout Donner",
+                "artiste": "Fav\u00e9",
+                "url": "https://open.spotify.com/track/0RvF4npJE38MywylRspRV5",
+                "track_id": "0RvF4npJE38MywylRspRV5",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 08s",
+                "temps_ecoute_secondes": 8.6
+            },
+            {
                 "date": "13/07/2026 17:59",
                 "titre": "27.06.25 (Magie)",
                 "artiste": "La Mano 1.9",
                 "url": "https://open.spotify.com/track/0HcmDNXoH14lxp0UI8H7Ut",
                 "track_id": "0HcmDNXoH14lxp0UI8H7Ut",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 132.1
             },
             {
                 "date": "13/07/2026 17:56",
@@ -820,54 +875,6 @@
                 "url": "https://open.spotify.com/track/2s0ECLNrusYkBud3ZuoVrc",
                 "track_id": "2s0ECLNrusYkBud3ZuoVrc",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 12:23",
-                "titre": "I'm Sorry",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/2ynH9ETEo4OgLxNLJrcMKP",
-                "track_id": "2ynH9ETEo4OgLxNLJrcMKP",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 12:22",
-                "titre": "ON TAPE",
-                "artiste": "Booska-P; La Mano 1.9",
-                "url": "https://open.spotify.com/track/3nZQzDAlBNrZyh2WoOfrKn",
-                "track_id": "3nZQzDAlBNrZyh2WoOfrKn",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 12:18",
-                "titre": "POP (feat. La Mano 1.9)",
-                "artiste": "Gazo; La Mano 1.9",
-                "url": "https://open.spotify.com/track/23fxyoCF4qEXS5RSZ8xWPq",
-                "track_id": "23fxyoCF4qEXS5RSZ8xWPq",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 01:54",
-                "titre": "Jerrican (feat. La Mano 1.9)",
-                "artiste": "Guy2Bezbar; La Mano 1.9",
-                "url": "https://open.spotify.com/track/1Rn5zyHq4ocm7L5LSplVAB",
-                "track_id": "1Rn5zyHq4ocm7L5LSplVAB",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 59s"
-            },
-            {
-                "date": "12/07/2026 01:51",
-                "titre": "G.A.N.G",
-                "artiste": "Tiakola; Niska; La Mano 1.9",
-                "url": "https://open.spotify.com/track/4SDelMtafayKUqLrsrYFeI",
-                "track_id": "4SDelMtafayKUqLrsrYFeI",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 01:50",
-                "titre": "Bomberman",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/0aBPVkS4iTRwqPai30solD",
-                "track_id": "0aBPVkS4iTRwqPai30solD",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 36s"
             }
         ]
     },
