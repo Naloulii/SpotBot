@@ -510,5 +510,17 @@
     "jimin": {
         "nom": "Jimin",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c687c50187d12f56a32ad9069a29b107/250x250-000000-80-0-0.jpg"
+    },
+    "selug": {
+        "nom": "Selug",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a81c6fc8edd7ab35cd1e5a6108dcbaeb/250x250-000000-80-0-0.jpg"
+    },
+    "$enar": {
+        "nom": "$enar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/14e3161395875e6e4e043cdb7d0962dd/250x250-000000-80-0-0.jpg"
+    },
+    "a6el a6el a6el": {
+        "nom": "A6el A6el A6el",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6df1aa51df93a3eb4dc57557ed2a39f4/250x250-000000-80-0-0.jpg"
     }
 }
