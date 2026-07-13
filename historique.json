@@ -5,6 +5,23 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 20:30",
+                "titre": "CHROMATIK",
+                "artiste": "Priilick",
+                "url": "https://open.spotify.com/track/7xWTy15bfLZi1p7L9bSvEt",
+                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 20:28",
+                "titre": "Lac de Renens",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/2uBXaOlgXMOd6CU3CIW97h",
+                "track_id": "2uBXaOlgXMOd6CU3CIW97h",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 150.6
+            },
+            {
                 "date": "13/07/2026 18:12",
                 "titre": "MOMENTS DE GALERE",
                 "artiste": "Fav\u00e9",
@@ -858,22 +875,6 @@
                 "artiste": "JRK 19; La Mano 1.9",
                 "url": "https://open.spotify.com/track/0U7UH2iu2X4pWdlmyY3kSm",
                 "track_id": "0U7UH2iu2X4pWdlmyY3kSm",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 12:30",
-                "titre": "LA QUOI ? (feat. La Mano 1.9)",
-                "artiste": "Nono La Grinta; La Mano 1.9",
-                "url": "https://open.spotify.com/track/5m9qUmxQDp9yuSysJT7nYu",
-                "track_id": "5m9qUmxQDp9yuSysJT7nYu",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 12:25",
-                "titre": "EL GEMANO",
-                "artiste": "Genezio; La Mano 1.9",
-                "url": "https://open.spotify.com/track/2s0ECLNrusYkBud3ZuoVrc",
-                "track_id": "2s0ECLNrusYkBud3ZuoVrc",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
