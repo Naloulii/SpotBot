@@ -24,7 +24,7 @@ intents.message_content = True
 # Définition de l'activité avec le bouton de redirection vers ton GitHub Pages
 activite_profil = discord.Activity(
     type=discord.ActivityType.playing,
-    name="SpotBot-data",
+    name="SpotBot Dashboard",
     buttons=[
         {
             "label": "Aller sur le Dashboard", 
