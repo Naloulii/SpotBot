@@ -5,6 +5,59 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 15:01",
+                "titre": "CHROMATIK",
+                "artiste": "Priilick",
+                "url": "https://open.spotify.com/track/7xWTy15bfLZi1p7L9bSvEt",
+                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 14:59",
+                "titre": "ELLE STREAME JEUNE MORTY",
+                "artiste": "Priilick",
+                "url": "https://open.spotify.com/track/293mvbLSjFSXci9yyMyaEW",
+                "track_id": "293mvbLSjFSXci9yyMyaEW",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 106.0
+            },
+            {
+                "date": "13/07/2026 14:57",
+                "titre": "jd\u00e9teste les flammes",
+                "artiste": "Lekchan",
+                "url": "https://open.spotify.com/track/1zPzX39SWK3Z5cbmziDSaM",
+                "track_id": "1zPzX39SWK3Z5cbmziDSaM",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 110.2
+            },
+            {
+                "date": "13/07/2026 14:53",
+                "titre": "Syst\u00e8me",
+                "artiste": "Luidji",
+                "url": "https://open.spotify.com/track/1XNFIJMhSR7ozrxxjc9mcd",
+                "track_id": "1XNFIJMhSR7ozrxxjc9mcd",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 231.0
+            },
+            {
+                "date": "13/07/2026 14:50",
+                "titre": "Loto",
+                "artiste": "H holborn",
+                "url": "https://open.spotify.com/track/4g2b4zaOqqOcwVLSOlCR9D",
+                "track_id": "4g2b4zaOqqOcwVLSOlCR9D",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 157.9
+            },
+            {
+                "date": "13/07/2026 14:47",
+                "titre": "Cigarettes out the Window",
+                "artiste": "TV Girl",
+                "url": "https://open.spotify.com/track/6QeYSvYqYUsfBzsApbjDHO",
+                "track_id": "6QeYSvYqYUsfBzsApbjDHO",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 201.0
+            },
+            {
                 "date": "13/07/2026 12:57",
                 "titre": "J'Suis Pas Bo",
                 "artiste": "Sam Sauvage",
@@ -790,54 +843,6 @@
                 "artiste": "L2B",
                 "url": "https://open.spotify.com/track/2D2JZ8FHmkyGxcGrDpWGe4",
                 "track_id": "2D2JZ8FHmkyGxcGrDpWGe4",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 01:49",
-                "titre": "Ma jolie maison",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/301TUdLZZvNPFplmnWh0kb",
-                "track_id": "301TUdLZZvNPFplmnWh0kb",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 01:37",
-                "titre": "Ma jolie maison",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/301TUdLZZvNPFplmnWh0kb",
-                "track_id": "301TUdLZZvNPFplmnWh0kb",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 12s"
-            },
-            {
-                "date": "10/07/2026 01:33",
-                "titre": "Chanson triste (feat. a6el)",
-                "artiste": "Lujipeka; a6el",
-                "url": "https://open.spotify.com/track/1sc6lYULJA1X0s1yT9r2p3",
-                "track_id": "1sc6lYULJA1X0s1yT9r2p3",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 01:30",
-                "titre": "Rendez-vous fen\u00eatre",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/3i4iUba1YY8sZSdrrdXnVO",
-                "track_id": "3i4iUba1YY8sZSdrrdXnVO",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 01:28",
-                "titre": "Mauvaise t\u00eate",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/4QEg4vfzw0NwePfYMoJtwK",
-                "track_id": "4QEg4vfzw0NwePfYMoJtwK",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 01:25",
-                "titre": "J'attends au Carrefour Market",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/7gmwFiZtsPyBT8wI2u6mGN",
-                "track_id": "7gmwFiZtsPyBT8wI2u6mGN",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
