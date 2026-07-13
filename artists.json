@@ -378,5 +378,9 @@
     "priilick": {
         "nom": "Priilick",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/46c959fdc3bbeb9fdf75bdaaf3f1f7ed/250x250-000000-80-0-0.jpg"
+    },
+    "aupinard": {
+        "nom": "aupinard",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf9ca717e01113afe1ba7376ef85f920/250x250-000000-80-0-0.jpg"
     }
 }

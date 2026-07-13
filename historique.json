@@ -4,6 +4,59 @@
         "display_name": "Naloulii",
         "ecoutes": [
             {
+                "date": "13/07/2026 08:44",
+                "titre": "Volets ferm\u00e9s",
+                "artiste": "BES",
+                "url": "https://open.spotify.com/track/4INibE4TNsZkWBXTSktSIi",
+                "track_id": "4INibE4TNsZkWBXTSktSIi",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 08:40",
+                "titre": "Jeu",
+                "artiste": "Fav\u00e9",
+                "url": "https://open.spotify.com/track/3QCkktUWF3AD6BJkyqByGn",
+                "track_id": "3QCkktUWF3AD6BJkyqByGn",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 177.6
+            },
+            {
+                "date": "13/07/2026 08:37",
+                "titre": "J'arr\u00eaterai jamais",
+                "artiste": "Priilick",
+                "url": "https://open.spotify.com/track/6c7G3yjW1Ol5GVMgElmXwE",
+                "track_id": "6c7G3yjW1Ol5GVMgElmXwE",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 153.9
+            },
+            {
+                "date": "13/07/2026 08:36",
+                "titre": "Pi\u00f1a colada",
+                "artiste": "BES",
+                "url": "https://open.spotify.com/track/2pIuOdAmLuoUwSGSnFHPzo",
+                "track_id": "2pIuOdAmLuoUwSGSnFHPzo",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 98.1
+            },
+            {
+                "date": "13/07/2026 08:31",
+                "titre": "revolver",
+                "artiste": "aupinard; a6el",
+                "url": "https://open.spotify.com/track/0ZsmQPfjB6s5PTTC8OJiGx",
+                "track_id": "0ZsmQPfjB6s5PTTC8OJiGx",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 226.1
+            },
+            {
+                "date": "13/07/2026 08:29",
+                "titre": "CHROMATIK",
+                "artiste": "Priilick",
+                "url": "https://open.spotify.com/track/7xWTy15bfLZi1p7L9bSvEt",
+                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 150.8
+            },
+            {
                 "date": "12/07/2026 13:57",
                 "titre": "VTC",
                 "artiste": "Priilick",
