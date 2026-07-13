@@ -643,12 +643,52 @@
         "display_name": "Loov",
         "ecoutes": [
             {
+                "date": "13/07/2026 00:58",
+                "titre": "Akuma no Ko",
+                "artiste": "Ai Higuchi",
+                "url": "https://open.spotify.com/track/5cRKj1kynNFqiliT2ndZ3y",
+                "track_id": "5cRKj1kynNFqiliT2ndZ3y",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 00:56",
+                "titre": "L'inconnue",
+                "artiste": "Bekar",
+                "url": "https://open.spotify.com/track/6HpFYTYNzW8aJnYygnhXLH",
+                "track_id": "6HpFYTYNzW8aJnYygnhXLH",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:53",
+                "titre": "HEAVENLY JUMPSTYLE - Slowed",
+                "artiste": "TWXNY; Sxilwix; INNXCENCE",
+                "url": "https://open.spotify.com/track/2L13lNCrUn7djHt6XdE19l",
+                "track_id": "2L13lNCrUn7djHt6XdE19l",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:50",
+                "titre": "Come Over",
+                "artiste": "BTS",
+                "url": "https://open.spotify.com/track/6uvw8GFIqdqaJ4Nr3kN8Rs",
+                "track_id": "6uvw8GFIqdqaJ4Nr3kN8Rs",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:48",
+                "titre": "Medicate Me",
+                "artiste": "Rain City Drive; Dayseeker",
+                "url": "https://open.spotify.com/track/1EusMjYm7PZftlZn87vPWE",
+                "track_id": "1EusMjYm7PZftlZn87vPWE",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "13/07/2026 00:44",
                 "titre": "Grenade",
                 "artiste": "Bruno Mars",
                 "url": "https://open.spotify.com/track/4lLtanYk6tkMvooU0tWzG8",
                 "track_id": "4lLtanYk6tkMvooU0tWzG8",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "13/07/2026 00:42",
@@ -1400,46 +1440,6 @@
                 "artiste": "Aaryan Shah",
                 "url": "https://open.spotify.com/track/4VNQE6pKQd0A2W7OjAsDHT",
                 "track_id": "4VNQE6pKQd0A2W7OjAsDHT",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:51",
-                "titre": "Worship",
-                "artiste": "Ari Abdul",
-                "url": "https://open.spotify.com/track/6TURPlJoVlJBtTwFZo0RUr",
-                "track_id": "6TURPlJoVlJBtTwFZo0RUr",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:47",
-                "titre": "The Hills X Creepin X The Color Violet",
-                "artiste": "LonelyEve",
-                "url": "https://open.spotify.com/track/5qpXZ45eZA3VX3qe76tmqh",
-                "track_id": "5qpXZ45eZA3VX3qe76tmqh",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:45",
-                "titre": "Foreign Escape - Sped Up",
-                "artiste": "Nic Dean",
-                "url": "https://open.spotify.com/track/7BNHWUDHYIEohIlaOz7ZWc",
-                "track_id": "7BNHWUDHYIEohIlaOz7ZWc",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:43",
-                "titre": "Meteor",
-                "artiste": "Kenya Grace",
-                "url": "https://open.spotify.com/track/7zEUX3Ekdl2Kd122Ayhbrs",
-                "track_id": "7zEUX3Ekdl2Kd122Ayhbrs",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:40",
-                "titre": "PASSENGER PRINCESS",
-                "artiste": "Nessa Barrett",
-                "url": "https://open.spotify.com/track/6ob8d5WCrcxYGwBy6wLeQ1",
-                "track_id": "6ob8d5WCrcxYGwBy6wLeQ1",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ],
