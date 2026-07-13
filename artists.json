@@ -382,5 +382,33 @@
     "aupinard": {
         "nom": "aupinard",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bf9ca717e01113afe1ba7376ef85f920/250x250-000000-80-0-0.jpg"
+    },
+    "femtogo": {
+        "nom": "FEMTOGO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/07cde38e906e815ddee09640711d4b7e/250x250-000000-80-0-0.jpg"
+    },
+    "dadysnow": {
+        "nom": "DadySnow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e1ed1f8ef628968dd403ea70aae8590/250x250-000000-80-0-0.jpg"
+    },
+    "4leks": {
+        "nom": "4leks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0900c7c28aba7a03d7647a94966ff944/250x250-000000-80-0-0.jpg"
+    },
+    "jok'air": {
+        "nom": "Jok'air",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/29eef003799e0df703e3d89559f34e7a/250x250-000000-80-0-0.jpg"
+    },
+    "mallaury": {
+        "nom": "Mallaury",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0ca0c23fc50942fd76ff525435c1b281/250x250-000000-80-0-0.jpg"
+    },
+    "plk": {
+        "nom": "PLK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f57f9dca944e55afdd99802491c49823/250x250-000000-80-0-0.jpg"
+    },
+    "cer'vo": {
+        "nom": "Cer'VO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d0e7a16ce1455d977769f0ec452d636/250x250-000000-80-0-0.jpg"
     }
 }

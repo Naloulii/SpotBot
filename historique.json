@@ -4,6 +4,68 @@
         "display_name": "Naloulii",
         "ecoutes": [
             {
+                "date": "13/07/2026 12:13",
+                "titre": "P\u00e9cheur",
+                "artiste": "Cer'VO",
+                "url": "https://open.spotify.com/track/6izUSo8HVaXG0weXjBexRC",
+                "track_id": "6izUSo8HVaXG0weXjBexRC",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 12:11",
+                "titre": "Un peu de haine",
+                "artiste": "PLK",
+                "url": "https://open.spotify.com/track/5yYfCoMrhcuxMP9CAmA2rU",
+                "track_id": "5yYfCoMrhcuxMP9CAmA2rU",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 170.1
+            },
+            {
+                "date": "13/07/2026 12:08",
+                "titre": "Bonbon \u00e0 la menthe",
+                "artiste": "Jok'air; Mallaury",
+                "url": "https://open.spotify.com/track/30RmEyZdIYdYpSTkMtgtKt",
+                "track_id": "30RmEyZdIYdYpSTkMtgtKt",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 318.5
+            },
+            {
+                "date": "13/07/2026 12:03",
+                "titre": "G!RL",
+                "artiste": "4leks",
+                "url": "https://open.spotify.com/track/5kl1kFhli74wlFoqmyV7kd",
+                "track_id": "5kl1kFhli74wlFoqmyV7kd",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 105.7
+            },
+            {
+                "date": "13/07/2026 12:00",
+                "titre": "Tout Donner",
+                "artiste": "Fav\u00e9",
+                "url": "https://open.spotify.com/track/0RvF4npJE38MywylRspRV5",
+                "track_id": "0RvF4npJE38MywylRspRV5",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 176.2
+            },
+            {
+                "date": "13/07/2026 12:00",
+                "titre": "DIX",
+                "artiste": "DadySnow",
+                "url": "https://open.spotify.com/track/29AMFmgKAVgaPwuLQqpuTp",
+                "track_id": "29AMFmgKAVgaPwuLQqpuTp",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 05s",
+                "temps_ecoute_secondes": 5.7
+            },
+            {
+                "date": "13/07/2026 11:59",
+                "titre": "UN AUTRE JOUR",
+                "artiste": "FEMTOGO",
+                "url": "https://open.spotify.com/track/5rKSFzy6TQtPX71xTw6k9P",
+                "track_id": "5rKSFzy6TQtPX71xTw6k9P",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 04s",
+                "temps_ecoute_secondes": 124.7
+            },
+            {
                 "date": "13/07/2026 08:44",
                 "titre": "Volets ferm\u00e9s",
                 "artiste": "BES",
