@@ -430,5 +430,17 @@
     "krisy": {
         "nom": "Krisy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dc66046b075a0af973026ce5039a769a/250x250-000000-80-0-0.jpg"
+    },
+    "luther": {
+        "nom": "Luther",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/167c6978dd51494ca33e1a12d8ed39e5/250x250-000000-80-0-0.jpg"
+    },
+    "lekchan": {
+        "nom": "Lekchan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2e018a2473dceb6068bf2eecd6f10222/250x250-000000-80-0-0.jpg"
+    },
+    "luv resval": {
+        "nom": "Luv Resval",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1b440744ee59e944d2151d87187793a1/250x250-000000-80-0-0.jpg"
     }
 }

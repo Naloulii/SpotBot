@@ -5,6 +5,59 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 12:13",
+                "titre": "L'amant",
+                "artiste": "Orrage",
+                "url": "https://open.spotify.com/track/5Cqzl9icEW51dxH81n4VT1",
+                "track_id": "5Cqzl9icEW51dxH81n4VT1",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 12:09",
+                "titre": "Ballade nocturne III",
+                "artiste": "Luv Resval",
+                "url": "https://open.spotify.com/track/4ICiZtHc2yBtDw9YmQCOOO",
+                "track_id": "4ICiZtHc2yBtDw9YmQCOOO",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 207.5
+            },
+            {
+                "date": "13/07/2026 12:08",
+                "titre": "il bat",
+                "artiste": "Lekchan",
+                "url": "https://open.spotify.com/track/7f9Q5eX6wHgRRta77lDxwm",
+                "track_id": "7f9Q5eX6wHgRRta77lDxwm",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 75.7
+            },
+            {
+                "date": "13/07/2026 12:05",
+                "titre": "ALED",
+                "artiste": "Luther",
+                "url": "https://open.spotify.com/track/41hl3QWKVaFZMZTNZhrARK",
+                "track_id": "41hl3QWKVaFZMZTNZhrARK",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 203.6
+            },
+            {
+                "date": "13/07/2026 12:02",
+                "titre": "Not Allowed",
+                "artiste": "TV Girl",
+                "url": "https://open.spotify.com/track/3IznIgmXtrUaoPWpQTy5jB",
+                "track_id": "3IznIgmXtrUaoPWpQTy5jB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 170.0
+            },
+            {
+                "date": "13/07/2026 11:59",
+                "titre": "H\u00e9lico",
+                "artiste": "Orrage",
+                "url": "https://open.spotify.com/track/7BQFAWS6zeaIHXuT4aP2Ez",
+                "track_id": "7BQFAWS6zeaIHXuT4aP2Ez",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 190.6
+            },
+            {
                 "date": "13/07/2026 11:54",
                 "titre": "Jeune Julio",
                 "artiste": "Krisy",
@@ -770,30 +823,6 @@
                 "artiste": "RnBoi",
                 "url": "https://open.spotify.com/track/1yGJ40k7HLF3odITZPoQs4",
                 "track_id": "1yGJ40k7HLF3odITZPoQs4",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "05/07/2026 12:22",
-                "titre": "ON TAPE",
-                "artiste": "Booska-P; La Mano 1.9",
-                "url": "https://open.spotify.com/track/2jTKlJZr8sKKOdsNtJ3xTL",
-                "track_id": "2jTKlJZr8sKKOdsNtJ3xTL",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "05/07/2026 12:18",
-                "titre": "Money Maker",
-                "artiste": "Fav\u00e9",
-                "url": "https://open.spotify.com/track/2TPKdWw6ARYG7FBACiyQU2",
-                "track_id": "2TPKdWw6ARYG7FBACiyQU2",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "05/07/2026 12:16",
-                "titre": "H\u00c9 OH",
-                "artiste": "Gambi",
-                "url": "https://open.spotify.com/track/1bWafkUCOp6luXRs1cm3w9",
-                "track_id": "1bWafkUCOp6luXRs1cm3w9",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
