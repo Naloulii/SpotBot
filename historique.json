@@ -5,12 +5,31 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 16:51",
+                "titre": "G.A.N.G",
+                "artiste": "Tiakola; Niska; La Mano 1.9",
+                "url": "https://open.spotify.com/track/6YSVzHExxpiM7a2oTzoutK",
+                "track_id": "6YSVzHExxpiM7a2oTzoutK",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 186.9
+            },
+            {
+                "date": "13/07/2026 16:48",
+                "titre": "Bomberman",
+                "artiste": "La Mano 1.9",
+                "url": "https://open.spotify.com/track/0aBPVkS4iTRwqPai30solD",
+                "track_id": "0aBPVkS4iTRwqPai30solD",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 185.5
+            },
+            {
                 "date": "13/07/2026 16:45",
                 "titre": "Jump",
                 "artiste": "L2B; iDS; La Mano 1.9",
                 "url": "https://open.spotify.com/track/2OwLtx7vxRiaZKZNaK1OwZ",
                 "track_id": "2OwLtx7vxRiaZKZNaK1OwZ",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 167.5
             },
             {
                 "date": "13/07/2026 16:42",
@@ -847,22 +866,6 @@
                 "url": "https://open.spotify.com/track/7azhLleLOh0bgI1ZapgLsC",
                 "track_id": "7azhLleLOh0bgI1ZapgLsC",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 18:19",
-                "titre": "Chanel",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/3TKi9R2cUg56cLTym2SmjS",
-                "track_id": "3TKi9R2cUg56cLTym2SmjS",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "11/07/2026 18:15",
-                "titre": "4K",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/5h8AeZDVehlypecICx9uTo",
-                "track_id": "5h8AeZDVehlypecICx9uTo",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
@@ -872,12 +875,57 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 16:58",
+                "titre": "Riptide",
+                "artiste": "Vance Joy",
+                "url": "https://open.spotify.com/track/7yq4Qj7cqayVTp3FF9CWbm",
+                "track_id": "7yq4Qj7cqayVTp3FF9CWbm",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 16:57",
+                "titre": "il bat",
+                "artiste": "Lekchan",
+                "url": "https://open.spotify.com/track/7f9Q5eX6wHgRRta77lDxwm",
+                "track_id": "7f9Q5eX6wHgRRta77lDxwm",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 74.9
+            },
+            {
+                "date": "13/07/2026 16:54",
+                "titre": "ghost girl",
+                "artiste": "Lil Peep",
+                "url": "https://open.spotify.com/track/2YFc0r6PUWDAeE38vJnCxR",
+                "track_id": "2YFc0r6PUWDAeE38vJnCxR",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 175.5
+            },
+            {
+                "date": "13/07/2026 16:50",
+                "titre": "beamer boy",
+                "artiste": "Lil Peep; Nedarb",
+                "url": "https://open.spotify.com/track/1Rt5f1CktdvBOLX2RfBO6K",
+                "track_id": "1Rt5f1CktdvBOLX2RfBO6K",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 204.8
+            },
+            {
+                "date": "13/07/2026 16:47",
+                "titre": "right here",
+                "artiste": "Lil Peep; Horse Head",
+                "url": "https://open.spotify.com/track/7mTOeGfsxp8WXvVLL2B76c",
+                "track_id": "7mTOeGfsxp8WXvVLL2B76c",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 178.2
+            },
+            {
                 "date": "13/07/2026 16:44",
                 "titre": "Life is Beautiful",
                 "artiste": "Lil Peep",
                 "url": "https://open.spotify.com/track/5rYpwP1dHWGVMrSZbTmt3e",
                 "track_id": "5rYpwP1dHWGVMrSZbTmt3e",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 209.1
             },
             {
                 "date": "13/07/2026 16:40",
@@ -1647,46 +1695,6 @@
                 "artiste": "MARINA",
                 "url": "https://open.spotify.com/track/6IbnUaczZBT34DhaD6S18F",
                 "track_id": "6IbnUaczZBT34DhaD6S18F",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 19:14",
-                "titre": "Raindance (feat. Tems)",
-                "artiste": "Dave; Tems",
-                "url": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
-                "track_id": "3oTuTpF1F3A7rEC6RKsMRz",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 19:10",
-                "titre": "Bring Me To Life",
-                "artiste": "Evanescence",
-                "url": "https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp",
-                "track_id": "0COqiPhxzoWICwFCS4eZcp",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 19:05",
-                "titre": "The Winner Takes It All",
-                "artiste": "ABBA",
-                "url": "https://open.spotify.com/track/3oEkrIfXfSh9zGnE7eBzSV",
-                "track_id": "3oEkrIfXfSh9zGnE7eBzSV",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 19:01",
-                "titre": "Our Last Summer",
-                "artiste": "ABBA",
-                "url": "https://open.spotify.com/track/6hHXft1nFyvfVv6UoRToPZ",
-                "track_id": "6hHXft1nFyvfVv6UoRToPZ",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:58",
-                "titre": "on ur mind",
-                "artiste": "Mike Crook",
-                "url": "https://open.spotify.com/track/2Aksrb43W1rt0VwJ9VKl6g",
-                "track_id": "2Aksrb43W1rt0VwJ9VKl6g",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]

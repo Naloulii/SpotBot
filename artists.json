@@ -482,5 +482,13 @@
     "ids": {
         "nom": "iDS",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/99f7bf1c5c22d69b60cfe5b6d676e564/250x250-000000-80-0-0.jpg"
+    },
+    "nedarb": {
+        "nom": "Nedarb",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4e9de1c4d0603d5ac4189d7b37a0de6c/250x250-000000-80-0-0.jpg"
+    },
+    "vance joy": {
+        "nom": "Vance Joy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7193e13dea1bf3dfd91bf84005bebacf/250x250-000000-80-0-0.jpg"
     }
 }
