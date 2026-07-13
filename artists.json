@@ -554,5 +554,9 @@
     "dinnomo": {
         "nom": "Dinnomo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/94e966bef85dca14ea7f07803b5b1a6c/250x250-000000-80-0-0.jpg"
+    },
+    "amne": {
+        "nom": "amne",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/357774b796aa557ca6a634498f746fa8/250x250-000000-80-0-0.jpg"
     }
 }
