@@ -5,12 +5,49 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 21:26",
+                "titre": "ALED",
+                "artiste": "Luther",
+                "url": "https://open.spotify.com/track/41hl3QWKVaFZMZTNZhrARK",
+                "track_id": "41hl3QWKVaFZMZTNZhrARK",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 3m 12s",
+                "temps_ecoute_secondes": 192.5
+            },
+            {
+                "date": "13/07/2026 21:23",
+                "titre": "See You Again (feat. Kali Uchis)",
+                "artiste": "Tyler, The Creator; Kali Uchis",
+                "url": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
+                "track_id": "7KA4W4McWYRpgf0fWsJZWB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 181.5
+            },
+            {
+                "date": "13/07/2026 21:20",
+                "titre": "See You Again (feat. Kali Uchis)",
+                "artiste": "Tyler, The Creator; Kali Uchis",
+                "url": "https://open.spotify.com/track/7v5UK0feywwgfvPQOhoONp",
+                "track_id": "7v5UK0feywwgfvPQOhoONp",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 54s",
+                "temps_ecoute_secondes": 174.5
+            },
+            {
+                "date": "13/07/2026 21:18",
+                "titre": "quel type de vibe?",
+                "artiste": "aupinard",
+                "url": "https://open.spotify.com/track/7iospt7wmXY3BdoHsK666Y",
+                "track_id": "7iospt7wmXY3BdoHsK666Y",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 117.7
+            },
+            {
                 "date": "13/07/2026 21:15",
                 "titre": "D\u00e9testable",
                 "artiste": "Dal\u00ed",
                 "url": "https://open.spotify.com/track/1Xhh0KjyQCZGKhwafMjwpH",
                 "track_id": "1Xhh0KjyQCZGKhwafMjwpH",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 167.2
             },
             {
                 "date": "13/07/2026 21:13",
@@ -862,38 +899,6 @@
                 "track_id": "7xWTy15bfLZi1p7L9bSvEt",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 150.8
-            },
-            {
-                "date": "12/07/2026 15:57",
-                "titre": "VTC",
-                "artiste": "Priilick",
-                "url": "https://open.spotify.com/track/5FymYf7jeZsnKTi1kmIt2t",
-                "track_id": "5FymYf7jeZsnKTi1kmIt2t",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 30s"
-            },
-            {
-                "date": "12/07/2026 15:55",
-                "titre": "ELLE STREAME JEUNE MORTY",
-                "artiste": "Priilick",
-                "url": "https://open.spotify.com/track/293mvbLSjFSXci9yyMyaEW",
-                "track_id": "293mvbLSjFSXci9yyMyaEW",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 15:53",
-                "titre": "ADVENTURE",
-                "artiste": "euhZ",
-                "url": "https://open.spotify.com/track/3pSjG1TJMu41T3piIyDlPk",
-                "track_id": "3pSjG1TJMu41T3piIyDlPk",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "12/07/2026 15:50",
-                "titre": "MGL",
-                "artiste": "euhZ",
-                "url": "https://open.spotify.com/track/4yVEmoFQjoqVbnKk1aezu4",
-                "track_id": "4yVEmoFQjoqVbnKk1aezu4",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
