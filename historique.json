@@ -643,12 +643,36 @@
         "display_name": "Loov",
         "ecoutes": [
             {
+                "date": "13/07/2026 01:06",
+                "titre": "on ur mind",
+                "artiste": "Mike Crook",
+                "url": "https://open.spotify.com/track/2Aksrb43W1rt0VwJ9VKl6g",
+                "track_id": "2Aksrb43W1rt0VwJ9VKl6g",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 13s"
+            },
+            {
+                "date": "13/07/2026 01:03",
+                "titre": "What if I miss you for the rest of my life?",
+                "artiste": "Janine Berdin",
+                "url": "https://open.spotify.com/track/432pM7gIHQmksVaU3B50pN",
+                "track_id": "432pM7gIHQmksVaU3B50pN",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 01:02",
+                "titre": "Akatsuki no Requiem",
+                "artiste": "Linked Horizon",
+                "url": "https://open.spotify.com/track/2vH8JFJKfkAgZs1GFlOzGh",
+                "track_id": "2vH8JFJKfkAgZs1GFlOzGh",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 52s"
+            },
+            {
                 "date": "13/07/2026 00:58",
                 "titre": "Akuma no Ko",
                 "artiste": "Ai Higuchi",
                 "url": "https://open.spotify.com/track/5cRKj1kynNFqiliT2ndZ3y",
                 "track_id": "5cRKj1kynNFqiliT2ndZ3y",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "13/07/2026 00:56",
@@ -1416,30 +1440,6 @@
                 "artiste": "Ari Abdul; Thomas LaRosa",
                 "url": "https://open.spotify.com/track/0VOyLRYrUBufrXQibWBipR",
                 "track_id": "0VOyLRYrUBufrXQibWBipR",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:59",
-                "titre": "ALL I WANTED WAS U",
-                "artiste": "Ex Habit; Omido",
-                "url": "https://open.spotify.com/track/1bvh7jWjFw6QIYH7gzBfPE",
-                "track_id": "1bvh7jWjFw6QIYH7gzBfPE",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:57",
-                "titre": "prettygrunge.wav",
-                "artiste": "Artemas",
-                "url": "https://open.spotify.com/track/5NQw9mvEfBYOEmfl0A2A0i",
-                "track_id": "5NQw9mvEfBYOEmfl0A2A0i",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:54",
-                "titre": "Intoxicated",
-                "artiste": "Aaryan Shah",
-                "url": "https://open.spotify.com/track/4VNQE6pKQd0A2W7OjAsDHT",
-                "track_id": "4VNQE6pKQd0A2W7OjAsDHT",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ],
