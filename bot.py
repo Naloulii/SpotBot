@@ -321,20 +321,52 @@ def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
     mettre_a_jour_cache_artistes(artiste)
 
 def mettre_a_jour_historique_fin(membre, track_id, temps_ecoule, duree_totale):
+    """Termine l'écoute en cours pour ce morceau : le valide soit seul (>= 96%),
+    soit en cumulant avec les écoutes précédentes NON validées de ce même morceau
+    — même espacées de plusieurs jours, et même si d'autres morceaux ont été
+    écoutés entre-temps. Seule l'écoute la plus récente est marquée validée et
+    reçoit le point ; les écoutes précédentes gardent leur statut d'origine."""
     user_id = str(membre.id)
     historique = charger_historique()
-    if user_id in historique:
-        for ecoute in historique[user_id]["ecoutes"]:
-            if ecoute.get("track_id") == track_id and ecoute["status"] == "En cours...":
-                # Même seuil que la validation du point (90%) pour éviter qu'un morceau
-                # compté comme "validé" s'affiche quand même comme "pas fini".
-                if duree_totale > 0 and (temps_ecoule / duree_totale) >= 0.96:
-                    ecoute["status"] = "🎉 Écouté en entier"
-                else:
-                    m, s = divmod(int(temps_ecoule), 60)
-                    ecoute["status"] = f"⏱️ Écouté pendant {m}m {s:02d}s"
-                break
-        sauvegarder_historique(historique)
+    if user_id not in historique:
+        return
+
+    ecoutes = historique[user_id]["ecoutes"]
+
+    index_actuel = None
+    for i, ecoute in enumerate(ecoutes):
+        if ecoute.get("track_id") == track_id and ecoute["status"] == "En cours...":
+            index_actuel = i
+            break
+    if index_actuel is None:
+        return
+
+    ecoute_actuelle = ecoutes[index_actuel]
+    ecoute_actuelle["temps_ecoute_secondes"] = round(temps_ecoule, 1)
+
+    # Cumul avec les écoutes précédentes du MÊME morceau, tant qu'elles n'ont pas
+    # déjà été validées individuellement (une validation antérieure "réinitialise"
+    # le cumul : on ne remonte pas plus loin que ça).
+    temps_cumule = temps_ecoule
+    for ecoute_precedente in ecoutes[index_actuel + 1:]:
+        if ecoute_precedente.get("track_id") != track_id:
+            continue
+        if ecoute_precedente["status"] == "🎉 Écouté en entier":
+            break
+        temps_cumule += ecoute_precedente.get("temps_ecoute_secondes", 0)
+
+    valide = duree_totale > 0 and (temps_cumule / duree_totale) >= 0.96
+
+    if valide:
+        ecoute_actuelle["status"] = "🎉 Écouté en entier"
+    else:
+        m, s = divmod(int(temps_ecoule), 60)
+        ecoute_actuelle["status"] = f"⏱️ Écouté pendant {m}m {s:02d}s"
+
+    sauvegarder_historique(historique)
+
+    if valide:
+        enregistrer_stat_membre(membre)
 
 
 # --- TASK : TOUS LES LUNDIS 00:00 ---
@@ -514,9 +546,6 @@ async def verifier_presence_spotify(membre):
                 now_utc = datetime.datetime.now(datetime.timezone.utc)
                 temps_ecoule = (now_utc - infos_anciennes["start_time"]).total_seconds()
                 
-                if infos_anciennes["duration"] > 0 and (temps_ecoule / infos_anciennes["duration"]) >= 0.96:
-                    enregistrer_stat_membre(membre)
-                
                 mettre_a_jour_historique_fin(membre, infos_anciennes["track_id"], temps_ecoule, infos_anciennes["duration"])
 
                 try:
@@ -547,11 +576,8 @@ async def verifier_presence_spotify(membre):
 
         mettre_a_jour_historique_fin(membre, infos["track_id"], temps_ecoule, duree_totale)
 
-        if duree_totale > 0 and (temps_ecoule / duree_totale) >= 0.96:
-            enregistrer_stat_membre(membre)
-
         try:
-            msg_a_supprimer = await salon.fetch_message(infos["message_id"])
+            msg_a_supprimer = infos.get("message_obj") or await salon.fetch_message(infos["message_id"])
             await msg_a_supprimer.delete()
         except Exception: pass
         finally:
