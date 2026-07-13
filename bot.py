@@ -6,16 +6,25 @@ import asyncio
 import datetime
 import requests
 import discord
+import zoneinfo
+from datetime import datetime
 from discord import app_commands
 from discord.ext import commands, tasks
 from colorthief import ColorThief
 from git import Repo
+
+# Définir le fuseau horaire de Paris
+paris_tz = zoneinfo.ZoneInfo("Europe/Paris")
+heure_locale = datetime.now(paris_tz)
+
+print(heure_locale.strftime("%H:%M:%S"))
 
 # Configuration du Bot Discord
 intents = discord.Intents.default()
 intents.presences = True
 intents.members = True
 intents.message_content = True
+
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
