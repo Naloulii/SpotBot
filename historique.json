@@ -5,6 +5,33 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 15:58",
+                "titre": "Mauvaise t\u00eate",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/4QEg4vfzw0NwePfYMoJtwK",
+                "track_id": "4QEg4vfzw0NwePfYMoJtwK",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 160.2
+            },
+            {
+                "date": "13/07/2026 15:55",
+                "titre": "EGO.",
+                "artiste": "Sley9ueve",
+                "url": "https://open.spotify.com/track/1EAUUpy9n0TMPAb4AumwnB",
+                "track_id": "1EAUUpy9n0TMPAb4AumwnB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 160.2
+            },
+            {
+                "date": "13/07/2026 15:53",
+                "titre": "J'attends au Carrefour Market",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/7gmwFiZtsPyBT8wI2u6mGN",
+                "track_id": "7gmwFiZtsPyBT8wI2u6mGN",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 157.3
+            },
+            {
                 "date": "13/07/2026 15:01",
                 "titre": "CHROMATIK",
                 "artiste": "Priilick",
@@ -821,30 +848,6 @@
                 "url": "https://open.spotify.com/track/3rcYxqjhN14IdYmRwfWhbi",
                 "track_id": "3rcYxqjhN14IdYmRwfWhbi",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 20:53",
-                "titre": "ZOMBIE M'APPELLE",
-                "artiste": "Leto; La Mano 1.9",
-                "url": "https://open.spotify.com/track/3Jecj7kyfvgmfDuzvlMCrF",
-                "track_id": "3Jecj7kyfvgmfDuzvlMCrF",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 33s"
-            },
-            {
-                "date": "10/07/2026 20:50",
-                "titre": "Tout Pour L'\u00e9quipe",
-                "artiste": "L2B",
-                "url": "https://open.spotify.com/track/2D2JZ8FHmkyGxcGrDpWGe4",
-                "track_id": "2D2JZ8FHmkyGxcGrDpWGe4",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 20:50",
-                "titre": "Tout Pour L'\u00e9quipe",
-                "artiste": "L2B",
-                "url": "https://open.spotify.com/track/2D2JZ8FHmkyGxcGrDpWGe4",
-                "track_id": "2D2JZ8FHmkyGxcGrDpWGe4",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
     },
@@ -854,12 +857,48 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "13/07/2026 16:01",
+                "titre": "Pay Gorn",
+                "artiste": "Bouzbor",
+                "url": "https://open.spotify.com/track/07JBrAV58SSVJI1mTslabw",
+                "track_id": "07JBrAV58SSVJI1mTslabw",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 16:00",
+                "titre": "Bubblegum Bitch",
+                "artiste": "MARINA",
+                "url": "https://open.spotify.com/track/6IbnUaczZBT34DhaD6S18F",
+                "track_id": "6IbnUaczZBT34DhaD6S18F",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 48s",
+                "temps_ecoute_secondes": 48.5
+            },
+            {
+                "date": "13/07/2026 15:57",
+                "titre": "Raindance (feat. Tems)",
+                "artiste": "Dave; Tems",
+                "url": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
+                "track_id": "3oTuTpF1F3A7rEC6RKsMRz",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 221.2
+            },
+            {
+                "date": "13/07/2026 15:48",
+                "titre": "The Winner Takes It All",
+                "artiste": "ABBA",
+                "url": "https://open.spotify.com/track/3oEkrIfXfSh9zGnE7eBzSV",
+                "track_id": "3oEkrIfXfSh9zGnE7eBzSV",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 518.9
+            },
+            {
                 "date": "13/07/2026 15:43",
                 "titre": "Our Last Summer",
                 "artiste": "ABBA",
                 "url": "https://open.spotify.com/track/6hHXft1nFyvfVv6UoRToPZ",
                 "track_id": "6hHXft1nFyvfVv6UoRToPZ",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 265.6
             },
             {
                 "date": "13/07/2026 15:42",
@@ -1620,38 +1659,6 @@
                 "artiste": "Leezy",
                 "url": "https://open.spotify.com/track/16ZyUjopBCjFOtCNfyJD9U",
                 "track_id": "16ZyUjopBCjFOtCNfyJD9U",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:18",
-                "titre": "FEEL",
-                "artiste": "Beneld; BURY",
-                "url": "https://open.spotify.com/track/6F12MoUtqXHy8Pdy110YeS",
-                "track_id": "6F12MoUtqXHy8Pdy110YeS",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:15",
-                "titre": "Headache",
-                "artiste": "Asal",
-                "url": "https://open.spotify.com/track/6juffWW6TFI5geCgjU6Lvp",
-                "track_id": "6juffWW6TFI5geCgjU6Lvp",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:12",
-                "titre": "The Lost Soul Down X Lost Soul",
-                "artiste": "NBSPLV",
-                "url": "https://open.spotify.com/track/0kbBU3ey5IkKwPvDHXJOry",
-                "track_id": "0kbBU3ey5IkKwPvDHXJOry",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 18:09",
-                "titre": "Strangers",
-                "artiste": "Kenya Grace",
-                "url": "https://open.spotify.com/track/593knnQN4REEshx8th9zgK",
-                "track_id": "593knnQN4REEshx8th9zgK",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ]
