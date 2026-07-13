@@ -21,7 +21,19 @@ intents.presences = True
 intents.members = True
 intents.message_content = True
 
-bot = commands.Bot(command_prefix="!", intents=intents)
+# Définition de l'activité avec le bouton de redirection vers ton GitHub Pages
+activite_profil = discord.Activity(
+    type=discord.ActivityType.playing,
+    name="SpotBot-data",
+    buttons=[
+        {
+            "label": "Aller sur le Dashboard", 
+            "url": https://naloulii.github.io/SpotBot-data/
+        }
+    ]
+)
+
+bot = commands.Bot(command_prefix="!", intents=intents, activity=activite_profil)
 
 # ==========================================
 #          CONFIGURATION SÉCURISÉE
@@ -605,6 +617,13 @@ async def on_ready():
     actualiser_messages.start()
     sauvegarde_periodique_github.start()
     classement_hebdomadaire_auto.start()
+
+@bot.event
+async def on_ready():
+    print(f"SpotBot est en ligne : {bot.user.name}")
+    
+    # Force l'application de l'activité avec le bouton au démarrage
+    await bot.change_presence(status=discord.Status.online, activity=bot.activity)
 
 @bot.event
 async def on_presence_update(before, after):
