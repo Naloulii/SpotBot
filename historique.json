@@ -643,12 +643,52 @@
         "display_name": "Loov",
         "ecoutes": [
             {
+                "date": "13/07/2026 00:44",
+                "titre": "Grenade",
+                "artiste": "Bruno Mars",
+                "url": "https://open.spotify.com/track/4lLtanYk6tkMvooU0tWzG8",
+                "track_id": "4lLtanYk6tkMvooU0tWzG8",
+                "status": "En cours..."
+            },
+            {
+                "date": "13/07/2026 00:42",
+                "titre": "Babydoll",
+                "artiste": "Dominic Fike",
+                "url": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
+                "track_id": "7yNf9YjeO5JXUE3JEBgnYc",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:40",
+                "titre": "STRUCT - Slowed",
+                "artiste": "UdieNnx",
+                "url": "https://open.spotify.com/track/0qu88DVMYHhR64V2rsSdHF",
+                "track_id": "0qu88DVMYHhR64V2rsSdHF",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:38",
+                "titre": "ZYRE - SLOWED",
+                "artiste": "Zynyx; KREZUS",
+                "url": "https://open.spotify.com/track/35Xw1BCOJxh8RHN441jO2V",
+                "track_id": "35Xw1BCOJxh8RHN441jO2V",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "13/07/2026 00:36",
+                "titre": "HYPNOTIZED",
+                "artiste": "ROZIII",
+                "url": "https://open.spotify.com/track/3GvNZhIG3QTye9xVKCXCiG",
+                "track_id": "3GvNZhIG3QTye9xVKCXCiG",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "13/07/2026 00:32",
                 "titre": "Cocaine Kisses",
                 "artiste": "Leezy",
                 "url": "https://open.spotify.com/track/16ZyUjopBCjFOtCNfyJD9U",
                 "track_id": "16ZyUjopBCjFOtCNfyJD9U",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "13/07/2026 00:29",
@@ -1400,46 +1440,6 @@
                 "artiste": "Nessa Barrett",
                 "url": "https://open.spotify.com/track/6ob8d5WCrcxYGwBy6wLeQ1",
                 "track_id": "6ob8d5WCrcxYGwBy6wLeQ1",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:37",
-                "titre": "Right Ways - Sped Up",
-                "artiste": "Nick Alexandr",
-                "url": "https://open.spotify.com/track/0lgSgnY4OLyzCqn9ZAIuEB",
-                "track_id": "0lgSgnY4OLyzCqn9ZAIuEB",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:34",
-                "titre": "a little bit",
-                "artiste": "Ella Boh",
-                "url": "https://open.spotify.com/track/51T9b9rouc0TEKffdu2j92",
-                "track_id": "51T9b9rouc0TEKffdu2j92",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:31",
-                "titre": "Taste",
-                "artiste": "Ari Abdul",
-                "url": "https://open.spotify.com/track/1ghqDkglrXPcxgRobBmLVW",
-                "track_id": "1ghqDkglrXPcxgRobBmLVW",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:28",
-                "titre": "The Lost Soul Down",
-                "artiste": "NBSPLV",
-                "url": "https://open.spotify.com/track/5dPy1CCYQ04xaQHpajf5CY",
-                "track_id": "5dPy1CCYQ04xaQHpajf5CY",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
-            },
-            {
-                "date": "10/07/2026 15:25",
-                "titre": "FEEL - sped up",
-                "artiste": "Beneld; BURY",
-                "url": "https://open.spotify.com/track/79P25hZ9wYUnyJXWunchVc",
-                "track_id": "79P25hZ9wYUnyJXWunchVc",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             }
         ],
