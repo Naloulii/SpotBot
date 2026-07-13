@@ -5,12 +5,21 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 00:45",
+                "titre": "texto",
+                "artiste": "aupinard",
+                "url": "https://open.spotify.com/track/1A5mybkJrvzcGBoOLflgsZ",
+                "track_id": "1A5mybkJrvzcGBoOLflgsZ",
+                "status": "En cours..."
+            },
+            {
                 "date": "14/07/2026 00:06",
                 "titre": "Tout se Transforme",
                 "artiste": "LightBoy",
                 "url": "https://open.spotify.com/track/43v5Bb13yVsntUQVY7OBwt",
                 "track_id": "43v5Bb13yVsntUQVY7OBwt",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 2367.5
             },
             {
                 "date": "14/07/2026 00:04",
@@ -891,15 +900,6 @@
                 "track_id": "3nq3hIQOwKHRgd44Y06Ijq",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 162.8
-            },
-            {
-                "date": "13/07/2026 12:36",
-                "titre": "488",
-                "artiste": "Luidji",
-                "url": "https://open.spotify.com/track/6gqH1d1VyMuCyK0FEA2qkY",
-                "track_id": "6gqH1d1VyMuCyK0FEA2qkY",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 228.9
             }
         ]
     },
