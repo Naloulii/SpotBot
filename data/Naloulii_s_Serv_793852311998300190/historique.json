@@ -5,6 +5,23 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 23:56",
+                "track_id": "4yVEmoFQjoqVbnKk1aezu4",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 23:53",
+                "track_id": "6UeG6DogntZ1s89ejurXhT",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 211.0
+            },
+            {
+                "date": "14/07/2026 23:49",
+                "track_id": "4Np5YI09eEJAoLVuzDVjGf",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 170.5
+            },
+            {
                 "date": "14/07/2026 23:34",
                 "track_id": "6AoOzPhqx5LbtYfKBlBrEG",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
