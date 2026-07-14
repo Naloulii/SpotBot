@@ -710,5 +710,33 @@
     "dreamsoda": {
         "nom": "dreamsoda",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4c0afb4403c69ad58db916aafbb076d6/250x250-000000-80-0-0.jpg"
+    },
+    "vicetone": {
+        "nom": "Vicetone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d67a3aec61c76864090e12c305489459/250x250-000000-80-0-0.jpg"
+    },
+    "cozi zuehlsdorff": {
+        "nom": "Cozi Zuehlsdorff",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/98efbee9aa3032b89b28de8b03422ea0/250x250-000000-80-0-0.jpg"
+    },
+    "bbpanzu": {
+        "nom": "BBpanzu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47b42dc950b0b74c4f0e89207250fd2b/250x250-000000-80-0-0.jpg"
+    },
+    "riversmelt": {
+        "nom": "Riversmelt",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/15544817a1d535364585a4dcff854657/250x250-000000-80-0-0.jpg"
+    },
+    "skyper": {
+        "nom": "Skyper",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/372a6e1c8db69f6451d35ee21f7b1185/250x250-000000-80-0-0.jpg"
+    },
+    "h2hell": {
+        "nom": "H2HELL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c13af28b7ea160a4e844c16e5109d18/250x250-000000-80-0-0.jpg"
+    },
+    "dj fyp": {
+        "nom": "DJ FYP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/794b9a8df020820487472fd048169538/250x250-000000-80-0-0.jpg"
     }
 }
