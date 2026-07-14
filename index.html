@@ -601,6 +601,11 @@
     gap:16px;
   }
   @media (max-width:520px){ .tops-columns{ grid-template-columns:1fr; } }
+  /* min-width:0 est indispensable : par défaut une cellule de grid ne se
+     réduit jamais en dessous de la largeur intrinsèque de son contenu, donc
+     un titre/artiste long forçait toute la colonne à s'élargir et poussait
+     le compteur "Nx" hors du cadre de la carte. */
+  .tops-col{ min-width:0; }
 
   .tops-col-label{
     display:flex;
@@ -762,6 +767,7 @@
     display:flex;
     flex-direction:column;
     min-height:0;
+    min-width:0;
     padding:18px 22px;
   }
   .modal-col:first-child{ border-right:1px solid var(--border); }
@@ -1112,16 +1118,22 @@ function mountHistorique(container, historique, artists){
   draw();
 }
 
-/* Pochette : priorité à la cover du morceau (stockée par le bot), sinon photo
-   du premier artiste depuis le cache Deezer, sinon icône générique. */
-function trackThumb(coverUrl, artisteStr, artists, size = "thumb"){
+/* Pochette : priorité à la cover du morceau (stockée par le bot). Le fallback
+   sur la photo de l'artiste est désactivé par défaut : dans l'historique et
+   les favoris on veut la VRAIE pochette de l'album, jamais la PDP de
+   l'artiste (trompeur — on croirait que c'est la cover du morceau). Ce
+   fallback reste disponible (fallbackToArtist=true) pour le widget Tops, où
+   une photo d'artiste vaut mieux qu'un simple emoji. */
+function trackThumb(coverUrl, artisteStr, artists, size = "thumb", fallbackToArtist = false){
   if(coverUrl){
     return `<img class="${size}" src="${esc(coverUrl)}" alt="" loading="lazy">`;
   }
-  const premierArtiste = (artisteStr || "").split(";")[0].trim().toLowerCase();
-  const art = artists[premierArtiste];
-  if(art && art.image_url){
-    return `<img class="${size}" src="${esc(art.image_url)}" alt="" loading="lazy">`;
+  if(fallbackToArtist){
+    const premierArtiste = (artisteStr || "").split(";")[0].trim().toLowerCase();
+    const art = artists[premierArtiste];
+    if(art && art.image_url){
+      return `<img class="${size}" src="${esc(art.image_url)}" alt="" loading="lazy">`;
+    }
   }
   return `<span class="${size}-fallback">🎵</span>`;
 }
@@ -1249,10 +1261,18 @@ function computeTops(historique){
   return membres;
 }
 
-function topsRow(i, titre, sousTitre, img, count, kind){
+function topsRow(i, titre, sousTitre, img, count, kind, artists){
   const size = "tops-thumb";
-  const thumb = img
-    ? `<img class="${size} ${kind}" src="${esc(img)}" alt="" loading="lazy">`
+  let finalImg = img;
+  // Pas de pochette enregistrée pour ce morceau (souvent d'anciennes écoutes,
+  // sauvegardées avant l'ajout du champ cover_url) : on tente la photo du
+  // premier artiste plutôt que de laisser un simple emoji dans le Top.
+  if(!finalImg && kind === "song" && artists){
+    const premierArtiste = (sousTitre || "").split(";")[0].trim().toLowerCase();
+    finalImg = artists[premierArtiste]?.image_url || null;
+  }
+  const thumb = finalImg
+    ? `<img class="${size} ${kind}" src="${esc(finalImg)}" alt="" loading="lazy">`
     : `<span class="${size}-fallback ${kind}">${kind === "song" ? "🎵" : "🎤"}</span>`;
   return `
     <div class="tops-row">
@@ -1303,13 +1323,13 @@ function topsCard(m, artists){
         <div class="tops-col">
           <div class="tops-col-label songs"><span class="dot"></span>Top 3 chansons</div>
           ${top3Songs.length
-            ? top3Songs.map((s,i) => topsRow(i, s.titre, s.artiste, s.cover_url, s.count, "song")).join("")
+            ? top3Songs.map((s,i) => topsRow(i, s.titre, s.artiste, s.cover_url, s.count, "song", artists)).join("")
             : `<div class="tops-mini-empty">Aucune chanson validée.</div>`}
         </div>
         <div class="tops-col">
           <div class="tops-col-label artists"><span class="dot"></span>Top 3 artistes</div>
           ${top3Artistes.length
-            ? top3Artistes.map((a,i) => topsRow(i, a.nom, "Artiste", artists[a.nom.toLowerCase()]?.image_url, a.count, "artist")).join("")
+            ? top3Artistes.map((a,i) => topsRow(i, a.nom, "Artiste", artists[a.nom.toLowerCase()]?.image_url, a.count, "artist", artists)).join("")
             : `<div class="tops-mini-empty">Aucun artiste validé.</div>`}
         </div>
       </div>
@@ -1331,7 +1351,7 @@ function openTopsModal(membre, artists){
           <div class="tops-col-label songs modal-col-label"><span class="dot"></span>Toutes les chansons</div>
           <div class="modal-list">
             ${membre.songs.length
-              ? membre.songs.map((s,i) => topsRow(i, s.titre, s.artiste, s.cover_url, s.count, "song")).join("")
+              ? membre.songs.map((s,i) => topsRow(i, s.titre, s.artiste, s.cover_url, s.count, "song", artists)).join("")
               : `<div class="tab-empty">Aucune chanson validée.</div>`}
           </div>
         </div>
@@ -1339,7 +1359,7 @@ function openTopsModal(membre, artists){
           <div class="tops-col-label artists modal-col-label"><span class="dot"></span>Tous les artistes</div>
           <div class="modal-list">
             ${membre.artistes.length
-              ? membre.artistes.map((a,i) => topsRow(i, a.nom, "Artiste", artists[a.nom.toLowerCase()]?.image_url, a.count, "artist")).join("")
+              ? membre.artistes.map((a,i) => topsRow(i, a.nom, "Artiste", artists[a.nom.toLowerCase()]?.image_url, a.count, "artist", artists)).join("")
               : `<div class="tab-empty">Aucun artiste validé.</div>`}
           </div>
         </div>

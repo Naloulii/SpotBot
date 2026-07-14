@@ -378,6 +378,31 @@ def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=Non
         sauvegarder_likes(guild_id, likes)
         return True
 
+def finaliser_ecoutes_orphelines(guild_id, membre, historique):
+    """Marque comme terminées (🎉) toutes les écoutes de ce membre restées
+    bloquées sur 'En cours...' et leur attribue un point au classement.
+
+    Ça arrive quand le bot redémarre (crash, redeploy...) pendant qu'un
+    membre écoutait : le suivi en mémoire (ecoutes_en_cours) est perdu, donc
+    ni le passage à la musique suivante ni l'arrêt de l'écoute ne déclenchent
+    normalement mettre_a_jour_historique_fin, et l'entrée reste bloquée.
+    On considère ces écoutes comme terminées dès qu'on constate qu'une
+    musique plus récente a démarré pour ce membre (preuve que l'ancienne
+    est bel et bien finie)."""
+    user_id = str(membre.id)
+    if user_id not in historique:
+        return
+    orphelines_reparees = 0
+    for ecoute in historique[user_id]["ecoutes"]:
+        if ecoute["status"] == "En cours...":
+            ecoute["status"] = "🎉 Écouté en entier"
+            orphelines_reparees += 1
+    if orphelines_reparees:
+        for _ in range(orphelines_reparees):
+            enregistrer_stat_membre(guild_id, membre)
+        print(f"🔧 [{membre.guild.name}] {orphelines_reparees} écoute(s) bloquée(s) sur 'En cours...' réparée(s) pour {membre.display_name}")
+
+
 def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cover_url=None):
     user_id = str(membre.id)
     historique = charger_historique(guild_id)
@@ -396,6 +421,12 @@ def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cove
                 if (datetime.datetime.now(PARIS_TZ) - date_derniere).total_seconds() < 15:
                     return 
             except Exception: pass
+
+    # On s'apprête à insérer une nouvelle écoute "En cours..." : toute écoute
+    # précédente encore marquée "En cours..." à ce stade est forcément une
+    # orpheline (le flux normal l'aurait déjà finalisée via
+    # mettre_a_jour_historique_fin avant d'appeler cette fonction).
+    finaliser_ecoutes_orphelines(guild_id, membre, historique)
 
     maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
     historique[user_id]["ecoutes"].insert(0, {
@@ -754,6 +785,46 @@ class LikeView(discord.ui.View):
             await interaction.response.send_message(f"💔 Retiré de tes titres likés : **{self.titre}**", ephemeral=True)
 
 
+async def reparer_ecoutes_bloquees_au_demarrage(guild):
+    """Au démarrage du bot, compare chaque écoute la plus récente encore
+    marquée 'En cours...' avec la présence Spotify actuelle du membre :
+    - si le membre écoute encore exactement ce morceau, on laisse
+      verifier_presence_spotify reprendre le suivi normalement ;
+    - sinon (autre morceau, ou plus d'écoute Spotify du tout), l'écoute est
+      restée bloquée à cause d'un redémarrage/crash du bot pendant qu'elle
+      était en cours : on la finalise et on ajoute le point au classement."""
+    guild_id = str(guild.id)
+    historique = charger_historique(guild_id)
+    if not historique:
+        return
+
+    modifie = False
+    for user_id, data in historique.items():
+        ecoutes = data.get("ecoutes", [])
+        if not ecoutes or ecoutes[0].get("status") != "En cours...":
+            continue
+
+        membre = guild.get_member(int(user_id))
+        track_id_actuel = None
+        if membre:
+            for activity in membre.activities:
+                if isinstance(activity, discord.Spotify):
+                    track_id_actuel = activity.track_id
+                    break
+
+        if track_id_actuel is not None and track_id_actuel == ecoutes[0].get("track_id"):
+            continue  # Toujours en train d'écouter ce même morceau, rien à réparer
+
+        ecoutes[0]["status"] = "🎉 Écouté en entier"
+        modifie = True
+        if membre:
+            enregistrer_stat_membre(guild_id, membre)
+        print(f"🔧 [{guild.name}] Écoute bloquée sur 'En cours...' réparée pour {data.get('display_name', user_id)} (redémarrage du bot)")
+
+    if modifie:
+        sauvegarder_historique(guild_id, historique)
+
+
 @bot.event
 async def on_ready():
     print(f"SpotBot est en ligne : {bot.user.name}")
@@ -769,6 +840,12 @@ async def on_ready():
     for guild in bot.guilds:
         assurer_dossier_guilde(guild)
         guild_id = str(guild.id)
+
+        try:
+            await reparer_ecoutes_bloquees_au_demarrage(guild)
+        except Exception as e:
+            print(f"⚠️ [{guild.name}] Erreur réparation écoutes bloquées : {e}")
+
         config = charger_config(guild_id)
         salon_id = config.get("salon_musique_id")
         if not salon_id:
