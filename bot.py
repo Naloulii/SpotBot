@@ -640,7 +640,7 @@ async def verifier_et_mettre_a_jour_aide(guild_id):
     if msg_aide_id:
         try:
             msg_existant = await salon.fetch_message(msg_aide_id)
-            await msg_existant.edit(embed=embed_aide)
+            await msg_existant.edit(embed_aide)
             message_existe = True
         except Exception: pass
     if not message_existe:
@@ -948,30 +948,37 @@ async def on_guild_join(guild):
     print(f"➕ SpotBot a été ajouté au serveur : {guild.name} ({guild.id})")
     assurer_dossier_guilde(guild)
 
-    # Message de bienvenue expliquant comment se configurer, dans le premier salon disponible
-    salon_cible = guild.system_channel
-    if salon_cible is None or not salon_cible.permissions_for(guild.me).send_messages:
-        for c in guild.text_channels:
-            if c.permissions_for(guild.me).send_messages:
-                salon_cible = c
-                break
-
-    if salon_cible:
-        embed = discord.Embed(
+    # ✉️ Envoi d'un message d'explication privé au propriétaire du serveur
+    owner = guild.owner
+    if owner:
+        embed_dm = discord.Embed(
             title="🎵 Merci d'avoir ajouté SpotBot !",
             description=(
-                "Pour démarrer, un membre avec la permission **Gérer le serveur** doit choisir "
-                "le salon où seront publiées les activités musicales avec la commande :\n\n"
-                "**/setup salon:#votre-salon**"
+                f"Bonjour **{owner.display_name}** !\n\n"
+                f"Pour démarrer sur **{guild.name}**, tu dois choisir "
+                "le salon où seront publiées les activités musicales en temps réel avec la commande :\n\n"
+                "👉 **/setup salon:#votre-salon**\n\n"
+                "*(Il est fortement recommandé de créer un salon textuel vide dédié, par exemple `#spotbot` ou `#musique-temps-reel`)*"
             ),
             color=discord.Color.from_rgb(30, 215, 96)
         )
+        embed_dm.add_field(
+            name="🔒 Permissions requises pour le bot dans ce salon :",
+            value=(
+                "• **Voir le salon**\n"
+                "• **Envoyer des messages**\n"
+                "• **Intégrer des liens** (requis pour l'affichage des fiches)\n"
+                "• **Épingler des messages** (requis pour le message d'aide)"
+            ),
+            inline=False
+        )
         try:
-            await salon_cible.send(embed=embed)
-        except Exception:
-            pass
+            await owner.send(embed=embed_dm)
+            print(f"📬 Message de configuration envoyé en DM au propriétaire : {owner.name}")
+        except Exception as e:
+            print(f"⚠️ Impossible d'envoyer le DM d'explication au propriétaire : {e}")
 
-    # Pousse immédiatement le nouveau dossier vers GitHub pour qu'il apparaisse tout de suite
+    # Pousse immédiatement le nouveau dossier de serveur vers GitHub
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
 
