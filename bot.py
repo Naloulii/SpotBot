@@ -26,6 +26,10 @@ intents.members = True
 intents.message_content = True
 
 # Définition de l'activité
+# NOTE : Discord ignore le champ "buttons" pour la présence des comptes BOT
+# (les boutons de Rich Presence ne fonctionnent que pour la RPC locale d'un
+# client utilisateur). Ce champ est laissé ici sans effet ; le vrai bouton
+# vers le dashboard est envoyé dans les messages (voir on_guild_join et /aide).
 activite_profil = discord.Activity(
     type=discord.ActivityType.playing,
     name="SpotBot Dashboard",
@@ -1066,24 +1070,54 @@ async def on_guild_join(guild):
     print(f"➕ SpotBot a été ajouté au serveur : {guild.name} ({guild.id})")
     assurer_dossier_guilde(guild)
 
+    # guild.owner s'appuie sur le cache des membres, qui n'est souvent pas encore
+    # rempli juste après l'ajout du bot -> on force une récupération via l'API REST.
     owner = guild.owner
-    if owner:
-        embed_dm = discord.Embed(
-            title="🎵 Merci d'avoir ajouté SpotBot ! 🤖",
-            description=(
-                f"Bonjour **{owner.display_name}** !\n\n"
-                f"Pour démarrer sur **{guild.name}**, tu dois choisir "
-                "le salon où seront publiées les activités musicales en temps réel avec la commande :\n\n"
-                "👉 **/setup salon:#votre-salon**\n\n"
-                "*(Il est fortement recommandé de créer un salon textuel vide dédié, par exemple `#spotbot` ou `#musique`)*"
-            ),
-            color=discord.Color.from_rgb(30, 215, 96)
-        )
+    if owner is None and guild.owner_id:
         try:
-            await owner.send(embed=embed_dm)
-            print(f"📬 Message de configuration envoyé en DM au propriétaire : {owner.name}")
+            owner = await bot.fetch_user(guild.owner_id)
         except Exception as e:
-            print(f"⚠️ Impossible d'envoyer le DM d'explication au propriétaire : {e}")
+            print(f"⚠️ Impossible de récupérer le propriétaire ({guild.owner_id}) : {e}")
+
+    dashboard_view = discord.ui.View()
+    dashboard_view.add_item(discord.ui.Button(label="Ouvrir le Dashboard", url="https://naloulii.github.io/SpotBot"))
+
+    embed_setup = discord.Embed(
+        title="🎵 Merci d'avoir ajouté SpotBot ! 🤖",
+        description=(
+            f"Bonjour **{owner.display_name if owner else 'à toi'}** !\n\n"
+            f"Pour démarrer sur **{guild.name}**, tu dois choisir "
+            "le salon où seront publiées les activités musicales en temps réel avec la commande :\n\n"
+            "👉 **/setup salon:#votre-salon**\n\n"
+            "*(Il est fortement recommandé de créer un salon textuel vide dédié, par exemple `#spotbot` ou `#musique`)*"
+        ),
+        color=discord.Color.from_rgb(30, 215, 96)
+    )
+
+    dm_envoye = False
+    if owner:
+        try:
+            await owner.send(embed=embed_setup, view=dashboard_view)
+            print(f"📬 Message de configuration envoyé en DM au propriétaire : {owner.name}")
+            dm_envoye = True
+        except Exception as e:
+            print(f"⚠️ Impossible d'envoyer le DM d'explication au propriétaire (MP fermés ?) : {e}")
+
+    # Si le DM échoue (MP fermés, owner introuvable, etc.), on poste dans un salon
+    # visible du serveur pour que le message ne soit pas perdu.
+    if not dm_envoye:
+        salon_repli = guild.system_channel
+        if salon_repli is None or not salon_repli.permissions_for(guild.me).send_messages:
+            for c in guild.text_channels:
+                if c.permissions_for(guild.me).send_messages:
+                    salon_repli = c
+                    break
+        if salon_repli:
+            try:
+                await salon_repli.send(embed=embed_setup, view=dashboard_view)
+                print(f"📬 DM impossible, message de configuration posté dans #{salon_repli.name}")
+            except Exception as e:
+                print(f"⚠️ Impossible de poster le message de configuration en repli : {e}")
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
