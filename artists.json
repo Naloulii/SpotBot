@@ -562,5 +562,9 @@
     "ino casablanca": {
         "nom": "Ino Casablanca",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4a4642e230bede0fde0ed078806fb5b2/250x250-000000-80-0-0.jpg"
+    },
+    "henry morris": {
+        "nom": "Henry Morris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73425ae5487af6adbe3013179f061fb7/250x250-000000-80-0-0.jpg"
     }
 }
