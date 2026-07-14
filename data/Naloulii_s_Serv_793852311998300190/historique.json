@@ -1008,6 +1008,35 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 18:13",
+                "titre": "Careless",
+                "artiste": "NEFFEX",
+                "url": "https://open.spotify.com/track/10y3BacWn9VXLAf9KLcKO0",
+                "track_id": "10y3BacWn9VXLAf9KLcKO0",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273872a2a8395bc647c62e3b516",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 18:09",
+                "titre": "Be Around",
+                "artiste": "Blooom",
+                "url": "https://open.spotify.com/track/3q3uWcAR3Uv50SKzLrg8G3",
+                "track_id": "3q3uWcAR3Uv50SKzLrg8G3",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2733227a4307e258cef9de7397c",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 205.1
+            },
+            {
+                "date": "14/07/2026 18:08",
+                "titre": "love me",
+                "artiste": "Ex Habit",
+                "url": "https://open.spotify.com/track/6Gpim0VEZc2UZRVcapsWIv",
+                "track_id": "6Gpim0VEZc2UZRVcapsWIv",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273a989b34a8efa00bf7e657fc5",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 178.6
+            },
+            {
                 "date": "14/07/2026 17:35",
                 "titre": "Dirty Magazine",
                 "artiste": "Henry Morris",
@@ -1914,33 +1943,6 @@
                 "track_id": "7rP2JEZWJVorDsonOHnPCb",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "cover_url": "https://cdn-images.dzcdn.net/images/cover/4d54e510b5bc41339dcb09e0cae35b26/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "12/07/2026 17:21",
-                "titre": "ordinary / horrifying",
-                "artiste": "updog",
-                "url": "https://open.spotify.com/track/7rP2JEZWJVorDsonOHnPCb",
-                "track_id": "7rP2JEZWJVorDsonOHnPCb",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/4d54e510b5bc41339dcb09e0cae35b26/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "12/07/2026 17:18",
-                "titre": "Too Late",
-                "artiste": "Kaphy; SFRNG; Brogs",
-                "url": "https://open.spotify.com/track/4wwJBHYVyrxBSjMSURlWvr",
-                "track_id": "4wwJBHYVyrxBSjMSURlWvr",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/65bff5b0c47b0f6e3bee9904243d48cf/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "12/07/2026 17:13",
-                "titre": "Careless",
-                "artiste": "NEFFEX",
-                "url": "https://open.spotify.com/track/10y3BacWn9VXLAf9KLcKO0",
-                "track_id": "10y3BacWn9VXLAf9KLcKO0",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/bc813b58582d8e31025097fc0ae5be2c/250x250-000000-80-0-0.jpg"
             }
         ]
     },
