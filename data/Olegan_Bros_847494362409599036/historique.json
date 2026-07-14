@@ -5,9 +5,70 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/1086742511361466370/cd618bc37dcf21802459473ab2521d93.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 00:40",
+                "track_id": "6ktcLOodfzrT0e9G810fVZ",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 00:37",
+                "track_id": "0uaTGlIfJzbf29iZRq6m53",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 199.6
+            },
+            {
+                "date": "15/07/2026 00:32",
+                "track_id": "176MBu3kQR9vxxgcPvU5rH",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 220.5
+            },
+            {
+                "date": "15/07/2026 00:29",
+                "track_id": "2kKrX1G4PwYc8pq61hw7Rr",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 185.1
+            },
+            {
                 "date": "15/07/2026 00:26",
                 "track_id": "6mFgl1Rh05ZXcH4Gc7Q1ZV",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 178.2
+            }
+        ]
+    },
+    "566899759013429259": {
+        "username": "naloulii",
+        "display_name": "Nalouli",
+        "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "15/07/2026 00:38",
+                "track_id": "7gmwFiZtsPyBT8wI2u6mGN",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 156.4
+            },
+            {
+                "date": "15/07/2026 00:36",
+                "track_id": "7rImS9ivEzj1GiEN5NffSf",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 103.0
+            },
+            {
+                "date": "15/07/2026 00:34",
+                "track_id": "3IznIgmXtrUaoPWpQTy5jB",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 170.5
+            },
+            {
+                "date": "15/07/2026 00:30",
+                "track_id": "5KYu4MzDd9zIXf5cZYu8St",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 205.2
+            },
+            {
+                "date": "15/07/2026 00:28",
+                "track_id": "4FnXTGsdtHxlQFSMB8kZsL",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 158.2
             }
         ]
     }

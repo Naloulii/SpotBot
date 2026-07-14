@@ -610,5 +610,81 @@
     "laylow": {
         "nom": "Laylow",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/45d9133dbd8c09e76bf45f45fbfe7bbe/250x250-000000-80-0-0.jpg"
+    },
+    "exhibit": {
+        "nom": "exhibit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/885ac75c206618419daa998ee7c2abf1/250x250-000000-80-0-0.jpg"
+    },
+    "analoq.": {
+        "nom": "analoq.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/885ac75c206618419daa998ee7c2abf1/250x250-000000-80-0-0.jpg"
+    },
+    "hexdless": {
+        "nom": "HEXDLESS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/618ab0bdd0c32cd42f8b5a1a6436fa43/250x250-000000-80-0-0.jpg"
+    },
+    "0ketaminxe": {
+        "nom": "0ketaminxe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d356c0b122d2f10ac2349027f9c5996d/250x250-000000-80-0-0.jpg"
+    },
+    "trvxer": {
+        "nom": "TRVXER",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d356c0b122d2f10ac2349027f9c5996d/250x250-000000-80-0-0.jpg"
+    },
+    "alpha wann": {
+        "nom": "Alpha Wann",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/418669334bffc682465ad946569dbda7/250x250-000000-80-0-0.jpg"
+    },
+    "tenacious d": {
+        "nom": "Tenacious D",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/750b3bef6ff961c366e400dead261dfc/250x250-000000-80-0-0.jpg"
+    },
+    "moonshine": {
+        "nom": "Moonshine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/513bfbadb7a7da34d0a0b17aeeebaa5b/250x250-000000-80-0-0.jpg"
+    },
+    "bokponiah": {
+        "nom": "BokPoniah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/915dd6af569054a600d497ee2d1e0c14/250x250-000000-80-0-0.jpg"
+    },
+    "kayou. beats": {
+        "nom": "Kayou. Beats",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e342aab7ebe4622006a999dfb1b4a72e/250x250-000000-80-0-0.jpg"
+    },
+    "lil kliff": {
+        "nom": "Lil Kliff",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4cd8ff15d32b85b31f6587c1cfaac573/250x250-000000-80-0-0.jpg"
+    },
+    "placek": {
+        "nom": "Placek",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fc597f72f9a147ff7143e4be3237b7b6/250x250-000000-80-0-0.jpg"
+    },
+    "dj beatcoin": {
+        "nom": "DJ BEATCOIN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9cb14248317e64887583e3dd9e826c01/250x250-000000-80-0-0.jpg"
+    },
+    "slvshy": {
+        "nom": "SLVSHY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c829aaf0aa3d645d8414075980031ca9/250x250-000000-80-0-0.jpg"
+    },
+    "project alpha": {
+        "nom": "project alpha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9cb14248317e64887583e3dd9e826c01/250x250-000000-80-0-0.jpg"
+    },
+    "evil p": {
+        "nom": "Evil P",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c9cc6927f224967037ce4a96570188c/250x250-000000-80-0-0.jpg"
+    },
+    "hhnglee": {
+        "nom": "Hhnglee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56e2c03bf888a2935aeb29874eb67b6a/250x250-000000-80-0-0.jpg"
+    },
+    "booba": {
+        "nom": "Booba",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/38b687e97c6874e744d305ef2ca8d0d0/250x250-000000-80-0-0.jpg"
+    },
+    "dopebwoy": {
+        "nom": "Dopebwoy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fd1ee0c73b11e8b1c904e5ba49c60fcd/250x250-000000-80-0-0.jpg"
     }
 }
