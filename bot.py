@@ -346,7 +346,6 @@ def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=Non
         sauvegarder_likes(guild_id, likes)
         return False
     else:
-        # Tente de récupérer une cover si absente lors du Like
         if not cover_url:
             cover_url = rechercher_cover_track(titre, artiste)
         likes[user_id]["liste"].append({"titre": titre, "artiste": artiste, "url": url, "cover_url": cover_url})
@@ -386,7 +385,6 @@ def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cove
 
     finaliser_ecoutes_orphelines(guild_id, membre, historique)
 
-    # Récupère une cover si absente
     if not cover_url:
         cover_url = rechercher_cover_track(titre, artiste)
 
@@ -436,6 +434,74 @@ def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree
     sauvegarder_historique(guild_id, historique)
     if valide:
         enregistrer_stat_membre(guild_id, membre)
+
+# ==========================================
+#      VÉRIFICATION & CORRECTION DES COVERS
+# ==========================================
+def verifier_et_reparer_covers_globales():
+    """Parcourt l'ensemble des fichiers historique.json et likes.json de chaque serveur.
+    Si un morceau n'a pas de cover_url, il interroge Deezer, met à jour le fichier localement
+    et retourne True s'il y a eu des modifications."""
+    print("🔍 [Covers] Début de la vérification globale des cover_url manquants...")
+    modifie = False
+
+    if not os.path.exists(DATA_DIR):
+        return False
+
+    # Parcours des serveurs
+    for item in os.listdir(DATA_DIR):
+        chemin_item = os.path.join(DATA_DIR, item)
+        if not os.path.isdir(chemin_item) or item == ".git":
+            continue
+
+        # 1. Traitement historique.json
+        historique_path = os.path.join(chemin_item, "historique.json")
+        if os.path.exists(historique_path):
+            try:
+                with open(historique_path, "r", encoding="utf-8") as f:
+                    historique = json.load(f)
+                historique_change = False
+                for user_id, user_data in historique.items():
+                    for ecoute in user_data.get("ecoutes", []):
+                        if not ecoute.get("cover_url"):
+                            print(f"🖼️ [Covers] Cover manquante détectée pour '{ecoute['titre']}' - {ecoute['artiste']}")
+                            nouvelle_cover = rechercher_cover_track(ecoute['titre'], ecoute['artiste'])
+                            if nouvelle_cover:
+                                ecoute["cover_url"] = nouvelle_cover
+                                historique_change = True
+                                modifie = True
+                                time.sleep(0.5) # Limite le spam API
+                if historique_change:
+                    with open(historique_path, "w", encoding="utf-8") as f:
+                        json.dump(historique, f, indent=4)
+            except Exception as e:
+                print(f"⚠️ [Covers] Erreur historique.json pour {item} : {e}")
+
+        # 2. Traitement likes.json
+        likes_path = os.path.join(chemin_item, "likes.json")
+        if os.path.exists(likes_path):
+            try:
+                with open(likes_path, "r", encoding="utf-8") as f:
+                    likes = json.load(f)
+                likes_change = False
+                for user_id, user_data in likes.items():
+                    for track in user_data.get("liste", []):
+                        if not track.get("cover_url"):
+                            print(f"🖼️ [Covers] Cover manquante détectée dans Likes pour '{track['titre']}' - {track['artiste']}")
+                            nouvelle_cover = rechercher_cover_track(track['titre'], track['artiste'])
+                            if nouvelle_cover:
+                                track["cover_url"] = nouvelle_cover
+                                likes_change = True
+                                modifie = True
+                                time.sleep(0.5)
+                if likes_change:
+                    with open(likes_path, "w", encoding="utf-8") as f:
+                        json.dump(likes, f, indent=4)
+            except Exception as e:
+                print(f"⚠️ [Covers] Erreur likes.json pour {item} : {e}")
+
+    print("🏁 [Covers] Vérification globale terminée.")
+    return modifie
 
 # ==========================================
 #            UI & AFFICHAGE
@@ -549,19 +615,22 @@ def generer_embed_aide():
 async def verifier_et_mettre_a_jour_aide(guild_id):
     config = charger_config(guild_id)
     salon_id = config.get("salon_musique_id")
-    if not salon_id: return
+    if not salon_id: return None
     salon = bot.get_channel(salon_id)
-    if not salon: return
+    if not salon: return None
 
     msg_aide_id = config.get("message_aide_id")
     embed_aide = generer_embed_aide()
     message_existe = False
+    
     if msg_aide_id:
         try:
             msg_existant = await salon.fetch_message(msg_aide_id)
-            await msg_existant.edit(embed_aide)
+            await msg_existant.edit(embed=embed_aide)
             message_existe = True
+            return msg_existant.id
         except Exception: pass
+        
     if not message_existe:
         try:
             nouveau_msg = await salon.send(embed=embed_aide)
@@ -569,7 +638,9 @@ async def verifier_et_mettre_a_jour_aide(guild_id):
             except Exception: pass
             config["message_aide_id"] = nouveau_msg.id
             sauvegarder_config(guild_id, config)
+            return nouveau_msg.id
         except Exception: pass
+    return None
 
 couleur_cache = {}  
 
@@ -633,7 +704,6 @@ async def verifier_presence_spotify(membre):
         deja_en_cours = cle in ecoutes_en_cours and ecoutes_en_cours[cle]["track_id"] == spotify_activity.track_id
 
         if not deja_en_cours:
-            # Essai de récupération de cover
             cover_url = spotify_activity.album_cover_url
             if not cover_url:
                 cover_url = await asyncio.to_thread(rechercher_cover_track, spotify_activity.title, spotify_activity.artist)
@@ -712,7 +782,6 @@ class LikeView(discord.ui.View):
             return
         guild_id = str(interaction.guild_id)
         
-        # Récupère l'image de couverture si manquante
         if not self.cover_url:
             self.cover_url = rechercher_cover_track(self.titre, self.artiste)
             
@@ -769,17 +838,13 @@ async def verifier_ecoutes_perimees():
 # ==========================================
 @bot.event
 async def on_message(message):
-    # Ignore les messages du bot lui-même
     if message.author == bot.user:
         return
 
-    # Si le message est un MP (reçu par le bot d'un utilisateur externe)
     if isinstance(message.channel, discord.DMChannel):
-        # On essaie de récupérer ton compte admin (Naloulii)[cite: 2, 3]
         admin = bot.get_user(OWNER_ID)
         
         if admin:
-            # Création d'un embed élégant pour le ticket reçu
             embed_ticket = discord.Embed(
                 title="📩 Nouveau Message Reçu (Ticket DM)",
                 description=message.content,
@@ -792,7 +857,6 @@ async def on_message(message):
             )
             embed_ticket.set_footer(text=f"User ID: {message.author.id} • Réponds à son DM pour dialoguer !")
             
-            # Gestion des fichiers / pièces jointes éventuels
             fichiers = []
             if message.attachments:
                 for attachment in message.attachments:
@@ -800,7 +864,6 @@ async def on_message(message):
 
             try:
                 await admin.send(embed=embed_ticket, files=fichiers)
-                # Accusé de réception propre pour l'utilisateur
                 embed_accuse = discord.Embed(
                     title="✅ Message retransmis avec succès",
                     description="Votre message a été transmis directement à mon administrateur (**naloulii**). Vous recevrez une réponse sous peu ![cite: 2, 3]",
@@ -813,7 +876,6 @@ async def on_message(message):
         else:
             await message.channel.send("❌ Impossible de joindre l'administrateur actuel.")
     
-    # Nécessaire pour faire tourner les commandes classiques et slash du bot
     await bot.process_commands(message)
 
 
@@ -831,6 +893,16 @@ async def on_ready():
     except Exception as e:
         print(f"Erreur sync des commandes slash : {e}")
 
+    # --- ÉTAPE 1 : CORRECTION ET PUSH AUTOMATIQUE DES COVERS MANQUANTES AU DÉMARRAGE ---
+    loop = asyncio.get_running_loop()
+    besoin_push = await loop.run_in_executor(None, verifier_et_reparer_covers_globales)
+    if besoin_push:
+        print("📦 [Covers] Des covers manquantes ont été réparées, envoi immédiat vers GitHub...")
+        await loop.run_in_executor(None, _sauvegarde_github_bloquante)
+    else:
+        print("✅ [Covers] Tous les fichiers JSON possèdent déjà leurs covers d'albums.")
+
+    # --- ÉTAPE 2 : CHARGEMENT DES CONFIGURATIONS SANS SUPPRIMER LES BIENVENUS/MESSAGES ÉPINGLÉS ---
     for guild in bot.guilds:
         assurer_dossier_guilde(guild)
         guild_id = str(guild.id)
@@ -840,14 +912,21 @@ async def on_ready():
         except Exception as e:
             print(f"⚠️ [{guild.name}] Erreur réparation écoutes bloquées : {e}")
 
+        # On s'assure d'avoir la version la plus fraîche du fichier de config
         config = charger_config(guild_id)
         salon_id = config.get("salon_musique_id")
         if not salon_id: continue  
 
-        await verifier_et_mettre_a_jour_aide(guild_id)
+        # On met d'abord à jour et on récupère les ID réels des messages
+        msg_aide_reel_id = await verifier_et_mettre_a_jour_aide(guild_id)
+        
+        # Rechargement post-mise à jour pour s'assurer que les valeurs stockées sur disque sont synchronisées en mémoire
+        config = charger_config(guild_id)
+        msg_top_reel_id = config.get("message_top_id")
+
         salon = bot.get_channel(salon_id)
 
-        if salon and not config.get("message_top_id"):
+        if salon and not msg_top_reel_id:
             archive = trouver_derniere_archive_top(guild_id)
             if archive:
                 stats_archive, semaine, annee = archive
@@ -859,16 +938,21 @@ async def on_ready():
                     nouveau_msg = await salon.send(embed_archive)
                     config["message_top_id"] = nouveau_msg.id
                     sauvegarder_config(guild_id, config)
+                    msg_top_reel_id = nouveau_msg.id
                 except Exception as e:
                     print(f"⚠️ [{guild.name}] Impossible de publier le classement : {e}")
 
-        msg_aide_id = config.get("message_aide_id")
+        # Nettoyage sécurisé du salon (ne supprime JAMAIS l'aide fraîchement identifiée ni le top hebdomadaire)
         if salon:
             try:
                 async for message in salon.history(limit=50):
-                    if message.author == bot.user and message.id != msg_aide_id and message.id != config.get("message_top_id") and message.embeds:
-                        await message.delete()
-                        await asyncio.sleep(0.2)
+                    # Protection renforcée : on ne touche pas aux embeds épinglés ni à nos messages d'aide et de classement officiels
+                    if message.author == bot.user:
+                        if message.id == msg_aide_reel_id or message.id == msg_top_reel_id or message.pinned:
+                            continue
+                        if message.embeds:
+                            await message.delete()
+                            await asyncio.sleep(0.2)
             except Exception as e:
                 print(f"Erreur nettoyage initial ({guild.name}) : {e}")
 
@@ -901,7 +985,6 @@ async def on_guild_join(guild):
     print(f"➕ SpotBot a été ajouté au serveur : {guild.name} ({guild.id})")
     assurer_dossier_guilde(guild)
 
-    # ✉️ Envoi d'un message d'explication privé et ultra-détaillé au propriétaire du serveur
     owner = guild.owner
     if owner:
         embed_dm = discord.Embed(
@@ -959,7 +1042,6 @@ async def actualiser_messages():
             msg = infos.get("message_obj") or await salon.fetch_message(infos["message_id"])
             spotify_activity = infos["activity"]
             
-            # Essai de récupération de cover si absente
             cover_url = infos.get("cover_url")
             if not cover_url:
                 cover_url = await asyncio.to_thread(rechercher_cover_track, spotify_activity.title, spotify_activity.artist)
@@ -1040,14 +1122,11 @@ async def voir_likes(interaction: discord.Interaction):
     
     embed = discord.Embed(title=f"❤️ Titres likés par {interaction.user.display_name}", color=discord.Color.red(), timestamp=datetime.datetime.now(PARIS_TZ))
     texte = ""
-    
-    # On récupère le dernier aimé pour afficher une cover dans l'embed s'il y en a une !
     dernier_like_avec_cover = None
 
     for index, track in enumerate(likes[user_id]["liste"][-15:], start=1):
         cover = track.get("cover_url")
         if not cover:
-            # Recherche de cover à la volée s'il n'y en a pas
             cover = rechercher_cover_track(track['titre'], track['artiste'])
             track["cover_url"] = cover
             sauvegarder_likes(guild_id, likes)
@@ -1105,7 +1184,6 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
         status = track.get('status', 'En cours...')
         cover = track.get("cover_url")
         
-        # Recherche de cover à la volée s'il n'y en a pas
         if not cover:
             cover = rechercher_cover_track(track['titre'], track['artiste'])
             track["cover_url"] = cover
@@ -1117,8 +1195,8 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
         texte += f"`{index}.` `[{track['date']}]` [{track['titre']}]({track['url']}) — *{track['artiste']}*\n╰─ {status}\n\n"
         
     embed.description = texte
-    if derniere_cover_trouvee:
-        embed.set_thumbnail(url=derniere_cover_trouvee)
+    if len(morceaux_page) > 0 and derniere_cover_trouvee:
+         embed.set_thumbnail(url=derniere_cover_trouvee)
         
     embed.set_footer(text=f"Page {page}/{total_pages} • Total : {total_elements} écoutes")
     await interaction.response.send_message(embed=embed, ephemeral=True)
@@ -1130,7 +1208,6 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
 @bot.tree.command(name="git-sync", description="Force la synchronisation des bases de données locales vers GitHub (Réservé à Naloulii)")
 @app_commands.guild_only()
 async def manual_git_sync(interaction: discord.Interaction):
-    # Restriction absolue pour naloulii uniquement[cite: 2, 3]
     if interaction.user.id != OWNER_ID:
         await interaction.response.send_message("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).", ephemeral=True)
         return
@@ -1146,10 +1223,8 @@ async def manual_git_sync(interaction: discord.Interaction):
         await interaction.followup.send(f"❌ **Erreur de synchronisation :**\n`{resultat}`")
 
 
-# Commande texte classique en filet de sécurité au cas où les commandes slash mettent du temps à se synchroniser
 @bot.command(name="gitsync")
 async def manual_git_sync_text(ctx):
-    # Restriction absolue pour naloulii uniquement[cite: 2, 3]
     if ctx.author.id != OWNER_ID:
         await ctx.send("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).")
         return
