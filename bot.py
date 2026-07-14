@@ -39,7 +39,7 @@ activite_profil = discord.Activity(
     buttons=[
         {
             "label": "Aller sur le Dashboard", 
-            "url": "https://naloulii.github.io/SpotBot-data/"
+            "url": DASHBOARD_URL
         }
     ]
 )
@@ -49,7 +49,7 @@ bot = commands.Bot(command_prefix="!", intents=intents, activity=activite_profil
 # ==========================================
 #          CONFIGURATION SÉCURISÉE
 # ==========================================
-DASHBOARD_URL = "https://naloulii.github.io/SpotBot-data/"
+DASHBOARD_URL = "https://naloulii.github.io/SpotBot"
 
 # Récupération des jetons secrets via l'hébergeur Cloud (Railway)
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
@@ -395,7 +395,7 @@ def finaliser_ecoutes_orphelines(guild_id, membre, historique):
     Ça arrive quand le bot redémarre (crash, redeploy...) pendant qu'un
     membre écoutait : le suivi en mémoire (ecoutes_en_cours) est perdu, donc
     ni le passage à la musique suivante ni l'arrêt de l'écoute ne déclenchent
-    normalement mettre_a_jour_historique_fin, et l'entrée reste bloquée.
+    normally mettre_a_jour_historique_fin, et l'entrée reste bloquée.
     On considère ces écoutes comme terminées dès qu'on constate qu'une
     musique plus récente a démarré pour ce membre (preuve que l'ancienne
     est bel et bien finie)."""
@@ -433,7 +433,7 @@ def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cove
             except Exception: pass
 
     # On s'apprête à insérer une nouvelle écoute "En cours..." : toute écoute
-    # précédente encore marquée "En cours..." à ce stade est forcément une
+    # précédente encore marquée "En cours..." à ce stade is forcément une
     # orpheline (le flux normal l'aurait déjà finalisée via
     # mettre_a_jour_historique_fin avant d'appeler cette fonction).
     finaliser_ecoutes_orphelines(guild_id, membre, historique)
@@ -611,8 +611,7 @@ def generer_embed_aide():
         value=(
             "**/top** : Classement hebdomadaire des plus grands auditeurs. 🏆\n"
             "**/likes** : La liste complète de tes morceaux favoris. ❤️\n"
-            "**/history [page] [membre]** : Historique d'écoute (le tien ou celui d'un ami via son @). 🕒\n"
-            "**/setup [salon]** : (Admins) Choisir ou changer le salon d'affichage. ⚙️"
+            "**/history [page] [membre]** : Historique d'écoute (le tien ou celui d'un ami via son @). 🕒"
         ),
         inline=False
     )
@@ -901,7 +900,7 @@ async def on_ready():
                     titre=f"🏆 Classement de la Semaine {semaine} ({annee})"
                 )
                 try:
-                    nouveau_msg = await salon.send(embed=embed_archive)
+                    nouveau_msg = await salon.send(embed_archive)
                     config["message_top_id"] = nouveau_msg.id
                     sauvegarder_config(guild_id, config)
                     print(f"🏆 [{guild.name}] Message de classement recréé depuis l'archive stats_week_{semaine}_{annee}.json")
