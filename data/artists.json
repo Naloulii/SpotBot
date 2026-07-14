@@ -606,5 +606,9 @@
     "instantcrashh": {
         "nom": "Instantcrashh",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/35202824b6bb213b178f2fdff7e5c192/250x250-000000-80-0-0.jpg"
+    },
+    "laylow": {
+        "nom": "Laylow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45d9133dbd8c09e76bf45f45fbfe7bbe/250x250-000000-80-0-0.jpg"
     }
 }
