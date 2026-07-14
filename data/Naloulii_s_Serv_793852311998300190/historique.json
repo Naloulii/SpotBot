@@ -18,6 +18,23 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 21:29",
+                "track_id": "51T9b9rouc0TEKffdu2j92",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 21:27",
+                "track_id": "1ghqDkglrXPcxgRobBmLVW",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 187.4
+            },
+            {
+                "date": "14/07/2026 21:25",
+                "track_id": "1ghqDkglrXPcxgRobBmLVW",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 10s",
+                "temps_ecoute_secondes": 70.6
+            },
+            {
                 "date": "14/07/2026 19:33",
                 "track_id": "1ghqDkglrXPcxgRobBmLVW",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
