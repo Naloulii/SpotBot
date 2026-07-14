@@ -3,6 +3,8 @@ import io
 import re
 import json
 import time
+import tempfile
+import threading
 import asyncio
 import datetime
 import zoneinfo
@@ -228,65 +230,94 @@ def assurer_dossier_guilde(guild):
 
     try:
         info_path = os.path.join(dossier, "guild_info.json")
-        with open(info_path, "w") as f:
-            json.dump({
-                "id": guild_id,
-                "name": guild.name,
-                "icon_url": str(guild.icon.url) if guild.icon else None
-            }, f, indent=4)
+        _ecrire_json_atomique(info_path, {
+            "id": guild_id,
+            "name": guild.name,
+            "icon_url": str(guild.icon.url) if guild.icon else None
+        })
     except Exception:
         pass
 
     return nouveau
 
+# ==========================================
+#   ÉCRITURE ATOMIQUE (anti-corruption JSON)
+# ==========================================
+# Écrire directement avec open(..., "w") vide le fichier avant d'y réécrire,
+# ce qui laisse une fenêtre où un autre thread peut lire un fichier vide
+# (-> json.decoder.JSONDecodeError: Expecting value). On écrit donc dans un
+# fichier temporaire puis on le bascule d'un coup avec os.replace (atomique
+# au niveau du système de fichiers), pour qu'aucun lecteur ne voie jamais
+# un état intermédiaire.
+_verrou_fichiers = threading.Lock()
+
+def _ecrire_json_atomique(chemin, data):
+    dossier = os.path.dirname(chemin) or "."
+    with _verrou_fichiers:
+        fd, chemin_temp = tempfile.mkstemp(dir=dossier, prefix=".tmp_", suffix=".json")
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=4)
+            os.replace(chemin_temp, chemin)
+        except Exception:
+            try:
+                os.remove(chemin_temp)
+            except OSError:
+                pass
+            raise
+
+def _lire_json_securise(chemin, valeur_defaut):
+    try:
+        with _verrou_fichiers:
+            with open(chemin, "r", encoding="utf-8") as f:
+                return json.load(f)
+    except FileNotFoundError:
+        return valeur_defaut
+    except json.JSONDecodeError:
+        # Fichier corrompu/vide (ex: crash pendant une écriture non-atomique
+        # avant ce correctif) -> on ne plante pas, on retombe sur la valeur par défaut.
+        print(f"⚠️ Fichier JSON illisible, valeur par défaut utilisée : {chemin}")
+        return valeur_defaut
+
 # Chargeurs & Sauvegardes
 def charger_stats(guild_id):
-    try:
-        with open(chemin_fichier_guilde(guild_id, "stats.json"), "r") as f: return json.load(f)
-    except FileNotFoundError: return {}
+    return _lire_json_securise(chemin_fichier_guilde(guild_id, "stats.json"), {})
 
 def sauvegarder_stats(guild_id, stats):
-    with open(chemin_fichier_guilde(guild_id, "stats.json"), "w") as f: json.dump(stats, f, indent=4)
+    _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "stats.json"), stats)
 
 def charger_likes(guild_id):
-    try:
-        with open(chemin_fichier_guilde(guild_id, "likes.json"), "r") as f: return json.load(f)
-    except FileNotFoundError: return {}
+    return _lire_json_securise(chemin_fichier_guilde(guild_id, "likes.json"), {})
 
 def sauvegarder_likes(guild_id, likes):
-    with open(chemin_fichier_guilde(guild_id, "likes.json"), "w") as f: json.dump(likes, f, indent=4)
+    _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "likes.json"), likes)
 
 def charger_config(guild_id):
-    try:
-        with open(chemin_fichier_guilde(guild_id, "config.json"), "r") as f: return json.load(f)
-    except FileNotFoundError: return {"salon_musique_id": None, "message_aide_id": None, "message_top_id": None}
+    return _lire_json_securise(
+        chemin_fichier_guilde(guild_id, "config.json"),
+        {"salon_musique_id": None, "message_aide_id": None, "message_top_id": None}
+    )
 
 def sauvegarder_config(guild_id, config):
-    with open(chemin_fichier_guilde(guild_id, "config.json"), "w") as f: json.dump(config, f, indent=4)
+    _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "config.json"), config)
 
 def charger_historique(guild_id):
-    try:
-        with open(chemin_fichier_guilde(guild_id, "historique.json"), "r") as f: return json.load(f)
-    except FileNotFoundError: return {}
+    return _lire_json_securise(chemin_fichier_guilde(guild_id, "historique.json"), {})
 
 def sauvegarder_historique(guild_id, historique):
-    with open(chemin_fichier_guilde(guild_id, "historique.json"), "w") as f: json.dump(historique, f, indent=4)
+    _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "historique.json"), historique)
 
 def charger_artistes_cache():
-    try:
-        with open(ARTISTS_FILE, "r") as f: return json.load(f)
-    except FileNotFoundError: return {}
+    return _lire_json_securise(ARTISTS_FILE, {})
 
 def sauvegarder_artistes_cache(cache):
-    with open(ARTISTS_FILE, "w") as f: json.dump(cache, f, indent=4)
+    _ecrire_json_atomique(ARTISTS_FILE, cache)
 
 def charger_tracks_central():
-    try:
-        with open(TRACKS_FILE, "r", encoding="utf-8") as f: return json.load(f)
-    except FileNotFoundError: return {}
+    return _lire_json_securise(TRACKS_FILE, {})
 
 def sauvegarder_tracks_central(tracks):
-    with open(TRACKS_FILE, "w", encoding="utf-8") as f: json.dump(tracks, f, indent=4)
+    _ecrire_json_atomique(TRACKS_FILE, tracks)
 
 # ==========================================
 #          RECHERCHE D'IMAGES API
@@ -573,7 +604,7 @@ async def classement_hebdomadaire_auto():
 
         num_semaine = datetime.datetime.now(PARIS_TZ).strftime("%V_%Y")
         archive_file = chemin_fichier_guilde(guild_id, f"stats_week_{num_semaine}.json")
-        with open(archive_file, "w") as f: json.dump(stats, f, indent=4)
+        _ecrire_json_atomique(archive_file, stats)
         sauvegarder_stats(guild_id, {})
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
@@ -590,22 +621,13 @@ def generer_embed_aide():
         timestamp=datetime.datetime.now(PARIS_TZ)
     )
     embed.add_field(
-        name="📚 Commandes disponibles :",
-        value=(
-            "**/top** : Classement hebdomadaire des plus grands auditeurs. 🏆\n"
-            "**/likes** : La liste complète de tes morceaux favoris. ❤️\n"
-            "**/history [page] [membre]** : Historique d'écoute (le tien ou celui d'un ami via son @). 🕒"
-        ),
-        inline=False
-    )
-    embed.add_field(
         name="⭐ Fonctionnalités :",
         value="• Clique sur le bouton **🤍 Like** sous une fiche pour la sauvegarder.\n• Clique sur **[Clique ici]** pour l'ouvrir sur Spotify.\n• *Pour obtenir un point au Top, tu dois écouter au moins 96% d'un morceau !*",
         inline=False
     )
     embed.add_field(
         name="📊 Dashboard complet :",
-        value=f"[Clique ici pour voir toutes les statistiques en détail]({DASHBOARD_URL})",
+        value=f"Le classement, tes favoris et ton historique complet sont consultables uniquement sur le dashboard : [Clique ici]({DASHBOARD_URL})",
         inline=False
     )
     return embed
@@ -1055,12 +1077,11 @@ async def on_guild_update(before, after):
         resoudre_dossier_guilde(after, forcer=True)
         try:
             info_path = os.path.join(chemin_dossier_guilde(str(after.id)), "guild_info.json")
-            with open(info_path, "w") as f:
-                json.dump({
-                    "id": str(after.id),
-                    "name": after.name,
-                    "icon_url": str(after.icon.url) if after.icon else None
-                }, f, indent=4)
+            _ecrire_json_atomique(info_path, {
+                "id": str(after.id),
+                "name": after.name,
+                "icon_url": str(after.icon.url) if after.icon else None
+            })
         except Exception: pass
         await asyncio.to_thread(_sauvegarde_github_bloquante)
 
@@ -1184,122 +1205,6 @@ async def setup_config(interaction: discord.Interaction, salon: discord.TextChan
 
     await verifier_et_mettre_a_jour_aide(guild_id)
     await asyncio.to_thread(_sauvegarde_github_bloquante)
-
-
-@bot.tree.command(name="top", description="Affiche le classement hebdomadaire actuel des auditeurs")
-@app_commands.guild_only()
-async def top_semaine(interaction: discord.Interaction):
-    guild_id = str(interaction.guild.id)
-    stats = charger_stats(guild_id)
-    if not stats:
-        await interaction.response.send_message("Aucune musique enregistrée cette semaine ! 🎧", ephemeral=True)
-        return
-    classement = sorted(stats.items(), key=lambda item: item[1]["count"], reverse=True)
-    embed = discord.Embed(title="🏆 Classement Actuel de la Semaine", color=discord.Color.gold(), timestamp=datetime.datetime.now(PARIS_TZ))
-    texte = ""
-    for index, (u_id, data) in enumerate(classement[:10], start=1):
-        nom = data.get("display_name", data.get("username", "Inconnu"))
-        medailles = {1: "🥇", 2: "🥈", 3: "🥉"}
-        texte += f"{medailles.get(index, f'`#{index}`')} **{nom}** — {data['count']} morceaux validés\n"
-    embed.description = texte
-    await interaction.response.send_message(embed=embed, ephemeral=True)
-
-
-@bot.tree.command(name="likes", description="Affiche la liste de tes morceaux likés")
-@app_commands.guild_only()
-async def voir_likes(interaction: discord.Interaction):
-    guild_id = str(interaction.guild.id)
-    user_id = str(interaction.user.id)
-    likes = charger_likes(guild_id)
-    if user_id not in likes or len(likes[user_id]["liste"]) == 0:
-        await interaction.response.send_message("🤍 Tu n'as pas encore liké de morceaux !", ephemeral=True)
-        return
-    
-    embed = discord.Embed(title=f"❤️ Titres likés par {interaction.user.display_name}", color=discord.Color.red(), timestamp=datetime.datetime.now(PARIS_TZ))
-    texte = ""
-    tracks_central = charger_tracks_central()
-    dernier_like_avec_cover = None
-
-    for index, track_id in enumerate(likes[user_id]["liste"][-15:], start=1):
-        track = tracks_central.get(track_id, {})
-        titre = track.get("titre", "Morceau inconnu")
-        artiste = track.get("artiste", "Artiste inconnu")
-        url = track.get("url", "#")
-        cover = track.get("cover_url")
-
-        if cover:
-            dernier_like_avec_cover = cover
-
-        texte += f"`{index}.` [{titre}]({url}) — *{artiste}*\n"
-    
-    embed.description = texte
-    if dernier_like_avec_cover:
-        embed.set_thumbnail(url=dernier_like_avec_cover)
-
-    embed.set_footer(text=f"Total : {len(likes[user_id]['liste'])} morceaux favoris")
-    await interaction.response.send_message(embed=embed, ephemeral=True)
-
-
-@bot.tree.command(name="history", description="Affiche l'historique d'écoute par pages de 10 morceaux")
-@app_commands.describe(
-    page="Le numéro de la page à afficher (Ex: 1, 2, 3...)",
-    membre="Le membre Discord (@Nom) dont tu veux voir l'historique (Optionnel)"
-)
-@app_commands.guild_only()
-async def voir_historique(interaction: discord.Interaction, page: int = 1, membre: discord.Member = None):
-    if page < 1: page = 1
-    guild_id = str(interaction.guild.id)
-    cible_membre = membre if membre else interaction.user
-    user_id = str(cible_membre.id)
-    
-    historique = charger_historique(guild_id)
-    
-    if user_id not in historique or len(historique[user_id]["ecoutes"]) == 0:
-        nom_affiche = "Tu n'" if cible_membre == interaction.user else f"**{cible_membre.display_name}** n'"
-        await interaction.response.send_message(f"🕒 {nom_affiche}as pas encore d'historique d'écoute enregistré.", ephemeral=True)
-        return
-        
-    liste_totale = historique[user_id]["ecoutes"]
-    total_elements = len(liste_totale)
-    elements_par_page = 10
-    index_debut = (page - 1) * elements_par_page
-    index_fin = index_debut + elements_par_page
-    morceaux_page = liste_totale[index_debut:index_fin]
-    
-    if not morceaux_page:
-        await interaction.response.send_message(f"📂 La page `{page}` n'existe pas pour cet utilisateur (Total : {total_elements} écoutes).", ephemeral=True)
-        return
-
-    total_pages = (total_elements + elements_par_page - 1) // elements_par_page
-    embed = discord.Embed(title=f"🕒 Historique d'écoute — {cible_membre.display_name}", color=discord.Color.blue(), timestamp=datetime.datetime.now(PARIS_TZ))
-    
-    texte = ""
-    tracks_central = charger_tracks_central()
-    derniere_cover_trouvee = None
-
-    for index, track_data in enumerate(morceaux_page, start=index_debut + 1):
-        status = track_data.get('status', 'En cours...')
-        track_id = track_data.get("track_id")
-        date_ecoute = track_data.get("date", "Date inconnue")
-
-        # Lecture depuis la source unique centralisée tracks.json
-        track = tracks_central.get(track_id, {})
-        titre = track.get("titre", "Morceau inconnu")
-        artiste = track.get("artiste", "Artiste inconnu")
-        url = track.get("url", "#")
-        cover = track.get("cover_url")
-
-        if cover:
-            derniere_cover_trouvee = cover
-
-        texte += f"`{index}.` `[{date_ecoute}]` [{titre}]({url}) — *{artiste}*\n╰─ {status}\n\n"
-        
-    embed.description = texte
-    if len(morceaux_page) > 0 and  derniere_cover_trouvee:
-         embed.set_thumbnail(url=derniere_cover_trouvee)
-        
-    embed.set_footer(text=f"Page {page}/{total_pages} • Total : {total_elements} écoutes")
-    await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
 # ==========================================
