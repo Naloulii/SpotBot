@@ -698,5 +698,9 @@
     "glo": {
         "nom": "GLO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/81043f7ddafaf6cb012815918f3c0a35/250x250-000000-80-0-0.jpg"
+    },
+    "antent": {
+        "nom": "Antent",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
