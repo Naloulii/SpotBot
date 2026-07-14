@@ -13,14 +13,7 @@ from discord.ext import commands, tasks
 from colorthief import ColorThief
 from git import Repo
 
-# Empêche Git de tomber sur un prompt interactif "Username/Password for..."
-# quand l'authentification via le token dans l'URL échoue (token invalide,
-# expiré, ou mauvais scope). Sans ça, git reste bloqué en attente d'une saisie
-# qui ne viendra jamais dans ce conteneur non-interactif, jusqu'à ce que
-# l'hébergeur tue le process (d'où l'exit code -2 = tué par signal). Avec
-# cette variable, git échoue immédiatement avec un message clair au lieu de
-# rester bloqué — et surtout, le prompt "Password for 'https://TOKEN@...'"
-# qui expose le token en clair dans les logs n'apparaît plus jamais.
+# Empêche Git de tomber sur un prompt interactif
 os.environ["GIT_TERMINAL_PROMPT"] = "0"
 
 # Définition globale du fuseau horaire de Paris
@@ -32,7 +25,7 @@ intents.presences = True
 intents.members = True
 intents.message_content = True
 
-# Définition de l'activité avec le bouton de redirection vers ton GitHub Pages
+# Définition de l'activité
 activite_profil = discord.Activity(
     type=discord.ActivityType.playing,
     name="SpotBot Dashboard",
@@ -50,40 +43,25 @@ bot = commands.Bot(command_prefix="!", intents=intents, activity=activite_profil
 #          CONFIGURATION SÉCURISÉE
 # ==========================================
 DASHBOARD_URL = "https://naloulii.github.io/SpotBot"
+OWNER_ID = 566899759013429259  # Ton ID Discord (naloulii)[cite: 2, 3]
 
-# Récupération des jetons secrets via l'hébergeur Cloud (Railway)
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
 GITHUB_REPO_NAME = os.getenv("GITHUB_REPO_NAME")
 # ==========================================
 
-# Configuration des chemins locaux dans le conteneur Docker
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# DATA_DIR est un simple sous-dossier DANS le même dépôt que bot.py (pas un clone
-# séparé) : il ne contient que les données (dossiers de serveur + artists.json).
-# bot.py, requirements.txt, index.html restent à la racine du dépôt.
 DATA_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
-ecoutes_en_cours = {}   # clé = (guild_id, user_id)
-verrous_anti_spam = {}  # clé = (guild_id, user_id)
+ecoutes_en_cours = {}   
+verrous_anti_spam = {}  
 
 GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git"
-
-# Le dépôt Git est celui de BASE_DIR tout entier (bot.py + data/), pas un clone
-# séparé dans un sous-dossier. Si l'hébergeur a déjà déployé via un vrai
-# git clone (donc .git présent), on l'utilise tel quel. Sinon, on adopte le
-# dossier existant en place (git init + remote + reset sur origin/main) sans
-# jamais dupliquer bot.py à l'intérieur de data/.
 git_dir = os.path.join(BASE_DIR, ".git")
 
 def _adopter_dossier_comme_repo():
-    """Initialise/répare le dépôt Git sur le dossier existant SANS toucher aux
-    fichiers déjà présents. `checkout` touche le working tree et plante si des
-    fichiers non trackés portent déjà le nom de fichiers présents sur
-    origin/main ; `reset --mixed` ne touche que l'index (la "liste de suivi"),
-    jamais les fichiers sur disque, donc pas de plantage possible ici."""
     r = Repo.init(BASE_DIR)
     if "origin" in [rem.name for rem in r.remotes]:
         r.remotes.origin.set_url(GITHUB_REPO_URL)
@@ -96,10 +74,6 @@ def _adopter_dossier_comme_repo():
     return r
 
 def _repo_est_sain(r):
-    """Vérifie que le dépôt a bien une branche 'main' locale valide avec un
-    suivi vers origin/main configuré. Si ce n'est pas le cas (ex: reliquat
-    d'un précédent démarrage qui a planté avant de finir son initialisation),
-    le dépôt doit être réparé plutôt que réutilisé tel quel."""
     try:
         return (
             r.head.is_valid()
@@ -125,7 +99,6 @@ else:
     print("🚀 Aucun dépôt Git existant ici : adoption du dossier comme dépôt Git...")
     repo = _adopter_dossier_comme_repo()
 
-# --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes, + à la demande) ---
 def _sauvegarde_github_bloquante():
     try:
         fichiers_a_ajouter = []
@@ -134,15 +107,9 @@ def _sauvegarde_github_bloquante():
                 continue
             for file in files:
                 if file.endswith(".json"):
-                    # Chemin relatif à la RACINE du dépôt (BASE_DIR), pas à data/,
-                    # car c'est ce que git add/commit attend (ex: "data/Serveur_id/stats.json")
                     rel_path = os.path.relpath(os.path.join(root, file), BASE_DIR)
                     fichiers_a_ajouter.append(rel_path)
 
-        # On commit d'abord les changements locaux (s'il y en a) AVANT de pull,
-        # sinon git refuse le pull dès qu'un fichier local a été modifié sans être
-        # commité (ex: message_top_id sauvegardé dans config.json juste avant) :
-        # "Your local changes... would be overwritten by merge".
         nb_fichiers_commites = 0
         if fichiers_a_ajouter:
             repo.index.add(fichiers_a_ajouter)
@@ -156,40 +123,29 @@ def _sauvegarde_github_bloquante():
         if nb_fichiers_commites:
             repo.remotes.origin.push()
             print(f"📦 [GitHub] Données synchronisées avec succès : {nb_fichiers_commites} fichier(s)")
+            return True, nb_fichiers_commites
     except Exception as e:
         print(f"⚠️ [GitHub] Erreur de synchronisation automatique : {e}")
-
+        return False, str(e)
+    return True, 0
 
 @tasks.loop(minutes=15)
 async def sauvegarde_periodique_github():
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
-
 # ==========================================
 #     GESTION DES DOSSIERS PAR SERVEUR
 # ==========================================
-# artists.json est partagé entre tous les serveurs (les artistes sont les mêmes
-# partout), donc il vit à la RACINE du repo, pas dans un dossier de serveur.
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
-
-# Cache en mémoire : guild_id (str) -> chemin absolu du dossier déjà résolu.
-# Évite de re-scanner le disque à chaque appel (ces fonctions sont appelées très
-# souvent, à chaque écoute Spotify).
 _chemins_guildes = {}
 
 def nettoyer_nom_dossier(nom):
-    """Rend un nom de serveur Discord utilisable comme nom de dossier (retire
-    emojis/accents spéciaux/caractères interdits, garde lettres/chiffres/tirets)."""
     nettoye = re.sub(r"[^\w\-]+", "_", nom, flags=re.UNICODE).strip("_")
     if not nettoye:
         nettoye = "serveur"
     return nettoye[:50]
 
 def resoudre_dossier_guilde(guild, forcer=False):
-    """Retourne le chemin du dossier de données pour ce serveur, au format
-    'NomDuServeur_ID'. Si le serveur a été renommé depuis la dernière fois
-    (un dossier '..._ID' existe déjà avec un ancien nom), le dossier est
-    renommé sur place pour rester à jour, plutôt que d'en créer un nouveau."""
     guild_id = str(guild.id)
     if not forcer and guild_id in _chemins_guildes:
         return _chemins_guildes[guild_id]
@@ -210,7 +166,7 @@ def resoudre_dossier_guilde(guild, forcer=False):
     if dossier_existant and dossier_existant != chemin_voulu:
         try:
             os.rename(dossier_existant, chemin_voulu)
-            print(f"📁 Dossier renommé (serveur renommé) : {os.path.basename(dossier_existant)} → {nom_voulu}")
+            print(f"📁 Dossier renommé : {os.path.basename(dossier_existant)} → {nom_voulu}")
         except Exception as e:
             print(f"⚠️ Impossible de renommer le dossier du serveur {guild.name} : {e}")
             chemin_voulu = dossier_existant
@@ -221,12 +177,8 @@ def resoudre_dossier_guilde(guild, forcer=False):
     return chemin_voulu
 
 def chemin_dossier_guilde(guild_id):
-    """Lecture depuis le cache résolu par resoudre_dossier_guilde(). Ce cache est
-    rempli pour tous les serveurs connus au démarrage (on_ready) et à l'arrivée
-    sur un nouveau serveur (on_guild_join), donc toujours dispo en pratique."""
     if guild_id in _chemins_guildes:
         return _chemins_guildes[guild_id]
-    # Filet de sécurité si jamais appelé avant résolution complète
     dossier = os.path.join(DATA_DIR, str(guild_id))
     os.makedirs(dossier, exist_ok=True)
     return dossier
@@ -235,9 +187,6 @@ def chemin_fichier_guilde(guild_id, nom_fichier):
     return os.path.join(chemin_dossier_guilde(guild_id), nom_fichier)
 
 def assurer_dossier_guilde(guild):
-    """Crée (si besoin) le dossier du serveur + un config.json par défaut + un guild_info.json
-    utile pour le futur dashboard (nom / icône du serveur). Retourne True si le dossier vient
-    d'être créé (nouveau serveur)."""
     guild_id = str(guild.id)
     dossier = resoudre_dossier_guilde(guild)
     config_path = os.path.join(dossier, "config.json")
@@ -263,8 +212,7 @@ def assurer_dossier_guilde(guild):
 
     return nouveau
 
-
-# Fonctions de gestion de données locales (JSON), maintenant par serveur
+# Chargeurs & Sauvegardes
 def charger_stats(guild_id):
     try:
         with open(chemin_fichier_guilde(guild_id, "stats.json"), "r") as f: return json.load(f)
@@ -305,7 +253,9 @@ def charger_artistes_cache():
 def sauvegarder_artistes_cache(cache):
     with open(ARTISTS_FILE, "w") as f: json.dump(cache, f, indent=4)
 
-
+# ==========================================
+#          RECHERCHE D'IMAGES API
+# ==========================================
 def rechercher_image_artiste(nom_artiste):
     for tentative in range(3):
         try:
@@ -318,7 +268,6 @@ def rechercher_image_artiste(nom_artiste):
             data = reponse.json()
 
             if "error" in data:
-                print(f"⏳ [Deezer] Quota atteint pour '{nom_artiste}', nouvelle tentative dans 2s...")
                 time.sleep(2)
                 continue
 
@@ -330,18 +279,29 @@ def rechercher_image_artiste(nom_artiste):
         except Exception as e:
             print(f"⚠️ [Deezer] Erreur recherche artiste '{nom_artiste}' : {e}")
             return None
-
-    print(f"❌ [Deezer] Abandon pour '{nom_artiste}' après plusieurs tentatives (quota).")
     return None
 
+def rechercher_cover_track(titre, artiste):
+    """Recherche la pochette d'un morceau spécifique sur Deezer si elle est manquante."""
+    try:
+        reponse = requests.get(
+            "https://api.deezer.com/search/track",
+            params={"q": f"{titre} {artiste}", "limit": 1},
+            timeout=10
+        )
+        reponse.raise_for_status()
+        data = reponse.json()
+        items = data.get("data", [])
+        if items:
+            return items[0].get("album", {}).get("cover_medium")
+    except Exception as e:
+        print(f"⚠️ [Deezer] Erreur cover pour '{titre}' : {e}")
+    return None
 
 def mettre_a_jour_cache_artistes(chaine_artistes):
-    if not chaine_artistes:
-        return
-
+    if not chaine_artistes: return
     noms = [a.strip() for a in chaine_artistes.split(";") if a.strip()]
-    if not noms:
-        return
+    if not noms: return
 
     cache = charger_artistes_cache()
     modifie = False
@@ -357,7 +317,9 @@ def mettre_a_jour_cache_artistes(chaine_artistes):
     if modifie:
         sauvegarder_artistes_cache(cache)
 
-
+# ==========================================
+#         ALGORITHMES DE STATS/LIKES
+# ==========================================
 def enregistrer_stat_membre(guild_id, membre):
     user_id = str(membre.id)
     stats = charger_stats(guild_id)
@@ -384,24 +346,16 @@ def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=Non
         sauvegarder_likes(guild_id, likes)
         return False
     else:
+        # Tente de récupérer une cover si absente lors du Like
+        if not cover_url:
+            cover_url = rechercher_cover_track(titre, artiste)
         likes[user_id]["liste"].append({"titre": titre, "artiste": artiste, "url": url, "cover_url": cover_url})
         sauvegarder_likes(guild_id, likes)
         return True
 
 def finaliser_ecoutes_orphelines(guild_id, membre, historique):
-    """Marque comme terminées (🎉) toutes les écoutes de ce membre restées
-    bloquées sur 'En cours...' et leur attribue un point au classement.
-
-    Ça arrive quand le bot redémarre (crash, redeploy...) pendant qu'un
-    membre écoutait : le suivi en mémoire (ecoutes_en_cours) est perdu, donc
-    ni le passage à la musique suivante ni l'arrêt de l'écoute ne déclenchent
-    normally mettre_a_jour_historique_fin, et l'entrée reste bloquée.
-    On considère ces écoutes comme terminées dès qu'on constate qu'une
-    musique plus récente a démarré pour ce membre (preuve que l'ancienne
-    est bel et bien finie)."""
     user_id = str(membre.id)
-    if user_id not in historique:
-        return
+    if user_id not in historique: return
     orphelines_reparees = 0
     for ecoute in historique[user_id]["ecoutes"]:
         if ecoute["status"] == "En cours...":
@@ -410,8 +364,6 @@ def finaliser_ecoutes_orphelines(guild_id, membre, historique):
     if orphelines_reparees:
         for _ in range(orphelines_reparees):
             enregistrer_stat_membre(guild_id, membre)
-        print(f"🔧 [{membre.guild.name}] {orphelines_reparees} écoute(s) bloquée(s) sur 'En cours...' réparée(s) pour {membre.display_name}")
-
 
 def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cover_url=None):
     user_id = str(membre.id)
@@ -432,11 +384,11 @@ def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cove
                     return 
             except Exception: pass
 
-    # On s'apprête à insérer une nouvelle écoute "En cours..." : toute écoute
-    # précédente encore marquée "En cours..." à ce stade is forcément une
-    # orpheline (le flux normal l'aurait déjà finalisée via
-    # mettre_a_jour_historique_fin avant d'appeler cette fonction).
     finaliser_ecoutes_orphelines(guild_id, membre, historique)
+
+    # Récupère une cover si absente
+    if not cover_url:
+        cover_url = rechercher_cover_track(titre, artiste)
 
     maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
     historique[user_id]["ecoutes"].insert(0, {
@@ -450,38 +402,31 @@ def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cove
     })
     historique[user_id]["ecoutes"] = historique[user_id]["ecoutes"][:100]
     sauvegarder_historique(guild_id, historique)
-
     mettre_a_jour_cache_artistes(artiste)
 
 def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree_totale):
     user_id = str(membre.id)
     historique = charger_historique(guild_id)
-    if user_id not in historique:
-        return
+    if user_id not in historique: return
 
     ecoutes = historique[user_id]["ecoutes"]
-
     index_actuel = None
     for i, ecoute in enumerate(ecoutes):
         if ecoute.get("track_id") == track_id and ecoute["status"] == "En cours...":
             index_actuel = i
             break
-    if index_actuel is None:
-        return
+    if index_actuel is None: return
 
     ecoute_actuelle = ecoutes[index_actuel]
     ecoute_actuelle["temps_ecoute_secondes"] = round(temps_ecoule, 1)
 
     temps_cumule = temps_ecoule
     for ecoute_precedente in ecoutes[index_actuel + 1:]:
-        if ecoute_precedente.get("track_id") != track_id:
-            continue
-        if ecoute_precedente["status"] == "🎉 Écouté en entier":
-            break
+        if ecoute_precedente.get("track_id") != track_id: continue
+        if ecoute_precedente["status"] == "🎉 Écouté en entier": break
         temps_cumule += ecoute_precedente.get("temps_ecoute_secondes", 0)
 
     valide = duree_totale > 0 and (temps_cumule / duree_totale) >= 0.96
-
     if valide:
         ecoute_actuelle["status"] = "🎉 Écouté en entier"
     else:
@@ -489,20 +434,14 @@ def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree
         ecoute_actuelle["status"] = f"⏱️ Écouté pendant {m}m {s:02d}s"
 
     sauvegarder_historique(guild_id, historique)
-
     if valide:
         enregistrer_stat_membre(guild_id, membre)
 
-
+# ==========================================
+#            UI & AFFICHAGE
+# ==========================================
 def construire_embed_classement(stats, titre="🏆 Classement de la Semaine Dernière"):
-    """Construit l'embed de classement à partir d'un dict de stats (mêmes clés que
-    stats.json / stats_week_WW_YYYY.json). Réutilisé par la tâche hebdomadaire
-    et par la récupération d'archive au démarrage."""
-    embed = discord.Embed(
-        title=titre,
-        color=discord.Color.gold(),
-        timestamp=datetime.datetime.now(PARIS_TZ)
-    )
+    embed = discord.Embed(title=titre, color=discord.Color.gold(), timestamp=datetime.datetime.now(PARIS_TZ))
     if not stats:
         embed.description = "Aucune musique n'a été validée la semaine dernière ! 🎧"
     else:
@@ -515,57 +454,40 @@ def construire_embed_classement(stats, titre="🏆 Classement de la Semaine Dern
         embed.description = texte
     return embed
 
-
 def trouver_derniere_archive_top(guild_id):
-    """Cherche dans le dossier du serveur les fichiers d'archive 'stats_week_WW_YYYY.json'
-    et retourne (stats_dict, semaine, annee) pour l'archive la plus récente, ou None si
-    aucune archive n'existe."""
     dossier = chemin_dossier_guilde(guild_id)
-    meilleure = None  # (annee, semaine, chemin)
-
+    meilleure = None
     try:
         entrees = os.listdir(dossier)
-    except FileNotFoundError:
-        return None
+    except FileNotFoundError: return None
 
     for nom_fichier in entrees:
         correspondance = re.match(r"^stats_week_(\d+)_(\d+)\.json$", nom_fichier)
-        if not correspondance:
-            continue
+        if not correspondance: continue
         semaine = int(correspondance.group(1))
         annee = int(correspondance.group(2))
         chemin = os.path.join(dossier, nom_fichier)
         if meilleure is None or (annee, semaine) > (meilleure[0], meilleure[1]):
             meilleure = (annee, semaine, chemin)
 
-    if meilleure is None:
-        return None
-
+    if meilleure is None: return None
     annee, semaine, chemin = meilleure
     try:
-        with open(chemin, "r") as f:
-            stats = json.load(f)
-    except Exception:
-        return None
+        with open(chemin, "r") as f: return json.load(f), semaine, annee
+    except Exception: return None
 
-    return stats, semaine, annee
-
-
-# --- TASK : TOUS LES LUNDIS 00:00 (HEURE DE PARIS), POUR CHAQUE SERVEUR ---
+# Tâche Hebdomadaire
 @tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=PARIS_TZ))
 async def classement_hebdomadaire_auto():
-    if datetime.datetime.now(PARIS_TZ).weekday() != 0:
-        return
+    if datetime.datetime.now(PARIS_TZ).weekday() != 0: return
 
     for guild in bot.guilds:
         guild_id = str(guild.id)
         config = charger_config(guild_id)
         salon_id = config.get("salon_musique_id")
-        if not salon_id:
-            continue
+        if not salon_id: continue
         salon = bot.get_channel(salon_id)
-        if not salon:
-            continue
+        if not salon: continue
 
         stats = charger_stats(guild_id)
         embed = construire_embed_classement(stats)
@@ -587,13 +509,10 @@ async def classement_hebdomadaire_auto():
 
         num_semaine = datetime.datetime.now(PARIS_TZ).strftime("%V_%Y")
         archive_file = chemin_fichier_guilde(guild_id, f"stats_week_{num_semaine}.json")
-        with open(archive_file, "w") as f:
-            json.dump(stats, f, indent=4)
-
+        with open(archive_file, "w") as f: json.dump(stats, f, indent=4)
         sauvegarder_stats(guild_id, {})
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
-
 
 def generer_embed_aide():
     embed = discord.Embed(
@@ -652,7 +571,6 @@ async def verifier_et_mettre_a_jour_aide(guild_id):
             sauvegarder_config(guild_id, config)
         except Exception: pass
 
-
 couleur_cache = {}  
 
 def obtenir_couleur_album(url_image, track_id=None):
@@ -684,15 +602,15 @@ def generer_barre_progression(creation_time, duration):
         else: barre += "▬"
     return f"{barre} `{int(temps_ecoule // 60)}:{int(temps_ecoule % 60):02d} / {int(durée_totale // 60)}:{int(durée_totale % 60):02d}`"
 
-
+# ==========================================
+#        VÉRIFICATION STATUT DE L'ÉCOUTE
+# ==========================================
 async def verifier_presence_spotify(membre):
-    if membre.guild is None:
-        return
+    if membre.guild is None: return
     guild_id = str(membre.guild.id)
     config = charger_config(guild_id)
     salon_id = config.get("salon_musique_id")
-    if not salon_id:
-        return  # Serveur pas encore configuré (le propriétaire doit faire /setup)
+    if not salon_id: return 
 
     salon = bot.get_channel(salon_id)
     if not salon: return
@@ -702,8 +620,7 @@ async def verifier_presence_spotify(membre):
     maintenant_timestamp = datetime.datetime.now(PARIS_TZ).timestamp()
 
     if cle in verrous_anti_spam:
-        if maintenant_timestamp - verrous_anti_spam[cle] < 2:
-            return
+        if maintenant_timestamp - verrous_anti_spam[cle] < 2: return
     verrous_anti_spam[cle] = maintenant_timestamp
 
     spotify_activity = None
@@ -716,14 +633,20 @@ async def verifier_presence_spotify(membre):
         deja_en_cours = cle in ecoutes_en_cours and ecoutes_en_cours[cle]["track_id"] == spotify_activity.track_id
 
         if not deja_en_cours:
-            couleur = await asyncio.to_thread(obtenir_couleur_album, spotify_activity.album_cover_url, spotify_activity.track_id)
+            # Essai de récupération de cover
+            cover_url = spotify_activity.album_cover_url
+            if not cover_url:
+                cover_url = await asyncio.to_thread(rechercher_cover_track, spotify_activity.title, spotify_activity.artist)
+
+            couleur = await asyncio.to_thread(obtenir_couleur_album, cover_url, spotify_activity.track_id) if cover_url else discord.Color.green()
 
             embed = discord.Embed(
                 title=f"🎵 {membre.display_name} écoute :",
                 description=f"**Titre :** {spotify_activity.title}\n**Artiste :** {spotify_activity.artist}\n**Album :** {spotify_activity.album}",
                 color=couleur
             )
-            embed.set_thumbnail(url=spotify_activity.album_cover_url)
+            if cover_url:
+                embed.set_thumbnail(url=cover_url)
             
             barre = generer_barre_progression(spotify_activity.start, spotify_activity.duration)
             embed.add_field(name="Progression", value=barre, inline=False)
@@ -741,9 +664,9 @@ async def verifier_presence_spotify(membre):
                     await ancien_msg.delete()
                 except Exception: pass
 
-            await asyncio.to_thread(ajouter_a_l_historique, guild_id, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id, spotify_activity.album_cover_url)
+            await asyncio.to_thread(ajouter_a_l_historique, guild_id, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id, cover_url)
 
-            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.album_cover_url)
+            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, cover_url)
             message = await salon.send(embed=embed, view=view)
             
             ecoutes_en_cours[cle] = {
@@ -754,7 +677,8 @@ async def verifier_presence_spotify(membre):
                 "track_id": spotify_activity.track_id,
                 "duration": spotify_activity.duration.total_seconds(),
                 "activity": spotify_activity,
-                "couleur": couleur
+                "couleur": couleur,
+                "cover_url": cover_url
             }
 
     elif cle in ecoutes_en_cours:
@@ -787,6 +711,11 @@ class LikeView(discord.ui.View):
             await interaction.response.send_message("Cette action doit être faite depuis un serveur.", ephemeral=True)
             return
         guild_id = str(interaction.guild_id)
+        
+        # Récupère l'image de couverture si manquante
+        if not self.cover_url:
+            self.cover_url = rechercher_cover_track(self.titre, self.artiste)
+            
         est_like = enregistrer_like_membre(guild_id, interaction.user, self.titre, self.artiste, self.url, self.cover_url)
         if est_like:
             await interaction.response.send_message(f"❤️ Ajouté à tes titres likés : **{self.titre}**", ephemeral=True)
@@ -795,38 +724,17 @@ class LikeView(discord.ui.View):
 
 
 async def finaliser_ecoutes_perimees(guild):
-    """Compare chaque écoute la plus récente encore marquée 'En cours...' avec
-    la présence Spotify actuelle du membre :
-    - si l'écoute est activement suivie en mémoire (ecoutes_en_cours), le flux
-      normal (verifier_presence_spotify) s'en occupe déjà, on ne touche à rien ;
-    - si le membre écoute encore exactement ce morceau (mais pas suivi en
-      mémoire, ex: juste après un redémarrage du bot), on laisse
-      verifier_presence_spotify reprendre le suivi normalement au prochain
-      événement de présence ;
-    - sinon (autre morceau, ou plus d'écoute Spotify du tout), l'écoute est
-      restée bloquée — que ce soit à cause d'un redémarrage/crash du bot
-      pendant qu'elle était en cours, ou parce que Discord n'a tout simplement
-      pas renvoyé l'événement de présence signalant l'arrêt de l'écoute — on
-      la finalise et on ajoute le point au classement.
-
-    Appelée au démarrage du bot ET périodiquement (toutes les 5 minutes) pour
-    rattraper les cas où aucun nouveau morceau n'est jamais relancé après
-    l'arrêt de l'écoute (donc finaliser_ecoutes_orphelines, qui ne se
-    déclenche qu'au démarrage d'un nouveau morceau, ne serait jamais appelée)."""
     guild_id = str(guild.id)
     historique = charger_historique(guild_id)
-    if not historique:
-        return
+    if not historique: return
 
     modifie = False
     for user_id, data in historique.items():
         ecoutes = data.get("ecoutes", [])
-        if not ecoutes or ecoutes[0].get("status") != "En cours...":
-            continue
+        if not ecoutes or ecoutes[0].get("status") != "En cours...": continue
 
         cle = (guild_id, user_id)
-        if cle in ecoutes_en_cours:
-            continue  # Activement suivie en mémoire, rien à réparer ici
+        if cle in ecoutes_en_cours: continue  
 
         membre = guild.get_member(int(user_id))
         track_id_actuel = None
@@ -837,13 +745,12 @@ async def finaliser_ecoutes_perimees(guild):
                     break
 
         if track_id_actuel is not None and track_id_actuel == ecoutes[0].get("track_id"):
-            continue  # Toujours en train d'écouter ce même morceau, rien à réparer
+            continue  
 
         ecoutes[0]["status"] = "🎉 Écouté en entier"
         modifie = True
         if membre:
             enregistrer_stat_membre(guild_id, membre)
-        print(f"🔧 [{guild.name}] Écoute bloquée sur 'En cours...' finalisée pour {data.get('display_name', user_id)}")
 
     if modifie:
         sauvegarder_historique(guild_id, historique)
@@ -855,9 +762,64 @@ async def verifier_ecoutes_perimees():
         try:
             await finaliser_ecoutes_perimees(guild)
         except Exception as e:
-            print(f"⚠️ [{guild.name}] Erreur vérification écoutes périmées : {e}")
+            print(f"⚠️ [{guild.name}] Erreur vérification écoutes : {e}")
+
+# ==========================================
+#          MESSAGES PRIVÉS (TICKETS)
+# ==========================================
+@bot.event
+async def on_message(message):
+    # Ignore les messages du bot lui-même
+    if message.author == bot.user:
+        return
+
+    # Si le message est un MP (reçu par le bot d'un utilisateur externe)
+    if isinstance(message.channel, discord.DMChannel):
+        # On essaie de récupérer ton compte admin (Naloulii)[cite: 2, 3]
+        admin = bot.get_user(OWNER_ID)
+        
+        if admin:
+            # Création d'un embed élégant pour le ticket reçu
+            embed_ticket = discord.Embed(
+                title="📩 Nouveau Message Reçu (Ticket DM)",
+                description=message.content,
+                color=discord.Color.blurple(),
+                timestamp=datetime.datetime.now(PARIS_TZ)
+            )
+            embed_ticket.set_author(
+                name=f"{message.author.display_name} ({message.author.name})",
+                icon_url=message.author.display_avatar.url
+            )
+            embed_ticket.set_footer(text=f"User ID: {message.author.id} • Réponds à son DM pour dialoguer !")
+            
+            # Gestion des fichiers / pièces jointes éventuels
+            fichiers = []
+            if message.attachments:
+                for attachment in message.attachments:
+                    fichiers.append(await attachment.to_file())
+
+            try:
+                await admin.send(embed=embed_ticket, files=fichiers)
+                # Accusé de réception propre pour l'utilisateur
+                embed_accuse = discord.Embed(
+                    title="✅ Message retransmis avec succès",
+                    description="Votre message a été transmis directement à mon administrateur (**naloulii**). Vous recevrez une réponse sous peu ![cite: 2, 3]",
+                    color=discord.Color.green()
+                )
+                await message.channel.send(embed=embed_accuse)
+            except Exception as e:
+                await message.channel.send("❌ Impossible de transmettre le message à l'administrateur pour le moment.")
+                print(f"Erreur envoi ticket DM : {e}")
+        else:
+            await message.channel.send("❌ Impossible de joindre l'administrateur actuel.")
+    
+    # Nécessaire pour faire tourner les commandes classiques et slash du bot
+    await bot.process_commands(message)
 
 
+# ==========================================
+#             INITIALISATION DU BOT
+# ==========================================
 @bot.event
 async def on_ready():
     print(f"SpotBot est en ligne : {bot.user.name}")
@@ -869,7 +831,6 @@ async def on_ready():
     except Exception as e:
         print(f"Erreur sync des commandes slash : {e}")
 
-    # S'assure que chaque serveur où le bot est déjà présent a bien son dossier de données
     for guild in bot.guilds:
         assurer_dossier_guilde(guild)
         guild_id = str(guild.id)
@@ -881,16 +842,11 @@ async def on_ready():
 
         config = charger_config(guild_id)
         salon_id = config.get("salon_musique_id")
-        if not salon_id:
-            continue  # Serveur pas encore configuré, on ne touche à rien
+        if not salon_id: continue  
 
         await verifier_et_mettre_a_jour_aide(guild_id)
-
         salon = bot.get_channel(salon_id)
 
-        # Si aucun message de classement n'existe encore pour ce serveur mais qu'il y a
-        # des archives hebdomadaires (stats_week_WW_YYYY.json), on publie la plus récente
-        # au lieu d'attendre le prochain lundi minuit.
         if salon and not config.get("message_top_id"):
             archive = trouver_derniere_archive_top(guild_id)
             if archive:
@@ -903,9 +859,8 @@ async def on_ready():
                     nouveau_msg = await salon.send(embed_archive)
                     config["message_top_id"] = nouveau_msg.id
                     sauvegarder_config(guild_id, config)
-                    print(f"🏆 [{guild.name}] Message de classement recréé depuis l'archive stats_week_{semaine}_{annee}.json")
                 except Exception as e:
-                    print(f"⚠️ [{guild.name}] Impossible de publier le classement archivé : {e}")
+                    print(f"⚠️ [{guild.name}] Impossible de publier le classement : {e}")
 
         msg_aide_id = config.get("message_aide_id")
         if salon:
@@ -917,7 +872,6 @@ async def on_ready():
             except Exception as e:
                 print(f"Erreur nettoyage initial ({guild.name}) : {e}")
 
-    # Force l'application de l'activité avec le bouton au démarrage
     await bot.change_presence(status=discord.Status.online, activity=bot.activity)
 
     actualiser_messages.start()
@@ -938,8 +892,7 @@ async def on_guild_update(before, after):
                     "name": after.name,
                     "icon_url": str(after.icon.url) if after.icon else None
                 }, f, indent=4)
-        except Exception:
-            pass
+        except Exception: pass
         await asyncio.to_thread(_sauvegarde_github_bloquante)
 
 
@@ -948,19 +901,29 @@ async def on_guild_join(guild):
     print(f"➕ SpotBot a été ajouté au serveur : {guild.name} ({guild.id})")
     assurer_dossier_guilde(guild)
 
-    # ✉️ Envoi d'un message d'explication privé au propriétaire du serveur
+    # ✉️ Envoi d'un message d'explication privé et ultra-détaillé au propriétaire du serveur
     owner = guild.owner
     if owner:
         embed_dm = discord.Embed(
-            title="🎵 Merci d'avoir ajouté SpotBot !",
+            title="🎵 Merci d'avoir ajouté SpotBot ! 🤖",
             description=(
                 f"Bonjour **{owner.display_name}** !\n\n"
                 f"Pour démarrer sur **{guild.name}**, tu dois choisir "
                 "le salon où seront publiées les activités musicales en temps réel avec la commande :\n\n"
                 "👉 **/setup salon:#votre-salon**\n\n"
-                "*(Il est fortement recommandé de créer un salon textuel vide dédié, par exemple `#spotbot` ou `#musique-temps-reel`)*"
+                "*(Il est fortement recommandé de créer un salon textuel vide dédié, par exemple `#spotbot` ou `#musique`)*"
             ),
             color=discord.Color.from_rgb(30, 215, 96)
+        )
+        embed_dm.add_field(
+            name="📩 Système Intégré de Support & Tickets :",
+            value=(
+                "• **Support direct par MP** : Tes membres peuvent envoyer un message privé (DM) au Bot à tout moment !\n"
+                "• **Retransmission automatique** : Le message sera instantanément transmis de manière sécurisée et "
+                "propre sous forme de ticket à mon créateur (**naloulii**)[cite: 2, 3].\n"
+                "• **Pas d'encombrement** : Aucun canal d'administration ou configuration additionnelle n'est requis !"
+            ),
+            inline=False
         )
         embed_dm.add_field(
             name="🔒 Permissions requises pour le bot dans ce salon :",
@@ -978,7 +941,6 @@ async def on_guild_join(guild):
         except Exception as e:
             print(f"⚠️ Impossible d'envoyer le DM d'explication au propriétaire : {e}")
 
-    # Pousse immédiatement le nouveau dossier de serveur vers GitHub
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
 
@@ -996,16 +958,22 @@ async def actualiser_messages():
         try:
             msg = infos.get("message_obj") or await salon.fetch_message(infos["message_id"])
             spotify_activity = infos["activity"]
+            
+            # Essai de récupération de cover si absente
+            cover_url = infos.get("cover_url")
+            if not cover_url:
+                cover_url = await asyncio.to_thread(rechercher_cover_track, spotify_activity.title, spotify_activity.artist)
+
             embed = discord.Embed(title=msg.embeds[0].title, description=msg.embeds[0].description, color=infos["couleur"])
-            embed.set_thumbnail(url=spotify_activity.album_cover_url)
+            if cover_url:
+                embed.set_thumbnail(url=cover_url)
             barre = generer_barre_progression(infos["start_time"], spotify_activity.duration)
             embed.add_field(name="Progression", value=barre, inline=False)
             embed.add_field(name="Écouter sur Spotify", value=f"[Clique ici]({spotify_activity.track_url})", inline=False)
-            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.album_cover_url)
+            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, cover_url)
             await msg.edit(embed=embed, view=view)
         except Exception:
             if cle in ecoutes_en_cours: del ecoutes_en_cours[cle]
-
 
 # ==========================================
 #                COMMANDES
@@ -1059,6 +1027,7 @@ async def top_semaine(interaction: discord.Interaction):
     embed.description = texte
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
+
 @bot.tree.command(name="likes", description="Affiche la liste de tes morceaux likés")
 @app_commands.guild_only()
 async def voir_likes(interaction: discord.Interaction):
@@ -1071,9 +1040,27 @@ async def voir_likes(interaction: discord.Interaction):
     
     embed = discord.Embed(title=f"❤️ Titres likés par {interaction.user.display_name}", color=discord.Color.red(), timestamp=datetime.datetime.now(PARIS_TZ))
     texte = ""
+    
+    # On récupère le dernier aimé pour afficher une cover dans l'embed s'il y en a une !
+    dernier_like_avec_cover = None
+
     for index, track in enumerate(likes[user_id]["liste"][-15:], start=1):
+        cover = track.get("cover_url")
+        if not cover:
+            # Recherche de cover à la volée s'il n'y en a pas
+            cover = rechercher_cover_track(track['titre'], track['artiste'])
+            track["cover_url"] = cover
+            sauvegarder_likes(guild_id, likes)
+
+        if cover:
+            dernier_like_avec_cover = cover
+
         texte += f"`{index}.` [{track['titre']}]({track['url']}) — *{track['artiste']}*\n"
+    
     embed.description = texte
+    if dernier_like_avec_cover:
+        embed.set_thumbnail(url=dernier_like_avec_cover)
+
     embed.set_footer(text=f"Total : {len(likes[user_id]['liste'])} morceaux favoris")
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
@@ -1085,9 +1072,7 @@ async def voir_likes(interaction: discord.Interaction):
 )
 @app_commands.guild_only()
 async def voir_historique(interaction: discord.Interaction, page: int = 1, membre: discord.Member = None):
-    if page < 1:
-        page = 1
-
+    if page < 1: page = 1
     guild_id = str(interaction.guild.id)
     cible_membre = membre if membre else interaction.user
     user_id = str(cible_membre.id)
@@ -1101,11 +1086,9 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
         
     liste_totale = historique[user_id]["ecoutes"]
     total_elements = len(liste_totale)
-    
     elements_par_page = 10
     index_debut = (page - 1) * elements_par_page
     index_fin = index_debut + elements_par_page
-    
     morceaux_page = liste_totale[index_debut:index_fin]
     
     if not morceaux_page:
@@ -1113,21 +1096,72 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
         return
 
     total_pages = (total_elements + elements_par_page - 1) // elements_par_page
-
-    embed = discord.Embed(
-        title=f"🕒 Historique d'écoute — {cible_membre.display_name}", 
-        color=discord.Color.blue(), 
-        timestamp=datetime.datetime.now(PARIS_TZ)
-    )
+    embed = discord.Embed(title=f"🕒 Historique d'écoute — {cible_membre.display_name}", color=discord.Color.blue(), timestamp=datetime.datetime.now(PARIS_TZ))
     
     texte = ""
+    derniere_cover_trouvee = None
+
     for index, track in enumerate(morceaux_page, start=index_debut + 1):
         status = track.get('status', 'En cours...')
+        cover = track.get("cover_url")
+        
+        # Recherche de cover à la volée s'il n'y en a pas
+        if not cover:
+            cover = rechercher_cover_track(track['titre'], track['artiste'])
+            track["cover_url"] = cover
+            sauvegarder_historique(guild_id, historique)
+
+        if cover:
+            derniere_cover_trouvee = cover
+
         texte += f"`{index}.` `[{track['date']}]` [{track['titre']}]({track['url']}) — *{track['artiste']}*\n╰─ {status}\n\n"
         
     embed.description = texte
+    if derniere_cover_trouvee:
+        embed.set_thumbnail(url=derniere_cover_trouvee)
+        
     embed.set_footer(text=f"Page {page}/{total_pages} • Total : {total_elements} écoutes")
-    
     await interaction.response.send_message(embed=embed, ephemeral=True)
+
+
+# ==========================================
+#      COMMANDE MANUELLE SYNC GITHUB
+# ==========================================
+@bot.tree.command(name="git-sync", description="Force la synchronisation des bases de données locales vers GitHub (Réservé à Naloulii)")
+@app_commands.guild_only()
+async def manual_git_sync(interaction: discord.Interaction):
+    # Restriction absolue pour naloulii uniquement[cite: 2, 3]
+    if interaction.user.id != OWNER_ID:
+        await interaction.response.send_message("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).", ephemeral=True)
+        return
+
+    await interaction.response.defer(ephemeral=True)
+
+    loop = asyncio.get_running_loop()
+    succes, resultat = await loop.run_in_executor(None, _sauvegarde_github_bloquante)
+
+    if succes:
+        await interaction.followup.send(f"✅ **Synchronisation GitHub exécutée avec succès !**\n📦 {resultat} fichier(s) JSON mis à jour sur ton dépôt.")
+    else:
+        await interaction.followup.send(f"❌ **Erreur de synchronisation :**\n`{resultat}`")
+
+
+# Commande texte classique en filet de sécurité au cas où les commandes slash mettent du temps à se synchroniser
+@bot.command(name="gitsync")
+async def manual_git_sync_text(ctx):
+    # Restriction absolue pour naloulii uniquement[cite: 2, 3]
+    if ctx.author.id != OWNER_ID:
+        await ctx.send("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).")
+        return
+
+    msg = await ctx.send("🔄 Synchronisation GitHub en cours...")
+    loop = asyncio.get_running_loop()
+    succes, resultat = await loop.run_in_executor(None, _sauvegarde_github_bloquante)
+
+    if succes:
+        await msg.edit(content=f"✅ **Synchronisation GitHub exécutée avec succès !**\n📦 {resultat} fichier(s) JSON mis à jour sur ton dépôt.")
+    else:
+        await msg.edit(content=f"❌ **Erreur de synchronisation :**\n`{resultat}`")
+
 
 bot.run(DISCORD_TOKEN)
