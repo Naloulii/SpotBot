@@ -5,6 +5,25 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 17:12",
+                "titre": "ALED",
+                "artiste": "Luther",
+                "url": "https://open.spotify.com/track/41hl3QWKVaFZMZTNZhrARK",
+                "track_id": "41hl3QWKVaFZMZTNZhrARK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273f612c3e18ac2f5af57a52128",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 17:12",
+                "titre": "ALED",
+                "artiste": "Luther",
+                "url": "https://open.spotify.com/track/41hl3QWKVaFZMZTNZhrARK",
+                "track_id": "41hl3QWKVaFZMZTNZhrARK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273f612c3e18ac2f5af57a52128",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 5.8
+            },
+            {
                 "date": "14/07/2026 15:28",
                 "titre": "Grain de sel",
                 "artiste": "Apez",
@@ -902,24 +921,6 @@
                 "track_id": "23fxyoCF4qEXS5RSZ8xWPq",
                 "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 16s",
                 "temps_ecoute_secondes": 136.2
-            },
-            {
-                "date": "13/07/2026 16:28",
-                "titre": "LE PLAN",
-                "artiste": "JRK 19; La Mano 1.9",
-                "url": "https://open.spotify.com/track/0U7UH2iu2X4pWdlmyY3kSm",
-                "track_id": "0U7UH2iu2X4pWdlmyY3kSm",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 169.8
-            },
-            {
-                "date": "13/07/2026 16:25",
-                "titre": "No stress",
-                "artiste": "DVM; Fav\u00e9; La Mano 1.9",
-                "url": "https://open.spotify.com/track/7jPBHQ9vRgMxjRcREZKKGI",
-                "track_id": "7jPBHQ9vRgMxjRcREZKKGI",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 166.9
             }
         ]
     },
