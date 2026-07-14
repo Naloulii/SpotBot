@@ -5,9 +5,15 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 23:34",
+                "track_id": "6AoOzPhqx5LbtYfKBlBrEG",
+                "status": "En cours..."
+            },
+            {
                 "date": "14/07/2026 23:32",
                 "track_id": "1S9Y5vdNyM7IzXtCP7Sz4v",
-                "status": "En cours..."
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 18s",
+                "temps_ecoute_secondes": 138.9
             },
             {
                 "date": "14/07/2026 23:28",
