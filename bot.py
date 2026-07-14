@@ -39,7 +39,7 @@ activite_profil = discord.Activity(
     buttons=[
         {
             "label": "Aller sur le Dashboard", 
-            "url": DASHBOARD_URL
+            "url": "https://naloulii.github.io/SpotBot"
         }
     ]
 )
