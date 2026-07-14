@@ -43,7 +43,7 @@ bot = commands.Bot(command_prefix="!", intents=intents, activity=activite_profil
 #          CONFIGURATION SÉCURISÉE
 # ==========================================
 DASHBOARD_URL = "https://naloulii.github.io/SpotBot"
-OWNER_ID = 566899759013429259  # Ton ID Discord (naloulii)[cite: 2, 3]
+OWNER_ID = 566899759013429259  # Ton ID Discord (naloulii)
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -439,7 +439,7 @@ def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree
 #      VÉRIFICATION & CORRECTION DES COVERS
 # ==========================================
 def verifier_et_reparer_covers_globales():
-    """Parcourt l'ensemble des fichiers historique.json et likes.json de chaque serveur.[cite: 2, 3]
+    """Parcourt l'ensemble des fichiers historique.json et likes.json de chaque serveur.
     Si un morceau n'a pas de cover_url, il interroge Deezer, met à jour le fichier localement
     et retourne True s'il y a eu des modifications."""
     print("🔍 [Covers] Début de la vérification globale des cover_url manquants...")
@@ -453,7 +453,7 @@ def verifier_et_reparer_covers_globales():
         if not os.path.isdir(chemin_item) or item == ".git":
             continue
 
-        # 1. Traitement historique.json[cite: 2]
+        # 1. Traitement historique.json
         historique_path = os.path.join(chemin_item, "historique.json")
         if os.path.exists(historique_path):
             try:
@@ -476,7 +476,7 @@ def verifier_et_reparer_covers_globales():
             except Exception as e:
                 print(f"⚠️ [Covers] Erreur historique.json pour {item} : {e}")
 
-        # 2. Traitement likes.json[cite: 3]
+        # 2. Traitement likes.json
         likes_path = os.path.join(chemin_item, "likes.json")
         if os.path.exists(likes_path):
             try:
@@ -843,7 +843,7 @@ class TicketCloseView(discord.ui.View):
     @discord.ui.button(label="Fermer le ticket", style=discord.ButtonStyle.danger, emoji="🔒")
     async def bouton_fermer(self, interaction: discord.Interaction, button: discord.ui.Button):
         if interaction.user.id != OWNER_ID:
-            await interaction.response.send_message("🚫 Seul Naloulii peut fermer ce ticket.", ephemeral=True)[cite: 2, 3]
+            await interaction.response.send_message("🚫 Seul Naloulii peut fermer ce ticket.", ephemeral=True)
             return
 
         await interaction.response.defer()
@@ -871,7 +871,7 @@ async def on_message(message):
     if isinstance(message.channel, discord.DMChannel):
         guilde = None
         for g in bot.guilds:
-            if g.get_member(OWNER_ID) is not None:[cite: 2, 3]
+            if g.get_member(OWNER_ID) is not None:
                 guilde = g
                 break
 
@@ -891,7 +891,7 @@ async def on_message(message):
             overwrites = {
                 guilde.default_role: discord.PermissionOverwrite(read_messages=False),
                 guilde.me: discord.PermissionOverwrite(read_messages=True, send_messages=True, embed_links=True),
-                guilde.get_member(OWNER_ID): discord.PermissionOverwrite(read_messages=True, send_messages=True)[cite: 2, 3]
+                guilde.get_member(OWNER_ID): discord.PermissionOverwrite(read_messages=True, send_messages=True)
             }
             
             salon_ticket = await guilde.create_text_channel(
@@ -948,7 +948,7 @@ async def on_message(message):
                                 color=discord.Color.green(),
                                 timestamp=datetime.datetime.now(PARIS_TZ)
                             )
-                            embed_reply.set_author(name="Naloulii (Admin)", icon_url=message.author.display_avatar.url)[cite: 2, 3]
+                            embed_reply.set_author(name="Naloulii (Admin)", icon_url=message.author.display_avatar.url)
 
                             fichiers = []
                             if message.attachments:
@@ -1023,7 +1023,7 @@ async def on_ready():
                     titre=f"🏆 Classement de la Semaine {semaine} ({annee})"
                 )
                 try:
-                    # CORRECTION APPORTÉE ICI : Ajout du paramètre nommé 'embed=' pour éviter le texte brut
+                    # CORRECTION APPORTÉE : Ajout du paramètre nommé 'embed=' pour éviter le texte brut
                     nouveau_msg = await salon.send(embed=embed_archive)  
                     config["message_top_id"] = nouveau_msg.id
                     sauvegarder_config(guild_id, config)
@@ -1090,7 +1090,7 @@ async def on_guild_join(guild):
             value=(
                 "• **Support direct par MP** : Tes membres peuvent envoyer un message privé (DM) au Bot à tout moment !\n"
                 "• **Retransmission automatique** : Le message sera instantanément transmis de manière sécurisée et "
-                "propre sous forme de ticket à mon créateur (**naloulii**)[cite: 2, 3].\n"
+                "propre sous forme de ticket à mon créateur (**naloulii**).\n"
                 "• **Pas d'encombrement** : Aucun canal d'administration ou configuration additionnelle n'est requis !"
             ),
             inline=False
@@ -1296,7 +1296,7 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
 @app_commands.guild_only()
 async def manual_git_sync(interaction: discord.Interaction):
     if interaction.user.id != OWNER_ID:
-        await interaction.response.send_message("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).", ephemeral=True)[cite: 2, 3]
+        await interaction.response.send_message("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).", ephemeral=True)
         return
 
     await interaction.response.defer(ephemeral=True)
@@ -1313,7 +1313,7 @@ async def manual_git_sync(interaction: discord.Interaction):
 @bot.command(name="gitsync")
 async def manual_git_sync_text(ctx):
     if ctx.author.id != OWNER_ID:
-        await ctx.send("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).")[cite: 2, 3]
+        await ctx.send("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).")
         return
 
     msg = await ctx.send("🔄 Synchronisation GitHub en cours...")
