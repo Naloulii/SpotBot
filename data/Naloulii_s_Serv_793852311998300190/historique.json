@@ -1008,6 +1008,36 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 17:35",
+                "titre": "Dirty Magazine",
+                "artiste": "Henry Morris",
+                "url": "https://open.spotify.com/track/1FgeSo81sOevbktBnJLxKK",
+                "track_id": "1FgeSo81sOevbktBnJLxKK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2735c226584096a31a1fe14a7d0",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 15s",
+                "temps_ecoute_secondes": 15.4
+            },
+            {
+                "date": "14/07/2026 17:31",
+                "titre": "Ride",
+                "artiste": "Twenty One Pilots",
+                "url": "https://open.spotify.com/track/2Z8WuEywRWYTKe1NybPQEW",
+                "track_id": "2Z8WuEywRWYTKe1NybPQEW",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 216.8
+            },
+            {
+                "date": "14/07/2026 17:28",
+                "titre": "die first",
+                "artiste": "Nessa Barrett",
+                "url": "https://open.spotify.com/track/3TfDUStpnEVIlsNlgcKQgJ",
+                "track_id": "3TfDUStpnEVIlsNlgcKQgJ",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273ad63ee1b38de00c58ce39856",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 178.1
+            },
+            {
                 "date": "14/07/2026 02:26",
                 "titre": "Dirty Magazine",
                 "artiste": "Henry Morris",
@@ -1911,33 +1941,6 @@
                 "track_id": "10y3BacWn9VXLAf9KLcKO0",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "cover_url": "https://cdn-images.dzcdn.net/images/cover/bc813b58582d8e31025097fc0ae5be2c/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "12/07/2026 17:13",
-                "titre": "Be Around",
-                "artiste": "Blooom",
-                "url": "https://open.spotify.com/track/3q3uWcAR3Uv50SKzLrg8G3",
-                "track_id": "3q3uWcAR3Uv50SKzLrg8G3",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/dae55e8d185d029828f9debacbaee329/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "12/07/2026 16:06",
-                "titre": "Be Around",
-                "artiste": "Blooom",
-                "url": "https://open.spotify.com/track/3q3uWcAR3Uv50SKzLrg8G3",
-                "track_id": "3q3uWcAR3Uv50SKzLrg8G3",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 50s",
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/dae55e8d185d029828f9debacbaee329/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "11/07/2026 16:12",
-                "titre": "walk away as the door slams",
-                "artiste": "Lil Peep; Lil Tracy",
-                "url": "https://open.spotify.com/track/5jl8wCqKCHCux0uWf3d7O9",
-                "track_id": "5jl8wCqKCHCux0uWf3d7O9",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 50s",
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/a81883a1171d87fb3886761dc292b1c3/250x250-000000-80-0-0.jpg"
             }
         ]
     },

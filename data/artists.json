@@ -582,5 +582,9 @@
     "ziak": {
         "nom": "Ziak",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "twenty one pilots": {
+        "nom": "Twenty One Pilots",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2e6d4d494a7b7b2c4bea2ccefad368f5/250x250-000000-80-0-0.jpg"
     }
 }
