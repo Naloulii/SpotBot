@@ -6,7 +6,8 @@
             {
                 "titre": "MON B\u00c9B\u00c9",
                 "artiste": "RnBoi",
-                "url": "https://open.spotify.com/track/1yGJ40k7HLF3odITZPoQs4"
+                "url": "https://open.spotify.com/track/1yGJ40k7HLF3odITZPoQs4",
+                "cover_url": "https://cdn-images.dzcdn.net/images/cover/d97090fc2375a517eaefa2134d8eb58b/250x250-000000-80-0-0.jpg"
             },
             {
                 "titre": "VIANO",
@@ -60,7 +61,8 @@
             {
                 "titre": "Akatsuki no Requiem",
                 "artiste": "Linked Horizon",
-                "url": "https://open.spotify.com/track/2vH8JFJKfkAgZs1GFlOzGh"
+                "url": "https://open.spotify.com/track/2vH8JFJKfkAgZs1GFlOzGh",
+                "cover_url": "https://cdn-images.dzcdn.net/images/cover/aac238312918c7105b22e8cc133ec9e1/250x250-000000-80-0-0.jpg"
             }
         ],
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/a5a76089446b91c1ceb48328bb3de187.png?size=1024"
