@@ -566,5 +566,21 @@
     "henry morris": {
         "nom": "Henry Morris",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/73425ae5487af6adbe3013179f061fb7/250x250-000000-80-0-0.jpg"
+    },
+    "rk": {
+        "nom": "RK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e7f18a66439a3cd0b3c30358f01b3f47/250x250-000000-80-0-0.jpg"
+    },
+    "sk d'paname": {
+        "nom": "SK d'Paname",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc8d488008a21645e39815e450be4d51/250x250-000000-80-0-0.jpg"
+    },
+    "loannlv": {
+        "nom": "LoannLV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ce47de4cfcba5dd8e0d092157716c426/250x250-000000-80-0-0.jpg"
+    },
+    "ziak": {
+        "nom": "Ziak",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }

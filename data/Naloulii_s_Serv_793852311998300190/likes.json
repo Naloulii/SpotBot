@@ -4,49 +4,51 @@
         "display_name": "Naloulii",
         "liste": [
             {
-                "titre": "VIANO",
-                "artiste": "RK; Genezio",
-                "url": "https://open.spotify.com/track/5DTahoMKuix8Fi1WSXGwIW"
-            },
-            {
-                "titre": "Freestyle P.P #2",
-                "artiste": "Fav\u00e9",
-                "url": "https://open.spotify.com/track/3hC8PpyGQ6bOlzLfx3R6e5"
-            },
-            {
-                "titre": "E-GIRL DO BRAZIL",
-                "artiste": "SK d'Paname; LoannLV",
-                "url": "https://open.spotify.com/track/5TL3kLdNXm8OJLl7b3e1gq"
-            },
-            {
-                "titre": "Raspoutine",
-                "artiste": "Ziak",
-                "url": "https://open.spotify.com/track/368KS9UNJ8cft7RJ1USwb9"
-            },
-            {
-                "titre": "Mauvaise t\u00eate",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/4QEg4vfzw0NwePfYMoJtwK"
-            },
-            {
                 "titre": "MON B\u00c9B\u00c9",
                 "artiste": "RnBoi",
                 "url": "https://open.spotify.com/track/1yGJ40k7HLF3odITZPoQs4"
             },
             {
+                "titre": "VIANO",
+                "artiste": "RK; Genezio",
+                "url": "https://open.spotify.com/track/5DTahoMKuix8Fi1WSXGwIW",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27320038f28f5d4423fc4e3a2d8"
+            },
+            {
+                "titre": "Mauvaise t\u00eate",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/4QEg4vfzw0NwePfYMoJtwK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273a7d86c1a6c967e1b53b648ec"
+            },
+            {
                 "titre": "J'attends au Carrefour Market",
                 "artiste": "a6el",
-                "url": "https://open.spotify.com/track/7gmwFiZtsPyBT8wI2u6mGN"
+                "url": "https://open.spotify.com/track/7gmwFiZtsPyBT8wI2u6mGN",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27390aead4a97f002920e066640"
             },
             {
                 "titre": "No stress",
                 "artiste": "DVM; Fav\u00e9; La Mano 1.9",
-                "url": "https://open.spotify.com/track/7jPBHQ9vRgMxjRcREZKKGI"
+                "url": "https://open.spotify.com/track/7jPBHQ9vRgMxjRcREZKKGI",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27334f00d8167a4be0f6c937af2"
             },
             {
                 "titre": "Chanel",
                 "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/3TKi9R2cUg56cLTym2SmjS"
+                "url": "https://open.spotify.com/track/3TKi9R2cUg56cLTym2SmjS",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273c35a0ef431109ed62c1ab488"
+            },
+            {
+                "titre": "Pi\u00f1a colada",
+                "artiste": "BES",
+                "url": "https://open.spotify.com/track/2pIuOdAmLuoUwSGSnFHPzo",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bbd34b309d920717da0f74"
+            },
+            {
+                "titre": "Lac de Renens",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/2uBXaOlgXMOd6CU3CIW97h",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27328851dbe0c7c74a62f732250"
             }
         ],
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024"

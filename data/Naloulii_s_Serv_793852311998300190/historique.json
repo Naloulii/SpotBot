@@ -5,13 +5,163 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 15:28",
+                "titre": "Grain de sel",
+                "artiste": "Apez",
+                "url": "https://open.spotify.com/track/4FnXTGsdtHxlQFSMB8kZsL",
+                "track_id": "4FnXTGsdtHxlQFSMB8kZsL",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273b80e50986922719655f3202b",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 33s",
+                "temps_ecoute_secondes": 93.4
+            },
+            {
+                "date": "14/07/2026 15:24",
+                "titre": "Lac de Renens",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/2uBXaOlgXMOd6CU3CIW97h",
+                "track_id": "2uBXaOlgXMOd6CU3CIW97h",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27328851dbe0c7c74a62f732250",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 182.1
+            },
+            {
+                "date": "14/07/2026 15:22",
+                "titre": "Pi\u00f1a colada",
+                "artiste": "BES",
+                "url": "https://open.spotify.com/track/2pIuOdAmLuoUwSGSnFHPzo",
+                "track_id": "2pIuOdAmLuoUwSGSnFHPzo",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bbd34b309d920717da0f74",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 97.2
+            },
+            {
+                "date": "14/07/2026 15:22",
+                "titre": "Ma jolie maison",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/301TUdLZZvNPFplmnWh0kb",
+                "track_id": "301TUdLZZvNPFplmnWh0kb",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2730d78322a04fda17c0245ad19",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 7.7
+            },
+            {
+                "date": "14/07/2026 15:22",
+                "titre": "Pi\u00f1a colada",
+                "artiste": "BES",
+                "url": "https://open.spotify.com/track/2pIuOdAmLuoUwSGSnFHPzo",
+                "track_id": "2pIuOdAmLuoUwSGSnFHPzo",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bbd34b309d920717da0f74",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 14s",
+                "temps_ecoute_secondes": 14.1
+            },
+            {
+                "date": "14/07/2026 15:22",
+                "titre": "Quotidien",
+                "artiste": "Apez",
+                "url": "https://open.spotify.com/track/7sBjuRwNujjYST4tBEEpIp",
+                "track_id": "7sBjuRwNujjYST4tBEEpIp",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2739ef51b508350e110b07f4255",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
+                "date": "14/07/2026 15:21",
+                "titre": "Chanel",
+                "artiste": "La Mano 1.9",
+                "url": "https://open.spotify.com/track/3TKi9R2cUg56cLTym2SmjS",
+                "track_id": "3TKi9R2cUg56cLTym2SmjS",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273c35a0ef431109ed62c1ab488",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 16s",
+                "temps_ecoute_secondes": 16.3
+            },
+            {
+                "date": "14/07/2026 15:21",
+                "titre": "No stress",
+                "artiste": "DVM; Fav\u00e9; La Mano 1.9",
+                "url": "https://open.spotify.com/track/7jPBHQ9vRgMxjRcREZKKGI",
+                "track_id": "7jPBHQ9vRgMxjRcREZKKGI",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27334f00d8167a4be0f6c937af2",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 16s",
+                "temps_ecoute_secondes": 16.9
+            },
+            {
+                "date": "14/07/2026 15:21",
+                "titre": "J'attends au Carrefour Market",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/7gmwFiZtsPyBT8wI2u6mGN",
+                "track_id": "7gmwFiZtsPyBT8wI2u6mGN",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27390aead4a97f002920e066640",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 13s",
+                "temps_ecoute_secondes": 13.2
+            },
+            {
+                "date": "14/07/2026 15:21",
+                "titre": "MON B\u00c9B\u00c9",
+                "artiste": "RnBoi",
+                "url": "https://open.spotify.com/track/1yGJ40k7HLF3odITZPoQs4",
+                "track_id": "1yGJ40k7HLF3odITZPoQs4",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273deb7071c9722a7c10a26ed6b",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 08s",
+                "temps_ecoute_secondes": 9.0
+            },
+            {
+                "date": "14/07/2026 15:20",
+                "titre": "Mauvaise t\u00eate",
+                "artiste": "a6el",
+                "url": "https://open.spotify.com/track/4QEg4vfzw0NwePfYMoJtwK",
+                "track_id": "4QEg4vfzw0NwePfYMoJtwK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273a7d86c1a6c967e1b53b648ec",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 15s",
+                "temps_ecoute_secondes": 15.7
+            },
+            {
+                "date": "14/07/2026 15:20",
+                "titre": "Raspoutine",
+                "artiste": "Ziak",
+                "url": "https://open.spotify.com/track/368KS9UNJ8cft7RJ1USwb9",
+                "track_id": "368KS9UNJ8cft7RJ1USwb9",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273aa57694abe788bcb3545fc65",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 09s",
+                "temps_ecoute_secondes": 9.5
+            },
+            {
+                "date": "14/07/2026 15:20",
+                "titre": "E-GIRL DO BRAZIL",
+                "artiste": "SK d'Paname; LoannLV",
+                "url": "https://open.spotify.com/track/5TL3kLdNXm8OJLl7b3e1gq",
+                "track_id": "5TL3kLdNXm8OJLl7b3e1gq",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2731943876e97b4fd8e11a0f1c4",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 13s",
+                "temps_ecoute_secondes": 13.0
+            },
+            {
+                "date": "14/07/2026 15:20",
+                "titre": "Freestyle P.P #2",
+                "artiste": "Fav\u00e9",
+                "url": "https://open.spotify.com/track/3hC8PpyGQ6bOlzLfx3R6e5",
+                "track_id": "3hC8PpyGQ6bOlzLfx3R6e5",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2730decba447a5a4d1055f32302",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 16s",
+                "temps_ecoute_secondes": 16.5
+            },
+            {
+                "date": "14/07/2026 15:19",
+                "titre": "VIANO",
+                "artiste": "RK; Genezio",
+                "url": "https://open.spotify.com/track/5DTahoMKuix8Fi1WSXGwIW",
+                "track_id": "5DTahoMKuix8Fi1WSXGwIW",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27320038f28f5d4423fc4e3a2d8",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 43s",
+                "temps_ecoute_secondes": 43.7
+            },
+            {
                 "date": "14/07/2026 15:15",
                 "titre": "Syst\u00e8me",
                 "artiste": "Luidji",
                 "url": "https://open.spotify.com/track/1XNFIJMhSR7ozrxxjc9mcd",
                 "track_id": "1XNFIJMhSR7ozrxxjc9mcd",
                 "cover_url": "https://i.scdn.co/image/ab67616d0000b273a1b37beb7b6cc5ee7d300ea4",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 230.1
             },
             {
                 "date": "14/07/2026 15:13",
@@ -770,141 +920,6 @@
                 "track_id": "7jPBHQ9vRgMxjRcREZKKGI",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 166.9
-            },
-            {
-                "date": "13/07/2026 16:23",
-                "titre": "I'm Sorry",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/2ynH9ETEo4OgLxNLJrcMKP",
-                "track_id": "2ynH9ETEo4OgLxNLJrcMKP",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 154.3
-            },
-            {
-                "date": "13/07/2026 16:20",
-                "titre": "Crime ensoleill\u00e9",
-                "artiste": "La Mano 1.9; Tiakola",
-                "url": "https://open.spotify.com/track/3nsHrMb2NzFvgIxsEc2eGa",
-                "track_id": "3nsHrMb2NzFvgIxsEc2eGa",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 232.7
-            },
-            {
-                "date": "13/07/2026 16:15",
-                "titre": "PARISIENNE",
-                "artiste": "GIMS; La Mano 1.9",
-                "url": "https://open.spotify.com/track/0wLCA75tmsos5ZcVzqHFQ1",
-                "track_id": "0wLCA75tmsos5ZcVzqHFQ1",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 11s",
-                "temps_ecoute_secondes": 131.3
-            },
-            {
-                "date": "13/07/2026 16:12",
-                "titre": "Businessman",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/0lsTAaJDMe45X5hna0LwYg",
-                "track_id": "0lsTAaJDMe45X5hna0LwYg",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 181.6
-            },
-            {
-                "date": "13/07/2026 16:07",
-                "titre": "EL GEMANO",
-                "artiste": "Genezio; La Mano 1.9",
-                "url": "https://open.spotify.com/track/2s0ECLNrusYkBud3ZuoVrc",
-                "track_id": "2s0ECLNrusYkBud3ZuoVrc",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 250.3
-            },
-            {
-                "date": "13/07/2026 16:05",
-                "titre": "Sexy Woman",
-                "artiste": "La Mano 1.9",
-                "url": "https://open.spotify.com/track/3rcYxqjhN14IdYmRwfWhbi",
-                "track_id": "3rcYxqjhN14IdYmRwfWhbi",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 153.3
-            },
-            {
-                "date": "13/07/2026 16:02",
-                "titre": "PK TU M'AIMES\u00bf",
-                "artiste": "poissonchat",
-                "url": "https://open.spotify.com/track/4BjXB85GcIKELfPvKytXrx",
-                "track_id": "4BjXB85GcIKELfPvKytXrx",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 195.9
-            },
-            {
-                "date": "13/07/2026 15:58",
-                "titre": "Mauvaise t\u00eate",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/4QEg4vfzw0NwePfYMoJtwK",
-                "track_id": "4QEg4vfzw0NwePfYMoJtwK",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 160.2
-            },
-            {
-                "date": "13/07/2026 15:55",
-                "titre": "EGO.",
-                "artiste": "Sley9ueve",
-                "url": "https://open.spotify.com/track/1EAUUpy9n0TMPAb4AumwnB",
-                "track_id": "1EAUUpy9n0TMPAb4AumwnB",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 160.2
-            },
-            {
-                "date": "13/07/2026 15:53",
-                "titre": "J'attends au Carrefour Market",
-                "artiste": "a6el",
-                "url": "https://open.spotify.com/track/7gmwFiZtsPyBT8wI2u6mGN",
-                "track_id": "7gmwFiZtsPyBT8wI2u6mGN",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 157.3
-            },
-            {
-                "date": "13/07/2026 15:01",
-                "titre": "CHROMATIK",
-                "artiste": "Priilick",
-                "url": "https://open.spotify.com/track/7xWTy15bfLZi1p7L9bSvEt",
-                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 151.9
-            },
-            {
-                "date": "13/07/2026 14:59",
-                "titre": "ELLE STREAME JEUNE MORTY",
-                "artiste": "Priilick",
-                "url": "https://open.spotify.com/track/293mvbLSjFSXci9yyMyaEW",
-                "track_id": "293mvbLSjFSXci9yyMyaEW",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 106.0
-            },
-            {
-                "date": "13/07/2026 14:57",
-                "titre": "jd\u00e9teste les flammes",
-                "artiste": "Lekchan",
-                "url": "https://open.spotify.com/track/1zPzX39SWK3Z5cbmziDSaM",
-                "track_id": "1zPzX39SWK3Z5cbmziDSaM",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 110.2
-            },
-            {
-                "date": "13/07/2026 14:53",
-                "titre": "Syst\u00e8me",
-                "artiste": "Luidji",
-                "url": "https://open.spotify.com/track/1XNFIJMhSR7ozrxxjc9mcd",
-                "track_id": "1XNFIJMhSR7ozrxxjc9mcd",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 231.0
-            },
-            {
-                "date": "13/07/2026 14:50",
-                "titre": "Loto",
-                "artiste": "H holborn",
-                "url": "https://open.spotify.com/track/4g2b4zaOqqOcwVLSOlCR9D",
-                "track_id": "4g2b4zaOqqOcwVLSOlCR9D",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 157.9
             }
         ]
     },
