@@ -13,6 +13,16 @@ from discord.ext import commands, tasks
 from colorthief import ColorThief
 from git import Repo
 
+# Empêche Git de tomber sur un prompt interactif "Username/Password for..."
+# quand l'authentification via le token dans l'URL échoue (token invalide,
+# expiré, ou mauvais scope). Sans ça, git reste bloqué en attente d'une saisie
+# qui ne viendra jamais dans ce conteneur non-interactif, jusqu'à ce que
+# l'hébergeur tue le process (d'où l'exit code -2 = tué par signal). Avec
+# cette variable, git échoue immédiatement avec un message clair au lieu de
+# rester bloqué — et surtout, le prompt "Password for 'https://TOKEN@...'"
+# qui expose le token en clair dans les logs n'apparaît plus jamais.
+os.environ["GIT_TERMINAL_PROMPT"] = "0"
+
 # Définition globale du fuseau horaire de Paris
 PARIS_TZ = zoneinfo.ZoneInfo("Europe/Paris")
 
@@ -785,14 +795,25 @@ class LikeView(discord.ui.View):
             await interaction.response.send_message(f"💔 Retiré de tes titres likés : **{self.titre}**", ephemeral=True)
 
 
-async def reparer_ecoutes_bloquees_au_demarrage(guild):
-    """Au démarrage du bot, compare chaque écoute la plus récente encore
-    marquée 'En cours...' avec la présence Spotify actuelle du membre :
-    - si le membre écoute encore exactement ce morceau, on laisse
-      verifier_presence_spotify reprendre le suivi normalement ;
+async def finaliser_ecoutes_perimees(guild):
+    """Compare chaque écoute la plus récente encore marquée 'En cours...' avec
+    la présence Spotify actuelle du membre :
+    - si l'écoute est activement suivie en mémoire (ecoutes_en_cours), le flux
+      normal (verifier_presence_spotify) s'en occupe déjà, on ne touche à rien ;
+    - si le membre écoute encore exactement ce morceau (mais pas suivi en
+      mémoire, ex: juste après un redémarrage du bot), on laisse
+      verifier_presence_spotify reprendre le suivi normalement au prochain
+      événement de présence ;
     - sinon (autre morceau, ou plus d'écoute Spotify du tout), l'écoute est
-      restée bloquée à cause d'un redémarrage/crash du bot pendant qu'elle
-      était en cours : on la finalise et on ajoute le point au classement."""
+      restée bloquée — que ce soit à cause d'un redémarrage/crash du bot
+      pendant qu'elle était en cours, ou parce que Discord n'a tout simplement
+      pas renvoyé l'événement de présence signalant l'arrêt de l'écoute — on
+      la finalise et on ajoute le point au classement.
+
+    Appelée au démarrage du bot ET périodiquement (toutes les 5 minutes) pour
+    rattraper les cas où aucun nouveau morceau n'est jamais relancé après
+    l'arrêt de l'écoute (donc finaliser_ecoutes_orphelines, qui ne se
+    déclenche qu'au démarrage d'un nouveau morceau, ne serait jamais appelée)."""
     guild_id = str(guild.id)
     historique = charger_historique(guild_id)
     if not historique:
@@ -803,6 +824,10 @@ async def reparer_ecoutes_bloquees_au_demarrage(guild):
         ecoutes = data.get("ecoutes", [])
         if not ecoutes or ecoutes[0].get("status") != "En cours...":
             continue
+
+        cle = (guild_id, user_id)
+        if cle in ecoutes_en_cours:
+            continue  # Activement suivie en mémoire, rien à réparer ici
 
         membre = guild.get_member(int(user_id))
         track_id_actuel = None
@@ -819,10 +844,19 @@ async def reparer_ecoutes_bloquees_au_demarrage(guild):
         modifie = True
         if membre:
             enregistrer_stat_membre(guild_id, membre)
-        print(f"🔧 [{guild.name}] Écoute bloquée sur 'En cours...' réparée pour {data.get('display_name', user_id)} (redémarrage du bot)")
+        print(f"🔧 [{guild.name}] Écoute bloquée sur 'En cours...' finalisée pour {data.get('display_name', user_id)}")
 
     if modifie:
         sauvegarder_historique(guild_id, historique)
+
+
+@tasks.loop(minutes=5)
+async def verifier_ecoutes_perimees():
+    for guild in bot.guilds:
+        try:
+            await finaliser_ecoutes_perimees(guild)
+        except Exception as e:
+            print(f"⚠️ [{guild.name}] Erreur vérification écoutes périmées : {e}")
 
 
 @bot.event
@@ -842,7 +876,7 @@ async def on_ready():
         guild_id = str(guild.id)
 
         try:
-            await reparer_ecoutes_bloquees_au_demarrage(guild)
+            await finaliser_ecoutes_perimees(guild)
         except Exception as e:
             print(f"⚠️ [{guild.name}] Erreur réparation écoutes bloquées : {e}")
 
@@ -890,6 +924,7 @@ async def on_ready():
     actualiser_messages.start()
     sauvegarde_periodique_github.start()
     classement_hebdomadaire_auto.start()
+    verifier_ecoutes_perimees.start()
 
 
 @bot.event
