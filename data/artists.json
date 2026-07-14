@@ -706,5 +706,9 @@
     "lloyd vaan": {
         "nom": "Lloyd Vaan",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d0d997f2a421e56f03a87aeffed2ac37/250x250-000000-80-0-0.jpg"
+    },
+    "dreamsoda": {
+        "nom": "dreamsoda",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c0afb4403c69ad58db916aafbb076d6/250x250-000000-80-0-0.jpg"
     }
 }
