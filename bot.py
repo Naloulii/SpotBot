@@ -610,7 +610,7 @@ async def classement_hebdomadaire_auto():
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
-def generer_embed_aide():
+def generer_embed_aide(guild_id):
     embed = discord.Embed(
         title="🎵 Bienvenue sur SpotBot ! 🤖",
         description=(
@@ -626,9 +626,10 @@ def generer_embed_aide():
         value="• Clique sur le bouton **🤍 Like** sous une fiche pour la sauvegarder.\n• Clique sur **[Clique ici]** pour l'ouvrir sur Spotify.\n• *Pour obtenir un point au Top, tu dois écouter au moins 96% d'un morceau !*",
         inline=False
     )
+    lien_dashboard_serveur = f"{DASHBOARD_URL}/#/guild/{guild_id}"
     embed.add_field(
         name="📊 Dashboard complet :",
-        value=f"Le classement, tes favoris et ton historique complet sont consultables uniquement sur le dashboard : [Clique ici]({DASHBOARD_URL})",
+        value=f"Le classement, tes favoris et ton historique complet sont consultables uniquement sur le dashboard : [Clique ici]({lien_dashboard_serveur})",
         inline=False
     )
     return embed
@@ -641,7 +642,7 @@ async def verifier_et_mettre_a_jour_aide(guild_id):
     if not salon: return None
 
     msg_aide_id = config.get("message_aide_id")
-    embed_aide = generer_embed_aide()
+    embed_aide = generer_embed_aide(guild_id)
     message_existe = False
     
     if msg_aide_id:
@@ -1091,6 +1092,34 @@ async def on_guild_update(before, after):
 async def on_guild_join(guild):
     print(f"➕ SpotBot a été ajouté au serveur : {guild.name} ({guild.id})")
     assurer_dossier_guilde(guild)
+    guild_id = str(guild.id)
+
+    # --- Configuration automatique : création du salon #spotbot ---
+    # Le but est d'être "plug and play" : dès l'ajout, un salon dédié est créé
+    # et configuré tout seul. /setup reste disponible pour en changer ensuite.
+    salon_auto = None
+    try:
+        overwrites = {
+            guild.default_role: discord.PermissionOverwrite(view_channel=True, send_messages=False),
+            guild.me: discord.PermissionOverwrite(
+                view_channel=True, send_messages=True, embed_links=True,
+                read_message_history=True, manage_messages=True
+            ),
+        }
+        salon_auto = await guild.create_text_channel(
+            "spotbot",
+            overwrites=overwrites,
+            reason="Configuration automatique de SpotBot à l'ajout du bot"
+        )
+        config = charger_config(guild_id)
+        config["salon_musique_id"] = salon_auto.id
+        sauvegarder_config(guild_id, config)
+        print(f"📺 Salon #spotbot créé et configuré automatiquement sur {guild.name}")
+        await verifier_et_mettre_a_jour_aide(guild_id)
+    except discord.Forbidden:
+        print(f"⚠️ Permission manquante pour créer le salon automatique sur {guild.name} (il faut 'Gérer les salons').")
+    except Exception as e:
+        print(f"⚠️ Échec de la création automatique du salon sur {guild.name} : {e}")
 
     # guild.owner s'appuie sur le cache des membres, qui n'est souvent pas encore
     # rempli juste après l'ajout du bot -> on force une récupération via l'API REST.
@@ -1102,17 +1131,30 @@ async def on_guild_join(guild):
             print(f"⚠️ Impossible de récupérer le propriétaire ({guild.owner_id}) : {e}")
 
     dashboard_view = discord.ui.View()
-    dashboard_view.add_item(discord.ui.Button(label="Ouvrir le Dashboard", url="https://naloulii.github.io/SpotBot"))
+    dashboard_view.add_item(discord.ui.Button(label="Ouvrir le Dashboard", url=f"{DASHBOARD_URL}/#/guild/{guild.id}"))
 
-    embed_setup = discord.Embed(
-        title="🎵 Merci d'avoir ajouté SpotBot ! 🤖",
-        description=(
+    if salon_auto:
+        description = (
+            f"Bonjour **{owner.display_name if owner else 'à toi'}** !\n\n"
+            f"Tout est déjà prêt sur **{guild.name}** : j'ai créé et configuré automatiquement "
+            f"le salon {salon_auto.mention}, où l'activité musicale des membres va s'afficher en temps réel. "
+            "Il n'y a rien d'autre à faire !\n\n"
+            f"Tu veux utiliser un autre salon ? Tu peux le changer à tout moment avec :\n\n"
+            "👉 **/setup salon:#votre-salon**"
+        )
+    else:
+        description = (
             f"Bonjour **{owner.display_name if owner else 'à toi'}** !\n\n"
             f"Pour démarrer sur **{guild.name}**, tu dois choisir "
             "le salon où seront publiées les activités musicales en temps réel avec la commande :\n\n"
             "👉 **/setup salon:#votre-salon**\n\n"
-            "*(Il est fortement recommandé de créer un salon textuel vide dédié, par exemple `#spotbot` ou `#musique`)*"
-        ),
+            "*(Je n'ai pas pu créer le salon automatiquement — il me manque probablement la permission "
+            "**Gérer les salons**. Tu peux me la donner puis relancer, ou choisir un salon existant avec /setup.)*"
+        )
+
+    embed_setup = discord.Embed(
+        title="🎵 Merci d'avoir ajouté SpotBot ! 🤖",
+        description=description,
         color=discord.Color.from_rgb(30, 215, 96)
     )
 
@@ -1128,7 +1170,7 @@ async def on_guild_join(guild):
     # Si le DM échoue (MP fermés, owner introuvable, etc.), on poste dans un salon
     # visible du serveur pour que le message ne soit pas perdu.
     if not dm_envoye:
-        salon_repli = guild.system_channel
+        salon_repli = salon_auto or guild.system_channel
         if salon_repli is None or not salon_repli.permissions_for(guild.me).send_messages:
             for c in guild.text_channels:
                 if c.permissions_for(guild.me).send_messages:
