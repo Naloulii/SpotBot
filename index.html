@@ -571,7 +571,7 @@
     font-size:13px;
   }
 
-  /* ---------- Onglet Tops (top chansons / top artistes) ---------- */
+  /* ---------- Onglet Tops ---------- */
   .tops-grid{
     display:grid;
     grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
@@ -601,10 +601,6 @@
     gap:16px;
   }
   @media (max-width:520px){ .tops-columns{ grid-template-columns:1fr; } }
-  /* min-width:0 est indispensable : par défaut une cellule de grid ne se
-     réduit jamais en dessous de la largeur intrinsèque de son contenu, donc
-     un titre/artiste long forçait toute la colonne à s'élargir et poussait
-     le compteur "Nx" hors du cadre de la carte. */
   .tops-col{ min-width:0; }
 
   .tops-col-label{
@@ -697,7 +693,7 @@
     padding:6px 0;
   }
 
-  /* ---------- Modale de classement complet ---------- */
+  /* ---------- Modale ---------- */
   .modal-overlay{
     position:fixed;
     inset:0;
@@ -735,7 +731,6 @@
     padding:20px 24px;
     border-bottom:1px solid var(--border);
     background-color:var(--bg-card);
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='40'><rect width='4' height='40' fill='%23ffffff' opacity='0.02'/></svg>");
   }
   .modal-head h3{
     margin:0;
@@ -820,24 +815,18 @@
 <footer>Données mises à jour automatiquement par SpotBot — dépôt public GitHub</footer>
 
 <script>
-/* =========================================================
-   CONFIG — à adapter à ton dépôt GitHub (celui rendu public)
-   ========================================================= */
 const CONFIG = {
-  GITHUB_USERNAME: "naloulii",        // ⚠️ ton pseudo GitHub
-  GITHUB_REPO_NAME: "SpotBot", // ⚠️ le nom exact du repo que tu rends public (celui cloné dans data/)
-  BRANCH: "main"                       // ⚠️ la branche par défaut de ce repo
+  GITHUB_USERNAME: "naloulii",        
+  GITHUB_REPO_NAME: "SpotBot", 
+  BRANCH: "main"                       
 };
 
 const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/${CONFIG.BRANCH}/`;
-// recursive=1 : nécessaire pour voir à travers le dossier data/ (les dossiers de
-// serveur sont un niveau plus bas que la racine du repo, pas directement dedans)
 const TREE_API = `https://api.github.com/repos/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/git/trees/${CONFIG.BRANCH}?recursive=1`;
 
 const app = document.getElementById("app");
-const HIST_PER_PAGE = 10; // même pagination que la commande /history du bot
+const HIST_PER_PAGE = 10; 
 
-/* ---------- petits utilitaires ---------- */
 function esc(str){
   return String(str ?? "").replace(/[&<>"']/g, m => ({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
@@ -860,7 +849,6 @@ function rankLabel(i){
   return medals[i] || String(i+1).padStart(2,"0");
 }
 
-/* ---------- Spot-mark : logo rond vert (identique à la PDP SpotBot) ---------- */
 function spotMarkSVG(){
   return `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
     <circle cx="200" cy="200" r="180" fill="#0b0b0b" stroke="#1ed760" stroke-width="40"/>
@@ -873,7 +861,6 @@ function spotMarkSVG(){
 }
 document.getElementById("topbar-mark").outerHTML = `<span class="spot-mark" id="topbar-mark">${spotMarkSVG()}</span>`;
 
-/* ---------- routeur minimal ---------- */
 window.addEventListener("hashchange", route);
 window.addEventListener("DOMContentLoaded", route);
 
@@ -900,16 +887,6 @@ function loadingScreen(label){
 async function renderCrateView(){
   loadingScreen("Connexion aux serveurs…");
 
-  if(CONFIG.GITHUB_REPO_NAME.includes("TON-REPO")){
-    app.innerHTML = `
-      <section class="hero">
-        <p class="eyebrow">Configuration requise</p>
-        <h1 class="hero-title">Branche d'abord <em>ton dépôt</em>.</h1>
-        <p class="hero-sub">Ouvre ce fichier et renseigne <code>GITHUB_USERNAME</code> et <code>GITHUB_REPO_NAME</code> tout en haut du script, avec les infos de ton dépôt GitHub public.</p>
-      </section>`;
-    return;
-  }
-
   let tree;
   try{
     const res = await fetch(TREE_API);
@@ -920,13 +897,11 @@ async function renderCrateView(){
       <section class="hero">
         <p class="eyebrow">Connexion impossible</p>
         <h1 class="hero-title">Le dashboard ne répond pas.</h1>
-        <p class="hero-sub">Vérifie que le dépôt <code>${esc(CONFIG.GITHUB_USERNAME)}/${esc(CONFIG.GITHUB_REPO_NAME)}</code> existe bien, qu'il est public, et que la branche <code>${esc(CONFIG.BRANCH)}</code> est correcte.</p>
+        <p class="hero-sub">Vérifie que le dépôt <code>${esc(CONFIG.GITHUB_USERNAME)}/${esc(CONFIG.GITHUB_REPO_NAME)}</code> existe bien, qu'il est public.</p>
       </section>`;
     return;
   }
 
-  // Les dossiers de serveur vivent dans data/, nommés "NomDuServeur_id" (ex:
-  // "data/Naloulii_s_Serv_793852311998300190"), pas de simples nombres à la racine.
   const guildDirs = (tree.tree || []).filter(e => e.type === "tree" && /^data\/[^/]+$/.test(e.path));
 
   const guilds = await Promise.all(guildDirs.map(async d => {
@@ -939,7 +914,7 @@ async function renderCrateView(){
     <section class="hero">
       <p class="eyebrow">Serveurs connectés</p>
       <h1 class="hero-title">Choisis un serveur,<br><em>lance le dashboard.</em></h1>
-      <p class="hero-sub">Chaque serveur Discord ajouté à SpotBot a son propre tableau de bord : classement, historique d'écoute, favoris et tops personnels.</p>
+      <p class="hero-sub">Chaque serveur Discord ajouté à SpotBot a son propre tableau de bord.</p>
     </section>
     <div class="crate-grid">
       ${guilds.length ? guilds.map(sleeveCard).join("") : emptyState()}
@@ -963,22 +938,24 @@ function emptyState(){
   return `
     <div class="empty-state">
       <h3>Aucun serveur pour l'instant</h3>
-      <p>Ajoute SpotBot à un serveur Discord, puis configure-le avec <code>/setup</code>. Il apparaîtra ici automatiquement.</p>
+      <p>Ajoute SpotBot à un serveur Discord, puis configure-le avec <code>/setup</code>.</p>
     </div>`;
 }
 
 /* =========================================================
-   VUE 2 — LA FICHE SERVEUR (classement / historique / favoris / tops)
+   VUE 2 — LA FICHE SERVEUR (Jointure dynamique via tracks.json)
    ========================================================= */
 async function renderRecordView(guildId){
   loadingScreen("Chargement des écoutes…");
 
-  const [info, stats, likes, historique, artists] = await Promise.all([
+  // Ajout du fetch global de tracks.json pour pouvoir lier les IDs aux infos réelles
+  const [info, stats, likes, historique, artists, tracks] = await Promise.all([
     fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {}),
     fetchJSON(`${RAW_BASE}data/${guildId}/stats.json`, {}),
     fetchJSON(`${RAW_BASE}data/${guildId}/likes.json`, {}),
     fetchJSON(`${RAW_BASE}data/${guildId}/historique.json`, {}),
-    fetchJSON(`${RAW_BASE}data/artists.json`, {}), // partagé entre tous les serveurs, pas par serveur
+    fetchJSON(`${RAW_BASE}data/artists.json`, {}),
+    fetchJSON(`${RAW_BASE}data/tracks.json`, {}) // <--- Cache centralisé chargé ici !
   ]);
 
   const guildName = info.name || `Serveur ${guildId}`;
@@ -1020,9 +997,10 @@ async function renderRecordView(guildId){
     });
   });
 
-  mountHistorique(document.getElementById("panel-historique"), historique, artists);
-  mountFavoris(document.getElementById("panel-favoris"), likes, artists);
-  mountTops(document.getElementById("panel-tops"), historique, artists);
+  // On injecte le dictionnaire de musiques "tracks" dans toutes les méthodes dépendantes
+  mountHistorique(document.getElementById("panel-historique"), historique, artists, tracks);
+  mountFavoris(document.getElementById("panel-favoris"), likes, artists, tracks);
+  mountTops(document.getElementById("panel-tops"), historique, artists, tracks);
 }
 
 /* ---------- Onglet Classement ---------- */
@@ -1048,11 +1026,10 @@ function renderClassement(stats){
   `).join("");
 }
 
-/* ---------- Onglet Historique ---------- */
-function mountHistorique(container, historique, artists){
+/* ---------- Onglet Historique (Avec liaison tracks.json) ---------- */
+function mountHistorique(container, historique, artists, tracks){
   const membres = Object.entries(historique).map(([uid, d]) => ({ uid, name: d.display_name || d.username || "Inconnu" }));
 
-  // Toutes les écoutes, mélangées, triées par date décroissante (le format DD/MM/YYYY HH:MM se trie bien en texte inversé)
   let toutes = [];
   for(const [uid, d] of Object.entries(historique)){
     for(const e of d.ecoutes){
@@ -1083,9 +1060,13 @@ function mountHistorique(container, historique, artists){
   function draw(){
     let filtered = toutes;
     if(filterUid) filtered = filtered.filter(e => e.uid === filterUid);
+    
     if(search){
       const s = search.toLowerCase();
-      filtered = filtered.filter(e => (e.titre||"").toLowerCase().includes(s) || (e.artiste||"").toLowerCase().includes(s));
+      filtered = filtered.filter(e => {
+        const m = tracks[e.track_id];
+        return m && ((m.titre || "").toLowerCase().includes(s) || (m.artiste || "").toLowerCase().includes(s));
+      });
     }
 
     if(!filtered.length){
@@ -1099,7 +1080,7 @@ function mountHistorique(container, historique, artists){
     const start = (page-1)*HIST_PER_PAGE;
     const pageItems = filtered.slice(start, start+HIST_PER_PAGE);
 
-    listEl.innerHTML = pageItems.map(e => historyRow(e, artists)).join("");
+    listEl.innerHTML = pageItems.map(e => historyRow(e, artists, tracks)).join("");
 
     pagEl.innerHTML = `
       <button class="page-btn" id="hist-prev" ${page<=1?"disabled":""}>&larr; Précédent</button>
@@ -1118,12 +1099,6 @@ function mountHistorique(container, historique, artists){
   draw();
 }
 
-/* Pochette : priorité à la cover du morceau (stockée par le bot). Le fallback
-   sur la photo de l'artiste est désactivé par défaut : dans l'historique et
-   les favoris on veut la VRAIE pochette de l'album, jamais la PDP de
-   l'artiste (trompeur — on croirait que c'est la cover du morceau). Ce
-   fallback reste disponible (fallbackToArtist=true) pour le widget Tops, où
-   une photo d'artiste vaut mieux qu'un simple emoji. */
 function trackThumb(coverUrl, artisteStr, artists, size = "thumb", fallbackToArtist = false){
   if(coverUrl){
     return `<img class="${size}" src="${esc(coverUrl)}" alt="" loading="lazy">`;
@@ -1138,35 +1113,37 @@ function trackThumb(coverUrl, artisteStr, artists, size = "thumb", fallbackToArt
   return `<span class="${size}-fallback">🎵</span>`;
 }
 
-function historyRow(e, artists){
-  const thumb = trackThumb(e.cover_url, e.artiste, artists);
+function historyRow(e, artists, tracks){
+  // Résolution des informations à l'aide de tracks.json
+  const m = tracks[e.track_id] || { titre: "Inconnu", artiste: "Inconnu", url: "", cover_url: null };
+  const thumb = trackThumb(m.cover_url, m.artiste, artists);
   const isFull = (e.status || "").includes("🎉");
+  
   return `
     <div class="history-row">
       ${thumb}
       <div class="history-main">
-        <div class="history-title">${esc(e.titre)}</div>
-        <div class="history-sub">${esc(e.artiste)}</div>
+        <div class="history-title">${esc(m.titre)}</div>
+        <div class="history-sub">${esc(m.artiste)}</div>
         <div class="history-who">${esc(e.who)}</div>
       </div>
       <div class="history-right">
         <span class="history-date">${esc(e.date)}</span>
         <span class="status-pill ${isFull ? "full" : "partial"}">${esc(e.status || "")}</span>
       </div>
-      ${e.url ? `<a class="link-icon" href="${esc(e.url)}" target="_blank" rel="noopener" aria-label="Ouvrir sur Spotify">${iconLink()}</a>` : ""}
+      ${m.url ? `<a class="link-icon" href="${esc(m.url)}" target="_blank" rel="noopener" aria-label="Ouvrir sur Spotify">${iconLink()}</a>` : ""}
     </div>`;
 }
 
 function parseDateFR(str){
-  // "DD/MM/YYYY HH:MM" -> timestamp
   const m = /^(\d{2})\/(\d{2})\/(\d{4}) (\d{2}):(\d{2})$/.exec(str || "");
   if(!m) return 0;
   const [, d, mo, y, h, mi] = m;
   return new Date(`${y}-${mo}-${d}T${h}:${mi}:00`).getTime();
 }
 
-/* ---------- Onglet Favoris ---------- */
-function mountFavoris(container, likes, artists){
+/* ---------- Onglet Favoris (Avec liaison tracks.json) ---------- */
+function mountFavoris(container, likes, artists, tracks){
   const membres = Object.entries(likes).filter(([,d]) => d.liste && d.liste.length);
 
   if(!membres.length){
@@ -1194,15 +1171,20 @@ function mountFavoris(container, likes, artists){
   const likesMap = Object.fromEntries(membres);
 
   function draw(uid){
-    const liste = likesMap[uid]?.liste || [];
-    grid.innerHTML = liste.map(t => {
-      const thumb = trackThumb(t.cover_url, t.artiste, artists);
+    const listeIds = likesMap[uid]?.liste || [];
+    
+    grid.innerHTML = listeIds.map(trackId => {
+      // Résolution de chaque identifiant unique à partir de tracks.json
+      const m = tracks[trackId];
+      if(!m) return "";
+      
+      const thumb = trackThumb(m.cover_url, m.artiste, artists);
       return `
-        <a class="like-card" href="${esc(t.url)}" target="_blank" rel="noopener">
+        <a class="like-card" href="${esc(m.url)}" target="_blank" rel="noopener">
           ${thumb}
           <div>
-            <div class="like-title">${esc(t.titre)}</div>
-            <div class="like-artist">${esc(t.artiste)}</div>
+            <div class="like-title">${esc(m.titre)}</div>
+            <div class="like-artist">${esc(m.artiste)}</div>
           </div>
         </a>`;
     }).join("");
@@ -1219,11 +1201,8 @@ function mountFavoris(container, likes, artists){
   draw(active);
 }
 
-/* ---------- Onglet Tops (top 3 chansons / top 3 artistes par membre) ---------- */
-
-// Ne compte que les écoutes validées (🎉 Écouté en entier), comme le classement hebdo.
-// Un morceau à plusieurs artistes (ex: "Gazo; La Mano 1.9") compte pour chaque artiste.
-function computeTops(historique){
+/* ---------- Onglet Tops (Avec liaison tracks.json) ---------- */
+function computeTops(historique, tracks){
   const membres = {};
   for(const [uid, d] of Object.entries(historique)){
     const songs = new Map();
@@ -1232,13 +1211,16 @@ function computeTops(historique){
     for(const e of (d.ecoutes || [])){
       if(!(e.status || "").includes("🎉")) continue;
 
-      const songKey = `${e.titre}::${e.artiste}`;
-      if(!songs.has(songKey)){
-        songs.set(songKey, { titre: e.titre, artiste: e.artiste, url: e.url, cover_url: e.cover_url || null, count: 0 });
-      }
-      songs.get(songKey).count++;
+      const trackId = e.track_id;
+      const m = tracks[trackId];
+      if(!m) continue;
 
-      for(const nom of (e.artiste || "").split(";").map(s => s.trim()).filter(Boolean)){
+      if(!songs.has(trackId)){
+        songs.set(trackId, { titre: m.titre, artiste: m.artiste, url: m.url, cover_url: m.cover_url || null, count: 0 });
+      }
+      songs.get(trackId).count++;
+
+      for(const nom of (m.artiste || "").split(";").map(s => s.trim()).filter(Boolean)){
         const cle = nom.toLowerCase();
         if(!artistesMap.has(cle)) artistesMap.set(cle, { nom, count: 0 });
         artistesMap.get(cle).count++;
@@ -1264,9 +1246,7 @@ function computeTops(historique){
 function topsRow(i, titre, sousTitre, img, count, kind, artists){
   const size = "tops-thumb";
   let finalImg = img;
-  // Pas de pochette enregistrée pour ce morceau (souvent d'anciennes écoutes,
-  // sauvegardées avant l'ajout du champ cover_url) : on tente la photo du
-  // premier artiste plutôt que de laisser un simple emoji dans le Top.
+  
   if(!finalImg && kind === "song" && artists){
     const premierArtiste = (sousTitre || "").split(";")[0].trim().toLowerCase();
     finalImg = artists[premierArtiste]?.image_url || null;
@@ -1274,6 +1254,7 @@ function topsRow(i, titre, sousTitre, img, count, kind, artists){
   const thumb = finalImg
     ? `<img class="${size} ${kind}" src="${esc(finalImg)}" alt="" loading="lazy">`
     : `<span class="${size}-fallback ${kind}">${kind === "song" ? "🎵" : "🎤"}</span>`;
+    
   return `
     <div class="tops-row">
       <span class="tops-rank">${rankLabel(i)}</span>
@@ -1286,8 +1267,8 @@ function topsRow(i, titre, sousTitre, img, count, kind, artists){
     </div>`;
 }
 
-function mountTops(container, historique, artists){
-  const membresTops = computeTops(historique);
+function mountTops(container, historique, artists, tracks){
+  const membresTops = computeTops(historique, tracks);
   const entries = Object.values(membresTops);
 
   if(!entries.length){
@@ -1323,13 +1304,13 @@ function topsCard(m, artists){
         <div class="tops-col">
           <div class="tops-col-label songs"><span class="dot"></span>Top 3 chansons</div>
           ${top3Songs.length
-            ? top3Songs.map((s,i) => topsRow(i, s.titre, s.artiste, s.cover_url, s.count, "song", artists)).join("")
+            ? top3Songs.map((s,i) => topsRow(i, s.titre, s.artiste, s.cover_url, s.count, "song", artists))
             : `<div class="tops-mini-empty">Aucune chanson validée.</div>`}
         </div>
         <div class="tops-col">
           <div class="tops-col-label artists"><span class="dot"></span>Top 3 artistes</div>
           ${top3Artistes.length
-            ? top3Artistes.map((a,i) => topsRow(i, a.nom, "Artiste", artists[a.nom.toLowerCase()]?.image_url, a.count, "artist", artists)).join("")
+            ? top3Artistes.map((a,i) => topsRow(i, a.nom, "Artiste", artists[a.nom.toLowerCase()]?.image_url, a.count, "artist", artists))
             : `<div class="tops-mini-empty">Aucun artiste validé.</div>`}
         </div>
       </div>
