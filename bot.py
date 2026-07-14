@@ -911,7 +911,7 @@ async def on_message(message):
             embed_init.add_field(name="ID Utilisateur", value=f"`{message.author.id}`", inline=True)
 
             view = TicketCloseView(message.author.id)
-            await salon_ticket.send(embed=embed_init, view=view)
+            await salon_ticket.send(content=f"<@566899759013429259>", embed=embed_init, view=view)
 
         embed_msg = discord.Embed(
             description=message.content,
