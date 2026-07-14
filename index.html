@@ -612,7 +612,9 @@ const CONFIG = {
 };
 
 const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/${CONFIG.BRANCH}/`;
-const TREE_API = `https://api.github.com/repos/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/git/trees/${CONFIG.BRANCH}?recursive=0`;
+// recursive=1 : nécessaire pour voir à travers le dossier data/ (les dossiers de
+// serveur sont un niveau plus bas que la racine du repo, pas directement dedans)
+const TREE_API = `https://api.github.com/repos/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/git/trees/${CONFIG.BRANCH}?recursive=1`;
 
 const app = document.getElementById("app");
 const HIST_PER_PAGE = 10; // même pagination que la commande /history du bot
@@ -688,11 +690,14 @@ async function renderCrateView(){
     return;
   }
 
-  const guildDirs = (tree.tree || []).filter(e => e.type === "tree" && /^\d+$/.test(e.path));
+  // Les dossiers de serveur vivent dans data/, nommés "NomDuServeur_id" (ex:
+  // "data/Naloulii_s_Serv_793852311998300190"), pas de simples nombres à la racine.
+  const guildDirs = (tree.tree || []).filter(e => e.type === "tree" && /^data\/[^/]+$/.test(e.path));
 
   const guilds = await Promise.all(guildDirs.map(async d => {
-    const info = await fetchJSON(`${RAW_BASE}${d.path}/guild_info.json`, {});
-    return { id: d.path, name: info.name || `Serveur ${d.path}`, icon_url: info.icon_url || null };
+    const folderName = d.path.replace(/^data\//, "");
+    const info = await fetchJSON(`${RAW_BASE}data/${folderName}/guild_info.json`, {});
+    return { id: folderName, name: info.name || folderName, icon_url: info.icon_url || null };
   }));
 
   app.innerHTML = `
@@ -734,11 +739,11 @@ async function renderRecordView(guildId){
   loadingScreen("Dépose de l'aiguille…");
 
   const [info, stats, likes, historique, artists] = await Promise.all([
-    fetchJSON(`${RAW_BASE}${guildId}/guild_info.json`, {}),
-    fetchJSON(`${RAW_BASE}${guildId}/stats.json`, {}),
-    fetchJSON(`${RAW_BASE}${guildId}/likes.json`, {}),
-    fetchJSON(`${RAW_BASE}${guildId}/historique.json`, {}),
-    fetchJSON(`${RAW_BASE}${guildId}/artists.json`, {}),
+    fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {}),
+    fetchJSON(`${RAW_BASE}data/${guildId}/stats.json`, {}),
+    fetchJSON(`${RAW_BASE}data/${guildId}/likes.json`, {}),
+    fetchJSON(`${RAW_BASE}data/${guildId}/historique.json`, {}),
+    fetchJSON(`${RAW_BASE}data/artists.json`, {}), // partagé entre tous les serveurs, pas par serveur
   ]);
 
   const guildName = info.name || `Serveur ${guildId}`;

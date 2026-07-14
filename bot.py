@@ -50,27 +50,43 @@ GITHUB_REPO_NAME = os.getenv("GITHUB_REPO_NAME")
 
 # Configuration des chemins locaux dans le conteneur Docker
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# DATA_DIR est le clone local du repo GitHub PUBLIC. Sa racine = racine du repo.
-# Chaque serveur Discord a son propre sous-dossier : data/<guild_id>/
+# DATA_DIR est un simple sous-dossier DANS le même dépôt que bot.py (pas un clone
+# séparé) : il ne contient que les données (dossiers de serveur + artists.json).
+# bot.py, requirements.txt, index.html restent à la racine du dépôt.
 DATA_DIR = os.path.join(BASE_DIR, "data")
+os.makedirs(DATA_DIR, exist_ok=True)
 
 ecoutes_en_cours = {}   # clé = (guild_id, user_id)
 verrous_anti_spam = {}  # clé = (guild_id, user_id)
 
 GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git"
 
-if not os.path.exists(DATA_DIR):
-    print("🚀 Premier lancement sur le Cloud : Création du dossier data et clonage...")
-    repo = Repo.clone_from(GITHUB_REPO_URL, DATA_DIR)
-else:
+# Le dépôt Git est celui de BASE_DIR tout entier (bot.py + data/), pas un clone
+# séparé dans un sous-dossier. Si l'hébergeur a déjà déployé via un vrai
+# git clone (donc .git présent), on l'utilise tel quel. Sinon, on adopte le
+# dossier existant en place (git init + remote + reset sur origin/main) sans
+# jamais dupliquer bot.py à l'intérieur de data/.
+git_dir = os.path.join(BASE_DIR, ".git")
+if os.path.isdir(git_dir):
     try:
-        repo = Repo(DATA_DIR)
-        print("📌 Dépôt Git local détecté dans /data.")
-    except Exception:
-        print("⚠️ Erreur dossier data, re-clonage automatique...")
-        import shutil
-        shutil.rmtree(DATA_DIR, ignore_errors=True)
-        repo = Repo.clone_from(GITHUB_REPO_URL, DATA_DIR)
+        repo = Repo(BASE_DIR)
+        repo.remotes.origin.set_url(GITHUB_REPO_URL)
+        print("📌 Dépôt Git détecté à la racine du projet.")
+    except Exception as e:
+        print(f"⚠️ Dépôt Git présent mais invalide ({e}), tentative de réparation...")
+        repo = Repo.init(BASE_DIR)
+        if "origin" in [r.name for r in repo.remotes]:
+            repo.remotes.origin.set_url(GITHUB_REPO_URL)
+        else:
+            repo.create_remote("origin", GITHUB_REPO_URL)
+        repo.remotes.origin.fetch()
+        repo.git.checkout("-B", "main", "origin/main")
+else:
+    print("🚀 Aucun dépôt Git existant ici : adoption du dossier comme dépôt Git...")
+    repo = Repo.init(BASE_DIR)
+    repo.create_remote("origin", GITHUB_REPO_URL)
+    repo.remotes.origin.fetch()
+    repo.git.checkout("-B", "main", "origin/main")
 
 # --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes, + à la demande) ---
 def _sauvegarde_github_bloquante():
@@ -83,7 +99,9 @@ def _sauvegarde_github_bloquante():
                 continue
             for file in files:
                 if file.endswith(".json"):
-                    rel_path = os.path.relpath(os.path.join(root, file), DATA_DIR)
+                    # Chemin relatif à la RACINE du dépôt (BASE_DIR), pas à data/,
+                    # car c'est ce que git add/commit attend (ex: "data/Serveur_id/stats.json")
+                    rel_path = os.path.relpath(os.path.join(root, file), BASE_DIR)
                     fichiers_a_ajouter.append(rel_path)
 
         if fichiers_a_ajouter:
@@ -399,6 +417,63 @@ def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree
         enregistrer_stat_membre(guild_id, membre)
 
 
+def construire_embed_classement(stats, titre="🏆 Classement de la Semaine Dernière"):
+    """Construit l'embed de classement à partir d'un dict de stats (mêmes clés que
+    stats.json / stats_week_WW_YYYY.json). Réutilisé par la tâche hebdomadaire
+    et par la récupération d'archive au démarrage."""
+    embed = discord.Embed(
+        title=titre,
+        color=discord.Color.gold(),
+        timestamp=datetime.datetime.now(PARIS_TZ)
+    )
+    if not stats:
+        embed.description = "Aucune musique n'a été validée la semaine dernière ! 🎧"
+    else:
+        classement = sorted(stats.items(), key=lambda item: item[1]["count"], reverse=True)
+        texte = ""
+        for index, (u_id, data) in enumerate(classement[:10], start=1):
+            nom = data.get("display_name", data.get("username", "Inconnu"))
+            medailles = {1: "🥇", 2: "🥈", 3: "🥉"}
+            texte += f"{medailles.get(index, f'`#{index}`')} **{nom}** — {data['count']} morceaux validés\n"
+        embed.description = texte
+    return embed
+
+
+def trouver_derniere_archive_top(guild_id):
+    """Cherche dans le dossier du serveur les fichiers d'archive 'stats_week_WW_YYYY.json'
+    et retourne (stats_dict, semaine, annee) pour l'archive la plus récente, ou None si
+    aucune archive n'existe."""
+    dossier = chemin_dossier_guilde(guild_id)
+    meilleure = None  # (annee, semaine, chemin)
+
+    try:
+        entrees = os.listdir(dossier)
+    except FileNotFoundError:
+        return None
+
+    for nom_fichier in entrees:
+        correspondance = re.match(r"^stats_week_(\d+)_(\d+)\.json$", nom_fichier)
+        if not correspondance:
+            continue
+        semaine = int(correspondance.group(1))
+        annee = int(correspondance.group(2))
+        chemin = os.path.join(dossier, nom_fichier)
+        if meilleure is None or (annee, semaine) > (meilleure[0], meilleure[1]):
+            meilleure = (annee, semaine, chemin)
+
+    if meilleure is None:
+        return None
+
+    annee, semaine, chemin = meilleure
+    try:
+        with open(chemin, "r") as f:
+            stats = json.load(f)
+    except Exception:
+        return None
+
+    return stats, semaine, annee
+
+
 # --- TASK : TOUS LES LUNDIS 00:00 (HEURE DE PARIS), POUR CHAQUE SERVEUR ---
 @tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=PARIS_TZ))
 async def classement_hebdomadaire_auto():
@@ -416,23 +491,7 @@ async def classement_hebdomadaire_auto():
             continue
 
         stats = charger_stats(guild_id)
-
-        embed = discord.Embed(
-            title="🏆 Classement de la Semaine Dernière", 
-            color=discord.Color.gold(), 
-            timestamp=datetime.datetime.now(PARIS_TZ)
-        )
-
-        if not stats:
-            embed.description = "Aucune musique n'a été validée la semaine dernière ! 🎧"
-        else:
-            classement = sorted(stats.items(), key=lambda item: item[1]["count"], reverse=True)
-            texte = ""
-            for index, (u_id, data) in enumerate(classement[:10], start=1):
-                nom = data.get("display_name", data.get("username", "Inconnu"))
-                medailles = {1: "🥇", 2: "🥈", 3: "🥉"}
-                texte += f"{medailles.get(index, f'`#{index}`')} **{nom}** — {data['count']} morceaux validés\n"
-            embed.description = texte
+        embed = construire_embed_classement(stats)
 
         msg_top_id = config.get("message_top_id")
         message_existe = False
@@ -681,6 +740,26 @@ async def on_ready():
         await verifier_et_mettre_a_jour_aide(guild_id)
 
         salon = bot.get_channel(salon_id)
+
+        # Si aucun message de classement n'existe encore pour ce serveur mais qu'il y a
+        # des archives hebdomadaires (stats_week_WW_YYYY.json), on publie la plus récente
+        # au lieu d'attendre le prochain lundi minuit.
+        if salon and not config.get("message_top_id"):
+            archive = trouver_derniere_archive_top(guild_id)
+            if archive:
+                stats_archive, semaine, annee = archive
+                embed_archive = construire_embed_classement(
+                    stats_archive,
+                    titre=f"🏆 Classement de la Semaine {semaine} ({annee})"
+                )
+                try:
+                    nouveau_msg = await salon.send(embed=embed_archive)
+                    config["message_top_id"] = nouveau_msg.id
+                    sauvegarder_config(guild_id, config)
+                    print(f"🏆 [{guild.name}] Message de classement recréé depuis l'archive stats_week_{semaine}_{annee}.json")
+                except Exception as e:
+                    print(f"⚠️ [{guild.name}] Impossible de publier le classement archivé : {e}")
+
         msg_aide_id = config.get("message_aide_id")
         if salon:
             try:
