@@ -39,6 +39,28 @@ activite_profil = discord.Activity(
 
 bot = commands.Bot(command_prefix="!", intents=intents, activity=activite_profil)
 
+
+@bot.tree.error
+async def on_app_command_error(interaction: discord.Interaction, error: app_commands.AppCommandError):
+    # Cas fréquent : l'utilisateur tape du texte libre au lieu de choisir un salon
+    # dans la liste proposée par Discord (parfois causé par un glitch du clavier mobile).
+    if isinstance(error, app_commands.TransformerError):
+        message = (
+            "⚠️ Valeur invalide : sélectionne bien un salon dans la liste que Discord "
+            "te propose (ne tape pas le nom à la main)."
+        )
+    else:
+        message = "⚠️ Une erreur est survenue lors de l'exécution de la commande."
+        print(f"Erreur commande slash '{interaction.command.name if interaction.command else '?'}' : {error}")
+
+    try:
+        if interaction.response.is_done():
+            await interaction.followup.send(message, ephemeral=True)
+        else:
+            await interaction.response.send_message(message, ephemeral=True)
+    except discord.HTTPException:
+        pass
+
 # ==========================================
 #          CONFIGURATION SÉCURISÉE
 # ==========================================
