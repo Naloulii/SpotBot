@@ -41,9 +41,15 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 01:16",
+                "track_id": "5DVM8yN6fpiYrPycdbXn7x",
+                "status": "En cours..."
+            },
+            {
                 "date": "15/07/2026 01:14",
                 "track_id": "2uBXaOlgXMOd6CU3CIW97h",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 151.4
             },
             {
                 "date": "15/07/2026 01:10",
@@ -109,6 +115,19 @@
                 "track_id": "4FnXTGsdtHxlQFSMB8kZsL",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 158.2
+            }
+        ]
+    },
+    "1058679270425247864": {
+        "username": "speann_",
+        "display_name": "\u03df SpeaNn\u328b\ud83e\uded0",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1058679270425247864/03b196c2732111be38708be07debcf4f.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "15/07/2026 01:17",
+                "track_id": "6ieXPDdTP7EOdbLxTxIquj",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 45s",
+                "temps_ecoute_secondes": 45.5
             }
         ]
     }
