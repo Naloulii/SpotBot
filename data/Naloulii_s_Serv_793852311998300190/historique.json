@@ -5,9 +5,21 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 00:01",
+                "track_id": "0RvF4npJE38MywylRspRV5",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 23:58",
+                "track_id": "7wZnwgGkwpJ8EYJ6VEJD2A",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 145.9
+            },
+            {
                 "date": "14/07/2026 23:56",
                 "track_id": "4yVEmoFQjoqVbnKk1aezu4",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 113.8
             },
             {
                 "date": "14/07/2026 23:53",
