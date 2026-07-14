@@ -5,6 +5,55 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 15:15",
+                "titre": "Syst\u00e8me",
+                "artiste": "Luidji",
+                "url": "https://open.spotify.com/track/1XNFIJMhSR7ozrxxjc9mcd",
+                "track_id": "1XNFIJMhSR7ozrxxjc9mcd",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273a1b37beb7b6cc5ee7d300ea4",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 15:13",
+                "titre": "ELLE STREAME JEUNE MORTY",
+                "artiste": "Priilick",
+                "url": "https://open.spotify.com/track/293mvbLSjFSXci9yyMyaEW",
+                "track_id": "293mvbLSjFSXci9yyMyaEW",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273080e7c0c0272c0de06551bcd",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 18s",
+                "temps_ecoute_secondes": 78.2
+            },
+            {
+                "date": "14/07/2026 15:10",
+                "titre": "L'amant",
+                "artiste": "Orrage",
+                "url": "https://open.spotify.com/track/5Cqzl9icEW51dxH81n4VT1",
+                "track_id": "5Cqzl9icEW51dxH81n4VT1",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2734329d39a3df189e2e444070f",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 171.0
+            },
+            {
+                "date": "14/07/2026 15:06",
+                "titre": "Chaud ou Froid",
+                "artiste": "LightBoy",
+                "url": "https://open.spotify.com/track/4cSvPnJ5IBBYuypsv3RPKf",
+                "track_id": "4cSvPnJ5IBBYuypsv3RPKf",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27305b94d96092a5b2e0b6dd2ab",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 193.4
+            },
+            {
+                "date": "14/07/2026 15:04",
+                "titre": "BAD!",
+                "artiste": "Folie's",
+                "url": "https://open.spotify.com/track/3nq3hIQOwKHRgd44Y06Ijq",
+                "track_id": "3nq3hIQOwKHRgd44Y06Ijq",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2732576fd1726e32180600ab881",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 162.1
+            },
+            {
                 "date": "14/07/2026 01:01",
                 "titre": "Ma jolie maison",
                 "artiste": "a6el",
@@ -19,7 +68,7 @@
                 "artiste": "Luther",
                 "url": "https://open.spotify.com/track/4Iqh8atfjuYXTN5NckhNIg",
                 "track_id": "4Iqh8atfjuYXTN5NckhNIg",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "14/07/2026 00:47",
@@ -675,7 +724,7 @@
                 "artiste": "Gazo; La Mano 1.9",
                 "url": "https://open.spotify.com/track/3QS5ROkb4aa4q4ggkgTFRO",
                 "track_id": "3QS5ROkb4aa4q4ggkgTFRO",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "13/07/2026 16:34",
@@ -856,50 +905,6 @@
                 "track_id": "4g2b4zaOqqOcwVLSOlCR9D",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 157.9
-            },
-            {
-                "date": "13/07/2026 14:47",
-                "titre": "Cigarettes out the Window",
-                "artiste": "TV Girl",
-                "url": "https://open.spotify.com/track/6QeYSvYqYUsfBzsApbjDHO",
-                "track_id": "6QeYSvYqYUsfBzsApbjDHO",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 201.0
-            },
-            {
-                "date": "13/07/2026 12:57",
-                "titre": "J'Suis Pas Bo",
-                "artiste": "Sam Sauvage",
-                "url": "https://open.spotify.com/track/1wPrfGvINb3lWrGbLWXedI",
-                "track_id": "1wPrfGvINb3lWrGbLWXedI",
-                "status": "En cours..."
-            },
-            {
-                "date": "13/07/2026 12:55",
-                "titre": "Pardon Pour Mes Fautes",
-                "artiste": "LightBoy",
-                "url": "https://open.spotify.com/track/5uaSxqmoiqdgFPHDLFZmcI",
-                "track_id": "5uaSxqmoiqdgFPHDLFZmcI",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 141.8
-            },
-            {
-                "date": "13/07/2026 12:52",
-                "titre": "texto",
-                "artiste": "aupinard",
-                "url": "https://open.spotify.com/track/1A5mybkJrvzcGBoOLflgsZ",
-                "track_id": "1A5mybkJrvzcGBoOLflgsZ",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 144.6
-            },
-            {
-                "date": "13/07/2026 12:48",
-                "titre": "See You Again (feat. Kali Uchis)",
-                "artiste": "Tyler, The Creator; Kali Uchis",
-                "url": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
-                "track_id": "7KA4W4McWYRpgf0fWsJZWB",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "temps_ecoute_secondes": 182.2
             }
         ]
     },
