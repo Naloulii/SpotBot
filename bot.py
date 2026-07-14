@@ -137,6 +137,7 @@ async def sauvegarde_periodique_github():
 #     GESTION DES DOSSIERS PAR SERVEUR
 # ==========================================
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
+TRACKS_FILE = os.path.join(DATA_DIR, "tracks.json")
 _chemins_guildes = {}
 
 def nettoyer_nom_dossier(nom):
@@ -253,6 +254,14 @@ def charger_artistes_cache():
 def sauvegarder_artistes_cache(cache):
     with open(ARTISTS_FILE, "w") as f: json.dump(cache, f, indent=4)
 
+def charger_tracks_central():
+    try:
+        with open(TRACKS_FILE, "r", encoding="utf-8") as f: return json.load(f)
+    except FileNotFoundError: return {}
+
+def sauvegarder_tracks_central(tracks):
+    with open(TRACKS_FILE, "w", encoding="utf-8") as f: json.dump(tracks, f, indent=4)
+
 # ==========================================
 #          RECHERCHE D'IMAGES API
 # ==========================================
@@ -340,15 +349,29 @@ def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=Non
     likes[user_id]["display_name"] = membre.display_name
     likes[user_id]["avatar_url"] = str(membre.display_avatar.url)
     
-    deja_like = any(track['url'] == url for track in likes[user_id]["liste"])
-    if deja_like:
-        likes[user_id]["liste"] = [t for t in likes[user_id]["liste"] if t['url'] != url]
+    # Extraction simplifiée de l'ID depuis l'URL de tracking Spotify
+    match = re.search(r"track/([a-zA-Z0-9]+)", url)
+    track_id = match.group(1) if match else url
+
+    if track_id in likes[user_id]["liste"]:
+        likes[user_id]["liste"].remove(track_id)
         sauvegarder_likes(guild_id, likes)
         return False
     else:
-        if not cover_url:
-            cover_url = rechercher_cover_track(titre, artiste)
-        likes[user_id]["liste"].append({"titre": titre, "artiste": artiste, "url": url, "cover_url": cover_url})
+        # On alimente le fichier tracks.json centralisé si manquant
+        tracks_central = charger_tracks_central()
+        if track_id not in tracks_central:
+            if not cover_url:
+                cover_url = rechercher_cover_track(titre, artiste)
+            tracks_central[track_id] = {
+                "titre": titre,
+                "artiste": artiste,
+                "url": url,
+                "cover_url": cover_url
+            }
+            sauvegarder_tracks_central(tracks_central)
+
+        likes[user_id]["liste"].append(track_id)
         sauvegarder_likes(guild_id, likes)
         return True
 
@@ -385,17 +408,25 @@ def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cove
 
     finaliser_ecoutes_orphelines(guild_id, membre, historique)
 
-    if not cover_url:
-        cover_url = rechercher_cover_track(titre, artiste)
+    # --- ACTION CENTRALISATION TRACKS.JSON ---
+    tracks_central = charger_tracks_central()
+    if track_id not in tracks_central:
+        if not cover_url:
+            cover_url = rechercher_cover_track(titre, artiste)
+        tracks_central[track_id] = {
+            "titre": titre,
+            "artiste": artiste,
+            "url": url,
+            "cover_url": cover_url
+        }
+        sauvegarder_tracks_central(tracks_central)
 
     maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
+    
+    # --- AJOUT NOUVELLE FAÇON (SANS TITRE, SANS ARTISTE, SANS COVER) ---
     historique[user_id]["ecoutes"].insert(0, {
         "date": maintenant, 
-        "titre": titre, 
-        "artiste": artiste, 
-        "url": url, 
         "track_id": track_id,
-        "cover_url": cover_url,
         "status": "En cours..."
     })
     historique[user_id]["ecoutes"] = historique[user_id]["ecoutes"][:100]
@@ -442,8 +473,6 @@ def migrer_vers_normalisation():
     """Remplaçant moderne et optimisé de l'ancienne vérification.
     Centralise et répare les structures de données en toute sécurité
     via tracks.json sans toucher directement aux serveurs."""
-    # Tu peux ajouter ici ta logique de normalisation si nécessaire.
-    # Pour l'instant, on retourne False (pas de modification requise).
     return False
 
 # ==========================================
@@ -967,7 +996,6 @@ async def on_ready():
                     titre=f"🏆 Classement de la Semaine {semaine} ({annee})"
                 )
                 try:
-                    # CORRECTION APPORTÉE : Ajout du paramètre nommé 'embed=' pour éviter le texte brut
                     nouveau_msg = await salon.send(embed=embed_archive)  
                     config["message_top_id"] = nouveau_msg.id
                     sauvegarder_config(guild_id, config)
@@ -1028,26 +1056,6 @@ async def on_guild_join(guild):
                 "*(Il est fortement recommandé de créer un salon textuel vide dédié, par exemple `#spotbot` ou `#musique`)*"
             ),
             color=discord.Color.from_rgb(30, 215, 96)
-        )
-        embed_dm.add_field(
-            name="📩 Système Intégré de Support & Tickets :",
-            value=(
-                "• **Support direct par MP** : Tes membres peuvent envoyer un message privé (DM) au Bot à tout moment !\n"
-                "• **Retransmission automatique** : Le message sera instantanément transmis de manière sécurisée et "
-                "propre sous forme de ticket à mon créateur (**naloulii**).\n"
-                "• **Pas d'encombrement** : Aucun canal d'administration ou configuration additionnelle n'est requis !"
-            ),
-            inline=False
-        )
-        embed_dm.add_field(
-            name="🔒 Permissions requises pour le bot dans ce salon :",
-            value=(
-                "• **Voir le salon**\n"
-                "• **Envoyer des messages**\n"
-                "• **Intégrer des liens** (requis pour l'affichage des fiches)\n"
-                "• **Épingler des messages** (requis pour le message d'aide)"
-            ),
-            inline=False
         )
         try:
             await owner.send(embed=embed_dm)
@@ -1153,19 +1161,20 @@ async def voir_likes(interaction: discord.Interaction):
     
     embed = discord.Embed(title=f"❤️ Titres likés par {interaction.user.display_name}", color=discord.Color.red(), timestamp=datetime.datetime.now(PARIS_TZ))
     texte = ""
+    tracks_central = charger_tracks_central()
     dernier_like_avec_cover = None
 
-    for index, track in enumerate(likes[user_id]["liste"][-15:], start=1):
+    for index, track_id in enumerate(likes[user_id]["liste"][-15:], start=1):
+        track = tracks_central.get(track_id, {})
+        titre = track.get("titre", "Morceau inconnu")
+        artiste = track.get("artiste", "Artiste inconnu")
+        url = track.get("url", "#")
         cover = track.get("cover_url")
-        if not cover:
-            cover = rechercher_cover_track(track['titre'], track['artiste'])
-            track["cover_url"] = cover
-            sauvegarder_likes(guild_id, likes)
 
         if cover:
             dernier_like_avec_cover = cover
 
-        texte += f"`{index}.` [{track['titre']}]({track['url']}) — *{track['artiste']}*\n"
+        texte += f"`{index}.` [{titre}]({url}) — *{artiste}*\n"
     
     embed.description = texte
     if dernier_like_avec_cover:
@@ -1209,24 +1218,28 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
     embed = discord.Embed(title=f"🕒 Historique d'écoute — {cible_membre.display_name}", color=discord.Color.blue(), timestamp=datetime.datetime.now(PARIS_TZ))
     
     texte = ""
+    tracks_central = charger_tracks_central()
     derniere_cover_trouvee = None
 
-    for index, track in enumerate(morceaux_page, start=index_debut + 1):
-        status = track.get('status', 'En cours...')
+    for index, track_data in enumerate(morceaux_page, start=index_debut + 1):
+        status = track_data.get('status', 'En cours...')
+        track_id = track_data.get("track_id")
+        date_ecoute = track_data.get("date", "Date inconnue")
+
+        # Lecture depuis la source unique centralisée tracks.json
+        track = tracks_central.get(track_id, {})
+        titre = track.get("titre", "Morceau inconnu")
+        artiste = track.get("artiste", "Artiste inconnu")
+        url = track.get("url", "#")
         cover = track.get("cover_url")
-        
-        if not cover:
-            cover = rechercher_cover_track(track['titre'], track['artiste'])
-            track["cover_url"] = cover
-            sauvegarder_historique(guild_id, historique)
 
         if cover:
             derniere_cover_trouvee = cover
 
-        texte += f"`{index}.` `[{track['date']}]` [{track['titre']}]({track['url']}) — *{track['artiste']}*\n╰─ {status}\n\n"
+        texte += f"`{index}.` `[{date_ecoute}]` [{titre}]({url}) — *{artiste}*\n╰─ {status}\n\n"
         
     embed.description = texte
-    if len(morceaux_page) > 0 and derniere_cover_trouvee:
+    if len(morceaux_page) > 0 and  derniere_cover_trouvee:
          embed.set_thumbnail(url=derniere_cover_trouvee)
         
     embed.set_footer(text=f"Page {page}/{total_pages} • Total : {total_elements} écoutes")

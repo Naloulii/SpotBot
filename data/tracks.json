@@ -402,7 +402,7 @@
         "cover_url": "https://cdn-images.dzcdn.net/images/cover/b7fbbf269348650cee5dd6c5e3df4127/250x250-000000-80-0-0.jpg"
     },
     "5AbLCBvWIfVODVvDH0HIfJ": {
-        "title": "Marquer l'histoire",
+        "titre": "Marquer l'histoire",
         "artiste": "Sley9ueve",
         "url": "https://open.spotify.com/track/5AbLCBvWIfVODVvDH0HIfJ",
         "cover_url": "https://cdn-images.dzcdn.net/images/cover/610d69ed2cde6ff1953cfdc305760767/250x250-000000-80-0-0.jpg"
@@ -458,7 +458,7 @@
     "2OwLtx7vxRiaZKZNaK1OwZ": {
         "titre": "Jump",
         "artiste": "L2B; iDS; La Mano 1.9",
-        "url": "https://open.spotify.com/track/2OwLtx7vxRiaZKZNaK1OwZ",
+        "url": "https://open.spotify.com/track/ OwLtx7vxRiaZKZNaK1OwZ",
         "cover_url": "https://cdn-images.dzcdn.net/images/cover/f16646f8a53e72392343c48ad5b51e83/250x250-000000-80-0-0.jpg"
     },
     "1Rn5zyHq4ocm7L5LSplVAB": {
@@ -718,5 +718,59 @@
         "artiste": "The Marías",
         "url": "https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5",
         "cover_url": "https://cdn-images.dzcdn.net/images/cover/574bd156ad04b9af443cdf6775cfa8c3/250x250-000000-80-0-0.jpg"
+    },
+    "54WjZup7UFtEoayKPdFeVi": {
+        "titre": "love me - sped up",
+        "artiste": "Ex Habit",
+        "url": "https://open.spotify.com/track/54WjZup7UFtEoayKPdFeVi",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b273a989b34a8efa00bf7e657fc5"
+    },
+    "1lau6K2YSP5APtkzNJxVyB": {
+        "titre": "dirty little secret",
+        "artiste": "Artemas",
+        "url": "https://open.spotify.com/track/1lau6K2YSP5APtkzNJxVyB",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b273c9cd12dd361f5d40ca435868"
+    },
+    "5VD4kbG0ZSLLgxm6JwXjzK": {
+        "titre": "babydoll",
+        "artiste": "Ella Boh",
+        "url": "https://open.spotify.com/track/5VD4kbG0ZSLLgxm6JwXjzK",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b2733dfbea1da5821e37c5e51060"
+    },
+    "57Swu1i6RX65e5y6E2mq2i": {
+        "titre": "if u think i'm pretty - slowed",
+        "artiste": "Artemas",
+        "url": "https://open.spotify.com/track/57Swu1i6RX65e5y6E2mq2i",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b27319390cef159463d0977d2e0b"
+    },
+    "1GnTBbaFtxNkHEjUsWEdNu": {
+        "titre": "cross my heart",
+        "artiste": "Artemas",
+        "url": "https://open.spotify.com/track/1GnTBbaFtxNkHEjUsWEdNu",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b27398921aa7be90fbd895fdbd3c"
+    },
+    "3jwQt00cvkN57H6ZR75W2K": {
+        "titre": "RUNRUNRUN",
+        "artiste": "Dutch Melrose",
+        "url": "https://open.spotify.com/track/3jwQt00cvkN57H6ZR75W2K",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b2739bd54573540bccf89ed1b2f7"
+    },
+    "1i36kkhmhBxf4lYJscg5zK": {
+        "titre": "Fantasy",
+        "artiste": "Bazzi",
+        "url": "https://open.spotify.com/track/1i36kkhmhBxf4lYJscg5zK",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b273fa63868fe09156de4617db8a"
+    },
+    "1JdQibdvxgcrB8Rv1KFndw": {
+        "titre": "HEAVEN AND BACK",
+        "artiste": "Chase Atlantic",
+        "url": "https://open.spotify.com/track/1JdQibdvxgcrB8Rv1KFndw",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b273ff0a2b6de1c61b7f02bcbc2c"
+    },
+    "2Aksrb43W1rt0VwJ9VKl6g": {
+        "titre": "Morceau Inconnu",
+        "artiste": "Artiste Inconnu",
+        "url": "https://open.spotify.com/track/2Aksrb43W1rt0VwJ9VKl6g",
+        "cover_url": ""
     }
 }
