@@ -439,7 +439,7 @@ def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree
 #      VÉRIFICATION & CORRECTION DES COVERS
 # ==========================================
 def verifier_et_reparer_covers_globales():
-    """Parcourt l'ensemble des fichiers historique.json et likes.json de chaque serveur.
+    """Parcourt l'ensemble des fichiers historique.json et likes.json de chaque serveur.[cite: 2, 3]
     Si un morceau n'a pas de cover_url, il interroge Deezer, met à jour le fichier localement
     et retourne True s'il y a eu des modifications."""
     print("🔍 [Covers] Début de la vérification globale des cover_url manquants...")
@@ -448,13 +448,12 @@ def verifier_et_reparer_covers_globales():
     if not os.path.exists(DATA_DIR):
         return False
 
-    # Parcours des serveurs
     for item in os.listdir(DATA_DIR):
         chemin_item = os.path.join(DATA_DIR, item)
         if not os.path.isdir(chemin_item) or item == ".git":
             continue
 
-        # 1. Traitement historique.json
+        # 1. Traitement historique.json[cite: 2]
         historique_path = os.path.join(chemin_item, "historique.json")
         if os.path.exists(historique_path):
             try:
@@ -470,14 +469,14 @@ def verifier_et_reparer_covers_globales():
                                 ecoute["cover_url"] = nouvelle_cover
                                 historique_change = True
                                 modifie = True
-                                time.sleep(0.5) # Limite le spam API
+                                time.sleep(0.5) 
                 if historique_change:
                     with open(historique_path, "w", encoding="utf-8") as f:
                         json.dump(historique, f, indent=4)
             except Exception as e:
                 print(f"⚠️ [Covers] Erreur historique.json pour {item} : {e}")
 
-        # 2. Traitement likes.json
+        # 2. Traitement likes.json[cite: 3]
         likes_path = os.path.join(chemin_item, "likes.json")
         if os.path.exists(likes_path):
             try:
@@ -836,47 +835,138 @@ async def verifier_ecoutes_perimees():
 # ==========================================
 #          MESSAGES PRIVÉS (TICKETS)
 # ==========================================
+class TicketCloseView(discord.ui.View):
+    def __init__(self, user_id):
+        super().__init__(timeout=None)
+        self.user_id = user_id
+
+    @discord.ui.button(label="Fermer le ticket", style=discord.ButtonStyle.danger, emoji="🔒")
+    async def bouton_fermer(self, interaction: discord.Interaction, button: discord.ui.Button):
+        if interaction.user.id != OWNER_ID:
+            await interaction.response.send_message("🚫 Seul Naloulii peut fermer ce ticket.", ephemeral=True)[cite: 2, 3]
+            return
+
+        await interaction.response.defer()
+
+        try:
+            user = await bot.fetch_user(self.user_id)
+            if user:
+                embed_ferme = discord.Embed(
+                    title="🔒 Ticket résolu",
+                    description="Votre ticket a été marqué comme résolu et fermé par notre administrateur. N'hésitez pas à renvoyer un message si vous avez une autre question !",
+                    color=discord.Color.red()
+                )
+                await user.send(embed=embed_ferme)
+        except Exception as e:
+            print(f"Impossible de notifier l'utilisateur de la fermeture : {e}")
+
+        await interaction.channel.delete(reason="Ticket fermé par l'administrateur.")
+
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
         return
 
+    # --- CAS 1 : L'UTILISATEUR ÉCRIT EN MP AU BOT (Ouverture / Envoi dans le salon) ---
     if isinstance(message.channel, discord.DMChannel):
-        admin = bot.get_user(OWNER_ID)
-        
-        if admin:
-            embed_ticket = discord.Embed(
-                title="📩 Nouveau Message Reçu (Ticket DM)",
-                description=message.content,
-                color=discord.Color.blurple(),
-                timestamp=datetime.datetime.now(PARIS_TZ)
-            )
-            embed_ticket.set_author(
-                name=f"{message.author.display_name} ({message.author.name})",
-                icon_url=message.author.display_avatar.url
-            )
-            embed_ticket.set_footer(text=f"User ID: {message.author.id} • Réponds à son DM pour dialoguer !")
-            
-            fichiers = []
-            if message.attachments:
-                for attachment in message.attachments:
-                    fichiers.append(await attachment.to_file())
+        guilde = None
+        for g in bot.guilds:
+            if g.get_member(OWNER_ID) is not None:[cite: 2, 3]
+                guilde = g
+                break
 
-            try:
-                await admin.send(embed=embed_ticket, files=fichiers)
-                embed_accuse = discord.Embed(
-                    title="✅ Message retransmis avec succès",
-                    description="Votre message a été transmis directement à mon administrateur (**naloulii**). Vous recevrez une réponse sous peu ![cite: 2, 3]",
-                    color=discord.Color.green()
-                )
-                await message.channel.send(embed=embed_accuse)
-            except Exception as e:
-                await message.channel.send("❌ Impossible de transmettre le message à l'administrateur pour le moment.")
-                print(f"Erreur envoi ticket DM : {e}")
-        else:
-            await message.channel.send("❌ Impossible de joindre l'administrateur actuel.")
-    
+        if not guilde:
+            await message.channel.send("❌ Erreur interne : Impossible de trouver le serveur d'administration.")
+            return
+
+        categorie_privée = discord.utils.get(guilde.categories, name="privé") or discord.utils.get(guilde.categories, name="🔒 privé")
+        if not categorie_privée:
+            await message.channel.send("❌ Erreur : La catégorie de salon privé 'privé' n'existe pas sur le serveur d'administration.")
+            return
+
+        nom_salon = f"ticket-{clean_channel_name(message.author.name)}"
+        salon_ticket = discord.utils.get(categorie_privée.text_channels, name=nom_salon)
+
+        if not salon_ticket:
+            overwrites = {
+                guilde.default_role: discord.PermissionOverwrite(read_messages=False),
+                guilde.me: discord.PermissionOverwrite(read_messages=True, send_messages=True, embed_links=True),
+                guilde.get_member(OWNER_ID): discord.PermissionOverwrite(read_messages=True, send_messages=True)[cite: 2, 3]
+            }
+            
+            salon_ticket = await guilde.create_text_channel(
+                name=nom_salon,
+                category=categorie_privée,
+                overwrites=overwrites,
+                topic=f"Ticket de {message.author.display_name} ({message.author.id})"
+            )
+
+            embed_init = discord.Embed(
+                title=f"📩 Nouveau ticket de {message.author.display_name}",
+                description=f"Les messages que tu écris ici seront envoyés directement en MP à **{message.author.mention}**.\nLe bouton ci-dessous fermera le ticket et supprimera ce salon.",
+                color=discord.Color.blurple()
+            )
+            embed_init.set_thumbnail(url=message.author.display_avatar.url)
+            embed_init.add_field(name="Pseudo complet", value=f"`{message.author.name}`", inline=True)
+            embed_init.add_field(name="ID Utilisateur", value=f"`{message.author.id}`", inline=True)
+
+            view = TicketCloseView(message.author.id)
+            await salon_ticket.send(embed=embed_init, view=view)
+
+        embed_msg = discord.Embed(
+            description=message.content,
+            color=discord.Color.light_grey(),
+            timestamp=datetime.datetime.now(PARIS_TZ)
+        )
+        embed_msg.set_author(name=message.author.display_name, icon_url=message.author.display_avatar.url)
+
+        fichiers = []
+        if message.attachments:
+            for attachment in message.attachments:
+                fichiers.append(await attachment.to_file())
+
+        await salon_ticket.send(embed=embed_msg, files=fichiers)
+
+        try:
+            await message.add_reaction("✅")
+        except Exception:
+            pass
+
+    # --- CAS 2 : TU ÉCRIS DANS UN SALON DE TICKET (Transmission en MP à l'utilisateur) ---
+    elif message.channel.category and (message.channel.category.name.lower() == "privé" or message.channel.category.name == "🔒 privé"):
+        if message.channel.name.startswith("ticket-"):
+            topic = message.channel.topic
+            if topic:
+                match = re.search(r"\((\d+)\)", topic)
+                if match:
+                    user_id = int(match.group(1))
+                    try:
+                        user = await bot.fetch_user(user_id)
+                        if user:
+                            embed_reply = discord.Embed(
+                                description=message.content,
+                                color=discord.Color.green(),
+                                timestamp=datetime.datetime.now(PARIS_TZ)
+                            )
+                            embed_reply.set_author(name="Naloulii (Admin)", icon_url=message.author.display_avatar.url)[cite: 2, 3]
+
+                            fichiers = []
+                            if message.attachments:
+                                for attachment in message.attachments:
+                                    fichiers.append(await attachment.to_file())
+
+                            await user.send(embed=embed_reply, files=fichiers)
+                            await message.add_reaction("📤")
+                    except Exception as e:
+                        await message.channel.send(f"❌ Impossible d'envoyer le message en MP à l'utilisateur : {e}")
+
     await bot.process_commands(message)
+
+def clean_channel_name(name):
+    """Nettoie le nom d'un utilisateur pour qu'il soit compatible avec les règles de nommage des salons Discord."""
+    name = name.lower()
+    name = re.sub(r"[^\w\-]+", "-", name, flags=re.UNICODE)
+    return name.strip("-")
 
 
 # ==========================================
@@ -912,7 +1002,6 @@ async def on_ready():
         except Exception as e:
             print(f"⚠️ [{guild.name}] Erreur réparation écoutes bloquées : {e}")
 
-        # On s'assure d'avoir la version la plus fraîche du fichier de config
         config = charger_config(guild_id)
         salon_id = config.get("salon_musique_id")
         if not salon_id: continue  
@@ -920,7 +1009,6 @@ async def on_ready():
         # On met d'abord à jour et on récupère les ID réels des messages
         msg_aide_reel_id = await verifier_et_mettre_a_jour_aide(guild_id)
         
-        # Rechargement post-mise à jour pour s'assurer que les valeurs stockées sur disque sont synchronisées en mémoire
         config = charger_config(guild_id)
         msg_top_reel_id = config.get("message_top_id")
 
@@ -935,18 +1023,17 @@ async def on_ready():
                     titre=f"🏆 Classement de la Semaine {semaine} ({annee})"
                 )
                 try:
-                    nouveau_msg = await salon.send(embed_archive)
+                    # CORRECTION APPORTÉE ICI : Ajout du paramètre nommé 'embed=' pour éviter le texte brut
+                    nouveau_msg = await salon.send(embed=embed_archive)  
                     config["message_top_id"] = nouveau_msg.id
                     sauvegarder_config(guild_id, config)
                     msg_top_reel_id = nouveau_msg.id
                 except Exception as e:
                     print(f"⚠️ [{guild.name}] Impossible de publier le classement : {e}")
 
-        # Nettoyage sécurisé du salon (ne supprime JAMAIS l'aide fraîchement identifiée ni le top hebdomadaire)
         if salon:
             try:
                 async for message in salon.history(limit=50):
-                    # Protection renforcée : on ne touche pas aux embeds épinglés ni à nos messages d'aide et de classement officiels
                     if message.author == bot.user:
                         if message.id == msg_aide_reel_id or message.id == msg_top_reel_id or message.pinned:
                             continue
@@ -1209,7 +1296,7 @@ async def voir_historique(interaction: discord.Interaction, page: int = 1, membr
 @app_commands.guild_only()
 async def manual_git_sync(interaction: discord.Interaction):
     if interaction.user.id != OWNER_ID:
-        await interaction.response.send_message("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).", ephemeral=True)
+        await interaction.response.send_message("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).", ephemeral=True)[cite: 2, 3]
         return
 
     await interaction.response.defer(ephemeral=True)
@@ -1226,7 +1313,7 @@ async def manual_git_sync(interaction: discord.Interaction):
 @bot.command(name="gitsync")
 async def manual_git_sync_text(ctx):
     if ctx.author.id != OWNER_ID:
-        await ctx.send("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).")
+        await ctx.send("🚫 Cette commande est ultra-sécurisée et réservée à mon créateur (**naloulii**).")[cite: 2, 3]
         return
 
     msg = await ctx.send("🔄 Synchronisation GitHub en cours...")
