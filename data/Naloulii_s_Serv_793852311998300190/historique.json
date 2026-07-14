@@ -351,6 +351,55 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 19:06",
+                "titre": "babydoll",
+                "artiste": "Ella Boh",
+                "url": "https://open.spotify.com/track/5VD4kbG0ZSLLgxm6JwXjzK",
+                "track_id": "5VD4kbG0ZSLLgxm6JwXjzK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2733dfbea1da5821e37c5e51060",
+                "status": "En cours..."
+            },
+            {
+                "date": "14/07/2026 19:04",
+                "titre": "if u think i'm pretty - slowed",
+                "artiste": "Artemas",
+                "url": "https://open.spotify.com/track/57Swu1i6RX65e5y6E2mq2i",
+                "track_id": "57Swu1i6RX65e5y6E2mq2i",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27319390cef159463d0977d2e0b",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 135.8
+            },
+            {
+                "date": "14/07/2026 18:59",
+                "titre": "cross my heart",
+                "artiste": "Artemas",
+                "url": "https://open.spotify.com/track/1GnTBbaFtxNkHEjUsWEdNu",
+                "track_id": "1GnTBbaFtxNkHEjUsWEdNu",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b27398921aa7be90fbd895fdbd3c",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 288.4
+            },
+            {
+                "date": "14/07/2026 18:57",
+                "titre": "RUNRUNRUN",
+                "artiste": "Dutch Melrose",
+                "url": "https://open.spotify.com/track/3jwQt00cvkN57H6ZR75W2K",
+                "track_id": "3jwQt00cvkN57H6ZR75W2K",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b2739bd54573540bccf89ed1b2f7",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 142.0
+            },
+            {
+                "date": "14/07/2026 18:54",
+                "titre": "Fantasy",
+                "artiste": "Bazzi",
+                "url": "https://open.spotify.com/track/1i36kkhmhBxf4lYJscg5zK",
+                "track_id": "1i36kkhmhBxf4lYJscg5zK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273fa63868fe09156de4617db8a",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 150.0
+            },
+            {
                 "date": "14/07/2026 18:41",
                 "titre": "HEAVEN AND BACK",
                 "artiste": "Chase Atlantic",
