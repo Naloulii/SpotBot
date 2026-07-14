@@ -1,5 +1,6 @@
 import os
 import io
+import re
 import json
 import time
 import asyncio
@@ -38,7 +39,6 @@ bot = commands.Bot(command_prefix="!", intents=intents, activity=activite_profil
 # ==========================================
 #          CONFIGURATION SÉCURISÉE
 # ==========================================
-SALON_MUSIQUE_ID = 1520393495544594472 
 DASHBOARD_URL = "https://naloulii.github.io/SpotBot-data/"
 
 # Récupération des jetons secrets via l'hébergeur Cloud (Railway)
@@ -46,27 +46,18 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
 GITHUB_REPO_NAME = os.getenv("GITHUB_REPO_NAME")
-GITHUB_PUBLIC_DATA_REPO_NAME = os.getenv("GITHUB_PUBLIC_DATA_REPO_NAME", "SpotBot-data")
 # ==========================================
 
 # Configuration des chemins locaux dans le conteneur Docker
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# DATA_DIR est le clone local du repo GitHub PUBLIC. Sa racine = racine du repo.
+# Chaque serveur Discord a son propre sous-dossier : data/<guild_id>/
 DATA_DIR = os.path.join(BASE_DIR, "data")
-PUBLIC_DATA_DIR = os.path.join(BASE_DIR, "public_data")
 
-STATS_FILE = os.path.join(DATA_DIR, "stats.json")
-LIKES_FILE = os.path.join(DATA_DIR, "likes.json")
-CONFIG_FILE = os.path.join(DATA_DIR, "config.json")
-HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
-ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
-
-FICHIERS_PUBLICS = ["stats.json", "likes.json", "historique.json", "artists.json"]
-
-ecoutes_en_cours = {}
-verrous_anti_spam = {} 
+ecoutes_en_cours = {}   # clé = (guild_id, user_id)
+verrous_anti_spam = {}  # clé = (guild_id, user_id)
 
 GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git"
-GITHUB_PUBLIC_DATA_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_PUBLIC_DATA_REPO_NAME}.git"
 
 if not os.path.exists(DATA_DIR):
     print("🚀 Premier lancement sur le Cloud : Création du dossier data et clonage...")
@@ -81,120 +72,167 @@ else:
         shutil.rmtree(DATA_DIR, ignore_errors=True)
         repo = Repo.clone_from(GITHUB_REPO_URL, DATA_DIR)
 
-if not os.path.exists(PUBLIC_DATA_DIR):
-    print("🚀 Clonage du dépôt public de données...")
-    public_repo = Repo.clone_from(GITHUB_PUBLIC_DATA_REPO_URL, PUBLIC_DATA_DIR)
-else:
-    try:
-        public_repo = Repo(PUBLIC_DATA_DIR)
-        print("📌 Dépôt Git public détecté dans /public_data.")
-    except Exception:
-        print("⚠️ Erreur dossier public_data, re-clonage automatique...")
-        import shutil
-        shutil.rmtree(PUBLIC_DATA_DIR, ignore_errors=True)
-        public_repo = Repo.clone_from(GITHUB_PUBLIC_DATA_REPO_URL, PUBLIC_DATA_DIR)
-
-# --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes) ---
+# --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes, + à la demande) ---
 def _sauvegarde_github_bloquante():
     try:
         repo.remotes.origin.pull()
-        
+
         fichiers_a_ajouter = []
         for root, dirs, files in os.walk(DATA_DIR):
+            if ".git" in root.split(os.sep):
+                continue
             for file in files:
                 if file.endswith(".json"):
                     rel_path = os.path.relpath(os.path.join(root, file), DATA_DIR)
                     fichiers_a_ajouter.append(rel_path)
-                
+
         if fichiers_a_ajouter:
             repo.index.add(fichiers_a_ajouter)
-            maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
-            repo.index.commit(f"🤖 Auto-Save : Synchronisation des données ({maintenant})")
-            repo.remotes.origin.push()
-            print(f"📦 [GitHub] Données synchronisées avec succès : {fichiers_a_ajouter}")
+            if repo.is_dirty() or not repo.head.is_valid():
+                maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
+                repo.index.commit(f"🤖 Auto-Save : Synchronisation des données ({maintenant})")
+                repo.remotes.origin.push()
+                print(f"📦 [GitHub] Données synchronisées avec succès : {len(fichiers_a_ajouter)} fichier(s)")
     except Exception as e:
         print(f"⚠️ [GitHub] Erreur de synchronisation automatique : {e}")
-
-    try:
-        import shutil as _shutil
-
-        try:
-            public_repo.remotes.origin.pull()
-        except Exception:
-            pass
-
-        fichiers_publies = []
-        for nom_fichier in FICHIERS_PUBLICS:
-            source = os.path.join(DATA_DIR, nom_fichier)
-            destination = os.path.join(PUBLIC_DATA_DIR, nom_fichier)
-            if os.path.exists(source):
-                _shutil.copyfile(source, destination)
-                fichiers_publies.append(nom_fichier)
-
-        import glob as _glob
-        for archive_path in _glob.glob(os.path.join(DATA_DIR, "stats_week_*.json")):
-            nom_archive = os.path.basename(archive_path)
-            destination = os.path.join(PUBLIC_DATA_DIR, nom_archive)
-            _shutil.copyfile(archive_path, destination)
-            fichiers_publies.append(nom_archive)
-
-        if fichiers_publies:
-            public_repo.index.add(fichiers_publies)
-
-            try:
-                a_des_changements = public_repo.is_dirty() or not public_repo.head.is_valid()
-            except Exception:
-                a_des_changements = True 
-
-            if a_des_changements:
-                maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
-                public_repo.index.commit(f"🤖 Auto-Save : Données publiques ({maintenant})")
-                try:
-                    public_repo.remotes.origin.push()
-                except Exception:
-                    branche = public_repo.active_branch.name
-                    public_repo.git.push("--set-upstream", "origin", branche)
-                print(f"📦 [GitHub public] Données publiées avec succès : {fichiers_publies}")
-    except Exception as e:
-        print(f"⚠️ [GitHub public] Erreur de synchronisation : {e}")
 
 
 @tasks.loop(minutes=15)
 async def sauvegarde_periodique_github():
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
-# Fonctions de gestion de données locales (JSON)
-def charger_stats():
+
+# ==========================================
+#     GESTION DES DOSSIERS PAR SERVEUR
+# ==========================================
+# artists.json est partagé entre tous les serveurs (les artistes sont les mêmes
+# partout), donc il vit à la RACINE du repo, pas dans un dossier de serveur.
+ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
+
+# Cache en mémoire : guild_id (str) -> chemin absolu du dossier déjà résolu.
+# Évite de re-scanner le disque à chaque appel (ces fonctions sont appelées très
+# souvent, à chaque écoute Spotify).
+_chemins_guildes = {}
+
+def nettoyer_nom_dossier(nom):
+    """Rend un nom de serveur Discord utilisable comme nom de dossier (retire
+    emojis/accents spéciaux/caractères interdits, garde lettres/chiffres/tirets)."""
+    nettoye = re.sub(r"[^\w\-]+", "_", nom, flags=re.UNICODE).strip("_")
+    if not nettoye:
+        nettoye = "serveur"
+    return nettoye[:50]
+
+def resoudre_dossier_guilde(guild, forcer=False):
+    """Retourne le chemin du dossier de données pour ce serveur, au format
+    'NomDuServeur_ID'. Si le serveur a été renommé depuis la dernière fois
+    (un dossier '..._ID' existe déjà avec un ancien nom), le dossier est
+    renommé sur place pour rester à jour, plutôt que d'en créer un nouveau."""
+    guild_id = str(guild.id)
+    if not forcer and guild_id in _chemins_guildes:
+        return _chemins_guildes[guild_id]
+
+    nom_voulu = f"{nettoyer_nom_dossier(guild.name)}_{guild_id}"
+    chemin_voulu = os.path.join(DATA_DIR, nom_voulu)
+
+    dossier_existant = None
+    if os.path.isdir(DATA_DIR):
+        for entree in os.listdir(DATA_DIR):
+            if entree == ".git":
+                continue
+            chemin_entree = os.path.join(DATA_DIR, entree)
+            if os.path.isdir(chemin_entree) and entree.endswith(f"_{guild_id}"):
+                dossier_existant = chemin_entree
+                break
+
+    if dossier_existant and dossier_existant != chemin_voulu:
+        try:
+            os.rename(dossier_existant, chemin_voulu)
+            print(f"📁 Dossier renommé (serveur renommé) : {os.path.basename(dossier_existant)} → {nom_voulu}")
+        except Exception as e:
+            print(f"⚠️ Impossible de renommer le dossier du serveur {guild.name} : {e}")
+            chemin_voulu = dossier_existant
+    else:
+        os.makedirs(chemin_voulu, exist_ok=True)
+
+    _chemins_guildes[guild_id] = chemin_voulu
+    return chemin_voulu
+
+def chemin_dossier_guilde(guild_id):
+    """Lecture depuis le cache résolu par resoudre_dossier_guilde(). Ce cache est
+    rempli pour tous les serveurs connus au démarrage (on_ready) et à l'arrivée
+    sur un nouveau serveur (on_guild_join), donc toujours dispo en pratique."""
+    if guild_id in _chemins_guildes:
+        return _chemins_guildes[guild_id]
+    # Filet de sécurité si jamais appelé avant résolution complète
+    dossier = os.path.join(DATA_DIR, str(guild_id))
+    os.makedirs(dossier, exist_ok=True)
+    return dossier
+
+def chemin_fichier_guilde(guild_id, nom_fichier):
+    return os.path.join(chemin_dossier_guilde(guild_id), nom_fichier)
+
+def assurer_dossier_guilde(guild):
+    """Crée (si besoin) le dossier du serveur + un config.json par défaut + un guild_info.json
+    utile pour le futur dashboard (nom / icône du serveur). Retourne True si le dossier vient
+    d'être créé (nouveau serveur)."""
+    guild_id = str(guild.id)
+    dossier = resoudre_dossier_guilde(guild)
+    config_path = os.path.join(dossier, "config.json")
+    nouveau = not os.path.exists(config_path)
+
+    if nouveau:
+        sauvegarder_config(guild_id, {
+            "salon_musique_id": None,
+            "message_aide_id": None,
+            "message_top_id": None
+        })
+
     try:
-        with open(STATS_FILE, "r") as f: return json.load(f)
+        info_path = os.path.join(dossier, "guild_info.json")
+        with open(info_path, "w") as f:
+            json.dump({
+                "id": guild_id,
+                "name": guild.name,
+                "icon_url": str(guild.icon.url) if guild.icon else None
+            }, f, indent=4)
+    except Exception:
+        pass
+
+    return nouveau
+
+
+# Fonctions de gestion de données locales (JSON), maintenant par serveur
+def charger_stats(guild_id):
+    try:
+        with open(chemin_fichier_guilde(guild_id, "stats.json"), "r") as f: return json.load(f)
     except FileNotFoundError: return {}
 
-def sauvegarder_stats(stats):
-    with open(STATS_FILE, "w") as f: json.dump(stats, f, indent=4)
+def sauvegarder_stats(guild_id, stats):
+    with open(chemin_fichier_guilde(guild_id, "stats.json"), "w") as f: json.dump(stats, f, indent=4)
 
-def charger_likes():
+def charger_likes(guild_id):
     try:
-        with open(LIKES_FILE, "r") as f: return json.load(f)
+        with open(chemin_fichier_guilde(guild_id, "likes.json"), "r") as f: return json.load(f)
     except FileNotFoundError: return {}
 
-def sauvegarder_likes(likes):
-    with open(LIKES_FILE, "w") as f: json.dump(likes, f, indent=4)
+def sauvegarder_likes(guild_id, likes):
+    with open(chemin_fichier_guilde(guild_id, "likes.json"), "w") as f: json.dump(likes, f, indent=4)
 
-def charger_config():
+def charger_config(guild_id):
     try:
-        with open(CONFIG_FILE, "r") as f: return json.load(f)
-    except FileNotFoundError: return {"message_aide_id": None, "message_top_id": None}
+        with open(chemin_fichier_guilde(guild_id, "config.json"), "r") as f: return json.load(f)
+    except FileNotFoundError: return {"salon_musique_id": None, "message_aide_id": None, "message_top_id": None}
 
-def sauvegarder_config(config):
-    with open(CONFIG_FILE, "w") as f: json.dump(config, f, indent=4)
+def sauvegarder_config(guild_id, config):
+    with open(chemin_fichier_guilde(guild_id, "config.json"), "w") as f: json.dump(config, f, indent=4)
 
-def charger_historique():
+def charger_historique(guild_id):
     try:
-        with open(HISTORIQUE_FILE, "r") as f: return json.load(f)
+        with open(chemin_fichier_guilde(guild_id, "historique.json"), "r") as f: return json.load(f)
     except FileNotFoundError: return {}
 
-def sauvegarder_historique(historique):
-    with open(HISTORIQUE_FILE, "w") as f: json.dump(historique, f, indent=4)
+def sauvegarder_historique(guild_id, historique):
+    with open(chemin_fichier_guilde(guild_id, "historique.json"), "w") as f: json.dump(historique, f, indent=4)
 
 def charger_artistes_cache():
     try:
@@ -257,20 +295,20 @@ def mettre_a_jour_cache_artistes(chaine_artistes):
         sauvegarder_artistes_cache(cache)
 
 
-def enregistrer_stat_membre(membre):
+def enregistrer_stat_membre(guild_id, membre):
     user_id = str(membre.id)
-    stats = charger_stats()
+    stats = charger_stats(guild_id)
     if user_id not in stats:
         stats[user_id] = {"username": membre.name, "display_name": membre.display_name, "avatar_url": str(membre.display_avatar.url), "count": 0}
     stats[user_id]["username"] = membre.name
     stats[user_id]["display_name"] = membre.display_name
     stats[user_id]["avatar_url"] = str(membre.display_avatar.url)
     stats[user_id]["count"] += 1
-    sauvegarder_stats(stats)
+    sauvegarder_stats(guild_id, stats)
 
-def enregistrer_like_membre(membre, titre, artiste, url):
+def enregistrer_like_membre(guild_id, membre, titre, artiste, url):
     user_id = str(membre.id)
-    likes = charger_likes()
+    likes = charger_likes(guild_id)
     if user_id not in likes:
         likes[user_id] = {"username": membre.name, "display_name": membre.display_name, "avatar_url": str(membre.display_avatar.url), "liste": []}
     likes[user_id]["username"] = membre.name
@@ -280,16 +318,16 @@ def enregistrer_like_membre(membre, titre, artiste, url):
     deja_like = any(track['url'] == url for track in likes[user_id]["liste"])
     if deja_like:
         likes[user_id]["liste"] = [t for t in likes[user_id]["liste"] if t['url'] != url]
-        sauvegarder_likes(likes)
+        sauvegarder_likes(guild_id, likes)
         return False
     else:
         likes[user_id]["liste"].append({"titre": titre, "artiste": artiste, "url": url})
-        sauvegarder_likes(likes)
+        sauvegarder_likes(guild_id, likes)
         return True
 
-def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
+def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id):
     user_id = str(membre.id)
-    historique = charger_historique()
+    historique = charger_historique(guild_id)
     if user_id not in historique:
         historique[user_id] = {"username": membre.name, "display_name": membre.display_name, "avatar_url": str(membre.display_avatar.url), "ecoutes": []}
     historique[user_id]["username"] = membre.name
@@ -316,13 +354,13 @@ def ajouter_a_l_historique(membre, titre, artiste, url, track_id):
         "status": "En cours..."
     })
     historique[user_id]["ecoutes"] = historique[user_id]["ecoutes"][:100]
-    sauvegarder_historique(historique)
+    sauvegarder_historique(guild_id, historique)
 
     mettre_a_jour_cache_artistes(artiste)
 
-def mettre_a_jour_historique_fin(membre, track_id, temps_ecoule, duree_totale):
+def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree_totale):
     user_id = str(membre.id)
-    historique = charger_historique()
+    historique = charger_historique(guild_id)
     if user_id not in historique:
         return
 
@@ -355,60 +393,70 @@ def mettre_a_jour_historique_fin(membre, track_id, temps_ecoule, duree_totale):
         m, s = divmod(int(temps_ecoule), 60)
         ecoute_actuelle["status"] = f"⏱️ Écouté pendant {m}m {s:02d}s"
 
-    sauvegarder_historique(historique)
+    sauvegarder_historique(guild_id, historique)
 
     if valide:
-        enregistrer_stat_membre(membre)
+        enregistrer_stat_membre(guild_id, membre)
 
 
-# --- TASK : TOUS LES LUNDIS 00:00 (HEURE DE PARIS) ---
+# --- TASK : TOUS LES LUNDIS 00:00 (HEURE DE PARIS), POUR CHAQUE SERVEUR ---
 @tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=PARIS_TZ))
 async def classement_hebdomadaire_auto():
     if datetime.datetime.now(PARIS_TZ).weekday() != 0:
         return
 
-    salon = bot.get_channel(SALON_MUSIQUE_ID)
-    if not salon: return
+    for guild in bot.guilds:
+        guild_id = str(guild.id)
+        config = charger_config(guild_id)
+        salon_id = config.get("salon_musique_id")
+        if not salon_id:
+            continue
+        salon = bot.get_channel(salon_id)
+        if not salon:
+            continue
 
-    stats = charger_stats()
-    config = charger_config()
-    
-    embed = discord.Embed(
-        title="🏆 Classement de la Semaine Dernière", 
-        color=discord.Color.gold(), 
-        timestamp=datetime.datetime.now(PARIS_TZ)
-    )
-    
-    if not stats:
-        embed.description = "Aucune musique n'a été validée la semaine dernière ! 🎧"
-    else:
-        classement = sorted(stats.items(), key=lambda item: item[1]["count"], reverse=True)
-        texte = ""
-        for index, (u_id, data) in enumerate(classement[:10], start=1):
-            nom = data.get("display_name", data.get("username", "Inconnu"))
-            medailles = {1: "🥇", 2: "🥈", 3: "🥉"}
-            texte += f"{medailles.get(index, f'`#{index}`')} **{nom}** — {data['count']} morceaux validés\n"
-        embed.description = texte
+        stats = charger_stats(guild_id)
 
-    msg_top_id = config.get("message_top_id")
-    message_existe = False
-    if msg_top_id:
-        try:
-            msg_existant = await salon.fetch_message(msg_top_id)
-            await msg_existant.edit(embed=embed)
-            message_existe = True
-        except Exception: pass
-    if not message_existe:
-        nouveau_msg = await salon.send(embed=embed)
-        config["message_top_id"] = nouveau_msg.id
-        sauvegarder_config(config)
+        embed = discord.Embed(
+            title="🏆 Classement de la Semaine Dernière", 
+            color=discord.Color.gold(), 
+            timestamp=datetime.datetime.now(PARIS_TZ)
+        )
 
-    num_semaine = datetime.datetime.now(PARIS_TZ).strftime("%V_%Y")
-    archive_file = os.path.join(DATA_DIR, f"stats_week_{num_semaine}.json")
-    with open(archive_file, "w") as f:
-        json.dump(stats, f, indent=4)
+        if not stats:
+            embed.description = "Aucune musique n'a été validée la semaine dernière ! 🎧"
+        else:
+            classement = sorted(stats.items(), key=lambda item: item[1]["count"], reverse=True)
+            texte = ""
+            for index, (u_id, data) in enumerate(classement[:10], start=1):
+                nom = data.get("display_name", data.get("username", "Inconnu"))
+                medailles = {1: "🥇", 2: "🥈", 3: "🥉"}
+                texte += f"{medailles.get(index, f'`#{index}`')} **{nom}** — {data['count']} morceaux validés\n"
+            embed.description = texte
 
-    sauvegarder_stats({})
+        msg_top_id = config.get("message_top_id")
+        message_existe = False
+        if msg_top_id:
+            try:
+                msg_existant = await salon.fetch_message(msg_top_id)
+                await msg_existant.edit(embed=embed)
+                message_existe = True
+            except Exception: pass
+        if not message_existe:
+            try:
+                nouveau_msg = await salon.send(embed=embed)
+                config["message_top_id"] = nouveau_msg.id
+                sauvegarder_config(guild_id, config)
+            except Exception: pass
+
+        num_semaine = datetime.datetime.now(PARIS_TZ).strftime("%V_%Y")
+        archive_file = chemin_fichier_guilde(guild_id, f"stats_week_{num_semaine}.json")
+        with open(archive_file, "w") as f:
+            json.dump(stats, f, indent=4)
+
+        sauvegarder_stats(guild_id, {})
+
+    await asyncio.to_thread(_sauvegarde_github_bloquante)
 
 
 def generer_embed_aide():
@@ -427,7 +475,8 @@ def generer_embed_aide():
         value=(
             "**/top** : Classement hebdomadaire des plus grands auditeurs. 🏆\n"
             "**/likes** : La liste complète de tes morceaux favoris. ❤️\n"
-            "**/history [page] [membre]** : Historique d'écoute (le tien ou celui d'un ami via son @). 🕒"
+            "**/history [page] [membre]** : Historique d'écoute (le tien ou celui d'un ami via son @). 🕒\n"
+            "**/setup [salon]** : (Admins) Choisir ou changer le salon d'affichage. ⚙️"
         ),
         inline=False
     )
@@ -443,10 +492,13 @@ def generer_embed_aide():
     )
     return embed
 
-async def verifier_et_mettre_a_jour_aide():
-    salon = bot.get_channel(SALON_MUSIQUE_ID)
+async def verifier_et_mettre_a_jour_aide(guild_id):
+    config = charger_config(guild_id)
+    salon_id = config.get("salon_musique_id")
+    if not salon_id: return
+    salon = bot.get_channel(salon_id)
     if not salon: return
-    config = charger_config()
+
     msg_aide_id = config.get("message_aide_id")
     embed_aide = generer_embed_aide()
     message_existe = False
@@ -457,11 +509,13 @@ async def verifier_et_mettre_a_jour_aide():
             message_existe = True
         except Exception: pass
     if not message_existe:
-        nouveau_msg = await salon.send(embed=embed_aide)
-        try: await nouveau_msg.pin()
+        try:
+            nouveau_msg = await salon.send(embed=embed_aide)
+            try: await nouveau_msg.pin()
+            except Exception: pass
+            config["message_aide_id"] = nouveau_msg.id
+            sauvegarder_config(guild_id, config)
         except Exception: pass
-        config["message_aide_id"] = nouveau_msg.id
-        sauvegarder_config(config)
 
 
 couleur_cache = {}  
@@ -497,16 +551,25 @@ def generer_barre_progression(creation_time, duration):
 
 
 async def verifier_presence_spotify(membre):
-    salon = bot.get_channel(SALON_MUSIQUE_ID)
+    if membre.guild is None:
+        return
+    guild_id = str(membre.guild.id)
+    config = charger_config(guild_id)
+    salon_id = config.get("salon_musique_id")
+    if not salon_id:
+        return  # Serveur pas encore configuré (le propriétaire doit faire /setup)
+
+    salon = bot.get_channel(salon_id)
     if not salon: return
 
     user_id = str(membre.id)
+    cle = (guild_id, user_id)
     maintenant_timestamp = datetime.datetime.now(PARIS_TZ).timestamp()
 
-    if user_id in verrous_anti_spam:
-        if maintenant_timestamp - verrous_anti_spam[user_id] < 2:
+    if cle in verrous_anti_spam:
+        if maintenant_timestamp - verrous_anti_spam[cle] < 2:
             return
-    verrous_anti_spam[user_id] = maintenant_timestamp
+    verrous_anti_spam[cle] = maintenant_timestamp
 
     spotify_activity = None
     for activity in membre.activities:
@@ -515,7 +578,7 @@ async def verifier_presence_spotify(membre):
             break
 
     if spotify_activity:
-        deja_en_cours = user_id in ecoutes_en_cours and ecoutes_en_cours[user_id]["track_id"] == spotify_activity.track_id
+        deja_en_cours = cle in ecoutes_en_cours and ecoutes_en_cours[cle]["track_id"] == spotify_activity.track_id
 
         if not deja_en_cours:
             couleur = await asyncio.to_thread(obtenir_couleur_album, spotify_activity.album_cover_url, spotify_activity.track_id)
@@ -531,26 +594,27 @@ async def verifier_presence_spotify(membre):
             embed.add_field(name="Progression", value=barre, inline=False)
             embed.add_field(name="Écouter sur Spotify", value=f"[Clique ici]({spotify_activity.track_url})", inline=False)
 
-            if user_id in ecoutes_en_cours:
-                infos_anciennes = ecoutes_en_cours[user_id]
+            if cle in ecoutes_en_cours:
+                infos_anciennes = ecoutes_en_cours[cle]
                 now_utc = datetime.datetime.now(datetime.timezone.utc)
                 temps_ecoule = (now_utc - infos_anciennes["start_time"]).total_seconds()
                 
-                mettre_a_jour_historique_fin(membre, infos_anciennes["track_id"], temps_ecoule, infos_anciennes["duration"])
+                mettre_a_jour_historique_fin(guild_id, membre, infos_anciennes["track_id"], temps_ecoule, infos_anciennes["duration"])
 
                 try:
                     ancien_msg = infos_anciennes.get("message_obj") or await salon.fetch_message(infos_anciennes["message_id"])
                     await ancien_msg.delete()
                 except Exception: pass
 
-            await asyncio.to_thread(ajouter_a_l_historique, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id)
+            await asyncio.to_thread(ajouter_a_l_historique, guild_id, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id)
 
             view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
             message = await salon.send(embed=embed, view=view)
             
-            ecoutes_en_cours[user_id] = {
+            ecoutes_en_cours[cle] = {
                 "message_id": message.id,
                 "message_obj": message,
+                "salon_id": salon_id,
                 "start_time": spotify_activity.start,
                 "track_id": spotify_activity.track_id,
                 "duration": spotify_activity.duration.total_seconds(),
@@ -558,20 +622,20 @@ async def verifier_presence_spotify(membre):
                 "couleur": couleur
             }
 
-    elif user_id in ecoutes_en_cours:
-        infos = ecoutes_en_cours[user_id]
+    elif cle in ecoutes_en_cours:
+        infos = ecoutes_en_cours[cle]
         now_utc = datetime.datetime.now(datetime.timezone.utc)
         temps_ecoule = (now_utc - infos["start_time"]).total_seconds()
         duree_totale = infos["duration"]
 
-        mettre_a_jour_historique_fin(membre, infos["track_id"], temps_ecoule, duree_totale)
+        mettre_a_jour_historique_fin(guild_id, membre, infos["track_id"], temps_ecoule, duree_totale)
 
         try:
             msg_a_supprimer = infos.get("message_obj") or await salon.fetch_message(infos["message_id"])
             await msg_a_supprimer.delete()
         except Exception: pass
         finally:
-            if user_id in ecoutes_en_cours: del ecoutes_en_cours[user_id]
+            if cle in ecoutes_en_cours: del ecoutes_en_cours[cle]
 
 
 class LikeView(discord.ui.View):
@@ -583,7 +647,11 @@ class LikeView(discord.ui.View):
 
     @discord.ui.button(label="Like", style=discord.ButtonStyle.danger, emoji="🤍")
     async def bouton_like(self, interaction: discord.Interaction, button: discord.ui.Button):
-        est_like = enregistrer_like_membre(interaction.user, self.titre, self.artiste, self.url)
+        if interaction.guild_id is None:
+            await interaction.response.send_message("Cette action doit être faite depuis un serveur.", ephemeral=True)
+            return
+        guild_id = str(interaction.guild_id)
+        est_like = enregistrer_like_membre(guild_id, interaction.user, self.titre, self.artiste, self.url)
         if est_like:
             await interaction.response.send_message(f"❤️ Ajouté à tes titres likés : **{self.titre}**", ephemeral=True)
         else:
@@ -593,27 +661,36 @@ class LikeView(discord.ui.View):
 @bot.event
 async def on_ready():
     print(f"SpotBot est en ligne : {bot.user.name}")
-    
+
     try:
         print("🔄 Synchronisation forcée des commandes slash avec Discord...")
         synced = await bot.tree.sync()
         print(f"✅ {len(synced)} commandes slash synchronisées avec succès !")
-    except Exception as e: 
+    except Exception as e:
         print(f"Erreur sync des commandes slash : {e}")
-    
-    await verifier_et_mettre_a_jour_aide()
-    
-    salon = bot.get_channel(SALON_MUSIQUE_ID)
-    config = charger_config()
-    msg_aide_id = config.get("message_aide_id")
-    if salon:
-        try:
-            async for message in salon.history(limit=50):
-                if message.author == bot.user and message.id != msg_aide_id and message.id != config.get("message_top_id") and message.embeds:
-                    await message.delete()
-                    await asyncio.sleep(0.2)
-        except Exception as e: print(f"Erreur nettoyage initial : {e}")
-        
+
+    # S'assure que chaque serveur où le bot est déjà présent a bien son dossier de données
+    for guild in bot.guilds:
+        assurer_dossier_guilde(guild)
+        guild_id = str(guild.id)
+        config = charger_config(guild_id)
+        salon_id = config.get("salon_musique_id")
+        if not salon_id:
+            continue  # Serveur pas encore configuré, on ne touche à rien
+
+        await verifier_et_mettre_a_jour_aide(guild_id)
+
+        salon = bot.get_channel(salon_id)
+        msg_aide_id = config.get("message_aide_id")
+        if salon:
+            try:
+                async for message in salon.history(limit=50):
+                    if message.author == bot.user and message.id != msg_aide_id and message.id != config.get("message_top_id") and message.embeds:
+                        await message.delete()
+                        await asyncio.sleep(0.2)
+            except Exception as e:
+                print(f"Erreur nettoyage initial ({guild.name}) : {e}")
+
     # Force l'application de l'activité avec le bouton au démarrage
     await bot.change_presence(status=discord.Status.online, activity=bot.activity)
 
@@ -621,15 +698,67 @@ async def on_ready():
     sauvegarde_periodique_github.start()
     classement_hebdomadaire_auto.start()
 
+
+@bot.event
+async def on_guild_update(before, after):
+    if before.name != after.name:
+        resoudre_dossier_guilde(after, forcer=True)
+        try:
+            info_path = os.path.join(chemin_dossier_guilde(str(after.id)), "guild_info.json")
+            with open(info_path, "w") as f:
+                json.dump({
+                    "id": str(after.id),
+                    "name": after.name,
+                    "icon_url": str(after.icon.url) if after.icon else None
+                }, f, indent=4)
+        except Exception:
+            pass
+        await asyncio.to_thread(_sauvegarde_github_bloquante)
+
+
+@bot.event
+async def on_guild_join(guild):
+    print(f"➕ SpotBot a été ajouté au serveur : {guild.name} ({guild.id})")
+    assurer_dossier_guilde(guild)
+
+    # Message de bienvenue expliquant comment se configurer, dans le premier salon disponible
+    salon_cible = guild.system_channel
+    if salon_cible is None or not salon_cible.permissions_for(guild.me).send_messages:
+        for c in guild.text_channels:
+            if c.permissions_for(guild.me).send_messages:
+                salon_cible = c
+                break
+
+    if salon_cible:
+        embed = discord.Embed(
+            title="🎵 Merci d'avoir ajouté SpotBot !",
+            description=(
+                "Pour démarrer, un membre avec la permission **Gérer le serveur** doit choisir "
+                "le salon où seront publiées les activités musicales avec la commande :\n\n"
+                "**/setup salon:#votre-salon**"
+            ),
+            color=discord.Color.from_rgb(30, 215, 96)
+        )
+        try:
+            await salon_cible.send(embed=embed)
+        except Exception:
+            pass
+
+    # Pousse immédiatement le nouveau dossier vers GitHub pour qu'il apparaisse tout de suite
+    await asyncio.to_thread(_sauvegarde_github_bloquante)
+
+
 @bot.event
 async def on_presence_update(before, after):
     await verifier_presence_spotify(after)
 
 @tasks.loop(seconds=30)
 async def actualiser_messages():
-    salon = bot.get_channel(SALON_MUSIQUE_ID)
-    if not salon: return
-    for user_id, infos in list(ecoutes_en_cours.items()):
+    for cle, infos in list(ecoutes_en_cours.items()):
+        salon = bot.get_channel(infos["salon_id"])
+        if not salon:
+            del ecoutes_en_cours[cle]
+            continue
         try:
             msg = infos.get("message_obj") or await salon.fetch_message(infos["message_id"])
             spotify_activity = infos["activity"]
@@ -641,12 +770,48 @@ async def actualiser_messages():
             view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
             await msg.edit(embed=embed, view=view)
         except Exception:
-            if user_id in ecoutes_en_cours: del ecoutes_en_cours[user_id]
+            if cle in ecoutes_en_cours: del ecoutes_en_cours[cle]
+
+
+# ==========================================
+#                COMMANDES
+# ==========================================
+@bot.tree.command(name="setup", description="(Admins) Choisir le salon où SpotBot publie l'activité musicale")
+@app_commands.describe(salon="Le salon textuel où SpotBot postera l'activité musicale")
+@app_commands.guild_only()
+async def setup_config(interaction: discord.Interaction, salon: discord.TextChannel):
+    if not interaction.user.guild_permissions.manage_guild:
+        await interaction.response.send_message(
+            "🚫 Il faut la permission **Gérer le serveur** pour configurer SpotBot.", ephemeral=True
+        )
+        return
+
+    permissions_bot = salon.permissions_for(interaction.guild.me)
+    if not (permissions_bot.view_channel and permissions_bot.send_messages and permissions_bot.embed_links):
+        await interaction.response.send_message(
+            f"⚠️ Je n'ai pas assez de permissions dans {salon.mention} (il me faut : voir le salon, "
+            f"envoyer des messages et intégrer des liens). Ajuste mes permissions puis relance /setup.",
+            ephemeral=True
+        )
+        return
+
+    guild_id = str(interaction.guild.id)
+    assurer_dossier_guilde(interaction.guild)
+    config = charger_config(guild_id)
+    config["salon_musique_id"] = salon.id
+    sauvegarder_config(guild_id, config)
+
+    await interaction.response.send_message(f"✅ Salon configuré : {salon.mention} — c'est prêt !", ephemeral=True)
+
+    await verifier_et_mettre_a_jour_aide(guild_id)
+    await asyncio.to_thread(_sauvegarde_github_bloquante)
 
 
 @bot.tree.command(name="top", description="Affiche le classement hebdomadaire actuel des auditeurs")
+@app_commands.guild_only()
 async def top_semaine(interaction: discord.Interaction):
-    stats = charger_stats()
+    guild_id = str(interaction.guild.id)
+    stats = charger_stats(guild_id)
     if not stats:
         await interaction.response.send_message("Aucune musique enregistrée cette semaine ! 🎧", ephemeral=True)
         return
@@ -661,9 +826,11 @@ async def top_semaine(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 @bot.tree.command(name="likes", description="Affiche la liste de tes morceaux likés")
+@app_commands.guild_only()
 async def voir_likes(interaction: discord.Interaction):
+    guild_id = str(interaction.guild.id)
     user_id = str(interaction.user.id)
-    likes = charger_likes()
+    likes = charger_likes(guild_id)
     if user_id not in likes or len(likes[user_id]["liste"]) == 0:
         await interaction.response.send_message("🤍 Tu n'as pas encore liké de morceaux !", ephemeral=True)
         return
@@ -682,14 +849,16 @@ async def voir_likes(interaction: discord.Interaction):
     page="Le numéro de la page à afficher (Ex: 1, 2, 3...)",
     membre="Le membre Discord (@Nom) dont tu veux voir l'historique (Optionnel)"
 )
+@app_commands.guild_only()
 async def voir_historique(interaction: discord.Interaction, page: int = 1, membre: discord.Member = None):
     if page < 1:
         page = 1
 
+    guild_id = str(interaction.guild.id)
     cible_membre = membre if membre else interaction.user
     user_id = str(cible_membre.id)
     
-    historique = charger_historique()
+    historique = charger_historique(guild_id)
     
     if user_id not in historique or len(historique[user_id]["ecoutes"]) == 0:
         nom_affiche = "Tu n'" if cible_membre == interaction.user else f"**{cible_membre.display_name}** n'"

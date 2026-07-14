@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpotBot — La Crate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#17110D;
+    --bg-raised:#1F1712;
+    --bg-raised-2:#261C15;
+    --paper:#F3E9DA;
+    --paper-dim:#E4D6C1;
+    --ink:#2A1F17;
+    --text:#F3E9DA;
+    --text-dim:#B8A996;
+    --text-faint:#7A6B5A;
+    --amber:#E8A33D;
+    --amber-dim:#8C6A2E;
+    --rose:#C97064;
+    --teal:#4E8C82;
+    --groove:rgba(243,233,218,0.08);
+    --groove-strong:rgba(243,233,218,0.16);
+    --radius-s:6px;
+    --radius-m:14px;
+    --radius-l:22px;
+    --shadow-lift:0 18px 40px -18px rgba(0,0,0,0.65);
+    --font-display:'Fraunces', serif;
+    --font-body:'Work Sans', sans-serif;
+    --font-mono:'JetBrains Mono', monospace;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:
+      radial-gradient(ellipse 900px 500px at 12% -10%, rgba(232,163,61,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 0%, rgba(78,140,130,0.08), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  a{ color:inherit; }
+  ::selection{ background:var(--amber); color:var(--ink); }
+
+  :focus-visible{
+    outline:2px solid var(--amber);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  button, input, select{ font-family:inherit; }
+
+  /* ---------- Layout shells ---------- */
+  .wrap{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 24px 96px;
+  }
+
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:28px 24px 6px;
+    max-width:1120px;
+    margin:0 auto;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:20px;
+    letter-spacing:0.01em;
+    text-decoration:none;
+  }
+  .brand small{
+    display:block;
+    font-family:var(--font-mono);
+    font-size:10px;
+    font-weight:400;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--text-faint);
+    margin-top:2px;
+  }
+
+  /* ---------- Vinyl mark (logo + spinner) ---------- */
+  .vinyl{
+    --size:34px;
+    width:var(--size); height:var(--size);
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 50% 50%, var(--paper) 0 13%, transparent 13.5%),
+      repeating-radial-gradient(circle at 50% 50%, #0c0906 0, #0c0906 1.4px, #1a140f 1.4px, #1a140f 3.4px);
+    box-shadow: inset 0 0 0 1px rgba(243,233,218,0.06);
+    flex-shrink:0;
+  }
+  .vinyl.spin{ animation:spin 3.4s linear infinite; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  .loading-screen{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    padding:120px 20px;
+    color:var(--text-dim);
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:0.04em;
+  }
+  .loading-screen .vinyl{ --size:56px; }
+
+  /* ---------- Hero / crate intro ---------- */
+  .hero{
+    padding:36px 0 44px;
+    border-bottom:1px solid var(--groove);
+    margin-bottom:44px;
+  }
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--amber);
+    margin:0 0 14px;
+  }
+  h1.hero-title{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:clamp(34px, 5.4vw, 56px);
+    line-height:1.04;
+    margin:0 0 16px;
+    letter-spacing:-0.01em;
+  }
+  .hero-title em{
+    font-style:italic;
+    color:var(--amber);
+  }
+  .hero-sub{
+    font-size:16px;
+    line-height:1.6;
+    color:var(--text-dim);
+    max-width:560px;
+    margin:0;
+  }
+
+  /* ---------- Crate grid ---------- */
+  .crate-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+    gap:22px;
+  }
+
+  .sleeve{
+    position:relative;
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:var(--radius-m);
+    padding:22px 20px 20px;
+    cursor:pointer;
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    text-align:center;
+    box-shadow:var(--shadow-lift);
+    border:1px solid rgba(0,0,0,0.05);
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease;
+  }
+  .sleeve:hover, .sleeve:focus-visible{
+    transform:translateY(-6px) rotate(-0.6deg);
+  }
+  .sleeve::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:var(--radius-m);
+    background:repeating-linear-gradient(0deg, rgba(0,0,0,0.035) 0 1px, transparent 1px 3px);
+    pointer-events:none;
+    opacity:0.5;
+  }
+  .sleeve-label{
+    width:84px; height:84px;
+    border-radius:50%;
+    background:var(--bg-raised);
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+    box-shadow:0 0 0 5px var(--paper), 0 0 0 6px rgba(0,0,0,0.08), var(--shadow-lift);
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:26px;
+    color:var(--amber);
+  }
+  .sleeve-label img{ width:100%; height:100%; object-fit:cover; }
+  .sleeve-name{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:18px;
+    line-height:1.25;
+  }
+  .sleeve-hint{
+    font-family:var(--font-mono);
+    font-size:10.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--amber-dim);
+  }
+
+  .empty-state, .error-state{
+    grid-column:1/-1;
+    border:1px dashed var(--groove-strong);
+    border-radius:var(--radius-m);
+    padding:48px 28px;
+    text-align:center;
+    color:var(--text-dim);
+  }
+  .empty-state h3, .error-state h3{
+    font-family:var(--font-display);
+    font-size:22px;
+    color:var(--text);
+    margin:0 0 10px;
+  }
+  .error-state code{
+    display:inline-block;
+    margin-top:14px;
+    background:var(--bg-raised-2);
+    border:1px solid var(--groove-strong);
+    padding:10px 14px;
+    border-radius:var(--radius-s);
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--amber);
+  }
+
+  /* ---------- Record view ---------- */
+  .back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--text-dim);
+    text-decoration:none;
+    margin-bottom:28px;
+    padding-top:24px;
+  }
+  .back-link:hover{ color:var(--amber); }
+
+  .record-header{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    padding-bottom:32px;
+    border-bottom:1px solid var(--groove);
+    margin-bottom:8px;
+  }
+  .record-disc{
+    --size:104px;
+    width:var(--size); height:var(--size);
+    border-radius:50%;
+    flex-shrink:0;
+    background:
+      radial-gradient(circle at 50% 50%, var(--paper) 0 30%, transparent 30.5%),
+      repeating-radial-gradient(circle at 50% 50%, #0c0906 0, #0c0906 1.6px, #1a140f 1.6px, #1a140f 4px);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: inset 0 0 0 1px rgba(243,233,218,0.06), var(--shadow-lift);
+    overflow:hidden;
+  }
+  .record-disc img{
+    width:36%; height:36%;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  .record-disc .letter{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:26px;
+    color:var(--ink);
+  }
+  .record-title{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:clamp(26px, 3.6vw, 38px);
+    margin:0 0 6px;
+  }
+  .record-meta{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--text-faint);
+    letter-spacing:0.04em;
+  }
+
+  /* Tabs styled like a tracklist */
+  .tabs{
+    display:flex;
+    gap:4px;
+    margin:30px 0 30px;
+    border-bottom:1px solid var(--groove);
+    overflow-x:auto;
+  }
+  .tab-btn{
+    background:none;
+    border:none;
+    color:var(--text-faint);
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    padding:12px 18px;
+    cursor:pointer;
+    position:relative;
+    white-space:nowrap;
+  }
+  .tab-btn .num{ color:var(--text-faint); margin-right:8px; }
+  .tab-btn:hover{ color:var(--text); }
+  .tab-btn.active{ color:var(--amber); }
+  .tab-btn.active .num{ color:var(--amber); }
+  .tab-btn.active::after{
+    content:"";
+    position:absolute;
+    left:14px; right:14px; bottom:-1px;
+    height:2px;
+    background:var(--amber);
+    border-radius:2px;
+  }
+
+  .panel{ display:none; }
+  .panel.active{ display:block; animation:fadeUp .4s ease; }
+  @keyframes fadeUp{ from{ opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;} }
+
+  /* ---------- Leaderboard ---------- */
+  .board-row{
+    display:grid;
+    grid-template-columns:34px 40px 1fr auto;
+    align-items:center;
+    gap:16px;
+    padding:13px 4px;
+    border-bottom:1px solid var(--groove);
+  }
+  .board-rank{
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:var(--text-faint);
+  }
+  .board-rank.medal{ font-size:18px; }
+  .avatar{
+    width:40px; height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    background:var(--bg-raised-2);
+    flex-shrink:0;
+  }
+  .avatar-fallback{
+    width:40px; height:40px;
+    border-radius:50%;
+    background:var(--bg-raised-2);
+    color:var(--amber);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:14px;
+    flex-shrink:0;
+  }
+  .board-main{ min-width:0; }
+  .board-name{
+    font-weight:500;
+    font-size:14.5px;
+    margin-bottom:7px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .board-bar-track{
+    height:6px;
+    background:var(--groove);
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .board-bar-fill{
+    height:100%;
+    background:linear-gradient(90deg, var(--amber-dim), var(--amber));
+    border-radius:4px;
+  }
+  .board-count{
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:var(--text-dim);
+    text-align:right;
+    white-space:nowrap;
+  }
+
+  /* ---------- Controls (search / filter / pagination) ---------- */
+  .controls-row{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:22px;
+  }
+  .field{
+    background:var(--bg-raised);
+    border:1px solid var(--groove-strong);
+    border-radius:var(--radius-s);
+    color:var(--text);
+    padding:10px 14px;
+    font-size:13.5px;
+  }
+  .field::placeholder{ color:var(--text-faint); }
+  .field-search{ flex:1 1 220px; }
+  .field-select{ flex:0 0 auto; min-width:160px; }
+
+  .pagination{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    margin-top:26px;
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--text-dim);
+  }
+  .page-btn{
+    background:var(--bg-raised);
+    border:1px solid var(--groove-strong);
+    color:var(--text);
+    border-radius:var(--radius-s);
+    padding:8px 14px;
+    cursor:pointer;
+    font-family:var(--font-mono);
+    font-size:12px;
+  }
+  .page-btn:hover:not(:disabled){ border-color:var(--amber); color:var(--amber); }
+  .page-btn:disabled{ opacity:0.35; cursor:not-allowed; }
+
+  /* ---------- History rows ---------- */
+  .history-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:13px 4px;
+    border-bottom:1px solid var(--groove);
+  }
+  .thumb{
+    width:46px; height:46px;
+    border-radius:8px;
+    object-fit:cover;
+    background:var(--bg-raised-2);
+    flex-shrink:0;
+  }
+  .thumb-fallback{
+    width:46px; height:46px;
+    border-radius:8px;
+    background:var(--bg-raised-2);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--text-faint);
+    flex-shrink:0;
+    font-size:16px;
+  }
+  .history-main{ min-width:0; flex:1; }
+  .history-title{
+    font-weight:500;
+    font-size:14.5px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .history-sub{
+    font-size:12.5px;
+    color:var(--text-dim);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .history-who{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--text-faint);
+    margin-top:3px;
+  }
+  .history-right{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:6px;
+    flex-shrink:0;
+  }
+  .history-date{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--text-faint);
+  }
+  .status-pill{
+    font-family:var(--font-mono);
+    font-size:10.5px;
+    letter-spacing:0.03em;
+    padding:3px 9px;
+    border-radius:20px;
+    white-space:nowrap;
+  }
+  .status-pill.full{ background:rgba(78,140,130,0.18); color:var(--teal); border:1px solid rgba(78,140,130,0.4); }
+  .status-pill.partial{ background:rgba(232,163,61,0.14); color:var(--amber); border:1px solid rgba(232,163,61,0.35); }
+  .link-icon{
+    color:var(--text-faint);
+    display:inline-flex;
+    padding-left:4px;
+  }
+  .link-icon:hover{ color:var(--amber); }
+
+  /* ---------- Favoris ---------- */
+  .member-strip{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding-bottom:10px;
+    margin-bottom:26px;
+  }
+  .member-chip{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    background:var(--bg-raised);
+    border:1px solid var(--groove-strong);
+    border-radius:30px;
+    padding:6px 14px 6px 6px;
+    cursor:pointer;
+    flex-shrink:0;
+    font-size:13px;
+  }
+  .member-chip .avatar, .member-chip .avatar-fallback{ width:28px; height:28px; font-size:11px; }
+  .member-chip.active{ border-color:var(--amber); color:var(--amber); }
+
+  .likes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
+    gap:14px;
+  }
+  .like-card{
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:var(--radius-m);
+    padding:16px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:var(--shadow-lift);
+  }
+  .like-card .thumb, .like-card .thumb-fallback{ width:42px; height:42px; }
+  .like-title{ font-weight:600; font-size:13.5px; line-height:1.3; }
+  .like-artist{ font-size:12px; color:#6b5c4c; margin-top:2px; }
+
+  .tab-empty{
+    padding:60px 20px;
+    text-align:center;
+    color:var(--text-faint);
+    font-family:var(--font-mono);
+    font-size:13px;
+  }
+
+  footer{
+    text-align:center;
+    padding:60px 20px 20px;
+    color:var(--text-faint);
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:0.05em;
+  }
+  footer a{ color:var(--amber-dim); text-decoration:none; }
+  footer a:hover{ color:var(--amber); }
+
+  @media (max-width:600px){
+    .record-header{ gap:16px; }
+    .record-disc{ --size:76px; }
+    .board-row{ grid-template-columns:26px 34px 1fr auto; gap:10px; }
+    .field-select{ flex:1 1 140px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="#/" class="brand">
+    <span class="vinyl"></span>
+    <span>SpotBot<small>Écoutes en direct</small></span>
+  </a>
+</div>
+
+<main id="app" class="wrap"></main>
+
+<footer>Données mises à jour automatiquement par SpotBot — dépôt public GitHub</footer>
+
+<script>
+/* =========================================================
+   CONFIG — à adapter à ton dépôt GitHub (celui rendu public)
+   ========================================================= */
+const CONFIG = {
+  GITHUB_USERNAME: "naloulii",        // ⚠️ ton pseudo GitHub
+  GITHUB_REPO_NAME: "SpotBot", // ⚠️ le nom exact du repo que tu rends public (celui cloné dans data/)
+  BRANCH: "main"                       // ⚠️ la branche par défaut de ce repo
+};
+
+const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/${CONFIG.BRANCH}/`;
+const TREE_API = `https://api.github.com/repos/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/git/trees/${CONFIG.BRANCH}?recursive=0`;
+
+const app = document.getElementById("app");
+const HIST_PER_PAGE = 10; // même pagination que la commande /history du bot
+
+/* ---------- petits utilitaires ---------- */
+function esc(str){
+  return String(str ?? "").replace(/[&<>"']/g, m => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[m]));
+}
+function initials(name){
+  return esc((name || "?").trim().slice(0,2).toUpperCase());
+}
+async function fetchJSON(url, fallback = {}){
+  try{
+    const res = await fetch(url, { cache: "no-store" });
+    if(!res.ok) return fallback;
+    return await res.json();
+  }catch(e){
+    return fallback;
+  }
+}
+
+/* ---------- routeur minimal ---------- */
+window.addEventListener("hashchange", route);
+window.addEventListener("DOMContentLoaded", route);
+
+function route(){
+  const hash = location.hash.replace(/^#\/?/, "");
+  if(hash.startsWith("guild/")){
+    renderRecordView(hash.split("/")[1]);
+  } else {
+    renderCrateView();
+  }
+}
+
+function loadingScreen(label){
+  app.innerHTML = `
+    <div class="loading-screen">
+      <span class="vinyl spin"></span>
+      <span>${esc(label)}</span>
+    </div>`;
+}
+
+/* =========================================================
+   VUE 1 — LA CRATE (sélection du serveur)
+   ========================================================= */
+async function renderCrateView(){
+  loadingScreen("Ouverture de la crate…");
+
+  if(CONFIG.GITHUB_REPO_NAME.includes("TON-REPO")){
+    app.innerHTML = `
+      <section class="hero">
+        <p class="eyebrow">Configuration requise</p>
+        <h1 class="hero-title">Branche d'abord <em>ton dépôt</em>.</h1>
+        <p class="hero-sub">Ouvre ce fichier et renseigne <code>GITHUB_USERNAME</code> et <code>GITHUB_REPO_NAME</code> tout en haut du script, avec les infos de ton dépôt GitHub public.</p>
+      </section>`;
+    return;
+  }
+
+  let tree;
+  try{
+    const res = await fetch(TREE_API);
+    if(!res.ok) throw new Error("tree fetch failed");
+    tree = await res.json();
+  }catch(e){
+    app.innerHTML = `
+      <section class="hero">
+        <p class="eyebrow">Connexion impossible</p>
+        <h1 class="hero-title">La crate ne répond pas.</h1>
+        <p class="hero-sub">Vérifie que le dépôt <code>${esc(CONFIG.GITHUB_USERNAME)}/${esc(CONFIG.GITHUB_REPO_NAME)}</code> existe bien, qu'il est public, et que la branche <code>${esc(CONFIG.BRANCH)}</code> est correcte.</p>
+      </section>`;
+    return;
+  }
+
+  const guildDirs = (tree.tree || []).filter(e => e.type === "tree" && /^\d+$/.test(e.path));
+
+  const guilds = await Promise.all(guildDirs.map(async d => {
+    const info = await fetchJSON(`${RAW_BASE}${d.path}/guild_info.json`, {});
+    return { id: d.path, name: info.name || `Serveur ${d.path}`, icon_url: info.icon_url || null };
+  }));
+
+  app.innerHTML = `
+    <section class="hero">
+      <p class="eyebrow">La crate</p>
+      <h1 class="hero-title">Choisis un serveur,<br><em>lance la platine.</em></h1>
+      <p class="hero-sub">Chaque serveur Discord ajouté à SpotBot range ses écoutes dans son propre sillon. Clique sur une pochette pour l'ouvrir.</p>
+    </section>
+    <div class="crate-grid">
+      ${guilds.length ? guilds.map(sleeveCard).join("") : emptyState()}
+    </div>
+  `;
+}
+
+function sleeveCard(g){
+  const label = g.icon_url
+    ? `<img src="${esc(g.icon_url)}" alt="" loading="lazy">`
+    : initials(g.name);
+  return `
+    <a class="sleeve" href="#/guild/${esc(g.id)}">
+      <span class="sleeve-label">${label}</span>
+      <span class="sleeve-name">${esc(g.name)}</span>
+      <span class="sleeve-hint">Ouvrir le sillon →</span>
+    </a>`;
+}
+
+function emptyState(){
+  return `
+    <div class="empty-state">
+      <h3>Aucune platine chargée pour l'instant</h3>
+      <p>Ajoute SpotBot à un serveur Discord, puis configure-le avec <code>/setup</code>. Il apparaîtra ici automatiquement.</p>
+    </div>`;
+}
+
+/* =========================================================
+   VUE 2 — LA FICHE SERVEUR (classement / historique / favoris)
+   ========================================================= */
+async function renderRecordView(guildId){
+  loadingScreen("Dépose de l'aiguille…");
+
+  const [info, stats, likes, historique, artists] = await Promise.all([
+    fetchJSON(`${RAW_BASE}${guildId}/guild_info.json`, {}),
+    fetchJSON(`${RAW_BASE}${guildId}/stats.json`, {}),
+    fetchJSON(`${RAW_BASE}${guildId}/likes.json`, {}),
+    fetchJSON(`${RAW_BASE}${guildId}/historique.json`, {}),
+    fetchJSON(`${RAW_BASE}${guildId}/artists.json`, {}),
+  ]);
+
+  const guildName = info.name || `Serveur ${guildId}`;
+  const discLabel = info.icon_url
+    ? `<img src="${esc(info.icon_url)}" alt="">`
+    : `<span class="letter">${initials(guildName)}</span>`;
+
+  const memberCount = new Set([...Object.keys(stats), ...Object.keys(historique), ...Object.keys(likes)]).size;
+
+  app.innerHTML = `
+    <a class="back-link" href="#/">&larr; Retour à la crate</a>
+    <header class="record-header">
+      <span class="record-disc">${discLabel}</span>
+      <div>
+        <h1 class="record-title">${esc(guildName)}</h1>
+        <p class="record-meta">${memberCount} auditeur${memberCount > 1 ? "s" : ""} suivis</p>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="classement"><span class="num">01</span>Classement</button>
+      <button class="tab-btn" data-tab="historique"><span class="num">02</span>Historique</button>
+      <button class="tab-btn" data-tab="favoris"><span class="num">03</span>Favoris</button>
+    </nav>
+
+    <section class="panel active" id="panel-classement">${renderClassement(stats)}</section>
+    <section class="panel" id="panel-historique"></section>
+    <section class="panel" id="panel-favoris"></section>
+  `;
+
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(`panel-${btn.dataset.tab}`).classList.add("active");
+    });
+  });
+
+  mountHistorique(document.getElementById("panel-historique"), historique, artists);
+  mountFavoris(document.getElementById("panel-favoris"), likes, artists);
+}
+
+/* ---------- Onglet Classement ---------- */
+function renderClassement(stats){
+  const entries = Object.entries(stats).sort((a,b) => b[1].count - a[1].count);
+  if(!entries.length){
+    return `<div class="tab-empty">Aucun morceau validé cette semaine sur ce serveur. 🎧</div>`;
+  }
+  const max = entries[0][1].count || 1;
+  const medals = { 0:"🥇", 1:"🥈", 2:"🥉" };
+
+  return entries.map(([uid, d], i) => `
+    <div class="board-row">
+      <span class="board-rank ${i < 3 ? "medal" : ""}">${medals[i] || String(i+1).padStart(2,"0")}</span>
+      ${d.avatar_url
+        ? `<img class="avatar" src="${esc(d.avatar_url)}" alt="" loading="lazy">`
+        : `<span class="avatar-fallback">${initials(d.display_name || d.username)}</span>`}
+      <div class="board-main">
+        <div class="board-name">${esc(d.display_name || d.username || "Inconnu")}</div>
+        <div class="board-bar-track"><div class="board-bar-fill" style="width:${Math.max(4, (d.count/max)*100)}%"></div></div>
+      </div>
+      <span class="board-count">${d.count} titre${d.count>1?"s":""}</span>
+    </div>
+  `).join("");
+}
+
+/* ---------- Onglet Historique ---------- */
+function mountHistorique(container, historique, artists){
+  const membres = Object.entries(historique).map(([uid, d]) => ({ uid, name: d.display_name || d.username || "Inconnu" }));
+
+  // Toutes les écoutes, mélangées, triées par date décroissante (le format DD/MM/YYYY HH:MM se trie bien en texte inversé)
+  let toutes = [];
+  for(const [uid, d] of Object.entries(historique)){
+    for(const e of d.ecoutes){
+      toutes.push({ ...e, uid, who: d.display_name || d.username || "Inconnu" });
+    }
+  }
+  toutes.sort((a,b) => parseDateFR(b.date) - parseDateFR(a.date));
+
+  let page = 1;
+  let search = "";
+  let filterUid = "";
+
+  container.innerHTML = `
+    <div class="controls-row">
+      <input class="field field-search" type="search" placeholder="Rechercher un titre ou un artiste…" id="hist-search">
+      <select class="field field-select" id="hist-member">
+        <option value="">Tous les membres</option>
+        ${membres.map(m => `<option value="${esc(m.uid)}">${esc(m.name)}</option>`).join("")}
+      </select>
+    </div>
+    <div id="hist-list"></div>
+    <div class="pagination" id="hist-pagination"></div>
+  `;
+
+  const listEl = container.querySelector("#hist-list");
+  const pagEl = container.querySelector("#hist-pagination");
+
+  function draw(){
+    let filtered = toutes;
+    if(filterUid) filtered = filtered.filter(e => e.uid === filterUid);
+    if(search){
+      const s = search.toLowerCase();
+      filtered = filtered.filter(e => (e.titre||"").toLowerCase().includes(s) || (e.artiste||"").toLowerCase().includes(s));
+    }
+
+    if(!filtered.length){
+      listEl.innerHTML = `<div class="tab-empty">Aucune écoute ne correspond à ta recherche.</div>`;
+      pagEl.innerHTML = "";
+      return;
+    }
+
+    const totalPages = Math.max(1, Math.ceil(filtered.length / HIST_PER_PAGE));
+    page = Math.min(page, totalPages);
+    const start = (page-1)*HIST_PER_PAGE;
+    const pageItems = filtered.slice(start, start+HIST_PER_PAGE);
+
+    listEl.innerHTML = pageItems.map(e => historyRow(e, artists)).join("");
+
+    pagEl.innerHTML = `
+      <button class="page-btn" id="hist-prev" ${page<=1?"disabled":""}>&larr; Précédent</button>
+      <span>Page ${page} / ${totalPages} · ${filtered.length} écoute${filtered.length>1?"s":""}</span>
+      <button class="page-btn" id="hist-next" ${page>=totalPages?"disabled":""}>Suivant &rarr;</button>
+    `;
+    const prevBtn = pagEl.querySelector("#hist-prev");
+    const nextBtn = pagEl.querySelector("#hist-next");
+    if(prevBtn) prevBtn.addEventListener("click", () => { page--; draw(); });
+    if(nextBtn) nextBtn.addEventListener("click", () => { page++; draw(); });
+  }
+
+  container.querySelector("#hist-search").addEventListener("input", e => { search = e.target.value; page = 1; draw(); });
+  container.querySelector("#hist-member").addEventListener("change", e => { filterUid = e.target.value; page = 1; draw(); });
+
+  draw();
+}
+
+function historyRow(e, artists){
+  const art = artists[(e.artiste || "").toLowerCase()];
+  const thumb = art && art.image_url
+    ? `<img class="thumb" src="${esc(art.image_url)}" alt="" loading="lazy">`
+    : `<span class="thumb-fallback">🎵</span>`;
+  const isFull = (e.status || "").includes("🎉");
+  return `
+    <div class="history-row">
+      ${thumb}
+      <div class="history-main">
+        <div class="history-title">${esc(e.titre)}</div>
+        <div class="history-sub">${esc(e.artiste)}</div>
+        <div class="history-who">${esc(e.who)}</div>
+      </div>
+      <div class="history-right">
+        <span class="history-date">${esc(e.date)}</span>
+        <span class="status-pill ${isFull ? "full" : "partial"}">${esc(e.status || "")}</span>
+      </div>
+      ${e.url ? `<a class="link-icon" href="${esc(e.url)}" target="_blank" rel="noopener" aria-label="Ouvrir sur Spotify">${iconLink()}</a>` : ""}
+    </div>`;
+}
+
+function parseDateFR(str){
+  // "DD/MM/YYYY HH:MM" -> timestamp
+  const m = /^(\d{2})\/(\d{2})\/(\d{4}) (\d{2}):(\d{2})$/.exec(str || "");
+  if(!m) return 0;
+  const [, d, mo, y, h, mi] = m;
+  return new Date(`${y}-${mo}-${d}T${h}:${mi}:00`).getTime();
+}
+
+/* ---------- Onglet Favoris ---------- */
+function mountFavoris(container, likes, artists){
+  const membres = Object.entries(likes).filter(([,d]) => d.liste && d.liste.length);
+
+  if(!membres.length){
+    container.innerHTML = `<div class="tab-empty">Personne n'a encore liké de morceau sur ce serveur. 🤍</div>`;
+    return;
+  }
+
+  let active = membres[0][0];
+
+  container.innerHTML = `
+    <div class="member-strip">
+      ${membres.map(([uid, d]) => `
+        <div class="member-chip ${uid===active?"active":""}" data-uid="${esc(uid)}">
+          ${d.avatar_url
+            ? `<img class="avatar" src="${esc(d.avatar_url)}" alt="" loading="lazy">`
+            : `<span class="avatar-fallback">${initials(d.display_name||d.username)}</span>`}
+          <span>${esc(d.display_name || d.username || "Inconnu")}</span>
+        </div>
+      `).join("")}
+    </div>
+    <div class="likes-grid" id="likes-grid"></div>
+  `;
+
+  const grid = container.querySelector("#likes-grid");
+  const likesMap = Object.fromEntries(membres);
+
+  function draw(uid){
+    const liste = likesMap[uid]?.liste || [];
+    grid.innerHTML = liste.map(t => {
+      const art = artists[(t.artiste||"").toLowerCase()];
+      const thumb = art && art.image_url
+        ? `<img class="thumb" src="${esc(art.image_url)}" alt="" loading="lazy">`
+        : `<span class="thumb-fallback">🎵</span>`;
+      return `
+        <a class="like-card" href="${esc(t.url)}" target="_blank" rel="noopener">
+          ${thumb}
+          <div>
+            <div class="like-title">${esc(t.titre)}</div>
+            <div class="like-artist">${esc(t.artiste)}</div>
+          </div>
+        </a>`;
+    }).join("");
+  }
+
+  container.querySelectorAll(".member-chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      container.querySelectorAll(".member-chip").forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      draw(chip.dataset.uid);
+    });
+  });
+
+  draw(active);
+}
+
+function iconLink(){
+  return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+}
+</script>
+</body>
+</html>
