@@ -67,26 +67,53 @@ GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_
 # dossier existant en place (git init + remote + reset sur origin/main) sans
 # jamais dupliquer bot.py à l'intérieur de data/.
 git_dir = os.path.join(BASE_DIR, ".git")
-if os.path.isdir(git_dir):
+
+def _adopter_dossier_comme_repo():
+    """Initialise/répare le dépôt Git sur le dossier existant SANS toucher aux
+    fichiers déjà présents. `checkout` touche le working tree et plante si des
+    fichiers non trackés portent déjà le nom de fichiers présents sur
+    origin/main ; `reset --mixed` ne touche que l'index (la "liste de suivi"),
+    jamais les fichiers sur disque, donc pas de plantage possible ici."""
+    r = Repo.init(BASE_DIR)
+    if "origin" in [rem.name for rem in r.remotes]:
+        r.remotes.origin.set_url(GITHUB_REPO_URL)
+    else:
+        r.create_remote("origin", GITHUB_REPO_URL)
+    r.remotes.origin.fetch()
+    r.git.symbolic_ref("HEAD", "refs/heads/main")
+    r.git.reset("--mixed", "origin/main")
+    r.git.branch("--set-upstream-to=origin/main", "main")
+    return r
+
+def _repo_est_sain(r):
+    """Vérifie que le dépôt a bien une branche 'main' locale valide avec un
+    suivi vers origin/main configuré. Si ce n'est pas le cas (ex: reliquat
+    d'un précédent démarrage qui a planté avant de finir son initialisation),
+    le dépôt doit être réparé plutôt que réutilisé tel quel."""
     try:
-        repo = Repo(BASE_DIR)
+        return (
+            r.head.is_valid()
+            and r.active_branch.name == "main"
+            and r.active_branch.tracking_branch() is not None
+        )
+    except Exception:
+        return False
+
+if os.path.isdir(git_dir):
+    repo = Repo(BASE_DIR)
+    if "origin" in [rem.name for rem in repo.remotes]:
         repo.remotes.origin.set_url(GITHUB_REPO_URL)
-        print("📌 Dépôt Git détecté à la racine du projet.")
-    except Exception as e:
-        print(f"⚠️ Dépôt Git présent mais invalide ({e}), tentative de réparation...")
-        repo = Repo.init(BASE_DIR)
-        if "origin" in [r.name for r in repo.remotes]:
-            repo.remotes.origin.set_url(GITHUB_REPO_URL)
-        else:
-            repo.create_remote("origin", GITHUB_REPO_URL)
-        repo.remotes.origin.fetch()
-        repo.git.checkout("-B", "main", "origin/main")
+    else:
+        repo.create_remote("origin", GITHUB_REPO_URL)
+
+    if _repo_est_sain(repo):
+        print("📌 Dépôt Git détecté et sain à la racine du projet.")
+    else:
+        print("⚠️ Dépôt Git présent mais incomplet/invalide, réparation...")
+        repo = _adopter_dossier_comme_repo()
 else:
     print("🚀 Aucun dépôt Git existant ici : adoption du dossier comme dépôt Git...")
-    repo = Repo.init(BASE_DIR)
-    repo.create_remote("origin", GITHUB_REPO_URL)
-    repo.remotes.origin.fetch()
-    repo.git.checkout("-B", "main", "origin/main")
+    repo = _adopter_dossier_comme_repo()
 
 # --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes, + à la demande) ---
 def _sauvegarde_github_bloquante():
