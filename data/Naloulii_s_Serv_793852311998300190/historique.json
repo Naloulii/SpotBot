@@ -5,9 +5,21 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 00:16",
+                "track_id": "6QeYSvYqYUsfBzsApbjDHO",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 00:15",
+                "track_id": "7f9Q5eX6wHgRRta77lDxwm",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 75.1
+            },
+            {
                 "date": "15/07/2026 00:11",
                 "track_id": "4O7queCHRUthy7NL1w7ZJW",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 248.2
             },
             {
                 "date": "15/07/2026 00:09",
@@ -272,6 +284,24 @@
                 "track_id": "1ghqDkglrXPcxgRobBmLVW",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 388.3
+            }
+        ]
+    },
+    "1259154203603894277": {
+        "username": "krbyxx_25",
+        "display_name": "\u2022\u10e6 \ud835\udcdd\ud835\udcea\ud835\udcfd\ud835\udcfc\ud835\udcfe\ud835\udcf4\ud835\udd02\ud835\udcf2 \u10e6\u2022",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1259154203603894277/d41a1ceb7e0d7c6b77494d9c3aa153c0.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "15/07/2026 00:17",
+                "track_id": "5CaTXY3pOyUIEcfUt6j83S",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 00:15",
+                "track_id": "3ksdg8qYIbBFofPsG9EyPN",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 112.6
             }
         ]
     }

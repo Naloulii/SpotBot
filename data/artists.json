@@ -586,5 +586,21 @@
     "twenty one pilots": {
         "nom": "Twenty One Pilots",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2e6d4d494a7b7b2c4bea2ccefad368f5/250x250-000000-80-0-0.jpg"
+    },
+    "matryoshka": {
+        "nom": "matryoshka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea3274b9707175ff3b0dd17cc1703091/250x250-000000-80-0-0.jpg"
+    },
+    "mollykirby": {
+        "nom": "MollyKirby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/43c20f0a20957aa7d5eae2eba26992e3/250x250-000000-80-0-0.jpg"
+    },
+    "imiya": {
+        "nom": "imiya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5f60cd2e486c75ab917a0a32a498c899/250x250-000000-80-0-0.jpg"
+    },
+    "dirtypathetic": {
+        "nom": "dirtypathetic",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dbd5e993f2ca2b9a3d7eeeaf9f13a5f9/250x250-000000-80-0-0.jpg"
     }
 }
