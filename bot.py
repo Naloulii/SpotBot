@@ -332,7 +332,7 @@ def enregistrer_stat_membre(guild_id, membre):
     stats[user_id]["count"] += 1
     sauvegarder_stats(guild_id, stats)
 
-def enregistrer_like_membre(guild_id, membre, titre, artiste, url):
+def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=None):
     user_id = str(membre.id)
     likes = charger_likes(guild_id)
     if user_id not in likes:
@@ -347,11 +347,11 @@ def enregistrer_like_membre(guild_id, membre, titre, artiste, url):
         sauvegarder_likes(guild_id, likes)
         return False
     else:
-        likes[user_id]["liste"].append({"titre": titre, "artiste": artiste, "url": url})
+        likes[user_id]["liste"].append({"titre": titre, "artiste": artiste, "url": url, "cover_url": cover_url})
         sauvegarder_likes(guild_id, likes)
         return True
 
-def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id):
+def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id, cover_url=None):
     user_id = str(membre.id)
     historique = charger_historique(guild_id)
     if user_id not in historique:
@@ -377,6 +377,7 @@ def ajouter_a_l_historique(guild_id, membre, titre, artiste, url, track_id):
         "artiste": artiste, 
         "url": url, 
         "track_id": track_id,
+        "cover_url": cover_url,
         "status": "En cours..."
     })
     historique[user_id]["ecoutes"] = historique[user_id]["ecoutes"][:100]
@@ -673,9 +674,9 @@ async def verifier_presence_spotify(membre):
                     await ancien_msg.delete()
                 except Exception: pass
 
-            await asyncio.to_thread(ajouter_a_l_historique, guild_id, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id)
+            await asyncio.to_thread(ajouter_a_l_historique, guild_id, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id, spotify_activity.album_cover_url)
 
-            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
+            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.album_cover_url)
             message = await salon.send(embed=embed, view=view)
             
             ecoutes_en_cours[cle] = {
@@ -706,11 +707,12 @@ async def verifier_presence_spotify(membre):
 
 
 class LikeView(discord.ui.View):
-    def __init__(self, titre, artiste, url):
+    def __init__(self, titre, artiste, url, cover_url=None):
         super().__init__(timeout=None)
         self.titre = titre
         self.artiste = artiste
         self.url = url
+        self.cover_url = cover_url
 
     @discord.ui.button(label="Like", style=discord.ButtonStyle.danger, emoji="🤍")
     async def bouton_like(self, interaction: discord.Interaction, button: discord.ui.Button):
@@ -718,7 +720,7 @@ class LikeView(discord.ui.View):
             await interaction.response.send_message("Cette action doit être faite depuis un serveur.", ephemeral=True)
             return
         guild_id = str(interaction.guild_id)
-        est_like = enregistrer_like_membre(guild_id, interaction.user, self.titre, self.artiste, self.url)
+        est_like = enregistrer_like_membre(guild_id, interaction.user, self.titre, self.artiste, self.url, self.cover_url)
         if est_like:
             await interaction.response.send_message(f"❤️ Ajouté à tes titres likés : **{self.titre}**", ephemeral=True)
         else:
@@ -854,7 +856,7 @@ async def actualiser_messages():
             barre = generer_barre_progression(infos["start_time"], spotify_activity.duration)
             embed.add_field(name="Progression", value=barre, inline=False)
             embed.add_field(name="Écouter sur Spotify", value=f"[Clique ici]({spotify_activity.track_url})", inline=False)
-            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url)
+            view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.album_cover_url)
             await msg.edit(embed=embed, view=view)
         except Exception:
             if cle in ecoutes_en_cours: del ecoutes_en_cours[cle]
