@@ -948,15 +948,21 @@ function emptyState(){
 async function renderRecordView(guildId){
   loadingScreen("Chargement des écoutes…");
 
-  // Ajout du fetch global de tracks.json pour pouvoir lier les IDs aux infos réelles
-  const [info, stats, likes, historique, artists, tracks] = await Promise.all([
+  // likes.json est désormais un fichier global (un like ne dépend pas du serveur),
+  // donc on le charge à la racine puis on ne garde que les membres qui ont une
+  // trace d'écoute dans CE serveur (présents dans historique.json du serveur).
+  const [info, stats, likesGlobal, historique, artists, tracks] = await Promise.all([
     fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {}),
     fetchJSON(`${RAW_BASE}data/${guildId}/stats.json`, {}),
-    fetchJSON(`${RAW_BASE}data/${guildId}/likes.json`, {}),
+    fetchJSON(`${RAW_BASE}data/likes.json`, {}),
     fetchJSON(`${RAW_BASE}data/${guildId}/historique.json`, {}),
     fetchJSON(`${RAW_BASE}data/artists.json`, {}),
     fetchJSON(`${RAW_BASE}data/tracks.json`, {}) // <--- Cache centralisé chargé ici !
   ]);
+
+  const likes = Object.fromEntries(
+    Object.entries(likesGlobal).filter(([uid]) => uid in historique)
+  );
 
   const guildName = info.name || `Serveur ${guildId}`;
   const discLabel = info.icon_url

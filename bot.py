@@ -166,6 +166,7 @@ async def sauvegarde_periodique_github():
 # ==========================================
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
 TRACKS_FILE = os.path.join(DATA_DIR, "tracks.json")
+LIKES_FILE = os.path.join(DATA_DIR, "likes.json")  # Global : les likes d'un membre sont les mêmes quel que soit le serveur
 _chemins_guildes = {}
 
 def nettoyer_nom_dossier(nom):
@@ -286,11 +287,11 @@ def charger_stats(guild_id):
 def sauvegarder_stats(guild_id, stats):
     _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "stats.json"), stats)
 
-def charger_likes(guild_id):
-    return _lire_json_securise(chemin_fichier_guilde(guild_id, "likes.json"), {})
+def charger_likes():
+    return _lire_json_securise(LIKES_FILE, {})
 
-def sauvegarder_likes(guild_id, likes):
-    _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "likes.json"), likes)
+def sauvegarder_likes(likes):
+    _ecrire_json_atomique(LIKES_FILE, likes)
 
 def charger_config(guild_id):
     return _lire_json_securise(
@@ -397,9 +398,9 @@ def enregistrer_stat_membre(guild_id, membre):
     stats[user_id]["count"] += 1
     sauvegarder_stats(guild_id, stats)
 
-def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=None):
+def enregistrer_like_membre(membre, titre, artiste, url, cover_url=None):
     user_id = str(membre.id)
-    likes = charger_likes(guild_id)
+    likes = charger_likes()
     if user_id not in likes:
         likes[user_id] = {"username": membre.name, "display_name": membre.display_name, "avatar_url": str(membre.display_avatar.url), "liste": []}
     likes[user_id]["username"] = membre.name
@@ -412,7 +413,7 @@ def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=Non
 
     if track_id in likes[user_id]["liste"]:
         likes[user_id]["liste"].remove(track_id)
-        sauvegarder_likes(guild_id, likes)
+        sauvegarder_likes(likes)
         return False
     else:
         # On alimente le fichier tracks.json centralisé si manquant
@@ -429,7 +430,7 @@ def enregistrer_like_membre(guild_id, membre, titre, artiste, url, cover_url=Non
             sauvegarder_tracks_central(tracks_central)
 
         likes[user_id]["liste"].append(track_id)
-        sauvegarder_likes(guild_id, likes)
+        sauvegarder_likes(likes)
         return True
 
 def finaliser_ecoutes_orphelines(guild_id, membre, historique):
@@ -805,7 +806,7 @@ class LikeView(discord.ui.View):
         if not self.cover_url:
             self.cover_url = rechercher_cover_track(self.titre, self.artiste)
             
-        est_like = enregistrer_like_membre(guild_id, interaction.user, self.titre, self.artiste, self.url, self.cover_url)
+        est_like = enregistrer_like_membre(interaction.user, self.titre, self.artiste, self.url, self.cover_url)
         if est_like:
             await interaction.response.send_message(f"❤️ Ajouté à tes titres likés : **{self.titre}**", ephemeral=True)
         else:
