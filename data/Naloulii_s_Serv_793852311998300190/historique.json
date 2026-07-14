@@ -5,6 +5,16 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "14/07/2026 18:32",
+                "titre": "ALED",
+                "artiste": "Luther",
+                "url": "https://open.spotify.com/track/41hl3QWKVaFZMZTNZhrARK",
+                "track_id": "41hl3QWKVaFZMZTNZhrARK",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273f612c3e18ac2f5af57a52128",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 26s",
+                "temps_ecoute_secondes": 26.9
+            },
+            {
                 "date": "14/07/2026 17:12",
                 "titre": "ALED",
                 "artiste": "Luther",
@@ -989,16 +999,6 @@
                 "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 24s",
                 "temps_ecoute_secondes": 144.3,
                 "cover_url": "https://cdn-images.dzcdn.net/images/cover/3f436738f992da1abe665d7629282362/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "13/07/2026 16:32",
-                "titre": "POP (feat. La Mano 1.9)",
-                "artiste": "Gazo; La Mano 1.9",
-                "url": "https://open.spotify.com/track/23fxyoCF4qEXS5RSZ8xWPq",
-                "track_id": "23fxyoCF4qEXS5RSZ8xWPq",
-                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 16s",
-                "temps_ecoute_secondes": 136.2,
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/3f436738f992da1abe665d7629282362/250x250-000000-80-0-0.jpg"
             }
         ]
     },
@@ -1007,6 +1007,15 @@
         "display_name": "Loov",
         "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/03c35abf4fdb08a913f052ac9c2cf030.png?size=1024",
         "ecoutes": [
+            {
+                "date": "14/07/2026 18:32",
+                "titre": "Pompeii",
+                "artiste": "Bastille",
+                "url": "https://open.spotify.com/track/4Ub8UsjWuewQrPhuepfVpd",
+                "track_id": "4Ub8UsjWuewQrPhuepfVpd",
+                "cover_url": "https://i.scdn.co/image/ab67616d0000b273faee7306ec2f36aeccc4bc98",
+                "status": "En cours..."
+            },
             {
                 "date": "14/07/2026 18:13",
                 "titre": "Careless",
@@ -1934,15 +1943,6 @@
                 "track_id": "6y6jbcPG4Yn3Du4moXaenr",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "cover_url": "https://cdn-images.dzcdn.net/images/cover/a7e4bf15f1599668c6fb3cefea93b189/250x250-000000-80-0-0.jpg"
-            },
-            {
-                "date": "12/07/2026 17:28",
-                "titre": "ordinary / horrifying",
-                "artiste": "updog",
-                "url": "https://open.spotify.com/track/7rP2JEZWJVorDsonOHnPCb",
-                "track_id": "7rP2JEZWJVorDsonOHnPCb",
-                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
-                "cover_url": "https://cdn-images.dzcdn.net/images/cover/4d54e510b5bc41339dcb09e0cae35b26/250x250-000000-80-0-0.jpg"
             }
         ]
     },
