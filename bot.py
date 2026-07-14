@@ -91,8 +91,6 @@ else:
 # --- FONCTION DE SAUVEGARDE GITHUB (Toutes les 15 minutes, + à la demande) ---
 def _sauvegarde_github_bloquante():
     try:
-        repo.remotes.origin.pull()
-
         fichiers_a_ajouter = []
         for root, dirs, files in os.walk(DATA_DIR):
             if ".git" in root.split(os.sep):
@@ -104,13 +102,23 @@ def _sauvegarde_github_bloquante():
                     rel_path = os.path.relpath(os.path.join(root, file), BASE_DIR)
                     fichiers_a_ajouter.append(rel_path)
 
+        # On commit d'abord les changements locaux (s'il y en a) AVANT de pull,
+        # sinon git refuse le pull dès qu'un fichier local a été modifié sans être
+        # commité (ex: message_top_id sauvegardé dans config.json juste avant) :
+        # "Your local changes... would be overwritten by merge".
+        nb_fichiers_commites = 0
         if fichiers_a_ajouter:
             repo.index.add(fichiers_a_ajouter)
             if repo.is_dirty() or not repo.head.is_valid():
                 maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
                 repo.index.commit(f"🤖 Auto-Save : Synchronisation des données ({maintenant})")
-                repo.remotes.origin.push()
-                print(f"📦 [GitHub] Données synchronisées avec succès : {len(fichiers_a_ajouter)} fichier(s)")
+                nb_fichiers_commites = len(fichiers_a_ajouter)
+
+        repo.remotes.origin.pull(rebase=True)
+
+        if nb_fichiers_commites:
+            repo.remotes.origin.push()
+            print(f"📦 [GitHub] Données synchronisées avec succès : {nb_fichiers_commites} fichier(s)")
     except Exception as e:
         print(f"⚠️ [GitHub] Erreur de synchronisation automatique : {e}")
 
