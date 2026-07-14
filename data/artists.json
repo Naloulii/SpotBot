@@ -738,5 +738,29 @@
     "dj fyp": {
         "nom": "DJ FYP",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/794b9a8df020820487472fd048169538/250x250-000000-80-0-0.jpg"
+    },
+    "brianjcb": {
+        "nom": "brianjcb",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65aa1cd679029e0eeb2f556947d1d903/250x250-000000-80-0-0.jpg"
+    },
+    "sasoriixpp": {
+        "nom": "SASORIIXPP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c26d968d295c553497c7b38e7ac4455f/250x250-000000-80-0-0.jpg"
+    },
+    "dj javi26": {
+        "nom": "DJ Javi26",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/830060980bc80099928194389afd9a5e/250x250-000000-80-0-0.jpg"
+    },
+    "evan alderete": {
+        "nom": "Evan Alderete",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d23c4eb3bb58430326044c67357c29d0/250x250-000000-80-0-0.jpg"
+    },
+    "gooseworx": {
+        "nom": "Gooseworx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6e3b1fac7baf2145271c6a0266ce6c11/250x250-000000-80-0-0.jpg"
+    },
+    "d a n n y": {
+        "nom": "D A N N Y",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8ab72c20089f86257b5862700c273cc3/250x250-000000-80-0-0.jpg"
     }
 }
