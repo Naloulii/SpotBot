@@ -144,9 +144,15 @@
     },
     "566899759013429259": {
         "username": "naloulii",
-        "display_name": "Nalouli",
+        "display_name": "Naloulii",
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
+            {
+                "date": "15/07/2026 02:57",
+                "track_id": "39sDitIeCMrVX2QyXHY46t",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 14s",
+                "temps_ecoute_secondes": 135.0
+            },
             {
                 "date": "15/07/2026 02:49",
                 "track_id": "301TUdLZZvNPFplmnWh0kb",
