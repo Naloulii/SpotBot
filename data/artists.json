@@ -1502,5 +1502,25 @@
     "soolking": {
         "nom": "Soolking",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/590841214b6ab3cb5fecc5245ff5db6b/250x250-000000-80-0-0.jpg"
+    },
+    "drake": {
+        "nom": "Drake",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1051e7fd110f9d3e5e88cdc69c5f227b/250x250-000000-80-0-0.jpg"
+    },
+    "stesko17": {
+        "nom": "stesko17",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8c83a78a71409570328e397fa70b397c/250x250-000000-80-0-0.jpg"
+    },
+    "faygee": {
+        "nom": "Faygee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f75b0d8894a5ce39b7c4faef72db8c0/250x250-000000-80-0-0.jpg"
+    },
+    "djaksparo": {
+        "nom": "Djaksparo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e74605feb2960bff6a8d7aaddd267d5b/250x250-000000-80-0-0.jpg"
+    },
+    "nupaï": {
+        "nom": "Nupaï",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/55187f4bf0e16ad703167374395cb410/250x250-000000-80-0-0.jpg"
     }
 }
