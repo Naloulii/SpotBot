@@ -970,5 +970,53 @@
     "bello&dallas": {
         "nom": "Bello&Dallas",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ec236d448ae8dad1d7a267b97bd175cf/250x250-000000-80-0-0.jpg"
+    },
+    "kezah": {
+        "nom": "Kezah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/839ac6b04318ffcf13265af346c968f0/250x250-000000-80-0-0.jpg"
+    },
+    "freddy gladieux": {
+        "nom": "Freddy Gladieux",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2fa22f695a368c43ec0d249a28aa9c39/250x250-000000-80-0-0.jpg"
+    },
+    "squeezie": {
+        "nom": "Squeezie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/53bad3af7934ba3066183fbbe7f4fdb8/250x250-000000-80-0-0.jpg"
+    },
+    "kami": {
+        "nom": "kami",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d5ca1252894e223b9e73e7f1173a4a2a/250x250-000000-80-0-0.jpg"
+    },
+    "feitan": {
+        "nom": "Feitan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c34504b541a30127ed5aa9e11d045831/250x250-000000-80-0-0.jpg"
+    },
+    "al-walid": {
+        "nom": "Al-Walid",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7694a178f7ca58c0a075482a572baa0f/250x250-000000-80-0-0.jpg"
+    },
+    "josman": {
+        "nom": "Josman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/44d1644d1d99a43f8e3de8e66bdd2b3a/250x250-000000-80-0-0.jpg"
+    },
+    "ravnir": {
+        "nom": "RAVNIR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1d30873f5d4e19795ca0c5a4d9af569/250x250-000000-80-0-0.jpg"
+    },
+    "minuiski": {
+        "nom": "MINUISKI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/203c6f213b64c200839de89db2754134/250x250-000000-80-0-0.jpg"
+    },
+    "vangelis": {
+        "nom": "Vangelis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "cuntsniffer": {
+        "nom": "Cuntsniffer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d75f9f71d5b858e998923a79d0e6f168/250x250-000000-80-0-0.jpg"
+    },
+    "damso": {
+        "nom": "Damso",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d5af0d088f62ebf29e849ef6b0afaa67/250x250-000000-80-0-0.jpg"
     }
 }
