@@ -1442,5 +1442,25 @@
     "g herbo": {
         "nom": "G Herbo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/469692441b42616e0b194ffd4fa26d04/250x250-000000-80-0-0.jpg"
+    },
+    "lagui": {
+        "nom": "Lagui",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/293caa9b1e9d4292df4fa639094dd1ec/250x250-000000-80-0-0.jpg"
+    },
+    "twista": {
+        "nom": "Twista",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/547e2ca23314feb406a793cd98eb448d/250x250-000000-80-0-0.jpg"
+    },
+    "miri ben-ari": {
+        "nom": "Miri Ben-Ari",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/abfda6fd095630d1c07adde0c664c2ef/250x250-000000-80-0-0.jpg"
+    },
+    "givēon": {
+        "nom": "GIVĒON",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed28a8c3779e98280ebfb7a581f214d3/250x250-000000-80-0-0.jpg"
+    },
+    "isk": {
+        "nom": "ISK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
