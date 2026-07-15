@@ -802,5 +802,21 @@
     "63kluf": {
         "nom": "63KLUF",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1e0329a305f5c567e921bf132efcc109/250x250-000000-80-0-0.jpg"
+    },
+    "jeune morty": {
+        "nom": "Jeune Morty",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9119e50126751da215ffe85f3e15382f/250x250-000000-80-0-0.jpg"
+    },
+    "ok": {
+        "nom": "Ok",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2e724786d09cf7d4f00046ed427b93ce/250x250-000000-80-0-0.jpg"
+    },
+    "almighty kid": {
+        "nom": "Almighty Kid",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47955b4f9a3661428fcfb6999243758f/250x250-000000-80-0-0.jpg"
+    },
+    "saki225": {
+        "nom": "SAKI225",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aa4e388727d985ab4fe61ce068233c4b/250x250-000000-80-0-0.jpg"
     }
 }

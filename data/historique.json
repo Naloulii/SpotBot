@@ -409,9 +409,45 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/968499201967276092/f6b84cec55083d8823ab0cb57b4a36cb.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 10:41",
+                "track_id": "4sFO3ztXlKyO0yUICgs500",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 10:38",
+                "track_id": "40Y88pmvxZvce5JuTDeCnv",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 171.5
+            },
+            {
+                "date": "15/07/2026 10:35",
+                "track_id": "3EmCVAmQuaaFEYlnJOGmMG",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 121.2
+            },
+            {
+                "date": "15/07/2026 10:34",
+                "track_id": "6dnPRbtgGdkZLIwgA2XHvC",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 85.7
+            },
+            {
+                "date": "15/07/2026 10:31",
+                "track_id": "390wgf0HqgJ5Bnb9LO00FK",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 161.3
+            },
+            {
+                "date": "15/07/2026 10:28",
+                "track_id": "3mbep9GEIjat78HKnURtDj",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 141.7
+            },
+            {
                 "date": "15/07/2026 10:25",
                 "track_id": "5LI7vPpBbPCTuJ5sKUt6rY",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 148.0
             },
             {
                 "date": "15/07/2026 10:24",
