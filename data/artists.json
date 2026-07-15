@@ -1426,5 +1426,9 @@
     "kaneda7": {
         "nom": "Kaneda7",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ef6f5f5aea2c41f3dc8a785ca90e1479/250x250-000000-80-0-0.jpg"
+    },
+    "zuka": {
+        "nom": "Zuka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dd94f1fcb90519f7ca7aa769f7d6bafe/250x250-000000-80-0-0.jpg"
     }
 }
