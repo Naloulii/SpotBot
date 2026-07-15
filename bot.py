@@ -1082,7 +1082,7 @@ async def demarrer_serveur_web():
 
     runner = web.AppRunner(app)
     await runner.setup()
-    port = int(os.getenv("PORT", "8080"))
+    port = int(os.getenv("SERVER_PORT", os.getenv("PORT", "8080")))
     site = web.TCPSite(runner, "0.0.0.0", port)
     await site.start()
     print(f"🌐 [API Web] Serveur démarré sur le port {port} (endpoint POST /api/like)")
