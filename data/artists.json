@@ -1162,5 +1162,13 @@
     "heav3nlink": {
         "nom": "heav3nlink",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4b1b955ae690ad7e955b2615ba62df0f/250x250-000000-80-0-0.jpg"
+    },
+    "sc4rzz": {
+        "nom": "sc4rzz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aa705e9ddce94ee1a56af0d5c82d0cd0/250x250-000000-80-0-0.jpg"
+    },
+    "reda": {
+        "nom": "Reda",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
