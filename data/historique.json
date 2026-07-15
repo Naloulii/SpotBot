@@ -840,9 +840,16 @@
     ],
     "822158052240785458": [
         {
+            "date": "15/07/2026 18:31",
+            "track_id": "4k95xD9yCyyABh7CDG4U1X",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 188.0
+        },
+        {
             "date": "15/07/2026 18:27",
             "track_id": "4AJGaPCvod4mWjBLWPfH3b",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 227.8
         },
         {
             "date": "15/07/2026 18:22",

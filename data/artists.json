@@ -1146,5 +1146,9 @@
     "xzibit": {
         "nom": "Xzibit",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/50417a981dfe1d68b694f12154d6b795/250x250-000000-80-0-0.jpg"
+    },
+    "smash into pieces": {
+        "nom": "Smash Into Pieces",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f2df383c765474945e449f3f6274b29e/250x250-000000-80-0-0.jpg"
     }
 }
