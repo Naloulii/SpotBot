@@ -176,22 +176,19 @@ else:
 
 def _sauvegarde_github_bloquante():
     try:
-        fichiers_a_ajouter = []
-        for root, dirs, files in os.walk(DATA_DIR):
-            if ".git" in root.split(os.sep):
-                continue
-            for file in files:
-                if file.endswith(".json"):
-                    rel_path = os.path.relpath(os.path.join(root, file), BASE_DIR)
-                    fichiers_a_ajouter.append(rel_path)
+        rel_data_dir = os.path.relpath(DATA_DIR, BASE_DIR)
+        # "-A" stage à la fois les fichiers ajoutés/modifiés ET les fichiers/dossiers
+        # supprimés sur le disque (ex: dossier d'une guilde retiré après un kick/ban).
+        # repo.index.add(liste_de_fichiers_existants) ignorait les suppressions :
+        # le working tree restait "sale" et le prochain "git pull --rebase" échouait
+        # avec "cannot pull with rebase: You have unstaged changes."
+        repo.git.add("-A", "--", rel_data_dir)
 
         nb_fichiers_commites = 0
-        if fichiers_a_ajouter:
-            repo.index.add(fichiers_a_ajouter)
-            if repo.is_dirty() or not repo.head.is_valid():
-                maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
-                repo.index.commit(f"🤖 Auto-Save : Synchronisation des données ({maintenant})")
-                nb_fichiers_commites = len(fichiers_a_ajouter)
+        if repo.is_dirty() or not repo.head.is_valid():
+            nb_fichiers_commites = len(repo.index.diff("HEAD")) if repo.head.is_valid() else len(repo.index.entries)
+            maintenant = datetime.datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
+            repo.index.commit(f"🤖 Auto-Save : Synchronisation des données ({maintenant})")
 
         repo.remotes.origin.pull(rebase=True)
 
