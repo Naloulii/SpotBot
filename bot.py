@@ -186,7 +186,7 @@ async def sauvegarde_periodique_github():
 # ==========================================
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
 TRACKS_FILE = os.path.join(DATA_DIR, "tracks.json")
-USERS_FILE = os.path.join(DATA_DIR, "users.json")       # Profils centralisés[cite: 6]
+USERS_FILE = os.path.join(DATA_DIR, "users.json")       # Profils centralisés
 LIKES_FILE = os.path.join(DATA_DIR, "likes.json")       
 HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
 STATS_FILE = os.path.join(DATA_DIR, "stats.json")
@@ -265,7 +265,8 @@ def ecrire_guild_info(guild):
         "id": str(guild.id),
         "name": guild.name,
         "icon_url": str(guild.icon.url) if guild.icon else None,
-        "member_ids": [str(m.id) for m in guild.members if not m.bot]
+        "member_ids": [str(m.id) for m in guild.members if not m.bot],
+        "owner_id": str(guild.owner_id) if guild.owner_id else None  # Ajout de l'owner_id
     })
 
 def supprimer_dossier_guilde(guild_id):
@@ -1213,6 +1214,7 @@ async def on_ready():
         assurer_dossier_guilde(guild)
         guild_id = str(guild.id)
 
+        # Force la mise à jour de tous les guild_info pour récupérer l'owner_id de chaque serveur !
         try:
             ecrire_guild_info(guild)
         except Exception as e:
@@ -1263,6 +1265,9 @@ async def on_ready():
                 print(f"Erreur nettoyage initial ({guild.name}) : {e}")
 
     await bot.change_presence(status=discord.Status.online, activity=bot.activity)
+
+    # Force une sauvegarde GitHub au lancement du bot pour envoyer tous les nouveaux "owner_id" d'un coup
+    await asyncio.to_thread(_sauvegarde_github_bloquante)
 
     actualiser_messages.start()
     sauvegarde_periodique_github.start()
@@ -1445,7 +1450,7 @@ async def actualiser_messages():
 @app_commands.describe(date="La nouvelle date d'expiration (ex: 23/07/2026)")
 @app_commands.guild_only()
 async def set_renew_date(interaction: discord.Interaction, date: str):
-    """Permet à Naloulii de mettre à jour la date d'échéance simplement[cite: 6]."""
+    """Permet à Naloulii de mettre à jour la date d'échéance simplement."""
     if interaction.user.id != OWNER_ID:
         await interaction.response.send_message("🚫 Cette commande est réservée à mon créateur (**naloulii**).", ephemeral=True)
         return

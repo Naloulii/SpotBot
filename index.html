@@ -225,12 +225,12 @@
   }
   .invite-btn{
     background:var(--green);
-    color:#ffffff; /* Forcé en blanc à la place du noir d'origine #0b0b0b */
+    color:#ffffff; /* Forcé en blanc */
     box-shadow:0 10px 30px -14px var(--green-glow);
   }
   .invite-btn:hover{
     background:#169c46;
-    color:#ffffff; /* Assure que le texte reste blanc lors du survol */
+    color:#ffffff;
     transform:translateY(-2px);
   }
   .logout-btn{
@@ -483,7 +483,7 @@
     white-space:nowrap;
   }
 
-  /* ---------- Contrôles (recherche / filtre / pagination) ---------- */
+  /* ---------- Contrôles ---------- */
   .controls-row{
     display:flex;
     gap:12px;
@@ -1138,20 +1138,29 @@ async function renderCrateView(){
     return;
   }
 
+  // Charge les profils utilisateurs pour traduire l'owner_id en pseudo
+  const users = await fetchJSON(`${RAW_BASE}data/users.json`, {});
+
   const guildDirs = (tree.tree || []).filter(e => e.type === "tree" && /^data\/[^/]+$/.test(e.path));
 
   const allGuilds = await Promise.all(guildDirs.map(async d => {
     const folderName = d.path.replace(/^data\//, "");
     const info = await fetchJSON(`${RAW_BASE}data/${folderName}/guild_info.json`, {});
     const memberIds = info.member_ids || [];
-    return { id: folderName, name: info.name || folderName, icon_url: info.icon_url || null, memberIds };
+    return { 
+      id: folderName, 
+      name: info.name || folderName, 
+      icon_url: info.icon_url || null, 
+      memberIds,
+      ownerId: info.owner_id || null  // Stockage de l'owner ID
+    };
   }));
 
   const isAdmin = ADMIN_IDS.includes(userId);
   const guilds = isAdmin ? allGuilds : allGuilds.filter(g => g.memberIds.includes(userId));
 
   app.innerHTML = `
-    <!-- Zone rayée complète (Hero) avec le cadre vert de 3px et la marge du haut -->
+    <!-- Zone Hero -->
     <section class="hero" style="border: 3px solid var(--green); border-radius: var(--radius-l); padding: 40px; box-shadow: 0 12px 40px -12px var(--green-glow); margin-top: 24px; margin-bottom: 48px; max-width: 100%; text-align: left;">
       <p class="eyebrow" style="color: var(--green);">Serveurs connectés</p>
       <h1 class="hero-title" style="margin-bottom: 16px;">Choisis un serveur,<br><em>lance le dashboard.</em></h1>
@@ -1165,7 +1174,7 @@ async function renderCrateView(){
     </section>
     <div class="crate-grid">
       ${isAdmin ? adminSleeveCard() : ""}
-      ${guilds.length ? guilds.map(sleeveCard).join("") : (isAdmin ? "" : emptyState())}
+      ${guilds.length ? guilds.map(g => sleeveCard(g, isAdmin, users)).join("") : (isAdmin ? "" : emptyState())}
     </div>
   `;
 
@@ -1174,12 +1183,10 @@ async function renderCrateView(){
 
 function renderLoginGate(){
   app.innerHTML = `
-    <!-- Zone rayée complète (Hero) avec tout le contenu et la connexion à l'intérieur -->
     <section class="hero login-gate" style="border: 3px solid var(--green); border-radius: var(--radius-l); padding: 40px; box-shadow: 0 12px 40px -12px var(--green-glow); margin-top: 24px; margin-bottom: 48px; max-width: 100%; text-align: left;">
       <p class="eyebrow">Connexion requise</p>
       <h1 class="hero-title" style="margin-bottom: 32px;">Découvre<br><em>SpotBot</em></h1>
       
-      <!-- Contenu textuel détaillé -->
       <div style="max-width: 640px; margin-bottom: 40px;">
         <p style="font-family: var(--font-body); font-size: 15px; line-height: 1.65; color: var(--text-dim); margin: 0 0 32px 0;">
           SpotBot est un bot Discord qui analyse, enregistre et partage l'activité Spotify des membres de tes serveurs. Ce dashboard te permet d'accéder à toutes les statistiques d'écoutes et de vibrer en continu avec ton groupe.
@@ -1212,7 +1219,6 @@ function renderLoginGate(){
         </div>
       </div>
 
-      <!-- Ligne de séparation interne -->
       <div style="border-top: 1px solid var(--border); padding-top: 32px; max-width: 640px;">
         <p style="font-family: var(--font-body); font-size: 14.5px; line-height: 1.5; color: var(--text-dim); margin: 0 0 24px 0; max-width: 490px;">
           Prêt à rejoindre l'expérience ? Connecte-toi pour retrouver ton serveur ou ajoute directement le bot pour commencer à suivre tes écoutes.
@@ -1226,15 +1232,26 @@ function renderLoginGate(){
       </div>
     </section>`;
 }
-function sleeveCard(g){
+
+function sleeveCard(g, isAdmin = false, users = {}){
   const label = g.icon_url
     ? `<img src="${esc(g.icon_url)}" alt="" loading="lazy">`
     : initials(g.name);
+
+  // Affiche l'owner si tu es connecté avec ton compte administrateur
+  let ownerMarkup = "";
+  if (isAdmin && g.ownerId) {
+    const ownerProf = users[g.ownerId];
+    const ownerName = ownerProf ? (ownerProf.display_name || ownerProf.username) : `ID: ${g.ownerId}`;
+    ownerMarkup = `<span style="font-size: 11px; color: var(--text-faint); margin-top: -6px; display: block;">👑 Owner : ${esc(ownerName)}</span>`;
+  }
+
   return `
     <a class="sleeve" href="#/guild/${esc(g.id)}">
       <span class="sleeve-label">${label}</span>
-      <span class="sleeve-name">${esc(g.name)}</span>
-      <span class="sleeve-hint">Ouvrir le dashboard →</span>
+      <span class="sleeve-name" style="margin-bottom: 2px;">${esc(g.name)}</span>
+      ${ownerMarkup}
+      <span class="sleeve-hint" style="margin-top: auto;">Ouvrir le dashboard →</span>
     </a>`;
 }
 
@@ -1256,7 +1273,7 @@ function emptyState(){
 }
 
 /* =========================================================
-   VUE 2 — LA FICHE SERVEUR (Jointure dynamique via users.json & tracks.json)
+   VUE 2 — LA FICHE SERVEUR
    ========================================================= */
 async function renderRecordView(guildId, initialTab = "classement"){
   const validTabs = ["classement", "historique", "favoris", "tops"];
@@ -1307,14 +1324,13 @@ async function renderRecordView(guildId, initialTab = "classement"){
 
   loadingScreen("Chargement des écoutes…");
 
-  // On charge users.json (profils) et tracks.json (métadonnées chansons) à la racine de /data
   const [statsGlobal, likesGlobal, historiqueGlobal, artists, tracks, users] = await Promise.all([
     fetchJSON(`${RAW_BASE}data/stats.json`, {}),
     fetchJSON(`${RAW_BASE}data/likes.json`, {}),
     fetchJSON(`${RAW_BASE}data/historique.json`, {}),
     fetchJSON(`${RAW_BASE}data/artists.json`, {}),
     fetchJSON(`${RAW_BASE}data/tracks.json`, {}),
-    fetchJSON(`${RAW_BASE}data/users.json`, {}) // <--- Profils centralisés !
+    fetchJSON(`${RAW_BASE}data/users.json`, {})
   ]);
 
   const appartientAuServeur = ([uid]) => memberIds.has(uid);
@@ -1322,7 +1338,6 @@ async function renderRecordView(guildId, initialTab = "classement"){
   const stats = isAllAccess ? statsGlobal : Object.fromEntries(Object.entries(statsGlobal).filter(appartientAuServeur));
   const historique = isAllAccess ? historiqueGlobal : Object.fromEntries(Object.entries(historiqueGlobal).filter(appartientAuServeur));
   
-  // Likes filtrés pour la liste locale
   const likes = Object.fromEntries(Object.entries(likesGlobal).filter(([uid]) => uid in historique));
 
   const guildName = isAllAccess ? "Accès total — Admin" : (info.name || `Serveur ${guildId}`);
@@ -1651,7 +1666,6 @@ function topsRow(i, titre, sousTitre, img, count, kind, artists){
     </div>`;
 }
 
-// Fonction globale d'icône de lien externe pour Spotify
 function iconLink(){
   return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
 }
