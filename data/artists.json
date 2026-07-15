@@ -782,5 +782,25 @@
     "1plik\u00e9140": {
         "nom": "1PLIK\u00c9140",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/279733ee0bc5acb56db1d21becbd98ba/250x250-000000-80-0-0.jpg"
+    },
+    "max romeo": {
+        "nom": "Max Romeo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea0d22628ea24bfab70270222e3b5a14/250x250-000000-80-0-0.jpg"
+    },
+    "thahomey": {
+        "nom": "thaHomey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4e9fd1eb57e32a25921dffa520d302c8/250x250-000000-80-0-0.jpg"
+    },
+    "birt": {
+        "nom": "BIRT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1f03b35d499ac83ed26440a4d646815b/250x250-000000-80-0-0.jpg"
+    },
+    "sto": {
+        "nom": "Sto",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dc774c4967aa0aef5e9831dfd2232ca4/250x250-000000-80-0-0.jpg"
+    },
+    "63kluf": {
+        "nom": "63KLUF",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1e0329a305f5c567e921bf132efcc109/250x250-000000-80-0-0.jpg"
     }
 }
