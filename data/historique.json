@@ -644,9 +644,22 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/1295089920620101788/f267efd58fa8e40544d3d91ed57f2be1.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 12:24",
+                "track_id": "68RJOCzwTT0i6qoGFmqbyc",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 39s",
+                "temps_ecoute_secondes": 39.2
+            },
+            {
+                "date": "15/07/2026 12:18",
+                "track_id": "4dHeoK5ZH4ieFPVBx4qNu4",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 29s",
+                "temps_ecoute_secondes": 89.3
+            },
+            {
                 "date": "15/07/2026 12:10",
                 "track_id": "1U0WJEIDALFvmN3i5r6kg9",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 470.3
             },
             {
                 "date": "15/07/2026 12:09",
