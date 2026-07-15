@@ -7,7 +7,7 @@
 <link rel="icon" type="image/x-icon" href="spotbot-pdp-avatar.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght=500;600;700&family=Inter:wght=400;500;600;700&family=JetBrains+Mono:wght=400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0b0b0b;
@@ -193,15 +193,18 @@
     margin:0;
   }
 
-  /* ---------- Boutons Discord OAuth ---------- */
-  .discord-login-btn, .logout-btn{
+  /* ---------- Boutons Discord & d'invitation ---------- */
+  .button-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:22px;
+  }
+  .discord-login-btn, .logout-btn, .invite-btn{
     display:inline-flex;
     align-items:center;
     gap:10px;
-    margin-top:22px;
     padding:13px 22px;
-    background:#5865F2;
-    color:#ffffff;
     font-family:var(--font-display);
     font-weight:600;
     font-size:14.5px;
@@ -210,22 +213,34 @@
     text-decoration:none;
     cursor:pointer;
     transition:transform .2s ease, background .2s ease, box-shadow .2s ease;
+  }
+  .discord-login-btn{
+    background:#5865F2;
+    color:#ffffff;
     box-shadow:0 10px 30px -14px rgba(88,101,242,0.7);
   }
-  .discord-login-btn:hover, .logout-btn:hover{
+  .discord-login-btn:hover{
     background:#4752c4;
+    transform:translateY(-2px);
+  }
+  .invite-btn{
+    background:var(--green);
+    color:#0b0b0b;
+    box-shadow:0 10px 30px -14px var(--green-glow);
+  }
+  .invite-btn:hover{
+    background:#169c46;
+    color:#ffffff;
     transform:translateY(-2px);
   }
   .logout-btn{
     background:transparent;
     color:var(--text-dim);
     border:1px solid var(--border-strong);
-    box-shadow:none;
   }
   .logout-btn:hover{
     background:var(--bg-card-hover);
     color:var(--text);
-    border-color:var(--border-strong);
   }
   .login-gate{ padding-bottom:60px; }
 
@@ -311,17 +326,6 @@
     font-size:21px;
     color:var(--text);
     margin:0 0 10px;
-  }
-  .error-state code{
-    display:inline-block;
-    margin-top:14px;
-    background:var(--bg-raised);
-    border:1px solid var(--border-strong);
-    padding:10px 14px;
-    border-radius:var(--radius-s);
-    font-family:var(--font-mono);
-    font-size:12px;
-    color:var(--green);
   }
 
   /* ---------- Vue serveur ---------- */
@@ -603,20 +607,11 @@
     padding:4px;
     margin-left:4px;
     border-radius:50%;
-    transition:color .2s ease, transform .15s ease;
   }
-  .like-btn:hover{ color:var(--pink); transform:scale(1.1); }
   .like-btn.liked{ color:var(--pink); }
-  .like-btn:disabled{ opacity:.5; cursor:default; transform:none; }
 
   .like-card-wrap{ position:relative; display:flex; }
   .like-card-wrap .like-card{ flex:1; }
-  .like-card-remove{
-    position:absolute;
-    top:8px; right:8px;
-    background:rgba(11,11,11,0.75);
-    backdrop-filter:blur(4px);
-  }
 
   /* ---------- Favoris ---------- */
   .member-strip{
@@ -925,23 +920,12 @@ const CONFIG = {
   BRANCH: "main"                       
 };
 
-/* ---------- Discord OAuth2 (Implicit Grant, 100% côté client) ----------
-   1. Va sur https://discord.com/developers/applications, ouvre (ou crée) ton appli.
-   2. Onglet "OAuth2" > "General" > copie le "Client ID" ci-dessous.
-   3. Toujours dans "OAuth2" > "Redirects", ajoute l'URL EXACTE de ton site
-      (ex: https://naloulii.github.io/SpotBot/ ou ton domaine perso).
-      Elle doit être identique au caractère près à REDIRECT_URI calculée plus bas.
-*/
 const DISCORD_CONFIG = {
   CLIENT_ID: "1388191386628526261",
   SCOPE: "identify"
 };
 
-// IDs Discord ayant un accès complet à tous les serveurs, même s'ils n'y sont pas membres
-const ADMIN_IDS = ["566899759013429259"]; // naloulii
-
-// Identifiant spécial (pas un vrai dossier data/) qui donne accès à une vue agrégeant
-// les données de TOUS les serveurs en une seule fois. Réservé aux ADMIN_IDS.
+const ADMIN_IDS = ["566899759013429259"];
 const ALL_ACCESS_ID = "__all__";
 
 function getRedirectUri(){
@@ -1021,7 +1005,6 @@ function discordIconSVG(){
   return `<svg width="20" height="20" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>`;
 }
 
-/* ---------- Icônes like (affichage uniquement, le like se fait depuis Discord) ---------- */
 function iconHeartOutline(){
   return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>`;
 }
@@ -1053,7 +1036,7 @@ async function fetchJSON(url, fallback = {}){
   }
 }
 function rankLabel(i){
-  const medals = { 0:"🥇", 1:"🥈", 2:"🥉" };
+  const medals = { 0:"🏆🥇", 1:"🥈", 2:"🥉" };
   return medals[i] || String(i+1).padStart(2,"0");
 }
 
@@ -1084,7 +1067,7 @@ document.getElementById("sync-btn").addEventListener("click", async () => {
   label.textContent = "Synchronisation…";
 
   try{
-    await route(); // recharge les données de la vue actuelle depuis GitHub
+    await route(); 
     label.textContent = "Synchronisé ✓";
     setTimeout(() => { label.textContent = "Synchroniser les données"; }, 2500);
   }catch(e){
@@ -1164,8 +1147,6 @@ async function renderCrateView(){
     return { id: folderName, name: info.name || folderName, icon_url: info.icon_url || null, memberIds };
   }));
 
-  // On ne garde que les serveurs où l'utilisateur connecté apparaît dans member_ids
-  // (les admins voient tous les serveurs sans restriction)
   const isAdmin = ADMIN_IDS.includes(userId);
   const guilds = isAdmin ? allGuilds : allGuilds.filter(g => g.memberIds.includes(userId));
 
@@ -1174,7 +1155,10 @@ async function renderCrateView(){
       <p class="eyebrow">Serveurs connectés</p>
       <h1 class="hero-title">Choisis un serveur,<br><em>lance le dashboard.</em></h1>
       <p class="hero-sub">Tu ne vois ici que les serveurs Discord sur lesquels tu es présent.</p>
-      <button type="button" class="logout-btn" id="logout-btn">${discordIconSVG()} Se déconnecter</button>
+      <div class="button-group">
+        <button type="button" class="logout-btn" id="logout-btn">${discordIconSVG()} Se déconnecter</button>
+        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">➕ Ajouter à mon serveur</a>
+      </div>
     </section>
     <div class="crate-grid">
       ${isAdmin ? adminSleeveCard() : ""}
@@ -1191,7 +1175,10 @@ function renderLoginGate(){
       <p class="eyebrow">Connexion requise</p>
       <h1 class="hero-title">Connecte-toi avec<br><em>Discord</em></h1>
       <p class="hero-sub">Pour n'afficher que les serveurs sur lesquels tu es présent, connecte-toi avec ton compte Discord.</p>
-      <a class="discord-login-btn" href="${discordLoginUrl()}">${discordIconSVG()} Se connecter avec Discord</a>
+      <div class="button-group">
+        <a class="discord-login-btn" href="${discordLoginUrl()}">${discordIconSVG()} Se connecter avec Discord</a>
+        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">➕ Ajouter à mon serveur</a>
+      </div>
     </section>`;
 }
 
@@ -1225,7 +1212,7 @@ function emptyState(){
 }
 
 /* =========================================================
-   VUE 2 — LA FICHE SERVEUR (Jointure dynamique via tracks.json)
+   VUE 2 — LA FICHE SERVEUR (Jointure dynamique via users.json & tracks.json)
    ========================================================= */
 async function renderRecordView(guildId, initialTab = "classement"){
   const validTabs = ["classement", "historique", "favoris", "tops"];
@@ -1276,24 +1263,22 @@ async function renderRecordView(guildId, initialTab = "classement"){
 
   loadingScreen("Chargement des écoutes…");
 
-  // likes.json, stats.json et historique.json sont désormais des fichiers CENTRAUX
-  // (un seul fichier pour tous les serveurs, à la racine de data/), pour qu'un membre
-  // présent sur plusieurs serveurs SpotBot ne soit compté/dupliqué qu'une seule fois.
-  // On les filtre ici avec member_ids (liste des membres actuels de CE serveur, fournie
-  // par guild_info.json) pour n'afficher que les gens de ce serveur. En mode "Accès total"
-  // (admin uniquement), on garde tout le monde, tous serveurs confondus, sans filtrer.
-  const [statsGlobal, likesGlobal, historiqueGlobal, artists, tracks] = await Promise.all([
+  // On charge users.json (profils) et tracks.json (métadonnées chansons) à la racine de /data
+  const [statsGlobal, likesGlobal, historiqueGlobal, artists, tracks, users] = await Promise.all([
     fetchJSON(`${RAW_BASE}data/stats.json`, {}),
     fetchJSON(`${RAW_BASE}data/likes.json`, {}),
     fetchJSON(`${RAW_BASE}data/historique.json`, {}),
     fetchJSON(`${RAW_BASE}data/artists.json`, {}),
-    fetchJSON(`${RAW_BASE}data/tracks.json`, {}) // <--- Cache centralisé chargé ici !
+    fetchJSON(`${RAW_BASE}data/tracks.json`, {}),
+    fetchJSON(`${RAW_BASE}data/users.json`, {}) // <--- Profils centralisés !
   ]);
 
   const appartientAuServeur = ([uid]) => memberIds.has(uid);
 
   const stats = isAllAccess ? statsGlobal : Object.fromEntries(Object.entries(statsGlobal).filter(appartientAuServeur));
   const historique = isAllAccess ? historiqueGlobal : Object.fromEntries(Object.entries(historiqueGlobal).filter(appartientAuServeur));
+  
+  // Likes filtrés pour la liste locale
   const likes = Object.fromEntries(Object.entries(likesGlobal).filter(([uid]) => uid in historique));
 
   const guildName = isAllAccess ? "Accès total — Admin" : (info.name || `Serveur ${guildId}`);
@@ -1320,7 +1305,7 @@ async function renderRecordView(guildId, initialTab = "classement"){
       <button class="tab-btn ${initialTab==="tops"?"active":""}" data-tab="tops"><span class="num">04</span>Tops</button>
     </nav>
 
-    <section class="panel ${initialTab==="classement"?"active":""}" id="panel-classement">${renderClassement(stats)}</section>
+    <section class="panel ${initialTab==="classement"?"active":""}" id="panel-classement">${renderClassement(stats, users)}</section>
     <section class="panel ${initialTab==="historique"?"active":""}" id="panel-historique"></section>
     <section class="panel ${initialTab==="favoris"?"active":""}" id="panel-favoris"></section>
     <section class="panel ${initialTab==="tops"?"active":""}" id="panel-tops"></section>
@@ -1332,49 +1317,56 @@ async function renderRecordView(guildId, initialTab = "classement"){
       document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
       btn.classList.add("active");
       document.getElementById(`panel-${btn.dataset.tab}`).classList.add("active");
-      // On mémorise l'onglet actif dans l'URL pour qu'un refresh ou une synchro y reste
       history.replaceState(null, "", `#/guild/${guildId}/${btn.dataset.tab}`);
     });
   });
 
-  // On injecte le dictionnaire de musiques "tracks" dans toutes les méthodes dépendantes
-  const monLikes = new Set((likesGlobal[userId]?.liste) || []);
-  mountHistorique(document.getElementById("panel-historique"), historique, artists, tracks, monLikes);
-  mountFavoris(document.getElementById("panel-favoris"), likes, artists, tracks, userId);
-  mountTops(document.getElementById("panel-tops"), historique, artists, tracks);
+  const monLikes = new Set(likesGlobal[userId] || []);
+  mountHistorique(document.getElementById("panel-historique"), historique, artists, tracks, users, monLikes);
+  mountFavoris(document.getElementById("panel-favoris"), likes, artists, tracks, users, userId);
+  mountTops(document.getElementById("panel-tops"), historique, artists, tracks, users);
 }
 
 /* ---------- Onglet Classement ---------- */
-function renderClassement(stats){
-  const entries = Object.entries(stats).sort((a,b) => b[1].count - a[1].count);
+function renderClassement(stats, users){
+  const entries = Object.entries(stats).sort((a,b) => b[1] - a[1]);
   if(!entries.length){
     return `<div class="tab-empty">Aucun morceau validé cette semaine sur ce serveur. 🎧</div>`;
   }
-  const max = entries[0][1].count || 1;
+  const max = entries[0][1] || 1;
 
-  return entries.map(([uid, d], i) => `
-    <div class="board-row">
-      <span class="board-rank ${i < 3 ? "medal" : ""}">${rankLabel(i)}</span>
-      ${d.avatar_url
-        ? `<img class="avatar" src="${esc(d.avatar_url)}" alt="" loading="lazy">`
-        : `<span class="avatar-fallback">${initials(d.display_name || d.username)}</span>`}
-      <div class="board-main">
-        <div class="board-name">${esc(d.display_name || d.username || "Inconnu")}</div>
-        <div class="board-bar-track"><div class="board-bar-fill" style="width:${Math.max(4, (d.count/max)*100)}%"></div></div>
+  return entries.map(([uid, count], i) => {
+    const prof = users[uid] || { username: "Inconnu", display_name: "Inconnu", avatar_url: null };
+    const name = prof.display_name || prof.username || "Inconnu";
+    return `
+      <div class="board-row">
+        <span class="board-rank ${i < 3 ? "medal" : ""}">${rankLabel(i)}</span>
+        ${prof.avatar_url
+          ? `<img class="avatar" src="${esc(prof.avatar_url)}" alt="" loading="lazy">`
+          : `<span class="avatar-fallback">${initials(name)}</span>`}
+        <div class="board-main">
+          <div class="board-name">${esc(name)}</div>
+          <div class="board-bar-track"><div class="board-bar-fill" style="width:${Math.max(4, (count/max)*100)}%"></div></div>
+        </div>
+        <span class="board-count">${count} titre${count>1?"s":""}</span>
       </div>
-      <span class="board-count">${d.count} titre${d.count>1?"s":""}</span>
-    </div>
-  `).join("");
+    `;
+  }).join("");
 }
 
-/* ---------- Onglet Historique (Avec liaison tracks.json) ---------- */
-function mountHistorique(container, historique, artists, tracks, monLikes){
-  const membres = Object.entries(historique).map(([uid, d]) => ({ uid, name: d.display_name || d.username || "Inconnu" }));
+/* ---------- Onglet Historique ---------- */
+function mountHistorique(container, historique, artists, tracks, users, monLikes){
+  const membres = Object.keys(historique).map(uid => {
+    const prof = users[uid] || { username: "Inconnu", display_name: "Inconnu" };
+    return { uid, name: prof.display_name || prof.username || "Inconnu" };
+  });
 
   let toutes = [];
-  for(const [uid, d] of Object.entries(historique)){
-    for(const e of d.ecoutes){
-      toutes.push({ ...e, uid, who: d.display_name || d.username || "Inconnu" });
+  for(const [uid, ecoutes] of Object.entries(historique)){
+    const prof = users[uid] || { username: "Inconnu", display_name: "Inconnu" };
+    const name = prof.display_name || prof.username || "Inconnu";
+    for(const e of ecoutes){
+      toutes.push({ ...e, uid, who: name });
     }
   }
   toutes.sort((a,b) => parseDateFR(b.date) - parseDateFR(a.date));
@@ -1455,7 +1447,6 @@ function trackThumb(coverUrl, artisteStr, artists, size = "thumb", fallbackToArt
 }
 
 function historyRow(e, artists, tracks, monLikes){
-  // Résolution des informations à l'aide de tracks.json
   const m = tracks[e.track_id] || { titre: "Inconnu", artiste: "Inconnu", url: "", cover_url: null };
   const thumb = trackThumb(m.cover_url, m.artiste, artists);
   const isFull = (e.status || "").includes("🎉");
@@ -1485,9 +1476,9 @@ function parseDateFR(str){
   return new Date(`${y}-${mo}-${d}T${h}:${mi}:00`).getTime();
 }
 
-/* ---------- Onglet Favoris (Avec liaison tracks.json) ---------- */
-function mountFavoris(container, likes, artists, tracks, currentUserId){
-  const membres = Object.entries(likes).filter(([,d]) => d.liste && d.liste.length);
+/* ---------- Onglet Favoris ---------- */
+function mountFavoris(container, likes, artists, tracks, users, currentUserId){
+  const membres = Object.entries(likes).filter(([,liste]) => liste && liste.length);
 
   if(!membres.length){
     container.innerHTML = `<div class="tab-empty">Personne n'a encore liké de morceau sur ce serveur. 🤍</div>`;
@@ -1498,14 +1489,18 @@ function mountFavoris(container, likes, artists, tracks, currentUserId){
 
   container.innerHTML = `
     <div class="member-strip">
-      ${membres.map(([uid, d]) => `
-        <div class="member-chip ${uid===active?"active":""}" data-uid="${esc(uid)}">
-          ${d.avatar_url
-            ? `<img class="avatar" src="${esc(d.avatar_url)}" alt="" loading="lazy">`
-            : `<span class="avatar-fallback">${initials(d.display_name||d.username)}</span>`}
-          <span>${esc(d.display_name || d.username || "Inconnu")}</span>
-        </div>
-      `).join("")}
+      ${membres.map(([uid, liste]) => {
+        const prof = users[uid] || { username: "Inconnu", display_name: "Inconnu", avatar_url: null };
+        const name = prof.display_name || prof.username || "Inconnu";
+        return `
+          <div class="member-chip ${uid===active?"active":""}" data-uid="${esc(uid)}">
+            ${prof.avatar_url
+              ? `<img class="avatar" src="${esc(prof.avatar_url)}" alt="" loading="lazy">`
+              : `<span class="avatar-fallback">${initials(name)}</span>`}
+            <span>${esc(name)}</span>
+          </div>
+        `;
+      }).join("")}
     </div>
     <div class="likes-grid" id="likes-grid"></div>
   `;
@@ -1514,10 +1509,9 @@ function mountFavoris(container, likes, artists, tracks, currentUserId){
   const likesMap = Object.fromEntries(membres);
 
   function draw(uid){
-    const listeIds = likesMap[uid]?.liste || [];
+    const listeIds = likesMap[uid] || [];
 
     grid.innerHTML = listeIds.map(trackId => {
-      // Résolution de chaque identifiant unique à partir de tracks.json
       const m = tracks[trackId];
       if(!m) return "";
 
@@ -1546,14 +1540,14 @@ function mountFavoris(container, likes, artists, tracks, currentUserId){
   draw(active);
 }
 
-/* ---------- Onglet Tops (Avec liaison tracks.json) ---------- */
-function computeTops(historique, tracks){
+/* ---------- Onglet Tops ---------- */
+function computeTops(historique, tracks, users){
   const membres = {};
-  for(const [uid, d] of Object.entries(historique)){
+  for(const [uid, ecoutes] of Object.entries(historique)){
     const songs = new Map();
     const artistesMap = new Map();
 
-    for(const e of (d.ecoutes || [])){
+    for(const e of (ecoutes || [])){
       if(!(e.status || "").includes("🎉")) continue;
 
       const trackId = e.track_id;
@@ -1576,10 +1570,11 @@ function computeTops(historique, tracks){
     const artistesArr = [...artistesMap.values()].sort((a,b) => b.count - a.count);
 
     if(songsArr.length || artistesArr.length){
+      const prof = users[uid] || { username: "Inconnu", display_name: "Inconnu", avatar_url: null };
       membres[uid] = {
         uid,
-        name: d.display_name || d.username || "Inconnu",
-        avatar_url: d.avatar_url || null,
+        name: prof.display_name || prof.username || "Inconnu",
+        avatar_url: prof.avatar_url || null,
         songs: songsArr,
         artistes: artistesArr
       };
@@ -1612,8 +1607,8 @@ function topsRow(i, titre, sousTitre, img, count, kind, artists){
     </div>`;
 }
 
-function mountTops(container, historique, artists, tracks){
-  const membresTops = computeTops(historique, tracks);
+function mountTops(container, historique, artists, tracks, users){
+  const membresTops = computeTops(historique, tracks, users);
   const entries = Object.values(membresTops);
 
   if(!entries.length){

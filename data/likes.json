@@ -1,39 +1,24 @@
 {
-    "1259154203603894277": {
-        "username": "krbyxx_25",
-        "display_name": "\u2022\u10e6 \ud835\udcdd\ud835\udcea\ud835\udcfd\ud835\udcfc\ud835\udcfe\ud835\udcf4\ud835\udd02\ud835\udcf2 \u10e6\u2022",
-        "avatar_url": "https://cdn.discordapp.com/avatars/1259154203603894277/d41a1ceb7e0d7c6b77494d9c3aa153c0.png?size=1024",
-        "liste": [
-            "7f9Q5eX6wHgRRta77lDxwm",
-            "6QeYSvYqYUsfBzsApbjDHO",
-            "5KYu4MzDd9zIXf5cZYu8St"
-        ]
-    },
-    "566899759013429259": {
-        "username": "naloulii",
-        "display_name": "Naloulii",
-        "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
-        "liste": [
-            "1ARORCBUjnyDx2fHHla5vv",
-            "2uBXaOlgXMOd6CU3CIW97h",
-            "1yGJ40k7HLF3odITZPoQs4",
-            "5DTahoMKuix8Fi1WSXGwIW",
-            "4QEg4vfzw0NwePfYMoJtwK",
-            "7gmwFiZtsPyBT8wI2u6mGN",
-            "7jPBHQ9vRgMxjRcREZKKGI",
-            "3TKi9R2cUg56cLTym2SmjS",
-            "2pIuOdAmLuoUwSGSnFHPzo",
-            "293mvbLSjFSXci9yyMyaEW",
-            "1zPzX39SWK3Z5cbmziDSaM",
-            "4wx1AeRhcYoUNqPxoDL4Ji"
-        ]
-    },
-    "702545968951722084": {
-        "username": "thv38.",
-        "display_name": "Luv",
-        "avatar_url": "https://cdn.discordapp.com/avatars/702545968951722084/a5a76089446b91c1ceb48328bb3de187.png?size=1024",
-        "liste": [
-            "2vH8JFJKfkAgZs1GFlOzGh"
-        ]
-    }
+    "1259154203603894277": [
+        "7f9Q5eX6wHgRRta77lDxwm",
+        "6QeYSvYqYUsfBzsApbjDHO",
+        "5KYu4MzDd9zIXf5cZYu8St"
+    ],
+    "566899759013429259": [
+        "1ARORCBUjnyDx2fHHla5vv",
+        "2uBXaOlgXMOd6CU3CIW97h",
+        "1yGJ40k7HLF3odITZPoQs4",
+        "5DTahoMKuix8Fi1WSXGwIW",
+        "4QEg4vfzw0NwePfYMoJtwK",
+        "7gmwFiZtsPyBT8wI2u6mGN",
+        "7jPBHQ9vRgMxjRcREZKKGI",
+        "3TKi9R2cUg56cLTym2SmjS",
+        "2pIuOdAmLuoUwSGSnFHPzo",
+        "293mvbLSjFSXci9yyMyaEW",
+        "1zPzX39SWK3Z5cbmziDSaM",
+        "4wx1AeRhcYoUNqPxoDL4Ji"
+    ],
+    "702545968951722084": [
+        "2vH8JFJKfkAgZs1GFlOzGh"
+    ]
 }
