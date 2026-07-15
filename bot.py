@@ -78,6 +78,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
+HOST_CONFIG_FILE = os.path.join(DATA_DIR, "host_config.json") # Stockage de l'échéance
+
 ecoutes_en_cours = {}   
 verrous_anti_spam = {}  
 pistes_globales = {}
@@ -184,7 +186,7 @@ async def sauvegarde_periodique_github():
 # ==========================================
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
 TRACKS_FILE = os.path.join(DATA_DIR, "tracks.json")
-USERS_FILE = os.path.join(DATA_DIR, "users.json")       # NOUVEAU : Centralisation des profils
+USERS_FILE = os.path.join(DATA_DIR, "users.json")       # Profils centralisés[cite: 6]
 LIKES_FILE = os.path.join(DATA_DIR, "likes.json")       
 HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
 STATS_FILE = os.path.join(DATA_DIR, "stats.json")
@@ -504,7 +506,6 @@ def mettre_a_jour_cache_artistes(chaine_artistes):
 #     ALGORITHMES CENTRALISÉS DE STATS/LIKES
 # ==========================================
 def mettre_a_jour_user_cache(membre):
-    """Enregistre ou rafraîchit l'identité de l'auditeur dans users.json."""
     users = charger_users()
     user_id = str(membre.id)
     if user_id not in users:
@@ -519,7 +520,7 @@ def enregistrer_stat_membre(guild_id, membre):
     mettre_a_jour_user_cache(membre)
     
     stats = charger_stats(guild_id)
-    stats[user_id] = stats.get(user_id, 0) + 1  # Compteur stocké directement sous forme d'entier
+    stats[user_id] = stats.get(user_id, 0) + 1  # Compteur brut d'écoutes
     sauvegarder_stats(guild_id, stats)
 
 def enregistrer_like_membre(membre, titre, artiste, url, cover_url=None):
@@ -1144,6 +1145,56 @@ def clean_channel_name(name):
 
 
 # ==========================================
+#      RAPPEL DE RENOUVELLEMENT HÉBERGEMENT
+# ==========================================
+def charger_date_expiration():
+    config = _lire_json_securise(HOST_CONFIG_FILE, {"expiration": "19/07/2026"})
+    return config.get("expiration", "19/07/2026")
+
+def sauvegarder_date_expiration(nouvelle_date):
+    _ecrire_json_atomique(HOST_CONFIG_FILE, {"expiration": nouvelle_date})
+
+@tasks.loop(hours=24)
+async def rappel_renew_hebergement():
+    """Rappelle à Naloulii d'aller sur Bot-Hosting si la date approche."""
+    try:
+        date_cible_str = charger_date_expiration()
+        date_exp = datetime.datetime.strptime(date_cible_str, "%d/%m/%Y")
+        date_exp = date_exp.replace(tzinfo=PARIS_TZ)
+        maintenant = datetime.datetime.now(PARIS_TZ)
+        
+        temps_restant = date_exp - maintenant
+        
+        # Envoi d'un rappel s'il reste moins de 36 heures avant expiration
+        if 0 < temps_restant.total_seconds() < 129600: 
+            user = await bot.fetch_user(OWNER_ID)
+            if user:
+                embed_rappel = discord.Embed(
+                    title="⚠️ Rappel : Renouvellement SpotBot ! 🤖",
+                    description=(
+                        f"Salut **Naloulii** ! Ton hébergement gratuit sur **Bot-Hosting.net** "
+                        f"expire bientôt, le **{date_cible_str}**.\n\n"
+                        f"Il te reste environ **{int(temps_restant.total_seconds() // 3600)} heures** pour prolonger "
+                        f"le bot de 4 jours supplémentaires gratuitement."
+                    ),
+                    color=discord.Color.orange(),
+                    timestamp=datetime.datetime.now(PARIS_TZ)
+                )
+                
+                view_lien = discord.ui.View()
+                view_lien.add_item(discord.ui.Button(
+                    label="Renouveler sur Bot-Hosting", 
+                    url="https://bot-hosting.net/a/billings",
+                    style=discord.ButtonStyle.link
+                ))
+                
+                await user.send(embed=embed_rappel, view=view_lien)
+                print("📩 MP de rappel de renouvellement envoyé à Naloulii.")
+    except Exception as e:
+        print(f"⚠️ Erreur lors de la vérification du rappel de renouvellement : {e}")
+
+
+# ==========================================
 #             INITIALISATION DU BOT
 # ==========================================
 @bot.event
@@ -1217,6 +1268,7 @@ async def on_ready():
     sauvegarde_periodique_github.start()
     classement_hebdomadaire_auto.start()
     verifier_ecoutes_perimees.start()
+    rappel_renew_hebergement.start()
 
 
 @bot.event
@@ -1389,6 +1441,34 @@ async def actualiser_messages():
 # ==========================================
 #                COMMANDES
 # ==========================================
+@bot.tree.command(name="set-renew", description="Définir la prochaine date d'échéance de l'hébergement (Format: JJ/MM/AAAA)")
+@app_commands.describe(date="La nouvelle date d'expiration (ex: 23/07/2026)")
+@app_commands.guild_only()
+async def set_renew_date(interaction: discord.Interaction, date: str):
+    """Permet à Naloulii de mettre à jour la date d'échéance simplement[cite: 6]."""
+    if interaction.user.id != OWNER_ID:
+        await interaction.response.send_message("🚫 Cette commande est réservée à mon créateur (**naloulii**).", ephemeral=True)
+        return
+
+    # Validation simple du format de la date (JJ/MM/AAAA)
+    if not re.match(r"^\d{2}/\d{2}/\d{4}$", date):
+        await interaction.response.send_message("❌ Format invalide. Utilise le format `JJ/MM/AAAA` (ex: `23/07/2026`).", ephemeral=True)
+        return
+
+    try:
+        # Tente de parser pour s'assurer que c'est une vraie date existante
+        datetime.datetime.strptime(date, "%d/%m/%Y")
+        sauvegarder_date_expiration(date)
+        
+        await interaction.response.send_message(f"✅ Prochaine échéance enregistrée avec succès : **{date}** !", ephemeral=True)
+        print(f"📅 Nouvelle date d'hébergement configurée par Naloulii : {date}")
+        
+        # Envoie un push GitHub pour sauvegarder cette config
+        asyncio.create_task(asyncio.to_thread(_sauvegarde_github_bloquante))
+    except ValueError:
+        await interaction.response.send_message("❌ Date invalide. Vérifie le jour ou le mois saisi.", ephemeral=True)
+
+
 @bot.tree.command(name="setup", description="(Admins) Choisir le salon de publication d'activité")
 @app_commands.describe(salon="Le salon textuel où SpotBot publiera l'activité")
 @app_commands.guild_only()
