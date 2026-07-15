@@ -818,5 +818,13 @@
     "saki225": {
         "nom": "SAKI225",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/aa4e388727d985ab4fe61ce068233c4b/250x250-000000-80-0-0.jpg"
+    },
+    "shades": {
+        "nom": "Shades",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0be61bd3ae8471ef07427ef6c6e13def/250x250-000000-80-0-0.jpg"
+    },
+    "roddy key": {
+        "nom": "Roddy Key",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d3006be0ff405ac71c9096d67b95086/250x250-000000-80-0-0.jpg"
     }
 }
