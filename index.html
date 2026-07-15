@@ -168,6 +168,42 @@
     margin:0;
   }
 
+  /* ---------- Boutons Discord OAuth ---------- */
+  .discord-login-btn, .logout-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:22px;
+    padding:13px 22px;
+    background:#5865F2;
+    color:#ffffff;
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:14.5px;
+    border:none;
+    border-radius:999px;
+    text-decoration:none;
+    cursor:pointer;
+    transition:transform .2s ease, background .2s ease, box-shadow .2s ease;
+    box-shadow:0 10px 30px -14px rgba(88,101,242,0.7);
+  }
+  .discord-login-btn:hover, .logout-btn:hover{
+    background:#4752c4;
+    transform:translateY(-2px);
+  }
+  .logout-btn{
+    background:transparent;
+    color:var(--text-dim);
+    border:1px solid var(--border-strong);
+    box-shadow:none;
+  }
+  .logout-btn:hover{
+    background:var(--bg-card-hover);
+    color:var(--text);
+    border-color:var(--border-strong);
+  }
+  .login-gate{ padding-bottom:60px; }
+
   /* ---------- Grille des serveurs ---------- */
   .crate-grid{
     display:grid;
@@ -821,6 +857,95 @@ const CONFIG = {
   BRANCH: "main"                       
 };
 
+/* ---------- Discord OAuth2 (Implicit Grant, 100% côté client) ----------
+   1. Va sur https://discord.com/developers/applications, ouvre (ou crée) ton appli.
+   2. Onglet "OAuth2" > "General" > copie le "Client ID" ci-dessous.
+   3. Toujours dans "OAuth2" > "Redirects", ajoute l'URL EXACTE de ton site
+      (ex: https://naloulii.github.io/SpotBot/ ou ton domaine perso).
+      Elle doit être identique au caractère près à REDIRECT_URI calculée plus bas.
+*/
+const DISCORD_CONFIG = {
+  CLIENT_ID: "REMPLACE_PAR_TON_CLIENT_ID",
+  SCOPE: "identify"
+};
+
+function getRedirectUri(){
+  return window.location.origin + window.location.pathname;
+}
+
+function discordLoginUrl(){
+  const state = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  sessionStorage.setItem("discord_oauth_state", state);
+  const params = new URLSearchParams({
+    response_type: "token",
+    client_id: DISCORD_CONFIG.CLIENT_ID,
+    scope: DISCORD_CONFIG.SCOPE,
+    redirect_uri: getRedirectUri(),
+    state
+  });
+  return `https://discord.com/oauth2/authorize?${params.toString()}`;
+}
+
+function handleOAuthRedirect(){
+  if(!location.hash.includes("access_token=")) return;
+
+  const params = new URLSearchParams(location.hash.slice(1));
+  const token = params.get("access_token");
+  const expiresIn = parseInt(params.get("expires_in") || "0", 10);
+  const state = params.get("state");
+  const savedState = sessionStorage.getItem("discord_oauth_state");
+  sessionStorage.removeItem("discord_oauth_state");
+
+  history.replaceState(null, "", location.pathname + location.search + "#/");
+
+  if(!token || !savedState || state !== savedState){
+    return;
+  }
+
+  sessionStorage.setItem("discord_token", token);
+  sessionStorage.setItem("discord_token_expiry", String(Date.now() + expiresIn * 1000));
+}
+
+function getStoredToken(){
+  const token = sessionStorage.getItem("discord_token");
+  const expiry = parseInt(sessionStorage.getItem("discord_token_expiry") || "0", 10);
+  if(!token || !expiry || Date.now() > expiry) return null;
+  return token;
+}
+
+function logoutDiscord(){
+  sessionStorage.removeItem("discord_token");
+  sessionStorage.removeItem("discord_token_expiry");
+  sessionStorage.removeItem("discord_user_id");
+  location.hash = "#/";
+  route();
+}
+
+async function fetchDiscordUserId(token){
+  const cached = sessionStorage.getItem("discord_user_id");
+  if(cached) return cached;
+
+  try{
+    const res = await fetch("https://discord.com/api/users/@me", {
+      headers: { Authorization: `Bearer ${token}` },
+      cache: "no-store"
+    });
+    if(!res.ok){
+      if(res.status === 401) logoutDiscord();
+      return null;
+    }
+    const user = await res.json();
+    sessionStorage.setItem("discord_user_id", user.id);
+    return user.id;
+  }catch(e){
+    return null;
+  }
+}
+
+function discordIconSVG(){
+  return `<svg width="20" height="20" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>`;
+}
+
 const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/${CONFIG.BRANCH}/`;
 const TREE_API = `https://api.github.com/repos/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/git/trees/${CONFIG.BRANCH}?recursive=1`;
 
@@ -862,7 +987,10 @@ function spotMarkSVG(){
 document.getElementById("topbar-mark").outerHTML = `<span class="spot-mark" id="topbar-mark">${spotMarkSVG()}</span>`;
 
 window.addEventListener("hashchange", route);
-window.addEventListener("DOMContentLoaded", route);
+window.addEventListener("DOMContentLoaded", () => {
+  handleOAuthRedirect();
+  route();
+});
 
 function route(){
   const hash = location.hash.replace(/^#\/?/, "");
@@ -885,7 +1013,20 @@ function loadingScreen(label){
    VUE 1 — SÉLECTION DU SERVEUR
    ========================================================= */
 async function renderCrateView(){
+  const token = getStoredToken();
+
+  if(!token){
+    renderLoginGate();
+    return;
+  }
+
   loadingScreen("Connexion aux serveurs…");
+
+  const userId = await fetchDiscordUserId(token);
+  if(!userId){
+    renderLoginGate();
+    return;
+  }
 
   let tree;
   try{
@@ -904,22 +1045,39 @@ async function renderCrateView(){
 
   const guildDirs = (tree.tree || []).filter(e => e.type === "tree" && /^data\/[^/]+$/.test(e.path));
 
-  const guilds = await Promise.all(guildDirs.map(async d => {
+  const allGuilds = await Promise.all(guildDirs.map(async d => {
     const folderName = d.path.replace(/^data\//, "");
     const info = await fetchJSON(`${RAW_BASE}data/${folderName}/guild_info.json`, {});
-    return { id: folderName, name: info.name || folderName, icon_url: info.icon_url || null };
+    const memberIds = info.member_ids || [];
+    return { id: folderName, name: info.name || folderName, icon_url: info.icon_url || null, memberIds };
   }));
+
+  // On ne garde que les serveurs où l'utilisateur connecté apparaît dans member_ids
+  const guilds = allGuilds.filter(g => g.memberIds.includes(userId));
 
   app.innerHTML = `
     <section class="hero">
       <p class="eyebrow">Serveurs connectés</p>
       <h1 class="hero-title">Choisis un serveur,<br><em>lance le dashboard.</em></h1>
-      <p class="hero-sub">Chaque serveur Discord ajouté à SpotBot a son propre tableau de bord.</p>
+      <p class="hero-sub">Tu ne vois ici que les serveurs Discord sur lesquels tu es présent.</p>
+      <button type="button" class="logout-btn" id="logout-btn">${discordIconSVG()} Se déconnecter</button>
     </section>
     <div class="crate-grid">
       ${guilds.length ? guilds.map(sleeveCard).join("") : emptyState()}
     </div>
   `;
+
+  document.getElementById("logout-btn").addEventListener("click", logoutDiscord);
+}
+
+function renderLoginGate(){
+  app.innerHTML = `
+    <section class="hero login-gate">
+      <p class="eyebrow">Connexion requise</p>
+      <h1 class="hero-title">Connecte-toi avec<br><em>Discord</em></h1>
+      <p class="hero-sub">Pour n'afficher que les serveurs sur lesquels tu es présent, connecte-toi avec ton compte Discord.</p>
+      <a class="discord-login-btn" href="${discordLoginUrl()}">${discordIconSVG()} Se connecter avec Discord</a>
+    </section>`;
 }
 
 function sleeveCard(g){
@@ -946,6 +1104,32 @@ function emptyState(){
    VUE 2 — LA FICHE SERVEUR (Jointure dynamique via tracks.json)
    ========================================================= */
 async function renderRecordView(guildId){
+  const token = getStoredToken();
+  if(!token){
+    renderLoginGate();
+    return;
+  }
+
+  loadingScreen("Vérification de l'accès…");
+  const userId = await fetchDiscordUserId(token);
+  if(!userId){
+    renderLoginGate();
+    return;
+  }
+
+  const info = await fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {});
+  const memberIds = new Set(info.member_ids || []);
+
+  if(!memberIds.has(userId)){
+    app.innerHTML = `
+      <section class="hero">
+        <p class="eyebrow">Accès refusé</p>
+        <h1 class="hero-title">Tu n'es pas membre<br><em>de ce serveur.</em></h1>
+        <p class="hero-sub"><a href="#/">← Retour à la liste de tes serveurs</a></p>
+      </section>`;
+    return;
+  }
+
   loadingScreen("Chargement des écoutes…");
 
   // likes.json, stats.json et historique.json sont désormais des fichiers CENTRAUX
@@ -953,8 +1137,7 @@ async function renderRecordView(guildId){
   // présent sur plusieurs serveurs SpotBot ne soit compté/dupliqué qu'une seule fois.
   // On les filtre ici avec member_ids (liste des membres actuels de CE serveur, fournie
   // par guild_info.json) pour n'afficher que les gens de ce serveur.
-  const [info, statsGlobal, likesGlobal, historiqueGlobal, artists, tracks] = await Promise.all([
-    fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {}),
+  const [statsGlobal, likesGlobal, historiqueGlobal, artists, tracks] = await Promise.all([
     fetchJSON(`${RAW_BASE}data/stats.json`, {}),
     fetchJSON(`${RAW_BASE}data/likes.json`, {}),
     fetchJSON(`${RAW_BASE}data/historique.json`, {}),
@@ -962,7 +1145,6 @@ async function renderRecordView(guildId){
     fetchJSON(`${RAW_BASE}data/tracks.json`, {}) // <--- Cache centralisé chargé ici !
   ]);
 
-  const memberIds = new Set(info.member_ids || []);
   const appartientAuServeur = ([uid]) => memberIds.has(uid);
 
   const stats = Object.fromEntries(Object.entries(statsGlobal).filter(appartientAuServeur));
