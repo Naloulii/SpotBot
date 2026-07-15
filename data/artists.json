@@ -1606,5 +1606,57 @@
     "natalie jane": {
         "nom": "Natalie Jane",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2b70c6dce4439b9deb59dba6437be3c1/250x250-000000-80-0-0.jpg"
+    },
+    "mz": {
+        "nom": "MZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "sheryfa luna": {
+        "nom": "Sheryfa Luna",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "djadja & dinaz": {
+        "nom": "Djadja & Dinaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b7c945a7b8143161b5e112d6dac78e24/250x250-000000-80-0-0.jpg"
+    },
+    "miia": {
+        "nom": "MIIA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9b2c76987eee11df54b045314ee82974/250x250-000000-80-0-0.jpg"
+    },
+    "nusky": {
+        "nom": "Nusky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3088082f9e4fd2b56c7fd9361ce8d296/250x250-000000-80-0-0.jpg"
+    },
+    "joé dwèt filé": {
+        "nom": "Joé Dwèt Filé",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3b19d72f5575c99e6cbbf45a236ddfeb/250x250-000000-80-0-0.jpg"
+    },
+    "céline dion": {
+        "nom": "Céline Dion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3ae78e5c49ed42342513d5a248b9c4c/250x250-000000-80-0-0.jpg"
+    },
+    "lucenzo": {
+        "nom": "Lucenzo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/22605c80f6e078ddcde345b04d4500ca/250x250-000000-80-0-0.jpg"
+    },
+    "kenza farah": {
+        "nom": "Kenza Farah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc1c03df546fc54affdf398fedc6dea2/250x250-000000-80-0-0.jpg"
+    },
+    "satirin": {
+        "nom": "satirin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e581448c37d94f5cd57a9d372f6ffbbd/250x250-000000-80-0-0.jpg"
+    },
+    "fally ipupa": {
+        "nom": "Fally Ipupa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b10b2cc2f0241b7854d671e8354cc111/250x250-000000-80-0-0.jpg"
+    },
+    "dadju": {
+        "nom": "Dadju",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc3b1efce691fc86644748dba8affa21/250x250-000000-80-0-0.jpg"
+    },
+    "everybody loves an outlaw": {
+        "nom": "Everybody Loves an Outlaw",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5fbba4fbeb5d9032ebc3914ebede8f83/250x250-000000-80-0-0.jpg"
     }
 }
