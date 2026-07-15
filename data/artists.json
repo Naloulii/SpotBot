@@ -1326,5 +1326,37 @@
     "arctic monkeys": {
         "nom": "Arctic Monkeys",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6c03e4c7c36800897fd468633286db24/250x250-000000-80-0-0.jpg"
+    },
+    "kamaiyah": {
+        "nom": "Kamaiyah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0233c9b7f867eecdaf96f30cf6b7b44c/250x250-000000-80-0-0.jpg"
+    },
+    "lmfao": {
+        "nom": "LMFAO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d639f46bfe29ec47d3f1bbf50d705a61/250x250-000000-80-0-0.jpg"
+    },
+    "fam0uz": {
+        "nom": "fam0uz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/00afa116a26f33f8af2a9cc392dd6b26/250x250-000000-80-0-0.jpg"
+    },
+    "anguish": {
+        "nom": "ANGUISH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fd3bad30bfc58501d2c3c0b3d207c2bd/250x250-000000-80-0-0.jpg"
+    },
+    "zyzek": {
+        "nom": "zyzek",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/883f749052dedac6db5a809af4ed7ffe/250x250-000000-80-0-0.jpg"
+    },
+    "fade031": {
+        "nom": "FADE031",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/818ae2e68bc3c22e9cc609aad9dd5a80/250x250-000000-80-0-0.jpg"
+    },
+    "nelah": {
+        "nom": "Nelah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5852303d505884398d642ca6dfe8f2bf/250x250-000000-80-0-0.jpg"
+    },
+    "da99y": {
+        "nom": "da99y",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aae9743252282aa121b18ad68e011ea8/250x250-000000-80-0-0.jpg"
     }
 }
