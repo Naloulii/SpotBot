@@ -257,6 +257,19 @@
     border-color:var(--green);
     background:var(--bg-card-hover);
   }
+  .sleeve-admin{
+    border-color:rgba(255,215,0,0.35);
+    background:linear-gradient(180deg, rgba(255,215,0,0.08), var(--bg-card));
+  }
+  .sleeve-admin:hover, .sleeve-admin:focus-visible{
+    border-color:#ffd700;
+  }
+  .sleeve-admin .sleeve-label{
+    background:var(--bg-raised);
+    box-shadow:0 0 0 3px rgba(255,215,0,0.45);
+    font-size:32px;
+  }
+  .sleeve-admin .sleeve-hint{ color:#ffd700; }
   .sleeve-label{
     width:84px; height:84px;
     border-radius:50%;
@@ -927,6 +940,10 @@ const DISCORD_CONFIG = {
 // IDs Discord ayant un accès complet à tous les serveurs, même s'ils n'y sont pas membres
 const ADMIN_IDS = ["566899759013429259"]; // naloulii
 
+// Identifiant spécial (pas un vrai dossier data/) qui donne accès à une vue agrégeant
+// les données de TOUS les serveurs en une seule fois. Réservé aux ADMIN_IDS.
+const ALL_ACCESS_ID = "__all__";
+
 function getRedirectUri(){
   return window.location.origin + window.location.pathname;
 }
@@ -1160,7 +1177,8 @@ async function renderCrateView(){
       <button type="button" class="logout-btn" id="logout-btn">${discordIconSVG()} Se déconnecter</button>
     </section>
     <div class="crate-grid">
-      ${guilds.length ? guilds.map(sleeveCard).join("") : emptyState()}
+      ${isAdmin ? adminSleeveCard() : ""}
+      ${guilds.length ? guilds.map(sleeveCard).join("") : (isAdmin ? "" : emptyState())}
     </div>
   `;
 
@@ -1186,6 +1204,15 @@ function sleeveCard(g){
       <span class="sleeve-label">${label}</span>
       <span class="sleeve-name">${esc(g.name)}</span>
       <span class="sleeve-hint">Ouvrir le dashboard →</span>
+    </a>`;
+}
+
+function adminSleeveCard(){
+  return `
+    <a class="sleeve sleeve-admin" href="#/guild/${ALL_ACCESS_ID}">
+      <span class="sleeve-label">👑</span>
+      <span class="sleeve-name">Accès total</span>
+      <span class="sleeve-hint">Toutes les données, tous serveurs →</span>
     </a>`;
 }
 
@@ -1217,17 +1244,34 @@ async function renderRecordView(guildId, initialTab = "classement"){
     return;
   }
 
-  const info = await fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {});
-  const memberIds = new Set(info.member_ids || []);
+  const isAllAccess = guildId === ALL_ACCESS_ID;
 
-  if(!ADMIN_IDS.includes(userId) && !memberIds.has(userId)){
+  if(isAllAccess && !ADMIN_IDS.includes(userId)){
     app.innerHTML = `
       <section class="hero">
         <p class="eyebrow">Accès refusé</p>
-        <h1 class="hero-title">Tu n'es pas membre<br><em>de ce serveur.</em></h1>
+        <h1 class="hero-title">Cette vue est réservée<br><em>à l'administrateur.</em></h1>
         <p class="hero-sub"><a href="#/">← Retour à la liste de tes serveurs</a></p>
       </section>`;
     return;
+  }
+
+  let info = {};
+  let memberIds = new Set();
+
+  if(!isAllAccess){
+    info = await fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {});
+    memberIds = new Set(info.member_ids || []);
+
+    if(!ADMIN_IDS.includes(userId) && !memberIds.has(userId)){
+      app.innerHTML = `
+        <section class="hero">
+          <p class="eyebrow">Accès refusé</p>
+          <h1 class="hero-title">Tu n'es pas membre<br><em>de ce serveur.</em></h1>
+          <p class="hero-sub"><a href="#/">← Retour à la liste de tes serveurs</a></p>
+        </section>`;
+      return;
+    }
   }
 
   loadingScreen("Chargement des écoutes…");
@@ -1236,7 +1280,8 @@ async function renderRecordView(guildId, initialTab = "classement"){
   // (un seul fichier pour tous les serveurs, à la racine de data/), pour qu'un membre
   // présent sur plusieurs serveurs SpotBot ne soit compté/dupliqué qu'une seule fois.
   // On les filtre ici avec member_ids (liste des membres actuels de CE serveur, fournie
-  // par guild_info.json) pour n'afficher que les gens de ce serveur.
+  // par guild_info.json) pour n'afficher que les gens de ce serveur. En mode "Accès total"
+  // (admin uniquement), on garde tout le monde, tous serveurs confondus, sans filtrer.
   const [statsGlobal, likesGlobal, historiqueGlobal, artists, tracks] = await Promise.all([
     fetchJSON(`${RAW_BASE}data/stats.json`, {}),
     fetchJSON(`${RAW_BASE}data/likes.json`, {}),
@@ -1247,16 +1292,14 @@ async function renderRecordView(guildId, initialTab = "classement"){
 
   const appartientAuServeur = ([uid]) => memberIds.has(uid);
 
-  const stats = Object.fromEntries(Object.entries(statsGlobal).filter(appartientAuServeur));
-  const historique = Object.fromEntries(Object.entries(historiqueGlobal).filter(appartientAuServeur));
-  const likes = Object.fromEntries(
-    Object.entries(likesGlobal).filter(([uid]) => uid in historique)
-  );
+  const stats = isAllAccess ? statsGlobal : Object.fromEntries(Object.entries(statsGlobal).filter(appartientAuServeur));
+  const historique = isAllAccess ? historiqueGlobal : Object.fromEntries(Object.entries(historiqueGlobal).filter(appartientAuServeur));
+  const likes = Object.fromEntries(Object.entries(likesGlobal).filter(([uid]) => uid in historique));
 
-  const guildName = info.name || `Serveur ${guildId}`;
-  const discLabel = info.icon_url
-    ? `<img src="${esc(info.icon_url)}" alt="">`
-    : `<span class="letter">${initials(guildName)}</span>`;
+  const guildName = isAllAccess ? "Accès total — Admin" : (info.name || `Serveur ${guildId}`);
+  const discLabel = isAllAccess
+    ? `<span class="letter">👑</span>`
+    : (info.icon_url ? `<img src="${esc(info.icon_url)}" alt="">` : `<span class="letter">${initials(guildName)}</span>`);
 
   const memberCount = new Set([...Object.keys(stats), ...Object.keys(historique), ...Object.keys(likes)]).size;
 
