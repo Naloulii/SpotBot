@@ -1150,5 +1150,17 @@
     "smash into pieces": {
         "nom": "Smash Into Pieces",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f2df383c765474945e449f3f6274b29e/250x250-000000-80-0-0.jpg"
+    },
+    "emosl4t696": {
+        "nom": "emosl4t696",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/676a986c03333eea525424166665f3cc/250x250-000000-80-0-0.jpg"
+    },
+    "graveyardparty": {
+        "nom": "graveyardparty",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/37b4f8374088d6851c1fa39c2df0b2c9/250x250-000000-80-0-0.jpg"
+    },
+    "heav3nlink": {
+        "nom": "heav3nlink",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b1b955ae690ad7e955b2615ba62df0f/250x250-000000-80-0-0.jpg"
     }
 }
