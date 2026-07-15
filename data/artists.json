@@ -115,8 +115,8 @@
         "nom": "Ex Habit",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3f9ce93070b330c26466ff4d7c6f946c/250x250-000000-80-0-0.jpg"
     },
-    "fav\u00e9": {
-        "nom": "Fav\u00e9",
+    "favé": {
+        "nom": "Favé",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2f93a8d42f138e19085beefd838f6642/250x250-000000-80-0-0.jpg"
     },
     "gims": {
@@ -347,8 +347,8 @@
         "nom": "Guy2Bezbar",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5e0754aa0d3ebef5753966a98452dd30/250x250-000000-80-0-0.jpg"
     },
-    "the mar\u00edas": {
-        "nom": "The Mar\u00edas",
+    "the marías": {
+        "nom": "The Marías",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9a81e875aa2689278b4ad8c385aacd12/250x250-000000-80-0-0.jpg"
     },
     "nono la grinta": {
@@ -423,8 +423,8 @@
         "nom": "Apez",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ca29aa6484528cd9c0ae85ba5f6c1de7/250x250-000000-80-0-0.jpg"
     },
-    "dal\u00ed": {
-        "nom": "Dal\u00ed",
+    "dalí": {
+        "nom": "Dalí",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/82c3085863fc25a1aa1278527bffae56/250x250-000000-80-0-0.jpg"
     },
     "krisy": {
@@ -491,8 +491,8 @@
         "nom": "Vance Joy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7193e13dea1bf3dfd91bf84005bebacf/250x250-000000-80-0-0.jpg"
     },
-    "lo\u00efc nottet": {
-        "nom": "Lo\u00efc Nottet",
+    "loïc nottet": {
+        "nom": "Loïc Nottet",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/de58feefce8aae9f2afae5bd92ea88ed/250x250-000000-80-0-0.jpg"
     },
     "magnolia park": {
@@ -767,8 +767,8 @@
         "nom": "Sasso",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     },
-    "la f\u00e8ve": {
-        "nom": "La F\u00e8ve",
+    "la fève": {
+        "nom": "La Fève",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cc0a6977ddba9529bd92e05b54284037/250x250-000000-80-0-0.jpg"
     },
     "8ruki": {
@@ -779,8 +779,8 @@
         "nom": "Freeze corleone",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cdac7dd9008bcce4c12809c93989e348/250x250-000000-80-0-0.jpg"
     },
-    "1plik\u00e9140": {
-        "nom": "1PLIK\u00c9140",
+    "1pliké140": {
+        "nom": "1PLIKÉ140",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/279733ee0bc5acb56db1d21becbd98ba/250x250-000000-80-0-0.jpg"
     },
     "max romeo": {
@@ -1071,8 +1071,8 @@
         "nom": "PNL",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/708510bac433647fb8f4f88964f5111e/250x250-000000-80-0-0.jpg"
     },
-    "dr m\u00f8b": {
-        "nom": "DR M\u00d8B",
+    "dr møb": {
+        "nom": "DR MØB",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2246b132a19841fb23d45315c9621f89/250x250-000000-80-0-0.jpg"
     },
     "y3llavision": {
@@ -1098,5 +1098,33 @@
     "kyle richh": {
         "nom": "Kyle Richh",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c1d647ec5b40a4669e752f0175c3fafb/250x250-000000-80-0-0.jpg"
+    },
+    "hld": {
+        "nom": "HLD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c1c8617e3bd328e4fc69c2baa7eb6a85/250x250-000000-80-0-0.jpg"
+    },
+    "dababy": {
+        "nom": "DaBaby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0570f0dde1e2a1121d8da9b2664a3ad7/250x250-000000-80-0-0.jpg"
+    },
+    "mensa": {
+        "nom": "Mensa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9a43e0c3ebc69e8eb6f3083c4f0130f/250x250-000000-80-0-0.jpg"
+    },
+    "3robi": {
+        "nom": "3robi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "srno": {
+        "nom": "SRNO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/44acecf68bddf7f638b90f001f66186d/250x250-000000-80-0-0.jpg"
+    },
+    "yorssy": {
+        "nom": "Yorssy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/acb219d2fe4432a4d5a76feac8fd31ff/250x250-000000-80-0-0.jpg"
+    },
+    "nouvelle école": {
+        "nom": "Nouvelle École",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7385c938bdbbc81c38a603fe7ec9180e/250x250-000000-80-0-0.jpg"
     }
 }
