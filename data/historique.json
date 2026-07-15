@@ -148,9 +148,32 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 15:20",
+                "track_id": "301TUdLZZvNPFplmnWh0kb",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 15:16",
+                "track_id": "0HdPPagwaQvf0NKdyJ4MkY",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 224.7
+            },
+            {
+                "date": "15/07/2026 15:14",
+                "track_id": "1sc6lYULJA1X0s1yT9r2p3",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 145.6
+            },
+            {
+                "date": "15/07/2026 15:11",
+                "track_id": "3i4iUba1YY8sZSdrrdXnVO",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
+            },
+            {
                 "date": "15/07/2026 15:08",
                 "track_id": "4QEg4vfzw0NwePfYMoJtwK",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 158.2
             },
             {
                 "date": "15/07/2026 15:05",
@@ -830,6 +853,36 @@
                 "track_id": "3J34JtfZNylVXSKN4TDf12",
                 "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 3m 37s",
                 "temps_ecoute_secondes": 217.2
+            }
+        ]
+    },
+    "1086742511361466370": {
+        "username": "iroflashgougougaga",
+        "display_name": "Iro   \u79c1\ud83d\udccd",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1086742511361466370/cd618bc37dcf21802459473ab2521d93.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "15/07/2026 15:20",
+                "track_id": "68GcenbAtV9PVfFLvBjLm8",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 15:18",
+                "track_id": "2XVDzp7duEMFKqLmcwydWM",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 114.6
+            },
+            {
+                "date": "15/07/2026 15:14",
+                "track_id": "68GcenbAtV9PVfFLvBjLm8",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 189.0
+            },
+            {
+                "date": "15/07/2026 15:11",
+                "track_id": "68GcenbAtV9PVfFLvBjLm8",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 34s",
+                "temps_ecoute_secondes": 34.6
             }
         ]
     }

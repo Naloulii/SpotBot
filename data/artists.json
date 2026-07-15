@@ -926,5 +926,13 @@
     "tkd": {
         "nom": "TKD",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5cff00bc8b19004e93300c4b3cb3024d/250x250-000000-80-0-0.jpg"
+    },
+    "marou chenko": {
+        "nom": "Marou Chenko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/607770b866bcf306782f1d83163aaf3b/250x250-000000-80-0-0.jpg"
+    },
+    "chems": {
+        "nom": "Chems",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/892bf6f2d6cc2b161c68ace41797bff0/250x250-000000-80-0-0.jpg"
     }
 }
