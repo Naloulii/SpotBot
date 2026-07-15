@@ -934,5 +934,9 @@
     "chems": {
         "nom": "Chems",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/892bf6f2d6cc2b161c68ace41797bff0/250x250-000000-80-0-0.jpg"
+    },
+    "lacrim": {
+        "nom": "Lacrim",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
