@@ -108,6 +108,30 @@
   .spot-mark.spin{ animation:spin 2.6s linear infinite; }
   @keyframes spin{ to{ transform:rotate(360deg); } }
 
+  .sync-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 16px;
+    background:var(--bg-card);
+    color:var(--text-dim);
+    border:1px solid var(--border-strong);
+    border-radius:999px;
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    letter-spacing:0.03em;
+    cursor:pointer;
+    transition:border-color .2s ease, color .2s ease, background .2s ease;
+    white-space:nowrap;
+  }
+  .sync-btn:hover{ border-color:var(--green); color:var(--text); background:var(--bg-card-hover); }
+  .sync-btn:disabled{ opacity:.7; cursor:default; }
+  .spin-icon{ animation:spin 1s linear infinite; }
+  @media (max-width:600px){
+    .sync-label{ display:none; }
+    .sync-btn{ padding:9px 11px; }
+  }
+
   .loading-screen{
     display:flex;
     flex-direction:column;
@@ -555,6 +579,32 @@
   }
   .link-icon:hover{ color:var(--green); }
 
+  .like-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--text-faint);
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    padding:4px;
+    margin-left:4px;
+    border-radius:50%;
+    transition:color .2s ease, transform .15s ease;
+  }
+  .like-btn:hover{ color:var(--pink); transform:scale(1.1); }
+  .like-btn.liked{ color:var(--pink); }
+  .like-btn:disabled{ opacity:.5; cursor:default; transform:none; }
+
+  .like-card-wrap{ position:relative; display:flex; }
+  .like-card-wrap .like-card{ flex:1; }
+  .like-card-remove{
+    position:absolute;
+    top:8px; right:8px;
+    background:rgba(11,11,11,0.75);
+    backdrop-filter:blur(4px);
+  }
+
   /* ---------- Favoris ---------- */
   .member-strip{
     display:flex;
@@ -845,6 +895,10 @@
     <span id="topbar-mark"></span>
     <span>SpotBot<small>Dashboard Live &amp; Stats</small></span>
   </a>
+  <button type="button" class="sync-btn" id="sync-btn" title="Force la synchronisation des données avec GitHub">
+    <span class="sync-icon" id="sync-icon"></span>
+    <span class="sync-label" id="sync-label">Synchroniser les données</span>
+  </button>
 </div>
 
 <main id="app" class="wrap"></main>
@@ -869,6 +923,9 @@ const DISCORD_CONFIG = {
   CLIENT_ID: "1388191386628526261",
   SCOPE: "identify"
 };
+
+// IDs Discord ayant un accès complet à tous les serveurs, même s'ils n'y sont pas membres
+const ADMIN_IDS = ["566899759013429259"]; // naloulii
 
 function getRedirectUri(){
   return window.location.origin + window.location.pathname;
@@ -903,27 +960,27 @@ function handleOAuthRedirect(){
     return;
   }
 
-  sessionStorage.setItem("discord_token", token);
-  sessionStorage.setItem("discord_token_expiry", String(Date.now() + expiresIn * 1000));
+  localStorage.setItem("discord_token", token);
+  localStorage.setItem("discord_token_expiry", String(Date.now() + expiresIn * 1000));
 }
 
 function getStoredToken(){
-  const token = sessionStorage.getItem("discord_token");
-  const expiry = parseInt(sessionStorage.getItem("discord_token_expiry") || "0", 10);
+  const token = localStorage.getItem("discord_token");
+  const expiry = parseInt(localStorage.getItem("discord_token_expiry") || "0", 10);
   if(!token || !expiry || Date.now() > expiry) return null;
   return token;
 }
 
 function logoutDiscord(){
-  sessionStorage.removeItem("discord_token");
-  sessionStorage.removeItem("discord_token_expiry");
-  sessionStorage.removeItem("discord_user_id");
+  localStorage.removeItem("discord_token");
+  localStorage.removeItem("discord_token_expiry");
+  localStorage.removeItem("discord_user_id");
   location.hash = "#/";
   route();
 }
 
 async function fetchDiscordUserId(token){
-  const cached = sessionStorage.getItem("discord_user_id");
+  const cached = localStorage.getItem("discord_user_id");
   if(cached) return cached;
 
   try{
@@ -936,7 +993,7 @@ async function fetchDiscordUserId(token){
       return null;
     }
     const user = await res.json();
-    sessionStorage.setItem("discord_user_id", user.id);
+    localStorage.setItem("discord_user_id", user.id);
     return user.id;
   }catch(e){
     return null;
@@ -945,6 +1002,65 @@ async function fetchDiscordUserId(token){
 
 function discordIconSVG(){
   return `<svg width="20" height="20" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>`;
+}
+
+/* ---------- Like / Dislike (appel au bot via son API web) ---------- */
+const API_CONFIG = {
+  // Remplace par l'URL publique de ton bot sur bot-hosting (celle qui pointe
+  // vers le port que le bot écoute, ex: https://xxxxx.bot-hosting.net:12345)
+  BASE_URL: "fi13.bot-hosting.cloud:26393"
+};
+
+function iconHeartOutline(){
+  return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>`;
+}
+function iconHeartFilled(){
+  return `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.3-8.1C.8 10.1 1.4 6.6 4.4 5A5.4 5.4 0 0 1 12 6.5 5.4 5.4 0 0 1 19.6 5c3 1.6 3.6 5.1 1.7 7.9C18.7 16.65 12 21 12 21z"/></svg>`;
+}
+
+async function toggleLike(titre, artiste, url, coverUrl, btn){
+  const token = getStoredToken();
+  if(!token){
+    alert("Connecte-toi avec Discord pour liker un titre.");
+    return null;
+  }
+  if(!titre || !artiste || !url){
+    return null;
+  }
+
+  if(btn) btn.disabled = true;
+  try{
+    const res = await fetch(`${API_CONFIG.BASE_URL}/api/like`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ access_token: token, titre, artiste, url, cover_url: coverUrl || null })
+    });
+
+    if(res.status === 401){
+      alert("Ta session Discord a expiré, reconnecte-toi.");
+      logoutDiscord();
+      return null;
+    }
+    if(!res.ok){
+      const err = await res.json().catch(() => ({}));
+      alert(err.error || "Impossible d'enregistrer ce like pour le moment.");
+      return null;
+    }
+
+    const data = await res.json();
+    if(btn){
+      btn.classList.toggle("liked", data.liked);
+      btn.innerHTML = data.liked ? iconHeartFilled() : iconHeartOutline();
+      btn.setAttribute("aria-pressed", String(data.liked));
+      btn.setAttribute("aria-label", data.liked ? "Retirer des favoris" : "Ajouter aux favoris");
+    }
+    return data;
+  }catch(e){
+    alert("Connexion au bot impossible. Vérifie qu'il est bien en ligne.");
+    return null;
+  }finally{
+    if(btn) btn.disabled = false;
+  }
 }
 
 const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/${CONFIG.BRANCH}/`;
@@ -986,6 +1102,55 @@ function spotMarkSVG(){
   </svg>`;
 }
 document.getElementById("topbar-mark").outerHTML = `<span class="spot-mark" id="topbar-mark">${spotMarkSVG()}</span>`;
+
+function iconSyncSVG(spin){
+  return `<svg class="${spin ? "spin-icon" : ""}" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>`;
+}
+document.getElementById("sync-icon").innerHTML = iconSyncSVG(false);
+
+document.getElementById("sync-btn").addEventListener("click", async () => {
+  const token = getStoredToken();
+  if(!token){
+    alert("Connecte-toi avec Discord pour synchroniser les données.");
+    return;
+  }
+
+  const btn = document.getElementById("sync-btn");
+  const icon = document.getElementById("sync-icon");
+  const label = document.getElementById("sync-label");
+
+  btn.disabled = true;
+  icon.innerHTML = iconSyncSVG(true);
+  label.textContent = "Synchronisation…";
+
+  try{
+    const res = await fetch(`${API_CONFIG.BASE_URL}/api/sync`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ access_token: token })
+    });
+
+    if(res.status === 401){
+      alert("Ta session Discord a expiré, reconnecte-toi.");
+      logoutDiscord();
+      return;
+    }
+    if(!res.ok){
+      const err = await res.json().catch(() => ({}));
+      alert(err.error || "La synchronisation a échoué.");
+      return;
+    }
+
+    label.textContent = "Synchronisé ✓";
+    route(); // recharge les données de la vue actuelle depuis GitHub
+    setTimeout(() => { label.textContent = "Synchroniser les données"; }, 2500);
+  }catch(e){
+    alert("Connexion au bot impossible. Vérifie qu'il est bien en ligne.");
+  }finally{
+    icon.innerHTML = iconSyncSVG(false);
+    btn.disabled = false;
+  }
+});
 
 window.addEventListener("hashchange", route);
 window.addEventListener("DOMContentLoaded", () => {
@@ -1054,7 +1219,9 @@ async function renderCrateView(){
   }));
 
   // On ne garde que les serveurs où l'utilisateur connecté apparaît dans member_ids
-  const guilds = allGuilds.filter(g => g.memberIds.includes(userId));
+  // (les admins voient tous les serveurs sans restriction)
+  const isAdmin = ADMIN_IDS.includes(userId);
+  const guilds = isAdmin ? allGuilds : allGuilds.filter(g => g.memberIds.includes(userId));
 
   app.innerHTML = `
     <section class="hero">
@@ -1121,7 +1288,7 @@ async function renderRecordView(guildId){
   const info = await fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {});
   const memberIds = new Set(info.member_ids || []);
 
-  if(!memberIds.has(userId)){
+  if(!ADMIN_IDS.includes(userId) && !memberIds.has(userId)){
     app.innerHTML = `
       <section class="hero">
         <p class="eyebrow">Accès refusé</p>
@@ -1194,8 +1361,9 @@ async function renderRecordView(guildId){
   });
 
   // On injecte le dictionnaire de musiques "tracks" dans toutes les méthodes dépendantes
-  mountHistorique(document.getElementById("panel-historique"), historique, artists, tracks);
-  mountFavoris(document.getElementById("panel-favoris"), likes, artists, tracks);
+  const monLikes = new Set((likesGlobal[userId]?.liste) || []);
+  mountHistorique(document.getElementById("panel-historique"), historique, artists, tracks, monLikes);
+  mountFavoris(document.getElementById("panel-favoris"), likes, artists, tracks, userId);
   mountTops(document.getElementById("panel-tops"), historique, artists, tracks);
 }
 
@@ -1223,7 +1391,7 @@ function renderClassement(stats){
 }
 
 /* ---------- Onglet Historique (Avec liaison tracks.json) ---------- */
-function mountHistorique(container, historique, artists, tracks){
+function mountHistorique(container, historique, artists, tracks, monLikes){
   const membres = Object.entries(historique).map(([uid, d]) => ({ uid, name: d.display_name || d.username || "Inconnu" }));
 
   let toutes = [];
@@ -1276,7 +1444,14 @@ function mountHistorique(container, historique, artists, tracks){
     const start = (page-1)*HIST_PER_PAGE;
     const pageItems = filtered.slice(start, start+HIST_PER_PAGE);
 
-    listEl.innerHTML = pageItems.map(e => historyRow(e, artists, tracks)).join("");
+    listEl.innerHTML = pageItems.map(e => historyRow(e, artists, tracks, monLikes)).join("");
+
+    listEl.querySelectorAll(".like-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const { titre, artiste, url, cover } = btn.dataset;
+        toggleLike(titre, artiste, url, cover || null, btn);
+      });
+    });
 
     pagEl.innerHTML = `
       <button class="page-btn" id="hist-prev" ${page<=1?"disabled":""}>&larr; Précédent</button>
@@ -1309,12 +1484,13 @@ function trackThumb(coverUrl, artisteStr, artists, size = "thumb", fallbackToArt
   return `<span class="${size}-fallback">🎵</span>`;
 }
 
-function historyRow(e, artists, tracks){
+function historyRow(e, artists, tracks, monLikes){
   // Résolution des informations à l'aide de tracks.json
   const m = tracks[e.track_id] || { titre: "Inconnu", artiste: "Inconnu", url: "", cover_url: null };
   const thumb = trackThumb(m.cover_url, m.artiste, artists);
   const isFull = (e.status || "").includes("🎉");
-  
+  const isLiked = monLikes ? monLikes.has(e.track_id) : false;
+
   return `
     <div class="history-row">
       ${thumb}
@@ -1327,6 +1503,14 @@ function historyRow(e, artists, tracks){
         <span class="history-date">${esc(e.date)}</span>
         <span class="status-pill ${isFull ? "full" : "partial"}">${esc(e.status || "")}</span>
       </div>
+      ${m.url ? `
+        <button type="button" class="like-btn ${isLiked ? "liked" : ""}"
+          aria-pressed="${isLiked}"
+          aria-label="${isLiked ? "Retirer des favoris" : "Ajouter aux favoris"}"
+          data-titre="${esc(m.titre)}" data-artiste="${esc(m.artiste)}"
+          data-url="${esc(m.url)}" data-cover="${esc(m.cover_url || "")}">
+          ${isLiked ? iconHeartFilled() : iconHeartOutline()}
+        </button>` : ""}
       ${m.url ? `<a class="link-icon" href="${esc(m.url)}" target="_blank" rel="noopener" aria-label="Ouvrir sur Spotify">${iconLink()}</a>` : ""}
     </div>`;
 }
@@ -1339,7 +1523,7 @@ function parseDateFR(str){
 }
 
 /* ---------- Onglet Favoris (Avec liaison tracks.json) ---------- */
-function mountFavoris(container, likes, artists, tracks){
+function mountFavoris(container, likes, artists, tracks, currentUserId){
   const membres = Object.entries(likes).filter(([,d]) => d.liste && d.liste.length);
 
   if(!membres.length){
@@ -1368,22 +1552,43 @@ function mountFavoris(container, likes, artists, tracks){
 
   function draw(uid){
     const listeIds = likesMap[uid]?.liste || [];
-    
+    const estMoi = uid === currentUserId;
+
     grid.innerHTML = listeIds.map(trackId => {
       // Résolution de chaque identifiant unique à partir de tracks.json
       const m = tracks[trackId];
       if(!m) return "";
-      
+
       const thumb = trackThumb(m.cover_url, m.artiste, artists);
       return `
-        <a class="like-card" href="${esc(m.url)}" target="_blank" rel="noopener">
-          ${thumb}
-          <div>
-            <div class="like-title">${esc(m.titre)}</div>
-            <div class="like-artist">${esc(m.artiste)}</div>
-          </div>
-        </a>`;
+        <div class="like-card-wrap" data-track-id="${esc(trackId)}">
+          <a class="like-card" href="${esc(m.url)}" target="_blank" rel="noopener">
+            ${thumb}
+            <div>
+              <div class="like-title">${esc(m.titre)}</div>
+              <div class="like-artist">${esc(m.artiste)}</div>
+            </div>
+          </a>
+          ${estMoi ? `
+            <button type="button" class="like-btn liked like-card-remove"
+              aria-label="Retirer des favoris">
+              ${iconHeartFilled()}
+            </button>` : ""}
+        </div>`;
     }).join("");
+
+    grid.querySelectorAll(".like-card-remove").forEach(btn => {
+      const wrap = btn.closest(".like-card-wrap");
+      const trackId = wrap.dataset.trackId;
+      const m = tracks[trackId];
+      btn.addEventListener("click", async () => {
+        const data = await toggleLike(m.titre, m.artiste, m.url, m.cover_url, btn);
+        if(data && !data.liked){
+          likesMap[uid].liste = likesMap[uid].liste.filter(id => id !== trackId);
+          draw(uid);
+        }
+      });
+    });
   }
 
   container.querySelectorAll(".member-chip").forEach(chip => {
