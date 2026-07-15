@@ -1238,5 +1238,21 @@
     "80purppp": {
         "nom": "80purppp",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d17bc43c8edbdc8346cc69eb7e6aa60d/250x250-000000-80-0-0.jpg"
+    },
+    "inoha": {
+        "nom": "INOHA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/783e7f77cce53962ab5fd202c5114a36/250x250-000000-80-0-0.jpg"
+    },
+    "cafuné": {
+        "nom": "Cafuné",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "surf curse": {
+        "nom": "Surf Curse",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/12552fd7f0d6a47c6eab6481ab9b1c2e/250x250-000000-80-0-0.jpg"
+    },
+    "bakar": {
+        "nom": "Bakar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
