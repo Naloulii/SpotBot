@@ -1658,5 +1658,17 @@
     "everybody loves an outlaw": {
         "nom": "Everybody Loves an Outlaw",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5fbba4fbeb5d9032ebc3914ebede8f83/250x250-000000-80-0-0.jpg"
+    },
+    "maes": {
+        "nom": "Maes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/79244e1d8a2d1ea4fea708caba8f0ddd/250x250-000000-80-0-0.jpg"
+    },
+    "werenoi": {
+        "nom": "Werenoi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9a941ffdfec123385b9e0b8b20f9ac0/250x250-000000-80-0-0.jpg"
+    },
+    "vacra": {
+        "nom": "Vacra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
