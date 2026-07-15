@@ -1210,5 +1210,33 @@
     "liana flores": {
         "nom": "Liana Flores",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d143136269524a54cf60412e0046728a/250x250-000000-80-0-0.jpg"
+    },
+    "eyedress": {
+        "nom": "Eyedress",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "the walters": {
+        "nom": "The Walters",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fbbab7483eaec12f5ae9147dcddc1b86/250x250-000000-80-0-0.jpg"
+    },
+    "she & him": {
+        "nom": "She & Him",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/461cf39d4e30a856b77462b2f16e28b8/250x250-000000-80-0-0.jpg"
+    },
+    "trippie redd": {
+        "nom": "Trippie Redd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c6a85a7936ea791fcd819ff60db3101/250x250-000000-80-0-0.jpg"
+    },
+    "diplo": {
+        "nom": "Diplo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "pinkpantheress": {
+        "nom": "PinkPantheress",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dbf10322b8c415487c9caa678f4d82f6/250x250-000000-80-0-0.jpg"
+    },
+    "80purppp": {
+        "nom": "80purppp",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d17bc43c8edbdc8346cc69eb7e6aa60d/250x250-000000-80-0-0.jpg"
     }
 }
