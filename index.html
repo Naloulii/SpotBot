@@ -1174,13 +1174,13 @@ async function renderCrateView(){
 
 function renderLoginGate(){
   app.innerHTML = `
-    <!-- Zone rayée complète (Hero) avec une bordure verte de 3px et un margin-top de 24px -->
+    <!-- Zone rayée complète (Hero) avec tout le contenu et la connexion à l'intérieur -->
     <section class="hero login-gate" style="border: 3px solid var(--green); border-radius: var(--radius-l); padding: 40px; box-shadow: 0 12px 40px -12px var(--green-glow); margin-top: 24px; margin-bottom: 48px; max-width: 100%; text-align: left;">
       <p class="eyebrow">Connexion requise</p>
       <h1 class="hero-title" style="margin-bottom: 32px;">Découvre<br><em>SpotBot</em></h1>
       
-      <!-- Contenu textuel -->
-      <div style="max-width: 640px;">
+      <!-- Contenu textuel détaillé -->
+      <div style="max-width: 640px; margin-bottom: 40px;">
         <p style="font-family: var(--font-body); font-size: 15px; line-height: 1.65; color: var(--text-dim); margin: 0 0 32px 0;">
           SpotBot est un bot Discord qui analyse, enregistre et partage l'activité Spotify des membres de tes serveurs. Ce dashboard te permet d'accéder à toutes les statistiques d'écoutes et de vibrer en continu avec ton groupe.
         </p>
@@ -1211,20 +1211,20 @@ function renderLoginGate(){
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Zone d'appel à l'action -->
-    <div style="margin-top: 40px; text-align: left; padding-left: 8px;">
-      <p style="font-family: var(--font-body); font-size: 14.5px; line-height: 1.5; color: var(--text-dim); margin: 0 0 24px 0; max-width: 490px;">
-        Prêt à rejoindre l'expérience ? Connecte-toi pour retrouver ton serveur ou ajoute directement le bot pour commencer à suivre tes écoutes.
-      </p>
-      <div class="button-group" style="margin-top: 0;">
-        <a class="discord-login-btn" href="${discordLoginUrl()}">${discordIconSVG()} Se connecter avec Discord</a>
-        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">
-          <span style="font-weight: bold; font-size: 16px; margin-right: 4px;">+</span> Ajouter à mon serveur
-        </a>
+      <!-- Ligne de séparation interne -->
+      <div style="border-top: 1px solid var(--border); padding-top: 32px; max-width: 640px;">
+        <p style="font-family: var(--font-body); font-size: 14.5px; line-height: 1.5; color: var(--text-dim); margin: 0 0 24px 0; max-width: 490px;">
+          Prêt à rejoindre l'expérience ? Connecte-toi pour retrouver ton serveur ou ajoute directement le bot pour commencer à suivre tes écoutes.
+        </p>
+        <div class="button-group" style="margin-top: 0;">
+          <a class="discord-login-btn" href="${discordLoginUrl()}">${discordIconSVG()} Se connecter avec Discord</a>
+          <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">
+            <span style="font-weight: bold; font-size: 16px; margin-right: 4px;">+</span> Ajouter à mon serveur
+          </a>
+        </div>
       </div>
-    </div>`;
+    </section>`;
 }
 function sleeveCard(g){
   const label = g.icon_url
