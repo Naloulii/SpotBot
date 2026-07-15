@@ -1087,7 +1087,10 @@ window.addEventListener("DOMContentLoaded", () => {
 function route(){
   const hash = location.hash.replace(/^#\/?/, "");
   if(hash.startsWith("guild/")){
-    renderRecordView(hash.split("/")[1]);
+    const parts = hash.split("/");
+    const guildId = parts[1];
+    const tab = parts[2] || "classement";
+    renderRecordView(guildId, tab);
   } else {
     renderCrateView();
   }
@@ -1197,7 +1200,10 @@ function emptyState(){
 /* =========================================================
    VUE 2 — LA FICHE SERVEUR (Jointure dynamique via tracks.json)
    ========================================================= */
-async function renderRecordView(guildId){
+async function renderRecordView(guildId, initialTab = "classement"){
+  const validTabs = ["classement", "historique", "favoris", "tops"];
+  if(!validTabs.includes(initialTab)) initialTab = "classement";
+
   const token = getStoredToken();
   if(!token){
     renderLoginGate();
@@ -1265,16 +1271,16 @@ async function renderRecordView(guildId){
     </header>
 
     <nav class="tabs">
-      <button class="tab-btn active" data-tab="classement"><span class="num">01</span>Classement</button>
-      <button class="tab-btn" data-tab="historique"><span class="num">02</span>Historique</button>
-      <button class="tab-btn" data-tab="favoris"><span class="num">03</span>Favoris</button>
-      <button class="tab-btn" data-tab="tops"><span class="num">04</span>Tops</button>
+      <button class="tab-btn ${initialTab==="classement"?"active":""}" data-tab="classement"><span class="num">01</span>Classement</button>
+      <button class="tab-btn ${initialTab==="historique"?"active":""}" data-tab="historique"><span class="num">02</span>Historique</button>
+      <button class="tab-btn ${initialTab==="favoris"?"active":""}" data-tab="favoris"><span class="num">03</span>Favoris</button>
+      <button class="tab-btn ${initialTab==="tops"?"active":""}" data-tab="tops"><span class="num">04</span>Tops</button>
     </nav>
 
-    <section class="panel active" id="panel-classement">${renderClassement(stats)}</section>
-    <section class="panel" id="panel-historique"></section>
-    <section class="panel" id="panel-favoris"></section>
-    <section class="panel" id="panel-tops"></section>
+    <section class="panel ${initialTab==="classement"?"active":""}" id="panel-classement">${renderClassement(stats)}</section>
+    <section class="panel ${initialTab==="historique"?"active":""}" id="panel-historique"></section>
+    <section class="panel ${initialTab==="favoris"?"active":""}" id="panel-favoris"></section>
+    <section class="panel ${initialTab==="tops"?"active":""}" id="panel-tops"></section>
   `;
 
   document.querySelectorAll(".tab-btn").forEach(btn => {
@@ -1283,6 +1289,8 @@ async function renderRecordView(guildId){
       document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
       btn.classList.add("active");
       document.getElementById(`panel-${btn.dataset.tab}`).classList.add("active");
+      // On mémorise l'onglet actif dans l'URL pour qu'un refresh ou une synchro y reste
+      history.replaceState(null, "", `#/guild/${guildId}/${btn.dataset.tab}`);
     });
   });
 
@@ -1480,7 +1488,6 @@ function mountFavoris(container, likes, artists, tracks, currentUserId){
               <div class="like-artist">${esc(m.artiste)}</div>
             </div>
           </a>
-          <span class="like-btn liked" aria-label="Titre liké">${iconHeartFilled()}</span>
         </div>`;
     }).join("");
   }
