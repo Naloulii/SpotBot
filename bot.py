@@ -1095,7 +1095,7 @@ class TicketCloseView(discord.ui.View):
                     description="Votre ticket a été marqué comme résolu et fermé par notre administrateur. N'hésitez pas à renvoyer un message si vous avez une autre question !",
                     color=discord.Color.red()
                 )
-                await user.send(embed_ferme)
+                await user.send(embed=embed_ferme)
         except Exception as e:
             print(f"Impossible de notifier l'utilisateur de la fermeture : {e}")
 
