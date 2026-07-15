@@ -1194,5 +1194,13 @@
     "garçon printemps": {
         "nom": "Garçon Printemps",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9b82ca26fdc140dd910a318b76204d39/250x250-000000-80-0-0.jpg"
+    },
+    "s0rrow": {
+        "nom": "s0rrow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f07759189930edba6db16138b0f66088/250x250-000000-80-0-0.jpg"
+    },
+    "yopo": {
+        "nom": "Yopo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25ca637b7d0569a80c01ef75594424b3/250x250-000000-80-0-0.jpg"
     }
 }
