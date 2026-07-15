@@ -948,18 +948,25 @@ function emptyState(){
 async function renderRecordView(guildId){
   loadingScreen("Chargement des écoutes…");
 
-  // likes.json est désormais un fichier global (un like ne dépend pas du serveur),
-  // donc on le charge à la racine puis on ne garde que les membres qui ont une
-  // trace d'écoute dans CE serveur (présents dans historique.json du serveur).
-  const [info, stats, likesGlobal, historique, artists, tracks] = await Promise.all([
+  // likes.json, stats.json et historique.json sont désormais des fichiers CENTRAUX
+  // (un seul fichier pour tous les serveurs, à la racine de data/), pour qu'un membre
+  // présent sur plusieurs serveurs SpotBot ne soit compté/dupliqué qu'une seule fois.
+  // On les filtre ici avec member_ids (liste des membres actuels de CE serveur, fournie
+  // par guild_info.json) pour n'afficher que les gens de ce serveur.
+  const [info, statsGlobal, likesGlobal, historiqueGlobal, artists, tracks] = await Promise.all([
     fetchJSON(`${RAW_BASE}data/${guildId}/guild_info.json`, {}),
-    fetchJSON(`${RAW_BASE}data/${guildId}/stats.json`, {}),
+    fetchJSON(`${RAW_BASE}data/stats.json`, {}),
     fetchJSON(`${RAW_BASE}data/likes.json`, {}),
-    fetchJSON(`${RAW_BASE}data/${guildId}/historique.json`, {}),
+    fetchJSON(`${RAW_BASE}data/historique.json`, {}),
     fetchJSON(`${RAW_BASE}data/artists.json`, {}),
     fetchJSON(`${RAW_BASE}data/tracks.json`, {}) // <--- Cache centralisé chargé ici !
   ]);
 
+  const memberIds = new Set(info.member_ids || []);
+  const appartientAuServeur = ([uid]) => memberIds.has(uid);
+
+  const stats = Object.fromEntries(Object.entries(statsGlobal).filter(appartientAuServeur));
+  const historique = Object.fromEntries(Object.entries(historiqueGlobal).filter(appartientAuServeur));
   const likes = Object.fromEntries(
     Object.entries(likesGlobal).filter(([uid]) => uid in historique)
   );

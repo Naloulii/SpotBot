@@ -86,6 +86,52 @@ os.makedirs(DATA_DIR, exist_ok=True)
 ecoutes_en_cours = {}   
 verrous_anti_spam = {}  
 
+# Les compteurs/historique sont désormais des fichiers CENTRAUX partagés par tous les
+# serveurs. Si un même membre est présent sur plusieurs serveurs ayant SpotBot configuré,
+# Discord déclenche on_presence_update séparément pour chaque serveur pour la MÊME écoute
+# réelle. Ce dictionnaire retient, par utilisateur (et non par serveur), quel serveur a
+# "la main" sur l'enregistrement (historique + stats) de l'écoute en cours, pour qu'elle
+# ne soit comptée qu'une seule fois. Chaque serveur continue néanmoins de publier son
+# propre message d'activité dans son propre salon, indépendamment de cette propriété.
+pistes_globales = {}
+
+def _revendiquer_proprietaire_ecoute(user_id, guild_id, track_id, start_time, duration_secondes):
+    """Renvoie True si CE serveur doit enregistrer (historique/stats) l'écoute en cours
+    pour cet utilisateur. Purement synchrone (pas de await) pour rester atomique face
+    aux autres coroutines de la boucle asyncio."""
+    existant = pistes_globales.get(user_id)
+    if existant and existant["track_id"] == track_id:
+        return existant["guild_proprietaire"] == guild_id
+    pistes_globales[user_id] = {
+        "track_id": track_id,
+        "guild_proprietaire": guild_id,
+        "start_time": start_time,
+        "duration": duration_secondes,
+    }
+    return True
+
+def _est_proprietaire_ecoute(user_id, guild_id, track_id):
+    existant = pistes_globales.get(user_id)
+    return bool(existant) and existant["track_id"] == track_id and existant["guild_proprietaire"] == guild_id
+
+def _liberer_ecoute(user_id, guild_id, track_id):
+    existant = pistes_globales.get(user_id)
+    if existant and existant["track_id"] == track_id and existant["guild_proprietaire"] == guild_id:
+        del pistes_globales[user_id]
+
+# Verrou par utilisateur (pas par guilde) : si un même membre est traité quasi
+# simultanément par deux serveurs (deux évènements Discord distincts pour la même
+# écoute réelle), ce verrou sérialise leur traitement pour que la revendication de
+# propriété ci-dessus reste fiable même avec des opérations réseau (await) entre-temps.
+_verrous_par_utilisateur = {}
+
+def _verrou_utilisateur(user_id):
+    verrou = _verrous_par_utilisateur.get(user_id)
+    if verrou is None:
+        verrou = asyncio.Lock()
+        _verrous_par_utilisateur[user_id] = verrou
+    return verrou
+
 GITHUB_REPO_URL = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git"
 git_dir = os.path.join(BASE_DIR, ".git")
 
@@ -167,6 +213,10 @@ async def sauvegarde_periodique_github():
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
 TRACKS_FILE = os.path.join(DATA_DIR, "tracks.json")
 LIKES_FILE = os.path.join(DATA_DIR, "likes.json")  # Global : les likes d'un membre sont les mêmes quel que soit le serveur
+
+# Fichiers centraux (un seul fichier par catégorie, à la racine de data, regroupant tous les serveurs)
+HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
+STATS_FILE = os.path.join(DATA_DIR, "stats.json")
 _chemins_guildes = {}
 
 def nettoyer_nom_dossier(nom):
@@ -230,16 +280,23 @@ def assurer_dossier_guilde(guild):
         })
 
     try:
-        info_path = os.path.join(dossier, "guild_info.json")
-        _ecrire_json_atomique(info_path, {
-            "id": guild_id,
-            "name": guild.name,
-            "icon_url": str(guild.icon.url) if guild.icon else None
-        })
+        ecrire_guild_info(guild)
     except Exception:
         pass
 
     return nouveau
+
+def ecrire_guild_info(guild):
+    """Écrit guild_info.json avec, en plus des infos d'affichage, la liste des membres
+    actuels de la guilde (member_ids). Le dashboard s'en sert pour filtrer les fichiers
+    centralisés stats.json/historique.json et n'afficher que les membres de CE serveur."""
+    info_path = os.path.join(chemin_dossier_guilde(str(guild.id)), "guild_info.json")
+    _ecrire_json_atomique(info_path, {
+        "id": str(guild.id),
+        "name": guild.name,
+        "icon_url": str(guild.icon.url) if guild.icon else None,
+        "member_ids": [str(m.id) for m in guild.members if not m.bot]
+    })
 
 # ==========================================
 #   ÉCRITURE ATOMIQUE (anti-corruption JSON)
@@ -252,26 +309,28 @@ def assurer_dossier_guilde(guild):
 # un état intermédiaire.
 _verrou_fichiers = threading.Lock()
 
-def _ecrire_json_atomique(chemin, data):
+def _ecrire_json_atomique_sans_verrou(chemin, data):
     dossier = os.path.dirname(chemin) or "."
-    with _verrou_fichiers:
-        fd, chemin_temp = tempfile.mkstemp(dir=dossier, prefix=".tmp_", suffix=".json")
-        try:
-            with os.fdopen(fd, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=4)
-            os.replace(chemin_temp, chemin)
-        except Exception:
-            try:
-                os.remove(chemin_temp)
-            except OSError:
-                pass
-            raise
-
-def _lire_json_securise(chemin, valeur_defaut):
+    fd, chemin_temp = tempfile.mkstemp(dir=dossier, prefix=".tmp_", suffix=".json")
     try:
-        with _verrou_fichiers:
-            with open(chemin, "r", encoding="utf-8") as f:
-                return json.load(f)
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4)
+        os.replace(chemin_temp, chemin)
+    except Exception:
+        try:
+            os.remove(chemin_temp)
+        except OSError:
+            pass
+        raise
+
+def _ecrire_json_atomique(chemin, data):
+    with _verrou_fichiers:
+        _ecrire_json_atomique_sans_verrou(chemin, data)
+
+def _lire_json_securise_sans_verrou(chemin, valeur_defaut):
+    try:
+        with open(chemin, "r", encoding="utf-8") as f:
+            return json.load(f)
     except FileNotFoundError:
         return valeur_defaut
     except json.JSONDecodeError:
@@ -280,12 +339,42 @@ def _lire_json_securise(chemin, valeur_defaut):
         print(f"⚠️ Fichier JSON illisible, valeur par défaut utilisée : {chemin}")
         return valeur_defaut
 
+def _lire_json_securise(chemin, valeur_defaut):
+    with _verrou_fichiers:
+        return _lire_json_securise_sans_verrou(chemin, valeur_defaut)
+
 # Chargeurs & Sauvegardes
+def _charger_flat_filtre_par_guilde(chemin, guild_id):
+    """Charge un fichier central plat (user_id -> data) et ne renvoie que les entrées
+    des membres actuellement présents sur cette guilde. Si la guilde n'est pas encore
+    en cache (ex: tâche de fond très tôt au démarrage), renvoie tout le fichier."""
+    toutes = _lire_json_securise(chemin, {})
+    guild = bot.get_guild(int(guild_id))
+    if guild is None:
+        return dict(toutes)
+    membres_ids = {str(m.id) for m in guild.members}
+    return {uid: data for uid, data in toutes.items() if uid in membres_ids}
+
+def _sauvegarder_flat_fusionne_par_guilde(chemin, guild_id, sous_dict):
+    """Fusionne sous_dict (les entrées d'une guilde) dans le fichier central plat.
+    Les membres actuels de la guilde absents de sous_dict sont retirés du fichier
+    (utile pour un reset : passer {} retire les entrées des membres de cette guilde)."""
+    with _verrou_fichiers:
+        toutes = _lire_json_securise_sans_verrou(chemin, {})
+        guild = bot.get_guild(int(guild_id))
+        if guild is not None:
+            membres_ids = {str(m.id) for m in guild.members}
+            for uid in list(toutes.keys()):
+                if uid in membres_ids and uid not in sous_dict:
+                    del toutes[uid]
+        toutes.update(sous_dict)
+        _ecrire_json_atomique_sans_verrou(chemin, toutes)
+
 def charger_stats(guild_id):
-    return _lire_json_securise(chemin_fichier_guilde(guild_id, "stats.json"), {})
+    return _charger_flat_filtre_par_guilde(STATS_FILE, guild_id)
 
 def sauvegarder_stats(guild_id, stats):
-    _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "stats.json"), stats)
+    _sauvegarder_flat_fusionne_par_guilde(STATS_FILE, guild_id, stats)
 
 def charger_likes():
     return _lire_json_securise(LIKES_FILE, {})
@@ -303,10 +392,16 @@ def sauvegarder_config(guild_id, config):
     _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "config.json"), config)
 
 def charger_historique(guild_id):
-    return _lire_json_securise(chemin_fichier_guilde(guild_id, "historique.json"), {})
+    return _charger_flat_filtre_par_guilde(HISTORIQUE_FILE, guild_id)
 
 def sauvegarder_historique(guild_id, historique):
-    _ecrire_json_atomique(chemin_fichier_guilde(guild_id, "historique.json"), historique)
+    _sauvegarder_flat_fusionne_par_guilde(HISTORIQUE_FILE, guild_id, historique)
+
+def chemin_archive_semaine(num_semaine):
+    return os.path.join(DATA_DIR, f"stats_week_{num_semaine}.json")
+
+def sauvegarder_archive_semaine_guilde(num_semaine, guild_id, stats):
+    _sauvegarder_flat_fusionne_par_guilde(chemin_archive_semaine(num_semaine), guild_id, stats)
 
 def charger_artistes_cache():
     return _lire_json_securise(ARTISTS_FILE, {})
@@ -551,26 +646,37 @@ def construire_embed_classement(stats, titre="🏆 Classement de la Semaine Dern
     return embed
 
 def trouver_derniere_archive_top(guild_id):
-    dossier = chemin_dossier_guilde(guild_id)
-    meilleure = None
     try:
-        entrees = os.listdir(dossier)
+        entrees = os.listdir(DATA_DIR)
     except FileNotFoundError: return None
 
+    archives = []
     for nom_fichier in entrees:
         correspondance = re.match(r"^stats_week_(\d+)_(\d+)\.json$", nom_fichier)
         if not correspondance: continue
         semaine = int(correspondance.group(1))
         annee = int(correspondance.group(2))
-        chemin = os.path.join(dossier, nom_fichier)
-        if meilleure is None or (annee, semaine) > (meilleure[0], meilleure[1]):
-            meilleure = (annee, semaine, chemin)
+        archives.append((annee, semaine, os.path.join(DATA_DIR, nom_fichier)))
 
-    if meilleure is None: return None
-    annee, semaine, chemin = meilleure
-    try:
-        with open(chemin, "r") as f: return json.load(f), semaine, annee
-    except Exception: return None
+    archives.sort(reverse=True)
+
+    guild = bot.get_guild(int(guild_id))
+    membres_ids = {str(m.id) for m in guild.members} if guild else None
+
+    for annee, semaine, chemin in archives:
+        try:
+            with open(chemin, "r", encoding="utf-8") as f:
+                toutes = json.load(f)
+        except Exception:
+            continue
+        stats_guilde = (
+            {uid: data for uid, data in toutes.items() if uid in membres_ids}
+            if membres_ids is not None else toutes
+        )
+        if stats_guilde:
+            return stats_guilde, semaine, annee
+
+    return None
 
 # Tâche Hebdomadaire
 @tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=PARIS_TZ))
@@ -604,8 +710,7 @@ async def classement_hebdomadaire_auto():
             except Exception: pass
 
         num_semaine = datetime.datetime.now(PARIS_TZ).strftime("%V_%Y")
-        archive_file = chemin_fichier_guilde(guild_id, f"stats_week_{num_semaine}.json")
-        _ecrire_json_atomique(archive_file, stats)
+        sauvegarder_archive_semaine_guilde(num_semaine, guild_id, stats)
         sauvegarder_stats(guild_id, {})
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
@@ -760,19 +865,27 @@ async def verifier_presence_spotify(membre):
             embed.add_field(name="Progression", value=barre, inline=False)
             embed.add_field(name="Écouter sur Spotify", value=f"[Clique ici]({spotify_activity.track_url})", inline=False)
 
-            if cle in ecoutes_en_cours:
-                infos_anciennes = ecoutes_en_cours[cle]
-                now_utc = datetime.datetime.now(datetime.timezone.utc)
-                temps_ecoule = (now_utc - infos_anciennes["start_time"]).total_seconds()
-                
-                mettre_a_jour_historique_fin(guild_id, membre, infos_anciennes["track_id"], temps_ecoule, infos_anciennes["duration"])
+            async with _verrou_utilisateur(user_id):
+                if cle in ecoutes_en_cours:
+                    infos_anciennes = ecoutes_en_cours[cle]
+                    now_utc = datetime.datetime.now(datetime.timezone.utc)
+                    temps_ecoule = (now_utc - infos_anciennes["start_time"]).total_seconds()
 
-                try:
-                    ancien_msg = infos_anciennes.get("message_obj") or await salon.fetch_message(infos_anciennes["message_id"])
-                    await ancien_msg.delete()
-                except Exception: pass
+                    if _est_proprietaire_ecoute(user_id, guild_id, infos_anciennes["track_id"]):
+                        mettre_a_jour_historique_fin(guild_id, membre, infos_anciennes["track_id"], temps_ecoule, infos_anciennes["duration"])
+                        _liberer_ecoute(user_id, guild_id, infos_anciennes["track_id"])
 
-            await asyncio.to_thread(ajouter_a_l_historique, guild_id, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id, cover_url)
+                    try:
+                        ancien_msg = infos_anciennes.get("message_obj") or await salon.fetch_message(infos_anciennes["message_id"])
+                        await ancien_msg.delete()
+                    except Exception: pass
+
+                nous_sommes_proprietaire = _revendiquer_proprietaire_ecoute(
+                    user_id, guild_id, spotify_activity.track_id,
+                    spotify_activity.start, spotify_activity.duration.total_seconds()
+                )
+            if nous_sommes_proprietaire:
+                await asyncio.to_thread(ajouter_a_l_historique, guild_id, membre, spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, spotify_activity.track_id, cover_url)
 
             view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, cover_url)
             message = await salon.send(embed=embed, view=view)
@@ -795,7 +908,10 @@ async def verifier_presence_spotify(membre):
         temps_ecoule = (now_utc - infos["start_time"]).total_seconds()
         duree_totale = infos["duration"]
 
-        mettre_a_jour_historique_fin(guild_id, membre, infos["track_id"], temps_ecoule, duree_totale)
+        async with _verrou_utilisateur(user_id):
+            if _est_proprietaire_ecoute(user_id, guild_id, infos["track_id"]):
+                mettre_a_jour_historique_fin(guild_id, membre, infos["track_id"], temps_ecoule, duree_totale)
+                _liberer_ecoute(user_id, guild_id, infos["track_id"])
 
         try:
             msg_a_supprimer = infos.get("message_obj") or await salon.fetch_message(infos["message_id"])
@@ -830,13 +946,15 @@ class LikeView(discord.ui.View):
             await interaction.response.send_message(f"💔 Retiré de tes titres likés : **{self.titre}**", ephemeral=True)
 
 
-async def finaliser_ecoutes_perimees(guild):
+async def finaliser_ecoutes_perimees(guild, deja_traites=None):
     guild_id = str(guild.id)
     historique = charger_historique(guild_id)
     if not historique: return
 
     modifie = False
     for user_id, data in historique.items():
+        if deja_traites is not None and user_id in deja_traites: continue
+
         ecoutes = data.get("ecoutes", [])
         if not ecoutes or ecoutes[0].get("status") != "En cours...": continue
 
@@ -858,6 +976,8 @@ async def finaliser_ecoutes_perimees(guild):
         modifie = True
         if membre:
             enregistrer_stat_membre(guild_id, membre)
+        if deja_traites is not None:
+            deja_traites.add(user_id)
 
     if modifie:
         sauvegarder_historique(guild_id, historique)
@@ -865,9 +985,12 @@ async def finaliser_ecoutes_perimees(guild):
 
 @tasks.loop(minutes=5)
 async def verifier_ecoutes_perimees():
+    # Un même utilisateur (fichiers désormais centraux) peut apparaître dans plusieurs
+    # guildes : deja_traites garantit qu'il n'est finalisé/compté qu'une seule fois par passage.
+    deja_traites = set()
     for guild in bot.guilds:
         try:
-            await finaliser_ecoutes_perimees(guild)
+            await finaliser_ecoutes_perimees(guild, deja_traites)
         except Exception as e:
             print(f"⚠️ [{guild.name}] Erreur vérification écoutes : {e}")
 
@@ -1032,12 +1155,18 @@ async def on_ready():
         print("✅ [Migration] Tous les fichiers JSON de tous les serveurs sont déjà normalisés et sains.")
 
     # --- ÉTAPE 2 : CHARGEMENT DES CONFIGURATIONS SANS SUPPRIMER LES BIENVENUS/MESSAGES ÉPINGLÉS ---
+    deja_traites_demarrage = set()
     for guild in bot.guilds:
         assurer_dossier_guilde(guild)
         guild_id = str(guild.id)
 
         try:
-            await finaliser_ecoutes_perimees(guild)
+            ecrire_guild_info(guild)
+        except Exception as e:
+            print(f"⚠️ [{guild.name}] Impossible de rafraîchir guild_info.json : {e}")
+
+        try:
+            await finaliser_ecoutes_perimees(guild, deja_traites_demarrage)
         except Exception as e:
             print(f"⚠️ [{guild.name}] Erreur réparation écoutes bloquées : {e}")
 
@@ -1091,17 +1220,26 @@ async def on_ready():
 
 @bot.event
 async def on_guild_update(before, after):
-    if before.name != after.name:
+    if before.name != after.name or before.icon != after.icon:
         resoudre_dossier_guilde(after, forcer=True)
         try:
-            info_path = os.path.join(chemin_dossier_guilde(str(after.id)), "guild_info.json")
-            _ecrire_json_atomique(info_path, {
-                "id": str(after.id),
-                "name": after.name,
-                "icon_url": str(after.icon.url) if after.icon else None
-            })
+            ecrire_guild_info(after)
         except Exception: pass
         await asyncio.to_thread(_sauvegarde_github_bloquante)
+
+
+@bot.event
+async def on_member_join(member):
+    try:
+        ecrire_guild_info(member.guild)
+    except Exception: pass
+
+
+@bot.event
+async def on_member_remove(member):
+    try:
+        ecrire_guild_info(member.guild)
+    except Exception: pass
 
 
 @bot.event
@@ -1172,6 +1310,11 @@ async def on_guild_join(guild):
         title="🎵 Merci d'avoir ajouté SpotBot ! 🤖",
         description=description,
         color=discord.Color.from_rgb(30, 215, 96)
+    )
+    embed_setup.add_field(
+        name="🆘 Besoin d'aide ?",
+        value="En cas de problème, il te suffit d'envoyer un MP à ce bot pour ouvrir un ticket support.",
+        inline=False
     )
 
     dm_envoye = False
