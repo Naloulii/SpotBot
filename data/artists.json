@@ -954,5 +954,13 @@
     "kissed": {
         "nom": "kissed",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ed85329f61773c02c87c4652a0b9c36a/250x250-000000-80-0-0.jpg"
+    },
+    "ninho": {
+        "nom": "Ninho",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7601c5c0e2bd16cb585898316fd0dfec/250x250-000000-80-0-0.jpg"
+    },
+    "kalash": {
+        "nom": "Kalash",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b3f5e700735ab156511ec65e9c164fe0/250x250-000000-80-0-0.jpg"
     }
 }

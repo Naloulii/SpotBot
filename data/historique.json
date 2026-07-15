@@ -148,9 +148,20 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/566899759013429259/a3081ae2664af93bb9a1676fc6207a0b.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 15:37",
+                "track_id": "5u2po98hoyLuMNiRSLDqr7",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 15:33",
+                "track_id": "1sc6lYULJA1X0s1yT9r2p3",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 144.5
+            },
+            {
                 "date": "15/07/2026 15:30",
                 "track_id": "2rlBgrrTvt07NsAODtmCSa",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
             },
             {
                 "date": "15/07/2026 15:28",
@@ -878,9 +889,27 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/1086742511361466370/cd618bc37dcf21802459473ab2521d93.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 15:36",
+                "track_id": "2mbRXmjnxRKP5iizFBoiLL",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 15:34",
+                "track_id": "6ouXj9O9Gs0AKoZyoOd2zQ",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 122.7
+            },
+            {
+                "date": "15/07/2026 15:32",
+                "track_id": "1xtFIYetWrevESHahdyZGe",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 164.7
+            },
+            {
                 "date": "15/07/2026 15:29",
                 "track_id": "5GZPHysxDmjSAtXN87D78S",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 188.0
             },
             {
                 "date": "15/07/2026 15:28",
