@@ -1358,5 +1358,37 @@
     "da99y": {
         "nom": "da99y",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/aae9743252282aa121b18ad68e011ea8/250x250-000000-80-0-0.jpg"
+    },
+    "ezekiel": {
+        "nom": "Ezekiel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/403c05dde050772ec7a505245a5470f3/250x250-000000-80-0-0.jpg"
+    },
+    "skima": {
+        "nom": "Skima",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7793e88345d4c4cc875dd02ce0d3f651/250x250-000000-80-0-0.jpg"
+    },
+    "chris grey": {
+        "nom": "Chris Grey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6ad401809e385b77ab976d184215c533/250x250-000000-80-0-0.jpg"
+    },
+    "saïf": {
+        "nom": "Saïf",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ce23fc0a3302d65712df2dcfeef5467e/250x250-000000-80-0-0.jpg"
+    },
+    "népal": {
+        "nom": "Népal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "vyrval": {
+        "nom": "vyrval",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8cc44a218da9241bb2cd3bb06abf474/250x250-000000-80-0-0.jpg"
+    },
+    "renewwed": {
+        "nom": "renewwed",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f4cb4980fb81338e289208f88788ccfa/250x250-000000-80-0-0.jpg"
+    },
+    "capella": {
+        "nom": "capella",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/33c6ad85b1651a9e8a5becb9948e09c8/250x250-000000-80-0-0.jpg"
     }
 }
