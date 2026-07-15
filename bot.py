@@ -610,6 +610,22 @@ async def classement_hebdomadaire_auto():
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
+def construire_lien_dashboard(guild_ou_id):
+    """Construit l'URL du dashboard au format {nom_nettoyé}_{id}, identique au nom des dossiers de données."""
+    if hasattr(guild_ou_id, "id"):
+        guild = guild_ou_id
+        guild_id = guild.id
+    else:
+        guild_id = guild_ou_id
+        guild = bot.get_guild(int(guild_id))
+
+    if guild:
+        identifiant = f"{nettoyer_nom_dossier(guild.name)}_{guild_id}"
+    else:
+        identifiant = str(guild_id)
+
+    return f"{DASHBOARD_URL}/#/guild/{identifiant}"
+
 def generer_embed_aide(guild_id):
     embed = discord.Embed(
         title="🎵 Bienvenue sur SpotBot ! 🤖",
@@ -626,7 +642,7 @@ def generer_embed_aide(guild_id):
         value="• Clique sur le bouton **🤍 Like** sous une fiche pour la sauvegarder.\n• Clique sur **[Clique ici]** pour l'ouvrir sur Spotify.\n• *Pour obtenir un point au Top, tu dois écouter au moins 96% d'un morceau !*",
         inline=False
     )
-    lien_dashboard_serveur = f"{DASHBOARD_URL}/#/guild/{guild_id}"
+    lien_dashboard_serveur = construire_lien_dashboard(guild_id)
     embed.add_field(
         name="📊 Dashboard complet :",
         value=f"Le classement, tes favoris et ton historique complet sont consultables uniquement sur le dashboard : [Clique ici]({lien_dashboard_serveur})",
@@ -1131,7 +1147,7 @@ async def on_guild_join(guild):
             print(f"⚠️ Impossible de récupérer le propriétaire ({guild.owner_id}) : {e}")
 
     dashboard_view = discord.ui.View()
-    dashboard_view.add_item(discord.ui.Button(label="Ouvrir le Dashboard", url=f"{DASHBOARD_URL}/#/guild/{guild.id}"))
+    dashboard_view.add_item(discord.ui.Button(label="Ouvrir le Dashboard", url=construire_lien_dashboard(guild)))
 
     if salon_auto:
         description = (
