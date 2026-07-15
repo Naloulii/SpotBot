@@ -420,6 +420,12 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/968499201967276092/f6b84cec55083d8823ab0cb57b4a36cb.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 13:07",
+                "track_id": "4cgjA7B4fJBHyB9Ya2bu0t",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 245.8
+            },
+            {
                 "date": "15/07/2026 11:40",
                 "track_id": "4cgjA7B4fJBHyB9Ya2bu0t",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
