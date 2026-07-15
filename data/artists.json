@@ -766,5 +766,21 @@
     "sasso": {
         "nom": "Sasso",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "la f\u00e8ve": {
+        "nom": "La F\u00e8ve",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc0a6977ddba9529bd92e05b54284037/250x250-000000-80-0-0.jpg"
+    },
+    "8ruki": {
+        "nom": "8ruki",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/67d612f7723f475dee55ec86479080ee/250x250-000000-80-0-0.jpg"
+    },
+    "freeze corleone": {
+        "nom": "Freeze corleone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cdac7dd9008bcce4c12809c93989e348/250x250-000000-80-0-0.jpg"
+    },
+    "1plik\u00e9140": {
+        "nom": "1PLIK\u00c9140",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/279733ee0bc5acb56db1d21becbd98ba/250x250-000000-80-0-0.jpg"
     }
 }
