@@ -409,9 +409,51 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/968499201967276092/f6b84cec55083d8823ab0cb57b4a36cb.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 11:24",
+                "track_id": "1YLFhWhjkosyZihsEQYmV7",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 11:24",
+                "track_id": "7dpeIa50CT6DEV6wIaOmOX",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 14s",
+                "temps_ecoute_secondes": 14.2
+            },
+            {
+                "date": "15/07/2026 11:23",
+                "track_id": "6cXknCEx1PLErEPCfVXZ93",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 09s",
+                "temps_ecoute_secondes": 9.9
+            },
+            {
+                "date": "15/07/2026 11:22",
+                "track_id": "0K4wpgguN3QhWgKrLjTVYC",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 38s",
+                "temps_ecoute_secondes": 98.0
+            },
+            {
+                "date": "15/07/2026 11:19",
+                "track_id": "7dpeIa50CT6DEV6wIaOmOX",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 2m 24s",
+                "temps_ecoute_secondes": 144.9
+            },
+            {
+                "date": "15/07/2026 11:17",
+                "track_id": "13tptifiRQS2bJESxD5lQj",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 58s",
+                "temps_ecoute_secondes": 118.4
+            },
+            {
+                "date": "15/07/2026 11:15",
+                "track_id": "2DdU3AuK73qaRTZKCswa9C",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 121.4
+            },
+            {
                 "date": "15/07/2026 11:10",
                 "track_id": "5T7ywazdGIydr6JCW6t02j",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 260.0
             },
             {
                 "date": "15/07/2026 11:08",

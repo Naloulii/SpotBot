@@ -846,5 +846,13 @@
     "michael jackson": {
         "nom": "Michael Jackson",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ff1c8cf777db1efc2043b90d79dcbfc3/250x250-000000-80-0-0.jpg"
+    },
+    "jeanfils": {
+        "nom": "Jeanfils",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1c6f42850a74fdfb10a31a8be337162a/250x250-000000-80-0-0.jpg"
+    },
+    "dova": {
+        "nom": "DOVA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2012b7c3dc5afc29cd3fd54672ebf7fa/250x250-000000-80-0-0.jpg"
     }
 }
