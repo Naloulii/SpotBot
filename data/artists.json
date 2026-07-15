@@ -938,5 +938,21 @@
     "lacrim": {
         "nom": "Lacrim",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "sch": {
+        "nom": "SCH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73665eaec71be8169fc7c056d5955262/250x250-000000-80-0-0.jpg"
+    },
+    "charles aznavour": {
+        "nom": "Charles Aznavour",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9cb3ce4b3b8e3f13466a7c51cff155dd/250x250-000000-80-0-0.jpg"
+    },
+    "zola": {
+        "nom": "Zola",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f70c1c4f59947b53ac6197bfaf128ecc/250x250-000000-80-0-0.jpg"
+    },
+    "kissed": {
+        "nom": "kissed",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed85329f61773c02c87c4652a0b9c36a/250x250-000000-80-0-0.jpg"
     }
 }
