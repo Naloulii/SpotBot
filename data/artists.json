@@ -826,5 +826,25 @@
     "roddy key": {
         "nom": "Roddy Key",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7d3006be0ff405ac71c9096d67b95086/250x250-000000-80-0-0.jpg"
+    },
+    "stupeflip": {
+        "nom": "Stupeflip",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/88fb42688e1aa13050951ce9200b4fff/250x250-000000-80-0-0.jpg"
+    },
+    "cadillac": {
+        "nom": "Cadillac",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/61d0988ef492e7f5ea3b1fe34f553f9e/250x250-000000-80-0-0.jpg"
+    },
+    "sherifflazone": {
+        "nom": "Sherifflazone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/29708eaa28c22c3debd41e80669dcd97/250x250-000000-80-0-0.jpg"
+    },
+    "sleepypierre": {
+        "nom": "sleepypierre",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f451a33cb063f5eea7eb38e34c560c9/250x250-000000-80-0-0.jpg"
+    },
+    "michael jackson": {
+        "nom": "Michael Jackson",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ff1c8cf777db1efc2043b90d79dcbfc3/250x250-000000-80-0-0.jpg"
     }
 }
