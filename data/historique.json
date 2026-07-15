@@ -484,9 +484,28 @@
     ],
     "1259154203603894277": [
         {
+            "date": "15/07/2026 20:09",
+            "track_id": "7cC3AjEiIISHwrxzLU8wlS",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 158.0
+        },
+        {
+            "date": "15/07/2026 20:07",
+            "track_id": "7cC3AjEiIISHwrxzLU8wlS",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 113.5
+        },
+        {
+            "date": "15/07/2026 20:03",
+            "track_id": "7cC3AjEiIISHwrxzLU8wlS",
+            "status": "⏱️ Écouté pendant 0m 10s",
+            "temps_ecoute_secondes": 10.6
+        },
+        {
             "date": "15/07/2026 20:00",
             "track_id": "5vYmeeemkQ6mUGuAGvgTCI",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 138.1
         },
         {
             "date": "15/07/2026 19:47",
@@ -1075,9 +1094,33 @@
     ],
     "1086742511361466370": [
         {
+            "date": "15/07/2026 20:15",
+            "track_id": "2nQfdEeDHfeNrH8IDZYJg7",
+            "status": "En cours..."
+        },
+        {
+            "date": "15/07/2026 20:13",
+            "track_id": "68GcenbAtV9PVfFLvBjLm8",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 131.4
+        },
+        {
+            "date": "15/07/2026 20:10",
+            "track_id": "2XVDzp7duEMFKqLmcwydWM",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 115.1
+        },
+        {
+            "date": "15/07/2026 20:05",
+            "track_id": "1Mtv3zSHAxcTrDUZnQXwrd",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 294.1
+        },
+        {
             "date": "15/07/2026 20:01",
             "track_id": "7klea3TPGlsWqTcCQrmkfd",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 233.8
         },
         {
             "date": "15/07/2026 17:24",
