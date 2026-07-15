@@ -9,8 +9,6 @@ import asyncio
 import datetime
 import zoneinfo
 import requests
-import aiohttp
-from aiohttp import web
 import discord
 from discord import app_commands
 from discord.ext import commands, tasks
@@ -953,141 +951,6 @@ class LikeView(discord.ui.View):
             await interaction.response.send_message(f"💔 Retiré de tes titres likés : **{self.titre}**", ephemeral=True)
 
 
-# ==========================================
-#   API WEB (Dashboard -> Bot) : LIKE / DISLIKE
-# ==========================================
-# Permet au site (dashboard statique) de liker/déliker un titre pour le compte
-# de la personne connectée avec Discord. Le token OAuth envoyé par le site est
-# systématiquement revérifié ici auprès de Discord : on ne fait JAMAIS confiance
-# à un user_id qui viendrait directement du navigateur (facilement falsifiable).
-ALLOWED_ORIGIN = os.getenv("ALLOWED_ORIGIN", "https://naloulii.github.io")
-_serveur_web_demarre = False
-_dernier_sync_manuel = 0.0
-SYNC_COOLDOWN_SECONDES = 20  # anti-spam : évite de bombarder GitHub si on clique en rafale
-
-async def verifier_utilisateur_discord(access_token):
-    if not access_token:
-        return None
-    try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(
-                "https://discord.com/api/users/@me",
-                headers={"Authorization": f"Bearer {access_token}"}
-            ) as resp:
-                if resp.status != 200:
-                    return None
-                return await resp.json()
-    except Exception as e:
-        print(f"⚠️ [API Web] Erreur de vérification du token Discord : {e}")
-        return None
-
-async def handle_like(request):
-    try:
-        payload = await request.json()
-    except Exception:
-        return web.json_response({"error": "JSON invalide."}, status=400)
-
-    access_token = payload.get("access_token")
-    titre = (payload.get("titre") or "").strip()
-    artiste = (payload.get("artiste") or "").strip()
-    url = (payload.get("url") or "").strip()
-    cover_url = payload.get("cover_url") or None
-
-    if not access_token or not titre or not artiste or not url:
-        return web.json_response({"error": "Champs manquants (titre, artiste et url sont requis)."}, status=400)
-
-    discord_user = await verifier_utilisateur_discord(access_token)
-    if discord_user is None:
-        return web.json_response({"error": "Session Discord invalide ou expirée, reconnecte-toi."}, status=401)
-
-    try:
-        membre = await bot.fetch_user(int(discord_user["id"]))
-    except Exception as e:
-        print(f"⚠️ [API Web] Impossible de récupérer l'utilisateur Discord {discord_user.get('id')} : {e}")
-        return web.json_response({"error": "Utilisateur Discord introuvable."}, status=404)
-
-    est_like = enregistrer_like_membre(membre, titre, artiste, url, cover_url)
-
-    # Même extraction d'ID que enregistrer_like_membre, pour renvoyer un track_id
-    # cohérent avec tracks.json au site (qui l'utilise déjà comme clé).
-    match = re.search(r"track/([a-zA-Z0-9]+)", url)
-    track_id = match.group(1) if match else url
-
-    # Push GitHub en tâche de fond pour ne pas ralentir la réponse envoyée au site.
-    asyncio.create_task(asyncio.to_thread(_sauvegarde_github_bloquante))
-
-    return web.json_response({"liked": est_like, "track_id": track_id})
-
-async def handle_options_like(request):
-    return web.Response()
-
-async def handle_sync(request):
-    global _dernier_sync_manuel
-
-    try:
-        payload = await request.json()
-    except Exception:
-        payload = {}
-    access_token = payload.get("access_token")
-
-    discord_user = await verifier_utilisateur_discord(access_token)
-    if discord_user is None:
-        return web.json_response({"error": "Session Discord invalide ou expirée, reconnecte-toi."}, status=401)
-
-    maintenant = time.time()
-    reste = SYNC_COOLDOWN_SECONDES - (maintenant - _dernier_sync_manuel)
-    if reste > 0:
-        return web.json_response(
-            {"error": f"Merci de patienter encore {round(reste)}s avant une nouvelle synchronisation."},
-            status=429
-        )
-    _dernier_sync_manuel = maintenant
-
-    succes, resultat = await asyncio.to_thread(_sauvegarde_github_bloquante)
-    if not succes:
-        return web.json_response({"error": f"Échec de la synchronisation : {resultat}"}, status=500)
-
-    return web.json_response({"ok": True, "fichiers": resultat})
-
-async def handle_options_sync(request):
-    return web.Response()
-
-@web.middleware
-async def middleware_cors(request, handler):
-    if request.method == "OPTIONS":
-        response = web.Response()
-    else:
-        try:
-            response = await handler(request)
-        except web.HTTPException as exc:
-            response = exc
-    response.headers["Access-Control-Allow-Origin"] = ALLOWED_ORIGIN
-    response.headers["Access-Control-Allow-Methods"] = "POST, OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
-    return response
-
-async def demarrer_serveur_web():
-    """Démarre le petit serveur HTTP du bot (endpoint /api/like pour le dashboard).
-    Idempotent : ne redémarre pas le serveur si on_ready se redéclenche (reconnexion)."""
-    global _serveur_web_demarre
-    if _serveur_web_demarre:
-        return
-    _serveur_web_demarre = True
-
-    app = web.Application(middlewares=[middleware_cors])
-    app.router.add_post("/api/like", handle_like)
-    app.router.add_route("OPTIONS", "/api/like", handle_options_like)
-    app.router.add_post("/api/sync", handle_sync)
-    app.router.add_route("OPTIONS", "/api/sync", handle_options_sync)
-
-    runner = web.AppRunner(app)
-    await runner.setup()
-    port = int(os.getenv("SERVER_PORT", os.getenv("PORT", "8080")))
-    site = web.TCPSite(runner, "0.0.0.0", port)
-    await site.start()
-    print(f"🌐 [API Web] Serveur démarré sur le port {port} (endpoint POST /api/like)")
-
-
 async def finaliser_ecoutes_perimees(guild, deja_traites=None):
     guild_id = str(guild.id)
     historique = charger_historique(guild_id)
@@ -1279,8 +1142,6 @@ def clean_channel_name(name):
 @bot.event
 async def on_ready():
     print(f"SpotBot est en ligne : {bot.user.name}")
-
-    await demarrer_serveur_web()
 
     try:
         print("🔄 Synchronisation forcée des commandes slash avec Discord...")

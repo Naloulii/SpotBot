@@ -1004,63 +1004,12 @@ function discordIconSVG(){
   return `<svg width="20" height="20" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>`;
 }
 
-/* ---------- Like / Dislike (appel au bot via son API web) ---------- */
-const API_CONFIG = {
-  // Remplace par l'URL publique de ton bot sur bot-hosting (celle qui pointe
-  // vers le port que le bot écoute, ex: https://xxxxx.bot-hosting.net:12345)
-  BASE_URL: "https://fi13.bot-hosting.cloud:26393"
-};
-
+/* ---------- Icônes like (affichage uniquement, le like se fait depuis Discord) ---------- */
 function iconHeartOutline(){
   return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>`;
 }
 function iconHeartFilled(){
   return `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.3-8.1C.8 10.1 1.4 6.6 4.4 5A5.4 5.4 0 0 1 12 6.5 5.4 5.4 0 0 1 19.6 5c3 1.6 3.6 5.1 1.7 7.9C18.7 16.65 12 21 12 21z"/></svg>`;
-}
-
-async function toggleLike(titre, artiste, url, coverUrl, btn){
-  const token = getStoredToken();
-  if(!token){
-    alert("Connecte-toi avec Discord pour liker un titre.");
-    return null;
-  }
-  if(!titre || !artiste || !url){
-    return null;
-  }
-
-  if(btn) btn.disabled = true;
-  try{
-    const res = await fetch(`${API_CONFIG.BASE_URL}/api/like`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ access_token: token, titre, artiste, url, cover_url: coverUrl || null })
-    });
-
-    if(res.status === 401){
-      alert("Ta session Discord a expiré, reconnecte-toi.");
-      logoutDiscord();
-      return null;
-    }
-    if(!res.ok){
-      const err = await res.json().catch(() => ({}));
-      alert(err.error || "Impossible d'enregistrer ce like pour le moment.");
-      return null;
-    }
-
-    const data = await res.json();
-    if(btn){
-      btn.classList.toggle("liked", data.liked);
-      btn.innerHTML = data.liked ? iconHeartFilled() : iconHeartOutline();
-      btn.setAttribute("aria-pressed", String(data.liked));
-      btn.setAttribute("aria-label", data.liked ? "Retirer des favoris" : "Ajouter aux favoris");
-    }
-    return data;
-  }catch(e){
-    alert("Connexion au bot impossible. Vérifie qu'il est bien en ligne.");
-    return null;
-  }finally{
-    if(btn) btn.disabled = false;
-  }
 }
 
 const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.GITHUB_REPO_NAME}/${CONFIG.BRANCH}/`;
@@ -1109,12 +1058,6 @@ function iconSyncSVG(spin){
 document.getElementById("sync-icon").innerHTML = iconSyncSVG(false);
 
 document.getElementById("sync-btn").addEventListener("click", async () => {
-  const token = getStoredToken();
-  if(!token){
-    alert("Connecte-toi avec Discord pour synchroniser les données.");
-    return;
-  }
-
   const btn = document.getElementById("sync-btn");
   const icon = document.getElementById("sync-icon");
   const label = document.getElementById("sync-label");
@@ -1124,28 +1067,11 @@ document.getElementById("sync-btn").addEventListener("click", async () => {
   label.textContent = "Synchronisation…";
 
   try{
-    const res = await fetch(`${API_CONFIG.BASE_URL}/api/sync`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ access_token: token })
-    });
-
-    if(res.status === 401){
-      alert("Ta session Discord a expiré, reconnecte-toi.");
-      logoutDiscord();
-      return;
-    }
-    if(!res.ok){
-      const err = await res.json().catch(() => ({}));
-      alert(err.error || "La synchronisation a échoué.");
-      return;
-    }
-
+    await route(); // recharge les données de la vue actuelle depuis GitHub
     label.textContent = "Synchronisé ✓";
-    route(); // recharge les données de la vue actuelle depuis GitHub
     setTimeout(() => { label.textContent = "Synchroniser les données"; }, 2500);
   }catch(e){
-    alert("Connexion au bot impossible. Vérifie qu'il est bien en ligne.");
+    alert("Impossible de recharger les données depuis GitHub.");
   }finally{
     icon.innerHTML = iconSyncSVG(false);
     btn.disabled = false;
@@ -1446,13 +1372,6 @@ function mountHistorique(container, historique, artists, tracks, monLikes){
 
     listEl.innerHTML = pageItems.map(e => historyRow(e, artists, tracks, monLikes)).join("");
 
-    listEl.querySelectorAll(".like-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const { titre, artiste, url, cover } = btn.dataset;
-        toggleLike(titre, artiste, url, cover || null, btn);
-      });
-    });
-
     pagEl.innerHTML = `
       <button class="page-btn" id="hist-prev" ${page<=1?"disabled":""}>&larr; Précédent</button>
       <span>Page ${page} / ${totalPages} · ${filtered.length} écoute${filtered.length>1?"s":""}</span>
@@ -1503,14 +1422,7 @@ function historyRow(e, artists, tracks, monLikes){
         <span class="history-date">${esc(e.date)}</span>
         <span class="status-pill ${isFull ? "full" : "partial"}">${esc(e.status || "")}</span>
       </div>
-      ${m.url ? `
-        <button type="button" class="like-btn ${isLiked ? "liked" : ""}"
-          aria-pressed="${isLiked}"
-          aria-label="${isLiked ? "Retirer des favoris" : "Ajouter aux favoris"}"
-          data-titre="${esc(m.titre)}" data-artiste="${esc(m.artiste)}"
-          data-url="${esc(m.url)}" data-cover="${esc(m.cover_url || "")}">
-          ${isLiked ? iconHeartFilled() : iconHeartOutline()}
-        </button>` : ""}
+      ${isLiked ? `<span class="like-btn liked" aria-label="Déjà liké">${iconHeartFilled()}</span>` : ""}
       ${m.url ? `<a class="link-icon" href="${esc(m.url)}" target="_blank" rel="noopener" aria-label="Ouvrir sur Spotify">${iconLink()}</a>` : ""}
     </div>`;
 }
@@ -1552,7 +1464,6 @@ function mountFavoris(container, likes, artists, tracks, currentUserId){
 
   function draw(uid){
     const listeIds = likesMap[uid]?.liste || [];
-    const estMoi = uid === currentUserId;
 
     grid.innerHTML = listeIds.map(trackId => {
       // Résolution de chaque identifiant unique à partir de tracks.json
@@ -1569,26 +1480,9 @@ function mountFavoris(container, likes, artists, tracks, currentUserId){
               <div class="like-artist">${esc(m.artiste)}</div>
             </div>
           </a>
-          ${estMoi ? `
-            <button type="button" class="like-btn liked like-card-remove"
-              aria-label="Retirer des favoris">
-              ${iconHeartFilled()}
-            </button>` : ""}
+          <span class="like-btn liked" aria-label="Titre liké">${iconHeartFilled()}</span>
         </div>`;
     }).join("");
-
-    grid.querySelectorAll(".like-card-remove").forEach(btn => {
-      const wrap = btn.closest(".like-card-wrap");
-      const trackId = wrap.dataset.trackId;
-      const m = tracks[trackId];
-      btn.addEventListener("click", async () => {
-        const data = await toggleLike(m.titre, m.artiste, m.url, m.cover_url, btn);
-        if(data && !data.liked){
-          likesMap[uid].liste = likesMap[uid].liste.filter(id => id !== trackId);
-          draw(uid);
-        }
-      });
-    });
   }
 
   container.querySelectorAll(".member-chip").forEach(chip => {
