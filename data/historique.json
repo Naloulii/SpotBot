@@ -984,6 +984,11 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/1058679270425247864/03b196c2732111be38708be07debcf4f.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 15:55",
+                "track_id": "3AZSQW7qMPSVSftcCMS9i0",
+                "status": "En cours..."
+            },
+            {
                 "date": "15/07/2026 15:50",
                 "track_id": "2tmei4gBweN2TsRcTgIh0t",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
