@@ -1126,5 +1126,25 @@
     "nouvelle école": {
         "nom": "Nouvelle École",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7385c938bdbbc81c38a603fe7ec9180e/250x250-000000-80-0-0.jpg"
+    },
+    "within temptation": {
+        "nom": "Within Temptation",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/33ed3cf738bea8a0bc0fc4bd284e1224/250x250-000000-80-0-0.jpg"
+    },
+    "tarja": {
+        "nom": "Tarja",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "linema": {
+        "nom": "Linema",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b37bb1d0260ac7849396a8a5abaf013e/250x250-000000-80-0-0.jpg"
+    },
+    "rebzyyx": {
+        "nom": "Rebzyyx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/57975f903eb1a6323d03d735eca9c3fa/250x250-000000-80-0-0.jpg"
+    },
+    "xzibit": {
+        "nom": "Xzibit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/50417a981dfe1d68b694f12154d6b795/250x250-000000-80-0-0.jpg"
     }
 }

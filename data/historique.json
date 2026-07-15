@@ -840,6 +840,23 @@
     ],
     "822158052240785458": [
         {
+            "date": "15/07/2026 18:27",
+            "track_id": "4AJGaPCvod4mWjBLWPfH3b",
+            "status": "En cours..."
+        },
+        {
+            "date": "15/07/2026 18:22",
+            "track_id": "1PkOm35a0G1r33rVrrK6b0",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 317.4
+        },
+        {
+            "date": "15/07/2026 18:18",
+            "track_id": "4QWLhGVitrCCysR3ugX9Xw",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 237.4
+        },
+        {
             "date": "15/07/2026 17:22",
             "track_id": "7nV7Ly23BxipT6msqg1Dqg",
             "status": "🎉 Écouté en entier"
@@ -1166,6 +1183,42 @@
         }
     ],
     "1196099524385570936": [
+        {
+            "date": "15/07/2026 18:29",
+            "track_id": "1uJ2CP6LjvubPg3xumlVxh",
+            "status": "⏱️ Écouté pendant 0m 19s",
+            "temps_ecoute_secondes": 19.1
+        },
+        {
+            "date": "15/07/2026 18:28",
+            "track_id": "3uKqnQ0dGBcpovf9lV2nqg",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 110.8
+        },
+        {
+            "date": "15/07/2026 18:27",
+            "track_id": "3uKqnQ0dGBcpovf9lV2nqg",
+            "status": "⏱️ Écouté pendant 0m 11s",
+            "temps_ecoute_secondes": 11.1
+        },
+        {
+            "date": "15/07/2026 18:27",
+            "track_id": "505Rb1eFTYTSTwFeNQI2at",
+            "status": "⏱️ Écouté pendant 0m 03s",
+            "temps_ecoute_secondes": 3.4
+        },
+        {
+            "date": "15/07/2026 18:27",
+            "track_id": "0YHVHL8qSEH5BqZPd1njUz",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 210.0
+        },
+        {
+            "date": "15/07/2026 18:23",
+            "track_id": "4yoDGW8tilRUdY8PpveLUo",
+            "status": "⏱️ Écouté pendant 0m 18s",
+            "temps_ecoute_secondes": 18.7
+        },
         {
             "date": "15/07/2026 17:17",
             "track_id": "0UXC93QrbB1by2v4Fa6ILS",
