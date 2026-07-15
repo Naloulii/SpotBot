@@ -1130,7 +1130,7 @@ async function renderCrateView(){
     tree = await res.json();
   }catch(e){
     app.innerHTML = `
-      <section class="hero">
+      <section class="hero" style="border: 3px solid var(--green); border-radius: var(--radius-l); padding: 40px; box-shadow: 0 12px 40px -12px var(--green-glow); margin-top: 24px; margin-bottom: 48px; max-width: 100%; text-align: left;">
         <p class="eyebrow">Connexion impossible</p>
         <h1 class="hero-title">Le dashboard ne répond pas.</h1>
         <p class="hero-sub">Vérifie que le dépôt <code>${esc(CONFIG.GITHUB_USERNAME)}/${esc(CONFIG.GITHUB_REPO_NAME)}</code> existe bien, qu'il est public.</p>
@@ -1151,13 +1151,16 @@ async function renderCrateView(){
   const guilds = isAdmin ? allGuilds : allGuilds.filter(g => g.memberIds.includes(userId));
 
   app.innerHTML = `
-    <section class="hero">
-      <p class="eyebrow">Serveurs connectés</p>
-      <h1 class="hero-title">Choisis un serveur,<br><em>lance le dashboard.</em></h1>
-      <p class="hero-sub">Tu ne vois ici que les serveurs Discord sur lesquels tu es présent.</p>
-      <div class="button-group">
+    <!-- Zone rayée complète (Hero) avec le cadre vert de 3px et la marge du haut -->
+    <section class="hero" style="border: 3px solid var(--green); border-radius: var(--radius-l); padding: 40px; box-shadow: 0 12px 40px -12px var(--green-glow); margin-top: 24px; margin-bottom: 48px; max-width: 100%; text-align: left;">
+      <p class="eyebrow" style="color: var(--green);">Serveurs connectés</p>
+      <h1 class="hero-title" style="margin-bottom: 16px;">Choisis un serveur,<br><em>lance le dashboard.</em></h1>
+      <p class="hero-sub" style="margin-bottom: 24px; max-width: 560px;">Tu ne vois ici que les serveurs Discord sur lesquels tu es présent.</p>
+      <div class="button-group" style="margin-top: 0;">
         <button type="button" class="logout-btn" id="logout-btn">${discordIconSVG()} Se déconnecter</button>
-        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">➕ Ajouter à mon serveur</a>
+        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">
+          <span style="font-weight: bold; font-size: 16px; margin-right: 4px;">+</span> Ajouter à mon serveur
+        </a>
       </div>
     </section>
     <div class="crate-grid">
