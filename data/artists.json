@@ -762,5 +762,9 @@
     "d a n n y": {
         "nom": "D A N N Y",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8ab72c20089f86257b5862700c273cc3/250x250-000000-80-0-0.jpg"
+    },
+    "sasso": {
+        "nom": "Sasso",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
