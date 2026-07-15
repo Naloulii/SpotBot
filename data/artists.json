@@ -1390,5 +1390,41 @@
     "capella": {
         "nom": "capella",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/33c6ad85b1651a9e8a5becb9948e09c8/250x250-000000-80-0-0.jpg"
+    },
+    "suicidal-idol": {
+        "nom": "SUICIDAL-IDOL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d2ddacdb265d854f2857cde16748229b/250x250-000000-80-0-0.jpg"
+    },
+    "esdeekid": {
+        "nom": "EsDeeKid",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/afad4388b6359c9d3fef0110d01efcd3/250x250-000000-80-0-0.jpg"
+    },
+    "rico ace": {
+        "nom": "Rico Ace",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/48a862b8ec52e901e1ba9942e718ef8d/250x250-000000-80-0-0.jpg"
+    },
+    "niko b": {
+        "nom": "Niko B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "stxlkin": {
+        "nom": "Stxlkin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/955106fe568a80223f8558e41c42f0b4/250x250-000000-80-0-0.jpg"
+    },
+    "childish gambino": {
+        "nom": "Childish Gambino",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/35ed4d691c7601ffaef55e743bc6fcde/250x250-000000-80-0-0.jpg"
+    },
+    "rema": {
+        "nom": "Rema",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/078018d591ab3ac531284044d4d4b388/250x250-000000-80-0-0.jpg"
+    },
+    "horrormovies": {
+        "nom": "horrormovies",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/604df52b739a7e26a5dd110bd6fbee4d/250x250-000000-80-0-0.jpg"
+    },
+    "kaneda7": {
+        "nom": "Kaneda7",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef6f5f5aea2c41f3dc8a785ca90e1479/250x250-000000-80-0-0.jpg"
     }
 }
