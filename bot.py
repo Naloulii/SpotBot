@@ -3,6 +3,7 @@ import io
 import re
 import json
 import time
+import shutil
 import tempfile
 import threading
 import asyncio
@@ -297,6 +298,80 @@ def ecrire_guild_info(guild):
         "icon_url": str(guild.icon.url) if guild.icon else None,
         "member_ids": [str(m.id) for m in guild.members if not m.bot]
     })
+
+def supprimer_dossier_guilde(guild_id):
+    """Supprime entièrement le dossier de données d'une guilde (config.json,
+    guild_info.json, etc.) après que le bot en a été retiré (kick/ban/quitte)."""
+    guild_id = str(guild_id)
+    dossier = _chemins_guildes.pop(guild_id, None)
+
+    if dossier is None and os.path.isdir(DATA_DIR):
+        for entree in os.listdir(DATA_DIR):
+            if entree == ".git":
+                continue
+            if entree.endswith(f"_{guild_id}") or entree == guild_id:
+                dossier = os.path.join(DATA_DIR, entree)
+                break
+
+    if dossier and os.path.isdir(dossier):
+        try:
+            shutil.rmtree(dossier)
+            print(f"🗑️ Dossier de données supprimé pour la guilde {guild_id} : {dossier}")
+        except Exception as e:
+            print(f"⚠️ Impossible de supprimer le dossier de la guilde {guild_id} : {e}")
+
+def _membre_ids_restants(guild_id_exclu):
+    """Parcourt tous les dossiers de guildes restants (via leur guild_info.json)
+    et renvoie l'ensemble des IDs de membres encore présents sur au moins un
+    serveur où SpotBot est encore installé."""
+    guild_id_exclu = str(guild_id_exclu)
+    ids_restants = set()
+    if not os.path.isdir(DATA_DIR):
+        return ids_restants
+
+    for entree in os.listdir(DATA_DIR):
+        if entree == ".git":
+            continue
+        chemin_entree = os.path.join(DATA_DIR, entree)
+        if not os.path.isdir(chemin_entree):
+            continue
+        info = _lire_json_securise(os.path.join(chemin_entree, "guild_info.json"), None)
+        if not info:
+            continue
+        if info.get("id") == guild_id_exclu:
+            continue
+        ids_restants.update(info.get("member_ids", []))
+
+    return ids_restants
+
+def _purger_membre_des_fichiers_centraux(user_id):
+    """Retire toutes les lignes concernant CE membre des fichiers centraux
+    partagés entre serveurs (stats, historique, likes, archives hebdomadaires)."""
+    fichiers = [STATS_FILE, HISTORIQUE_FILE, LIKES_FILE]
+
+    if os.path.isdir(DATA_DIR):
+        for nom_fichier in os.listdir(DATA_DIR):
+            if re.match(r"^stats_week_\d+_\d+\.json$", nom_fichier):
+                fichiers.append(os.path.join(DATA_DIR, nom_fichier))
+
+    for chemin in fichiers:
+        with _verrou_fichiers:
+            data = _lire_json_securise_sans_verrou(chemin, {})
+            if user_id in data:
+                del data[user_id]
+                _ecrire_json_atomique_sans_verrou(chemin, data)
+
+def nettoyer_membres_apres_depart_guilde(guild_id, membres_ids_partis):
+    """Pour chaque membre qui était sur la guilde qui vient d'être retirée,
+    vérifie s'il est encore présent sur un autre serveur (via guild_info.json).
+    S'il n'est plus nulle part, purge ses données des fichiers centraux.
+    S'il est encore présent ailleurs, on ne touche à rien (ses données restent
+    utiles pour l'autre serveur)."""
+    ids_restants = _membre_ids_restants(guild_id_exclu=guild_id)
+    for user_id in membres_ids_partis:
+        if user_id not in ids_restants:
+            _purger_membre_des_fichiers_centraux(user_id)
+            print(f"🧹 Données purgées pour le membre {user_id} (plus présent sur aucun serveur avec SpotBot)")
 
 # ==========================================
 #   ÉCRITURE ATOMIQUE (anti-corruption JSON)
@@ -1346,6 +1421,38 @@ async def on_guild_join(guild):
                 print(f"📬 DM impossible, message de configuration posté dans #{salon_repli.name}")
             except Exception as e:
                 print(f"⚠️ Impossible de poster le message de configuration en repli : {e}")
+
+    await asyncio.to_thread(_sauvegarde_github_bloquante)
+
+
+@bot.event
+async def on_guild_remove(guild):
+    """Déclenché quand le bot est retiré d'un serveur (kick, ban, ou quitte).
+    1) Supprime le dossier de données du serveur (config.json, guild_info.json...).
+    2) Pour chaque membre qui était listé dans guild_info.json : s'il n'est présent
+       sur AUCUN autre serveur où SpotBot est encore installé, ses lignes sont
+       retirées des fichiers centraux (stats, historique, likes, archives).
+       S'il est encore sur un autre serveur, ses données y sont conservées."""
+    guild_id = str(guild.id)
+    print(f"👋 Bot retiré du serveur : {guild.name} ({guild_id})")
+
+    # On récupère la liste des membres AVANT de supprimer le dossier,
+    # via le guild_info.json déjà écrit sur disque pour cette guilde.
+    dossier = _chemins_guildes.get(guild_id)
+    if dossier is None and os.path.isdir(DATA_DIR):
+        for entree in os.listdir(DATA_DIR):
+            if entree != ".git" and entree.endswith(f"_{guild_id}"):
+                dossier = os.path.join(DATA_DIR, entree)
+                break
+
+    membres_ids_partis = []
+    if dossier:
+        info = _lire_json_securise(os.path.join(dossier, "guild_info.json"), None)
+        if info:
+            membres_ids_partis = info.get("member_ids", [])
+
+    supprimer_dossier_guilde(guild_id)
+    nettoyer_membres_apres_depart_guilde(guild_id, membres_ids_partis)
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
