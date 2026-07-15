@@ -1490,5 +1490,9 @@
     "heuss l'enfoiré": {
         "nom": "Heuss L'enfoiré",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a08fe59e9375c36b65f14b40715f626e/250x250-000000-80-0-0.jpg"
+    },
+    "lartiste": {
+        "nom": "Lartiste",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bebf28cdc0e98b16049580bd08423144/250x250-000000-80-0-0.jpg"
     }
 }
