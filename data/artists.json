@@ -1430,5 +1430,17 @@
     "zuka": {
         "nom": "Zuka",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dd94f1fcb90519f7ca7aa769f7d6bafe/250x250-000000-80-0-0.jpg"
+    },
+    "rim'k": {
+        "nom": "Rim'K",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0fb64b8768de3994414b00d444c12740/250x250-000000-80-0-0.jpg"
+    },
+    "young pappy": {
+        "nom": "Young Pappy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1a99c917e46395bdec539aa9f71cc8e/250x250-000000-80-0-0.jpg"
+    },
+    "g herbo": {
+        "nom": "G Herbo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/469692441b42616e0b194ffd4fa26d04/250x250-000000-80-0-0.jpg"
     }
 }
