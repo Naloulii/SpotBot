@@ -1170,5 +1170,29 @@
     "reda": {
         "nom": "Reda",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "dexter hmc": {
+        "nom": "Dexter HMC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/743ecc6396813c0714d846d3556b7104/250x250-000000-80-0-0.jpg"
+    },
+    "63og": {
+        "nom": "63OG",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef74595cc9095c81532d5cd6bae25e22/250x250-000000-80-0-0.jpg"
+    },
+    "justin bieber": {
+        "nom": "Justin Bieber",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fe097f693cebf1f882e3da79e99e3bf9/250x250-000000-80-0-0.jpg"
+    },
+    "nicki minaj": {
+        "nom": "Nicki Minaj",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cf30ba4b709168aee196dcf16f259f22/250x250-000000-80-0-0.jpg"
+    },
+    "malcolm todd": {
+        "nom": "Malcolm Todd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5ecb8fe8b0335deeff7434fd3160199c/250x250-000000-80-0-0.jpg"
+    },
+    "garçon printemps": {
+        "nom": "Garçon Printemps",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9b82ca26fdc140dd910a318b76204d39/250x250-000000-80-0-0.jpg"
     }
 }
