@@ -1202,5 +1202,13 @@
     "yopo": {
         "nom": "Yopo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/25ca637b7d0569a80c01ef75594424b3/250x250-000000-80-0-0.jpg"
+    },
+    "zzkillme": {
+        "nom": "zzkillme",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/02499cf1271c4d5085ee01564199c3fd/250x250-000000-80-0-0.jpg"
+    },
+    "liana flores": {
+        "nom": "Liana Flores",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d143136269524a54cf60412e0046728a/250x250-000000-80-0-0.jpg"
     }
 }
