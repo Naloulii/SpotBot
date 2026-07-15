@@ -1462,5 +1462,33 @@
     "isk": {
         "nom": "ISK",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "lawskie": {
+        "nom": "Lawskie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ac8949bd34e9189d3edd09521e686954/250x250-000000-80-0-0.jpg"
+    },
+    "mauvais djo": {
+        "nom": "Mauvais djo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b62591e004636c54c8a72f938820398d/250x250-000000-80-0-0.jpg"
+    },
+    "triangle des bermudes": {
+        "nom": "TRIANGLE DES BERMUDES",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/375f9bbc0178d5f3c648fa8b5861cfdc/250x250-000000-80-0-0.jpg"
+    },
+    "aya nakamura": {
+        "nom": "Aya Nakamura",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8bca3e6aed3da8de8cbe0edd91bc156/250x250-000000-80-0-0.jpg"
+    },
+    "mc yoshi": {
+        "nom": "MC YOSHI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f084b5577185eb47b81aeba94f8595ca/250x250-000000-80-0-0.jpg"
+    },
+    "kokosvoice": {
+        "nom": "Kokosvoice",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b043c9b9982a526e784e4d6af44237bf/250x250-000000-80-0-0.jpg"
+    },
+    "heuss l'enfoiré": {
+        "nom": "Heuss L'enfoiré",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a08fe59e9375c36b65f14b40715f626e/250x250-000000-80-0-0.jpg"
     }
 }
