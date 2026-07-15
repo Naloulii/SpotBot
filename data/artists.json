@@ -854,5 +854,13 @@
     "dova": {
         "nom": "DOVA",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2012b7c3dc5afc29cd3fd54672ebf7fa/250x250-000000-80-0-0.jpg"
+    },
+    "melovrant": {
+        "nom": "melovrant",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6e35a32961b23dece6ff33f776ac9ec3/250x250-000000-80-0-0.jpg"
+    },
+    "trepidpxlse": {
+        "nom": "TREPIDPXLSE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/53a049067a01d45578e40dfd49f8809c/250x250-000000-80-0-0.jpg"
     }
 }

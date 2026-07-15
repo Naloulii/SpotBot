@@ -411,7 +411,8 @@
             {
                 "date": "15/07/2026 11:40",
                 "track_id": "4cgjA7B4fJBHyB9Ya2bu0t",
-                "status": "En cours..."
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 485.4
             },
             {
                 "date": "15/07/2026 11:37",
@@ -634,6 +635,48 @@
                 "track_id": "3DIYanBth8SOpko0IIB5CD",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 185.9
+            }
+        ]
+    },
+    "1295089920620101788": {
+        "username": ".chayxx",
+        "display_name": "c'",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1295089920620101788/f267efd58fa8e40544d3d91ed57f2be1.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "15/07/2026 11:56",
+                "track_id": "6S1vLl3YK1xN6eNGNjQIvU",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 11:55",
+                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 154.0
+            },
+            {
+                "date": "15/07/2026 11:53",
+                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 41s",
+                "temps_ecoute_secondes": 101.9
+            },
+            {
+                "date": "15/07/2026 11:53",
+                "track_id": "7xWTy15bfLZi1p7L9bSvEt",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 06s",
+                "temps_ecoute_secondes": 6.7
+            },
+            {
+                "date": "15/07/2026 11:53",
+                "track_id": "3i4iUba1YY8sZSdrrdXnVO",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 24s",
+                "temps_ecoute_secondes": 24.4
+            },
+            {
+                "date": "15/07/2026 11:52",
+                "track_id": "6WehRgmVnBmwUtuc82Vrot",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 154.2
             }
         ]
     }
