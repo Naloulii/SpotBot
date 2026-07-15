@@ -1254,5 +1254,77 @@
     "bakar": {
         "nom": "Bakar",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "lumi athena": {
+        "nom": "Lumi Athena",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aa7007a9ac62287a8fcedd8f1d024ddb/250x250-000000-80-0-0.jpg"
+    },
+    "jnhygs": {
+        "nom": "jnhygs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d99f0924cc6d91a2c9bd9af187697446/250x250-000000-80-0-0.jpg"
+    },
+    "ryan castro": {
+        "nom": "Ryan Castro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/85e4705e8cab0354605581abd89c703d/250x250-000000-80-0-0.jpg"
+    },
+    "kapo": {
+        "nom": "Kapo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f96576d0684c38f9c623cd3cb19d15a0/250x250-000000-80-0-0.jpg"
+    },
+    "gangsta": {
+        "nom": "Gangsta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2680bee8b211cbd34d738cc09706f5cb/250x250-000000-80-0-0.jpg"
+    },
+    "devi mccallion": {
+        "nom": "Devi McCallion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7c2c05c4f09e0dd3283db0866e09605f/250x250-000000-80-0-0.jpg"
+    },
+    "slxughter": {
+        "nom": "slxughter",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2df92b963669df13739a4aefd2973052/250x250-000000-80-0-0.jpg"
+    },
+    "yeat": {
+        "nom": "Yeat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/87f49e3c06e20dcb431717d5ed502bf6/250x250-000000-80-0-0.jpg"
+    },
+    "bad bunny": {
+        "nom": "Bad Bunny",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/044a3f315b041864887a8dd8709e6926/250x250-000000-80-0-0.jpg"
+    },
+    "overrated": {
+        "nom": "overrated",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f5ee466fe3c5e136722a0e067cacddec/250x250-000000-80-0-0.jpg"
+    },
+    "odetari": {
+        "nom": "Odetari",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a15213bb05ba95acc3c21ae909e862b/250x250-000000-80-0-0.jpg"
+    },
+    "ateez": {
+        "nom": "ATEEZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3a1e2fc1d84c6633747edf04c00ce12e/250x250-000000-80-0-0.jpg"
+    },
+    "mike sherm": {
+        "nom": "Mike Sherm",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb4a910bb01778989de42e51e0b11a0d/250x250-000000-80-0-0.jpg"
+    },
+    "clover!": {
+        "nom": "Clover!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9cf100ca9bc09203489606341fc262ba/250x250-000000-80-0-0.jpg"
+    },
+    "kets4eki": {
+        "nom": "kets4eki",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba26e0f3a75be80faa4e71844eebccfa/250x250-000000-80-0-0.jpg"
+    },
+    "d3r": {
+        "nom": "d3r",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7e16912b16cf8f09c9d8aeb151f0d08/250x250-000000-80-0-0.jpg"
+    },
+    "yg": {
+        "nom": "YG",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8a9371b0d2f6b389f8e15d077cd1a475/250x250-000000-80-0-0.jpg"
+    },
+    "arctic monkeys": {
+        "nom": "Arctic Monkeys",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6c03e4c7c36800897fd468633286db24/250x250-000000-80-0-0.jpg"
     }
 }
