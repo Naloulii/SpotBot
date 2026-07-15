@@ -895,6 +895,11 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/1086742511361466370/cd618bc37dcf21802459473ab2521d93.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 15:50",
+                "track_id": "1i3AadykOTCT4ain72ldL7",
+                "status": "En cours..."
+            },
+            {
                 "date": "15/07/2026 15:36",
                 "track_id": "2mbRXmjnxRKP5iizFBoiLL",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
@@ -970,6 +975,18 @@
                 "track_id": "68GcenbAtV9PVfFLvBjLm8",
                 "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 34s",
                 "temps_ecoute_secondes": 34.6
+            }
+        ]
+    },
+    "1058679270425247864": {
+        "username": "speann_",
+        "display_name": "\u03df SpeaNn\u328b\ud83e\uded0",
+        "avatar_url": "https://cdn.discordapp.com/avatars/1058679270425247864/03b196c2732111be38708be07debcf4f.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "15/07/2026 15:50",
+                "track_id": "2tmei4gBweN2TsRcTgIh0t",
+                "status": "En cours..."
             }
         ]
     }

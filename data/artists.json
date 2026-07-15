@@ -962,5 +962,13 @@
     "kalash": {
         "nom": "Kalash",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b3f5e700735ab156511ec65e9c164fe0/250x250-000000-80-0-0.jpg"
+    },
+    "that handsome devil": {
+        "nom": "That Handsome Devil",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/628b3ac99271e2c052c94abc72b9aba1/250x250-000000-80-0-0.jpg"
+    },
+    "bello&dallas": {
+        "nom": "Bello&Dallas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec236d448ae8dad1d7a267b97bd175cf/250x250-000000-80-0-0.jpg"
     }
 }
