@@ -1494,5 +1494,13 @@
     "lartiste": {
         "nom": "Lartiste",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bebf28cdc0e98b16049580bd08423144/250x250-000000-80-0-0.jpg"
+    },
+    "disiz": {
+        "nom": "disiz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f431aeec12ae460ce1029bb316f77094/250x250-000000-80-0-0.jpg"
+    },
+    "soolking": {
+        "nom": "Soolking",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/590841214b6ab3cb5fecc5245ff5db6b/250x250-000000-80-0-0.jpg"
     }
 }
