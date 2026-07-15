@@ -390,6 +390,17 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/1289964730684936266/f4595297d810d5f748b64d4791eda023.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 14:05",
+                "track_id": "4oXygSKEIkyJ3oQff3z7GN",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 14:03",
+                "track_id": "5VGlsbRupekCyVTAJNPidN",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 42s",
+                "temps_ecoute_secondes": 102.4
+            },
+            {
                 "date": "15/07/2026 00:31",
                 "track_id": "3FQdnmgYCC93NgPllN1aXE",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier"
@@ -755,6 +766,55 @@
                 "track_id": "6WehRgmVnBmwUtuc82Vrot",
                 "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
                 "temps_ecoute_secondes": 154.2
+            }
+        ]
+    },
+    "822158052240785458": {
+        "username": "foxgirl9203",
+        "display_name": "\ud83c\udf38\ua5e5\uff5e\ua5e5\ud83c\udf38 \ud835\udc05\ud835\udc28\ud835\udc31 \ud835\udc20\ud835\udc22\ud835\udc2b\ud835\udc25 \ud83c\udf38\ua5e5\uff5e\ua5e5\ud83c\udf38",
+        "avatar_url": "https://cdn.discordapp.com/avatars/822158052240785458/d4e048fef71151e64c9ad1616f32c1f1.png?size=1024",
+        "ecoutes": [
+            {
+                "date": "15/07/2026 14:04",
+                "track_id": "2ohtcViGSreFAh0s6rV8j2",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 02s",
+                "temps_ecoute_secondes": 62.3
+            },
+            {
+                "date": "15/07/2026 14:02",
+                "track_id": "2z4RvQYspJa9ueBr7N9ht4",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 135.0
+            },
+            {
+                "date": "15/07/2026 13:59",
+                "track_id": "2rOUaQ1TGj7wZdHdn9UgTL",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 180.1
+            },
+            {
+                "date": "15/07/2026 13:56",
+                "track_id": "0Zp9WOkXX8xZS8QOhtdQ5k",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 176.0
+            },
+            {
+                "date": "15/07/2026 13:53",
+                "track_id": "5UpupDvr2w93ccnEmmhS5q",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 179.1
+            },
+            {
+                "date": "15/07/2026 13:53",
+                "track_id": "0Zyfa8aice7phhM6iEQnNN",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 00s",
+                "temps_ecoute_secondes": -0.8
+            },
+            {
+                "date": "15/07/2026 13:52",
+                "track_id": "3J34JtfZNylVXSKN4TDf12",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 3m 37s",
+                "temps_ecoute_secondes": 217.2
             }
         ]
     }

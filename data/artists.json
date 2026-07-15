@@ -874,5 +874,57 @@
     "gaspxr": {
         "nom": "GASPXR",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/abb032ec7c17d120e2d01db5d798efb9/250x250-000000-80-0-0.jpg"
+    },
+    "lisa": {
+        "nom": "LiSA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5ec67a956ba267381059715ab003d31b/250x250-000000-80-0-0.jpg"
+    },
+    "saint vice": {
+        "nom": "Saint Vice",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/87b8343e5a465bbb166cc1d16d98e956/250x250-000000-80-0-0.jpg"
+    },
+    "theodora": {
+        "nom": "Theodora",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3e14ce2e2a26603fbb1ddeff073726c/250x250-000000-80-0-0.jpg"
+    },
+    "sawanohiroyuki[nzk]": {
+        "nom": "SawanoHiroyuki[nZk]",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/644748be784454ade66dee34c5a65142/250x250-000000-80-0-0.jpg"
+    },
+    "tomorrow x together": {
+        "nom": "TOMORROW X TOGETHER",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b04ae513b382d40803a8b3addbb0c49/250x250-000000-80-0-0.jpg"
+    },
+    "felix": {
+        "nom": "Felix",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c48da6ea9fc95a064db4557d3395cfd1/250x250-000000-80-0-0.jpg"
+    },
+    "m3d": {
+        "nom": "m3d",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8019090ef426244b3b320c1538c58811/250x250-000000-80-0-0.jpg"
+    },
+    "pyatno": {
+        "nom": "pyatno",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41cd766fd4015d08fabe0fdbcf98211/250x250-000000-80-0-0.jpg"
+    },
+    "tks 2g": {
+        "nom": "TKS 2G",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6bc0e700616e1fc7fbaee689b8dac88a/250x250-000000-80-0-0.jpg"
+    },
+    "mikado": {
+        "nom": "Mikado",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1396447cc76554812bbaccc956521fa/250x250-000000-80-0-0.jpg"
+    },
+    "hilal bilen": {
+        "nom": "Hilal Bilen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3bc54575169dfa128b6b0625737f6cfb/250x250-000000-80-0-0.jpg"
+    },
+    "natoxie": {
+        "nom": "Natoxie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65b19ac4511bc40485ae1127ef3c33b9/250x250-000000-80-0-0.jpg"
+    },
+    "tkd": {
+        "nom": "TKD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5cff00bc8b19004e93300c4b3cb3024d/250x250-000000-80-0-0.jpg"
     }
 }
