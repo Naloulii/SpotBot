@@ -644,9 +644,57 @@
         "avatar_url": "https://cdn.discordapp.com/avatars/1295089920620101788/f267efd58fa8e40544d3d91ed57f2be1.png?size=1024",
         "ecoutes": [
             {
+                "date": "15/07/2026 12:10",
+                "track_id": "1U0WJEIDALFvmN3i5r6kg9",
+                "status": "En cours..."
+            },
+            {
+                "date": "15/07/2026 12:09",
+                "track_id": "6CTm1vtgk0PItnjGlh8jaT",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 161.3
+            },
+            {
+                "date": "15/07/2026 12:07",
+                "track_id": "6CTm1vtgk0PItnjGlh8jaT",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 17s",
+                "temps_ecoute_secondes": 77.1
+            },
+            {
+                "date": "15/07/2026 12:07",
+                "track_id": "6CTm1vtgk0PItnjGlh8jaT",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 19s",
+                "temps_ecoute_secondes": 19.8
+            },
+            {
+                "date": "15/07/2026 12:05",
+                "track_id": "4rI6WfhfhtMG3ETECYRAmN",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 139.8
+            },
+            {
+                "date": "15/07/2026 12:04",
+                "track_id": "1n6owkgJg2FijN5dkfEWIe",
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 0m 04s",
+                "temps_ecoute_secondes": 4.3
+            },
+            {
+                "date": "15/07/2026 12:03",
+                "track_id": "1U0WJEIDALFvmN3i5r6kg9",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 102.5
+            },
+            {
+                "date": "15/07/2026 11:57",
+                "track_id": "6S1vLl3YK1xN6eNGNjQIvU",
+                "status": "\ud83c\udf89 \u00c9cout\u00e9 en entier",
+                "temps_ecoute_secondes": 146.5
+            },
+            {
                 "date": "15/07/2026 11:56",
                 "track_id": "6S1vLl3YK1xN6eNGNjQIvU",
-                "status": "En cours..."
+                "status": "\u23f1\ufe0f \u00c9cout\u00e9 pendant 1m 00s",
+                "temps_ecoute_secondes": 60.6
             },
             {
                 "date": "15/07/2026 11:55",

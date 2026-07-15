@@ -862,5 +862,17 @@
     "trepidpxlse": {
         "nom": "TREPIDPXLSE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/53a049067a01d45578e40dfd49f8809c/250x250-000000-80-0-0.jpg"
+    },
+    "celebii": {
+        "nom": "Celebii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3f5a1f1d907eb79d7f440b155a4f08b1/250x250-000000-80-0-0.jpg"
+    },
+    "byr0n": {
+        "nom": "Byr0n",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/afa5619d9b86fbad1b33cd8fcf99cc39/250x250-000000-80-0-0.jpg"
+    },
+    "gaspxr": {
+        "nom": "GASPXR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/abb032ec7c17d120e2d01db5d798efb9/250x250-000000-80-0-0.jpg"
     }
 }
