@@ -1018,5 +1018,85 @@
     "damso": {
         "nom": "Damso",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d5af0d088f62ebf29e849ef6b0afaa67/250x250-000000-80-0-0.jpg"
+    },
+    "rixfx": {
+        "nom": "RixFX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e214bb0d9546c9c9988fa2b9a70aac6e/250x250-000000-80-0-0.jpg"
+    },
+    "vald": {
+        "nom": "Vald",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c49cad70e83b5dccd3ebd0c96cb098d4/250x250-000000-80-0-0.jpg"
+    },
+    "sekimane": {
+        "nom": "SEKIMANE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/169db4a5dbbf9a5cc3801d3186d15df2/250x250-000000-80-0-0.jpg"
+    },
+    "shonci": {
+        "nom": "shonci",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/59d686fcf3bfdb401f4fd6ff33d92ea6/250x250-000000-80-0-0.jpg"
+    },
+    "mc gw": {
+        "nom": "Mc Gw",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b098b575a1d50b0f9947682468cb4d46/250x250-000000-80-0-0.jpg"
+    },
+    "zxkai": {
+        "nom": "ZXKAI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2df92b963669df13739a4aefd2973052/250x250-000000-80-0-0.jpg"
+    },
+    "rezcaze": {
+        "nom": "Rezcaze",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3da59862f338fc316962d796d8cd548f/250x250-000000-80-0-0.jpg"
+    },
+    "mc kaique sp": {
+        "nom": "Mc Kaique SP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d1668c30f2611048b19ce06c176aaf7/250x250-000000-80-0-0.jpg"
+    },
+    "kingxnd": {
+        "nom": "KINGXND",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d1668c30f2611048b19ce06c176aaf7/250x250-000000-80-0-0.jpg"
+    },
+    "flame runner": {
+        "nom": "Flame Runner",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9cc59338ee252ce76491e3df2a16371/250x250-000000-80-0-0.jpg"
+    },
+    "babychiefdoit": {
+        "nom": "BabyChiefDoit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5cafa33e258b8a6fd6c73493a9cdd670/250x250-000000-80-0-0.jpg"
+    },
+    "atlxs": {
+        "nom": "ATLXS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dbd4b8a9a12cf82ef69a2a2110ba40a8/250x250-000000-80-0-0.jpg"
+    },
+    "pnl": {
+        "nom": "PNL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/708510bac433647fb8f4f88964f5111e/250x250-000000-80-0-0.jpg"
+    },
+    "dr m\u00f8b": {
+        "nom": "DR M\u00d8B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2246b132a19841fb23d45315c9621f89/250x250-000000-80-0-0.jpg"
+    },
+    "y3llavision": {
+        "nom": "Y3LLAVISION",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/64520ac95934f627b7f9ecb417e4cea6/250x250-000000-80-0-0.jpg"
+    },
+    "trusteki": {
+        "nom": "trusteki",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fa48f2d82476a5fc0ff5ba88f8378049/250x250-000000-80-0-0.jpg"
+    },
+    "rvfv": {
+        "nom": "Rvfv",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/67a1ab230ea15d52c95ca3141d0145ed/250x250-000000-80-0-0.jpg"
+    },
+    "nle choppa": {
+        "nom": "NLE Choppa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/48ddf0d7be8edb18cea4ba2b918f77b2/250x250-000000-80-0-0.jpg"
+    },
+    "41": {
+        "nom": "41",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1e7d249b427d7896ec6796652ab46289/250x250-000000-80-0-0.jpg"
+    },
+    "kyle richh": {
+        "nom": "Kyle Richh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c1d647ec5b40a4669e752f0175c3fafb/250x250-000000-80-0-0.jpg"
     }
 }
