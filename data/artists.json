@@ -2278,5 +2278,25 @@
     "current joys": {
         "nom": "Current Joys",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5890d003f9365b8ac1800fd39b21eb11/250x250-000000-80-0-0.jpg"
+    },
+    "beach bunny": {
+        "nom": "Beach Bunny",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea67cd07c82e3db6f970425a6c13adaa/250x250-000000-80-0-0.jpg"
+    },
+    "joy again": {
+        "nom": "Joy Again",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/916a5c204293d7faf369990f99df3181/250x250-000000-80-0-0.jpg"
+    },
+    "the rare occasions": {
+        "nom": "The Rare Occasions",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/650c4b7c3c2c62e944e7d2adce3a95cd/250x250-000000-80-0-0.jpg"
+    },
+    "thxsomch": {
+        "nom": "ThxSoMch",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0f163295c0e6c5c3f5fbd5ec92b14095/250x250-000000-80-0-0.jpg"
+    },
+    "thekid.ace": {
+        "nom": "thekid.ACE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4134276d4245e5ff542a5728f34da86f/250x250-000000-80-0-0.jpg"
     }
 }
