@@ -2490,5 +2490,13 @@
     "gradur": {
         "nom": "Gradur",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bcdc5604c1e8a8c3f212be3082b980c3/250x250-000000-80-0-0.jpg"
+    },
+    "pyromind": {
+        "nom": "PYROMIND",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/afc57c946154acd7265e6d8518f5fed5/250x250-000000-80-0-0.jpg"
+    },
+    "jolagreen23": {
+        "nom": "Jolagreen23",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
