@@ -2482,5 +2482,13 @@
     "jksn": {
         "nom": "JKSN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cf27cddbe2ef51844c46fe12a46bd5af/250x250-000000-80-0-0.jpg"
+    },
+    "travis scott": {
+        "nom": "Travis Scott",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d8316146026d7e6ce377e314536df62/250x250-000000-80-0-0.jpg"
+    },
+    "gradur": {
+        "nom": "Gradur",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bcdc5604c1e8a8c3f212be3082b980c3/250x250-000000-80-0-0.jpg"
     }
 }
