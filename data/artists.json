@@ -1782,5 +1782,9 @@
     "skywhirl": {
         "nom": "Skywhirl",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/30868e5d7e9cebbbc692ab708e119001/250x250-000000-80-0-0.jpg"
+    },
+    "doja cat": {
+        "nom": "Doja Cat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9e3a3b8792a04c4578da7b905ffeaf2b/250x250-000000-80-0-0.jpg"
     }
 }
