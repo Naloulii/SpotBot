@@ -1802,5 +1802,45 @@
     "kenshi yonezu": {
         "nom": "Kenshi Yonezu",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/29288251d9b8a8bd9c8497fb7b4fbcec/250x250-000000-80-0-0.jpg"
+    },
+    "ado": {
+        "nom": "Ado",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/858e14d0f8ee062253851aaf3b31daef/250x250-000000-80-0-0.jpg"
+    },
+    "desakobeats": {
+        "nom": "DesakoBEATS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cf3ab1c63446ecfbeea833deedceabea/250x250-000000-80-0-0.jpg"
+    },
+    "dj rxsth": {
+        "nom": "DJ RXSTH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/304961608ba6d863fb783b8f462c23f5/250x250-000000-80-0-0.jpg"
+    },
+    "yuki hayashi": {
+        "nom": "Yuki Hayashi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6a62da06d47dc4a6fb41b41968e1dc0b/250x250-000000-80-0-0.jpg"
+    },
+    "toby fox": {
+        "nom": "Toby Fox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fc346b96e27af180122e59d2517de00a/250x250-000000-80-0-0.jpg"
+    },
+    "myth & roid": {
+        "nom": "MYTH & ROID",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f896f9165aecedc9f93218c93d3b71e9/250x250-000000-80-0-0.jpg"
+    },
+    "re:zero music": {
+        "nom": "Re:ZERO Music",
+        "image_url": null
+    },
+    "jay stygian": {
+        "nom": "jay stygian",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/80f7e1350310af30cc097245508d95a6/250x250-000000-80-0-0.jpg"
+    },
+    "frga": {
+        "nom": "frga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94f19f580600ea7d1c603e8794c04dd6/250x250-000000-80-0-0.jpg"
+    },
+    "funeral": {
+        "nom": "funeral",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1fecff61b191427ec4d2760a77527bf5/250x250-000000-80-0-0.jpg"
     }
 }
