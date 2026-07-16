@@ -2238,5 +2238,9 @@
     "q.e favelas": {
         "nom": "Q.E Favelas",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f33ea18e4f76c77b900411899f40ba86/250x250-000000-80-0-0.jpg"
+    },
+    "limly": {
+        "nom": "limly",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/221b23a5e2800932e15de9c7685153b3/250x250-000000-80-0-0.jpg"
     }
 }
