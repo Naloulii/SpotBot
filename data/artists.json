@@ -2058,5 +2058,25 @@
     "jazzy bazz": {
         "nom": "Jazzy Bazz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c9bc5d50723bab902575c9614cc68925/250x250-000000-80-0-0.jpg"
+    },
+    "kvra": {
+        "nom": "KVRA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/943f076cedec56c43ccbcb96592068af/250x250-000000-80-0-0.jpg"
+    },
+    "dj kayz": {
+        "nom": "DJ Kayz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fc7b92c7e4e855035b47f1d738f4a8d7/250x250-000000-80-0-0.jpg"
+    },
+    "anass": {
+        "nom": "Anass",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/742744788294968195a5c90a2bbdde75/250x250-000000-80-0-0.jpg"
+    },
+    "casseurs flowters": {
+        "nom": "Casseurs Flowters",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b94579b476cd8ae100c2bb9a871e586/250x250-000000-80-0-0.jpg"
+    },
+    "otuka": {
+        "nom": "otuka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba0e662d7bb49b90a92b27f0463fdfce/250x250-000000-80-0-0.jpg"
     }
 }
