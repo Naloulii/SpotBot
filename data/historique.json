@@ -2370,6 +2370,18 @@
     ],
     "1390622624270258176": [
         {
+            "date": "16/07/2026 10:29",
+            "track_id": "1VJwtWR6z7SpZRwipI12be",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 163.2
+        },
+        {
+            "date": "16/07/2026 10:27",
+            "track_id": "1VJwtWR6z7SpZRwipI12be",
+            "status": "⏱️ Écouté pendant 1m 13s",
+            "temps_ecoute_secondes": 74.0
+        },
+        {
             "date": "16/07/2026 10:11",
             "track_id": "60ynsPSSKe6O3sfwRnIBRf",
             "status": "⏱️ Écouté pendant 3m 15s",
