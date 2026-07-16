@@ -1954,5 +1954,29 @@
     "overtonight": {
         "nom": "overtonight",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/700a92cf7209b16addb73354399eb9b2/250x250-000000-80-0-0.jpg"
+    },
+    "ill jaeden": {
+        "nom": "iLL JAEDEN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/502d91369d703a555a49a568c9de81af/250x250-000000-80-0-0.jpg"
+    },
+    "wifiskeleton": {
+        "nom": "wifiskeleton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ff568bff8476a4b6f8bdaa1a1728c9c/250x250-000000-80-0-0.jpg"
+    },
+    "witchbox": {
+        "nom": "witchbox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4433da9f7590299379fd5236727e1d7c/250x250-000000-80-0-0.jpg"
+    },
+    "rem digga": {
+        "nom": "Rem Digga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e327b9e1cb3b853bfb52bba15c0b6f0a/250x250-000000-80-0-0.jpg"
+    },
+    "feroe": {
+        "nom": "FEROE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3fac10be3d9a66703b659c5ff447145a/250x250-000000-80-0-0.jpg"
+    },
+    "noturgf": {
+        "nom": "noturgf",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9ee32d74784fc03c1377664613ad68b0/250x250-000000-80-0-0.jpg"
     }
 }
