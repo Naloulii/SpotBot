@@ -3690,9 +3690,16 @@
     ],
     "751741359186116629": [
         {
+            "date": "16/07/2026 21:24",
+            "track_id": "3w2rgYa7H4otgrk9fxuHFv",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 180.0
+        },
+        {
             "date": "16/07/2026 21:21",
             "track_id": "1fZLk4GrJQiqBs92nHuKfA",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 324.4
         },
         {
             "date": "16/07/2026 21:20",
