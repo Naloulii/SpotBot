@@ -1722,5 +1722,33 @@
     "chris brown": {
         "nom": "Chris Brown",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3a65ab6c358b00e3d3c28f264825c7f5/250x250-000000-80-0-0.jpg"
+    },
+    "rambo goyard": {
+        "nom": "Rambo goyard",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fa729403566e4258badb3de1e15c8bf9/250x250-000000-80-0-0.jpg"
+    },
+    "konieur": {
+        "nom": "Konieur",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/91fbcd7e7bbadbb925f0cea436041441/250x250-000000-80-0-0.jpg"
+    },
+    "bigxthaplug": {
+        "nom": "BigXthaPlug",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3f6d083ad4de06b9cab0c838083cc3fe/250x250-000000-80-0-0.jpg"
+    },
+    "ro$ama": {
+        "nom": "Ro$ama",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f71dabd3e17be6bfefc9ce37b09079e8/250x250-000000-80-0-0.jpg"
+    },
+    "murdagang pb": {
+        "nom": "MurdaGang PB",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f71dabd3e17be6bfefc9ce37b09079e8/250x250-000000-80-0-0.jpg"
+    },
+    "yung hood": {
+        "nom": "Yung Hood",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f71dabd3e17be6bfefc9ce37b09079e8/250x250-000000-80-0-0.jpg"
+    },
+    "600 ent.": {
+        "nom": "600 Ent.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/58da3cca2d598e43c7a7823cf75277e5/250x250-000000-80-0-0.jpg"
     }
 }
