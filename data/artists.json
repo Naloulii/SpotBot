@@ -1842,5 +1842,25 @@
     "funeral": {
         "nom": "funeral",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1fecff61b191427ec4d2760a77527bf5/250x250-000000-80-0-0.jpg"
+    },
+    "cholorofilm": {
+        "nom": "cholorofilm",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25afedead404294e46612f35c90080ac/250x250-000000-80-0-0.jpg"
+    },
+    "kidsnorlax": {
+        "nom": "KidSnorlax",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4cb90aca66f43f7a8be53e2f40016920/250x250-000000-80-0-0.jpg"
+    },
+    "bluetaguhq": {
+        "nom": "bluetaguhq",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec56c3499b6dad5e5318071b13e78d83/250x250-000000-80-0-0.jpg"
+    },
+    "первыйфевраль": {
+        "nom": "первыйфевраль",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "alwayswannasleep": {
+        "nom": "alwayswannasleep",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/99e543b689ae14e3a3203623d46b26c1/250x250-000000-80-0-0.jpg"
     }
 }
