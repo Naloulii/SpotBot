@@ -1862,5 +1862,25 @@
     "alwayswannasleep": {
         "nom": "alwayswannasleep",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/99e543b689ae14e3a3203623d46b26c1/250x250-000000-80-0-0.jpg"
+    },
+    "yuzmix": {
+        "nom": "yuzmix",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a548bd7f7cfb2ba7d015b7ca766d5a6/250x250-000000-80-0-0.jpg"
+    },
+    "gussyyk": {
+        "nom": "gussyyk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a009259575ee0a43e8aba9ec70bb9fbe/250x250-000000-80-0-0.jpg"
+    },
+    "kxshlxngs": {
+        "nom": "kxshlxngs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f50ccedf898c506a3f463aa390f6eced/250x250-000000-80-0-0.jpg"
+    },
+    "wages": {
+        "nom": "wages",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d1ae342caa69a923f0d43e4067bc0cf7/250x250-000000-80-0-0.jpg"
+    },
+    "s_ynth3t1c4l": {
+        "nom": "s_ynth3t1c4l",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f9b35e29b4b91b248592a89e09738a83/250x250-000000-80-0-0.jpg"
     }
 }
