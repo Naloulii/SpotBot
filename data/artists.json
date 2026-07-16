@@ -2146,5 +2146,61 @@
     "orelsan": {
         "nom": "Orelsan",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cb21b6617783e6050240ba76ca9b3034/250x250-000000-80-0-0.jpg"
+    },
+    "lil purpx": {
+        "nom": "Lil Purpx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b5001666aa425a74964668dbd36f7785/250x250-000000-80-0-0.jpg"
+    },
+    "menace santana": {
+        "nom": "menace Santana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d35951836d8f47219b933df9c28c4fe5/250x250-000000-80-0-0.jpg"
+    },
+    "ponko": {
+        "nom": "Ponko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0ad9b4bca768edde2ffdb89e54682e5f/250x250-000000-80-0-0.jpg"
+    },
+    "hamza": {
+        "nom": "Hamza",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a316b27353d7553fe87ab524f8eeecdc/250x250-000000-80-0-0.jpg"
+    },
+    "j0r0": {
+        "nom": "J0R0",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/db131d229a670eb0a780c334574f0a16/250x250-000000-80-0-0.jpg"
+    },
+    "bloody$anji": {
+        "nom": "BLOODY$ANJI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41fa7c1d57a71bb6524e98661d4b8961/250x250-000000-80-0-0.jpg"
+    },
+    "barry manilow": {
+        "nom": "Barry Manilow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7455277ccfcb231a42c56d38fb39bca9/250x250-000000-80-0-0.jpg"
+    },
+    "houdi": {
+        "nom": "HOUDI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73e33e76a5f8a153dc675757fa931e1a/250x250-000000-80-0-0.jpg"
+    },
+    "thbw": {
+        "nom": "THBW",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6b4359cff2167c22b43fd83b98dafae7/250x250-000000-80-0-0.jpg"
+    },
+    "lushe": {
+        "nom": "Lushe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13138d93e6a05ea0d79214650c10eeb9/250x250-000000-80-0-0.jpg"
+    },
+    "yvnnis": {
+        "nom": "Yvnnis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "princ€": {
+        "nom": "PRINC€",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ebcf22e5c3a0eb3178b8a6f6bc1a5a6c/250x250-000000-80-0-0.jpg"
+    },
+    "gemtro": {
+        "nom": "Gemtro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/82222e11219703584c7a1fc53274f4d5/250x250-000000-80-0-0.jpg"
+    },
+    "arma jackson": {
+        "nom": "Arma Jackson",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f29a0fccac8f4f3580862781cf414339/250x250-000000-80-0-0.jpg"
     }
 }
