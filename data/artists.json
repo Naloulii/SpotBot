@@ -2090,5 +2090,17 @@
     "mac demarco": {
         "nom": "Mac DeMarco",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b468329467ac01256a85e0925026715d/250x250-000000-80-0-0.jpg"
+    },
+    "yen": {
+        "nom": "Yen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32a8cd302612ea63e9718262b882dcce/250x250-000000-80-0-0.jpg"
+    },
+    "bob marley & the wailers": {
+        "nom": "Bob Marley & The Wailers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8241e15efdefa9465c7b470643efb3b/250x250-000000-80-0-0.jpg"
+    },
+    "daryl hall & john oates": {
+        "nom": "Daryl Hall & John Oates",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/230ecf548a0bf061335ed479c402a61a/250x250-000000-80-0-0.jpg"
     }
 }
