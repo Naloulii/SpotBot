@@ -1686,5 +1686,33 @@
     "jauz": {
         "nom": "Jauz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ae06a8b9cc3b22578cb334df52d9983d/250x250-000000-80-0-0.jpg"
+    },
+    "goldzoro": {
+        "nom": "GoldZoro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6c67afcd61303521ddab36ae9d72828/250x250-000000-80-0-0.jpg"
+    },
+    "prodarvee": {
+        "nom": "prodArvee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a7016d69219af916b0b88646470c69c/250x250-000000-80-0-0.jpg"
+    },
+    "2hounds": {
+        "nom": "2Hounds",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/229d51fadf0cc003b621894e00af77ff/250x250-000000-80-0-0.jpg"
+    },
+    "pet3rpunx": {
+        "nom": "PET3RPUNX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eea59786661c60eb9d64735fd3b4c53f/250x250-000000-80-0-0.jpg"
+    },
+    "techno king": {
+        "nom": "TECHNO KING",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ebc9b1177ce75aed02755f98e858526a/250x250-000000-80-0-0.jpg"
+    },
+    "milan gavris": {
+        "nom": "Milan Gavris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b7baebaaa64722ec63314ed37c5b17eb/250x250-000000-80-0-0.jpg"
+    },
+    "g-eazy": {
+        "nom": "G-Eazy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7aefb7c297e45f7bea82cf0c2d34120d/250x250-000000-80-0-0.jpg"
     }
 }
