@@ -1930,5 +1930,29 @@
     "sens<3": {
         "nom": "sens<3",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/173b54234e455107c54e2b7ff9e8cf5c/250x250-000000-80-0-0.jpg"
+    },
+    "alex g": {
+        "nom": "Alex G",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7deee3e92c9b22f2703557a50741d941/250x250-000000-80-0-0.jpg"
+    },
+    "lociffer": {
+        "nom": "lociffer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b4f80ca1021995f918b4e55b54faaf23/250x250-000000-80-0-0.jpg"
+    },
+    "duskydemise archive": {
+        "nom": "duskydemise archive",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/05fed9b36c9fff0b020a99a801ac8fae/250x250-000000-80-0-0.jpg"
+    },
+    "sx8": {
+        "nom": "sx8",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9944503835ea4dd1f05874292b8dd726/250x250-000000-80-0-0.jpg"
+    },
+    "overtonight throwaways": {
+        "nom": "overtonight throwaways",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/700a92cf7209b16addb73354399eb9b2/250x250-000000-80-0-0.jpg"
+    },
+    "overtonight": {
+        "nom": "overtonight",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/700a92cf7209b16addb73354399eb9b2/250x250-000000-80-0-0.jpg"
     }
 }
