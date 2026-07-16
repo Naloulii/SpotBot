@@ -2462,5 +2462,25 @@
     "eve": {
         "nom": "Eve",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/95b06e3862a77974a145f4f974f573b3/250x250-000000-80-0-0.jpg"
+    },
+    "kyoka jiro": {
+        "nom": "Kyoka Jiro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "chrissy costanza": {
+        "nom": "Chrissy Costanza",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1d1955ceac244db7655d9fe998d7ee0f/250x250-000000-80-0-0.jpg"
+    },
+    "rosa walton": {
+        "nom": "Rosa Walton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d60c9755e5ca4b3f4ba4541d93ac75b8/250x250-000000-80-0-0.jpg"
+    },
+    "hallie coggins": {
+        "nom": "Hallie Coggins",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2e7c972bc0d8b0b568872e6863e1c0cf/250x250-000000-80-0-0.jpg"
+    },
+    "jksn": {
+        "nom": "JKSN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cf27cddbe2ef51844c46fe12a46bd5af/250x250-000000-80-0-0.jpg"
     }
 }
