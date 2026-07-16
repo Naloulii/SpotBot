@@ -1750,5 +1750,13 @@
     "600 ent.": {
         "nom": "600 Ent.",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/58da3cca2d598e43c7a7823cf75277e5/250x250-000000-80-0-0.jpg"
+    },
+    "2pac": {
+        "nom": "2Pac",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dc2743d871b5935004292eed2cd55f68/250x250-000000-80-0-0.jpg"
+    },
+    "k-ci & jojo": {
+        "nom": "K-Ci & JoJo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a39f93eb4fc93391304af96e8035183d/250x250-000000-80-0-0.jpg"
     }
 }
