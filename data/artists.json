@@ -2242,5 +2242,41 @@
     "limly": {
         "nom": "limly",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/221b23a5e2800932e15de9c7685153b3/250x250-000000-80-0-0.jpg"
+    },
+    "robin & me": {
+        "nom": "robin & me",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/789d8334b72cbe02ed255e7b83efe728/250x250-000000-80-0-0.jpg"
+    },
+    "les": {
+        "nom": "les",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "when i become": {
+        "nom": "when i become",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea44cce045729cf17e75f10265237a65/250x250-000000-80-0-0.jpg"
+    },
+    "forlorn": {
+        "nom": "forlorn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d8e120c1a6de6ced8c7212ca2fb2a68/250x250-000000-80-0-0.jpg"
+    },
+    "child of the clouds": {
+        "nom": "Child Of The Clouds",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c77eacf063dd60f65995a659a176acb1/250x250-000000-80-0-0.jpg"
+    },
+    "noah floersch": {
+        "nom": "Noah Floersch",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f37a8ab41a47d3a9ad3605a830185249/250x250-000000-80-0-0.jpg"
+    },
+    "djo": {
+        "nom": "Djo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "a-wall": {
+        "nom": "A-Wall",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0bacacec93c667350b1931584cceb6e4/250x250-000000-80-0-0.jpg"
+    },
+    "current joys": {
+        "nom": "Current Joys",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5890d003f9365b8ac1800fd39b21eb11/250x250-000000-80-0-0.jpg"
     }
 }
