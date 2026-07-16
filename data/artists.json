@@ -2390,5 +2390,13 @@
     "housecall": {
         "nom": "Housecall",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6babf0bc557dc71af5d5248bc8405e59/250x250-000000-80-0-0.jpg"
+    },
+    "cainea": {
+        "nom": "Cainea",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c63a3119a36e1c39f9527e923676d8ed/250x250-000000-80-0-0.jpg"
+    },
+    "c418": {
+        "nom": "C418",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9b76ec3fccb7b3831a9cccc2cae5036e/250x250-000000-80-0-0.jpg"
     }
 }
