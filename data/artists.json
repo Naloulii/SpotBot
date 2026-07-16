@@ -2078,5 +2078,17 @@
     "otuka": {
         "nom": "otuka",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ba0e662d7bb49b90a92b27f0463fdfce/250x250-000000-80-0-0.jpg"
+    },
+    "kofun": {
+        "nom": "kofun",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a1c08859c4ad468c17835b9c2b7f473a/250x250-000000-80-0-0.jpg"
+    },
+    "pupsies": {
+        "nom": "pupsies",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a9474c55f1ac073e441aa2feff4b1af9/250x250-000000-80-0-0.jpg"
+    },
+    "mac demarco": {
+        "nom": "Mac DeMarco",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b468329467ac01256a85e0925026715d/250x250-000000-80-0-0.jpg"
     }
 }
