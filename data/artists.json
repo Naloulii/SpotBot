@@ -2358,5 +2358,37 @@
     "cxsper": {
         "nom": "CXSPER",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a69ff57bd1c224156d3f7ec61f04b023/250x250-000000-80-0-0.jpg"
+    },
+    "jamie paige": {
+        "nom": "Jamie Paige",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c76e9a41873b3696783224a3b2946a4/250x250-000000-80-0-0.jpg"
+    },
+    "ok glass": {
+        "nom": "OK Glass",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9b0690a1b037a37f74f06c4bfe3aff74/250x250-000000-80-0-0.jpg"
+    },
+    "k2s": {
+        "nom": "K2S",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bfabc014c829e84a002159bf7bb387b9/250x250-000000-80-0-0.jpg"
+    },
+    "threee": {
+        "nom": "THREEE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e3acae788e06e2caa870bbac34035a1/250x250-000000-80-0-0.jpg"
+    },
+    "yoshiaki dewa": {
+        "nom": "Yoshiaki Dewa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c2042e76f9e9a9c7e53c1fd2e5819a1e/250x250-000000-80-0-0.jpg"
+    },
+    "r2": {
+        "nom": "R2",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0acf106511b2bf563959ca529609d578/250x250-000000-80-0-0.jpg"
+    },
+    "9lana": {
+        "nom": "9Lana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1e52f20cd11f0fb509167ae835a621e4/250x250-000000-80-0-0.jpg"
+    },
+    "housecall": {
+        "nom": "Housecall",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6babf0bc557dc71af5d5248bc8405e59/250x250-000000-80-0-0.jpg"
     }
 }
