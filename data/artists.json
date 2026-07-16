@@ -2018,5 +2018,21 @@
     "revivle": {
         "nom": "revivle",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c7b3c9a6cea5a7acf4ecad1db9d7a3aa/250x250-000000-80-0-0.jpg"
+    },
+    "the cure": {
+        "nom": "The Cure",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "888rks": {
+        "nom": "888rks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a56adadb92c87ee8bdcbfc485a675861/250x250-000000-80-0-0.jpg"
+    },
+    "sergio_takumi": {
+        "nom": "Sergio_takumi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/64016e9c8eff0afe1a57db7ea2600528/250x250-000000-80-0-0.jpg"
+    },
+    "evil eye empire": {
+        "nom": "EVIL EYE EMPIRE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7771cc0dfab920c0ed2a17d70bed3d43/250x250-000000-80-0-0.jpg"
     }
 }
