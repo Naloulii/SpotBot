@@ -2518,5 +2518,37 @@
     "kaysnoto": {
         "nom": "kaysnoto",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5b1b949c6e47a8f2e7720bc73a575020/250x250-000000-80-0-0.jpg"
+    },
+    "pinhead": {
+        "nom": "PINHEAD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b55f1b92bc0c8e09e4c77cf43b22a7f/250x250-000000-80-0-0.jpg"
+    },
+    "kingman irving": {
+        "nom": "Kingman Irving",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c4c0994fda85083453514b94a7d74a6/250x250-000000-80-0-0.jpg"
+    },
+    "エミリア(cv:高橋李依)": {
+        "nom": "エミリア(CV:高橋李依)",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e20d7485fd38c5ec0f71e2adf236a25/250x250-000000-80-0-0.jpg"
+    },
+    "evansp": {
+        "nom": "EvanSP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/34fa71bd330bbdd47503b436f90fad07/250x250-000000-80-0-0.jpg"
+    },
+    "dernier souffle": {
+        "nom": "Dernier Souffle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/697e5eef3036321dcaaaa1f47f04e855/250x250-000000-80-0-0.jpg"
+    },
+    "luz": {
+        "nom": "Luz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8629b8b6ca9d539654d7f5d4dee13079/250x250-000000-80-0-0.jpg"
+    },
+    "i don't like mirrors": {
+        "nom": "i don't like mirrors",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/78d3569acf80a3e046f4209db94a0070/250x250-000000-80-0-0.jpg"
+    },
+    "laufey": {
+        "nom": "Laufey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0eca5dd5f8ac336e55bf390da9ce13d0/250x250-000000-80-0-0.jpg"
     }
 }
