@@ -2202,5 +2202,33 @@
     "arma jackson": {
         "nom": "Arma Jackson",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f29a0fccac8f4f3580862781cf414339/250x250-000000-80-0-0.jpg"
+    },
+    "lyaa": {
+        "nom": "Lyaa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7acb894876243911f73e858f864d7421/250x250-000000-80-0-0.jpg"
+    },
+    "inoxtag": {
+        "nom": "Inoxtag",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df2746ab53a7153772b434ae7012f0ac/250x250-000000-80-0-0.jpg"
+    },
+    "la sirène": {
+        "nom": "La Sirène",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0379208b5ce8f37652046aec53efb4de/250x250-000000-80-0-0.jpg"
+    },
+    "nirvana": {
+        "nom": "Nirvana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ad67af8b0dca71d5e69f1afd8e045c4e/250x250-000000-80-0-0.jpg"
+    },
+    "sovajon": {
+        "nom": "Sovajon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "kerchak": {
+        "nom": "Kerchak",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a7cdf8539c191322c80aa891b66503e1/250x250-000000-80-0-0.jpg"
+    },
+    "tim kta": {
+        "nom": "Tim Kta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d54d53308cdfe30c70941000f52e26b2/250x250-000000-80-0-0.jpg"
     }
 }
