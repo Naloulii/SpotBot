@@ -1790,5 +1790,17 @@
     "iss": {
         "nom": "Iss",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c470cbe06e35eff9367af63609699eef/250x250-000000-80-0-0.jpg"
+    },
+    "timar": {
+        "nom": "Timar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3ff71a216353fd857a8311bebdeedb66/250x250-000000-80-0-0.jpg"
+    },
+    "duskydemise": {
+        "nom": "duskydemise",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f6139041cc65346486d42b6d463bbca5/250x250-000000-80-0-0.jpg"
+    },
+    "kenshi yonezu": {
+        "nom": "Kenshi Yonezu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/29288251d9b8a8bd9c8497fb7b4fbcec/250x250-000000-80-0-0.jpg"
     }
 }
