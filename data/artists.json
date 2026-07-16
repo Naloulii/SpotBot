@@ -2054,5 +2054,9 @@
     "doums": {
         "nom": "Doums",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a51fb40ab26f145912eaa2016475b4c7/250x250-000000-80-0-0.jpg"
+    },
+    "jazzy bazz": {
+        "nom": "Jazzy Bazz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9bc5d50723bab902575c9614cc68925/250x250-000000-80-0-0.jpg"
     }
 }
