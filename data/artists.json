@@ -2230,5 +2230,13 @@
     "tim kta": {
         "nom": "Tim Kta",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d54d53308cdfe30c70941000f52e26b2/250x250-000000-80-0-0.jpg"
+    },
+    "bouss": {
+        "nom": "Bouss",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1e125bea9f38ba587d9a87181f4142f0/250x250-000000-80-0-0.jpg"
+    },
+    "q.e favelas": {
+        "nom": "Q.E Favelas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f33ea18e4f76c77b900411899f40ba86/250x250-000000-80-0-0.jpg"
     }
 }
