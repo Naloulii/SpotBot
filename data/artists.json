@@ -1778,5 +1778,9 @@
     "funk wav": {
         "nom": "Funk Wav",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b860118b4aab8a5fa1e7d8cd6ce249e8/250x250-000000-80-0-0.jpg"
+    },
+    "skywhirl": {
+        "nom": "Skywhirl",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/30868e5d7e9cebbbc692ab708e119001/250x250-000000-80-0-0.jpg"
     }
 }
