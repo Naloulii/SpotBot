@@ -2042,5 +2042,13 @@
     "jeune lion": {
         "nom": "Jeune Lion",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c60fd6d47480e8e40be5e4743ac61db6/250x250-000000-80-0-0.jpg"
+    },
+    "soso maness": {
+        "nom": "Soso Maness",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/218551e40776b71f0c24659ed061cfc2/250x250-000000-80-0-0.jpg"
+    },
+    "la superstar des comptines rondes et berceuses": {
+        "nom": "La Superstar Des Comptines Rondes Et Berceuses",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c94337f8cc046fd209dccc9f7ae2139/250x250-000000-80-0-0.jpg"
     }
 }
