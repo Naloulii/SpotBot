@@ -2298,5 +2298,33 @@
     "thekid.ace": {
         "nom": "thekid.ACE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4134276d4245e5ff542a5728f34da86f/250x250-000000-80-0-0.jpg"
+    },
+    "mehdi yz": {
+        "nom": "Mehdi Yz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/30c29bd6d3e81adc0f2e36304f6fa35b/250x250-000000-80-0-0.jpg"
+    },
+    "radiohead": {
+        "nom": "Radiohead",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/96b688020014a21cb80a0268b90287f5/250x250-000000-80-0-0.jpg"
+    },
+    "rsko": {
+        "nom": "Rsko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/154f477c302890af598f67d74332603a/250x250-000000-80-0-0.jpg"
+    },
+    "juju<3": {
+        "nom": "juju<3",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8ec1e6d0e4822b5070f11d58c82a2d69/250x250-000000-80-0-0.jpg"
+    },
+    "mister v": {
+        "nom": "Mister V",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1c37dedd582f9af431664d4929657518/250x250-000000-80-0-0.jpg"
+    },
+    "will paquin": {
+        "nom": "Will Paquin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/66560bf371504bae4a9cc53cf009b9dc/250x250-000000-80-0-0.jpg"
+    },
+    "fresh ladouille": {
+        "nom": "Fresh laDouille",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f6b241f278e226c78861d32a2c36adaf/250x250-000000-80-0-0.jpg"
     }
 }
