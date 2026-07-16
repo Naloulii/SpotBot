@@ -2326,5 +2326,37 @@
     "fresh ladouille": {
         "nom": "Fresh laDouille",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f6b241f278e226c78861d32a2c36adaf/250x250-000000-80-0-0.jpg"
+    },
+    "kapa boy": {
+        "nom": "Kapa Boy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/985023ab12206a9248f06c2430954b70/250x250-000000-80-0-0.jpg"
+    },
+    "shiloh dynasty": {
+        "nom": "Shiloh Dynasty",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3f59d20a93297e7514575f3a7a7e2e0a/250x250-000000-80-0-0.jpg"
+    },
+    "steve lacy": {
+        "nom": "Steve Lacy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/764faf639b092f385a5d56ac89c05294/250x250-000000-80-0-0.jpg"
+    },
+    "jaycee tshibaks": {
+        "nom": "Jaycee Tshibaks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73bd5befd4445d416c98084b6a24f0f0/250x250-000000-80-0-0.jpg"
+    },
+    "e17": {
+        "nom": "E17",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e1d260adb5c9b252f5e3eb2ac613979/250x250-000000-80-0-0.jpg"
+    },
+    "imed zee": {
+        "nom": "Imed zee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc7e8675575002a0a358e81329239a7c/250x250-000000-80-0-0.jpg"
+    },
+    "tkandz": {
+        "nom": "Tkandz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6efe36d3dee27d3f08eb58bec32d1e9f/250x250-000000-80-0-0.jpg"
+    },
+    "cxsper": {
+        "nom": "CXSPER",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a69ff57bd1c224156d3f7ec61f04b023/250x250-000000-80-0-0.jpg"
     }
 }
