@@ -2038,5 +2038,9 @@
     "coeurco": {
         "nom": "COEURCO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6b7109dd520ee2fdffe1f96fd96e17c9/250x250-000000-80-0-0.jpg"
+    },
+    "jeune lion": {
+        "nom": "Jeune Lion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c60fd6d47480e8e40be5e4743ac61db6/250x250-000000-80-0-0.jpg"
     }
 }
