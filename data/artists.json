@@ -1994,5 +1994,29 @@
     "h4teboy": {
         "nom": "h4teboy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b7a2b1e143e4bd43da6f5dc17f08ff82/250x250-000000-80-0-0.jpg"
+    },
+    "sidney gish": {
+        "nom": "Sidney Gish",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bda75f6311c5b757c9b67cd396b682e5/250x250-000000-80-0-0.jpg"
+    },
+    "beamglow": {
+        "nom": "beamglow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/edf03f962c292eaa49142b98d555ad17/250x250-000000-80-0-0.jpg"
+    },
+    "onda andar": {
+        "nom": "ONDA ANDAR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c6ba91f86480f7d087d6dac3474cfc03/250x250-000000-80-0-0.jpg"
+    },
+    "superspek": {
+        "nom": "superspek",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/09b2fc095bd022fd601be619b1385cb8/250x250-000000-80-0-0.jpg"
+    },
+    "requiem for you": {
+        "nom": "requiem for you",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4bd777ee52d7309aa6d4d5a77e01407f/250x250-000000-80-0-0.jpg"
+    },
+    "revivle": {
+        "nom": "revivle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c7b3c9a6cea5a7acf4ecad1db9d7a3aa/250x250-000000-80-0-0.jpg"
     }
 }
