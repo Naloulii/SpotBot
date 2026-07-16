@@ -1982,5 +1982,17 @@
     "gemroz": {
         "nom": "Gemroz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7b0420f2c566dd5e0e393ac928df77d2/250x250-000000-80-0-0.jpg"
+    },
+    "suzuya": {
+        "nom": "Suzuya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e9ea9afa22da4409ff9f537c225a2106/250x250-000000-80-0-0.jpg"
+    },
+    "hoshie star": {
+        "nom": "hoshie star",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0a892c1a6253e794af23d8a3f23e8899/250x250-000000-80-0-0.jpg"
+    },
+    "h4teboy": {
+        "nom": "h4teboy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b7a2b1e143e4bd43da6f5dc17f08ff82/250x250-000000-80-0-0.jpg"
     }
 }
