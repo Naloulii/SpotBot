@@ -2502,5 +2502,9 @@
     "colors": {
         "nom": "COLORS",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "wixo & la2s": {
+        "nom": "WIXO & LA2S",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f9d71fb22084114e6b229af5cc9f4a8e/250x250-000000-80-0-0.jpg"
     }
 }
