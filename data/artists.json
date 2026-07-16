@@ -1758,5 +1758,25 @@
     "k-ci & jojo": {
         "nom": "K-Ci & JoJo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a39f93eb4fc93391304af96e8035183d/250x250-000000-80-0-0.jpg"
+    },
+    "suprême ntm": {
+        "nom": "Suprême NTM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/68936b560d0397e4e38eac45dd964b5c/250x250-000000-80-0-0.jpg"
+    },
+    "calvin harris": {
+        "nom": "Calvin Harris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a53031d02dc2f8a8eb15d117c015d5eb/250x250-000000-80-0-0.jpg"
+    },
+    "frank ocean": {
+        "nom": "Frank Ocean",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/882155c08dc31d6464d6d580083c968c/250x250-000000-80-0-0.jpg"
+    },
+    "migos": {
+        "nom": "Migos",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "funk wav": {
+        "nom": "Funk Wav",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b860118b4aab8a5fa1e7d8cd6ce249e8/250x250-000000-80-0-0.jpg"
     }
 }
