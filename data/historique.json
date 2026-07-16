@@ -601,6 +601,24 @@
     ],
     "566899759013429259": [
         {
+            "date": "17/07/2026 01:11",
+            "track_id": "3XvGqS2nOXSCeqvdZQoMDm",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 110.6
+        },
+        {
+            "date": "17/07/2026 01:09",
+            "track_id": "3XvGqS2nOXSCeqvdZQoMDm",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 110.6
+        },
+        {
+            "date": "17/07/2026 01:09",
+            "track_id": "3XvGqS2nOXSCeqvdZQoMDm",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 110.6
+        },
+        {
             "date": "17/07/2026 01:02",
             "track_id": "3XvGqS2nOXSCeqvdZQoMDm",
             "status": "🎉 Écouté en entier",
@@ -1137,23 +1155,6 @@
             "date": "15/07/2026 18:56",
             "track_id": "7gmwFiZtsPyBT8wI2u6mGN",
             "status": "🎉 Écouté en entier"
-        },
-        {
-            "date": "15/07/2026 18:54",
-            "track_id": "4QEg4vfzw0NwePfYMoJtwK",
-            "status": "🎉 Écouté en entier"
-        },
-        {
-            "date": "15/07/2026 18:54",
-            "track_id": "3YJ3RbEJUnjE0EAOjC2My0",
-            "status": "⏱️ Écouté pendant 0m 23s",
-            "temps_ecoute_secondes": 23.8
-        },
-        {
-            "date": "15/07/2026 17:10",
-            "track_id": "3YJ3RbEJUnjE0EAOjC2My0",
-            "status": "⏱️ Écouté pendant 0m 10s",
-            "temps_ecoute_secondes": 10.7
         }
     ],
     "1259154203603894277": [
@@ -3862,6 +3863,17 @@
         }
     ],
     "1066377293490040903": [
+        {
+            "date": "17/07/2026 01:20",
+            "track_id": "34GPWqX3ZCkVFRwg7lMU3o",
+            "status": "En cours..."
+        },
+        {
+            "date": "17/07/2026 01:15",
+            "track_id": "6qfAkpUUeQ0MJMjoucUgc0",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 195.8
+        },
         {
             "date": "17/07/2026 00:17",
             "track_id": "1WvvmEowf7hiz5EnyAwtTj",
