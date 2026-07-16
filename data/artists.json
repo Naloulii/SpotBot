@@ -2102,5 +2102,49 @@
     "daryl hall & john oates": {
         "nom": "Daryl Hall & John Oates",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/230ecf548a0bf061335ed479c402a61a/250x250-000000-80-0-0.jpg"
+    },
+    "george michael": {
+        "nom": "George Michael",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "moha la squale": {
+        "nom": "Moha La Squale",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ddfb94bbf38693aed5cadcfea8174ed/250x250-000000-80-0-0.jpg"
+    },
+    "kalif hardcore": {
+        "nom": "Kalif Hardcore",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8bfffcc55f1ff08a9eca61d120e2a4aa/250x250-000000-80-0-0.jpg"
+    },
+    "da uzi": {
+        "nom": "DA Uzi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a03b90939750c2613092e243d993c567/250x250-000000-80-0-0.jpg"
+    },
+    "la crapule": {
+        "nom": "La Crapule",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/14cd3eff65f946d58b6b5c62ed0fff13/250x250-000000-80-0-0.jpg"
+    },
+    "gto": {
+        "nom": "GTO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d830b904bda169d77dda13739dbab7f5/250x250-000000-80-0-0.jpg"
+    },
+    "dj max's": {
+        "nom": "DJ MAX'S",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f4e1204151d2b15e1f32c6fe0abfe09/250x250-000000-80-0-0.jpg"
+    },
+    "dj t'chabs": {
+        "nom": "DJ T'CHABS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25866a2a257975525f021debdaabc046/250x250-000000-80-0-0.jpg"
+    },
+    "dj larafale": {
+        "nom": "DJ LARAFALE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25866a2a257975525f021debdaabc046/250x250-000000-80-0-0.jpg"
+    },
+    "no limit": {
+        "nom": "No Limit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ced7c658da00f2647a080856480ca93f/250x250-000000-80-0-0.jpg"
+    },
+    "orelsan": {
+        "nom": "Orelsan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cb21b6617783e6050240ba76ca9b3034/250x250-000000-80-0-0.jpg"
     }
 }
