@@ -1670,5 +1670,21 @@
     "vacra": {
         "nom": "Vacra",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "chris linton": {
+        "nom": "Chris Linton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/57d4a5e3ce9698f3dfc6f7e4647fe467/250x250-000000-80-0-0.jpg"
+    },
+    "bad gurl": {
+        "nom": "Bad Gurl",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/821d15046897d219bec8d9598bceb0bf/250x250-000000-80-0-0.jpg"
+    },
+    "shaed": {
+        "nom": "SHAED",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bbd5b5dd232fc71c46411cb459f74200/250x250-000000-80-0-0.jpg"
+    },
+    "jauz": {
+        "nom": "Jauz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ae06a8b9cc3b22578cb334df52d9983d/250x250-000000-80-0-0.jpg"
     }
 }
