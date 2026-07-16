@@ -1714,5 +1714,13 @@
     "g-eazy": {
         "nom": "G-Eazy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7aefb7c297e45f7bea82cf0c2d34120d/250x250-000000-80-0-0.jpg"
+    },
+    "leon thomas": {
+        "nom": "Leon Thomas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c13469bb27fb3bf3facc945404addf5/250x250-000000-80-0-0.jpg"
+    },
+    "chris brown": {
+        "nom": "Chris Brown",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3a65ab6c358b00e3d3c28f264825c7f5/250x250-000000-80-0-0.jpg"
     }
 }
