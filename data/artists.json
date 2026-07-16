@@ -2506,5 +2506,17 @@
     "wixo & la2s": {
         "nom": "WIXO & LA2S",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f9d71fb22084114e6b229af5cc9f4a8e/250x250-000000-80-0-0.jpg"
+    },
+    "zz": {
+        "nom": "ZZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3a993e44402e3ee6403a428f23777c2a/250x250-000000-80-0-0.jpg"
+    },
+    "kaysnoto throwaways": {
+        "nom": "kaysnoto throwaways",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b4c2729d602713451651e3d2ba0db2eb/250x250-000000-80-0-0.jpg"
+    },
+    "kaysnoto": {
+        "nom": "kaysnoto",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5b1b949c6e47a8f2e7720bc73a575020/250x250-000000-80-0-0.jpg"
     }
 }
