@@ -2858,5 +2858,13 @@
     "zeg p": {
         "nom": "ZEG P",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/56d7529b84c465814c1c688727579644/250x250-000000-80-0-0.jpg"
+    },
+    "lucboy": {
+        "nom": "lucboy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7e5e4fabe9af5975abedba8e334cd0aa/250x250-000000-80-0-0.jpg"
+    },
+    "monsieur nov": {
+        "nom": "Monsieur Nov",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d4569961067ada7a2da6d1c229ce6374/250x250-000000-80-0-0.jpg"
     }
 }
