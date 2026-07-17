@@ -2710,5 +2710,13 @@
     "james marron": {
         "nom": "James Marron",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2ff834b561e8bef9e45cf246ce993a4d/250x250-000000-80-0-0.jpg"
+    },
+    "trpjrk": {
+        "nom": "TRPJRK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bc5551020c8b1a9e793d5a3a6f028602/250x250-000000-80-0-0.jpg"
+    },
+    "hoodtrapjerk": {
+        "nom": "HoodTrapJerk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bc5551020c8b1a9e793d5a3a6f028602/250x250-000000-80-0-0.jpg"
     }
 }
