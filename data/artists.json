@@ -2626,5 +2626,9 @@
     "15.grammes": {
         "nom": "15.grammes",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/441a52c1ef8902a3543f7c87656de1d0/250x250-000000-80-0-0.jpg"
+    },
+    "unforgiven": {
+        "nom": "unforgiven",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b418a4d98eb405659cfe0537e34bc7da/250x250-000000-80-0-0.jpg"
     }
 }
