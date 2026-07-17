@@ -2998,5 +2998,17 @@
     "naps": {
         "nom": "Naps",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e49be7d142f1060b7bc0ac32eec97ce7/250x250-000000-80-0-0.jpg"
+    },
+    "seyyid ferhat": {
+        "nom": "Seyyid Ferhat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/36b7e2c9baa9190022393dfe102be815/250x250-000000-80-0-0.jpg"
+    },
+    "take a mic": {
+        "nom": "Take a Mic",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df910d34c23ed98bfabd34207d8b748d/250x250-000000-80-0-0.jpg"
+    },
+    "joyca": {
+        "nom": "JOYCA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/20ceb95e0d7253e4fdd3f58ef64373c6/250x250-000000-80-0-0.jpg"
     }
 }
