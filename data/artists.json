@@ -2938,5 +2938,29 @@
     "boîte noire": {
         "nom": "Boîte noire",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/64a4db5e4534c2a2bf69893a43ade9f5/250x250-000000-80-0-0.jpg"
+    },
+    "kore": {
+        "nom": "Kore",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "d juno": {
+        "nom": "D Juno",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41f21f52e1108921dc025e1baa86fdee/250x250-000000-80-0-0.jpg"
+    },
+    "dystinct": {
+        "nom": "DYSTINCT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1d94ff261ce4931020ae8087e7557993/250x250-000000-80-0-0.jpg"
+    },
+    "yg pablo": {
+        "nom": "YG Pablo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ff8ca9f35673ba2bae7e187a48f614c9/250x250-000000-80-0-0.jpg"
+    },
+    "youssoupha": {
+        "nom": "Youssoupha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/46e670f3d01c33706c35b58a61e14c55/250x250-000000-80-0-0.jpg"
+    },
+    "nemir": {
+        "nom": "Nemir",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1911c3ffd04366b18cb39b678fc4b5f9/250x250-000000-80-0-0.jpg"
     }
 }
