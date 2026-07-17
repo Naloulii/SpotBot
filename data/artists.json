@@ -2606,5 +2606,13 @@
     "h jeunecrack": {
         "nom": "H JeuneCrack",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8ebae987904b2524c1fe134b3df5590a/250x250-000000-80-0-0.jpg"
+    },
+    "ishowspeed": {
+        "nom": "IShowSpeed",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/593c383076ef9f93e35122d66a55652a/250x250-000000-80-0-0.jpg"
+    },
+    "so jpp": {
+        "nom": "SO JPP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6cd1550103fa7b5a463bd634bdc4fee/250x250-000000-80-0-0.jpg"
     }
 }
