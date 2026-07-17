@@ -2718,5 +2718,9 @@
     "hoodtrapjerk": {
         "nom": "HoodTrapJerk",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bc5551020c8b1a9e793d5a3a6f028602/250x250-000000-80-0-0.jpg"
+    },
+    "victor": {
+        "nom": "VICTOR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4289128ef842ce765af2d8b6f932bc4e/250x250-000000-80-0-0.jpg"
     }
 }
