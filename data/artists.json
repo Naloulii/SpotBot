@@ -2810,5 +2810,41 @@
     "vast": {
         "nom": "Vast",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/80d23ae57c32e9af4730bde594169f9a/250x250-000000-80-0-0.jpg"
+    },
+    "hbt": {
+        "nom": "HBT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5677cc9d51db3d32838a92bb27a7895d/250x250-000000-80-0-0.jpg"
+    },
+    "skeeff": {
+        "nom": "Skeeff",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b32eb8329b479361b8c83e1b84c5944a/250x250-000000-80-0-0.jpg"
+    },
+    "elias b4c": {
+        "nom": "Elias B4C",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/53d8481189ffb9e4621efe14b63c872e/250x250-000000-80-0-0.jpg"
+    },
+    "widgunz": {
+        "nom": "Widgunz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "pilou": {
+        "nom": "Pilou",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f1a2bbcf605a6b8fc02944992957e6b3/250x250-000000-80-0-0.jpg"
+    },
+    "holy kidd": {
+        "nom": "Holy Kidd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/468332a276005ab50b1703fab91cab38/250x250-000000-80-0-0.jpg"
+    },
+    "e-lias": {
+        "nom": "E-LIAS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/67f7250d8a6cd6a4cad9a9128a1c4fda/250x250-000000-80-0-0.jpg"
+    },
+    "zed": {
+        "nom": "Zed",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c2a4ecf6810c112a61997847b22dec85/250x250-000000-80-0-0.jpg"
+    },
+    "a2h": {
+        "nom": "A2h",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
