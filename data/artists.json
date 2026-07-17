@@ -2962,5 +2962,25 @@
     "nemir": {
         "nom": "Nemir",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1911c3ffd04366b18cb39b678fc4b5f9/250x250-000000-80-0-0.jpg"
+    },
+    "gracy hopkins": {
+        "nom": "Gracy Hopkins",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/672d5ee882e7535ffc0849a13f3db064/250x250-000000-80-0-0.jpg"
+    },
+    "zamdane": {
+        "nom": "Zamdane",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "madeinparis": {
+        "nom": "MadeInParis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/897070d14a45dba6c316be3ed44959c8/250x250-000000-80-0-0.jpg"
+    },
+    "draco dans ta face": {
+        "nom": "Draco dans ta face",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf05ae505838d19f3f3af4cf1219f9ef/250x250-000000-80-0-0.jpg"
+    },
+    "squidji": {
+        "nom": "Squidji",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8bda0489af2ba91800ac54792009a37d/250x250-000000-80-0-0.jpg"
     }
 }
