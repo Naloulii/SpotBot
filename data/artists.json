@@ -3010,5 +3010,33 @@
     "joyca": {
         "nom": "JOYCA",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/20ceb95e0d7253e4fdd3f58ef64373c6/250x250-000000-80-0-0.jpg"
+    },
+    "ovg!": {
+        "nom": "ovg!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25eb583421842acbb0ee9905b13a719b/250x250-000000-80-0-0.jpg"
+    },
+    "gadboy": {
+        "nom": "Gadboy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de217f91ef342014d4ff6f6552c64a1f/250x250-000000-80-0-0.jpg"
+    },
+    "keltiey": {
+        "nom": "keltiey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/050e6a8c6c496e1d6779233b9d840bfd/250x250-000000-80-0-0.jpg"
+    },
+    "dragon boys": {
+        "nom": "Dragon Boys",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fec7a0500ade2c009a18e80df16d237f/250x250-000000-80-0-0.jpg"
+    },
+    "ugovhb": {
+        "nom": "Ugovhb",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ff6c0003966f32031eecb640caaf447/250x250-000000-80-0-0.jpg"
+    },
+    "j4y": {
+        "nom": "J4y",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b656b7124df12f4f4508d9db61e2d5dc/250x250-000000-80-0-0.jpg"
+    },
+    "stepz": {
+        "nom": "Stepz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9e0843c84471d3cf9c7dab3a29583654/250x250-000000-80-0-0.jpg"
     }
 }
