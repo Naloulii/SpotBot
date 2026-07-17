@@ -2634,5 +2634,21 @@
     "fixupboy": {
         "nom": "Fixupboy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ba5f7bcafc50a6da88517239a5975402/250x250-000000-80-0-0.jpg"
+    },
+    "qura": {
+        "nom": "Qura",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/be650eacaa94d99bb7ade963f93d4aed/250x250-000000-80-0-0.jpg"
+    },
+    "pipenpodol": {
+        "nom": "pipenpodol",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/848553d81360ca4bf0cd743af7657fdc/250x250-000000-80-0-0.jpg"
+    },
+    "yvngguda": {
+        "nom": "yvngGuda",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/100d8248c96136c104083dba68b4cb3c/250x250-000000-80-0-0.jpg"
+    },
+    "yettie": {
+        "nom": "yettie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/98fa0cce7735800aac6d3dc469bda1cd/250x250-000000-80-0-0.jpg"
     }
 }
