@@ -2682,5 +2682,33 @@
     "melodybloom": {
         "nom": "melodybloom",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/23ccb663eaa0f0b73a9332c02ac8e088/250x250-000000-80-0-0.jpg"
+    },
+    "matieu white": {
+        "nom": "Matieu White",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d3eb48543d20d2ab52bde4ec6cebe3f/250x250-000000-80-0-0.jpg"
+    },
+    "1t1": {
+        "nom": "1T1",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b11be6fdbd95bd1ccaf0f92c29659576/250x250-000000-80-0-0.jpg"
+    },
+    "theomaa": {
+        "nom": "Theomaa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f2af8ec6eac8a270dd838109c68a343e/250x250-000000-80-0-0.jpg"
+    },
+    "ateyaba": {
+        "nom": "Ateyaba",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "novacane": {
+        "nom": "Novacane",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32c8f7e72e461a2c64f0eec9ce0de869/250x250-000000-80-0-0.jpg"
+    },
+    "tayc": {
+        "nom": "Tayc",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "james marron": {
+        "nom": "James Marron",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ff834b561e8bef9e45cf246ce993a4d/250x250-000000-80-0-0.jpg"
     }
 }
