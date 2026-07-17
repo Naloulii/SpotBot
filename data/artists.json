@@ -2790,5 +2790,17 @@
     "h.e.m": {
         "nom": "H.E.M",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/537e6388234a6fbb2201464e7dd7ade5/250x250-000000-80-0-0.jpg"
+    },
+    "boogie": {
+        "nom": "Boogie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/807db65d2ba0fa72fdca344f2939d656/250x250-000000-80-0-0.jpg"
+    },
+    "oliver tree": {
+        "nom": "Oliver Tree",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4acd6fc78c017cb062f163cc89167bfe/250x250-000000-80-0-0.jpg"
+    },
+    "bosh": {
+        "nom": "Bosh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c57f8513055f56807ee21e0b134c4ef8/250x250-000000-80-0-0.jpg"
     }
 }
