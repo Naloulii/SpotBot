@@ -2574,5 +2574,13 @@
     "asmodae": {
         "nom": "Asmodae",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bcb2e6968bcbc263dd40a960bf4428b8/250x250-000000-80-0-0.jpg"
+    },
+    "khali": {
+        "nom": "Khali",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e34184045ec976cbe9d0d78b3440b24e/250x250-000000-80-0-0.jpg"
+    },
+    "zny": {
+        "nom": "zny",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c8bc3fd92a43e78b0ebe96ce23db47e/250x250-000000-80-0-0.jpg"
     }
 }
