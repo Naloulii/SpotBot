@@ -2982,5 +2982,21 @@
     "squidji": {
         "nom": "Squidji",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8bda0489af2ba91800ac54792009a37d/250x250-000000-80-0-0.jpg"
+    },
+    "xarox": {
+        "nom": "Xarox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ada5a9fae77780adf88db9a4b3c29ad8/250x250-000000-80-0-0.jpg"
+    },
+    "s73": {
+        "nom": "S73",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/51b0438eba9e685794bba424c4232f14/250x250-000000-80-0-0.jpg"
+    },
+    "paltay": {
+        "nom": "Paltay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5cd46fdd199f50d43d39a9cb2e873fad/250x250-000000-80-0-0.jpg"
+    },
+    "naps": {
+        "nom": "Naps",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e49be7d142f1060b7bc0ac32eec97ce7/250x250-000000-80-0-0.jpg"
     }
 }
