@@ -3062,5 +3062,13 @@
     "aurelia": {
         "nom": "aurelia",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/73b46ca5edee282123b33d3c543297e6/250x250-000000-80-0-0.jpg"
+    },
+    "b jack$": {
+        "nom": "B Jack$",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/76452bd244a90774ece7ee6844e5e82c/250x250-000000-80-0-0.jpg"
+    },
+    "zeddy will": {
+        "nom": "ZEDDY WILL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13cab94f1197dcc637b35e13b91e95d0/250x250-000000-80-0-0.jpg"
     }
 }
