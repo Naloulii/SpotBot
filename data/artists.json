@@ -2614,5 +2614,13 @@
     "so jpp": {
         "nom": "SO JPP",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b6cd1550103fa7b5a463bd634bdc4fee/250x250-000000-80-0-0.jpg"
+    },
+    "cappo": {
+        "nom": "Cappo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8b70825e2e38e6f10514dc19dc09a451/250x250-000000-80-0-0.jpg"
+    },
+    "bryant barnes": {
+        "nom": "Bryant Barnes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c10d7b634304b9dbc43a0088c6f2210a/250x250-000000-80-0-0.jpg"
     }
 }
