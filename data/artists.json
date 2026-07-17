@@ -3038,5 +3038,29 @@
     "stepz": {
         "nom": "Stepz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9e0843c84471d3cf9c7dab3a29583654/250x250-000000-80-0-0.jpg"
+    },
+    "wonder girls": {
+        "nom": "Wonder Girls",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bc4f3964d8170e33af06fc1d3675f279/250x250-000000-80-0-0.jpg"
+    },
+    "kaaris": {
+        "nom": "Kaaris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8a9a1bab807db8050351e3278ef56483/250x250-000000-80-0-0.jpg"
+    },
+    "yung memes": {
+        "nom": "Yung Memes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c61f17aea73bede4c8b5f9270f990dde/250x250-000000-80-0-0.jpg"
+    },
+    "blueface": {
+        "nom": "Blueface",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d9df0b39ab1c90e54a8668fc49920113/250x250-000000-80-0-0.jpg"
+    },
+    "rilès": {
+        "nom": "Rilès",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a62bc989a79eb8da08cc2f39a2e52420/250x250-000000-80-0-0.jpg"
+    },
+    "aurelia": {
+        "nom": "aurelia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73b46ca5edee282123b33d3c543297e6/250x250-000000-80-0-0.jpg"
     }
 }
