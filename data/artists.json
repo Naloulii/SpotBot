@@ -2926,5 +2926,17 @@
     "ابو علي": {
         "nom": "ابو علي",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3abbaee44423607407082522d36f393b/250x250-000000-80-0-0.jpg"
+    },
+    "keblack": {
+        "nom": "KeBlack",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7478b5c1c63a039103ec52f9eb99b17c/250x250-000000-80-0-0.jpg"
+    },
+    "killa predator": {
+        "nom": "Killa Predator",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/29ce111c450fb35e895c2a93c8a9545b/250x250-000000-80-0-0.jpg"
+    },
+    "boîte noire": {
+        "nom": "Boîte noire",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/64a4db5e4534c2a2bf69893a43ade9f5/250x250-000000-80-0-0.jpg"
     }
 }
