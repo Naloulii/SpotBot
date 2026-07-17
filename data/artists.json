@@ -2630,5 +2630,9 @@
     "unforgiven": {
         "nom": "unforgiven",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b418a4d98eb405659cfe0537e34bc7da/250x250-000000-80-0-0.jpg"
+    },
+    "fixupboy": {
+        "nom": "Fixupboy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba5f7bcafc50a6da88517239a5975402/250x250-000000-80-0-0.jpg"
     }
 }
