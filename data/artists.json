@@ -3074,5 +3074,13 @@
     "crish ramirez": {
         "nom": "Crish Ramirez",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/74891030d405cce7e03e6a9b848cc4e3/250x250-000000-80-0-0.jpg"
+    },
+    "ptite soeur": {
+        "nom": "Ptite Soeur",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ca945e11c2a3edadc7985675718922c9/250x250-000000-80-0-0.jpg"
+    },
+    "neophron": {
+        "nom": "neophron",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7c3a41327bdf54985e84c3b64fa3213e/250x250-000000-80-0-0.jpg"
     }
 }
