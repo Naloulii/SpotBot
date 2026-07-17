@@ -2598,5 +2598,13 @@
     "amaalu": {
         "nom": "AMAALU",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fec95569318278a6e4b8cf6055318946/250x250-000000-80-0-0.jpg"
+    },
+    "idée noire.": {
+        "nom": "Idée Noire.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2de7d1e3d21752c7b544c37753d84f2f/250x250-000000-80-0-0.jpg"
+    },
+    "h jeunecrack": {
+        "nom": "H JeuneCrack",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8ebae987904b2524c1fe134b3df5590a/250x250-000000-80-0-0.jpg"
     }
 }
