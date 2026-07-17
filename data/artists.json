@@ -2866,5 +2866,49 @@
     "monsieur nov": {
         "nom": "Monsieur Nov",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d4569961067ada7a2da6d1c229ce6374/250x250-000000-80-0-0.jpg"
+    },
+    "big venice": {
+        "nom": "Big Venice",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5e181365d7b98331cc9db38980550c37/250x250-000000-80-0-0.jpg"
+    },
+    "noah naas": {
+        "nom": "Noah Naas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0343acf14d0c5fef08bf6e1120857fe5/250x250-000000-80-0-0.jpg"
+    },
+    "alvin chris": {
+        "nom": "Alvin Chris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94b188e9e0cdc54df393b50b4bc498a3/250x250-000000-80-0-0.jpg"
+    },
+    "mc delux": {
+        "nom": "Mc Delux",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/050c70f3600369c352f7fd44d172bf10/250x250-000000-80-0-0.jpg"
+    },
+    "dj guih da zo": {
+        "nom": "DJ Guih Da ZO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/99d31f26eac9c5af3a287f3f9bbe42ca/250x250-000000-80-0-0.jpg"
+    },
+    "dorysse": {
+        "nom": "Dorysse",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b1281f7698d3826be205696f4bbcf3c/250x250-000000-80-0-0.jpg"
+    },
+    "stavo": {
+        "nom": "Stavo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "tif": {
+        "nom": "TIF",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8f1881ac874cfa2d7fa8857c86bc58c4/250x250-000000-80-0-0.jpg"
+    },
+    "kurtys": {
+        "nom": "Kurtys",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f9872a14f5efc9186fb55539792803a3/250x250-000000-80-0-0.jpg"
+    },
+    "tizzy miller": {
+        "nom": "Tizzy Miller",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a861988d26ffc2f93a0d030784eb422e/250x250-000000-80-0-0.jpg"
+    },
+    "bilouki": {
+        "nom": "Bilouki",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/132d116de4694c6b368320386c29bd00/250x250-000000-80-0-0.jpg"
     }
 }
