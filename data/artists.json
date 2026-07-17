@@ -2554,5 +2554,9 @@
     "th": {
         "nom": "TH",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ba5693a28c116ef0fda235c699e9a8ed/250x250-000000-80-0-0.jpg"
+    },
+    "highcell": {
+        "nom": "HIGHCELL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fce99946e786587cddf03bbb3914dc70/250x250-000000-80-0-0.jpg"
     }
 }
