@@ -2558,5 +2558,21 @@
     "highcell": {
         "nom": "HIGHCELL",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fce99946e786587cddf03bbb3914dc70/250x250-000000-80-0-0.jpg"
+    },
+    "stanislas": {
+        "nom": "Stanislas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0903dc4881cb68d331a400bb714ec231/250x250-000000-80-0-0.jpg"
+    },
+    "enyo.wav": {
+        "nom": "Enyo.wav",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a4456ea8cabca85790eb888bd3466582/250x250-000000-80-0-0.jpg"
+    },
+    "carameii": {
+        "nom": "Carameii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6db3943903b4f26b757f80195f1a539c/250x250-000000-80-0-0.jpg"
+    },
+    "asmodae": {
+        "nom": "Asmodae",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bcb2e6968bcbc263dd40a960bf4428b8/250x250-000000-80-0-0.jpg"
     }
 }
