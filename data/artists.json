@@ -2802,5 +2802,13 @@
     "bosh": {
         "nom": "Bosh",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c57f8513055f56807ee21e0b134c4ef8/250x250-000000-80-0-0.jpg"
+    },
+    "kebou officiel": {
+        "nom": "Kebou Officiel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86b0d63cd818e3f83feac4068366abdb/250x250-000000-80-0-0.jpg"
+    },
+    "vast": {
+        "nom": "Vast",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/80d23ae57c32e9af4730bde594169f9a/250x250-000000-80-0-0.jpg"
     }
 }
