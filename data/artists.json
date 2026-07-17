@@ -2742,5 +2742,21 @@
     "beendo z": {
         "nom": "Beendo Z",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bd76d7cd861939b2c9c4596d189ef449/250x250-000000-80-0-0.jpg"
+    },
+    "gaulois": {
+        "nom": "GAULOIS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/87baff74f3cff7bf4218017cc9bf317c/250x250-000000-80-0-0.jpg"
+    },
+    "brulux": {
+        "nom": "Brulux",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c6acbfb9232542c8eeeb4acd4c5a1339/250x250-000000-80-0-0.jpg"
+    },
+    "13 block": {
+        "nom": "13 Block",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/80c0aab84ba595ff2870d3fc50ecdd21/250x250-000000-80-0-0.jpg"
+    },
+    "landy": {
+        "nom": "Landy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
