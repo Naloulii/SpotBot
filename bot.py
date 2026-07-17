@@ -1,3 +1,36 @@
+# ==========================================================================================
+# SpotBot — Bot Discord qui affiche en temps réel ce que les membres écoutent sur Spotify
+# ==========================================================================================
+# Vue d'ensemble de l'architecture (utile pour s'y retrouver dans le fichier) :
+#
+#   1. DÉTECTION DE L'ÉCOUTE (on_presence_update → verifier_presence_spotify) :
+#      Discord prévient le bot uniquement quand le statut/activité d'un membre CHANGE.
+#      Quand un membre commence/change/arrête une écoute Spotify, on crée/remplace/supprime
+#      un message-embed "🎵 X écoute :" dans le salon configuré du serveur.
+#
+#   2. SUIVI EN MÉMOIRE (ecoutes_en_cours) : dict {(guild_id, user_id): infos} qui garde la
+#      trace de chaque embed actuellement affiché, pour pouvoir le mettre à jour (barre de
+#      progression, toutes les 30s via actualiser_messages) ou le supprimer quand l'écoute
+#      s'arrête. ⚠️ Ce dict vit UNIQUEMENT en RAM : il est vidé à chaque redémarrage du bot,
+#      ce qui peut désynchroniser le bot de la réalité affichée dans Discord (voir les
+#      commentaires détaillés dans on_ready et actualiser_messages pour les bugs corrigés
+#      liés à ça).
+#
+#   3. PERSISTANCE DES DONNÉES (historique, likes, stats...) : fichiers JSON dans DATA_DIR/
+#      (un dossier par serveur + quelques fichiers centralisés), écrits de façon atomique
+#      (fichier temporaire + os.replace) pour éviter toute corruption en cas de coupure.
+#      Ces fichiers sont ensuite poussés régulièrement sur un dépôt GitHub (_sauvegarde_github_bloquante)
+#      pour servir de sauvegarde ET de source de données au dashboard web externe.
+#
+#   4. TÂCHES PLANIFIÉES (discord.ext.tasks) : mise à jour des embeds (30s), sauvegarde
+#      GitHub (15min), vérification des écoutes expirées (5min), nettoyage horaire des
+#      embeds fantômes (1h), classement hebdomadaire (chaque lundi minuit), rappel
+#      d'hébergement (24h). Toutes démarrées une seule fois dans on_ready (voir plus bas
+#      pourquoi le "une seule fois" est important).
+#
+#   5. COMMANDES SLASH + SYSTÈME DE TICKETS PAR MP pour l'administration et le support.
+# ==========================================================================================
+
 import os
 import io
 import re
@@ -80,11 +113,30 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 HOST_CONFIG_FILE = os.path.join(DATA_DIR, "host_config.json") # Stockage de l'échéance
 
-ecoutes_en_cours = {}   
-verrous_anti_spam = {}  
+# --- États globaux en mémoire (RAM uniquement, perdus à chaque redémarrage) ---
+
+# {(guild_id, user_id): {message_id, message_obj, salon_id, start_time, track_id, duration,
+#                         activity, couleur, cover_url}} — une entrée par écoute Spotify active
+# actuellement affichée dans un salon. Voir l'aperçu d'architecture en haut du fichier.
+ecoutes_en_cours = {}
+
+# {(guild_id, user_id): timestamp} — anti-spam : Discord peut envoyer plusieurs
+# on_presence_update très rapprochés pour un même membre ; on ignore les appels trop proches
+# (moins de 2s d'écart) pour éviter de traiter deux fois le même changement de statut.
+# Remarque : ce dict grossit avec le nombre de (serveur, membre) distincts vus, jamais purgé,
+# mais reste de taille négligeable (juste un float par entrée).
+verrous_anti_spam = {}
+
+# {user_id: {track_id, guild_proprietaire, start_time, duration}} — un même utilisateur peut
+# être sur plusieurs serveurs à la fois avec SpotBot actif partout ; ce dict désigne quel
+# serveur est "propriétaire" de l'écoute en cours pour ne compter le morceau qu'UNE fois dans
+# les stats/historique globaux, même s'il est affiché dans plusieurs salons simultanément.
 pistes_globales = {}
 
 def _revendiquer_proprietaire_ecoute(user_id, guild_id, track_id, start_time, duration_secondes):
+    """Tente de faire de `guild_id` le serveur qui comptera ce morceau dans l'historique/stats
+    de l'utilisateur. Si un autre serveur a déjà revendiqué le même morceau (même track_id),
+    on renvoie False : ce serveur affichera bien l'embed mais ne dupliquera pas les stats."""
     existant = pistes_globales.get(user_id)
     if existant and existant["track_id"] == track_id:
         return existant["guild_proprietaire"] == guild_id
@@ -97,10 +149,13 @@ def _revendiquer_proprietaire_ecoute(user_id, guild_id, track_id, start_time, du
     return True
 
 def _est_proprietaire_ecoute(user_id, guild_id, track_id):
+    """Vrai si `guild_id` est le serveur qui a revendiqué ce morceau pour cet utilisateur."""
     existant = pistes_globales.get(user_id)
     return bool(existant) and existant["track_id"] == track_id and existant["guild_proprietaire"] == guild_id
 
 def _liberer_ecoute(user_id, guild_id, track_id):
+    """Libère la revendication une fois l'écoute terminée, pour permettre au prochain
+    morceau (ou à un autre serveur) de revendiquer la place."""
     existant = pistes_globales.get(user_id)
     if existant and existant["track_id"] == track_id and existant["guild_proprietaire"] == guild_id:
         del pistes_globales[user_id]
@@ -156,6 +211,12 @@ else:
     repo = _adopter_dossier_comme_repo()
 
 def _sauvegarde_github_bloquante():
+    """Fonction SYNCHRONE (bloquante) de sauvegarde des données vers GitHub : ajoute les
+    fichiers modifiés dans data/, commit si besoin, récupère les changements distants
+    (rebase) puis pousse. Toujours appelée via asyncio.to_thread(...) pour ne pas bloquer
+    la boucle d'évènements asyncio pendant les appels réseau Git. Si le pull/rebase entre
+    en conflit (ex: deux instances du bot tournent en même temps), l'exception est
+    capturée et journalisée, mais rien n'écrase les données déjà commitées localement."""
     try:
         rel_data_dir = os.path.relpath(DATA_DIR, BASE_DIR)
         repo.git.add("-A", "--", rel_data_dir)
@@ -836,6 +897,14 @@ def generer_barre_progression(creation_time, duration):
 #        VÉRIFICATION STATUT DE L'ÉCOUTE
 # ==========================================
 async def verifier_presence_spotify(membre):
+    """Cœur du bot : appelée à chaque changement de présence d'un membre (ou manuellement
+    au démarrage pour rattraper les écoutes déjà en cours, voir on_ready).
+
+    - Si le membre écoute Spotify et que ce n'est PAS déjà le morceau qu'on affichait :
+      on ferme/supprime l'ancien embed (s'il y en avait un) et on en crée un nouveau.
+    - Si le membre n'écoute plus rien (ou une appli autre que Spotify) et qu'on avait un
+      embed affiché pour lui : on le supprime et on finalise l'historique.
+    """
     if membre.guild is None: return
     guild_id = str(membre.guild.id)
     config = charger_config(guild_id)
@@ -919,6 +988,9 @@ async def verifier_presence_spotify(membre):
             }
 
     elif cle in ecoutes_en_cours:
+        # Le membre n'a plus d'activité Spotify (ou en avait une et vient de l'arrêter) :
+        # on finalise l'historique (calcul du temps réellement écouté) puis on supprime
+        # l'embed de suivi, qui n'a plus lieu d'être affiché.
         infos = ecoutes_en_cours[cle]
         now_utc = datetime.datetime.now(datetime.timezone.utc)
         temps_ecoule = (now_utc - infos["start_time"]).total_seconds()
@@ -1010,6 +1082,60 @@ async def verifier_ecoutes_perimees():
             print(f"⚠️ [{guild.name}] Erreur vérification écoutes : {e}")
 
 # ==========================================
+#   NETTOYAGE DES EMBEDS FANTÔMES ("bug d'affichage")
+# ==========================================
+def _est_embed_ecoute_spotbot(message):
+    """Repère un embed 'X écoute :' posté par le bot (les embeds d'aide/top ont un autre titre)."""
+    if message.author.id != bot.user.id:
+        return False
+    if not message.embeds:
+        return False
+    titre = message.embeds[0].title or ""
+    return " écoute :" in titre
+
+async def nettoyer_embeds_orphelins_salon(salon):
+    """Supprime les embeds 'écoute en cours' qui traînent alors qu'ils ne sont plus suivis
+    (ex: après un redémarrage du bot, la mémoire des écoutes en cours est perdue et ces
+    messages ne sont plus jamais mis à jour ni supprimés normalement)."""
+    ids_messages_actifs = {
+        infos["message_id"] for infos in ecoutes_en_cours.values() if infos["salon_id"] == salon.id
+    }
+    supprimes = 0
+    try:
+        async for message in salon.history(limit=200):
+            if message.id in ids_messages_actifs:
+                continue
+            if _est_embed_ecoute_spotbot(message):
+                try:
+                    await message.delete()
+                    supprimes += 1
+                    await asyncio.sleep(0.5)  # anti rate-limit Discord
+                except Exception:
+                    pass
+    except Exception as e:
+        print(f"⚠️ Erreur nettoyage du salon {salon.id} : {e}")
+    return supprimes
+
+@tasks.loop(hours=1)
+async def nettoyage_horaire_embeds():
+    total_supprimes = 0
+    for guild in bot.guilds:
+        try:
+            config = charger_config(str(guild.id))
+            salon_id = config.get("salon_musique_id")
+            if not salon_id:
+                continue
+            salon = bot.get_channel(salon_id)
+            if not salon:
+                continue
+            total_supprimes += await nettoyer_embeds_orphelins_salon(salon)
+        except Exception as e:
+            print(f"⚠️ [{guild.name}] Erreur nettoyage horaire : {e}")
+
+    if total_supprimes:
+        print(f"🧹 Nettoyage horaire : {total_supprimes} embed(s) fantôme(s) supprimé(s).")
+
+# ==========================================
 #          MESSAGES PRIVÉS (TICKETS)
 # ==========================================
 class TicketCloseView(discord.ui.View):
@@ -1088,7 +1214,9 @@ async def on_message(message):
             embed_init.add_field(name="ID Utilisateur", value=f"`{message.author.id}`", inline=True)
 
             view = TicketCloseView(message.author.id)
-            await salon_ticket.send(content=f"<@566899759013429259>", embed=embed_init, view=view)
+            # On utilise OWNER_ID (et pas un ID écrit en dur) pour rester cohérent si jamais
+            # cette constante change un jour : avant, l'ID était dupliqué ici en clair.
+            await salon_ticket.send(content=f"<@{OWNER_ID}>", embed=embed_init, view=view)
 
         embed_msg = discord.Embed(
             description=message.content,
@@ -1253,10 +1381,20 @@ async def on_ready():
                     print(f"⚠️ [{guild.name}] Impossible de publier le classement : {e}")
 
         if salon:
+            # ⚠️ BUG CORRIGÉ : on_ready() peut se redéclencher sur une simple reconnexion
+            # Discord (sans que le processus ne redémarre ni que `ecoutes_en_cours` soit vidé).
+            # Avant, cette boucle supprimait TOUS les embeds du bot (sauf aide/top/épinglé),
+            # y compris des fiches "X écoute :" encore activement suivies et à jour !
+            # On exclut donc désormais les messages actuellement suivis en mémoire.
+            ids_messages_suivis = {
+                infos["message_id"] for infos in ecoutes_en_cours.values() if infos["salon_id"] == salon.id
+            }
             try:
                 async for message in salon.history(limit=50):
                     if message.author == bot.user:
-                        if message.id == msg_aide_reel_id or message.id == msg_top_reel_id or message.pinned:
+                        if message.id in (msg_aide_reel_id, msg_top_reel_id) or message.pinned:
+                            continue
+                        if message.id in ids_messages_suivis:
                             continue
                         if message.embeds:
                             await message.delete()
@@ -1264,16 +1402,45 @@ async def on_ready():
             except Exception as e:
                 print(f"Erreur nettoyage initial ({guild.name}) : {e}")
 
+            # RÉCONCILIATION AU DÉMARRAGE : la détection normale d'écoute se fait uniquement
+            # via l'évènement on_presence_update (donc sur un CHANGEMENT de statut). Après un
+            # vrai redémarrage du bot, `ecoutes_en_cours` est vide : quelqu'un qui écoutait déjà
+            # une musique AVANT le redémarrage et qui continue la même musique ne déclenchera
+            # aucun nouvel évènement, et n'aurait donc jamais de fiche recréée. On revérifie ici
+            # manuellement l'activité Spotify de chaque membre pour rattraper ces cas.
+            for membre in guild.members:
+                if membre.bot:
+                    continue
+                if (guild_id, str(membre.id)) in ecoutes_en_cours:
+                    continue
+                try:
+                    await verifier_presence_spotify(membre)
+                except Exception as e:
+                    print(f"⚠️ [{guild.name}] Erreur réconciliation écoute pour {membre.display_name} : {e}")
+
     await bot.change_presence(status=discord.Status.online, activity=bot.activity)
 
     # Force une sauvegarde GitHub au lancement du bot pour envoyer tous les nouveaux "owner_id" d'un coup
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
-    actualiser_messages.start()
-    sauvegarde_periodique_github.start()
-    classement_hebdomadaire_auto.start()
-    verifier_ecoutes_perimees.start()
-    rappel_renew_hebergement.start()
+    # ⚠️ BUG CORRIGÉ : on_ready() peut être appelé PLUSIEURS FOIS pendant la vie du bot
+    # (Discord.py rappelle on_ready() à chaque reconnexion après une coupure réseau/gateway).
+    # Avant, on faisait "tache.start()" sans vérifier si elle tournait déjà : au 2e appel,
+    # discord.py lève une RuntimeError ("Task is already launched"), ce qui coupait net
+    # l'exécution du reste de on_ready() et pouvait empêcher certaines tâches de redémarrer
+    # correctement après une reconnexion. On vérifie maintenant .is_running() avant de lancer.
+    if not actualiser_messages.is_running():
+        actualiser_messages.start()
+    if not sauvegarde_periodique_github.is_running():
+        sauvegarde_periodique_github.start()
+    if not classement_hebdomadaire_auto.is_running():
+        classement_hebdomadaire_auto.start()
+    if not verifier_ecoutes_perimees.is_running():
+        verifier_ecoutes_perimees.start()
+    if not rappel_renew_hebergement.is_running():
+        rappel_renew_hebergement.start()
+    if not nettoyage_horaire_embeds.is_running():
+        nettoyage_horaire_embeds.start()
 
 
 @bot.event
@@ -1419,6 +1586,17 @@ async def on_presence_update(before, after):
 
 @tasks.loop(seconds=30)
 async def actualiser_messages():
+    """Rafraîchit toutes les 30s la barre de progression de chaque écoute suivie en mémoire.
+
+    ⚠️ CAUSE PROBABLE DES EMBEDS "FANTÔMES" BLOQUÉS (barre figée à 0:01/0:02, capture d'écran) :
+    si `fetch_message`/`edit` échoue une seule fois (message supprimé à la main, coupure
+    réseau, rate-limit Discord 429, permission perdue...), l'ancien code arrêtait simplement
+    de suivre l'écoute ("del ecoutes_en_cours[cle]") SANS supprimer le message Discord.
+    Le message restait donc affiché pour toujours, figé sur sa dernière valeur, invisible
+    pour toute logique de nettoyage classique puisqu'il n'était plus dans `ecoutes_en_cours`.
+    On tente maintenant de le supprimer nous-mêmes dès qu'on abandonne son suivi, en filet
+    de sécurité en plus du nettoyage horaire (nettoyage_horaire_embeds) qui rattrape le reste.
+    """
     for cle, infos in list(ecoutes_en_cours.items()):
         salon = bot.get_channel(infos["salon_id"])
         if not salon:
@@ -1441,7 +1619,18 @@ async def actualiser_messages():
             view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, cover_url)
             await msg.edit(embed=embed, view=view)
         except Exception:
-            if cle in ecoutes_en_cours: del ecoutes_en_cours[cle]
+            # On ne peut plus mettre à jour ce message (supprimé, permissions, rate-limit...).
+            # On arrête de le suivre ET on tente de le supprimer pour ne pas laisser un embed
+            # figé/obsolète visible dans le salon (voir explication ci-dessus).
+            if cle in ecoutes_en_cours:
+                del ecoutes_en_cours[cle]
+            try:
+                msg_a_nettoyer = infos.get("message_obj")
+                if msg_a_nettoyer is None:
+                    msg_a_nettoyer = await salon.fetch_message(infos["message_id"])
+                await msg_a_nettoyer.delete()
+            except Exception:
+                pass  # Déjà supprimé, ou plus accessible : le nettoyage horaire s'en chargera.
 
 # ==========================================
 #                COMMANDES

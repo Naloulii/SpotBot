@@ -914,6 +914,25 @@
 <footer>Données mises à jour automatiquement par SpotBot — dépôt public GitHub</footer>
 
 <script>
+/* ==========================================================================================
+   SpotBot Dashboard — page unique (SPA) sans framework, en JS "vanilla".
+   ------------------------------------------------------------------------------------------
+   Vue d'ensemble :
+     1. AUTHENTIFICATION : OAuth2 Discord en "implicit grant" (response_type=token). Comme
+        c'est un site 100% statique (GitHub Pages), il n'y a pas de serveur pour échanger un
+        code contre un token en secret : Discord renvoie donc directement le token dans le
+        fragment d'URL (#access_token=...). Le token est ensuite gardé dans localStorage pour
+        rester connecté entre deux visites (voir handleOAuthRedirect / getStoredToken).
+     2. DONNÉES : aucune base de données ni API perso — le dashboard lit simplement les
+        fichiers JSON que le bot Discord pousse sur GitHub (data/*.json) via l'API "raw"
+        GitHub, et la liste des serveurs via l'API Git Trees de GitHub.
+     3. ROUTAGE : un routeur maison basé sur le hash de l'URL (#/ ou #/guild/<id>/<onglet>),
+        déclenché au chargement et à chaque changement de hash (voir route()).
+     4. SÉCURITÉ D'AFFICHAGE : toute donnée provenant de l'extérieur (pseudo Discord, titres
+        de morceaux, etc.) passe par esc() avant d'être insérée dans le HTML, pour éviter
+        les failles XSS (injection de balises via un pseudo ou un titre de morceau malveillant).
+   ========================================================================================== */
+
 const CONFIG = {
   GITHUB_USERNAME: "naloulii",        
   GITHUB_REPO_NAME: "SpotBot", 
@@ -925,6 +944,13 @@ const DISCORD_CONFIG = {
   SCOPE: "identify"
 };
 
+// Permissions du bot demandées lors de l'ajout à un serveur (lien "Ajouter à mon serveur").
+// Centralisé ici pour éviter que ce nombre magique soit dupliqué (et désynchronisé) dans le HTML.
+const BOT_INVITE_PERMISSIONS = "6755401857231952";
+function botInviteUrl(){
+  return `https://discord.com/oauth2/authorize?client_id=${DISCORD_CONFIG.CLIENT_ID}&permissions=${BOT_INVITE_PERMISSIONS}&integration_type=0&scope=bot+applications.commands`;
+}
+
 const ADMIN_IDS = ["566899759013429259"];
 const ALL_ACCESS_ID = "__all__";
 
@@ -935,6 +961,11 @@ function getRedirectUri(){
 function discordLoginUrl(){
   const state = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
   sessionStorage.setItem("discord_oauth_state", state);
+  // Mémorise la page (hash) sur laquelle on se trouvait AVANT de partir vers Discord, pour
+  // pouvoir y revenir après connexion (voir handleOAuthRedirect). Avant ce correctif, on
+  // atterrissait systématiquement sur la liste des serveurs après une connexion, même si
+  // on avait cliqué "Se connecter" depuis la page d'un serveur précis.
+  sessionStorage.setItem("discord_oauth_return_hash", location.hash || "#/");
   const params = new URLSearchParams({
     response_type: "token",
     client_id: DISCORD_CONFIG.CLIENT_ID,
@@ -953,11 +984,17 @@ function handleOAuthRedirect(){
   const expiresIn = parseInt(params.get("expires_in") || "0", 10);
   const state = params.get("state");
   const savedState = sessionStorage.getItem("discord_oauth_state");
+  const returnHash = sessionStorage.getItem("discord_oauth_return_hash") || "#/";
   sessionStorage.removeItem("discord_oauth_state");
+  sessionStorage.removeItem("discord_oauth_return_hash");
 
-  history.replaceState(null, "", location.pathname + location.search + "#/");
+  // On nettoie le fragment d'URL (qui contient le token en clair) et on restaure la page
+  // d'origine plutôt que de toujours revenir à l'accueil.
+  history.replaceState(null, "", location.pathname + location.search + returnHash);
 
   if(!token || !savedState || state !== savedState){
+    // Token absent, ou "state" manquant/différent : on ne fait pas confiance à la réponse
+    // (protection standard contre le CSRF/rejeu sur le flux OAuth implicite).
     return;
   }
 
@@ -966,6 +1003,8 @@ function handleOAuthRedirect(){
 }
 
 function getStoredToken(){
+  // Le token OAuth Discord est gardé en localStorage (persiste entre les visites) avec sa
+  // date d'expiration ; s'il est absent ou expiré on considère l'utilisateur déconnecté.
   const token = localStorage.getItem("discord_token");
   const expiry = parseInt(localStorage.getItem("discord_token_expiry") || "0", 10);
   if(!token || !expiry || Date.now() > expiry) return null;
@@ -981,6 +1020,8 @@ function logoutDiscord(){
 }
 
 async function fetchDiscordUserId(token){
+  // On met en cache l'ID Discord de l'utilisateur en localStorage pour éviter de re-appeler
+  // l'API Discord (/users/@me) à chaque navigation dans le dashboard.
   const cached = localStorage.getItem("discord_user_id");
   if(cached) return cached;
 
@@ -990,6 +1031,7 @@ async function fetchDiscordUserId(token){
       cache: "no-store"
     });
     if(!res.ok){
+      // Token rejeté par Discord (expiré côté serveur, révoqué...) : on déconnecte proprement.
       if(res.status === 401) logoutDiscord();
       return null;
     }
@@ -997,6 +1039,8 @@ async function fetchDiscordUserId(token){
     localStorage.setItem("discord_user_id", user.id);
     return user.id;
   }catch(e){
+    // Erreur réseau : on ne déconnecte pas l'utilisateur pour un simple souci de connexion
+    // temporaire, on renvoie juste null pour cette tentative.
     return null;
   }
 }
@@ -1019,6 +1063,9 @@ const app = document.getElementById("app");
 const HIST_PER_PAGE = 10; 
 
 function esc(str){
+  // Échappement HTML de base : empêche qu'un pseudo Discord ou un titre de morceau contenant
+  // des caractères comme < > " ne casse la mise en page ou n'injecte du HTML/JS (XSS).
+  // Utilisé systématiquement partout où une donnée externe est insérée dans le DOM.
   return String(str ?? "").replace(/[&<>"']/g, m => ({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
   }[m]));
@@ -1027,6 +1074,9 @@ function initials(name){
   return esc((name || "?").trim().slice(0,2).toUpperCase());
 }
 async function fetchJSON(url, fallback = {}){
+  // Petit utilitaire de fetch "tolérant aux pannes" : en cas d'erreur réseau, de 404
+  // (fichier pas encore créé côté bot) ou de JSON invalide, on renvoie `fallback` plutôt
+  // que de laisser une exception remonter et casser tout l'affichage du dashboard.
   try{
     const res = await fetch(url, { cache: "no-store" });
     if(!res.ok) return fallback;
@@ -1057,6 +1107,11 @@ function iconSyncSVG(spin){
 }
 document.getElementById("sync-icon").innerHTML = iconSyncSVG(false);
 
+// Bouton "Synchroniser les données" : relance simplement route() pour re-fetcher tout
+// depuis GitHub et redessiner la vue actuelle. ⚠️ BUG CORRIGÉ : route() ne renvoyait avant
+// aucune valeur, donc "await route()" ne servait à rien — le message "Synchronisé ✓"
+// s'affichait quasi instantanément, avant même que les nouvelles données aient fini de
+// charger. route() renvoie maintenant la promesse de rendu, donc ce await est significatif.
 document.getElementById("sync-btn").addEventListener("click", async () => {
   const btn = document.getElementById("sync-btn");
   const icon = document.getElementById("sync-icon");
@@ -1078,21 +1133,39 @@ document.getElementById("sync-btn").addEventListener("click", async () => {
   }
 });
 
+// Point d'entrée de l'app : on route à chaque changement de hash (navigation interne, ou
+// retour arrière du navigateur), et une fois au chargement initial de la page — en traitant
+// d'abord un éventuel retour de connexion Discord (le token arrive dans le hash de l'URL).
 window.addEventListener("hashchange", route);
 window.addEventListener("DOMContentLoaded", () => {
   handleOAuthRedirect();
   route();
 });
 
+// Compteur de génération de navigation : à chaque route(), on incrémente ce compteur et
+// on capture sa valeur. Les fonctions de rendu asynchrones (renderCrateView/renderRecordView)
+// vérifient avant d'écrire dans le DOM qu'aucune navigation plus récente n'a eu lieu entre
+// temps (ex: l'utilisateur clique très vite sur 2 serveurs différents) — sans ce garde-fou,
+// une réponse réseau plus lente mais arrivée en second pourrait écraser l'affichage avec du
+// contenu périmé (mauvais serveur affiché, retour en arrière visuel...).
+let navGeneration = 0;
+function isStaleNavigation(monGeneration){
+  return monGeneration !== navGeneration;
+}
+
 function route(){
+  const monGeneration = ++navGeneration;
   const hash = location.hash.replace(/^#\/?/, "");
   if(hash.startsWith("guild/")){
     const parts = hash.split("/");
     const guildId = parts[1];
     const tab = parts[2] || "classement";
-    renderRecordView(guildId, tab);
+    // "return" est essentiel ici : ça permet à l'appelant (ex: le bouton de synchronisation)
+    // d'attendre avec "await route()" que le chargement des données soit VRAIMENT terminé,
+    // au lieu de continuer immédiatement pendant que le fetch tourne encore en arrière-plan.
+    return renderRecordView(guildId, tab, monGeneration);
   } else {
-    renderCrateView();
+    return renderCrateView(monGeneration);
   }
 }
 
@@ -1107,7 +1180,7 @@ function loadingScreen(label){
 /* =========================================================
    VUE 1 — SÉLECTION DU SERVEUR
    ========================================================= */
-async function renderCrateView(){
+async function renderCrateView(monGeneration){
   const token = getStoredToken();
 
   if(!token){
@@ -1118,6 +1191,7 @@ async function renderCrateView(){
   loadingScreen("Connexion aux serveurs…");
 
   const userId = await fetchDiscordUserId(token);
+  if(isStaleNavigation(monGeneration)) return; // une navigation plus récente a eu lieu entre-temps
   if(!userId){
     renderLoginGate();
     return;
@@ -1129,6 +1203,7 @@ async function renderCrateView(){
     if(!res.ok) throw new Error("tree fetch failed");
     tree = await res.json();
   }catch(e){
+    if(isStaleNavigation(monGeneration)) return;
     app.innerHTML = `
       <section class="hero" style="border: 3px solid var(--green); border-radius: var(--radius-l); padding: 40px; box-shadow: 0 12px 40px -12px var(--green-glow); margin-top: 24px; margin-bottom: 48px; max-width: 100%; text-align: left;">
         <p class="eyebrow">Connexion impossible</p>
@@ -1156,6 +1231,8 @@ async function renderCrateView(){
     };
   }));
 
+  if(isStaleNavigation(monGeneration)) return; // évite d'écraser une vue déjà changée entre-temps
+
   const isAdmin = ADMIN_IDS.includes(userId);
   const guilds = isAdmin ? allGuilds : allGuilds.filter(g => g.memberIds.includes(userId));
 
@@ -1167,7 +1244,7 @@ async function renderCrateView(){
       <p class="hero-sub" style="margin-bottom: 24px; max-width: 560px;">Tu ne vois ici que les serveurs Discord sur lesquels tu es présent.</p>
       <div class="button-group" style="margin-top: 0;">
         <button type="button" class="logout-btn" id="logout-btn">${discordIconSVG()} Se déconnecter</button>
-        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">
+        <a class="invite-btn" href="${botInviteUrl()}" target="_blank" rel="noopener">
           <span style="font-weight: bold; font-size: 16px; margin-right: 4px;">+</span> Ajouter à mon serveur
         </a>
       </div>
@@ -1225,7 +1302,7 @@ function renderLoginGate(){
         </p>
         <div class="button-group" style="margin-top: 0;">
           <a class="discord-login-btn" href="${discordLoginUrl()}">${discordIconSVG()} Se connecter avec Discord</a>
-          <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1388191386628526261&permissions=6755401857231952&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">
+          <a class="invite-btn" href="${botInviteUrl()}" target="_blank" rel="noopener">
             <span style="font-weight: bold; font-size: 16px; margin-right: 4px;">+</span> Ajouter à mon serveur
           </a>
         </div>
@@ -1275,7 +1352,12 @@ function emptyState(){
 /* =========================================================
    VUE 2 — LA FICHE SERVEUR
    ========================================================= */
-async function renderRecordView(guildId, initialTab = "classement"){
+/* Affiche la fiche d'un serveur : vérifie les droits d'accès (l'utilisateur doit être membre
+   du serveur, ou administrateur pour la vue "Accès total"), charge toutes les données JSON
+   nécessaires en parallèle, puis construit les 4 onglets (Classement / Historique / Favoris
+   / Tops). `monGeneration` sert de garde-fou contre les navigations rapides successives
+   (voir isStaleNavigation plus haut). */
+async function renderRecordView(guildId, initialTab = "classement", monGeneration){
   const validTabs = ["classement", "historique", "favoris", "tops"];
   if(!validTabs.includes(initialTab)) initialTab = "classement";
 
@@ -1287,6 +1369,7 @@ async function renderRecordView(guildId, initialTab = "classement"){
 
   loadingScreen("Vérification de l'accès…");
   const userId = await fetchDiscordUserId(token);
+  if(isStaleNavigation(monGeneration)) return;
   if(!userId){
     renderLoginGate();
     return;
@@ -1332,6 +1415,8 @@ async function renderRecordView(guildId, initialTab = "classement"){
     fetchJSON(`${RAW_BASE}data/tracks.json`, {}),
     fetchJSON(`${RAW_BASE}data/users.json`, {})
   ]);
+
+  if(isStaleNavigation(monGeneration)) return; // une navigation plus récente a eu lieu : on abandonne cet affichage
 
   const appartientAuServeur = ([uid]) => memberIds.has(uid);
 
@@ -1414,6 +1499,10 @@ function renderClassement(stats, users){
 }
 
 /* ---------- Onglet Historique ---------- */
+/* Onglet "Historique" : aplatit l'historique (groupé par membre) en une seule liste
+   d'écoutes, triée de la plus récente à la plus ancienne, puis gère la recherche texte,
+   le filtre par membre et la pagination entièrement côté client (redessine juste #hist-list
+   à chaque changement, sans jamais recharger les données). */
 function mountHistorique(container, historique, artists, tracks, users, monLikes){
   const membres = Object.keys(historique).map(uid => {
     const prof = users[uid] || { username: "Inconnu", display_name: "Inconnu" };
@@ -1536,6 +1625,9 @@ function parseDateFR(str){
 }
 
 /* ---------- Onglet Favoris ---------- */
+/* Onglet "Favoris" : une pastille par membre ayant liké au moins un morceau ; cliquer sur
+   une pastille affiche la grille de ses morceaux likés (résolus via le dictionnaire `tracks`
+   centralisé, qui contient titre/artiste/cover pour chaque track_id). */
 function mountFavoris(container, likes, artists, tracks, users, currentUserId){
   const membres = Object.entries(likes).filter(([,liste]) => liste && liste.length);
 
@@ -1600,6 +1692,10 @@ function mountFavoris(container, likes, artists, tracks, users, currentUserId){
 }
 
 /* ---------- Onglet Tops ---------- */
+/* Onglet "Tops" : à partir de l'historique complet, calcule pour chaque membre son top
+   chansons et top artistes, en ne comptant que les écoutes marquées "🎉" (validées à 96%+,
+   voir mettre_a_jour_historique_fin côté bot). Les morceaux/artistes sont comptés par
+   occurrence puis triés par nombre décroissant. */
 function computeTops(historique, tracks, users){
   const membres = {};
   for(const [uid, ecoutes] of Object.entries(historique)){
