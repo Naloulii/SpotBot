@@ -2758,5 +2758,21 @@
     "landy": {
         "nom": "Landy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "hotel ugly": {
+        "nom": "Hotel Ugly",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f4e7914b0e9b3bc1cf767a2d7cc29aa0/250x250-000000-80-0-0.jpg"
+    },
+    "caracol televisión": {
+        "nom": "Caracol Televisión",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1822a26a68e62f37019ee337cbdf7d55/250x250-000000-80-0-0.jpg"
+    },
+    "hernán darío ramírez mejía": {
+        "nom": "Hernán Darío Ramírez Mejía",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c95ff7018adc762b0c26a07647af2997/250x250-000000-80-0-0.jpg"
+    },
+    "bootsy collins": {
+        "nom": "Bootsy Collins",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2baa65670436999dd198d914ecf93fea/250x250-000000-80-0-0.jpg"
     }
 }
