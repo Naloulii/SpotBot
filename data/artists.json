@@ -2910,5 +2910,17 @@
     "bilouki": {
         "nom": "Bilouki",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/132d116de4694c6b368320386c29bd00/250x250-000000-80-0-0.jpg"
+    },
+    "still fresh": {
+        "nom": "Still Fresh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "tiitof": {
+        "nom": "Tiitof",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/552e0c7359a9249a0e03dfcfe6d9ccac/250x250-000000-80-0-0.jpg"
+    },
+    "sdm": {
+        "nom": "SDM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56589954cda1a811317b84fffc1c75b5/250x250-000000-80-0-0.jpg"
     }
 }
