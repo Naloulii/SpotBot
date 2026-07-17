@@ -2730,5 +2730,13 @@
     "moji x sboy": {
         "nom": "Moji x Sboy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fcc02ae42052f4d5cf78cfa0a873803b/250x250-000000-80-0-0.jpg"
+    },
+    "tk": {
+        "nom": "TK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/05479a15d5290a05a590b5e68c62bfdc/250x250-000000-80-0-0.jpg"
+    },
+    "hös copperfield": {
+        "nom": "Hös Copperfield",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d6580baadaa5f44279588ffa26ba6c5/250x250-000000-80-0-0.jpg"
     }
 }
