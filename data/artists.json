@@ -2922,5 +2922,9 @@
     "sdm": {
         "nom": "SDM",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/56589954cda1a811317b84fffc1c75b5/250x250-000000-80-0-0.jpg"
+    },
+    "ابو علي": {
+        "nom": "ابو علي",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3abbaee44423607407082522d36f393b/250x250-000000-80-0-0.jpg"
     }
 }
