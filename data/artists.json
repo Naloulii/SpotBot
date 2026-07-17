@@ -2666,5 +2666,21 @@
     "brown eyed girl": {
         "nom": "brown eyed girl",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4fea19ead5fe5b221863a7a8f3b6e9b7/250x250-000000-80-0-0.jpg"
+    },
+    "asentrix": {
+        "nom": "Asentrix",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b83f7a03e2d6c52d26c82ff552371f30/250x250-000000-80-0-0.jpg"
+    },
+    "la rvfleuze": {
+        "nom": "La Rvfleuze",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d55b6b4ffc4d8510250b2043ca66999/250x250-000000-80-0-0.jpg"
+    },
+    "proderics": {
+        "nom": "proderics",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1672d8b8f0d0b0d6e1876e4e33615189/250x250-000000-80-0-0.jpg"
+    },
+    "melodybloom": {
+        "nom": "melodybloom",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/23ccb663eaa0f0b73a9332c02ac8e088/250x250-000000-80-0-0.jpg"
     }
 }
