@@ -3082,5 +3082,9 @@
     "neophron": {
         "nom": "neophron",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7c3a41327bdf54985e84c3b64fa3213e/250x250-000000-80-0-0.jpg"
+    },
+    "b-lovee": {
+        "nom": "B-Lovee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6fef5867ef54841a338e9c5af88592fc/250x250-000000-80-0-0.jpg"
     }
 }
