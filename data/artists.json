@@ -2722,5 +2722,13 @@
     "victor": {
         "nom": "VICTOR",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4289128ef842ce765af2d8b6f932bc4e/250x250-000000-80-0-0.jpg"
+    },
+    "clara charlotte": {
+        "nom": "Clara Charlotte",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "moji x sboy": {
+        "nom": "Moji x Sboy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fcc02ae42052f4d5cf78cfa0a873803b/250x250-000000-80-0-0.jpg"
     }
 }
