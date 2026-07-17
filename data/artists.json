@@ -2650,5 +2650,21 @@
     "yettie": {
         "nom": "yettie",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/98fa0cce7735800aac6d3dc469bda1cd/250x250-000000-80-0-0.jpg"
+    },
+    "zeormx": {
+        "nom": "ZEORMX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/84c93e2842781f8dc81189f5757ffec3/250x250-000000-80-0-0.jpg"
+    },
+    "mezzia": {
+        "nom": "MEZZIA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f2caa1eec2d3c4e82ab111deb11df0a/250x250-000000-80-0-0.jpg"
+    },
+    "dark academia": {
+        "nom": "dark academia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a48b94483e54fb66edfd059cd9220935/250x250-000000-80-0-0.jpg"
+    },
+    "brown eyed girl": {
+        "nom": "brown eyed girl",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4fea19ead5fe5b221863a7a8f3b6e9b7/250x250-000000-80-0-0.jpg"
     }
 }
