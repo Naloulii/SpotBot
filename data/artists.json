@@ -2846,5 +2846,17 @@
     "a2h": {
         "nom": "A2h",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "alonzo": {
+        "nom": "Alonzo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6135b5af00e064cc9582748d3c51612a/250x250-000000-80-0-0.jpg"
+    },
+    "jeeno": {
+        "nom": "Jeeno",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e81d7e9f1d33fd1d5e5d2c000bb598e/250x250-000000-80-0-0.jpg"
+    },
+    "zeg p": {
+        "nom": "ZEG P",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56d7529b84c465814c1c688727579644/250x250-000000-80-0-0.jpg"
     }
 }
