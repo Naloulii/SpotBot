@@ -2582,5 +2582,21 @@
     "zny": {
         "nom": "zny",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4c8bc3fd92a43e78b0ebe96ce23db47e/250x250-000000-80-0-0.jpg"
+    },
+    "7way": {
+        "nom": "7way",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0353045e801a3ac44777245f8ca7bfbd/250x250-000000-80-0-0.jpg"
+    },
+    "akzrael": {
+        "nom": "Akzrael",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/425410322cecfa19e93daeee9395d7b0/250x250-000000-80-0-0.jpg"
+    },
+    "kessoku band": {
+        "nom": "kessoku band",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d3adbd700a19dfee2fa9a8fd9ede7dce/250x250-000000-80-0-0.jpg"
+    },
+    "amaalu": {
+        "nom": "AMAALU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fec95569318278a6e4b8cf6055318946/250x250-000000-80-0-0.jpg"
     }
 }
