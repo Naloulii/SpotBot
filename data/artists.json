@@ -2550,5 +2550,9 @@
     "laufey": {
         "nom": "Laufey",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0eca5dd5f8ac336e55bf390da9ce13d0/250x250-000000-80-0-0.jpg"
+    },
+    "th": {
+        "nom": "TH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba5693a28c116ef0fda235c699e9a8ed/250x250-000000-80-0-0.jpg"
     }
 }
