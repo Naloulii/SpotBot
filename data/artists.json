@@ -3154,5 +3154,53 @@
     "blynk": {
         "nom": "Blynk",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cda090915f017afa6b086e3c0bda8aba/250x250-000000-80-0-0.jpg"
+    },
+    "bino*": {
+        "nom": "BINO*",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9eee02965852a0f2a29505f8282a5c97/250x250-000000-80-0-0.jpg"
+    },
+    "f3miii": {
+        "nom": "F3miii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a149bc4b247bbc8d8c2096e5124dbaef/250x250-000000-80-0-0.jpg"
+    },
+    "sofiane pamart": {
+        "nom": "Sofiane Pamart",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5cd46fdd199f50d43d39a9cb2e873fad/250x250-000000-80-0-0.jpg"
+    },
+    "chanceko": {
+        "nom": "Chanceko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3188ea085ab7ddc9bf68ecc5975e3ac5/250x250-000000-80-0-0.jpg"
+    },
+    "beeby": {
+        "nom": "Beeby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d0f247e65d1c65cfefe38cfec5404ac/250x250-000000-80-0-0.jpg"
+    },
+    "mitch": {
+        "nom": "MITCH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aaa15fa8a9e566daedb751764a5bcdd6/250x250-000000-80-0-0.jpg"
+    },
+    "410": {
+        "nom": "410",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "feel": {
+        "nom": "FEEL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/455b399d27c01d99f3f789e1ecc8407a/250x250-000000-80-0-0.jpg"
+    },
+    "jewel usain": {
+        "nom": "Jewel Usain",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1d9744643b25ed0fbe8815954cf51cc4/250x250-000000-80-0-0.jpg"
+    },
+    "kekra": {
+        "nom": "Kekra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f0ebbe2edc28f7e7c07a99f81144e5a3/250x250-000000-80-0-0.jpg"
+    },
+    "dehmo": {
+        "nom": "Dehmo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e618c42b5b319ff4451e6ed5c6249ed3/250x250-000000-80-0-0.jpg"
+    },
+    "loonzii": {
+        "nom": "Loonzii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4111cfb87eb0add862316b970b123ec5/250x250-000000-80-0-0.jpg"
     }
 }
