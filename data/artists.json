@@ -3890,5 +3890,29 @@
     "kumi tanioka": {
         "nom": "Kumi Tanioka",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/56c268b3b3fece44ec7c4277c5290c19/250x250-000000-80-0-0.jpg"
+    },
+    "katy perry": {
+        "nom": "Katy Perry",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c144bd1ed91b2a59c826cf1d1cde633/250x250-000000-80-0-0.jpg"
+    },
+    "snoop dogg": {
+        "nom": "Snoop Dogg",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "阿保剛": {
+        "nom": "阿保剛",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fb521f8e2b0cc93ea77562163581faa5/250x250-000000-80-0-0.jpg"
+    },
+    "calum bowen": {
+        "nom": "Calum Bowen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb2375cc9ec40a5a56bd11fecb7bcbf3/250x250-000000-80-0-0.jpg"
+    },
+    "don omar": {
+        "nom": "Don Omar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3edb52cebe741e547363a093e26d4655/250x250-000000-80-0-0.jpg"
+    },
+    "alvedon": {
+        "nom": "Alvedon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a4a1d2a7309c69bc55924baba6deab4/250x250-000000-80-0-0.jpg"
     }
 }
