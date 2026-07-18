@@ -3738,5 +3738,37 @@
     "lord huron": {
         "nom": "Lord Huron",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b50836bc5fdf0270a52083b977e302aa/250x250-000000-80-0-0.jpg"
+    },
+    "sam gellaitry": {
+        "nom": "Sam Gellaitry",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2029c99aecaf56914931df2af7f7331d/250x250-000000-80-0-0.jpg"
+    },
+    "lena raine": {
+        "nom": "Lena Raine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6a6f796e85b19b48a20160e879181b4c/250x250-000000-80-0-0.jpg"
+    },
+    "minecraft": {
+        "nom": "Minecraft",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/85d04e349efbc5e8a45345dac2f5c52a/250x250-000000-80-0-0.jpg"
+    },
+    "4rh": {
+        "nom": "4rh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/07435a924f27ff32cc3edaaed39f89e9/250x250-000000-80-0-0.jpg"
+    },
+    "the daniel pemberton tv orchestra": {
+        "nom": "The Daniel Pemberton TV Orchestra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/34d633b4e45c37f2b443a2c35783b308/250x250-000000-80-0-0.jpg"
+    },
+    "cprcrn": {
+        "nom": "CPRCRN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e20564530b5578be9301413fa9fa157b/250x250-000000-80-0-0.jpg"
+    },
+    "sims": {
+        "nom": "Sims",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/163d1cd68cd299e4e1e38ff4ce6bc393/250x250-000000-80-0-0.jpg"
+    },
+    "ghostphaze": {
+        "nom": "GhostPhaze",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/64e5b6ee8c02e63af0eb71551c3a13e3/250x250-000000-80-0-0.jpg"
     }
 }
