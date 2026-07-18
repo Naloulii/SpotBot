@@ -3682,5 +3682,37 @@
     "rainlith": {
         "nom": "rainlith",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/949b9edefeb36992c037776d92ca6a90/250x250-000000-80-0-0.jpg"
+    },
+    "flawed mangoes": {
+        "nom": "Flawed Mangoes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0c6e7afb05c52770d6748b61a2711bb8/250x250-000000-80-0-0.jpg"
+    },
+    "ay3demi": {
+        "nom": "ay3demi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11e540723a21100cff03507a85164f03/250x250-000000-80-0-0.jpg"
+    },
+    "keno carter": {
+        "nom": "Keno Carter",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c41c3b864a7c6eb0ef6722b8b58c7da8/250x250-000000-80-0-0.jpg"
+    },
+    "ennio morricone": {
+        "nom": "Ennio Morricone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5c185197d4a6b59d44fa048dec47be24/250x250-000000-80-0-0.jpg"
+    },
+    "veyrix": {
+        "nom": "Veyrix",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/23b5295905d9c57bd71bcbeb266fe358/250x250-000000-80-0-0.jpg"
+    },
+    "scammacist": {
+        "nom": "Scammacist",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0bdd7b176956ddefdd3b898f8ae4ab6b/250x250-000000-80-0-0.jpg"
+    },
+    "indieforlife": {
+        "nom": "Indieforlife",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d66f62b67972cf9b398bb659c507e5e9/250x250-000000-80-0-0.jpg"
+    },
+    "yngxn": {
+        "nom": "YNGXN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d465c1a605544729e0d475791ccaa65/250x250-000000-80-0-0.jpg"
     }
 }
