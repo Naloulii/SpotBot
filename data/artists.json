@@ -3714,5 +3714,29 @@
     "yngxn": {
         "nom": "YNGXN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8d465c1a605544729e0d475791ccaa65/250x250-000000-80-0-0.jpg"
+    },
+    "lukas graham": {
+        "nom": "Lukas Graham",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f692e05dede04a2aa6daa997bc785d6/250x250-000000-80-0-0.jpg"
+    },
+    "khalil?": {
+        "nom": "Khalil?",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a988d23f1875eb612ef553348ceb15a/250x250-000000-80-0-0.jpg"
+    },
+    "youngking": {
+        "nom": "YoungKing",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d121857ddb41355b4592a16d9dd0b662/250x250-000000-80-0-0.jpg"
+    },
+    "prodbydr4ko": {
+        "nom": "prodbydr4ko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/46ab06eebeac66b4e64f39f0b52e6611/250x250-000000-80-0-0.jpg"
+    },
+    "horten": {
+        "nom": "Horten",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/edbdbb86923149d6a09a6bd20d4c4949/250x250-000000-80-0-0.jpg"
+    },
+    "lord huron": {
+        "nom": "Lord Huron",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b50836bc5fdf0270a52083b977e302aa/250x250-000000-80-0-0.jpg"
     }
 }
