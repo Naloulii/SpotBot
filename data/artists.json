@@ -3290,5 +3290,33 @@
     "ser4ph1m": {
         "nom": "SeR4PH1M",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bf6e6500326891317da888f1ee4e95ae/250x250-000000-80-0-0.jpg"
+    },
+    "bgrz": {
+        "nom": "BGRZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/091dd8bff390fbb9da2890f85cea3717/250x250-000000-80-0-0.jpg"
+    },
+    "tahjaee": {
+        "nom": "Tahjaee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d730468c60533220b01aa1cd44886d7/250x250-000000-80-0-0.jpg"
+    },
+    "jhonniedamnd": {
+        "nom": "jhonniedamnd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9dadbe08d4fc909907553021c44e086/250x250-000000-80-0-0.jpg"
+    },
+    "earth, wind & fire": {
+        "nom": "Earth, Wind & Fire",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "mark ronson": {
+        "nom": "Mark Ronson",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cacdbfdf5fa8c600eadc3e1c2b6ac8c8/250x250-000000-80-0-0.jpg"
+    },
+    "bossman dlow": {
+        "nom": "BossMan Dlow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9db72129652f821b8ff6b0f574c871c5/250x250-000000-80-0-0.jpg"
+    },
+    "glorilla": {
+        "nom": "GloRilla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6bccd80c250c642b7d5262480e8af617/250x250-000000-80-0-0.jpg"
     }
 }
