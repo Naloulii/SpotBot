@@ -3346,5 +3346,25 @@
     "jj odb": {
         "nom": "JJ ODB",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0adf0bdf78e9b817644efc8dd942f939/250x250-000000-80-0-0.jpg"
+    },
+    "beny jr": {
+        "nom": "Beny Jr",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/88b8d4e991dd61bbaf94be372114fabb/250x250-000000-80-0-0.jpg"
+    },
+    "morad": {
+        "nom": "Morad",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1808f12a94dff611ec4220ab25bc3fec/250x250-000000-80-0-0.jpg"
+    },
+    "k y b": {
+        "nom": "K y B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9fc8bf9103c6dddaab7cf28ad3be2a70/250x250-000000-80-0-0.jpg"
+    },
+    "lestin": {
+        "nom": "Lestin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/341d9816378b0082b72b4a4242fbe595/250x250-000000-80-0-0.jpg"
+    },
+    "rauw alejandro": {
+        "nom": "Rauw Alejandro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e7b2b93b91789a054bc3f08bb3df3a8/250x250-000000-80-0-0.jpg"
     }
 }
