@@ -3134,5 +3134,17 @@
     "luv": {
         "nom": "Luv",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ea59d9e3cc8f83232766e98dee16caf2/250x250-000000-80-0-0.jpg"
+    },
+    "ebony": {
+        "nom": "Ebony",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9cfe1657469b675da7224f2089e966fc/250x250-000000-80-0-0.jpg"
+    },
+    "elia": {
+        "nom": "Elia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eaef5502a46e7f182ff454c10109e245/250x250-000000-80-0-0.jpg"
+    },
+    "charty": {
+        "nom": "CHARTY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6c93ce3d591eef552bac994156e70e69/250x250-000000-80-0-0.jpg"
     }
 }
