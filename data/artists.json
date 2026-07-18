@@ -3110,5 +3110,21 @@
     "jamso": {
         "nom": "Jamso",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9dcf2c7bb4b18f26c18b797dab2c4bee/250x250-000000-80-0-0.jpg"
+    },
+    "1plikation": {
+        "nom": "1PLIKATION",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e1588f2b8e5e3a2c40cd5ba0f281c35d/250x250-000000-80-0-0.jpg"
+    },
+    "eminem": {
+        "nom": "Eminem",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0f30bbd33a680030054af004d698d6ac/250x250-000000-80-0-0.jpg"
+    },
+    "juice wrld": {
+        "nom": "Juice WRLD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ecf2968fbbc8eb042b241b8e60e5d7e/250x250-000000-80-0-0.jpg"
+    },
+    "scridge": {
+        "nom": "Scridge",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e7da16c78417c41bd460bd4cc4f13881/250x250-000000-80-0-0.jpg"
     }
 }
