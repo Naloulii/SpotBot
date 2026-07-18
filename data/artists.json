@@ -3818,5 +3818,33 @@
     "next to blue": {
         "nom": "Next To Blue",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2eac489a75df38d110d13ce36ed42f35/250x250-000000-80-0-0.jpg"
+    },
+    "alwin grigorjev": {
+        "nom": "ALWIN GRIGORJEV",
+        "image_url": null
+    },
+    "kilgore doubtfire": {
+        "nom": "kilgore doubtfire",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1d1c091f4a65551f1251b727f299b29/250x250-000000-80-0-0.jpg"
+    },
+    "newjeans": {
+        "nom": "NewJeans",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0866c2c1d7d00879f5db46ddc1250db8/250x250-000000-80-0-0.jpg"
+    },
+    "ocho": {
+        "nom": "Ocho",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0a0a81b11c57c1c49a44ce7aa66cd387/250x250-000000-80-0-0.jpg"
+    },
+    "lj mosley": {
+        "nom": "Lj Mosley",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a47eca46296e2deae2dfe178b2103e46/250x250-000000-80-0-0.jpg"
+    },
+    "disasterpeace": {
+        "nom": "Disasterpeace",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf3cae68abb722e6ac858cf83cf85aa2/250x250-000000-80-0-0.jpg"
+    },
+    "r mccarthy": {
+        "nom": "r mccarthy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e575cbf168c4e556f75b430fc198750e/250x250-000000-80-0-0.jpg"
     }
 }
