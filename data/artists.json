@@ -3534,5 +3534,57 @@
     "auror": {
         "nom": "auror",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2d11db13440b2cc16e657b84cfbc09b5/250x250-000000-80-0-0.jpg"
+    },
+    "emortel": {
+        "nom": "emortel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/920e93d81a5f043e7497e022ced414ae/250x250-000000-80-0-0.jpg"
+    },
+    "charlie p j": {
+        "nom": "charlie p j",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9b8dac44a82ca26d7a26d95b859c10c8/250x250-000000-80-0-0.jpg"
+    },
+    "sawari": {
+        "nom": "Sawari",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ccb28e5f4df7c70685e7b273d254e455/250x250-000000-80-0-0.jpg"
+    },
+    "emile mosseri": {
+        "nom": "Emile Mosseri",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/866d61d4c51bf5bb380b5c3f3d025d28/250x250-000000-80-0-0.jpg"
+    },
+    "sparky deathcap": {
+        "nom": "Sparky Deathcap",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9b7efbd3184b8082740d92118ada0937/250x250-000000-80-0-0.jpg"
+    },
+    "trolli": {
+        "nom": "trolli",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ce0856996ba01c45da8fb236ce44f416/250x250-000000-80-0-0.jpg"
+    },
+    "moeros": {
+        "nom": "moeros",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/58e79ffb1a6dca5c246602b5c3c63956/250x250-000000-80-0-0.jpg"
+    },
+    "dxryl": {
+        "nom": "DXRYL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/52652abd8423aead2805b32312505bce/250x250-000000-80-0-0.jpg"
+    },
+    "lulhaaz": {
+        "nom": "Lulhaaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ed5a430fb7bc1aba9431dd2172f951e/250x250-000000-80-0-0.jpg"
+    },
+    "cauzy": {
+        "nom": "Cauzy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5c4e1d18b9a012aa690eca97e9f789b3/250x250-000000-80-0-0.jpg"
+    },
+    "hikari": {
+        "nom": "Hikari",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/87f20ff53920c37090f2a5f8126feae6/250x250-000000-80-0-0.jpg"
+    },
+    "vibe": {
+        "nom": "vibe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/564d382818460119656eb740e78e27b0/250x250-000000-80-0-0.jpg"
+    },
+    "shogo": {
+        "nom": "shogo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d1384e6ba4cd76d890a558f1e16b43b7/250x250-000000-80-0-0.jpg"
     }
 }
