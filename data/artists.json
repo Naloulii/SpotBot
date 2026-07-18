@@ -3846,5 +3846,33 @@
     "r mccarthy": {
         "nom": "r mccarthy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e575cbf168c4e556f75b430fc198750e/250x250-000000-80-0-0.jpg"
+    },
+    "lamp": {
+        "nom": "Lamp",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5142f91cee2563ba67fa8ea2b44e624b/250x250-000000-80-0-0.jpg"
+    },
+    "mf doom": {
+        "nom": "MF DOOM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7dc35cb3ac1a39d02ddad6b153b473dc/250x250-000000-80-0-0.jpg"
+    },
+    "pharrell williams": {
+        "nom": "Pharrell Williams",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1267b8781c5bff065a20dca4a3c9fda7/250x250-000000-80-0-0.jpg"
+    },
+    "f. fin": {
+        "nom": "f. fin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f44d5709786c85b99993dcbccbb8cf9/250x250-000000-80-0-0.jpg"
+    },
+    "the rising child": {
+        "nom": "The Rising Child",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b748adb834b56de1a235c7e2589cf21e/250x250-000000-80-0-0.jpg"
+    },
+    "the cinematic orchestra": {
+        "nom": "The Cinematic Orchestra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f6d154a5a1105aa77fcb948290e2fa00/250x250-000000-80-0-0.jpg"
+    },
+    "analog trickery": {
+        "nom": "Analog Trickery",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1fc88fdd52915278b9b02d74384547b2/250x250-000000-80-0-0.jpg"
     }
 }
