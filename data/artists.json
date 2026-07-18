@@ -3810,5 +3810,13 @@
     "kanii": {
         "nom": "Kanii",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8e1d4c1aa360c3827b1aeb4efdf85fbc/250x250-000000-80-0-0.jpg"
+    },
+    "ann annie": {
+        "nom": "Ann Annie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ae34ed77ed5e3aab4dfe4caa37203d9/250x250-000000-80-0-0.jpg"
+    },
+    "next to blue": {
+        "nom": "Next To Blue",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2eac489a75df38d110d13ce36ed42f35/250x250-000000-80-0-0.jpg"
     }
 }
