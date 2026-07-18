@@ -3226,5 +3226,37 @@
     "robb": {
         "nom": "ROBB",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/591185cf3098c331aec85af7a5741906/250x250-000000-80-0-0.jpg"
+    },
+    "pbl": {
+        "nom": "Pbl",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "the living tombstone": {
+        "nom": "The Living Tombstone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1f20806019d4e615e3201aee4a056bb6/250x250-000000-80-0-0.jpg"
+    },
+    "eurobeat brony": {
+        "nom": "Eurobeat Brony",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/595e9028709ea60785bbc5dced251f3b/250x250-000000-80-0-0.jpg"
+    },
+    "smeels": {
+        "nom": "Smeels",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/484a6396a5535b50605e7cfc55d2ecbf/250x250-000000-80-0-0.jpg"
+    },
+    "ovni d": {
+        "nom": "Ovni D",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25970c0a5ae9dcaa14e30a30b5d66b28/250x250-000000-80-0-0.jpg"
+    },
+    "seth gueko": {
+        "nom": "Seth Gueko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1862e5a7e97e5155c771c4f01ac83aa4/250x250-000000-80-0-0.jpg"
+    },
+    "eazy dew": {
+        "nom": "Eazy Dew",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8da4405d47cb550020531370efdc48bb/250x250-000000-80-0-0.jpg"
+    },
+    "soleil noir": {
+        "nom": "Soleil Noir",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/44bb6ec44b2a4f43156124e4aacf36a5/250x250-000000-80-0-0.jpg"
     }
 }
