@@ -3770,5 +3770,45 @@
     "ghostphaze": {
         "nom": "GhostPhaze",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/64e5b6ee8c02e63af0eb71551c3a13e3/250x250-000000-80-0-0.jpg"
+    },
+    "chill aqua": {
+        "nom": "Chill Aqua",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/632c37844be6596c04bc6d1a527c6da1/250x250-000000-80-0-0.jpg"
+    },
+    "deige": {
+        "nom": "Deige",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f180cb62d91f85c2db8b232e768432fa/250x250-000000-80-0-0.jpg"
+    },
+    "jaydes": {
+        "nom": "jaydes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/08a04d06d8569babbd129265896bfefa/250x250-000000-80-0-0.jpg"
+    },
+    "mage tears": {
+        "nom": "mage tears",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/adda3724073f9f5bb9b38147505b9adc/250x250-000000-80-0-0.jpg"
+    },
+    "loving": {
+        "nom": "Loving",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a852e8eed7de61614c7254cf63a35ab0/250x250-000000-80-0-0.jpg"
+    },
+    "aphex twin": {
+        "nom": "Aphex Twin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/22545b72e8b8eecd902824d600badcf3/250x250-000000-80-0-0.jpg"
+    },
+    "mrheada$$trendy": {
+        "nom": "MrHeadA$$Trendy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0760729ad96d0ee84766bdaa09da5d6f/250x250-000000-80-0-0.jpg"
+    },
+    "baby blyat": {
+        "nom": "baby blyat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e1fac543dd75f308735a2a843dae42fa/250x250-000000-80-0-0.jpg"
+    },
+    "ciaffa": {
+        "nom": "ciaffa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7216b7479461d1526391381b3af8562c/250x250-000000-80-0-0.jpg"
+    },
+    "kanii": {
+        "nom": "Kanii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8e1d4c1aa360c3827b1aeb4efdf85fbc/250x250-000000-80-0-0.jpg"
     }
 }
