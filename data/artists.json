@@ -3394,5 +3394,21 @@
     "gunna": {
         "nom": "Gunna",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "sosocamo": {
+        "nom": "sosocamo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9ceb60d12c11e20e9adc50ac60e14713/250x250-000000-80-0-0.jpg"
+    },
+    "don toliver": {
+        "nom": "Don Toliver",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/881a10c54b47201c8c850ecddaf4bb1c/250x250-000000-80-0-0.jpg"
+    },
+    "cartis": {
+        "nom": "cartis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b33ce15f1acd9ded92b22979814399ab/250x250-000000-80-0-0.jpg"
+    },
+    "€sïol": {
+        "nom": "€sïol",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/482a83bc176ad8e0ae5d15adeefd08cf/250x250-000000-80-0-0.jpg"
     }
 }
