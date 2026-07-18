@@ -3278,5 +3278,17 @@
     "hotel blue": {
         "nom": "Hotel Blue",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/16f1ecad2cd47aa7070886b970a9b259/250x250-000000-80-0-0.jpg"
+    },
+    "pompis": {
+        "nom": "Pompis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bff8a7e39ddb79221b45f7bbd1ea3d97/250x250-000000-80-0-0.jpg"
+    },
+    "55asky": {
+        "nom": "55ASKY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b901df46747533920027ddadad0f9923/250x250-000000-80-0-0.jpg"
+    },
+    "ser4ph1m": {
+        "nom": "SeR4PH1M",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf6e6500326891317da888f1ee4e95ae/250x250-000000-80-0-0.jpg"
     }
 }
