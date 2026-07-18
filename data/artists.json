@@ -3946,5 +3946,49 @@
     "may roosevelt": {
         "nom": "May Roosevelt",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d9e38b9c752401d387b51ebe3cb20ff9/250x250-000000-80-0-0.jpg"
+    },
+    "krush": {
+        "nom": "krush",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9191762191efab0c97ecf36f2ca67bc4/250x250-000000-80-0-0.jpg"
+    },
+    "amaria bb": {
+        "nom": "AMARIA BB",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/129aeee8e201ba2209cb78ef1c9da1dc/250x250-000000-80-0-0.jpg"
+    },
+    "willb13": {
+        "nom": "WillB13",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de8095287caaf73efd5b8ab0ab3f700c/250x250-000000-80-0-0.jpg"
+    },
+    "ben plg": {
+        "nom": "BEN plg",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9bfad6b2143d4081def8b19766531890/250x250-000000-80-0-0.jpg"
+    },
+    "jody": {
+        "nom": "Jody",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/71e1e3d04550d6be4e4605b1d70f9b07/250x250-000000-80-0-0.jpg"
+    },
+    "william": {
+        "nom": "William",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/01d36824195cb750699216cfddb54639/250x250-000000-80-0-0.jpg"
+    },
+    "venty": {
+        "nom": "Venty",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32e7e3d588a81cd42a32f02e0bc08c0a/250x250-000000-80-0-0.jpg"
+    },
+    "lgh": {
+        "nom": "Lgh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/231267f34a590786d9e8af9035448b80/250x250-000000-80-0-0.jpg"
+    },
+    "green montana": {
+        "nom": "Green Montana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6ebf7c5f862ec2e87392094d0d45e9f/250x250-000000-80-0-0.jpg"
+    },
+    "labsan": {
+        "nom": "Labsan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/240d8179db37880c11d59c00f9dc36e2/250x250-000000-80-0-0.jpg"
+    },
+    "prestage": {
+        "nom": "Prestage",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/554599ff8e08472c5c22dd36192c67e2/250x250-000000-80-0-0.jpg"
     }
 }
