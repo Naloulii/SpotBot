@@ -3990,5 +3990,9 @@
     "prestage": {
         "nom": "Prestage",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/554599ff8e08472c5c22dd36192c67e2/250x250-000000-80-0-0.jpg"
+    },
+    "eliah": {
+        "nom": "ELIAH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f8b79cdf20d6e5a72c7b8cb5d77ba388/250x250-000000-80-0-0.jpg"
     }
 }
