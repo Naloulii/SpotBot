@@ -3146,5 +3146,13 @@
     "charty": {
         "nom": "CHARTY",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6c93ce3d591eef552bac994156e70e69/250x250-000000-80-0-0.jpg"
+    },
+    "dakeez": {
+        "nom": "DAKEEZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7c89b56cdc152b16bd36dfb8af361e02/250x250-000000-80-0-0.jpg"
+    },
+    "blynk": {
+        "nom": "Blynk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cda090915f017afa6b086e3c0bda8aba/250x250-000000-80-0-0.jpg"
     }
 }
