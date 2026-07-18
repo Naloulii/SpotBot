@@ -3326,5 +3326,17 @@
     "youngboy never broke again": {
         "nom": "YoungBoy Never Broke Again",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d8d4dbdd6d5eb10491c8dc3b5370ae7e/250x250-000000-80-0-0.jpg"
+    },
+    "alpha blondy": {
+        "nom": "Alpha Blondy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/794f26a0b0d585bdcc459f85f1c9215c/250x250-000000-80-0-0.jpg"
+    },
+    "the wailers": {
+        "nom": "The Wailers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/109bcff06a7b3db616a30845c3c63bc0/250x250-000000-80-0-0.jpg"
+    },
+    "ub40": {
+        "nom": "UB40",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/34597ff32e5aee508f3d6681712518a3/250x250-000000-80-0-0.jpg"
     }
 }
