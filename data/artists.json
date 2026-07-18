@@ -3090,5 +3090,13 @@
     "deth": {
         "nom": "deth",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0d3f0574f9f81ee0a483049b4e1d8176/250x250-000000-80-0-0.jpg"
+    },
+    "jarnac": {
+        "nom": "JARNAC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b337970ea7c19a6d8a548179cebe04a3/250x250-000000-80-0-0.jpg"
+    },
+    "guizmo": {
+        "nom": "Guizmo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c2f9fa469d1d13eaa30c0fa41c3910c6/250x250-000000-80-0-0.jpg"
     }
 }
