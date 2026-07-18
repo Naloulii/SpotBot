@@ -3914,5 +3914,37 @@
     "alvedon": {
         "nom": "Alvedon",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9a4a1d2a7309c69bc55924baba6deab4/250x250-000000-80-0-0.jpg"
+    },
+    "tilekid": {
+        "nom": "TileKid",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/626b1ecbeb0d4af99e5fa7568c40dcfc/250x250-000000-80-0-0.jpg"
+    },
+    "hisohkah": {
+        "nom": "Hisohkah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6c1f578250289f62fffa43098e1620bc/250x250-000000-80-0-0.jpg"
+    },
+    "wmd": {
+        "nom": "WMD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/354bf1c1b6a1e75fed22a8f14e6f1228/250x250-000000-80-0-0.jpg"
+    },
+    "instupendo": {
+        "nom": "Instupendo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0fe4cf3f687249f9b9903058e6912bf/250x250-000000-80-0-0.jpg"
+    },
+    "austin farwell": {
+        "nom": "Austin Farwell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a2216c0d5c7ec19670055b709deda04d/250x250-000000-80-0-0.jpg"
+    },
+    "daniel.mp3": {
+        "nom": "daniel.mp3",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/48be79dd242adb5d75efb22dec7c9178/250x250-000000-80-0-0.jpg"
+    },
+    "maria pseftoga": {
+        "nom": "Maria Pseftoga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "may roosevelt": {
+        "nom": "May Roosevelt",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d9e38b9c752401d387b51ebe3cb20ff9/250x250-000000-80-0-0.jpg"
     }
 }
