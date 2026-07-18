@@ -3410,5 +3410,37 @@
     "€sïol": {
         "nom": "€sïol",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/482a83bc176ad8e0ae5d15adeefd08cf/250x250-000000-80-0-0.jpg"
+    },
+    "ilytommy": {
+        "nom": "ilyTOMMY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a330d42d125e53f596e3fd5d15a48ac6/250x250-000000-80-0-0.jpg"
+    },
+    "mustard": {
+        "nom": "Mustard",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "kanye west": {
+        "nom": "Kanye West",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb76c2ee3b068726ab4c37b0aabdb57a/250x250-000000-80-0-0.jpg"
+    },
+    "ye": {
+        "nom": "Ye",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aa98993b811e38a8fff745548c5b6b43/250x250-000000-80-0-0.jpg"
+    },
+    "andre troutman": {
+        "nom": "Andre Troutman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "richy mitch & the coal miners": {
+        "nom": "Richy Mitch & The Coal Miners",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/70dc0c62f62a63180d25d907473c7659/250x250-000000-80-0-0.jpg"
+    },
+    "nicholas britell": {
+        "nom": "Nicholas Britell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a2dd4e292c5a12e532e8b16c78dcec58/250x250-000000-80-0-0.jpg"
+    },
+    "slowly.": {
+        "nom": "slowly.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1cb2155df9ac8d1fc3c26e788c7c65c9/250x250-000000-80-0-0.jpg"
     }
 }
