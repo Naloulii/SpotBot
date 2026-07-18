@@ -3098,5 +3098,17 @@
     "guizmo": {
         "nom": "Guizmo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c2f9fa469d1d13eaa30c0fa41c3910c6/250x250-000000-80-0-0.jpg"
+    },
+    "black cat": {
+        "nom": "Black Cat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0a0a98fe3da0a4e80b24fa8336f947e/250x250-000000-80-0-0.jpg"
+    },
+    "kosei": {
+        "nom": "Kosei",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3d134c1332e40e3ad8659344e4862e04/250x250-000000-80-0-0.jpg"
+    },
+    "jamso": {
+        "nom": "Jamso",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9dcf2c7bb4b18f26c18b797dab2c4bee/250x250-000000-80-0-0.jpg"
     }
 }
