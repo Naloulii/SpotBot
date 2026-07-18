@@ -3994,5 +3994,33 @@
     "eliah": {
         "nom": "ELIAH",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f8b79cdf20d6e5a72c7b8cb5d77ba388/250x250-000000-80-0-0.jpg"
+    },
+    "tessa b.": {
+        "nom": "Tessa B.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/23ccf372096a8948b9f481b7aa08e8cb/250x250-000000-80-0-0.jpg"
+    },
+    "chilla": {
+        "nom": "Chilla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/632c37844be6596c04bc6d1a527c6da1/250x250-000000-80-0-0.jpg"
+    },
+    "yseult": {
+        "nom": "Yseult",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "eldruna": {
+        "nom": "Eldruna",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/04fdebd326d1caf5ea39c0d5ac671ffa/250x250-000000-80-0-0.jpg"
+    },
+    "domsgard": {
+        "nom": "Domsgard",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/431c0a02778d094662574ef8ef470eef/250x250-000000-80-0-0.jpg"
+    },
+    "skjøldar": {
+        "nom": "Skjøldar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2fb56fd5b38474360bfdcc9afe962851/250x250-000000-80-0-0.jpg"
+    },
+    "rúnvyr": {
+        "nom": "Rúnvyr",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3955dbf13b840133ea7378d61d564dd1/250x250-000000-80-0-0.jpg"
     }
 }
