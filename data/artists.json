@@ -3442,5 +3442,37 @@
     "slowly.": {
         "nom": "slowly.",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1cb2155df9ac8d1fc3c26e788c7c65c9/250x250-000000-80-0-0.jpg"
+    },
+    "gibran alcocer": {
+        "nom": "Gibran Alcocer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d83528a7d7b3b487a35b6fbe6670cfe/250x250-000000-80-0-0.jpg"
+    },
+    "vacations": {
+        "nom": "Vacations",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3617585c31b61074fb9c86339d52fa13/250x250-000000-80-0-0.jpg"
+    },
+    "coldplay": {
+        "nom": "Coldplay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "dbx": {
+        "nom": "Dbx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/078c297749a03479d9267e7f2f55d587/250x250-000000-80-0-0.jpg"
+    },
+    "nagi": {
+        "nom": "nagi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "shazu": {
+        "nom": "shazu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5c41d2d0351d96145dc3f7b85abd83dd/250x250-000000-80-0-0.jpg"
+    },
+    "m83": {
+        "nom": "M83",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/afef558a59597f79b70ac26a332c4b90/250x250-000000-80-0-0.jpg"
+    },
+    "kemoxoo": {
+        "nom": "kemoxoo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/29960453f8aaf50fdc80c87418e485db/250x250-000000-80-0-0.jpg"
     }
 }
