@@ -3258,5 +3258,25 @@
     "soleil noir": {
         "nom": "Soleil Noir",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/44bb6ec44b2a4f43156124e4aacf36a5/250x250-000000-80-0-0.jpg"
+    },
+    "shay": {
+        "nom": "Shay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba1c91e283571a0f63f0aab32617c125/250x250-000000-80-0-0.jpg"
+    },
+    "oldpee": {
+        "nom": "Oldpee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b313c080ffcc81ef1f71fe771d93cbe/250x250-000000-80-0-0.jpg"
+    },
+    "ama louise": {
+        "nom": "Ama Louise",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0696a3c0edd86412df9ab7db2c782366/250x250-000000-80-0-0.jpg"
+    },
+    "daviddeuxfois": {
+        "nom": "DavidDeuxFois",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0a990d9c0a7eae9e5507113cb93f7a3f/250x250-000000-80-0-0.jpg"
+    },
+    "hotel blue": {
+        "nom": "Hotel Blue",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/16f1ecad2cd47aa7070886b970a9b259/250x250-000000-80-0-0.jpg"
     }
 }
