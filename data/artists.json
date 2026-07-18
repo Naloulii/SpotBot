@@ -3366,5 +3366,21 @@
     "rauw alejandro": {
         "nom": "Rauw Alejandro",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0e7b2b93b91789a054bc3f08bb3df3a8/250x250-000000-80-0-0.jpg"
+    },
+    "kidd voodoo": {
+        "nom": "Kidd Voodoo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a52d28cc5c1a4a2047358dda007a26c6/250x250-000000-80-0-0.jpg"
+    },
+    "jc reyes": {
+        "nom": "JC Reyes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/58f8706d798cc56cd39806aa364ea905/250x250-000000-80-0-0.jpg"
+    },
+    "karol g": {
+        "nom": "KAROL G",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dd8c6b3068d2761955eb6e432046ed91/250x250-000000-80-0-0.jpg"
+    },
+    "cris mj": {
+        "nom": "Cris MJ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1017a7f4da6efd4417e1bbe3820ca213/250x250-000000-80-0-0.jpg"
     }
 }
