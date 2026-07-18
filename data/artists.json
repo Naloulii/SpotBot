@@ -3874,5 +3874,21 @@
     "analog trickery": {
         "nom": "Analog Trickery",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1fc88fdd52915278b9b02d74384547b2/250x250-000000-80-0-0.jpg"
+    },
+    "feeling blew": {
+        "nom": "Feeling Blew",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cda12090a7b3a3acca1eb46b0471b969/250x250-000000-80-0-0.jpg"
+    },
+    "b.b. jacques": {
+        "nom": "B.B. Jacques",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cac63e01746e36aeb4302f0f50fcb9f8/250x250-000000-80-0-0.jpg"
+    },
+    "lesram": {
+        "nom": "Lesram",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/402309733618f289404b08ecdcbecc3b/250x250-000000-80-0-0.jpg"
+    },
+    "kumi tanioka": {
+        "nom": "Kumi Tanioka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56c268b3b3fece44ec7c4277c5290c19/250x250-000000-80-0-0.jpg"
     }
 }
