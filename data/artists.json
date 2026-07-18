@@ -3126,5 +3126,9 @@
     "scridge": {
         "nom": "Scridge",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e7da16c78417c41bd460bd4cc4f13881/250x250-000000-80-0-0.jpg"
+    },
+    "aln": {
+        "nom": "ALN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7a17685fa02c4931760a45941ef23a18/250x250-000000-80-0-0.jpg"
     }
 }
