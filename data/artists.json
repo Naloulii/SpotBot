@@ -3130,5 +3130,9 @@
     "aln": {
         "nom": "ALN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7a17685fa02c4931760a45941ef23a18/250x250-000000-80-0-0.jpg"
+    },
+    "luv": {
+        "nom": "Luv",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea59d9e3cc8f83232766e98dee16caf2/250x250-000000-80-0-0.jpg"
     }
 }
