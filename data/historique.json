@@ -3417,9 +3417,16 @@
     ],
     "1058679270425247864": [
         {
+            "date": "18/07/2026 01:56",
+            "track_id": "1NOnmV5RcfevjVngV9M9p3",
+            "status": "⏱️ Écouté pendant 1m 00s",
+            "temps_ecoute_secondes": 60.5
+        },
+        {
             "date": "18/07/2026 01:53",
             "track_id": "66Ms7aYFty1lNm02SuY6II",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 136.8
         },
         {
             "date": "18/07/2026 01:50",

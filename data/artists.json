@@ -3086,5 +3086,9 @@
     "b-lovee": {
         "nom": "B-Lovee",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6fef5867ef54841a338e9c5af88592fc/250x250-000000-80-0-0.jpg"
+    },
+    "deth": {
+        "nom": "deth",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d3f0574f9f81ee0a483049b4e1d8176/250x250-000000-80-0-0.jpg"
     }
 }
