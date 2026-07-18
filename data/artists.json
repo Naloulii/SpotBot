@@ -3318,5 +3318,13 @@
     "glorilla": {
         "nom": "GloRilla",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6bccd80c250c642b7d5262480e8af617/250x250-000000-80-0-0.jpg"
+    },
+    "singuila": {
+        "nom": "Singuila",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1eabb0dacb8fdf1dbd487e58088d3c8a/250x250-000000-80-0-0.jpg"
+    },
+    "youngboy never broke again": {
+        "nom": "YoungBoy Never Broke Again",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d8d4dbdd6d5eb10491c8dc3b5370ae7e/250x250-000000-80-0-0.jpg"
     }
 }
