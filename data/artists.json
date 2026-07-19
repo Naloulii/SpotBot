@@ -4506,5 +4506,13 @@
     "thefrenchkris": {
         "nom": "TheFrenchKris",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4545126ba477693061c73dc0d2ef7d1d/250x250-000000-80-0-0.jpg"
+    },
+    "boro700": {
+        "nom": "BORO700",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cb23a49d9779624746f1094aea4ff3ae/250x250-000000-80-0-0.jpg"
+    },
+    "strawberry guy": {
+        "nom": "Strawberry Guy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/994e266372b2bae5f7ee407e40134713/250x250-000000-80-0-0.jpg"
     }
 }
