@@ -4482,5 +4482,17 @@
     "rammstein": {
         "nom": "Rammstein",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f22cac6a41e838f54d2c7b4ea47b5f94/250x250-000000-80-0-0.jpg"
+    },
+    "sabl3": {
+        "nom": "Sabl3",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f0ad872982659e3a3c73b9942728c3cd/250x250-000000-80-0-0.jpg"
+    },
+    "motionless in white": {
+        "nom": "Motionless In White",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0695a6a7b5591c786ee83b4efdd5949/250x250-000000-80-0-0.jpg"
+    },
+    "lisko peligrosso": {
+        "nom": "Lisko Peligrosso",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cda60fb41e1c9edd5cce3eb65581dd66/250x250-000000-80-0-0.jpg"
     }
 }
