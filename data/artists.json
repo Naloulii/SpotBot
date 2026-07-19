@@ -4474,5 +4474,13 @@
     "yusi0": {
         "nom": "yusi0",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/973cca39f84f364e48b6bf3216d509f2/250x250-000000-80-0-0.jpg"
+    },
+    "halestorm": {
+        "nom": "Halestorm",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba225f84d770e230b709f04f8031e652/250x250-000000-80-0-0.jpg"
+    },
+    "rammstein": {
+        "nom": "Rammstein",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f22cac6a41e838f54d2c7b4ea47b5f94/250x250-000000-80-0-0.jpg"
     }
 }
