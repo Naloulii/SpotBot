@@ -4126,5 +4126,37 @@
     "alex & sierra": {
         "nom": "Alex & Sierra",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/965abf4a00ebd196fd3e871edea38229/250x250-000000-80-0-0.jpg"
+    },
+    "billie eilish": {
+        "nom": "Billie Eilish",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8eab1a9a644889aabaca1e193e05f984/250x250-000000-80-0-0.jpg"
+    },
+    "khalid": {
+        "nom": "Khalid",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d40b01deb772c1caf6a23764a6539b41/250x250-000000-80-0-0.jpg"
+    },
+    "catrien": {
+        "nom": "Catrien",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/10038ce4c99a3972d82b90c3463cb7f4/250x250-000000-80-0-0.jpg"
+    },
+    "maëlle": {
+        "nom": "Maëlle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/008eaefa3aaea750f4696af610f6d032/250x250-000000-80-0-0.jpg"
+    },
+    "ron pope": {
+        "nom": "Ron Pope",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/69dec37d7ca00a8694292b4b582c917a/250x250-000000-80-0-0.jpg"
+    },
+    "ꉈꀧ꒒꒒ꁄꍈꍈꀧ꒦ꉈ ꉣꅔꎡꅔꁕꁄ": {
+        "nom": "ꉈꀧ꒒꒒ꁄꍈꍈꀧ꒦ꉈ ꉣꅔꎡꅔꁕꁄ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e019ddfc5eb5b9ab791b052a974d14cd/250x250-000000-80-0-0.jpg"
+    },
+    "sheena ringo": {
+        "nom": "Sheena Ringo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f1e3e5a2b69166224d11cd9a4b184f8/250x250-000000-80-0-0.jpg"
+    },
+    "hugo tsr": {
+        "nom": "Hugo TSR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/24c4a393297efc86caaf8543577bf115/250x250-000000-80-0-0.jpg"
     }
 }
