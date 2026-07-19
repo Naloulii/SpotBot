@@ -4178,5 +4178,177 @@
     "la fouine": {
         "nom": "La Fouine",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3fdc6bf496fa387618f417a20e6e2f12/250x250-000000-80-0-0.jpg"
+    },
+    "rarin": {
+        "nom": "Rarin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b9bf9136aa146d16f8fd0fff2dfc6610/250x250-000000-80-0-0.jpg"
+    },
+    "gen hoshino": {
+        "nom": "Gen Hoshino",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c68df917db7b8382f58529c02f3b2bde/250x250-000000-80-0-0.jpg"
+    },
+    "aldn": {
+        "nom": "aldn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2e3e3c3d47734fba2115b871710a5010/250x250-000000-80-0-0.jpg"
+    },
+    "glaive": {
+        "nom": "glaive",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e17d4ebff26d85f946c18b32a3ba8cec/250x250-000000-80-0-0.jpg"
+    },
+    "femme fatale": {
+        "nom": "femme fatale",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/610aa71d0f9579366ee7f32eb60d8be3/250x250-000000-80-0-0.jpg"
+    },
+    "pk": {
+        "nom": "pk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bff5d1ee202a97b011f41c46d1f333dd/250x250-000000-80-0-0.jpg"
+    },
+    "valorant": {
+        "nom": "VALORANT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c3ba79eed997c70979bc6edbdd518b5/250x250-000000-80-0-0.jpg"
+    },
+    "ericdoa": {
+        "nom": "ericdoa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/02494fcfb299884fa99491954f597391/250x250-000000-80-0-0.jpg"
+    },
+    "vampire weekend": {
+        "nom": "Vampire Weekend",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3492e6ca995cb06a09831a00e944ecf/250x250-000000-80-0-0.jpg"
+    },
+    "ssj twiin": {
+        "nom": "SSJ Twiin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/488aa90a491d883a2496775349324466/250x250-000000-80-0-0.jpg"
+    },
+    "24kgoldn": {
+        "nom": "24kGoldn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/383a35d665bb42cc5d885050f8200830/250x250-000000-80-0-0.jpg"
+    },
+    "ro ryon": {
+        "nom": "Ro Ryon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3984eaee8f1633c8f712a29569fca3a3/250x250-000000-80-0-0.jpg"
+    },
+    "grouplove": {
+        "nom": "GROUPLOVE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c71fedf6c6107e6754cd6b7e35f129eb/250x250-000000-80-0-0.jpg"
+    },
+    "holy fuck": {
+        "nom": "Holy Fuck",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c5df28df7d9058f259182822dc5b8f8f/250x250-000000-80-0-0.jpg"
+    },
+    "kentenshi": {
+        "nom": "KENTENSHI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dfb406ced70346da43b2ca03e5a8901f/250x250-000000-80-0-0.jpg"
+    },
+    "metro boomin": {
+        "nom": "Metro Boomin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bc031b73f958987fa103031070be5c16/250x250-000000-80-0-0.jpg"
+    },
+    "a$ap rocky": {
+        "nom": "A$AP Rocky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5eebb137c5f4d0eb8fb5f9227e1b6288/250x250-000000-80-0-0.jpg"
+    },
+    "roisee": {
+        "nom": "Roisee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/784fdc7f0e1852886681f43702bafb64/250x250-000000-80-0-0.jpg"
+    },
+    "nixxzys": {
+        "nom": "Nixxzys",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dba757b493e9a4a590519aed5a7968e1/250x250-000000-80-0-0.jpg"
+    },
+    "vierre cloud": {
+        "nom": "Vierre Cloud",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1152d034c5aa066a4f2750b12166b7d8/250x250-000000-80-0-0.jpg"
+    },
+    "sabrina carpenter": {
+        "nom": "Sabrina Carpenter",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a9cdc7737e2a0e59b4917b47884b859/250x250-000000-80-0-0.jpg"
+    },
+    "mike posner": {
+        "nom": "Mike Posner",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1de424f71aaf6f38f2df26c1c56008da/250x250-000000-80-0-0.jpg"
+    },
+    "gigamesh": {
+        "nom": "Gigamesh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dc5af92476868f6e0de3bf1cc77b6fda/250x250-000000-80-0-0.jpg"
+    },
+    "pitbull": {
+        "nom": "Pitbull",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f755bcad19948129e670598a52d3f874/250x250-000000-80-0-0.jpg"
+    },
+    "kesha": {
+        "nom": "Kesha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "john ryan": {
+        "nom": "John Ryan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c0c05bc54eda9d6c993738121c669720/250x250-000000-80-0-0.jpg"
+    },
+    "neon trees": {
+        "nom": "Neon Trees",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e17dbc5b56f6bccb3cba471b9881a6b9/250x250-000000-80-0-0.jpg"
+    },
+    "superfruit": {
+        "nom": "Superfruit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/116eb344eb24efc5888a6916cab5c528/250x250-000000-80-0-0.jpg"
+    },
+    "wednesday campanella": {
+        "nom": "WEDNESDAY CAMPANELLA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c5a461d6e3d6c130c5f8700c9b4fc871/250x250-000000-80-0-0.jpg"
+    },
+    "glass animals": {
+        "nom": "Glass Animals",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "sevdaliza": {
+        "nom": "Sevdaliza",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/965646bb49caa3252e85c7b0e4866521/250x250-000000-80-0-0.jpg"
+    },
+    "pabllo vittar": {
+        "nom": "Pabllo Vittar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fb7f4d89d12dacef089de13cf30c6b3d/250x250-000000-80-0-0.jpg"
+    },
+    "jung kook": {
+        "nom": "Jung Kook",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6bdcb96941d28f6a1b0f3285fec8413/250x250-000000-80-0-0.jpg"
+    },
+    "latto": {
+        "nom": "Latto",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/67e319c14229be7c1f0a6b1cccc11f12/250x250-000000-80-0-0.jpg"
+    },
+    "david guetta": {
+        "nom": "David Guetta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2d527fa03e106ed82a28f161694278d3/250x250-000000-80-0-0.jpg"
+    },
+    "anne-marie": {
+        "nom": "Anne-Marie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d62bddaf9fa4c248f061462b228a529/250x250-000000-80-0-0.jpg"
+    },
+    "zedd": {
+        "nom": "Zedd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/36b68a066fd883870e35606f8246ebab/250x250-000000-80-0-0.jpg"
+    },
+    "alessia cara": {
+        "nom": "Alessia Cara",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bad25f2acb3eb34706b681b729d93dd9/250x250-000000-80-0-0.jpg"
+    },
+    "mkto": {
+        "nom": "MKTO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a64862c77f6ba6c22a39dde0d114c5c/250x250-000000-80-0-0.jpg"
+    },
+    "adore": {
+        "nom": "adore",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f94626a0167239b9d422572c04455ab5/250x250-000000-80-0-0.jpg"
+    },
+    "madcon": {
+        "nom": "Madcon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6075ef8af5aded1162b373441176ec7/250x250-000000-80-0-0.jpg"
+    },
+    "ray dalton": {
+        "nom": "Ray Dalton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86af56c0c359eea1ae7870379824c700/250x250-000000-80-0-0.jpg"
+    },
+    "flo rida": {
+        "nom": "Flo Rida",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/874be1584f9f2dd969bb8cce97916f37/250x250-000000-80-0-0.jpg"
     }
 }
