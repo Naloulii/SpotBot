@@ -4350,5 +4350,9 @@
     "flo rida": {
         "nom": "Flo Rida",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/874be1584f9f2dd969bb8cce97916f37/250x250-000000-80-0-0.jpg"
+    },
+    "maheva": {
+        "nom": "Maheva",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/00b8621b821d10b2551ec4990a582ce6/250x250-000000-80-0-0.jpg"
     }
 }
