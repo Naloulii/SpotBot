@@ -4058,5 +4058,73 @@
     "martin garrix": {
         "nom": "Martin Garrix",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4cab1c0cbe0edc1b3d2234873abc485e/250x250-000000-80-0-0.jpg"
+    },
+    "powerwolf": {
+        "nom": "Powerwolf",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/70cd7892383df7cfcecfc9e16680bf7f/250x250-000000-80-0-0.jpg"
+    },
+    "skillet": {
+        "nom": "Skillet",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c0adce140c395fa36fb215b296028b81/250x250-000000-80-0-0.jpg"
+    },
+    "fear, and loathing in las vegas": {
+        "nom": "Fear, and Loathing in Las Vegas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d095613f9a279ba866c41cecbaffaa97/250x250-000000-80-0-0.jpg"
+    },
+    "babymetal": {
+        "nom": "BABYMETAL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/28b34e1ca49e49eeda64bc66baf21ca5/250x250-000000-80-0-0.jpg"
+    },
+    "fatal bazooka": {
+        "nom": "Fatal Bazooka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b0577ed04c22d2a59b941696454adaa2/250x250-000000-80-0-0.jpg"
+    },
+    "vitoo": {
+        "nom": "Vitoo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e21535bc6263c2d6886a05c338323e5f/250x250-000000-80-0-0.jpg"
+    },
+    "tryhardninja": {
+        "nom": "Tryhardninja",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/26d0b2700663d2a492e556b499fdfc1b/250x250-000000-80-0-0.jpg"
+    },
+    "amaranthe": {
+        "nom": "Amaranthe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/06bdef6a158a95abb2b7a7cb431e51f0/250x250-000000-80-0-0.jpg"
+    },
+    "uverworld": {
+        "nom": "UVERworld",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d4aa185c8fa8363feb61b9317cdae6dd/250x250-000000-80-0-0.jpg"
+    },
+    "man with a mission": {
+        "nom": "MAN WITH A MISSION",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5f8c1334ee5af36f98a6a32780d4da2f/250x250-000000-80-0-0.jpg"
+    },
+    "dj-jo": {
+        "nom": "dj-Jo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a2acdbbb2b6545f68f920899ccbe412/250x250-000000-80-0-0.jpg"
+    },
+    "hatsune miku": {
+        "nom": "Hatsune Miku",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a8ae1f81a330ec74a710150f315134ce/250x250-000000-80-0-0.jpg"
+    },
+    "miura jam": {
+        "nom": "Miura Jam",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "flow": {
+        "nom": "FLOW",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d4b2656d1bb45356c7edf22234e7f2a/250x250-000000-80-0-0.jpg"
+    },
+    "psy": {
+        "nom": "PSY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/333d6506f801e6c7cc2af4c6b0bebaa8/250x250-000000-80-0-0.jpg"
+    },
+    "cl": {
+        "nom": "CL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/53da84b6505a542ef02b91b25f352192/250x250-000000-80-0-0.jpg"
+    },
+    "alex & sierra": {
+        "nom": "Alex & Sierra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/965abf4a00ebd196fd3e871edea38229/250x250-000000-80-0-0.jpg"
     }
 }
