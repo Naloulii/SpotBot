@@ -4518,5 +4518,21 @@
     "anais cardot": {
         "nom": "Anais Cardot",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "rafa": {
+        "nom": "RaFa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73b5b239ad5bb27f5e95014bfa929f64/250x250-000000-80-0-0.jpg"
+    },
+    "voydence": {
+        "nom": "voydence",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0383a2e176ba98d1ae5899e747ae6a47/250x250-000000-80-0-0.jpg"
+    },
+    "slomaki": {
+        "nom": "SLOMAKI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ff986dad5edb9cf7759e51d18142ac1f/250x250-000000-80-0-0.jpg"
+    },
+    "hi-c": {
+        "nom": "Hi-C",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/46bc093471a15b765ec8710db66c088c/250x250-000000-80-0-0.jpg"
     }
 }
