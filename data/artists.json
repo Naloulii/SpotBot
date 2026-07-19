@@ -4354,5 +4354,21 @@
     "maheva": {
         "nom": "Maheva",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/00b8621b821d10b2551ec4990a582ce6/250x250-000000-80-0-0.jpg"
+    },
+    "shotas": {
+        "nom": "Shotas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9de73a788ff7ede1fe672df521a400b/250x250-000000-80-0-0.jpg"
+    },
+    "lady gaga": {
+        "nom": "Lady Gaga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7565262f7661b0d762621a8d69ba6f49/250x250-000000-80-0-0.jpg"
+    },
+    "bradley cooper": {
+        "nom": "Bradley Cooper",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9914279c99ec76bcafe861360cc2947e/250x250-000000-80-0-0.jpg"
+    },
+    "hoshi": {
+        "nom": "Hoshi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b563c5729d14ed858c09814cf5fda858/250x250-000000-80-0-0.jpg"
     }
 }
