@@ -4394,5 +4394,17 @@
     "ana ka": {
         "nom": "Ana Ka",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dc7e22f2d2986b2d089bcc444d829f19/250x250-000000-80-0-0.jpg"
+    },
+    "nes": {
+        "nom": "NeS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2d95cbcc3868fa7554c4062a8329f266/250x250-000000-80-0-0.jpg"
+    },
+    "enfant-pouète": {
+        "nom": "enfant-pouète",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a65b6d24f3314d5e08db007e3073b6a2/250x250-000000-80-0-0.jpg"
+    },
+    "tolee": {
+        "nom": "Tolee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2234d4493aea57a063e7ed774e3a19e2/250x250-000000-80-0-0.jpg"
     }
 }
