@@ -4166,5 +4166,9 @@
     "david pistol": {
         "nom": "David Pistol",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/de85159bf973c767f49928a1948e4236/250x250-000000-80-0-0.jpg"
+    },
+    "spider zed": {
+        "nom": "Spider ZED",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/85e0c4c2d413843d7b27fafb367cec62/250x250-000000-80-0-0.jpg"
     }
 }
