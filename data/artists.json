@@ -4666,5 +4666,21 @@
     "webinar™": {
         "nom": "Webinar™",
         "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "kikuo": {
+        "nom": "Kikuo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/74ebd27f06850d365e04d5512e4405a0/250x250-000000-80-0-0.jpg"
+    },
+    "gilbert montagné": {
+        "nom": "Gilbert Montagné",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b59123032926976fb85302eb1d327499/250x250-000000-80-0-0.jpg"
+    },
+    "caramella girls": {
+        "nom": "Caramella Girls",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/be833ca55fc0b66e0a0c30bcbc03541e/250x250-000000-80-0-0.jpg"
+    },
+    "coco rapido": {
+        "nom": "Coco Rapido",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0ae8d19a67c9e91ff3af1fae8f1cc9a9/250x250-000000-80-0-0.jpg"
     }
 }
