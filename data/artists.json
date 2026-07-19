@@ -4534,5 +4534,13 @@
     "hi-c": {
         "nom": "Hi-C",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/46bc093471a15b765ec8710db66c088c/250x250-000000-80-0-0.jpg"
+    },
+    "13jenaya": {
+        "nom": "13Jenaya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/58da70dfbdc84af281ba0ac266537b9b/250x250-000000-80-0-0.jpg"
+    },
+    "howrell": {
+        "nom": "Howrell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c5d6c8a9eb9552f445fdb77dc8c34868/250x250-000000-80-0-0.jpg"
     }
 }
