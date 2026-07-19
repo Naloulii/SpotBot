@@ -4406,5 +4406,21 @@
     "tolee": {
         "nom": "Tolee",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2234d4493aea57a063e7ed774e3a19e2/250x250-000000-80-0-0.jpg"
+    },
+    "l'ange": {
+        "nom": "L'ange",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/569bf4a65a45eab447711598429cf358/250x250-000000-80-0-0.jpg"
+    },
+    "vulax": {
+        "nom": "Vulax",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bd646b1462534c8605e469dece08b82b/250x250-000000-80-0-0.jpg"
+    },
+    "lestef kjf boyz": {
+        "nom": "LESTEF KJF BOYZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef653308c6514c9822083cae57dcd68b/250x250-000000-80-0-0.jpg"
+    },
+    "lejuh": {
+        "nom": "LeJuh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f88c0dae37aefaeb3fa012b2ae9f2929/250x250-000000-80-0-0.jpg"
     }
 }
