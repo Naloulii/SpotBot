@@ -4422,5 +4422,25 @@
     "lejuh": {
         "nom": "LeJuh",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f88c0dae37aefaeb3fa012b2ae9f2929/250x250-000000-80-0-0.jpg"
+    },
+    "nams": {
+        "nom": "Nams",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94c98d97ad37419a8c32b946b1305c66/250x250-000000-80-0-0.jpg"
+    },
+    "viinz": {
+        "nom": "Viinz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d48da7b1f61ddbbffa393edddbee68eb/250x250-000000-80-0-0.jpg"
+    },
+    "lentrax": {
+        "nom": "LENTRAX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b2e8816e6452a8c08e95f841695f027b/250x250-000000-80-0-0.jpg"
+    },
+    "cursedcry": {
+        "nom": "cursedcry",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7c5be9b91702a6e2b3d6155dd5f8fe62/250x250-000000-80-0-0.jpg"
+    },
+    "shadow beloved": {
+        "nom": "Shadow Beloved",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b25eeb7c7c47c91eaa01f08316eaa3b/250x250-000000-80-0-0.jpg"
     }
 }
