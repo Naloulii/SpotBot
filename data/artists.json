@@ -4170,5 +4170,9 @@
     "spider zed": {
         "nom": "Spider ZED",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/85e0c4c2d413843d7b27fafb367cec62/250x250-000000-80-0-0.jpg"
+    },
+    "andy luidje": {
+        "nom": "Andy Luidje",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3a4c1853ed71ca2060f698b14f12ae38/250x250-000000-80-0-0.jpg"
     }
 }
