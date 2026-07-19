@@ -4542,5 +4542,13 @@
     "howrell": {
         "nom": "Howrell",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c5d6c8a9eb9552f445fdb77dc8c34868/250x250-000000-80-0-0.jpg"
+    },
+    "sxlvr": {
+        "nom": "Sxlvr",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c3b1e2e6f809428a8be93875987d51a5/250x250-000000-80-0-0.jpg"
+    },
+    "esone": {
+        "nom": "esone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/48fe7ebe990e7a7cdcdd2f887d98943a/250x250-000000-80-0-0.jpg"
     }
 }
