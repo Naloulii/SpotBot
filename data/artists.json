@@ -4550,5 +4550,9 @@
     "esone": {
         "nom": "esone",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/48fe7ebe990e7a7cdcdd2f887d98943a/250x250-000000-80-0-0.jpg"
+    },
+    "ève": {
+        "nom": "Ève",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f47168be130f1c2b18d01ef30b43daaf/250x250-000000-80-0-0.jpg"
     }
 }
