@@ -4494,5 +4494,9 @@
     "lisko peligrosso": {
         "nom": "Lisko Peligrosso",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cda60fb41e1c9edd5cce3eb65581dd66/250x250-000000-80-0-0.jpg"
+    },
+    "dj snake": {
+        "nom": "DJ Snake",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
