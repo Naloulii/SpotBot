@@ -4022,5 +4022,41 @@
     "rúnvyr": {
         "nom": "Rúnvyr",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3955dbf13b840133ea7378d61d564dd1/250x250-000000-80-0-0.jpg"
+    },
+    "schnappi": {
+        "nom": "Schnappi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/793acaa321862b9befe2ef857a5bec51/250x250-000000-80-0-0.jpg"
+    },
+    "joy": {
+        "nom": "Joy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7df333e73488ba5f3666b2c5b44da510/250x250-000000-80-0-0.jpg"
+    },
+    "sabaton": {
+        "nom": "Sabaton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2dd0e3482f66099ac900770165abfda3/250x250-000000-80-0-0.jpg"
+    },
+    "angerfist": {
+        "nom": "Angerfist",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c5b7788a18f08af1c486c3acba5e125/250x250-000000-80-0-0.jpg"
+    },
+    "ekaterina shelehova": {
+        "nom": "Ekaterina Shelehova",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/516a10ee956bbcf1156f853a6ca5d596/250x250-000000-80-0-0.jpg"
+    },
+    "gaëlle joly": {
+        "nom": "Gaëlle Joly",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1658531f3bfca9d6148e26a2343de43/250x250-000000-80-0-0.jpg"
+    },
+    "asterlián": {
+        "nom": "AsterLián",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ebb91e3a9bdb10578b6beaa05f486868/250x250-000000-80-0-0.jpg"
+    },
+    "bxkq": {
+        "nom": "bxkq",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/58d1113987430dfcd0a60cc5522c62a6/250x250-000000-80-0-0.jpg"
+    },
+    "martin garrix": {
+        "nom": "Martin Garrix",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4cab1c0cbe0edc1b3d2234873abc485e/250x250-000000-80-0-0.jpg"
     }
 }
