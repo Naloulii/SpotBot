@@ -4382,5 +4382,17 @@
     "linkin park": {
         "nom": "Linkin Park",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4886905210739af3438990897bad3a98/250x250-000000-80-0-0.jpg"
+    },
+    "david hallyday": {
+        "nom": "David Hallyday",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/03019d37448f9d27bfa18b34175f781d/250x250-000000-80-0-0.jpg"
+    },
+    "bryan adams": {
+        "nom": "Bryan Adams",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "ana ka": {
+        "nom": "Ana Ka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dc7e22f2d2986b2d089bcc444d829f19/250x250-000000-80-0-0.jpg"
     }
 }
