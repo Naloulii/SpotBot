@@ -4442,5 +4442,37 @@
     "shadow beloved": {
         "nom": "Shadow Beloved",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4b25eeb7c7c47c91eaa01f08316eaa3b/250x250-000000-80-0-0.jpg"
+    },
+    "shakira": {
+        "nom": "Shakira",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/69c569506a8ff6ab0edfecbd1adf94b0/250x250-000000-80-0-0.jpg"
+    },
+    "burna boy": {
+        "nom": "Burna Boy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ad15b7f03325752d60db9e4d39c079ae/250x250-000000-80-0-0.jpg"
+    },
+    "kyazumi": {
+        "nom": "Kyazumi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f90ddb37b279900261c998e51fbcf878/250x250-000000-80-0-0.jpg"
+    },
+    "zephx": {
+        "nom": "Zephx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c45fd05858f512e5803a5cea68a0e68f/250x250-000000-80-0-0.jpg"
+    },
+    "zeyroxyz": {
+        "nom": "zeyroxyz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "gifo": {
+        "nom": "Gifo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2c0345029d6ae63ecc413441a6ae4b71/250x250-000000-80-0-0.jpg"
+    },
+    "kölyma": {
+        "nom": "KÖLYMA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba34e9ebe41e4c3a3e3bdb9c908ad910/250x250-000000-80-0-0.jpg"
+    },
+    "yusi0": {
+        "nom": "yusi0",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/973cca39f84f364e48b6bf3216d509f2/250x250-000000-80-0-0.jpg"
     }
 }
