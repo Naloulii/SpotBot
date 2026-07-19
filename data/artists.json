@@ -4626,5 +4626,25 @@
     "xizt": {
         "nom": "Xizt",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cb616cf0455af638133b0d306184a358/250x250-000000-80-0-0.jpg"
+    },
+    "hatik": {
+        "nom": "Hatik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/07a828c5bc2d8c18c939711a50902b6f/250x250-000000-80-0-0.jpg"
+    },
+    "ad infinitum": {
+        "nom": "Ad Infinitum",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3178d6a9f3ffbe33468f8ef435a2d46/250x250-000000-80-0-0.jpg"
+    },
+    "rihanna": {
+        "nom": "Rihanna",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a7cbbe2e254f206c5ba9f5063270e3e4/250x250-000000-80-0-0.jpg"
+    },
+    "the weeknd": {
+        "nom": "The Weeknd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/581693b4724a7fcfa754455101e13a44/250x250-000000-80-0-0.jpg"
+    },
+    "anitta": {
+        "nom": "Anitta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
