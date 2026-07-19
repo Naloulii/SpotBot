@@ -4554,5 +4554,49 @@
     "ève": {
         "nom": "Ève",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f47168be130f1c2b18d01ef30b43daaf/250x250-000000-80-0-0.jpg"
+    },
+    "thousand foot krutch": {
+        "nom": "Thousand Foot Krutch",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d014deeae08ebbc2849041e8c844563/250x250-000000-80-0-0.jpg"
+    },
+    "meryl": {
+        "nom": "Meryl",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f2562acceb942e07278a748f13d602c2/250x250-000000-80-0-0.jpg"
+    },
+    "n'ken": {
+        "nom": "N'Ken",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "shaydee's": {
+        "nom": "Shaydee's",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea4c7147b77109257a44f87d74c327bb/250x250-000000-80-0-0.jpg"
+    },
+    "anyme023": {
+        "nom": "Anyme023",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0cc92ee963a85fdd4204e6f04f69daac/250x250-000000-80-0-0.jpg"
+    },
+    "kamelon officiel": {
+        "nom": "Kamelon Officiel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/38ba71d33373e32eb0f8f7ca6d9185c2/250x250-000000-80-0-0.jpg"
+    },
+    "green day": {
+        "nom": "Green Day",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/690381cc69a21802b5d95b0460afb6a3/250x250-000000-80-0-0.jpg"
+    },
+    "dj asul": {
+        "nom": "DJ Asul",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/68804e86ef50f22dc1422d850b06d152/250x250-000000-80-0-0.jpg"
+    },
+    "h6itam": {
+        "nom": "h6itam",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb452b4f04b55bb85e63eb57b9262757/250x250-000000-80-0-0.jpg"
+    },
+    "n7san7os": {
+        "nom": "n7san7os",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb452b4f04b55bb85e63eb57b9262757/250x250-000000-80-0-0.jpg"
+    },
+    "mc menor do alvorada": {
+        "nom": "Mc Menor Do Alvorada",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb452b4f04b55bb85e63eb57b9262757/250x250-000000-80-0-0.jpg"
     }
 }
