@@ -4682,5 +4682,13 @@
     "coco rapido": {
         "nom": "Coco Rapido",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0ae8d19a67c9e91ff3af1fae8f1cc9a9/250x250-000000-80-0-0.jpg"
+    },
+    "matmatah": {
+        "nom": "Matmatah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a9dee341476c7e37d0025cfe123700f/250x250-000000-80-0-0.jpg"
+    },
+    "lisa pariente": {
+        "nom": "Lisa Pariente",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/40e1243f1dbc2d2404cd791ed20b1585/250x250-000000-80-0-0.jpg"
     }
 }
