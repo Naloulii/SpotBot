@@ -4158,5 +4158,13 @@
     "hugo tsr": {
         "nom": "Hugo TSR",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/24c4a393297efc86caaf8543577bf115/250x250-000000-80-0-0.jpg"
+    },
+    "lil yan": {
+        "nom": "lil yan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a50e1cd749ae1bc458b78a8bc7bac53a/250x250-000000-80-0-0.jpg"
+    },
+    "david pistol": {
+        "nom": "David Pistol",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de85159bf973c767f49928a1948e4236/250x250-000000-80-0-0.jpg"
     }
 }
