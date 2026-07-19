@@ -4598,5 +4598,33 @@
     "mc menor do alvorada": {
         "nom": "Mc Menor Do Alvorada",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/eb452b4f04b55bb85e63eb57b9262757/250x250-000000-80-0-0.jpg"
+    },
+    "black sabbath": {
+        "nom": "Black Sabbath",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/91ab912207e1dc0b20ef53dc751e4aff/250x250-000000-80-0-0.jpg"
+    },
+    "jiinzo": {
+        "nom": "Jiinzo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/43ebbef1657a2710dc6ffd7e5797b73a/250x250-000000-80-0-0.jpg"
+    },
+    "whatsaheart": {
+        "nom": "whatsaheart",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/860d777f886cca27efcd798c9b7418de/250x250-000000-80-0-0.jpg"
+    },
+    "outsu": {
+        "nom": "OutsU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8b7041c26f802276dcc0a250cf6679dc/250x250-000000-80-0-0.jpg"
+    },
+    "nafeesisboujee": {
+        "nom": "Nafeesisboujee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f9208a47c8faa7c9a7eb868c72cbaec7/250x250-000000-80-0-0.jpg"
+    },
+    "neal": {
+        "nom": "neal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb319330aedf15c8002ddd23e1becf83/250x250-000000-80-0-0.jpg"
+    },
+    "xizt": {
+        "nom": "Xizt",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cb616cf0455af638133b0d306184a358/250x250-000000-80-0-0.jpg"
     }
 }
