@@ -4690,5 +4690,13 @@
     "lisa pariente": {
         "nom": "Lisa Pariente",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/40e1243f1dbc2d2404cd791ed20b1585/250x250-000000-80-0-0.jpg"
+    },
+    "nøname": {
+        "nom": "NØNAME",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/339d3578956978e91be12b8cdd6cc259/250x250-000000-80-0-0.jpg"
+    },
+    "mystik": {
+        "nom": "Mystik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/14982957779e71864e2d4397e585a72d/250x250-000000-80-0-0.jpg"
     }
 }
