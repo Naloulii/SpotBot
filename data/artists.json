@@ -4646,5 +4646,25 @@
     "anitta": {
         "nom": "Anitta",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "lee hyori": {
+        "nom": "Lee Hyori",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de70f02f99781f1e7847660f3b597b6a/250x250-000000-80-0-0.jpg"
+    },
+    "dua lipa": {
+        "nom": "Dua Lipa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7375742a46dbebb6efc0ae362e18eb24/250x250-000000-80-0-0.jpg"
+    },
+    "nayeon": {
+        "nom": "NAYEON",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ba085d8f6cf6548a3cbc1b83694b06a/250x250-000000-80-0-0.jpg"
+    },
+    "jeremih": {
+        "nom": "Jeremih",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1922a7939d3d4ff82fabebdfe77e5458/250x250-000000-80-0-0.jpg"
+    },
+    "webinar™": {
+        "nom": "Webinar™",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
     }
 }
