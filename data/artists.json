@@ -4370,5 +4370,17 @@
     "hoshi": {
         "nom": "Hoshi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b563c5729d14ed858c09814cf5fda858/250x250-000000-80-0-0.jpg"
+    },
+    "chich": {
+        "nom": "Chich",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf2a0813257ba09ba5c2c85ee889f1b7/250x250-000000-80-0-0.jpg"
+    },
+    "tom walker": {
+        "nom": "Tom Walker",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "linkin park": {
+        "nom": "Linkin Park",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4886905210739af3438990897bad3a98/250x250-000000-80-0-0.jpg"
     }
 }
