@@ -378,11 +378,7 @@ def _charger_flat_filtre_par_guilde(chemin, guild_id):
     if guild is None:
         return dict(toutes)
     
-    # On récupère tous les membres connus du serveur (en cache ou liste brute)
     membres_ids = {str(m.id) for m in guild.members}
-    
-    # Si le cache n'est pas encore complet au démarrage, on garde quand même les clés 
-    # présentes dans les données de ce serveur pour éviter d'ignorer un membre actif
     return {uid: data for uid, data in toutes.items() if (not membres_ids) or (uid in membres_ids)}
 
 def _sauvegarder_flat_fusionne_par_guilde(chemin, guild_id, sous_dict):
@@ -523,7 +519,7 @@ def enregistrer_stat_membre(guild_id, membre):
     mettre_a_jour_user_cache(membre)
     
     stats = charger_stats(guild_id)
-    stats[user_id] = stats.get(user_id, 0) + 1  # Compteur brut d'écoutes sur ce serveur
+    stats[user_id] = stats.get(user_id, 0) + 1
     sauvegarder_stats(guild_id, stats)
 
 def enregistrer_like_membre(membre, titre, artiste, url, cover_url=None):
@@ -652,26 +648,30 @@ def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree
 def construire_embed_classement(stats, guild=None, titre="🏆 Classement de la Semaine Dernière"):
     embed = discord.Embed(title=titre, color=discord.Color.gold(), timestamp=datetime.datetime.now(PARIS_TZ))
     
-    # Filtrage strict : seuls les membres de CE serveur sont gardés
-    if guild:
-        membres_serveur = {str(m.id) for m in guild.members}
-        stats_filtrees = {uid: score for uid, score in stats.items() if uid in membres_serveur}
-    else:
-        stats_filtrees = stats
-
-    if not stats_filtrees:
+    if not stats:
         embed.description = "Aucune musique n'a été validée la semaine dernière ! 🎧"
     else:
         users = charger_users()
-        classement = sorted(stats_filtrees.items(), key=lambda item: item[1], reverse=True)
+        classement = sorted(stats.items(), key=lambda item: item[1], reverse=True)
         texte = ""
-        # On affiche uniquement le Top 3 des membres du serveur
-        for index, (u_id, score) in enumerate(classement[:3], start=1):
+        
+        count = 0
+        for u_id, score in classement:
+            if guild:
+                membre = guild.get_member(int(u_id))
+                if not membre and u_id not in users:
+                    continue
+
+            count += 1
             prof = users.get(u_id, {})
             nom = prof.get("display_name", prof.get("username", "Inconnu"))
             medailles = {1: "🥇", 2: "🥈", 3: "🥉"}
-            texte += f"{medailles.get(index, f'`#{index}`')} **{nom}** — {score} morceaux validés\n"
-        embed.description = texte
+            texte += f"{medailles.get(count, f'`#{count}`')} **{nom}** — {score} morceaux validés\n"
+            
+            if count >= 3:
+                break
+
+        embed.description = texte if texte else "Aucune musique n'a été validée la semaine dernière ! 🎧"
     return embed
 
 def trouver_derniere_archive_top(guild):
@@ -694,8 +694,7 @@ def trouver_derniere_archive_top(guild):
         try:
             with open(chemin, "r", encoding="utf-8") as f:
                 toutes = json.load(f)
-            # On ne prend que les membres appartenant à CE serveur
-            stats_guilde = {uid: score for uid, score in toutes.items() if uid in membres_ids}
+            stats_guilde = {uid: score for uid, score in toutes.items() if (not membres_ids) or (uid in membres_ids)}
         except Exception:
             continue
         if stats_guilde:
@@ -705,36 +704,49 @@ def trouver_derniere_archive_top(guild):
 
 @tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=PARIS_TZ))
 async def classement_hebdomadaire_auto():
-    if datetime.datetime.now(PARIS_TZ).weekday() != 0: return
+    if datetime.datetime.now(PARIS_TZ).weekday() != 0: 
+        return
 
+    num_semaine = datetime.datetime.now(PARIS_TZ).strftime("%V_%Y")
+
+    # 1. On lit d'abord TOUTES les stats de chaque serveur en mémoire avant la remise à zéro
+    stats_par_guilde = {}
+    for guild in bot.guilds:
+        guild_id = str(guild.id)
+        stats_par_guilde[guild_id] = charger_stats(guild_id)
+
+    # 2. On publie le Top 3 et on archive serveur par serveur
     for guild in bot.guilds:
         guild_id = str(guild.id)
         config = charger_config(guild_id)
         salon_id = config.get("salon_musique_id")
-        if not salon_id: continue
-        salon = bot.get_channel(salon_id)
-        if not salon: continue
+        
+        stats_serveur = stats_par_guilde.get(guild_id, {})
 
-        stats = charger_stats(guild_id)
-        embed = construire_embed_classement(stats, guild=guild)
+        if stats_serveur:
+            sauvegarder_archive_semaine_guilde(num_semaine, guild_id, stats_serveur)
 
-        msg_top_id = config.get("message_top_id")
-        message_existe = False
-        if msg_top_id:
-            try:
-                msg_existant = await salon.fetch_message(msg_top_id)
-                await msg_existant.edit(embed=embed)
-                message_existe = True
-            except Exception: pass
-        if not message_existe:
-            try:
-                nouveau_msg = await salon.send(embed=embed)
-                config["message_top_id"] = nouveau_msg.id
-                sauvegarder_config(guild_id, config)
-            except Exception: pass
+        if salon_id:
+            salon = bot.get_channel(salon_id)
+            if salon:
+                embed = construire_embed_classement(stats_serveur, guild=guild)
 
-        num_semaine = datetime.datetime.now(PARIS_TZ).strftime("%V_%Y")
-        sauvegarder_archive_semaine_guilde(num_semaine, guild_id, stats)
+                msg_top_id = config.get("message_top_id")
+                message_existe = False
+                if msg_top_id:
+                    try:
+                        msg_existant = await salon.fetch_message(msg_top_id)
+                        await msg_existant.edit(embed=embed)
+                        message_existe = True
+                    except Exception: pass
+                if not message_existe:
+                    try:
+                        nouveau_msg = await salon.send(embed=embed)
+                        config["message_top_id"] = nouveau_msg.id
+                        sauvegarder_config(guild_id, config)
+                    except Exception: pass
+
+        # 3. Remise à zéro propre une fois l'archivage sécurisé
         sauvegarder_stats(guild_id, {})
 
     await asyncio.to_thread(_sauvegarde_github_bloquante)
@@ -1288,7 +1300,6 @@ async def on_ready():
 
         salon = bot.get_channel(salon_id)
 
-        # Met à jour le message du Top 3 spécifiquement pour CE serveur
         if salon:
             archive = trouver_derniere_archive_top(guild)
             if archive:
