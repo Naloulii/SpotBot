@@ -5062,5 +5062,25 @@
     "jace june": {
         "nom": "Jace June",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f111bb99c7116bab694d0fae56b5ea69/250x250-000000-80-0-0.jpg"
+    },
+    "dybbukk": {
+        "nom": "Dybbukk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4ccf1b5b69da26cafa1d72b1c3bc2e39/250x250-000000-80-0-0.jpg"
+    },
+    "sabrina gomes": {
+        "nom": "Sabrina Gomes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ee8ca0ec5841d5cf929f2d912249b9a9/250x250-000000-80-0-0.jpg"
+    },
+    "kobe mane": {
+        "nom": "Kobe Mane",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/945d36a1b233834db270e2625e1b5ab6/250x250-000000-80-0-0.jpg"
+    },
+    "lil tecca": {
+        "nom": "Lil Tecca",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f9692bbbbbce78c031416ad11a0d1f0/250x250-000000-80-0-0.jpg"
+    },
+    "burnedsam": {
+        "nom": "Burnedsam",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e2a5453d2f777208df2f9b3b164a11cb/250x250-000000-80-0-0.jpg"
     }
 }
