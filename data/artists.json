@@ -4786,5 +4786,9 @@
     "sariass": {
         "nom": "Sariass",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4a9fc5054de9a1d5b283b0bc4d76492e/250x250-000000-80-0-0.jpg"
+    },
+    "nineen": {
+        "nom": "NINEEN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a99b3f7481ffe8b37c17cb8920f2e5a/250x250-000000-80-0-0.jpg"
     }
 }
