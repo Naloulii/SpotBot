@@ -5158,5 +5158,9 @@
     "razor2mywrist": {
         "nom": "razor2mywrist",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/428d38280585b4d7d8ace569cc27dde7/250x250-000000-80-0-0.jpg"
+    },
+    "notinbed": {
+        "nom": "notinbed",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0cd6cd84b7863e8ab8639e52ca3ce943/250x250-000000-80-0-0.jpg"
     }
 }
