@@ -5046,5 +5046,21 @@
     "junior rce": {
         "nom": "Junior RCE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/88877fc25ccb7d5e908f0de1d2d1ee8c/250x250-000000-80-0-0.jpg"
+    },
+    "l01": {
+        "nom": "L01",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b8a0c30682c6b8d49af176ce9b4f111f/250x250-000000-80-0-0.jpg"
+    },
+    "xenoswrld": {
+        "nom": "Xenoswrld",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9517961134bcd6b5edbde1affe2061e6/250x250-000000-80-0-0.jpg"
+    },
+    "jaÿ-z": {
+        "nom": "JAŸ-Z",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a59aabd18e84d732ce3b9f6f5c4e5f50/250x250-000000-80-0-0.jpg"
+    },
+    "jace june": {
+        "nom": "Jace June",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f111bb99c7116bab694d0fae56b5ea69/250x250-000000-80-0-0.jpg"
     }
 }
