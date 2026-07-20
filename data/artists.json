@@ -5106,5 +5106,21 @@
     "super guitar bros": {
         "nom": "Super Guitar Bros",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a67349fdbd284931cb58faee1e6733d2/250x250-000000-80-0-0.jpg"
+    },
+    "cg5": {
+        "nom": "CG5",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/614cc6a3f67ae1912707f4115647ffed/250x250-000000-80-0-0.jpg"
+    },
+    "crash adams": {
+        "nom": "Crash Adams",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d709ce5ae4b8513466666fe599628eb4/250x250-000000-80-0-0.jpg"
+    },
+    "black gryph0n": {
+        "nom": "Black Gryph0n",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b36c8b92509cce9e7c02a2ddecdc9b5/250x250-000000-80-0-0.jpg"
+    },
+    "littlejayneycakes": {
+        "nom": "LittleJayneyCakes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
     }
 }
