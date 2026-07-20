@@ -4830,5 +4830,13 @@
     "coelho": {
         "nom": "Coelho",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "savage toddy": {
+        "nom": "Savage Toddy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/289a8f9581b72a834a131b1d6d6fa737/250x250-000000-80-0-0.jpg"
+    },
+    "zequin & gapman": {
+        "nom": "Zequin & gapman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5a517b8e8e0c3bbc28b30bc58857eadc/250x250-000000-80-0-0.jpg"
     }
 }
