@@ -5122,5 +5122,9 @@
     "littlejayneycakes": {
         "nom": "LittleJayneyCakes",
         "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "clairo": {
+        "nom": "Clairo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/933a9fcd1f1b4eae73e3f75bdf5fd3a0/250x250-000000-80-0-0.jpg"
     }
 }
