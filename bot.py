@@ -377,18 +377,17 @@ def _charger_flat_filtre_par_guilde(chemin, guild_id):
     guild = bot.get_guild(int(guild_id))
     if guild is None:
         return dict(toutes)
+    
+    # On récupère tous les membres connus du serveur (en cache ou liste brute)
     membres_ids = {str(m.id) for m in guild.members}
-    return {uid: data for uid, data in toutes.items() if uid in membres_ids}
+    
+    # Si le cache n'est pas encore complet au démarrage, on garde quand même les clés 
+    # présentes dans les données de ce serveur pour éviter d'ignorer un membre actif
+    return {uid: data for uid, data in toutes.items() if (not membres_ids) or (uid in membres_ids)}
 
 def _sauvegarder_flat_fusionne_par_guilde(chemin, guild_id, sous_dict):
     with _verrou_fichiers:
         toutes = _lire_json_securise_sans_verrou(chemin, {})
-        guild = bot.get_guild(int(guild_id))
-        if guild is not None:
-            membres_ids = {str(m.id) for m in guild.members}
-            for uid in list(toutes.keys()):
-                if uid in membres_ids and uid not in sous_dict:
-                    del toutes[uid]
         toutes.update(sous_dict)
         _ecrire_json_atomique_sans_verrou(chemin, toutes)
 
@@ -524,7 +523,7 @@ def enregistrer_stat_membre(guild_id, membre):
     mettre_a_jour_user_cache(membre)
     
     stats = charger_stats(guild_id)
-    stats[user_id] = stats.get(user_id, 0) + 1  # Compteur brut d'écoutes
+    stats[user_id] = stats.get(user_id, 0) + 1  # Compteur brut d'écoutes sur ce serveur
     sauvegarder_stats(guild_id, stats)
 
 def enregistrer_like_membre(membre, titre, artiste, url, cover_url=None):
@@ -650,15 +649,23 @@ def mettre_a_jour_historique_fin(guild_id, membre, track_id, temps_ecoule, duree
 # ==========================================
 #            UI & AFFICHAGE
 # ==========================================
-def construire_embed_classement(stats, titre="🏆 Classement de la Semaine Dernière"):
+def construire_embed_classement(stats, guild=None, titre="🏆 Classement de la Semaine Dernière"):
     embed = discord.Embed(title=titre, color=discord.Color.gold(), timestamp=datetime.datetime.now(PARIS_TZ))
-    if not stats:
+    
+    # Filtrage strict : seuls les membres de CE serveur sont gardés
+    if guild:
+        membres_serveur = {str(m.id) for m in guild.members}
+        stats_filtrees = {uid: score for uid, score in stats.items() if uid in membres_serveur}
+    else:
+        stats_filtrees = stats
+
+    if not stats_filtrees:
         embed.description = "Aucune musique n'a été validée la semaine dernière ! 🎧"
     else:
         users = charger_users()
-        classement = sorted(stats.items(), key=lambda item: item[1], reverse=True)
+        classement = sorted(stats_filtrees.items(), key=lambda item: item[1], reverse=True)
         texte = ""
-        # MODIFICATION : On limite l'affichage STRICTEMENT au Top 3 [:3]
+        # On affiche uniquement le Top 3 des membres du serveur
         for index, (u_id, score) in enumerate(classement[:3], start=1):
             prof = users.get(u_id, {})
             nom = prof.get("display_name", prof.get("username", "Inconnu"))
@@ -667,7 +674,7 @@ def construire_embed_classement(stats, titre="🏆 Classement de la Semaine Dern
         embed.description = texte
     return embed
 
-def trouver_derniere_archive_top(guild_id):
+def trouver_derniere_archive_top(guild):
     try:
         entrees = os.listdir(DATA_DIR)
     except FileNotFoundError: return None
@@ -681,15 +688,14 @@ def trouver_derniere_archive_top(guild_id):
         archives.append((annee, semaine, os.path.join(DATA_DIR, nom_fichier)))
 
     archives.sort(reverse=True)
+    membres_ids = {str(m.id) for m in guild.members} if guild else set()
 
-    # MODIFICATION : Chargement direct des stats de la guilde sans filtre restrictif
-    # Cela garantit que chaque utilisateur écoutant de la musique sur le serveur apparaît
     for annee, semaine, chemin in archives:
         try:
-            stats_guilde = charger_stats(guild_id)
-            if not stats_guilde:
-                with open(chemin, "r", encoding="utf-8") as f:
-                    stats_guilde = json.load(f)
+            with open(chemin, "r", encoding="utf-8") as f:
+                toutes = json.load(f)
+            # On ne prend que les membres appartenant à CE serveur
+            stats_guilde = {uid: score for uid, score in toutes.items() if uid in membres_ids}
         except Exception:
             continue
         if stats_guilde:
@@ -710,7 +716,7 @@ async def classement_hebdomadaire_auto():
         if not salon: continue
 
         stats = charger_stats(guild_id)
-        embed = construire_embed_classement(stats)
+        embed = construire_embed_classement(stats, guild=guild)
 
         msg_top_id = config.get("message_top_id")
         message_existe = False
@@ -1282,13 +1288,14 @@ async def on_ready():
 
         salon = bot.get_channel(salon_id)
 
-        # Force la mise à jour/publication immédiate de l'embed du Top 3 dans le salon Discord
+        # Met à jour le message du Top 3 spécifiquement pour CE serveur
         if salon:
-            archive = trouver_derniere_archive_top(guild_id)
+            archive = trouver_derniere_archive_top(guild)
             if archive:
                 stats_archive, semaine, annee = archive
                 embed_archive = construire_embed_classement(
                     stats_archive,
+                    guild=guild,
                     titre=f"🏆 Classement de la Semaine {semaine} ({annee})"
                 )
                 if msg_top_reel_id:
