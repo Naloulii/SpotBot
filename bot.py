@@ -1,35 +1,6 @@
 # ==========================================================================================
 # SpotBot — Bot Discord qui affiche en temps réel ce que les membres écoutent sur Spotify
 # ==========================================================================================
-# Vue d'ensemble de l'architecture (utile pour s'y retrouver dans le fichier) :
-#
-#   1. DÉTECTION DE L'ÉCOUTE (on_presence_update → verifier_presence_spotify) :
-#      Discord prévient le bot uniquement quand le statut/activité d'un membre CHANGE.
-#      Quand un membre commence/change/arrête une écoute Spotify, on crée/remplace/supprime
-#      un message-embed "🎵 X écoute :" dans le salon configuré du serveur.
-#
-#   2. SUIVI EN MÉMOIRE (ecoutes_en_cours) : dict {(guild_id, user_id): infos} qui garde la
-#      trace de chaque embed actuellement affiché, pour pouvoir le mettre à jour (barre de
-#      progression, toutes les 30s via actualiser_messages) ou le supprimer quand l'écoute
-#      s'arrête. ⚠️ Ce dict vit UNIQUEMENT en RAM : il est vidé à chaque redémarrage du bot,
-#      ce qui peut désynchroniser le bot de la réalité affichée dans Discord (voir les
-#      commentaires détaillés dans on_ready et actualiser_messages pour les bugs corrigés
-#      liés à ça).
-#
-#   3. PERSISTANCE DES DONNÉES (historique, likes, stats...) : fichiers JSON dans DATA_DIR/
-#      (un dossier par serveur + quelques fichiers centralisés), écrits de façon atomique
-#      (fichier temporaire + os.replace) pour éviter toute corruption en cas de coupure.
-#      Ces fichiers sont ensuite poussés régulièrement sur un dépôt GitHub (_sauvegarde_github_bloquante)
-#      pour servir de sauvegarde ET de source de données au dashboard web externe.
-#
-#   4. TÂCHES PLANIFIÉES (discord.ext.tasks) : mise à jour des embeds (30s), sauvegarde
-#      GitHub (15min), vérification des écoutes expirées (5min), nettoyage horaire des
-#      embeds fantômes (1h), classement hebdomadaire (chaque lundi minuit), rappel
-#      d'hébergement (24h). Toutes démarrées une seule fois dans on_ready (voir plus bas
-#      pourquoi le "une seule fois" est important).
-#
-#   5. COMMANDES SLASH + SYSTÈME DE TICKETS PAR MP pour l'administration et le support.
-# ==========================================================================================
 
 import os
 import io
@@ -113,30 +84,11 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 HOST_CONFIG_FILE = os.path.join(DATA_DIR, "host_config.json") # Stockage de l'échéance
 
-# --- États globaux en mémoire (RAM uniquement, perdus à chaque redémarrage) ---
-
-# {(guild_id, user_id): {message_id, message_obj, salon_id, start_time, track_id, duration,
-#                         activity, couleur, cover_url}} — une entrée par écoute Spotify active
-# actuellement affichée dans un salon. Voir l'aperçu d'architecture en haut du fichier.
 ecoutes_en_cours = {}
-
-# {(guild_id, user_id): timestamp} — anti-spam : Discord peut envoyer plusieurs
-# on_presence_update très rapprochés pour un même membre ; on ignore les appels trop proches
-# (moins de 2s d'écart) pour éviter de traiter deux fois le même changement de statut.
-# Remarque : ce dict grossit avec le nombre de (serveur, membre) distincts vus, jamais purgé,
-# mais reste de taille négligeable (juste un float par entrée).
 verrous_anti_spam = {}
-
-# {user_id: {track_id, guild_proprietaire, start_time, duration}} — un même utilisateur peut
-# être sur plusieurs serveurs à la fois avec SpotBot actif partout ; ce dict désigne quel
-# serveur est "propriétaire" de l'écoute en cours pour ne compter le morceau qu'UNE fois dans
-# les stats/historique globaux, même s'il est affiché dans plusieurs salons simultanément.
 pistes_globales = {}
 
 def _revendiquer_proprietaire_ecoute(user_id, guild_id, track_id, start_time, duration_secondes):
-    """Tente de faire de `guild_id` le serveur qui comptera ce morceau dans l'historique/stats
-    de l'utilisateur. Si un autre serveur a déjà revendiqué le même morceau (même track_id),
-    on renvoie False : ce serveur affichera bien l'embed mais ne dupliquera pas les stats."""
     existant = pistes_globales.get(user_id)
     if existant and existant["track_id"] == track_id:
         return existant["guild_proprietaire"] == guild_id
@@ -149,13 +101,10 @@ def _revendiquer_proprietaire_ecoute(user_id, guild_id, track_id, start_time, du
     return True
 
 def _est_proprietaire_ecoute(user_id, guild_id, track_id):
-    """Vrai si `guild_id` est le serveur qui a revendiqué ce morceau pour cet utilisateur."""
     existant = pistes_globales.get(user_id)
     return bool(existant) and existant["track_id"] == track_id and existant["guild_proprietaire"] == guild_id
 
 def _liberer_ecoute(user_id, guild_id, track_id):
-    """Libère la revendication une fois l'écoute terminée, pour permettre au prochain
-    morceau (ou à un autre serveur) de revendiquer la place."""
     existant = pistes_globales.get(user_id)
     if existant and existant["track_id"] == track_id and existant["guild_proprietaire"] == guild_id:
         del pistes_globales[user_id]
@@ -211,12 +160,6 @@ else:
     repo = _adopter_dossier_comme_repo()
 
 def _sauvegarde_github_bloquante():
-    """Fonction SYNCHRONE (bloquante) de sauvegarde des données vers GitHub : ajoute les
-    fichiers modifiés dans data/, commit si besoin, récupère les changements distants
-    (rebase) puis pousse. Toujours appelée via asyncio.to_thread(...) pour ne pas bloquer
-    la boucle d'évènements asyncio pendant les appels réseau Git. Si le pull/rebase entre
-    en conflit (ex: deux instances du bot tournent en même temps), l'exception est
-    capturée et journalisée, mais rien n'écrase les données déjà commitées localement."""
     try:
         rel_data_dir = os.path.relpath(DATA_DIR, BASE_DIR)
         repo.git.add("-A", "--", rel_data_dir)
@@ -247,7 +190,7 @@ async def sauvegarde_periodique_github():
 # ==========================================
 ARTISTS_FILE = os.path.join(DATA_DIR, "artists.json")
 TRACKS_FILE = os.path.join(DATA_DIR, "tracks.json")
-USERS_FILE = os.path.join(DATA_DIR, "users.json")       # Profils centralisés
+USERS_FILE = os.path.join(DATA_DIR, "users.json")
 LIKES_FILE = os.path.join(DATA_DIR, "likes.json")       
 HISTORIQUE_FILE = os.path.join(DATA_DIR, "historique.json")
 STATS_FILE = os.path.join(DATA_DIR, "stats.json")
@@ -327,7 +270,7 @@ def ecrire_guild_info(guild):
         "name": guild.name,
         "icon_url": str(guild.icon.url) if guild.icon else None,
         "member_ids": [str(m.id) for m in guild.members if not m.bot],
-        "owner_id": str(guild.owner_id) if guild.owner_id else None  # Ajout de l'owner_id
+        "owner_id": str(guild.owner_id) if guild.owner_id else None
     })
 
 def supprimer_dossier_guilde(guild_id):
@@ -429,7 +372,6 @@ def _lire_json_securise(chemin, valeur_defaut):
     with _verrou_fichiers:
         return _lire_json_securise_sans_verrou(chemin, valeur_defaut)
 
-# Chargeurs & Sauvegardes
 def _charger_flat_filtre_par_guilde(chemin, guild_id):
     toutes = _lire_json_securise(chemin, {})
     guild = bot.get_guild(int(guild_id))
@@ -716,7 +658,8 @@ def construire_embed_classement(stats, titre="🏆 Classement de la Semaine Dern
         users = charger_users()
         classement = sorted(stats.items(), key=lambda item: item[1], reverse=True)
         texte = ""
-        for index, (u_id, score) in enumerate(classement[:10], start=1):
+        # MODIFICATION : On limite l'affichage STRICTEMENT au Top 3 [:3]
+        for index, (u_id, score) in enumerate(classement[:3], start=1):
             prof = users.get(u_id, {})
             nom = prof.get("display_name", prof.get("username", "Inconnu"))
             medailles = {1: "🥇", 2: "🥈", 3: "🥉"}
@@ -739,19 +682,16 @@ def trouver_derniere_archive_top(guild_id):
 
     archives.sort(reverse=True)
 
-    guild = bot.get_guild(int(guild_id))
-    membres_ids = {str(m.id) for m in guild.members} if guild else None
-
+    # MODIFICATION : Chargement direct des stats de la guilde sans filtre restrictif
+    # Cela garantit que chaque utilisateur écoutant de la musique sur le serveur apparaît
     for annee, semaine, chemin in archives:
         try:
-            with open(chemin, "r", encoding="utf-8") as f:
-                toutes = json.load(f)
+            stats_guilde = charger_stats(guild_id)
+            if not stats_guilde:
+                with open(chemin, "r", encoding="utf-8") as f:
+                    stats_guilde = json.load(f)
         except Exception:
             continue
-        stats_guilde = (
-            {uid: score for uid, score in toutes.items() if uid in membres_ids}
-            if membres_ids is not None else toutes
-        )
         if stats_guilde:
             return stats_guilde, semaine, annee
 
@@ -897,14 +837,6 @@ def generer_barre_progression(creation_time, duration):
 #        VÉRIFICATION STATUT DE L'ÉCOUTE
 # ==========================================
 async def verifier_presence_spotify(membre):
-    """Cœur du bot : appelée à chaque changement de présence d'un membre (ou manuellement
-    au démarrage pour rattraper les écoutes déjà en cours, voir on_ready).
-
-    - Si le membre écoute Spotify et que ce n'est PAS déjà le morceau qu'on affichait :
-      on ferme/supprime l'ancien embed (s'il y en avait un) et on en crée un nouveau.
-    - Si le membre n'écoute plus rien (ou une appli autre que Spotify) et qu'on avait un
-      embed affiché pour lui : on le supprime et on finalise l'historique.
-    """
     if membre.guild is None: return
     guild_id = str(membre.guild.id)
     config = charger_config(guild_id)
@@ -988,9 +920,6 @@ async def verifier_presence_spotify(membre):
             }
 
     elif cle in ecoutes_en_cours:
-        # Le membre n'a plus d'activité Spotify (ou en avait une et vient de l'arrêter) :
-        # on finalise l'historique (calcul du temps réellement écouté) puis on supprime
-        # l'embed de suivi, qui n'a plus lieu d'être affiché.
         infos = ecoutes_en_cours[cle]
         now_utc = datetime.datetime.now(datetime.timezone.utc)
         temps_ecoule = (now_utc - infos["start_time"]).total_seconds()
@@ -1082,10 +1011,9 @@ async def verifier_ecoutes_perimees():
             print(f"⚠️ [{guild.name}] Erreur vérification écoutes : {e}")
 
 # ==========================================
-#   NETTOYAGE DES EMBEDS FANTÔMES ("bug d'affichage")
+#   NETTOYAGE DES EMBEDS FANTÔMES
 # ==========================================
 def _est_embed_ecoute_spotbot(message):
-    """Repère un embed 'X écoute :' posté par le bot (les embeds d'aide/top ont un autre titre)."""
     if message.author.id != bot.user.id:
         return False
     if not message.embeds:
@@ -1094,9 +1022,6 @@ def _est_embed_ecoute_spotbot(message):
     return " écoute :" in titre
 
 async def nettoyer_embeds_orphelins_salon(salon):
-    """Supprime les embeds 'écoute en cours' qui traînent alors qu'ils ne sont plus suivis
-    (ex: après un redémarrage du bot, la mémoire des écoutes en cours est perdue et ces
-    messages ne sont plus jamais mis à jour ni supprimés normalement)."""
     ids_messages_actifs = {
         infos["message_id"] for infos in ecoutes_en_cours.values() if infos["salon_id"] == salon.id
     }
@@ -1109,7 +1034,7 @@ async def nettoyer_embeds_orphelins_salon(salon):
                 try:
                     await message.delete()
                     supprimes += 1
-                    await asyncio.sleep(0.5)  # anti rate-limit Discord
+                    await asyncio.sleep(0.5)
                 except Exception:
                     pass
     except Exception as e:
@@ -1170,7 +1095,6 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    # --- CAS 1 : L'UTILISATEUR ÉCRIT EN MP AU BOT ---
     if isinstance(message.channel, discord.DMChannel):
         guilde = None
         for g in bot.guilds:
@@ -1214,8 +1138,6 @@ async def on_message(message):
             embed_init.add_field(name="ID Utilisateur", value=f"`{message.author.id}`", inline=True)
 
             view = TicketCloseView(message.author.id)
-            # On utilise OWNER_ID (et pas un ID écrit en dur) pour rester cohérent si jamais
-            # cette constante change un jour : avant, l'ID était dupliqué ici en clair.
             await salon_ticket.send(content=f"<@{OWNER_ID}>", embed=embed_init, view=view)
 
         embed_msg = discord.Embed(
@@ -1237,7 +1159,6 @@ async def on_message(message):
         except Exception:
             pass
 
-    # --- CAS 2 : TICKET DISCORD VERS MP UTILISATEUR ---
     elif message.channel.category and (message.channel.category.name.lower() == "privé" or message.channel.category.name == "🔒 privé"):
         if message.channel.name.startswith("ticket-"):
             topic = message.channel.topic
@@ -1285,7 +1206,6 @@ def sauvegarder_date_expiration(nouvelle_date):
 
 @tasks.loop(hours=24)
 async def rappel_renew_hebergement():
-    """Rappelle à Naloulii d'aller sur Bot-Hosting si la date approche."""
     try:
         date_cible_str = charger_date_expiration()
         date_exp = datetime.datetime.strptime(date_cible_str, "%d/%m/%Y")
@@ -1294,7 +1214,6 @@ async def rappel_renew_hebergement():
         
         temps_restant = date_exp - maintenant
         
-        # Envoi d'un rappel s'il reste moins de 36 heures avant expiration
         if 0 < temps_restant.total_seconds() < 129600: 
             user = await bot.fetch_user(OWNER_ID)
             if user:
@@ -1342,7 +1261,6 @@ async def on_ready():
         assurer_dossier_guilde(guild)
         guild_id = str(guild.id)
 
-        # Force la mise à jour de tous les guild_info pour récupérer l'owner_id de chaque serveur !
         try:
             ecrire_guild_info(guild)
         except Exception as e:
@@ -1364,7 +1282,8 @@ async def on_ready():
 
         salon = bot.get_channel(salon_id)
 
-        if salon and not msg_top_reel_id:
+        # Force la mise à jour/publication immédiate de l'embed du Top 3 dans le salon Discord
+        if salon:
             archive = trouver_derniere_archive_top(guild_id)
             if archive:
                 stats_archive, semaine, annee = archive
@@ -1372,20 +1291,23 @@ async def on_ready():
                     stats_archive,
                     titre=f"🏆 Classement de la Semaine {semaine} ({annee})"
                 )
-                try:
-                    nouveau_msg = await salon.send(embed=embed_archive)  
-                    config["message_top_id"] = nouveau_msg.id
-                    sauvegarder_config(guild_id, config)
-                    msg_top_reel_id = nouveau_msg.id
-                except Exception as e:
-                    print(f"⚠️ [{guild.name}] Impossible de publier le classement : {e}")
+                if msg_top_reel_id:
+                    try:
+                        msg_existant = await salon.fetch_message(msg_top_reel_id)
+                        await msg_existant.edit(embed=embed_archive)
+                    except Exception:
+                        msg_top_reel_id = None
+                
+                if not msg_top_reel_id:
+                    try:
+                        nouveau_msg = await salon.send(embed=embed_archive)  
+                        config["message_top_id"] = nouveau_msg.id
+                        sauvegarder_config(guild_id, config)
+                        msg_top_reel_id = nouveau_msg.id
+                    except Exception as e:
+                        print(f"⚠️ [{guild.name}] Impossible de publier le classement : {e}")
 
         if salon:
-            # ⚠️ BUG CORRIGÉ : on_ready() peut se redéclencher sur une simple reconnexion
-            # Discord (sans que le processus ne redémarre ni que `ecoutes_en_cours` soit vidé).
-            # Avant, cette boucle supprimait TOUS les embeds du bot (sauf aide/top/épinglé),
-            # y compris des fiches "X écoute :" encore activement suivies et à jour !
-            # On exclut donc désormais les messages actuellement suivis en mémoire.
             ids_messages_suivis = {
                 infos["message_id"] for infos in ecoutes_en_cours.values() if infos["salon_id"] == salon.id
             }
@@ -1402,12 +1324,6 @@ async def on_ready():
             except Exception as e:
                 print(f"Erreur nettoyage initial ({guild.name}) : {e}")
 
-            # RÉCONCILIATION AU DÉMARRAGE : la détection normale d'écoute se fait uniquement
-            # via l'évènement on_presence_update (donc sur un CHANGEMENT de statut). Après un
-            # vrai redémarrage du bot, `ecoutes_en_cours` est vide : quelqu'un qui écoutait déjà
-            # une musique AVANT le redémarrage et qui continue la même musique ne déclenchera
-            # aucun nouvel évènement, et n'aurait donc jamais de fiche recréée. On revérifie ici
-            # manuellement l'activité Spotify de chaque membre pour rattraper ces cas.
             for membre in guild.members:
                 if membre.bot:
                     continue
@@ -1419,16 +1335,8 @@ async def on_ready():
                     print(f"⚠️ [{guild.name}] Erreur réconciliation écoute pour {membre.display_name} : {e}")
 
     await bot.change_presence(status=discord.Status.online, activity=bot.activity)
-
-    # Force une sauvegarde GitHub au lancement du bot pour envoyer tous les nouveaux "owner_id" d'un coup
     await asyncio.to_thread(_sauvegarde_github_bloquante)
 
-    # ⚠️ BUG CORRIGÉ : on_ready() peut être appelé PLUSIEURS FOIS pendant la vie du bot
-    # (Discord.py rappelle on_ready() à chaque reconnexion après une coupure réseau/gateway).
-    # Avant, on faisait "tache.start()" sans vérifier si elle tournait déjà : au 2e appel,
-    # discord.py lève une RuntimeError ("Task is already launched"), ce qui coupait net
-    # l'exécution du reste de on_ready() et pouvait empêcher certaines tâches de redémarrer
-    # correctement après une reconnexion. On vérifie maintenant .is_running() avant de lancer.
     if not actualiser_messages.is_running():
         actualiser_messages.start()
     if not sauvegarde_periodique_github.is_running():
@@ -1586,17 +1494,6 @@ async def on_presence_update(before, after):
 
 @tasks.loop(seconds=30)
 async def actualiser_messages():
-    """Rafraîchit toutes les 30s la barre de progression de chaque écoute suivie en mémoire.
-
-    ⚠️ CAUSE PROBABLE DES EMBEDS "FANTÔMES" BLOQUÉS (barre figée à 0:01/0:02, capture d'écran) :
-    si `fetch_message`/`edit` échoue une seule fois (message supprimé à la main, coupure
-    réseau, rate-limit Discord 429, permission perdue...), l'ancien code arrêtait simplement
-    de suivre l'écoute ("del ecoutes_en_cours[cle]") SANS supprimer le message Discord.
-    Le message restait donc affiché pour toujours, figé sur sa dernière valeur, invisible
-    pour toute logique de nettoyage classique puisqu'il n'était plus dans `ecoutes_en_cours`.
-    On tente maintenant de le supprimer nous-mêmes dès qu'on abandonne son suivi, en filet
-    de sécurité en plus du nettoyage horaire (nettoyage_horaire_embeds) qui rattrape le reste.
-    """
     for cle, infos in list(ecoutes_en_cours.items()):
         salon = bot.get_channel(infos["salon_id"])
         if not salon:
@@ -1619,9 +1516,6 @@ async def actualiser_messages():
             view = LikeView(spotify_activity.title, spotify_activity.artist, spotify_activity.track_url, cover_url)
             await msg.edit(embed=embed, view=view)
         except Exception:
-            # On ne peut plus mettre à jour ce message (supprimé, permissions, rate-limit...).
-            # On arrête de le suivre ET on tente de le supprimer pour ne pas laisser un embed
-            # figé/obsolète visible dans le salon (voir explication ci-dessus).
             if cle in ecoutes_en_cours:
                 del ecoutes_en_cours[cle]
             try:
@@ -1630,7 +1524,7 @@ async def actualiser_messages():
                     msg_a_nettoyer = await salon.fetch_message(infos["message_id"])
                 await msg_a_nettoyer.delete()
             except Exception:
-                pass  # Déjà supprimé, ou plus accessible : le nettoyage horaire s'en chargera.
+                pass
 
 # ==========================================
 #                COMMANDES
@@ -1639,25 +1533,21 @@ async def actualiser_messages():
 @app_commands.describe(date="La nouvelle date d'expiration (ex: 23/07/2026)")
 @app_commands.guild_only()
 async def set_renew_date(interaction: discord.Interaction, date: str):
-    """Permet à Naloulii de mettre à jour la date d'échéance simplement."""
     if interaction.user.id != OWNER_ID:
         await interaction.response.send_message("🚫 Cette commande est réservée à mon créateur (**naloulii**).", ephemeral=True)
         return
 
-    # Validation simple du format de la date (JJ/MM/AAAA)
     if not re.match(r"^\d{2}/\d{2}/\d{4}$", date):
         await interaction.response.send_message("❌ Format invalide. Utilise le format `JJ/MM/AAAA` (ex: `23/07/2026`).", ephemeral=True)
         return
 
     try:
-        # Tente de parser pour s'assurer que c'est une vraie date existante
         datetime.datetime.strptime(date, "%d/%m/%Y")
         sauvegarder_date_expiration(date)
         
         await interaction.response.send_message(f"✅ Prochaine échéance enregistrée avec succès : **{date}** !", ephemeral=True)
         print(f"📅 Nouvelle date d'hébergement configurée par Naloulii : {date}")
         
-        # Envoie un push GitHub pour sauvegarder cette config
         asyncio.create_task(asyncio.to_thread(_sauvegarde_github_bloquante))
     except ValueError:
         await interaction.response.send_message("❌ Date invalide. Vérifie le jour ou le mois saisi.", ephemeral=True)
