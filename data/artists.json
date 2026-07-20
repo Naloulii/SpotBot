@@ -4910,5 +4910,17 @@
     "grupo frontera": {
         "nom": "Grupo Frontera",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/229ce047a0a51ed9e73867ae5fb3468d/250x250-000000-80-0-0.jpg"
+    },
+    "peso pluma": {
+        "nom": "Peso Pluma",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dde2bf89c1e8da0aeb94436681bc3aac/250x250-000000-80-0-0.jpg"
+    },
+    "jasiel nuñez": {
+        "nom": "Jasiel Nuñez",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d4057237dd498fa99a02b055e9cab29d/250x250-000000-80-0-0.jpg"
+    },
+    "oscar maydon": {
+        "nom": "Oscar Maydon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a2507283ac70f758f913702f5f9ee394/250x250-000000-80-0-0.jpg"
     }
 }
