@@ -4842,5 +4842,13 @@
     "igor": {
         "nom": "IGOR",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b5a2e60265be12b546fb0caebdfde267/250x250-000000-80-0-0.jpg"
+    },
+    "sarah sey": {
+        "nom": "SARAH SEY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a6dfa0f14bdda1bc9c63cf16a3d0c2e/250x250-000000-80-0-0.jpg"
+    },
+    "jiinzo's graveyard": {
+        "nom": "Jiinzo's Graveyard",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9bbe7fbc58ad758e913201a4369f1a92/250x250-000000-80-0-0.jpg"
     }
 }
