@@ -4950,5 +4950,13 @@
     "big syke": {
         "nom": "Big Syke",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/02868b2c460ca2f957aba4358d65cc34/250x250-000000-80-0-0.jpg"
+    },
+    "big sean": {
+        "nom": "Big Sean",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8710634599612079efa18e1bfe192c76/250x250-000000-80-0-0.jpg"
+    },
+    "niro": {
+        "nom": "Niro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f3fa278d8837bfbb0641aa11d33b93e/250x250-000000-80-0-0.jpg"
     }
 }
