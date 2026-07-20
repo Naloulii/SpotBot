@@ -5126,5 +5126,13 @@
     "clairo": {
         "nom": "Clairo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/933a9fcd1f1b4eae73e3f75bdf5fd3a0/250x250-000000-80-0-0.jpg"
+    },
+    "taïro": {
+        "nom": "Taïro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "bigflo & oli": {
+        "nom": "Bigflo & Oli",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/07408e0ffeeae4b388e5b35c22c3ede3/250x250-000000-80-0-0.jpg"
     }
 }
