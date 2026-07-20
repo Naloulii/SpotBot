@@ -4722,5 +4722,25 @@
     "txmy": {
         "nom": "Txmy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6de4a3930603b59d58fc20fcba59b0cf/250x250-000000-80-0-0.jpg"
+    },
+    "monk": {
+        "nom": "MONK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/168192c06be44f2bf0253bc080e9cbd2/250x250-000000-80-0-0.jpg"
+    },
+    "jid": {
+        "nom": "JID",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/beda34bc7e3dc93afb1d1fa38f42dbd7/250x250-000000-80-0-0.jpg"
+    },
+    "ty dolla $ign": {
+        "nom": "Ty Dolla $ign",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ea9932e9a55c0250a8dc19d22bd48a2/250x250-000000-80-0-0.jpg"
+    },
+    "6lack": {
+        "nom": "6LACK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "j. cole": {
+        "nom": "J. Cole",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dc8d97f19855c8ea3f15ee6db784198e/250x250-000000-80-0-0.jpg"
     }
 }
