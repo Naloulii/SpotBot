@@ -4994,5 +4994,25 @@
     "skg": {
         "nom": "SKG",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4ac19a419e2bf27644134498a0b2ebcd/250x250-000000-80-0-0.jpg"
+    },
+    "bonnie tyler": {
+        "nom": "Bonnie Tyler",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/082b948211e4510abd8babf3c9a5ec41/250x250-000000-80-0-0.jpg"
+    },
+    "ludwig van beethoven": {
+        "nom": "Ludwig van Beethoven",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f16a31a3fe85c5a14debb1f811be1325/250x250-000000-80-0-0.jpg"
+    },
+    "christophe maé": {
+        "nom": "Christophe Maé",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f371ce72486a624fd17f7860fb3d7c6f/250x250-000000-80-0-0.jpg"
+    },
+    "rever": {
+        "nom": "Rever",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c2f872bd4cfb7d94a3cf2238fc43e596/250x250-000000-80-0-0.jpg"
+    },
+    "genrix": {
+        "nom": "GenriX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d0f2f6fc3ccb9527a5ed3b2a10b52a83/250x250-000000-80-0-0.jpg"
     }
 }
