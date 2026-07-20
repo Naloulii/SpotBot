@@ -4770,5 +4770,13 @@
     "corbal": {
         "nom": "CORBAL",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4d038d08cf2c5530d5733d3a68cbcdf3/250x250-000000-80-0-0.jpg"
+    },
+    "mastu": {
+        "nom": "Mastu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/779b216e14b269f33f2ed906eec5c23b/250x250-000000-80-0-0.jpg"
+    },
+    "kxllswxtch": {
+        "nom": "KXLLSWXTCH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13f74847e58633b6ea2f7c2eb026cf16/250x250-000000-80-0-0.jpg"
     }
 }
