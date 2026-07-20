@@ -5094,5 +5094,17 @@
     "øneheart": {
         "nom": "Øneheart",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ad0be847c85d43ff5cc2dba9045a9fd6/250x250-000000-80-0-0.jpg"
+    },
+    "reidenshi": {
+        "nom": "reidenshi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0966e09b5549ae157e0de421fb6850d0/250x250-000000-80-0-0.jpg"
+    },
+    "dorian concept": {
+        "nom": "Dorian Concept",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e66fa49ba5bf4d29fafa0a2db669a50a/250x250-000000-80-0-0.jpg"
+    },
+    "super guitar bros": {
+        "nom": "Super Guitar Bros",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a67349fdbd284931cb58faee1e6733d2/250x250-000000-80-0-0.jpg"
     }
 }
