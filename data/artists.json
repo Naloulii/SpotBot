@@ -4958,5 +4958,37 @@
     "niro": {
         "nom": "Niro",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4f3fa278d8837bfbb0641aa11d33b93e/250x250-000000-80-0-0.jpg"
+    },
+    "realkahn": {
+        "nom": "REALKAHN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/adec6e3bf5628b988a3ba8ca6cb07e62/250x250-000000-80-0-0.jpg"
+    },
+    "sbkalash": {
+        "nom": "SBKalash",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a286a36695033815bbe956cdfae7029/250x250-000000-80-0-0.jpg"
+    },
+    "whales": {
+        "nom": "Whales",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b24c54b33b795d63dda6b188ab8ae033/250x250-000000-80-0-0.jpg"
+    },
+    "fraxo": {
+        "nom": "Fraxo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/450bb0eca6bd3680a6e82cb459bf8b86/250x250-000000-80-0-0.jpg"
+    },
+    "lox chatterbox": {
+        "nom": "Lox Chatterbox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73d06150ccb655b2d1e851d2f6c5705c/250x250-000000-80-0-0.jpg"
+    },
+    "dj orbital": {
+        "nom": "DJ ORBITAL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df22dc7b7ff0ba658c3b5215a05fe090/250x250-000000-80-0-0.jpg"
+    },
+    "rushex": {
+        "nom": "Rushex",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f13109bc20d95ad6c16dae229cfcd80/250x250-000000-80-0-0.jpg"
+    },
+    "mc pl alves": {
+        "nom": "mc pl alves",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3a2ffbb776742d7faa42619912249d0/250x250-000000-80-0-0.jpg"
     }
 }
