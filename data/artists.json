@@ -4890,5 +4890,25 @@
     "david santos": {
         "nom": "David Santos",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "alta consigna": {
+        "nom": "Alta Consigna",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9d8d9217e5e790180aa89ef35a12492/250x250-000000-80-0-0.jpg"
+    },
+    "ivan cornejo": {
+        "nom": "Ivan Cornejo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45ca6dd22e552da08621a25bffb32c34/250x250-000000-80-0-0.jpg"
+    },
+    "la santa grifa": {
+        "nom": "La Santa Grifa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/31eed8dc292f4579df7d9a9f1ffbd0a8/250x250-000000-80-0-0.jpg"
+    },
+    "grupo marca registrada": {
+        "nom": "Grupo Marca Registrada",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8b8466cd12934646f9ca1d035c0abc9e/250x250-000000-80-0-0.jpg"
+    },
+    "grupo frontera": {
+        "nom": "Grupo Frontera",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/229ce047a0a51ed9e73867ae5fb3468d/250x250-000000-80-0-0.jpg"
     }
 }
