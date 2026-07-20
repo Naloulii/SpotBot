@@ -4938,5 +4938,17 @@
     "officialalex425": {
         "nom": "Officialalex425",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7e5712afe07ba90ca278e755acf419f4/250x250-000000-80-0-0.jpg"
+    },
+    "sean paul": {
+        "nom": "Sean Paul",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/043332be51a1a67cb0a363ea88475a41/250x250-000000-80-0-0.jpg"
+    },
+    "keyshia cole": {
+        "nom": "Keyshia Cole",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ac53ebbc58bbed69842931e29cd1b6b/250x250-000000-80-0-0.jpg"
+    },
+    "big syke": {
+        "nom": "Big Syke",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/02868b2c460ca2f957aba4358d65cc34/250x250-000000-80-0-0.jpg"
     }
 }
