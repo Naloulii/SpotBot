@@ -4798,5 +4798,33 @@
     "the mac": {
         "nom": "The Mac",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4aafe46ef2116a5424bf30fc3f91552d/250x250-000000-80-0-0.jpg"
+    },
+    "$wag nightmare": {
+        "nom": "$wag Nightmare",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45a095a70330b2aa29e1ec7b038184fc/250x250-000000-80-0-0.jpg"
+    },
+    "c4mpus": {
+        "nom": "C4MPUS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13afd52c33cb8f4d7d4427ed2763728c/250x250-000000-80-0-0.jpg"
+    },
+    "yecke": {
+        "nom": "Yecke",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cd2e1f600a296cda59bb6f7460f9c7ce/250x250-000000-80-0-0.jpg"
+    },
+    "izen": {
+        "nom": "Izen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/490a73bc9d8e5980aaafa4eacf2b85c9/250x250-000000-80-0-0.jpg"
+    },
+    "ariane bonzini": {
+        "nom": "Ariane Bonzini",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d24918752090b9c1b13ddfcb7425674f/250x250-000000-80-0-0.jpg"
+    },
+    "lincoln.": {
+        "nom": "Lincoln.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bcc188f5824b810d775b8a0e4f8f63fa/250x250-000000-80-0-0.jpg"
+    },
+    "deelee s": {
+        "nom": "DEELEE S",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b9d3860bda8a883443b6e739250ffae6/250x250-000000-80-0-0.jpg"
     }
 }
