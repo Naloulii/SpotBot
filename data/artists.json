@@ -4698,5 +4698,25 @@
     "mystik": {
         "nom": "Mystik",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/14982957779e71864e2d4397e585a72d/250x250-000000-80-0-0.jpg"
+    },
+    "corbon amodio": {
+        "nom": "Corbon Amodio",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/054262d0a2f321879ae1b650b130a07d/250x250-000000-80-0-0.jpg"
+    },
+    "james clarke": {
+        "nom": "James Clarke",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/67bea88be95f7a18520cbb181a1098bf/250x250-000000-80-0-0.jpg"
+    },
+    "cocoon": {
+        "nom": "Cocoon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a1c4a9795e8896a277305172d40d8a24/250x250-000000-80-0-0.jpg"
+    },
+    "íñigo quintero": {
+        "nom": "Íñigo Quintero",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b174e59f4d3eb5c0bcaf5523729dca7/250x250-000000-80-0-0.jpg"
+    },
+    "laurindo almeida": {
+        "nom": "Laurindo Almeida",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d420ea9714043426b7d7a79381db66e/250x250-000000-80-0-0.jpg"
     }
 }
