@@ -4790,5 +4790,13 @@
     "nineen": {
         "nom": "NINEEN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1a99b3f7481ffe8b37c17cb8920f2e5a/250x250-000000-80-0-0.jpg"
+    },
+    "ittz": {
+        "nom": "ITTZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2141fd82d40c764b0d97aeec9003bffd/250x250-000000-80-0-0.jpg"
+    },
+    "the mac": {
+        "nom": "The Mac",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4aafe46ef2116a5424bf30fc3f91552d/250x250-000000-80-0-0.jpg"
     }
 }
