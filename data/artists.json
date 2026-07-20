@@ -5134,5 +5134,9 @@
     "bigflo & oli": {
         "nom": "Bigflo & Oli",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/07408e0ffeeae4b388e5b35c22c3ede3/250x250-000000-80-0-0.jpg"
+    },
+    "tsonpa": {
+        "nom": "Tsonpa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/21ac3d1b768e46bf843d48b857444f89/250x250-000000-80-0-0.jpg"
     }
 }
