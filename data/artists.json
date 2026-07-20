@@ -5142,5 +5142,9 @@
     "pzk": {
         "nom": "PZK",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/61c19219eb05b8afd8b19fee6623b742/250x250-000000-80-0-0.jpg"
+    },
+    "meji": {
+        "nom": "meji",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/adada2fb5dc2824b32bb21a6b7c26e13/250x250-000000-80-0-0.jpg"
     }
 }
