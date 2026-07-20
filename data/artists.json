@@ -4850,5 +4850,45 @@
     "jiinzo's graveyard": {
         "nom": "Jiinzo's Graveyard",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9bbe7fbc58ad758e913201a4369f1a92/250x250-000000-80-0-0.jpg"
+    },
+    "aaron may": {
+        "nom": "Aaron May",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a2301663d876131c292b927d9ef223d3/250x250-000000-80-0-0.jpg"
+    },
+    "lupe fiasco": {
+        "nom": "Lupe Fiasco",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f76f59a8a1786fd6a29fd69cbffd5a8f/250x250-000000-80-0-0.jpg"
+    },
+    "gouzsman": {
+        "nom": "Gouzsman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/303122ab998ff8bc50d37b82a295a4a3/250x250-000000-80-0-0.jpg"
+    },
+    "bossla": {
+        "nom": "Bossla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ffaf6721a0ab52b8a1632decddc34a63/250x250-000000-80-0-0.jpg"
+    },
+    "tommy g": {
+        "nom": "Tommy G",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/63fce841eb5096590b2822f9f3132318/250x250-000000-80-0-0.jpg"
+    },
+    "el de las r's": {
+        "nom": "El De Las R's",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0527f80ef6113c5f3eb1ce401431a88a/250x250-000000-80-0-0.jpg"
+    },
+    "eslabon armado": {
+        "nom": "Eslabon Armado",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0bf23cbe60afa9d4fc6ffd152903fbe1/250x250-000000-80-0-0.jpg"
+    },
+    "junior h": {
+        "nom": "Junior H",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "natanael cano": {
+        "nom": "Natanael Cano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3afa81d065245355854d803b55b66681/250x250-000000-80-0-0.jpg"
+    },
+    "david santos": {
+        "nom": "David Santos",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
