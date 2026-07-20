@@ -4990,5 +4990,9 @@
     "mc pl alves": {
         "nom": "mc pl alves",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a3a2ffbb776742d7faa42619912249d0/250x250-000000-80-0-0.jpg"
+    },
+    "skg": {
+        "nom": "SKG",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4ac19a419e2bf27644134498a0b2ebcd/250x250-000000-80-0-0.jpg"
     }
 }
