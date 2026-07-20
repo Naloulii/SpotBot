@@ -4838,5 +4838,9 @@
     "zequin & gapman": {
         "nom": "Zequin & gapman",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5a517b8e8e0c3bbc28b30bc58857eadc/250x250-000000-80-0-0.jpg"
+    },
+    "igor": {
+        "nom": "IGOR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b5a2e60265be12b546fb0caebdfde267/250x250-000000-80-0-0.jpg"
     }
 }
