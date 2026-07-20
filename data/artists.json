@@ -4742,5 +4742,33 @@
     "j. cole": {
         "nom": "J. Cole",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dc8d97f19855c8ea3f15ee6db784198e/250x250-000000-80-0-0.jpg"
+    },
+    "temper city": {
+        "nom": "Temper City",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/27b7a29842a30e68a4380b7fe332b6e1/250x250-000000-80-0-0.jpg"
+    },
+    "milky chance": {
+        "nom": "Milky Chance",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d69967b830e01c275732045875cef14f/250x250-000000-80-0-0.jpg"
+    },
+    "kaël": {
+        "nom": "Kaël",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a4fd8fb908995648d364869cbb69ce71/250x250-000000-80-0-0.jpg"
+    },
+    "boy in skirt": {
+        "nom": "boy in skirt",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d4f7c23201826c48b24d4952d2d74773/250x250-000000-80-0-0.jpg"
+    },
+    "luv0": {
+        "nom": "Luv0",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b2d3c26765ac98899139abc3b3ffa25/250x250-000000-80-0-0.jpg"
+    },
+    "itssvd": {
+        "nom": "itssvd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5ca4f66a1a5955348c39523affcc2a0f/250x250-000000-80-0-0.jpg"
+    },
+    "corbal": {
+        "nom": "CORBAL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d038d08cf2c5530d5733d3a68cbcdf3/250x250-000000-80-0-0.jpg"
     }
 }
