@@ -5162,5 +5162,9 @@
     "notinbed": {
         "nom": "notinbed",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0cd6cd84b7863e8ab8639e52ca3ce943/250x250-000000-80-0-0.jpg"
+    },
+    "稲葉曇": {
+        "nom": "稲葉曇",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fd844d2dcf325a8f6e6bb1b8bbefcb78/250x250-000000-80-0-0.jpg"
     }
 }
