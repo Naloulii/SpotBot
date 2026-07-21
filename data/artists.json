@@ -5274,5 +5274,21 @@
     "pr0d.k4y": {
         "nom": "Pr0d.k4y",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8a24283551ddca9cb31d899ec8cee8e2/250x250-000000-80-0-0.jpg"
+    },
+    "25時、ナイトコードで。": {
+        "nom": "25時、ナイトコードで。",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/52926c82931fd7c68f91f96cac632e81/250x250-000000-80-0-0.jpg"
+    },
+    "50 cent": {
+        "nom": "50 Cent",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/58da3cca2d598e43c7a7823cf75277e5/250x250-000000-80-0-0.jpg"
+    },
+    "justin timberlake": {
+        "nom": "Justin Timberlake",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c2b04e4f1d4036e896b67ad306008d66/250x250-000000-80-0-0.jpg"
+    },
+    "timbaland": {
+        "nom": "Timbaland",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3483279ed4aedfc00a912b90be4f4ba8/250x250-000000-80-0-0.jpg"
     }
 }
