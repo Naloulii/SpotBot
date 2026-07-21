@@ -5654,5 +5654,13 @@
     "cigarettes after sex": {
         "nom": "Cigarettes After Sex",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/78a73789b4017103858b9261b8a701d5/250x250-000000-80-0-0.jpg"
+    },
+    "pato": {
+        "nom": "Pato",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9e35d5410da5d862f22d300e103bfcb1/250x250-000000-80-0-0.jpg"
+    },
+    "le crime": {
+        "nom": "Le Crime",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/316534c8d89b529055ec80b1fe2a339e/250x250-000000-80-0-0.jpg"
     }
 }
