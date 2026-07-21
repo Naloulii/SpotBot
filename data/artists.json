@@ -5166,5 +5166,37 @@
     "稲葉曇": {
         "nom": "稲葉曇",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fd844d2dcf325a8f6e6bb1b8bbefcb78/250x250-000000-80-0-0.jpg"
+    },
+    "jawny": {
+        "nom": "JAWNY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/adac36419b38659d714f0312c4a77595/250x250-000000-80-0-0.jpg"
+    },
+    "kaisersang": {
+        "nom": "Kaisersang",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/83e58a59b5b1048be8443445e24c0d38/250x250-000000-80-0-0.jpg"
+    },
+    "édith piaf": {
+        "nom": "Édith Piaf",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/242534322478decb42a2df37f712bbac/250x250-000000-80-0-0.jpg"
+    },
+    "mentissa": {
+        "nom": "Mentissa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a69fa36b7efd32dda2e0806144ffed4a/250x250-000000-80-0-0.jpg"
+    },
+    "michel teló": {
+        "nom": "Michel Teló",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7a4dd1b06939c97facba29eec6aaab7/250x250-000000-80-0-0.jpg"
+    },
+    "lah pat": {
+        "nom": "Lah Pat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/88b051d57d25561a722539d4ef099c08/250x250-000000-80-0-0.jpg"
+    },
+    "flo milli": {
+        "nom": "Flo Milli",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/db4c9e92ebbb65eaca8d4f8ef5bf82d3/250x250-000000-80-0-0.jpg"
+    },
+    "vladimir cauchemar": {
+        "nom": "Vladimir Cauchemar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
