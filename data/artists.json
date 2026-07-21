@@ -5334,5 +5334,21 @@
     "rainy bear": {
         "nom": "rainy bear",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6e345f00a34c105e2866411e4cf74773/250x250-000000-80-0-0.jpg"
+    },
+    "ybn nahmir": {
+        "nom": "YBN Nahmir",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7b4fa502550e5133cc2b0a5d0d3d8f31/250x250-000000-80-0-0.jpg"
+    },
+    "21 savage": {
+        "nom": "21 Savage",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/76b4cd56c7e94e8d2bdc3e2157e1080f/250x250-000000-80-0-0.jpg"
+    },
+    "03 greedo": {
+        "nom": "03 Greedo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8bf22ce8f32b72c934fb0d634a10e77f/250x250-000000-80-0-0.jpg"
+    },
+    "jaah slt": {
+        "nom": "Jaah SLT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/980df2a4d95c398c9f5e38a2ee40841f/250x250-000000-80-0-0.jpg"
     }
 }
