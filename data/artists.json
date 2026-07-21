@@ -5350,5 +5350,25 @@
     "jaah slt": {
         "nom": "Jaah SLT",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/980df2a4d95c398c9f5e38a2ee40841f/250x250-000000-80-0-0.jpg"
+    },
+    "the kid laroi": {
+        "nom": "The Kid LAROI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/784b991057e2b8c07e8b9687a79502ce/250x250-000000-80-0-0.jpg"
+    },
+    "polo g": {
+        "nom": "Polo G",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9faf91af495202aeab93e2d91b975851/250x250-000000-80-0-0.jpg"
+    },
+    "suga": {
+        "nom": "SUGA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2bbe35078e5b58e4193bf959685346cd/250x250-000000-80-0-0.jpg"
+    },
+    "marshmello": {
+        "nom": "Marshmello",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "ellie goulding": {
+        "nom": "Ellie Goulding",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3611824a11b28e07bc5a363c629dcb4/250x250-000000-80-0-0.jpg"
     }
 }
