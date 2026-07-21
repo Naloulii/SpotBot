@@ -5246,5 +5246,17 @@
     "yazida": {
         "nom": "Yazida",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b13b28ff593c282050661d6c9aed9e14/250x250-000000-80-0-0.jpg"
+    },
+    "estelle": {
+        "nom": "Estelle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/543ebc3456560499137424fdd691c4ad/250x250-000000-80-0-0.jpg"
+    },
+    "bump of chicken": {
+        "nom": "BUMP OF CHICKEN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c2492704804b4a619de73accb7d2ac43/250x250-000000-80-0-0.jpg"
+    },
+    "lana del rey": {
+        "nom": "Lana Del Rey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8994d3be1a59a72f887f1f8afd2d4c6c/250x250-000000-80-0-0.jpg"
     }
 }
