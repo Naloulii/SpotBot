@@ -5230,5 +5230,21 @@
     "eem triplin": {
         "nom": "Eem Triplin",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ce84e63dceb5aa6ca2e602650c6d2e9f/250x250-000000-80-0-0.jpg"
+    },
+    "2mi.ntyyy": {
+        "nom": "2mi.ntyyy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "skyte": {
+        "nom": "Skyte",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41eef406de9512d15f71379dcc05872b/250x250-000000-80-0-0.jpg"
+    },
+    "ridgeclub": {
+        "nom": "ridgeclub",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7fe42a0b24c5acf248097d897970ddea/250x250-000000-80-0-0.jpg"
+    },
+    "yazida": {
+        "nom": "Yazida",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b13b28ff593c282050661d6c9aed9e14/250x250-000000-80-0-0.jpg"
     }
 }
