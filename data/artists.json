@@ -5198,5 +5198,21 @@
     "vladimir cauchemar": {
         "nom": "Vladimir Cauchemar",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "system of a down": {
+        "nom": "System Of A Down",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/67460cdb0b52bfde1b807650958058d6/250x250-000000-80-0-0.jpg"
+    },
+    "poppy": {
+        "nom": "Poppy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d06c4a866ef08a6b11ae64653a66075e/250x250-000000-80-0-0.jpg"
+    },
+    "amy lee": {
+        "nom": "Amy Lee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/565ea34b4c8ec848583afa7c8ab26872/250x250-000000-80-0-0.jpg"
+    },
+    "courtney laplante": {
+        "nom": "Courtney LaPlante",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d322c65879c6a1b14460f15a25626f61/250x250-000000-80-0-0.jpg"
     }
 }
