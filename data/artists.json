@@ -5422,5 +5422,13 @@
     "yanishi": {
         "nom": "Yanishi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f42cf83849c9d5c99f1850a51d45119b/250x250-000000-80-0-0.jpg"
+    },
+    "slō": {
+        "nom": "slō",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/324a48ef0cf6d61e2342a4ec5d16211b/250x250-000000-80-0-0.jpg"
+    },
+    "twilight": {
+        "nom": "twilight",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8cd8abc23f2e55b0c9b2db17919bd676/250x250-000000-80-0-0.jpg"
     }
 }
