@@ -5370,5 +5370,37 @@
     "ellie goulding": {
         "nom": "Ellie Goulding",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e3611824a11b28e07bc5a363c629dcb4/250x250-000000-80-0-0.jpg"
+    },
+    "lomiiel": {
+        "nom": "Lomiiel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3362440f7d57d3080cdfaaca9b37bfea/250x250-000000-80-0-0.jpg"
+    },
+    "jey one": {
+        "nom": "Jey One",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f852274878edbff6cf2d3007f3ff981/250x250-000000-80-0-0.jpg"
+    },
+    "og detruyelo": {
+        "nom": "OG DETRUYELO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2359b9c3429bf9811377e1d5e3a36560/250x250-000000-80-0-0.jpg"
+    },
+    "yailin la mas viral": {
+        "nom": "Yailin la Mas Viral",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7a5f5c3966bc0c36c3d500910bfb1be/250x250-000000-80-0-0.jpg"
+    },
+    "puyalo pantera": {
+        "nom": "Puyalo Pantera",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f5c36abbf869fc466393cade86f461d7/250x250-000000-80-0-0.jpg"
+    },
+    "el alfa": {
+        "nom": "El Alfa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/000d442d159dfea888bc4b905f17fb85/250x250-000000-80-0-0.jpg"
+    },
+    "jezzy": {
+        "nom": "Jezzy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6f9766e81334ddd0fab2fcc853d6993/250x250-000000-80-0-0.jpg"
+    },
+    "leo rd": {
+        "nom": "Leo RD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f43c968cdf1eb8daa068dd3e1585c343/250x250-000000-80-0-0.jpg"
     }
 }
