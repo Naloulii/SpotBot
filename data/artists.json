@@ -5290,5 +5290,9 @@
     "timbaland": {
         "nom": "Timbaland",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3483279ed4aedfc00a912b90be4f4ba8/250x250-000000-80-0-0.jpg"
+    },
+    "perfume": {
+        "nom": "Perfume",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d0d194fc54b0d884d1167bba88d6f40d/250x250-000000-80-0-0.jpg"
     }
 }
