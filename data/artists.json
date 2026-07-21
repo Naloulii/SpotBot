@@ -5410,5 +5410,17 @@
     "lil uzi vert": {
         "nom": "Lil Uzi Vert",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/aee2db9a69abb62ae05b644d0ea68055/250x250-000000-80-0-0.jpg"
+    },
+    "mwaka": {
+        "nom": "Mwaka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5b7d98cc836e93b9183c5da664d0486e/250x250-000000-80-0-0.jpg"
+    },
+    "lzaccio": {
+        "nom": "LZACCIO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1de0224cad11a2b45d703e1da47f7a01/250x250-000000-80-0-0.jpg"
+    },
+    "yanishi": {
+        "nom": "Yanishi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f42cf83849c9d5c99f1850a51d45119b/250x250-000000-80-0-0.jpg"
     }
 }
