@@ -5670,5 +5670,13 @@
     "saian supa crew": {
         "nom": "Saian Supa Crew",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8cceecde3246f5226b603b1bfa3f4933/250x250-000000-80-0-0.jpg"
+    },
+    "fallon": {
+        "nom": "Fallon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e23066163f21176a822b54001ee648a2/250x250-000000-80-0-0.jpg"
+    },
+    "abou tall": {
+        "nom": "Abou Tall",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d4652c81d87bf948e862aef0b9a9887/250x250-000000-80-0-0.jpg"
     }
 }
