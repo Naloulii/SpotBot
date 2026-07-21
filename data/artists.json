@@ -5306,5 +5306,33 @@
     "ambiance skandal": {
         "nom": "Ambiance Skandal",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b634e87e3b47883fcc0bdee53264ad22/250x250-000000-80-0-0.jpg"
+    },
+    "a boogie wit da hoodie": {
+        "nom": "A Boogie Wit da Hoodie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65bccca3a5db7a4497124fa14f0fee0a/250x250-000000-80-0-0.jpg"
+    },
+    "kodak black": {
+        "nom": "Kodak Black",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea8a331290d65200aaf09a7748975079/250x250-000000-80-0-0.jpg"
+    },
+    "ski mask the slump god": {
+        "nom": "Ski Mask The Slump God",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2a4c612826cd83bf1a4fe371f410abaf/250x250-000000-80-0-0.jpg"
+    },
+    "ynw melly": {
+        "nom": "YNW Melly",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0aef7bd62000e5bea33c3f2dfcfe93b8/250x250-000000-80-0-0.jpg"
+    },
+    "savetheworld!": {
+        "nom": "SaveTheWorld!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41bbfc2b5ec6c4739fb5b55eb07676bc/250x250-000000-80-0-0.jpg"
+    },
+    "quintuple archive": {
+        "nom": "quintuple archive",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41bbfc2b5ec6c4739fb5b55eb07676bc/250x250-000000-80-0-0.jpg"
+    },
+    "rainy bear": {
+        "nom": "rainy bear",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6e345f00a34c105e2866411e4cf74773/250x250-000000-80-0-0.jpg"
     }
 }
