@@ -5566,5 +5566,17 @@
     "rodricci": {
         "nom": "Rodricci",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d6db1e877b21fe72cf853f2dcc943dae/250x250-000000-80-0-0.jpg"
+    },
+    "mc gil do andaraí": {
+        "nom": "MC Gil Do Andaraí",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2e57547d50ea4f5c673a62e39c039924/250x250-000000-80-0-0.jpg"
+    },
+    "dj exe": {
+        "nom": "DJ EXE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fe92c5ca3abe004771d767d8f841c905/250x250-000000-80-0-0.jpg"
+    },
+    "mc furdunço": {
+        "nom": "Mc Furdunço",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/14a5ae17f6db4016024aa2edc0a6406f/250x250-000000-80-0-0.jpg"
     }
 }
