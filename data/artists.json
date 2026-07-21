@@ -5258,5 +5258,21 @@
     "lana del rey": {
         "nom": "Lana Del Rey",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8994d3be1a59a72f887f1f8afd2d4c6c/250x250-000000-80-0-0.jpg"
+    },
+    "joon": {
+        "nom": "Joon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45c8a7d740a471d210a5a4114f6d6545/250x250-000000-80-0-0.jpg"
+    },
+    "salako": {
+        "nom": "Salako",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3fdf520f6a27862e74b736ce518a3ef9/250x250-000000-80-0-0.jpg"
+    },
+    "clubcamo": {
+        "nom": "ClubCamo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ca54648acf4f88913f007c591e7b6fc7/250x250-000000-80-0-0.jpg"
+    },
+    "pr0d.k4y": {
+        "nom": "Pr0d.k4y",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8a24283551ddca9cb31d899ec8cee8e2/250x250-000000-80-0-0.jpg"
     }
 }
