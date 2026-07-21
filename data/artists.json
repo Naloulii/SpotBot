@@ -5634,5 +5634,25 @@
     "trxshbxy": {
         "nom": "TRXSHBXY",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8955b79d0c2e94915e409c55c54b24db/250x250-000000-80-0-0.jpg"
+    },
+    "zbig": {
+        "nom": "Zbig",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "jiandro": {
+        "nom": "Jiandro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b6f0e34860d97844865f4ca8b4e14f8/250x250-000000-80-0-0.jpg"
+    },
+    "ola.wav": {
+        "nom": "ola.wav",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/89e089418cb99fbc397a14900c9159fc/250x250-000000-80-0-0.jpg"
+    },
+    "hussinbeats": {
+        "nom": "HussinBeats",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3d99db818e21ab377a8eafe0bf1b2e87/250x250-000000-80-0-0.jpg"
+    },
+    "cigarettes after sex": {
+        "nom": "Cigarettes After Sex",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/78a73789b4017103858b9261b8a701d5/250x250-000000-80-0-0.jpg"
     }
 }
