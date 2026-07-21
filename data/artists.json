@@ -5402,5 +5402,13 @@
     "leo rd": {
         "nom": "Leo RD",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f43c968cdf1eb8daa068dd3e1585c343/250x250-000000-80-0-0.jpg"
+    },
+    "seezyn": {
+        "nom": "Seezyn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c03653151d8826fd9c4b56a458526308/250x250-000000-80-0-0.jpg"
+    },
+    "lil uzi vert": {
+        "nom": "Lil Uzi Vert",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aee2db9a69abb62ae05b644d0ea68055/250x250-000000-80-0-0.jpg"
     }
 }
