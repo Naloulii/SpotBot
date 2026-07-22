@@ -6042,5 +6042,29 @@
     "flavor foley": {
         "nom": "FLAVOR FOLEY",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ae15aef30ff5b84536e2e08f43043376/250x250-000000-80-0-0.jpg"
+    },
+    "contradash": {
+        "nom": "contradash",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5b134c441aac4b09761336d46ea08371/250x250-000000-80-0-0.jpg"
+    },
+    "4cf": {
+        "nom": "4cf",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9109576a2fcaeca88ca135d582b1171a/250x250-000000-80-0-0.jpg"
+    },
+    "jay kim": {
+        "nom": "Jay Kim",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/54c9b2306ff091b952ea32082c2a6b80/250x250-000000-80-0-0.jpg"
+    },
+    "kurtains": {
+        "nom": "kurtains",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b94352a68d648e99fc92632ccc177e74/250x250-000000-80-0-0.jpg"
+    },
+    "s3rl": {
+        "nom": "S3RL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a696435ae742e14cf9a6896b6ea39c4e/250x250-000000-80-0-0.jpg"
+    },
+    "sara": {
+        "nom": "Sara",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/792304785a46bc07fb0d7d8d931fb623/250x250-000000-80-0-0.jpg"
     }
 }
