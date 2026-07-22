@@ -5898,5 +5898,13 @@
     "jowell & randy": {
         "nom": "Jowell & Randy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9f5ea3cedfa2c8e9b7a35bf366b117dd/250x250-000000-80-0-0.jpg"
+    },
+    "mac tyer": {
+        "nom": "Mac Tyer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c579eaf9e95dae530e34032342363011/250x250-000000-80-0-0.jpg"
+    },
+    "yaro": {
+        "nom": "Yaro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
