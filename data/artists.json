@@ -5838,5 +5838,17 @@
     "so la zone": {
         "nom": "So La Zone",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4081a03624a27332ca11ca04986eccda/250x250-000000-80-0-0.jpg"
+    },
+    "josas": {
+        "nom": "Josas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/791d90f4f0885cce4a45f2ed2f260cc2/250x250-000000-80-0-0.jpg"
+    },
+    "rimkus": {
+        "nom": "Rimkus",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6bb5ea3bc0d61e26ccd829a282a74e3/250x250-000000-80-0-0.jpg"
+    },
+    "niaks": {
+        "nom": "Niaks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
