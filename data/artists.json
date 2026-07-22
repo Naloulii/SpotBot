@@ -6066,5 +6066,13 @@
     "sara": {
         "nom": "Sara",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/792304785a46bc07fb0d7d8d931fb623/250x250-000000-80-0-0.jpg"
+    },
+    "kmoe": {
+        "nom": "kmoe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3ee2551d8c29865963678d5fa29daed2/250x250-000000-80-0-0.jpg"
+    },
+    "jane remover": {
+        "nom": "Jane Remover",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ebd6b5e5a0b0f178163005de1869767b/250x250-000000-80-0-0.jpg"
     }
 }
