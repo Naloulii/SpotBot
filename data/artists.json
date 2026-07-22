@@ -5818,5 +5818,13 @@
     "yunmaho": {
         "nom": "Yunmaho",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cc41d5585e7d4d0fa9cbcbbcad601c19/250x250-000000-80-0-0.jpg"
+    },
+    "prod.neonstorm": {
+        "nom": "prod.neonstorm",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2f17ee3dda58fabe88f811bc82f77448/250x250-000000-80-0-0.jpg"
+    },
+    "ghxstic": {
+        "nom": "GHXSTIC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/da23d5c8a0b40adefa6424ec4b357fd1/250x250-000000-80-0-0.jpg"
     }
 }
