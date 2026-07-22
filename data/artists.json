@@ -5970,5 +5970,45 @@
     "sifax": {
         "nom": "Sifax",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b0e467a7d76077c36f9d9c21c74db3a2/250x250-000000-80-0-0.jpg"
+    },
+    "gambino": {
+        "nom": "Gambino",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "shin sakiura": {
+        "nom": "Shin Sakiura",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c3f2b535a8a5e1d89f04a2091660853e/250x250-000000-80-0-0.jpg"
+    },
+    "aaamyyy": {
+        "nom": "AAAMYYY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d52ba3827c99ab7f2553409d458ad1b3/250x250-000000-80-0-0.jpg"
+    },
+    "36 kingdom": {
+        "nom": "36 KINGDOM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1357ddbe3274e60cc84ed56054f13f23/250x250-000000-80-0-0.jpg"
+    },
+    "svno": {
+        "nom": "SVNO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0194dbdf30e913537bc07f4e5093f9b7/250x250-000000-80-0-0.jpg"
+    },
+    "影森みちる(cv:諸星すみれ)": {
+        "nom": "影森みちる(CV:諸星すみれ)",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "gato": {
+        "nom": "Gato",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f9113e023970ecee088507ef50c88f9a/250x250-000000-80-0-0.jpg"
+    },
+    "powfu": {
+        "nom": "Powfu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a0479e8e96bf1044f3e075b3fdb8c83/250x250-000000-80-0-0.jpg"
+    },
+    "ouse": {
+        "nom": "Ouse",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/88aa54992d795b9de8615c189273e6b8/250x250-000000-80-0-0.jpg"
+    },
+    "ryan librada": {
+        "nom": "Ryan Librada",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f992f25baee7b6fc4b5f43746ffe239/250x250-000000-80-0-0.jpg"
     }
 }
