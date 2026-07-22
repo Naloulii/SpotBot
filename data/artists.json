@@ -5766,5 +5766,29 @@
     "flipp dinero": {
         "nom": "Flipp Dinero",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b7f9162245dd3aabf40bc4a7d1a58e65/250x250-000000-80-0-0.jpg"
+    },
+    "xcozso": {
+        "nom": "Xcozso",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56f9b1c68b688c90469c977aea3e736a/250x250-000000-80-0-0.jpg"
+    },
+    "$uicideboy$": {
+        "nom": "$uicideboy$",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6e1c90401ea0548202794939bd7dd4de/250x250-000000-80-0-0.jpg"
+    },
+    "sleepy hallow": {
+        "nom": "Sleepy Hallow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/30ebada71f1e12c9dd62d877e49ee8df/250x250-000000-80-0-0.jpg"
+    },
+    "voidedd": {
+        "nom": "Voidedd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9145377d666629764e9af93f18059ec7/250x250-000000-80-0-0.jpg"
+    },
+    "9lokknine": {
+        "nom": "9lokknine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0da6add91a39b17e30eb61d152f6f0c1/250x250-000000-80-0-0.jpg"
+    },
+    "playboi carti": {
+        "nom": "Playboi Carti",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b90097972a60d9d8598a79a786be1a3a/250x250-000000-80-0-0.jpg"
     }
 }
