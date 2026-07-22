@@ -5918,5 +5918,9 @@
     "ramos.": {
         "nom": "Ramos.",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/17fa28702f7a72f1705c0e79940ac72d/250x250-000000-80-0-0.jpg"
+    },
+    "punchologue": {
+        "nom": "Punchologue",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/79c65ffb3ccf5f1e10405f5deabf941b/250x250-000000-80-0-0.jpg"
     }
 }
