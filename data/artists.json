@@ -5950,5 +5950,25 @@
     "bixby": {
         "nom": "bixby",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e461aa6f17790be27aa3249fd0833b37/250x250-000000-80-0-0.jpg"
+    },
+    "koven wei": {
+        "nom": "Koven Wei",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc4f45a6f26b495027d72ca1f9dfe609/250x250-000000-80-0-0.jpg"
+    },
+    "jayya": {
+        "nom": "jayya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e16bc25b9b7c8e1efe8b9d0d4038442d/250x250-000000-80-0-0.jpg"
+    },
+    "starfall": {
+        "nom": "starfall",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df5a30c18ca96878372572d88dc8b83e/250x250-000000-80-0-0.jpg"
+    },
+    "milky": {
+        "nom": "Milky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a619a61c020a34c47734dc231ed7b41/250x250-000000-80-0-0.jpg"
+    },
+    "sifax": {
+        "nom": "Sifax",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b0e467a7d76077c36f9d9c21c74db3a2/250x250-000000-80-0-0.jpg"
     }
 }
