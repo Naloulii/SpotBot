@@ -5826,5 +5826,17 @@
     "ghxstic": {
         "nom": "GHXSTIC",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/da23d5c8a0b40adefa6424ec4b357fd1/250x250-000000-80-0-0.jpg"
+    },
+    "zitoune": {
+        "nom": "Zitoune",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/72cec7a70f3606c99701067bedff595d/250x250-000000-80-0-0.jpg"
+    },
+    "graya": {
+        "nom": "Graya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f5ef945bf5b7747f6cbd9c3160e3047c/250x250-000000-80-0-0.jpg"
+    },
+    "so la zone": {
+        "nom": "So La Zone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4081a03624a27332ca11ca04986eccda/250x250-000000-80-0-0.jpg"
     }
 }
