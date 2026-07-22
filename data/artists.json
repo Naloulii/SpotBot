@@ -5934,5 +5934,21 @@
     "cybertrash": {
         "nom": "Cybertrash",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bd5a46dabf1be30510570533299d461a/250x250-000000-80-0-0.jpg"
+    },
+    "juno": {
+        "nom": "juno",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3cc5feb29fe8c09add91a95c8786ca52/250x250-000000-80-0-0.jpg"
+    },
+    "misogi": {
+        "nom": "MISOGI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0bf79858f503f390a30d7189bb7becb7/250x250-000000-80-0-0.jpg"
+    },
+    "rage激怒": {
+        "nom": "Rage激怒",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8e65bf8fe69438bb119f2b54ffe6cbb/250x250-000000-80-0-0.jpg"
+    },
+    "bixby": {
+        "nom": "bixby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e461aa6f17790be27aa3249fd0833b37/250x250-000000-80-0-0.jpg"
     }
 }
