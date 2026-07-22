@@ -6082,5 +6082,9 @@
     "aries": {
         "nom": "Aries",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5600ad9c7b8274f133dee1d2d767f8dc/250x250-000000-80-0-0.jpg"
+    },
+    "fauve": {
+        "nom": "Fauve",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
