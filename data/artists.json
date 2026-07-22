@@ -6118,5 +6118,17 @@
     "yangyinyue": {
         "nom": "YANGYINYUE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/551b5ae3132e55af4318be648c832a33/250x250-000000-80-0-0.jpg"
+    },
+    "dj fku": {
+        "nom": "DJ FKU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/93b24dc833532ec09c9168708a3b44ff/250x250-000000-80-0-0.jpg"
+    },
+    "disco lines": {
+        "nom": "Disco Lines",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d07e4515ef235b97becd5c28d23ea75/250x250-000000-80-0-0.jpg"
+    },
+    "tinashe": {
+        "nom": "Tinashe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5cc2f7af5cd1c0990de7d2240f0848ec/250x250-000000-80-0-0.jpg"
     }
 }
