@@ -5922,5 +5922,17 @@
     "punchologue": {
         "nom": "Punchologue",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/79c65ffb3ccf5f1e10405f5deabf941b/250x250-000000-80-0-0.jpg"
+    },
+    "memphx": {
+        "nom": "MEMPHX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c1f4fce8d2cef5daa91a5283ca17c78/250x250-000000-80-0-0.jpg"
+    },
+    "polar": {
+        "nom": "polar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df31a2e934060a2a1b50ab01e46fda6e/250x250-000000-80-0-0.jpg"
+    },
+    "cybertrash": {
+        "nom": "Cybertrash",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bd5a46dabf1be30510570533299d461a/250x250-000000-80-0-0.jpg"
     }
 }
