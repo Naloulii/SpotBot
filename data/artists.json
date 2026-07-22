@@ -5906,5 +5906,13 @@
     "yaro": {
         "nom": "Yaro",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "saberhagen": {
+        "nom": "saberhagen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ca3af597da90f420b8eaad5f21ffe750/250x250-000000-80-0-0.jpg"
+    },
+    "cjae": {
+        "nom": "Cjae",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1cd1616a7c5909ff7fa5d2ebfb9c18a1/250x250-000000-80-0-0.jpg"
     }
 }
