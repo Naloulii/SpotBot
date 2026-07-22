@@ -5854,5 +5854,49 @@
     "hornet la frappe": {
         "nom": "Hornet La Frappe",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ec87c1c4fde9410871b483eac2159fee/250x250-000000-80-0-0.jpg"
+    },
+    "carla morrison": {
+        "nom": "Carla Morrison",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a8d2dea96d47536492b07c0d14dc3ea/250x250-000000-80-0-0.jpg"
+    },
+    "dannylux": {
+        "nom": "DannyLux",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de6b0552fd187fb1a036e843e97d79ce/250x250-000000-80-0-0.jpg"
+    },
+    "aventura": {
+        "nom": "Aventura",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2484d993eda1542377ba01faa2363cb9/250x250-000000-80-0-0.jpg"
+    },
+    "judy santos": {
+        "nom": "Judy Santos",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8542be841cf10e9e977c02a050d85f44/250x250-000000-80-0-0.jpg"
+    },
+    "fuerza regida": {
+        "nom": "Fuerza Regida",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/171bf1e106d8a72d999146f6ace4ecc3/250x250-000000-80-0-0.jpg"
+    },
+    "adolescent's orquesta": {
+        "nom": "Adolescent's Orquesta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2c5e5c00c30db767e885ea2134f53943/250x250-000000-80-0-0.jpg"
+    },
+    "maluma": {
+        "nom": "Maluma",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a1627f420e880b7229e52890b99626c9/250x250-000000-80-0-0.jpg"
+    },
+    "eloy": {
+        "nom": "Eloy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7e7f83f5d45e4566ae8add3b19089ac6/250x250-000000-80-0-0.jpg"
+    },
+    "randy nota loca": {
+        "nom": "Randy Nota Loca",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8ee199645c846ee85260c551818b2e65/250x250-000000-80-0-0.jpg"
+    },
+    "zion": {
+        "nom": "Zion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d119a58e0aee183b80c2e3a73d42451/250x250-000000-80-0-0.jpg"
+    },
+    "jowell & randy": {
+        "nom": "Jowell & Randy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f5ea3cedfa2c8e9b7a35bf366b117dd/250x250-000000-80-0-0.jpg"
     }
 }
