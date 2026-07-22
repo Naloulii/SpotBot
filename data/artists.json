@@ -6086,5 +6086,33 @@
     "fauve": {
         "nom": "Fauve",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "kane parsons": {
+        "nom": "Kane Parsons",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2265f4be38aa0469ac17a9c3e344498f/250x250-000000-80-0-0.jpg"
+    },
+    "東京真中": {
+        "nom": "東京真中",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb51b6f27ee54a2a79b34cc9250fa609/250x250-000000-80-0-0.jpg"
+    },
+    "はしメロ": {
+        "nom": "はしメロ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/278dc6dc7b43f9f07fe601a2f1541094/250x250-000000-80-0-0.jpg"
+    },
+    "benson boone": {
+        "nom": "Benson Boone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d42a1e4edd66fe02080b59d90210bf40/250x250-000000-80-0-0.jpg"
+    },
+    "underscores": {
+        "nom": "underscores",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/30a62c4adfc14aa4d8ddbc21c4690d27/250x250-000000-80-0-0.jpg"
+    },
+    "asian kung-fu generation": {
+        "nom": "ASIAN KUNG-FU GENERATION",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3470c73fa847c7872018577390a2b54/250x250-000000-80-0-0.jpg"
+    },
+    "須田景凪": {
+        "nom": "須田景凪",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f8c2554baebf8945c386f9430881357f/250x250-000000-80-0-0.jpg"
     }
 }
