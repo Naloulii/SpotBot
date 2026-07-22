@@ -2892,9 +2892,45 @@
     ],
     "822158052240785458": [
         {
+            "date": "22/07/2026 16:21",
+            "track_id": "5avVpUakfMHD6qGpaH26CF",
+            "status": "En cours..."
+        },
+        {
+            "date": "22/07/2026 16:16",
+            "track_id": "1LwJydVBkPu8rr3Ltg2q3d",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 155.0
+        },
+        {
+            "date": "22/07/2026 16:16",
+            "track_id": "5avVpUakfMHD6qGpaH26CF",
+            "status": "⏱️ Écouté pendant -1m 59s",
+            "temps_ecoute_secondes": -1.5
+        },
+        {
+            "date": "22/07/2026 16:15",
+            "track_id": "5avVpUakfMHD6qGpaH26CF",
+            "status": "⏱️ Écouté pendant -1m 55s",
+            "temps_ecoute_secondes": -5.6
+        },
+        {
+            "date": "22/07/2026 16:12",
+            "track_id": "1LwJydVBkPu8rr3Ltg2q3d",
+            "status": "⏱️ Écouté pendant 2m 34s",
+            "temps_ecoute_secondes": 154.7
+        },
+        {
+            "date": "22/07/2026 16:09",
+            "track_id": "4j5Bb0saeXmiz62XIZjcHj",
+            "status": "⏱️ Écouté pendant 2m 39s",
+            "temps_ecoute_secondes": 159.7
+        },
+        {
             "date": "22/07/2026 16:05",
             "track_id": "4otwFzkVBdVNTBu7gxJA4A",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 233.3
         },
         {
             "date": "22/07/2026 16:02",
@@ -3453,42 +3489,6 @@
             "track_id": "31rneVrsMC6jefCoDyQKam",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 197.6
-        },
-        {
-            "date": "19/07/2026 14:48",
-            "track_id": "3xXBsjrbG1xQIm1xv1cKOt",
-            "status": "⏱️ Écouté pendant 0m 14s",
-            "temps_ecoute_secondes": 14.2
-        },
-        {
-            "date": "19/07/2026 14:47",
-            "track_id": "4iVVU8DyQvOVsKafv3KWIF",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 180.2
-        },
-        {
-            "date": "19/07/2026 14:37",
-            "track_id": "5qOA9jbfWAtxOJ8zY1ReYf",
-            "status": "⏱️ Écouté pendant 1m 30s",
-            "temps_ecoute_secondes": 90.8
-        },
-        {
-            "date": "19/07/2026 14:34",
-            "track_id": "5Pl4OxV9RGWNMO8MGmAoDP",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 189.5
-        },
-        {
-            "date": "19/07/2026 14:30",
-            "track_id": "2VxeLyX666F8uXCJ0dZF8B",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 209.1
-        },
-        {
-            "date": "19/07/2026 14:26",
-            "track_id": "1RE1SDPjuilKM6tLIMxTtP",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 220.4
         }
     ],
     "1086742511361466370": [
@@ -4508,6 +4508,12 @@
     ],
     "1196099524385570936": [
         {
+            "date": "22/07/2026 16:18",
+            "track_id": "2LwX4RESg60WS043x1ohD3",
+            "status": "⏱️ Écouté pendant 1m 24s",
+            "temps_ecoute_secondes": 85.0
+        },
+        {
             "date": "22/07/2026 13:16",
             "track_id": "03UurfEizV5tCqtQ0qLjwM",
             "status": "⏱️ Écouté pendant 1m 21s",
@@ -5100,15 +5106,14 @@
             "track_id": "51iRhxD8Ap1EubRCr9jQlR",
             "status": "⏱️ Écouté pendant 1m 11s",
             "temps_ecoute_secondes": 71.9
-        },
-        {
-            "date": "18/07/2026 17:49",
-            "track_id": "2umdwsJRuFHBRw8TCQmYbq",
-            "status": "⏱️ Écouté pendant 1m 42s",
-            "temps_ecoute_secondes": 102.4
         }
     ],
     "702545968951722084": [
+        {
+            "date": "22/07/2026 16:17",
+            "track_id": "6wB96QMTn984cG7KN2Qt0M",
+            "status": "En cours..."
+        },
         {
             "date": "21/07/2026 18:38",
             "track_id": "1FgeSo81sOevbktBnJLxKK",
