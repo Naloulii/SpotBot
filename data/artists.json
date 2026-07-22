@@ -5682,5 +5682,17 @@
     "unaverage gang": {
         "nom": "Unaverage Gang",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d58088370c2aaaf7bfe3a72e19579ea2/250x250-000000-80-0-0.jpg"
+    },
+    "coyote theory": {
+        "nom": "Coyote Theory",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2b55759d7c9caf81b9340ea6934af926/250x250-000000-80-0-0.jpg"
+    },
+    "rusino": {
+        "nom": "rusino",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/42dba8e4d2a577f66293849fe1c18e66/250x250-000000-80-0-0.jpg"
+    },
+    "ヨルシカ": {
+        "nom": "ヨルシカ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/af7f3f2539aee5f63349395afb2d9fbe/250x250-000000-80-0-0.jpg"
     }
 }
