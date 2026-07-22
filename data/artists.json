@@ -5754,5 +5754,13 @@
     "voydead": {
         "nom": "voydead",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/07effce4a3d1b69e61cf1cddeea29117/250x250-000000-80-0-0.jpg"
+    },
+    "offset": {
+        "nom": "Offset",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/976f6f16492eb34ba3119f5db93839e6/250x250-000000-80-0-0.jpg"
+    },
+    "bankrol hayden": {
+        "nom": "Bankrol Hayden",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
