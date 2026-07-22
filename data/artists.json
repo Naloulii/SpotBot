@@ -6074,5 +6074,9 @@
     "jane remover": {
         "nom": "Jane Remover",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ebd6b5e5a0b0f178163005de1869767b/250x250-000000-80-0-0.jpg"
+    },
+    "stevie wonder": {
+        "nom": "Stevie Wonder",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b8138428e7b0ce78843106b4b83d4e77/250x250-000000-80-0-0.jpg"
     }
 }
