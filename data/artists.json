@@ -5714,5 +5714,9 @@
     "bri tolani": {
         "nom": "Bri Tolani",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5d43256d1a0d2c7b72e1f1776fafb24c/250x250-000000-80-0-0.jpg"
+    },
+    "ven1": {
+        "nom": "VEN1",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
