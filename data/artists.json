@@ -5850,5 +5850,9 @@
     "niaks": {
         "nom": "Niaks",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "hornet la frappe": {
+        "nom": "Hornet La Frappe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec87c1c4fde9410871b483eac2159fee/250x250-000000-80-0-0.jpg"
     }
 }
