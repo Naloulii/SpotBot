@@ -6022,5 +6022,25 @@
     "tak": {
         "nom": "TAK",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d66cc626d51ab462cef63938e0ab8f39/250x250-000000-80-0-0.jpg"
+    },
+    "thørns": {
+        "nom": "THØRNS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f92e5700907d1b37c92a82049ab39a9f/250x250-000000-80-0-0.jpg"
+    },
+    "kasane teto": {
+        "nom": "Kasane Teto",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d66cc626d51ab462cef63938e0ab8f39/250x250-000000-80-0-0.jpg"
+    },
+    "i wanna be a jack-o-lantern": {
+        "nom": "i wanna be a jack-o-lantern",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c1580e3c8f96273b57605132562766c7/250x250-000000-80-0-0.jpg"
+    },
+    "90´s or 20´s cartoons": {
+        "nom": "90´s or 20´s cartoons",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fde6864d0c1a2109d9ce58481958e98c/250x250-000000-80-0-0.jpg"
+    },
+    "flavor foley": {
+        "nom": "FLAVOR FOLEY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ae15aef30ff5b84536e2e08f43043376/250x250-000000-80-0-0.jpg"
     }
 }
