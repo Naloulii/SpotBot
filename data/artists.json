@@ -5794,5 +5794,29 @@
     "sheluvstj": {
         "nom": "SheLuvsTJ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f4108220c6500211c652f4617883800a/250x250-000000-80-0-0.jpg"
+    },
+    "mxtrk": {
+        "nom": "MXTrk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b4e719d26ef437366b2c7f434c7ffd29/250x250-000000-80-0-0.jpg"
+    },
+    "quozixx": {
+        "nom": "Quozixx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/182e0bcdc7db7a932702c3284ed72a87/250x250-000000-80-0-0.jpg"
+    },
+    "montire": {
+        "nom": "Montire",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f6a6e36c5804a1462d439f8275e88786/250x250-000000-80-0-0.jpg"
+    },
+    "menowyd": {
+        "nom": "menowyd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/89879e6c14a648b1550e46087ac0e363/250x250-000000-80-0-0.jpg"
+    },
+    "grüb": {
+        "nom": "grüb",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45e7d9f0a2b7922caa9c03dbd5a8c5c4/250x250-000000-80-0-0.jpg"
+    },
+    "yunmaho": {
+        "nom": "Yunmaho",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc41d5585e7d4d0fa9cbcbbcad601c19/250x250-000000-80-0-0.jpg"
     }
 }
