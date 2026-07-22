@@ -5762,5 +5762,9 @@
     "bankrol hayden": {
         "nom": "Bankrol Hayden",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "flipp dinero": {
+        "nom": "Flipp Dinero",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b7f9162245dd3aabf40bc4a7d1a58e65/250x250-000000-80-0-0.jpg"
     }
 }
