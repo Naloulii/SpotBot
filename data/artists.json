@@ -6010,5 +6010,17 @@
     "ryan librada": {
         "nom": "Ryan Librada",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9f992f25baee7b6fc4b5f43746ffe239/250x250-000000-80-0-0.jpg"
+    },
+    "lil yappa": {
+        "nom": "lil yappa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/701aa91e3d31fa6d626bacec60d27165/250x250-000000-80-0-0.jpg"
+    },
+    "or3o": {
+        "nom": "OR3O",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8f25d6ca049c3865727ebe0acf33167c/250x250-000000-80-0-0.jpg"
+    },
+    "tak": {
+        "nom": "TAK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d66cc626d51ab462cef63938e0ab8f39/250x250-000000-80-0-0.jpg"
     }
 }
