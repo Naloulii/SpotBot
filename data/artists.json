@@ -6346,5 +6346,25 @@
     "rag": {
         "nom": "RAG",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5a75328f1c9e43e9e1c25a80224c4830/250x250-000000-80-0-0.jpg"
+    },
+    "tvlm": {
+        "nom": "TVLM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2d95e676958071245eb8a6ba1516e9c5/250x250-000000-80-0-0.jpg"
+    },
+    "jogga": {
+        "nom": "Jogga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6aa6c34de769757b4d42ffcf8a23b403/250x250-000000-80-0-0.jpg"
+    },
+    "wilsko": {
+        "nom": "wilsko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/314375f7e88226229ba5aea86c6ecea7/250x250-000000-80-0-0.jpg"
+    },
+    "7ia": {
+        "nom": "7ia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6f5f09969041efae5e7c2f577b5adbf8/250x250-000000-80-0-0.jpg"
+    },
+    "dudul & dibz": {
+        "nom": "Dudul & Dibz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a69a3f6117fe88e9b3b90d20ecb3cfb9/250x250-000000-80-0-0.jpg"
     }
 }
