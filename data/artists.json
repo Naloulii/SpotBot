@@ -6566,5 +6566,13 @@
     "sub urban": {
         "nom": "Sub Urban",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1cb5576f84e8e26d88c9b7de70d46330/250x250-000000-80-0-0.jpg"
+    },
+    "future": {
+        "nom": "Future",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a695ee9c2cb49fab81d408836100ff3/250x250-000000-80-0-0.jpg"
+    },
+    "kendrick lamar": {
+        "nom": "Kendrick Lamar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/be0a7c550567f4af0ed202d7235b74d6/250x250-000000-80-0-0.jpg"
     }
 }
