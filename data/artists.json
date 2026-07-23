@@ -6326,5 +6326,21 @@
     "midas the jagaban": {
         "nom": "Midas the Jagaban",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ad87ac381eabdf7de419441ca4f70203/250x250-000000-80-0-0.jpg"
+    },
+    "dj malvado": {
+        "nom": "DJ Malvado",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/918cf2630b298ba47c13379d4f3c61d9/250x250-000000-80-0-0.jpg"
+    },
+    "dj aka-m": {
+        "nom": "DJ Aka-m",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3f4a595260df4b270be2c1887181730b/250x250-000000-80-0-0.jpg"
+    },
+    "doddy": {
+        "nom": "DODDY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47445d77c9c696de662eade24e418105/250x250-000000-80-0-0.jpg"
+    },
+    "kulturr": {
+        "nom": "kulturr",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0f55c80a6e6c67ffbe2a391947501050/250x250-000000-80-0-0.jpg"
     }
 }
