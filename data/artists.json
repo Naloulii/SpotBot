@@ -6386,5 +6386,17 @@
     "ikaz boi": {
         "nom": "Ikaz Boi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/929fbc9983d478bb354c81887caf5514/250x250-000000-80-0-0.jpg"
+    },
+    "cheu-b": {
+        "nom": "Cheu-B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6aed2ce0ab61f92ce7d5bedc0b83e435/250x250-000000-80-0-0.jpg"
+    },
+    "ghost killer track": {
+        "nom": "Ghost Killer Track",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dbf0e8f447cdad976119d093765e6c84/250x250-000000-80-0-0.jpg"
+    },
+    "ormaz": {
+        "nom": "Ormaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f268674836e9f71ecb127820d60252a2/250x250-000000-80-0-0.jpg"
     }
 }
