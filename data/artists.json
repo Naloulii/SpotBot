@@ -6342,5 +6342,9 @@
     "kulturr": {
         "nom": "kulturr",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0f55c80a6e6c67ffbe2a391947501050/250x250-000000-80-0-0.jpg"
+    },
+    "rag": {
+        "nom": "RAG",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5a75328f1c9e43e9e1c25a80224c4830/250x250-000000-80-0-0.jpg"
     }
 }
