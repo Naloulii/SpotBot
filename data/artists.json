@@ -6594,5 +6594,9 @@
     "91 all stars": {
         "nom": "91 All Stars",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f96576d0684c38f9c623cd3cb19d15a0/250x250-000000-80-0-0.jpg"
+    },
+    "cestens": {
+        "nom": "CesTenS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5a7391c7e8ea28dfc70c77c706ac7ac5/250x250-000000-80-0-0.jpg"
     }
 }
