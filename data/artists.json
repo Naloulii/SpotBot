@@ -6698,5 +6698,13 @@
     "kmfdm": {
         "nom": "KMFDM",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/66e9b311a1bdaa23677479bf90f12aca/250x250-000000-80-0-0.jpg"
+    },
+    "mp404": {
+        "nom": "MP404",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/87a9ae3396d81dc51699d16ecfdd9828/250x250-000000-80-0-0.jpg"
+    },
+    "mous-k": {
+        "nom": "Mous-K",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3028710ac8b5adc91c89861728f52e88/250x250-000000-80-0-0.jpg"
     }
 }
