@@ -6306,5 +6306,17 @@
     "merveille": {
         "nom": "Merveille",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4ed5a993ffe9fb74c337cd2834d00ba0/250x250-000000-80-0-0.jpg"
+    },
+    "danilo": {
+        "nom": "Danilo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e85c96f4e229003672e5d8d91feccdb2/250x250-000000-80-0-0.jpg"
+    },
+    "abou debeing": {
+        "nom": "Abou Debeing",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e264de3517f76d0ecfa6e8470d4f5527/250x250-000000-80-0-0.jpg"
+    },
+    "jungeli": {
+        "nom": "Jungeli",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/91c3f3576a192d4c3409de1f5faed366/250x250-000000-80-0-0.jpg"
     }
 }
