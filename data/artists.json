@@ -6506,5 +6506,25 @@
     "naza": {
         "nom": "Naza",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "killowen": {
+        "nom": "KiLLOWEN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dab9da69678cbfd9f7e6d0f575d14290/250x250-000000-80-0-0.jpg"
+    },
+    "blanco": {
+        "nom": "Blanco",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6a5dd51906a51c52b37014da545eeb5/250x250-000000-80-0-0.jpg"
+    },
+    "la hasba22": {
+        "nom": "La Hasba22",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cfe814cc9b708f5bb2e2ede335f72925/250x250-000000-80-0-0.jpg"
+    },
+    "js x yd": {
+        "nom": "JS x YD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/997cdce65e4e8a98303437de99ea34f2/250x250-000000-80-0-0.jpg"
+    },
+    "broken toy airplanes": {
+        "nom": "Broken Toy Airplanes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e8edd690d49e85d04d539109abbc106b/250x250-000000-80-0-0.jpg"
     }
 }
