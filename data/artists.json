@@ -6250,5 +6250,33 @@
     "siames": {
         "nom": "SIAMES",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fd8445e33894212afd6a4cf9f92c2244/250x250-000000-80-0-0.jpg"
+    },
+    "astrud gilberto": {
+        "nom": "Astrud Gilberto",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e2205c8860439f90951dbc5933690869/250x250-000000-80-0-0.jpg"
+    },
+    "antônio carlos jobim": {
+        "nom": "Antônio Carlos Jobim",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/be6220cc48b55d94ea89de4ff8294d44/250x250-000000-80-0-0.jpg"
+    },
+    "bunnycat": {
+        "nom": "bunnycat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e4947d1461b6cc95e9fbd975f20c1ff8/250x250-000000-80-0-0.jpg"
+    },
+    "brayden potts": {
+        "nom": "Brayden Potts",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aadafbe4623e86dc02c013327788e74f/250x250-000000-80-0-0.jpg"
+    },
+    "minotaur": {
+        "nom": "Minotaur",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ffb7a0a860eed78af1a6f0cebdccd1e0/250x250-000000-80-0-0.jpg"
+    },
+    "sza": {
+        "nom": "SZA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8ced041da2bed70d5715f0860956169b/250x250-000000-80-0-0.jpg"
+    },
+    "snail's house": {
+        "nom": "Snail's House",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
