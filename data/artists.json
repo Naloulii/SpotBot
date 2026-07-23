@@ -6398,5 +6398,13 @@
     "ormaz": {
         "nom": "Ormaz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f268674836e9f71ecb127820d60252a2/250x250-000000-80-0-0.jpg"
+    },
+    "pakigo": {
+        "nom": "PAKIGO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3cd0c587982a53afe13480ec803667dc/250x250-000000-80-0-0.jpg"
+    },
+    "noto": {
+        "nom": "Noto",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/205a462fe09bbbdf68d9c12524a0ee45/250x250-000000-80-0-0.jpg"
     }
 }
