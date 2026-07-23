@@ -6526,5 +6526,17 @@
     "broken toy airplanes": {
         "nom": "Broken Toy Airplanes",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e8edd690d49e85d04d539109abbc106b/250x250-000000-80-0-0.jpg"
+    },
+    "red hot chili peppers": {
+        "nom": "Red Hot Chili Peppers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/238f5524a401dfdd5cac685f0f7989bd/250x250-000000-80-0-0.jpg"
+    },
+    "timmies": {
+        "nom": "timmies",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fcfc00a7f8d31cffec41c6149e31dad1/250x250-000000-80-0-0.jpg"
+    },
+    "mnk oyebi": {
+        "nom": "MNK OYEBI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ee6d0a5bd1ea362e927f2041fd5b22bd/250x250-000000-80-0-0.jpg"
     }
 }
