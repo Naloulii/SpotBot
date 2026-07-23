@@ -6598,5 +6598,41 @@
     "cestens": {
         "nom": "CesTenS",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5a7391c7e8ea28dfc70c77c706ac7ac5/250x250-000000-80-0-0.jpg"
+    },
+    "resenhadablakk": {
+        "nom": "ResenhaDaBlakk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b3272891e0735b8a38c198ac725b9ab/250x250-000000-80-0-0.jpg"
+    },
+    "kiaz": {
+        "nom": "Kiaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf0795b196c7928eeeca1a2e1953aba3/250x250-000000-80-0-0.jpg"
+    },
+    "nith": {
+        "nom": "Nith",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef74a6506280c878c061bc3ef42a321f/250x250-000000-80-0-0.jpg"
+    },
+    "dcan": {
+        "nom": "Dcan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/103d69b1b68260df927a34dfeef19c93/250x250-000000-80-0-0.jpg"
+    },
+    "clarion": {
+        "nom": "Clarion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4bdb758c5bffd599827fa14a164344aa/250x250-000000-80-0-0.jpg"
+    },
+    "gu1t4r": {
+        "nom": "GU1T4R",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56f97990104f35e443bc8db579f6fcd7/250x250-000000-80-0-0.jpg"
+    },
+    "tkkf": {
+        "nom": "TKKF",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6bc8295aa6e505ae1ce0b5714637776/250x250-000000-80-0-0.jpg"
+    },
+    "s7even": {
+        "nom": "S7EVEN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/273e69687c5f37aa259efc45704e6a19/250x250-000000-80-0-0.jpg"
+    },
+    "jbradleydcs": {
+        "nom": "Jbradleydcs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/40c53514e1beb535bba6a82d71abd082/250x250-000000-80-0-0.jpg"
     }
 }
