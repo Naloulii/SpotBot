@@ -6406,5 +6406,21 @@
     "noto": {
         "nom": "Noto",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/205a462fe09bbbdf68d9c12524a0ee45/250x250-000000-80-0-0.jpg"
+    },
+    "choco da great": {
+        "nom": "Choco Da Great",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7ca9f43b472eb20a82d1b767a3765e5/250x250-000000-80-0-0.jpg"
+    },
+    "347aidan": {
+        "nom": "347aidan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d35d47ae695b113f9da7044e102a3a3e/250x250-000000-80-0-0.jpg"
+    },
+    "arizona zervas": {
+        "nom": "Arizona Zervas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2934ac42d48d38f77ec99977b44ad7fd/250x250-000000-80-0-0.jpg"
+    },
+    "starfire!": {
+        "nom": "Starfire!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/18d5fa9786c03746346c61df21a67191/250x250-000000-80-0-0.jpg"
     }
 }
