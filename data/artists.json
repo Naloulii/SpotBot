@@ -6318,5 +6318,13 @@
     "jungeli": {
         "nom": "Jungeli",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/91c3f3576a192d4c3409de1f5faed366/250x250-000000-80-0-0.jpg"
+    },
+    "dr. yaro": {
+        "nom": "Dr. Yaro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8c354520f097aa100a46b22fa7b49ed7/250x250-000000-80-0-0.jpg"
+    },
+    "midas the jagaban": {
+        "nom": "Midas the Jagaban",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ad87ac381eabdf7de419441ca4f70203/250x250-000000-80-0-0.jpg"
     }
 }
