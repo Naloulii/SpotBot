@@ -6562,5 +6562,9 @@
     "logic": {
         "nom": "Logic",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3c469710d2907690ebb4b0bcc01c0328/250x250-000000-80-0-0.jpg"
+    },
+    "sub urban": {
+        "nom": "Sub Urban",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1cb5576f84e8e26d88c9b7de70d46330/250x250-000000-80-0-0.jpg"
     }
 }
