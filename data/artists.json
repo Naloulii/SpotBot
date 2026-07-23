@@ -6574,5 +6574,25 @@
     "kendrick lamar": {
         "nom": "Kendrick Lamar",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/be0a7c550567f4af0ed202d7235b74d6/250x250-000000-80-0-0.jpg"
+    },
+    "central cee": {
+        "nom": "Central Cee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25fe719f51af3ee2de27aa267e2a6ac9/250x250-000000-80-0-0.jpg"
+    },
+    "rae sremmurd": {
+        "nom": "Rae Sremmurd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c49e7b66a17d5f37a739d732151c77f/250x250-000000-80-0-0.jpg"
+    },
+    "gucci mane": {
+        "nom": "Gucci Mane",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/887fe074ecf8b10e4a16f897a5eaf761/250x250-000000-80-0-0.jpg"
+    },
+    "amy": {
+        "nom": "Amy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "91 all stars": {
+        "nom": "91 All Stars",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f96576d0684c38f9c623cd3cb19d15a0/250x250-000000-80-0-0.jpg"
     }
 }
