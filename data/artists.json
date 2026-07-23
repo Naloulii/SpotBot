@@ -6214,5 +6214,21 @@
     "ariis": {
         "nom": "Ariis",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/69f7679eaeb8ba3fafbcb3144d29fe2c/250x250-000000-80-0-0.jpg"
+    },
+    "le sserafim": {
+        "nom": "LE SSERAFIM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e789ab2d16cad9a738cd83722940512b/250x250-000000-80-0-0.jpg"
+    },
+    "j-hope": {
+        "nom": "j-hope",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c095600918a933a56803b23f9f4c824b/250x250-000000-80-0-0.jpg"
+    },
+    "sagun": {
+        "nom": "sagun",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/acb7799501e58930724e3df618019f7e/250x250-000000-80-0-0.jpg"
+    },
+    "yung lean": {
+        "nom": "Yung Lean",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/05cf655c2c15407e544e69e2491be43b/250x250-000000-80-0-0.jpg"
     }
 }
