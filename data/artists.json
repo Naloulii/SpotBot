@@ -6230,5 +6230,17 @@
     "yung lean": {
         "nom": "Yung Lean",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/05cf655c2c15407e544e69e2491be43b/250x250-000000-80-0-0.jpg"
+    },
+    "jack harlow": {
+        "nom": "Jack Harlow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/acf97ceb30d48a97e47afd1c3f9b68ce/250x250-000000-80-0-0.jpg"
+    },
+    "kate bush": {
+        "nom": "Kate Bush",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "maureen": {
+        "nom": "Maureen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cfa3a61a0a6fa5bde8250c159cd7cff3/250x250-000000-80-0-0.jpg"
     }
 }
