@@ -6634,5 +6634,57 @@
     "jbradleydcs": {
         "nom": "Jbradleydcs",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/40c53514e1beb535bba6a82d71abd082/250x250-000000-80-0-0.jpg"
+    },
+    "sim01": {
+        "nom": "sim01",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45c7e33b8a7f8f9ecd6a144412a37979/250x250-000000-80-0-0.jpg"
+    },
+    "petite amie <3": {
+        "nom": "petite amie <3",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/42f1c4411ad17c92ffa1624605582211/250x250-000000-80-0-0.jpg"
+    },
+    "ihas": {
+        "nom": "Ihas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45dc05fa5a040763581b6fdac203efd4/250x250-000000-80-0-0.jpg"
+    },
+    "la kadrilla": {
+        "nom": "La Kadrilla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4561debe53b4c9a8b54a5bbbb15e496d/250x250-000000-80-0-0.jpg"
+    },
+    "lvmp aka joan": {
+        "nom": "LVMP AKA JOAN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8245b22cd53202b7654b9c73a27728a7/250x250-000000-80-0-0.jpg"
+    },
+    "nverlate": {
+        "nom": "nverlate",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/34f0600443ca2fdb21aed6f2a8d92cf9/250x250-000000-80-0-0.jpg"
+    },
+    "franz ferdinand": {
+        "nom": "Franz Ferdinand",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0312c5b8e0c0f9ac7b0c4a1dfbd21d4e/250x250-000000-80-0-0.jpg"
+    },
+    "beach house": {
+        "nom": "Beach House",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bab7f5aedc71370b598262e065d3a0ef/250x250-000000-80-0-0.jpg"
+    },
+    "diego cichy don": {
+        "nom": "Diego Cichy Don",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed907465189fbbca870edac55d366cc2/250x250-000000-80-0-0.jpg"
+    },
+    "martyna baranowska": {
+        "nom": "Martyna Baranowska",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6811a559bbac142b2b7f464d3f039ba/250x250-000000-80-0-0.jpg"
+    },
+    "dawid podsiadło": {
+        "nom": "Dawid Podsiadło",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1145678ba703ee0194be2682197c715/250x250-000000-80-0-0.jpg"
+    },
+    "p.t. adamczyk": {
+        "nom": "P.T. Adamczyk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "power trackz 4.0": {
+        "nom": "Power Trackz 4.0",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65e63415b3d42147f8940d4de9ce65a3/250x250-000000-80-0-0.jpg"
     }
 }
