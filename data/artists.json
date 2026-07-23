@@ -6538,5 +6538,29 @@
     "mnk oyebi": {
         "nom": "MNK OYEBI",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ee6d0a5bd1ea362e927f2041fd5b22bd/250x250-000000-80-0-0.jpg"
+    },
+    "kaneki": {
+        "nom": "Kaneki",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "lil wayne": {
+        "nom": "Lil Wayne",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7decec58ad51b24a61b4377be4569a86/250x250-000000-80-0-0.jpg"
+    },
+    "wiz khalifa": {
+        "nom": "Wiz Khalifa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a1dc970ad2ad6afa42580c692b8a8a8d/250x250-000000-80-0-0.jpg"
+    },
+    "imagine dragons": {
+        "nom": "Imagine Dragons",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ba025c23cae3dee14b51152990285fc/250x250-000000-80-0-0.jpg"
+    },
+    "x ambassadors": {
+        "nom": "X Ambassadors",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d2b10f86b84ef2a7f015e15d36fa183e/250x250-000000-80-0-0.jpg"
+    },
+    "logic": {
+        "nom": "Logic",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c469710d2907690ebb4b0bcc01c0328/250x250-000000-80-0-0.jpg"
     }
 }
