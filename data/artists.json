@@ -6290,5 +6290,17 @@
     "marwa loud": {
         "nom": "Marwa Loud",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/11b7d4ad66336419228333b920c8077d/250x250-000000-80-0-0.jpg"
+    },
+    "manny daphey": {
+        "nom": "Manny Daphey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/69c8f392b7bcf848c011abf01c37f992/250x250-000000-80-0-0.jpg"
+    },
+    "seysey": {
+        "nom": "SEYSEY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "bolémvn": {
+        "nom": "Bolémvn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3ab2f80e86be4b864e203172b157dfa6/250x250-000000-80-0-0.jpg"
     }
 }
