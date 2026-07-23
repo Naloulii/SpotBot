@@ -6478,5 +6478,25 @@
     "syone": {
         "nom": "Syone",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/86040f16a2e32b78669d21e4962a024c/250x250-000000-80-0-0.jpg"
+    },
+    "loptik": {
+        "nom": "Loptik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3b630a7e1c67a25377d27d3662ca43e1/250x250-000000-80-0-0.jpg"
+    },
+    "dice omg": {
+        "nom": "Dice OMG",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bd1bc0877a43ecfbc105e6f7681f4ddc/250x250-000000-80-0-0.jpg"
+    },
+    "niniche ébène": {
+        "nom": "Niniche ébène",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cd0bf23537ad360d99dbb1fdad4736b9/250x250-000000-80-0-0.jpg"
+    },
+    "nusve": {
+        "nom": "Nusve",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6f689ae57bd40d8f1929ab855ba7372f/250x250-000000-80-0-0.jpg"
+    },
+    "az_rain": {
+        "nom": "Az_rain",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed4947e71391c59810ccc0024da0bb5c/250x250-000000-80-0-0.jpg"
     }
 }
