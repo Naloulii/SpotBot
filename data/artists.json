@@ -6686,5 +6686,17 @@
     "power trackz 4.0": {
         "nom": "Power Trackz 4.0",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/65e63415b3d42147f8940d4de9ce65a3/250x250-000000-80-0-0.jpg"
+    },
+    "pds": {
+        "nom": "PDS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0ada63bcc948665c92f3668fe078070/250x250-000000-80-0-0.jpg"
+    },
+    "cks": {
+        "nom": "CKS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/af74bac47b9808beabfaf22727315d8c/250x250-000000-80-0-0.jpg"
+    },
+    "kmfdm": {
+        "nom": "KMFDM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/66e9b311a1bdaa23677479bf90f12aca/250x250-000000-80-0-0.jpg"
     }
 }
