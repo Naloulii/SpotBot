@@ -6470,5 +6470,13 @@
     "king von": {
         "nom": "King Von",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/96499a08274b946187ae10833fa91fd0/250x250-000000-80-0-0.jpg"
+    },
+    "poupy": {
+        "nom": "Poupy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25479a237d62629873a576918dc1f220/250x250-000000-80-0-0.jpg"
+    },
+    "syone": {
+        "nom": "Syone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86040f16a2e32b78669d21e4962a024c/250x250-000000-80-0-0.jpg"
     }
 }
