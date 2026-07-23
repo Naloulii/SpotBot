@@ -6242,5 +6242,13 @@
     "maureen": {
         "nom": "Maureen",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cfa3a61a0a6fa5bde8250c159cd7cff3/250x250-000000-80-0-0.jpg"
+    },
+    "cade clair": {
+        "nom": "cade clair",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/88343307604362f8c8fcce127cea2f6a/250x250-000000-80-0-0.jpg"
+    },
+    "siames": {
+        "nom": "SIAMES",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fd8445e33894212afd6a4cf9f92c2244/250x250-000000-80-0-0.jpg"
     }
 }
