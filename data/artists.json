@@ -6706,5 +6706,9 @@
     "mous-k": {
         "nom": "Mous-K",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3028710ac8b5adc91c89861728f52e88/250x250-000000-80-0-0.jpg"
+    },
+    "shippeur": {
+        "nom": "Shippeur",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f4eca13c4f807bd8f660c943c9d6b3b5/250x250-000000-80-0-0.jpg"
     }
 }
