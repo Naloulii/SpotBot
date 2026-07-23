@@ -6422,5 +6422,53 @@
     "starfire!": {
         "nom": "Starfire!",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/18d5fa9786c03746346c61df21a67191/250x250-000000-80-0-0.jpg"
+    },
+    "young thug": {
+        "nom": "Young Thug",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/89833703db63ec93f85f7979c2fb37f3/250x250-000000-80-0-0.jpg"
+    },
+    "lil baby": {
+        "nom": "Lil Baby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/40eb91eecca8f455b0ce06da80509775/250x250-000000-80-0-0.jpg"
+    },
+    "maitchhh": {
+        "nom": "Maitchhh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cbcb3aa9446220e2a1d83308382d7571/250x250-000000-80-0-0.jpg"
+    },
+    "rapture": {
+        "nom": "rapture",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/52b6e0d07174b771a5d38d344e9523e4/250x250-000000-80-0-0.jpg"
+    },
+    "hilareity": {
+        "nom": "hilareity",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7e01f851da0e4209f4a2244574d445ff/250x250-000000-80-0-0.jpg"
+    },
+    "bryoffline": {
+        "nom": "bryoffline",
+        "image_url": null
+    },
+    "lil mboiz": {
+        "nom": "Lil Mboiz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a0364a6555605ee6f3110dc1d73416d9/250x250-000000-80-0-0.jpg"
+    },
+    "bayukyy": {
+        "nom": "bayukyy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9df2dd8a1eb5ea14ce6463097397f330/250x250-000000-80-0-0.jpg"
+    },
+    "netarti_999": {
+        "nom": "NETarti_999",
+        "image_url": null
+    },
+    "roddy ricch": {
+        "nom": "Roddy Ricch",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c57bd89d86ac6242777632c1f41d9461/250x250-000000-80-0-0.jpg"
+    },
+    "only the family": {
+        "nom": "Only The Family",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec8f757578cfbe10deaf0a6ceb18e9e7/250x250-000000-80-0-0.jpg"
+    },
+    "king von": {
+        "nom": "King Von",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/96499a08274b946187ae10833fa91fd0/250x250-000000-80-0-0.jpg"
     }
 }
