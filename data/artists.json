@@ -6278,5 +6278,9 @@
     "snail's house": {
         "nom": "Snail's House",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "sunburn": {
+        "nom": "Sunburn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/932536d86cb211d917b97c8bc2702f85/250x250-000000-80-0-0.jpg"
     }
 }
