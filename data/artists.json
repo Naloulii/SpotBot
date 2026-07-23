@@ -6282,5 +6282,13 @@
     "sunburn": {
         "nom": "Sunburn",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/932536d86cb211d917b97c8bc2702f85/250x250-000000-80-0-0.jpg"
+    },
+    "thiago sub": {
+        "nom": "Thiago Sub",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/30d93e61e20f25476593fda2922d8947/250x250-000000-80-0-0.jpg"
+    },
+    "marwa loud": {
+        "nom": "Marwa Loud",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11b7d4ad66336419228333b920c8077d/250x250-000000-80-0-0.jpg"
     }
 }
