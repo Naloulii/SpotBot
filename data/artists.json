@@ -6790,5 +6790,29 @@
     "fresh": {
         "nom": "Fresh",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5d83ae1a5fc00d270d78dd933cca9e47/250x250-000000-80-0-0.jpg"
+    },
+    "lp2.0": {
+        "nom": "Lp2.0",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41ae12e36b3c8ca9edbc8337cf397650/250x250-000000-80-0-0.jpg"
+    },
+    "luckyoui": {
+        "nom": "Luckyoui",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b5a1faca2585233844a981e59f79c386/250x250-000000-80-0-0.jpg"
+    },
+    "saamou": {
+        "nom": "Saamou",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8bade7a84c31c78a5e931eb94699f9a7/250x250-000000-80-0-0.jpg"
+    },
+    "so la lune": {
+        "nom": "So La Lune",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d930d123b3c5f7162c334526baece108/250x250-000000-80-0-0.jpg"
+    },
+    "johny smile": {
+        "nom": "Johny Smile",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4aa7261abd4ab84ad64e58a604583d96/250x250-000000-80-0-0.jpg"
+    },
+    "two2flow": {
+        "nom": "Two2Flow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/477db162dcf9d4d9a849477eb1b46113/250x250-000000-80-0-0.jpg"
     }
 }
