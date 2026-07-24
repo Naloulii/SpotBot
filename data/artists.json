@@ -6758,5 +6758,37 @@
     "kr l'espece": {
         "nom": "Kr l'espece",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7557d721a7d972a91759484e2f05e75e/250x250-000000-80-0-0.jpg"
+    },
+    "zonjé": {
+        "nom": "Zonjé",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/57d4023d1da6d6ca5881fd07d879be7a/250x250-000000-80-0-0.jpg"
+    },
+    "sponge productions": {
+        "nom": "Sponge Productions",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4ef3bde3a89a14f8d6c2ceebdc7a131a/250x250-000000-80-0-0.jpg"
+    },
+    "le risque": {
+        "nom": "LE RISQUE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9630207d7a574133f7d7ca5cd3499161/250x250-000000-80-0-0.jpg"
+    },
+    "tisco": {
+        "nom": "Tisco",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2195f9634f7ec3d87e1389e668cdeecd/250x250-000000-80-0-0.jpg"
+    },
+    "dau": {
+        "nom": "Dau",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b07cd2547c58b884e64c31b906ac8e9a/250x250-000000-80-0-0.jpg"
+    },
+    "j9ueve": {
+        "nom": "J9ueve",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/757bab25d85c008c597b61d719465a99/250x250-000000-80-0-0.jpg"
+    },
+    "tvmo": {
+        "nom": "Tvmo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/92e3b52b04ee5f3c1e0ed964fb07bcbd/250x250-000000-80-0-0.jpg"
+    },
+    "fresh": {
+        "nom": "Fresh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d83ae1a5fc00d270d78dd933cca9e47/250x250-000000-80-0-0.jpg"
     }
 }
