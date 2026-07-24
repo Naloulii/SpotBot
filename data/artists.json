@@ -6922,5 +6922,29 @@
     "jan metternich": {
         "nom": "Jan Metternich",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9568caf0b3e1b1d94ba2f818831512fd/250x250-000000-80-0-0.jpg"
+    },
+    "sped-o": {
+        "nom": "Sped-O",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a4b0d0ec7f114056f9c7acba45e2117b/250x250-000000-80-0-0.jpg"
+    },
+    "loveli lori": {
+        "nom": "LOVELI LORI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25eb583421842acbb0ee9905b13a719b/250x250-000000-80-0-0.jpg"
+    },
+    "porter robinson": {
+        "nom": "Porter Robinson",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2452d027b017ca5ec6204edf1b5faf48/250x250-000000-80-0-0.jpg"
+    },
+    "madeon": {
+        "nom": "Madeon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c44e7101b476c5f312e087a4bc8aec0/250x250-000000-80-0-0.jpg"
+    },
+    "doechii": {
+        "nom": "Doechii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b2ee54b63e3a3485b6aed609fd320521/250x250-000000-80-0-0.jpg"
+    },
+    "d4vd": {
+        "nom": "d4vd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3d60604ff37c33f1ce9ee3755959d592/250x250-000000-80-0-0.jpg"
     }
 }
