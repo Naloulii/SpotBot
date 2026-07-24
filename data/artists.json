@@ -6874,5 +6874,13 @@
     "nucky thompson": {
         "nom": "Nucky Thompson",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ac993097c6d5f9bdef1f8ab0f76c4204/250x250-000000-80-0-0.jpg"
+    },
+    "the notorious b.i.g.": {
+        "nom": "The Notorious B.I.G.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/87e928a899c183eb10f1da14db7485dd/250x250-000000-80-0-0.jpg"
+    },
+    "panic! at the disco": {
+        "nom": "Panic! At The Disco",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c601aa8551d9e0bc345d2d75934db733/250x250-000000-80-0-0.jpg"
     }
 }
