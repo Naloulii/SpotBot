@@ -6846,5 +6846,9 @@
     "a3": {
         "nom": "A3",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "soul": {
+        "nom": "Soul",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a329833a8cf70d1002a0250303a7db80/250x250-000000-80-0-0.jpg"
     }
 }
