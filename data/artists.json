@@ -6850,5 +6850,17 @@
     "soul": {
         "nom": "Soul",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a329833a8cf70d1002a0250303a7db80/250x250-000000-80-0-0.jpg"
+    },
+    "bu$hi": {
+        "nom": "BU$HI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e36a75eb58eef9eac5e54f12894c6911/250x250-000000-80-0-0.jpg"
+    },
+    "chilly gonzales": {
+        "nom": "Chilly Gonzales",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/66e0ea3d01a2f0860abe8ee8f5715082/250x250-000000-80-0-0.jpg"
+    },
+    "veridis project": {
+        "nom": "Veridis Project",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32ebd4343bee4655f80e7936abb92f9a/250x250-000000-80-0-0.jpg"
     }
 }
