@@ -6814,5 +6814,37 @@
     "two2flow": {
         "nom": "Two2Flow",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/477db162dcf9d4d9a849477eb1b46113/250x250-000000-80-0-0.jpg"
+    },
+    "motil": {
+        "nom": "motil",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11cae135103484f6c6ac8f8d4f030cd1/250x250-000000-80-0-0.jpg"
+    },
+    "3ngus": {
+        "nom": "3ngus",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f1f7b70418cfc9c2ccee632bb6f4896a/250x250-000000-80-0-0.jpg"
+    },
+    "kovac": {
+        "nom": "Kovac",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ffce74e41492624e455f7e8b0bbff93a/250x250-000000-80-0-0.jpg"
+    },
+    "shaka zulu": {
+        "nom": "Shaka Zulu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f269269ee43ffa8ffafea3594b19590/250x250-000000-80-0-0.jpg"
+    },
+    "litleboy lsbeats767": {
+        "nom": "litleboy lsbeats767",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b2c81b8aafbb40cb770d56c684f70e23/250x250-000000-80-0-0.jpg"
+    },
+    "miimii kds": {
+        "nom": "Miimii KDS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c91339912be264e64b5a8e6b28526f1f/250x250-000000-80-0-0.jpg"
+    },
+    "dayarga": {
+        "nom": "Dayarga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a0118032e506b7d8a4516d468d9c661c/250x250-000000-80-0-0.jpg"
+    },
+    "a3": {
+        "nom": "A3",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
