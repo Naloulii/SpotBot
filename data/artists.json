@@ -7002,5 +7002,9 @@
     "league of legends": {
         "nom": "League of Legends",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/21e53b8e8285f84f60601d895c39c900/250x250-000000-80-0-0.jpg"
+    },
+    "vaeo": {
+        "nom": "Vaeo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cd3aaf8f6ccc531d1c7624a79639dc1e/250x250-000000-80-0-0.jpg"
     }
 }
