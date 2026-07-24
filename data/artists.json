@@ -7006,5 +7006,17 @@
     "vaeo": {
         "nom": "Vaeo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cd3aaf8f6ccc531d1c7624a79639dc1e/250x250-000000-80-0-0.jpg"
+    },
+    "john michael howell": {
+        "nom": "John Michael Howell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df1ac3d02bfaa5609510b62c0c26d793/250x250-000000-80-0-0.jpg"
+    },
+    "kryd": {
+        "nom": "Kryd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45e42dd05bfa3866c45f4838f1711585/250x250-000000-80-0-0.jpg"
+    },
+    "r3bel": {
+        "nom": "R3BEL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d31e9c0f3d7223c328b3c70f8d0f6fd/250x250-000000-80-0-0.jpg"
     }
 }
