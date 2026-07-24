@@ -7050,5 +7050,9 @@
     "partynextdoor": {
         "nom": "PARTYNEXTDOOR",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c37e32022ac1dbec04461da3af1bf504/250x250-000000-80-0-0.jpg"
+    },
+    "x lovers": {
+        "nom": "X Lovers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0ba6648fc268b383698098cdf796824f/250x250-000000-80-0-0.jpg"
     }
 }
