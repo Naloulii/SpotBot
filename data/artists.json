@@ -6730,5 +6730,13 @@
     "los hermanos rosario": {
         "nom": "Los Hermanos Rosario",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f58d120ef6a9a6db0daf8b743ea6e493/250x250-000000-80-0-0.jpg"
+    },
+    "mattyeux": {
+        "nom": "Mattyeux",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0c7fb1b0cb38c661c5db7a2caf62ffb/250x250-000000-80-0-0.jpg"
+    },
+    "videoclub": {
+        "nom": "Videoclub",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5fbd77756c4f927707bc7b2ef77561b2/250x250-000000-80-0-0.jpg"
     }
 }
