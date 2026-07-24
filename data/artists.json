@@ -6710,5 +6710,21 @@
     "shippeur": {
         "nom": "Shippeur",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f4eca13c4f807bd8f660c943c9d6b3b5/250x250-000000-80-0-0.jpg"
+    },
+    "leverfall": {
+        "nom": "leverfall",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/198b91ae5bdfd798af9086b2419dc906/250x250-000000-80-0-0.jpg"
+    },
+    "so so": {
+        "nom": "so so",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e23066163f21176a822b54001ee648a2/250x250-000000-80-0-0.jpg"
+    },
+    "dj ess": {
+        "nom": "DJ Ess",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/906a3d8fa1ea56b50ac0f9a044576db9/250x250-000000-80-0-0.jpg"
+    },
+    "mthu": {
+        "nom": "mthu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/761533c98cb5fd10852a262fae213ece/250x250-000000-80-0-0.jpg"
     }
 }
