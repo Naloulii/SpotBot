@@ -6742,5 +6742,21 @@
     "tezz": {
         "nom": "TEZZ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/84b0e74fc1ab7fa8cd962ccf6e87ed21/250x250-000000-80-0-0.jpg"
+    },
+    "elay": {
+        "nom": "ELAY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9454cb032a7a2a051bc6ec67170ffa9e/250x250-000000-80-0-0.jpg"
+    },
+    "waïv": {
+        "nom": "Waïv",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1c681ea9556df07ae78181a6d2e7a5cf/250x250-000000-80-0-0.jpg"
+    },
+    "free-b": {
+        "nom": "Free-B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/068341670902c66d464663709151cec2/250x250-000000-80-0-0.jpg"
+    },
+    "kr l'espece": {
+        "nom": "Kr l'espece",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7557d721a7d972a91759484e2f05e75e/250x250-000000-80-0-0.jpg"
     }
 }
