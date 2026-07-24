@@ -7018,5 +7018,29 @@
     "r3bel": {
         "nom": "R3BEL",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7d31e9c0f3d7223c328b3c70f8d0f6fd/250x250-000000-80-0-0.jpg"
+    },
+    "starly": {
+        "nom": "starly",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1cfebb3ffb145666bb2a3c22803cdda2/250x250-000000-80-0-0.jpg"
+    },
+    "oliver good": {
+        "nom": "Oliver Good",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "ko.yo": {
+        "nom": "ko.yo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9841b0aeed1587e5afe2c257f3402c32/250x250-000000-80-0-0.jpg"
+    },
+    "aejin kwon": {
+        "nom": "Aejin Kwon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "shift up": {
+        "nom": "SHIFT UP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c60c40a449f648ed3a918ded749169c9/250x250-000000-80-0-0.jpg"
+    },
+    "manau": {
+        "nom": "Manau",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
