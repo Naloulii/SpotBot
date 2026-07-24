@@ -6882,5 +6882,29 @@
     "panic! at the disco": {
         "nom": "Panic! At The Disco",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c601aa8551d9e0bc345d2d75934db733/250x250-000000-80-0-0.jpg"
+    },
+    "bryson tiller": {
+        "nom": "Bryson Tiller",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7af8b6f54a0e2b825d5ae92f9e767da/250x250-000000-80-0-0.jpg"
+    },
+    "h11t": {
+        "nom": "H11T",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bad9192d52f3f457a0679109f6d5fb58/250x250-000000-80-0-0.jpg"
+    },
+    "twerknation28": {
+        "nom": "TWERKNATION28",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4524b0911501a315ead5ebbf9d5d4916/250x250-000000-80-0-0.jpg"
+    },
+    "tsubi club": {
+        "nom": "tsubi club",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0cbfc64d04c89dedf011c6986d7919ba/250x250-000000-80-0-0.jpg"
+    },
+    "go loco": {
+        "nom": "GO LOCO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/165125685bbaa38c8767ee06cf57567e/250x250-000000-80-0-0.jpg"
+    },
+    "the larping tombstone": {
+        "nom": "The Larping Tombstone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/08e8f1a4c4c6e5c0e17ccc9134ada0a8/250x250-000000-80-0-0.jpg"
     }
 }
