@@ -6862,5 +6862,17 @@
     "veridis project": {
         "nom": "Veridis Project",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/32ebd4343bee4655f80e7936abb92f9a/250x250-000000-80-0-0.jpg"
+    },
+    "s.pri noir": {
+        "nom": "S.Pri Noir",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c7310da47718b3ca2e2d8e9beca214c/250x250-000000-80-0-0.jpg"
+    },
+    "jungle jack": {
+        "nom": "Jungle Jack",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e23066163f21176a822b54001ee648a2/250x250-000000-80-0-0.jpg"
+    },
+    "nucky thompson": {
+        "nom": "Nucky Thompson",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ac993097c6d5f9bdef1f8ab0f76c4204/250x250-000000-80-0-0.jpg"
     }
 }
