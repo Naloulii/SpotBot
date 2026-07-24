@@ -6726,5 +6726,9 @@
     "mthu": {
         "nom": "mthu",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/761533c98cb5fd10852a262fae213ece/250x250-000000-80-0-0.jpg"
+    },
+    "los hermanos rosario": {
+        "nom": "Los Hermanos Rosario",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f58d120ef6a9a6db0daf8b743ea6e493/250x250-000000-80-0-0.jpg"
     }
 }
