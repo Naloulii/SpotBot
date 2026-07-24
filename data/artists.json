@@ -6986,5 +6986,21 @@
     "intouchable": {
         "nom": "Intouchable",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c64258760a387c64435e948b0e7e1d49/250x250-000000-80-0-0.jpg"
+    },
+    "josué": {
+        "nom": "Josué",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "clyde bessi": {
+        "nom": "Clyde Bessi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6132f6ce6252278af45da42aa59190ce/250x250-000000-80-0-0.jpg"
+    },
+    "hoàng thùy linh": {
+        "nom": "Hoàng Thùy Linh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ada412ca9a4796d6a7584567b871779a/250x250-000000-80-0-0.jpg"
+    },
+    "league of legends": {
+        "nom": "League of Legends",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/21e53b8e8285f84f60601d895c39c900/250x250-000000-80-0-0.jpg"
     }
 }
