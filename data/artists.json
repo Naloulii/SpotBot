@@ -6946,5 +6946,33 @@
     "d4vd": {
         "nom": "d4vd",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3d60604ff37c33f1ce9ee3755959d592/250x250-000000-80-0-0.jpg"
+    },
+    "gs": {
+        "nom": "GS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8c45e197c76341c0efd909add60247ea/250x250-000000-80-0-0.jpg"
+    },
+    "denzel curry": {
+        "nom": "Denzel Curry",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f0d047c02138800e4921a46f4b72f995/250x250-000000-80-0-0.jpg"
+    },
+    "gizzle": {
+        "nom": "Gizzle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6a0e93467bf436dcb3d4a8206ee71c68/250x250-000000-80-0-0.jpg"
+    },
+    "bren joy": {
+        "nom": "Bren Joy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c523f62fb26387df60ef828b604ed42c/250x250-000000-80-0-0.jpg"
+    },
+    "kryptoo": {
+        "nom": "KRYPTOO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/43334e573a9d979b434e480aa2c12828/250x250-000000-80-0-0.jpg"
+    },
+    "oras": {
+        "nom": "Oras",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e1c983b1d27591c6c6d7ee1b5db69498/250x250-000000-80-0-0.jpg"
+    },
+    "aidan bissett": {
+        "nom": "Aidan Bissett",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/446d6ffe7ed2b1b9ddb8e85ea6d770c0/250x250-000000-80-0-0.jpg"
     }
 }
