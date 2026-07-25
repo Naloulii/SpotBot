@@ -7214,5 +7214,25 @@
     "shenseea": {
         "nom": "Shenseea",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9a60472a1f2c830f540a5d292f2f21e6/250x250-000000-80-0-0.jpg"
+    },
+    "wiu": {
+        "nom": "WIU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1fc3bba81f70d2bab95f615e37c1ca57/250x250-000000-80-0-0.jpg"
+    },
+    "teto": {
+        "nom": "Teto",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef01e9000762e97eef6ba01955f0073c/250x250-000000-80-0-0.jpg"
+    },
+    "the rah band": {
+        "nom": "The Rah Band",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/750eb9ba612b8bdd90e44a8a99824688/250x250-000000-80-0-0.jpg"
+    },
+    "dabeull": {
+        "nom": "Dabeull",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea0d4ccd941ef2dc08a5bff8e2f56859/250x250-000000-80-0-0.jpg"
+    },
+    "holybrune": {
+        "nom": "HolyBrune",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c894bfeaff762d45d1df5decccf132d8/250x250-000000-80-0-0.jpg"
     }
 }
