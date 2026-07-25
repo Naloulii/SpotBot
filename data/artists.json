@@ -7234,5 +7234,13 @@
     "holybrune": {
         "nom": "HolyBrune",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c894bfeaff762d45d1df5decccf132d8/250x250-000000-80-0-0.jpg"
+    },
+    "chrmbchrmb": {
+        "nom": "chrmbchrmb",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/490dca67b9a85e1f7db047c38e721142/250x250-000000-80-0-0.jpg"
+    },
+    "johndough aka the big jd $": {
+        "nom": "Johndough aka the big jd $",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9bc1e538bd08175160fe18f999271b07/250x250-000000-80-0-0.jpg"
     }
 }
