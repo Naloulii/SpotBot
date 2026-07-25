@@ -7210,5 +7210,9 @@
     "sydney rose": {
         "nom": "Sydney Rose",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a4c1c155592668ca699f4a1622bc4fe4/250x250-000000-80-0-0.jpg"
+    },
+    "shenseea": {
+        "nom": "Shenseea",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a60472a1f2c830f540a5d292f2f21e6/250x250-000000-80-0-0.jpg"
     }
 }
