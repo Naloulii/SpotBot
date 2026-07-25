@@ -7154,5 +7154,13 @@
     "ldj dnb": {
         "nom": "LDJ DNB",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d01caff940218a9a34ebab8f51b7a90d/250x250-000000-80-0-0.jpg"
+    },
+    "cragii": {
+        "nom": "CRAGII",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba07fdd4adf5a7afbb53988aac193c49/250x250-000000-80-0-0.jpg"
+    },
+    "dtf": {
+        "nom": "DTF",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ce7bc543fd6b3125556185148001c40e/250x250-000000-80-0-0.jpg"
     }
 }
