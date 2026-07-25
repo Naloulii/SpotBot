@@ -7070,5 +7070,13 @@
     "supremnova": {
         "nom": "Supremnova",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6da54073c2f480a540117d80decc795f/250x250-000000-80-0-0.jpg"
+    },
+    "zrobb": {
+        "nom": "ZRobb",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5072ad1a84a8e21fd2b5f7b30dd6356c/250x250-000000-80-0-0.jpg"
+    },
+    "brvmsoo": {
+        "nom": "BRVMSOO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/35b0e75fea49a569ee10ef476162d78e/250x250-000000-80-0-0.jpg"
     }
 }
