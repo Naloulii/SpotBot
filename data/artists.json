@@ -7134,5 +7134,13 @@
     "black caviar": {
         "nom": "Black Caviar",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e3fea6564dedc4baad0e9d946e18cee7/250x250-000000-80-0-0.jpg"
+    },
+    "liim’s": {
+        "nom": "Liim’s",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a42374a4272bdd6bed231f1ac5b1d074/250x250-000000-80-0-0.jpg"
+    },
+    "amk": {
+        "nom": "AMK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
