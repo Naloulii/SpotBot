@@ -7142,5 +7142,17 @@
     "amk": {
         "nom": "AMK",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "himra": {
+        "nom": "Himra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/365df1e33a2b5dd434cd249cd105680f/250x250-000000-80-0-0.jpg"
+    },
+    "minz": {
+        "nom": "Minz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9bd2b7edade7646b2b2faf7c4a3a77df/250x250-000000-80-0-0.jpg"
+    },
+    "ldj dnb": {
+        "nom": "LDJ DNB",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d01caff940218a9a34ebab8f51b7a90d/250x250-000000-80-0-0.jpg"
     }
 }
