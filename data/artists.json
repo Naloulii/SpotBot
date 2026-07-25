@@ -7178,5 +7178,9 @@
     "the mamas & the papas": {
         "nom": "The Mamas & The Papas",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8d0acdb7097ac8e606f392d003e5a672/250x250-000000-80-0-0.jpg"
+    },
+    "eric williams": {
+        "nom": "Eric Williams",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9855385571bbd570c4f89db51160e27e/250x250-000000-80-0-0.jpg"
     }
 }
