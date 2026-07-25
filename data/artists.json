@@ -7114,5 +7114,25 @@
     "rj pasin": {
         "nom": "RJ Pasin",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e460b01306de4c8d790508e0d80d1fdf/250x250-000000-80-0-0.jpg"
+    },
+    "alex warren": {
+        "nom": "Alex Warren",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b96d7cd60a70c9bce8ee8cb28eefb949/250x250-000000-80-0-0.jpg"
+    },
+    "ryflo": {
+        "nom": "Ryflo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a95bc75ff3d60b43e35f0a783a231cb5/250x250-000000-80-0-0.jpg"
+    },
+    "oskoow": {
+        "nom": "Oskoow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c68454f02bcb2ea015a97fbd01dc79a1/250x250-000000-80-0-0.jpg"
+    },
+    "blackway": {
+        "nom": "Blackway",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0177280e21be65fe160b1352c52089d2/250x250-000000-80-0-0.jpg"
+    },
+    "black caviar": {
+        "nom": "Black Caviar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3fea6564dedc4baad0e9d946e18cee7/250x250-000000-80-0-0.jpg"
     }
 }
