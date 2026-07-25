@@ -7102,5 +7102,17 @@
     "evo": {
         "nom": "EVO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/25ff36db050c21da42f8731c47c6c0a0/250x250-000000-80-0-0.jpg"
+    },
+    "jxndro": {
+        "nom": "JXNDRO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3fd03f0cd2365afd449668b7536c6322/250x250-000000-80-0-0.jpg"
+    },
+    "ptasinski": {
+        "nom": "ptasinski",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cfcfdb9bd2169d72239fac432b1c5213/250x250-000000-80-0-0.jpg"
+    },
+    "rj pasin": {
+        "nom": "RJ Pasin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e460b01306de4c8d790508e0d80d1fdf/250x250-000000-80-0-0.jpg"
     }
 }
