@@ -7250,5 +7250,13 @@
     "wave to earth": {
         "nom": "wave to earth",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d27a4c2c28addd9d63bc141683839fdf/250x250-000000-80-0-0.jpg"
+    },
+    "alec benjamin": {
+        "nom": "Alec Benjamin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c4cfecd5e534b5bd191add25c67e08b2/250x250-000000-80-0-0.jpg"
+    },
+    "verzache": {
+        "nom": "Verzache",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6270f3ff31ab288fc2124ec945d15135/250x250-000000-80-0-0.jpg"
     }
 }
