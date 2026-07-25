@@ -7190,5 +7190,21 @@
     "結束バンド": {
         "nom": "結束バンド",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d3adbd700a19dfee2fa9a8fd9ede7dce/250x250-000000-80-0-0.jpg"
+    },
+    "kaden mackay": {
+        "nom": "Kaden MacKay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/084d9b76d01b76a37bd05a50d39a427e/250x250-000000-80-0-0.jpg"
+    },
+    "jade lemac": {
+        "nom": "Jade LeMac",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/343b319ab9d3df7108044936fdca9cd3/250x250-000000-80-0-0.jpg"
+    },
+    "the neighbourhood": {
+        "nom": "The Neighbourhood",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8fdcc9f74aa9f930c28f5b9ea0da0fd4/250x250-000000-80-0-0.jpg"
+    },
+    "sufjan stevens": {
+        "nom": "Sufjan Stevens",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c4bcf58198910e8b135ae283ec8ffa76/250x250-000000-80-0-0.jpg"
     }
 }
