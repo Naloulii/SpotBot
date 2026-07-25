@@ -7066,5 +7066,9 @@
     "torr": {
         "nom": "torr",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/163e3477414de8caadde959bb29bd3a7/250x250-000000-80-0-0.jpg"
+    },
+    "supremnova": {
+        "nom": "Supremnova",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6da54073c2f480a540117d80decc795f/250x250-000000-80-0-0.jpg"
     }
 }
