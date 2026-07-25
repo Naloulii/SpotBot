@@ -7174,5 +7174,9 @@
     "soulja boy": {
         "nom": "Soulja Boy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e2f4253cf100c0bef19a836da219e23f/250x250-000000-80-0-0.jpg"
+    },
+    "the mamas & the papas": {
+        "nom": "The Mamas & The Papas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d0acdb7097ac8e606f392d003e5a672/250x250-000000-80-0-0.jpg"
     }
 }
