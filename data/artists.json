@@ -7078,5 +7078,29 @@
     "brvmsoo": {
         "nom": "BRVMSOO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/35b0e75fea49a569ee10ef476162d78e/250x250-000000-80-0-0.jpg"
+    },
+    "grioten": {
+        "nom": "Grioten",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea2ae2e75059738008dcd5af6106b71a/250x250-000000-80-0-0.jpg"
+    },
+    "xlout": {
+        "nom": "xlout",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5c248697e74192b564d8a12ac6e20460/250x250-000000-80-0-0.jpg"
+    },
+    "kobzx2z": {
+        "nom": "kobzx2z",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ab50e9255eca1e0340042b3fe2c44be6/250x250-000000-80-0-0.jpg"
+    },
+    "myla": {
+        "nom": "Myla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13c6757ae2e0970eeaaa4b397651d873/250x250-000000-80-0-0.jpg"
+    },
+    "rvnge": {
+        "nom": "RVNGE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/57ab84b7db22c8ec00e57ab29661c757/250x250-000000-80-0-0.jpg"
+    },
+    "evo": {
+        "nom": "EVO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/25ff36db050c21da42f8731c47c6c0a0/250x250-000000-80-0-0.jpg"
     }
 }
