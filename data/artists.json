@@ -7422,5 +7422,69 @@
     "play to sky": {
         "nom": "Play to Sky",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0caafb32376004de9783bd4a64946786/250x250-000000-80-0-0.jpg"
+    },
+    "joost": {
+        "nom": "Joost",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "ski aggu": {
+        "nom": "Ski Aggu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d89122714f38ac3d235accf5bcaf4708/250x250-000000-80-0-0.jpg"
+    },
+    "otto waalkes": {
+        "nom": "Otto Waalkes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d2e5026d07ac34232e0d86dadab8b761/250x250-000000-80-0-0.jpg"
+    },
+    "käärijä": {
+        "nom": "Käärijä",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fe35f38808a8cd346870f3782dc3ebad/250x250-000000-80-0-0.jpg"
+    },
+    "horsegiirl": {
+        "nom": "horsegiirL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed47549dacf1e4a7e72a36e6dd7413cb/250x250-000000-80-0-0.jpg"
+    },
+    "cody fry": {
+        "nom": "Cody Fry",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9b1e0f32b274e846c61bc03a5d1859e5/250x250-000000-80-0-0.jpg"
+    },
+    "renoi sans eau": {
+        "nom": "Renoi Sans Eau",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7e4216883f405575cff03544c4d86d13/250x250-000000-80-0-0.jpg"
+    },
+    "siaka": {
+        "nom": "Siaka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b75393a6efc0a128f3af93b164970c4f/250x250-000000-80-0-0.jpg"
+    },
+    "badbadnotgood": {
+        "nom": "BADBADNOTGOOD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a219c29272dddc050bc219e1124294e3/250x250-000000-80-0-0.jpg"
+    },
+    "samuel t. herring": {
+        "nom": "Samuel T. Herring",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/caffd2f1292dcf301d956564d0a09ca7/250x250-000000-80-0-0.jpg"
+    },
+    "leo succulent": {
+        "nom": "Leo Succulent",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b8004a0373ce0dd268589f3151b5407f/250x250-000000-80-0-0.jpg"
+    },
+    "pompe man": {
+        "nom": "Pompe Man",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4558221455d64cad37c39c3c3b432839/250x250-000000-80-0-0.jpg"
+    },
+    "david fils de momone": {
+        "nom": "David fils de Momone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d5260761db8f7b861a9a17dfdf55018/250x250-000000-80-0-0.jpg"
+    },
+    "ridersxtv": {
+        "nom": "RidersXTV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e8ed0992627dff78c1010d4f06a1c4f2/250x250-000000-80-0-0.jpg"
+    },
+    "andy.d": {
+        "nom": "Andy.D",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a35b26d63641656aee53ceada25a73d/250x250-000000-80-0-0.jpg"
+    },
+    "fasterfr": {
+        "nom": "FasterFR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef7b7547fe37de9f05ccf061b94b2e83/250x250-000000-80-0-0.jpg"
     }
 }
