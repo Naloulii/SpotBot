@@ -7598,5 +7598,29 @@
     "pop smoke": {
         "nom": "Pop Smoke",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ba0332d0d6755b6def09154da8d1736b/250x250-000000-80-0-0.jpg"
+    },
+    "yusei": {
+        "nom": "Yusei",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7acc6ae845ee2bfa51b62311cb70629c/250x250-000000-80-0-0.jpg"
+    },
+    "crc": {
+        "nom": "CRC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/96069110234a3120c5f647fc86d8d280/250x250-000000-80-0-0.jpg"
+    },
+    "calvary clover": {
+        "nom": "Calvary Clover",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0edf70442f9bbc678cf6b0fcc6d054b/250x250-000000-80-0-0.jpg"
+    },
+    "sope": {
+        "nom": "Sope",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/63de0e28ef7d7d583b9e086bdbaa5a9f/250x250-000000-80-0-0.jpg"
+    },
+    "léna": {
+        "nom": "Léna",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73ff6bd99e348bf4cd7cb9494d9c00ac/250x250-000000-80-0-0.jpg"
+    },
+    "vink": {
+        "nom": "Vink",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cd9b524a5c78587187bdd39f66629dd8/250x250-000000-80-0-0.jpg"
     }
 }
