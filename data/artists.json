@@ -7554,5 +7554,25 @@
     "ricky montgomery": {
         "nom": "Ricky Montgomery",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1cd75217e2236a311e4285a7047eddd4/250x250-000000-80-0-0.jpg"
+    },
+    "sixpence none the richer": {
+        "nom": "Sixpence None The Richer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b20e07be25bc57a7acb2e67bcfc7ebb0/250x250-000000-80-0-0.jpg"
+    },
+    "clara la san": {
+        "nom": "Clara La San",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9f019d78cacdcc236a271602f35476d/250x250-000000-80-0-0.jpg"
+    },
+    "kenny beats": {
+        "nom": "Kenny Beats",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "lauv": {
+        "nom": "LAUV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "troye sivan": {
+        "nom": "Troye Sivan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e2a772250d9c9b48bf32ca13067fe04a/250x250-000000-80-0-0.jpg"
     }
 }
