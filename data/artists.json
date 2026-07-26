@@ -7398,5 +7398,13 @@
     "rj": {
         "nom": "RJ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/50f0c09207f1123459e17bad409c9e7a/250x250-000000-80-0-0.jpg"
+    },
+    "arciana": {
+        "nom": "arciana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a8bef8d971113961985db636a3cec301/250x250-000000-80-0-0.jpg"
+    },
+    "sukagawa": {
+        "nom": "Sukagawa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11fcdb08153b87aaa2f71e145372d880/250x250-000000-80-0-0.jpg"
     }
 }
