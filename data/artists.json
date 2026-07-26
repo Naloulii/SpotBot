@@ -7770,5 +7770,13 @@
     "weezer": {
         "nom": "Weezer",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/71b7a49137bb9a66b5db89a18448c1d6/250x250-000000-80-0-0.jpg"
+    },
+    "asfar shamsi": {
+        "nom": "Asfar Shamsi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6b3b5733964b5b0e61d72af2c2e5d86c/250x250-000000-80-0-0.jpg"
+    },
+    "arsaphe": {
+        "nom": "Arsaphe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/954d80fd913ab898e81013b165f53046/250x250-000000-80-0-0.jpg"
     }
 }
