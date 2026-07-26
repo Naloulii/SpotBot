@@ -7706,5 +7706,33 @@
     "limsa d'aulnay": {
         "nom": "Limsa d'Aulnay",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/96f0cc8a106c0116c7dc518bebd21a86/250x250-000000-80-0-0.jpg"
+    },
+    "ludovico einaudi": {
+        "nom": "Ludovico Einaudi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5aa391abaca4189309ca0087a2fed4e2/250x250-000000-80-0-0.jpg"
+    },
+    "daniel hope": {
+        "nom": "Daniel Hope",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6336abb4b98a68ba464d9c85d1491ea/250x250-000000-80-0-0.jpg"
+    },
+    "i virtuosi italiani": {
+        "nom": "I Virtuosi Italiani",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d30ac4d5ac0b82c078c6fdb5ac19f0b/250x250-000000-80-0-0.jpg"
+    },
+    "errel": {
+        "nom": "Errel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b4ca6727b339ced27f6ba3e51bdd4d2/250x250-000000-80-0-0.jpg"
+    },
+    "gal": {
+        "nom": "GAL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/894cf6b2c63c866b169aa51bb50e4411/250x250-000000-80-0-0.jpg"
+    },
+    "celestino": {
+        "nom": "Celestino",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e23066163f21176a822b54001ee648a2/250x250-000000-80-0-0.jpg"
+    },
+    "marq": {
+        "nom": "marQ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/22c42ad58f7510ef3813c920bb4f5626/250x250-000000-80-0-0.jpg"
     }
 }
