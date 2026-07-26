@@ -7298,5 +7298,41 @@
     "9lives": {
         "nom": "9lives",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/54aabc0d207a93f1a77d552a301b584d/250x250-000000-80-0-0.jpg"
+    },
+    "scorpions": {
+        "nom": "Scorpions",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0be3d1b437f88084204c6b9b3be6600/250x250-000000-80-0-0.jpg"
+    },
+    "the animals": {
+        "nom": "The Animals",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1233cddd435ae668c5ab1aa2ac73e9e4/250x250-000000-80-0-0.jpg"
+    },
+    "kiss": {
+        "nom": "KISS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba18c729f8746760dbad3e67fb896b12/250x250-000000-80-0-0.jpg"
+    },
+    "ac/dc": {
+        "nom": "AC/DC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7dbc950be70f997ba0cd2b39de7f2aa7/250x250-000000-80-0-0.jpg"
+    },
+    "byastral": {
+        "nom": "ByAstral",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7188f64ec0ccac1171ead3b6bca65ea5/250x250-000000-80-0-0.jpg"
+    },
+    "myth syzer": {
+        "nom": "Myth Syzer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/75e8fa630322cd58a38ef807804ac74e/250x250-000000-80-0-0.jpg"
+    },
+    "bonnie banane": {
+        "nom": "Bonnie Banane",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6f78aacdaea3dab4e0e08fdc26dbc7b0/250x250-000000-80-0-0.jpg"
+    },
+    "ichon": {
+        "nom": "Ichon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/481141d5d0c3f1869d7e8044ad3202fd/250x250-000000-80-0-0.jpg"
+    },
+    "muddy monk": {
+        "nom": "Muddy Monk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0444641fc63b77b7976fab71edb9f39c/250x250-000000-80-0-0.jpg"
     }
 }
