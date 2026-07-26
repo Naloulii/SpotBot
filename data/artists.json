@@ -7366,5 +7366,9 @@
     "meeko": {
         "nom": "Meeko",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "halsey": {
+        "nom": "Halsey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dbfcb38ac398f2c09d18b16868426f41/250x250-000000-80-0-0.jpg"
     }
 }
