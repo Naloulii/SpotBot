@@ -7762,5 +7762,13 @@
     "blaxian": {
         "nom": "Blaxian",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/57b423224e7ab8a1c9c68c46d1ac667a/250x250-000000-80-0-0.jpg"
+    },
+    "wallows": {
+        "nom": "Wallows",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/af6edbdb011593c580c4a5b80155597e/250x250-000000-80-0-0.jpg"
+    },
+    "weezer": {
+        "nom": "Weezer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/71b7a49137bb9a66b5db89a18448c1d6/250x250-000000-80-0-0.jpg"
     }
 }
