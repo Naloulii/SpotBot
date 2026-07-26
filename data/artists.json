@@ -7262,5 +7262,17 @@
     "pornograffitti": {
         "nom": "PornoGraffitti",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a58ee0705995e95521f57592b204f50b/250x250-000000-80-0-0.jpg"
+    },
+    "sega sound team": {
+        "nom": "SEGA SOUND TEAM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "richard jacques": {
+        "nom": "Richard Jacques",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5ab5a596d2d716c028c4eff0dceab194/250x250-000000-80-0-0.jpg"
+    },
+    "coco & clair clair": {
+        "nom": "Coco & Clair Clair",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b203e3c12c1194a1cacced16af9d80e5/250x250-000000-80-0-0.jpg"
     }
 }
