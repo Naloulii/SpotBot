@@ -7530,5 +7530,17 @@
     "temporex": {
         "nom": "TEMPOREX",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d37ddce412fabd0d8da5670a55536018/250x250-000000-80-0-0.jpg"
+    },
+    "joey valence & brae": {
+        "nom": "Joey Valence & Brae",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d2d6fdf194109cbe304e3275ac95a801/250x250-000000-80-0-0.jpg"
+    },
+    "pretty nicky": {
+        "nom": "PRETTY NICKY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/708f1c295be9b51dfdcb3daa1efb54a1/250x250-000000-80-0-0.jpg"
+    },
+    "bricebeatz": {
+        "nom": "BriceBeatz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1bf40f7b72e5eed31640a55ee74d369a/250x250-000000-80-0-0.jpg"
     }
 }
