@@ -7678,5 +7678,13 @@
     "keroué": {
         "nom": "Keroué",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8abd4376aa45148b0f7eff32d0779821/250x250-000000-80-0-0.jpg"
+    },
+    "sibenga": {
+        "nom": "Sibenga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4de697d37980359ef9f329c7d879c8c5/250x250-000000-80-0-0.jpg"
+    },
+    "akon": {
+        "nom": "Akon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aeabd034f3c9d75b8fe2eb5565b5d1ae/250x250-000000-80-0-0.jpg"
     }
 }
