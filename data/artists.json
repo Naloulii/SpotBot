@@ -7734,5 +7734,21 @@
     "marq": {
         "nom": "marQ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/22c42ad58f7510ef3813c920bb4f5626/250x250-000000-80-0-0.jpg"
+    },
+    "andrew prahlow": {
+        "nom": "Andrew Prahlow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/795362a07b079de7d0cb29e640392786/250x250-000000-80-0-0.jpg"
+    },
+    "nosnow": {
+        "nom": "NoSnow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a23d2eb391cad48eeb1107f3967c3d38/250x250-000000-80-0-0.jpg"
+    },
+    "venvn": {
+        "nom": "Venvn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c07bcba5ac87ec08e7b6be72c2517f83/250x250-000000-80-0-0.jpg"
+    },
+    "jeune mort": {
+        "nom": "Jeune Mort",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8e761fb7f24b6de14c526bb5f9c74a57/250x250-000000-80-0-0.jpg"
     }
 }
