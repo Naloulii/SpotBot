@@ -7274,5 +7274,29 @@
     "coco & clair clair": {
         "nom": "Coco & Clair Clair",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b203e3c12c1194a1cacced16af9d80e5/250x250-000000-80-0-0.jpg"
+    },
+    "beach weather": {
+        "nom": "Beach Weather",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/23bfb822f2cd3067bdd01de2b1c81d7d/250x250-000000-80-0-0.jpg"
+    },
+    "mcvert": {
+        "nom": "mcvert",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a15be6970a7409fa02b6fe61a6f95c2/250x250-000000-80-0-0.jpg"
+    },
+    "megan thee stallion": {
+        "nom": "Megan Thee Stallion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/55a20b812fec74d0a72d870545fc2123/250x250-000000-80-0-0.jpg"
+    },
+    "千葉雄喜": {
+        "nom": "千葉雄喜",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8bfb4ba6c5339da186fbbee88a0f703a/250x250-000000-80-0-0.jpg"
+    },
+    "azealia banks": {
+        "nom": "Azealia Banks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6cb1aac786704cd021bc35a843ad6410/250x250-000000-80-0-0.jpg"
+    },
+    "9lives": {
+        "nom": "9lives",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/54aabc0d207a93f1a77d552a301b584d/250x250-000000-80-0-0.jpg"
     }
 }
