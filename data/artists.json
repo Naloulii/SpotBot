@@ -7334,5 +7334,17 @@
     "muddy monk": {
         "nom": "Muddy Monk",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0444641fc63b77b7976fab71edb9f39c/250x250-000000-80-0-0.jpg"
+    },
+    "kaza": {
+        "nom": "Kaza",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/90222917118221bd86af5bafe436c980/250x250-000000-80-0-0.jpg"
+    },
+    "le dé": {
+        "nom": "Le Dé",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5c18dfbaea7b189da64887d5d7a46ac9/250x250-000000-80-0-0.jpg"
+    },
+    "swing": {
+        "nom": "Swing",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
