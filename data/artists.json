@@ -7794,5 +7794,13 @@
     "dec": {
         "nom": "dec",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b207215053f0b654edc5fcde6e63461d/250x250-000000-80-0-0.jpg"
+    },
+    "deyty": {
+        "nom": "deyty",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a5965862c9da7ddc31b393bbd71eca2e/250x250-000000-80-0-0.jpg"
+    },
+    "dayglow": {
+        "nom": "Dayglow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c55e5c15dca4247a037d9cbc65436d8b/250x250-000000-80-0-0.jpg"
     }
 }
