@@ -7750,5 +7750,17 @@
     "jeune mort": {
         "nom": "Jeune Mort",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8e761fb7f24b6de14c526bb5f9c74a57/250x250-000000-80-0-0.jpg"
+    },
+    "sopico": {
+        "nom": "Sopico",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2f1db28aeb4d73f764299fb52daddce7/250x250-000000-80-0-0.jpg"
+    },
+    "nepal": {
+        "nom": "Nepal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "blaxian": {
+        "nom": "Blaxian",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/57b423224e7ab8a1c9c68c46d1ac667a/250x250-000000-80-0-0.jpg"
     }
 }
