@@ -7666,5 +7666,17 @@
     "chevy": {
         "nom": "Chevy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5fc7822c872a0d3915fed416cc4eba87/250x250-000000-80-0-0.jpg"
+    },
+    "angelo": {
+        "nom": "Angelo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0c5b22414683e22dbf649cf9f5086bf4/250x250-000000-80-0-0.jpg"
+    },
+    "brady": {
+        "nom": "Brady",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b79892440310332a10e1f86622e6af4e/250x250-000000-80-0-0.jpg"
+    },
+    "keroué": {
+        "nom": "Keroué",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8abd4376aa45148b0f7eff32d0779821/250x250-000000-80-0-0.jpg"
     }
 }
