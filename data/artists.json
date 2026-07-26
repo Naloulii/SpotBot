@@ -7362,5 +7362,9 @@
     "odecore": {
         "nom": "ODECORE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/30f02956a7ea696c7406a13eafc862b4/250x250-000000-80-0-0.jpg"
+    },
+    "meeko": {
+        "nom": "Meeko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
