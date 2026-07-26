@@ -7346,5 +7346,13 @@
     "swing": {
         "nom": "Swing",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "an'om": {
+        "nom": "An'Om",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c7331684c0cbf0cd3af22a68d88f6d14/250x250-000000-80-0-0.jpg"
+    },
+    "vayn": {
+        "nom": "Vayn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e862beb51b71d59ea4ccc75452ddd282/250x250-000000-80-0-0.jpg"
     }
 }
