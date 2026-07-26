@@ -7650,5 +7650,21 @@
     "azur": {
         "nom": "Azur",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/211759f8cef1e01ac8eac2c8fb22bc77/250x250-000000-80-0-0.jpg"
+    },
+    "zinera": {
+        "nom": "Zinera",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/065e7ab81f693a7c382cff7228164f39/250x250-000000-80-0-0.jpg"
+    },
+    "girl in red": {
+        "nom": "girl in red",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e83c7a4325debed6305ca5b976ae69d2/250x250-000000-80-0-0.jpg"
+    },
+    "ryce": {
+        "nom": "Ryce",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d59cd830445e5d6d12ddb40a8c554138/250x250-000000-80-0-0.jpg"
+    },
+    "chevy": {
+        "nom": "Chevy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5fc7822c872a0d3915fed416cc4eba87/250x250-000000-80-0-0.jpg"
     }
 }
