@@ -7406,5 +7406,21 @@
     "sukagawa": {
         "nom": "Sukagawa",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/11fcdb08153b87aaa2f71e145372d880/250x250-000000-80-0-0.jpg"
+    },
+    "jean dujardin": {
+        "nom": "Jean Dujardin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aa6d19b6d71e72889c8264d6e9ed9a1a/250x250-000000-80-0-0.jpg"
+    },
+    "hellblade": {
+        "nom": "HELLBLADE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d989eb3347b77cc46386284edcf9d9a/250x250-000000-80-0-0.jpg"
+    },
+    "deftones": {
+        "nom": "Deftones",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a4fab59f82dc48f2c636ce8497282e67/250x250-000000-80-0-0.jpg"
+    },
+    "play to sky": {
+        "nom": "Play to Sky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0caafb32376004de9783bd4a64946786/250x250-000000-80-0-0.jpg"
     }
 }
