@@ -5777,9 +5777,28 @@
     ],
     "1260775109736529950": [
         {
+            "date": "26/07/2026 02:47",
+            "track_id": "4Q6kohBsBroRvOK7kq9MBk",
+            "status": "⏱️ Écouté pendant 0m 12s",
+            "temps_ecoute_secondes": 12.6
+        },
+        {
+            "date": "26/07/2026 02:46",
+            "track_id": "1U8wnQrnAlWPByturxKdcD",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 182.6
+        },
+        {
+            "date": "26/07/2026 02:42",
+            "track_id": "1Es7AUAhQvapIcoh3qMKDL",
+            "status": "⏱️ Écouté pendant 2m 37s",
+            "temps_ecoute_secondes": 157.7
+        },
+        {
             "date": "26/07/2026 02:36",
             "track_id": "1LmeIVvg4CVTu6kicEVoAr",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 136.4
         },
         {
             "date": "26/07/2026 02:34",
