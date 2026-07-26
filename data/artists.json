@@ -7542,5 +7542,17 @@
     "bricebeatz": {
         "nom": "BriceBeatz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1bf40f7b72e5eed31640a55ee74d369a/250x250-000000-80-0-0.jpg"
+    },
+    "sombr": {
+        "nom": "sombr",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/82ef9a2db0c80f8588569d955c78d695/250x250-000000-80-0-0.jpg"
+    },
+    "keanu bicol": {
+        "nom": "Keanu Bicol",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d5ed79e98712e3e4aa70152b589bd5a4/250x250-000000-80-0-0.jpg"
+    },
+    "ricky montgomery": {
+        "nom": "Ricky Montgomery",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1cd75217e2236a311e4285a7047eddd4/250x250-000000-80-0-0.jpg"
     }
 }
