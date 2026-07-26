@@ -7358,5 +7358,9 @@
     "stela": {
         "nom": "Stela",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1e7bf2d75ca79c7526481e32fe6ad88e/250x250-000000-80-0-0.jpg"
+    },
+    "odecore": {
+        "nom": "ODECORE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/30f02956a7ea696c7406a13eafc862b4/250x250-000000-80-0-0.jpg"
     }
 }
