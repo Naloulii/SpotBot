@@ -7686,5 +7686,25 @@
     "akon": {
         "nom": "Akon",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/aeabd034f3c9d75b8fe2eb5565b5d1ae/250x250-000000-80-0-0.jpg"
+    },
+    "tenbris": {
+        "nom": "TENBRIS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c6efb2bcf6d6d5d4216381c820a037e/250x250-000000-80-0-0.jpg"
+    },
+    "samy": {
+        "nom": "Samy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef0a9ffe01d9a4f35c31527043cbdcca/250x250-000000-80-0-0.jpg"
+    },
+    "laïoss": {
+        "nom": "Laïoss",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb82b313e4d8e184e83833f845539fd7/250x250-000000-80-0-0.jpg"
+    },
+    "isha": {
+        "nom": "ISHA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/430746e1e71c20b8217e87167a43d888/250x250-000000-80-0-0.jpg"
+    },
+    "limsa d'aulnay": {
+        "nom": "Limsa d'Aulnay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/96f0cc8a106c0116c7dc518bebd21a86/250x250-000000-80-0-0.jpg"
     }
 }
