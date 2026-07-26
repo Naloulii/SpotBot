@@ -7486,5 +7486,41 @@
     "fasterfr": {
         "nom": "FasterFR",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ef7b7547fe37de9f05ccf061b94b2e83/250x250-000000-80-0-0.jpg"
+    },
+    "theobabac": {
+        "nom": "TheoBabac",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/64ac44b1d398ce6e6d1189a57dd4637d/250x250-000000-80-0-0.jpg"
+    },
+    "welox": {
+        "nom": "Welox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/316ae8d9fc59cfd4a69b789faa973aaf/250x250-000000-80-0-0.jpg"
+    },
+    "litsu": {
+        "nom": "Litsu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/46599c0a456124430896d186f80f530e/250x250-000000-80-0-0.jpg"
+    },
+    "jeune loup": {
+        "nom": "Jeune Loup",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/491b1dd543d7ccace21f31c5ab13b38e/250x250-000000-80-0-0.jpg"
+    },
+    "mike shabb": {
+        "nom": "Mike Shabb",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/469d271b6c2970f9fa8d297e066cd1f8/250x250-000000-80-0-0.jpg"
+    },
+    "joji": {
+        "nom": "Joji",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3bdd07e6653666b8885b59c522ab3deb/250x250-000000-80-0-0.jpg"
+    },
+    "$outhmafia": {
+        "nom": "$outhMafia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c93945d6cc97d28f690002f366950d4f/250x250-000000-80-0-0.jpg"
+    },
+    "marreley": {
+        "nom": "marreley",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/68b53a86df201b86f50584c817f937d8/250x250-000000-80-0-0.jpg"
+    },
+    "pablo cabello gonzález": {
+        "nom": "Pablo Cabello González",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c917a91ec5602a9b0eebf4ee07887df9/250x250-000000-80-0-0.jpg"
     }
 }
