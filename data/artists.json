@@ -7622,5 +7622,33 @@
     "vink": {
         "nom": "Vink",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cd9b524a5c78587187bdd39f66629dd8/250x250-000000-80-0-0.jpg"
+    },
+    "key largo": {
+        "nom": "Key Largo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2eca2b309d726753eef6650d43552fa3/250x250-000000-80-0-0.jpg"
+    },
+    "enk": {
+        "nom": "ENK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a6c10607630de7e57d21464e4cc4436f/250x250-000000-80-0-0.jpg"
+    },
+    "lamascotte": {
+        "nom": "LaMascotte",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb0d950afc187e5f990f8b22cffb20be/250x250-000000-80-0-0.jpg"
+    },
+    "lyaa clr": {
+        "nom": "Lyaa Clr",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11bbcae95883462a863cce61d8c6e072/250x250-000000-80-0-0.jpg"
+    },
+    "dj tony 438": {
+        "nom": "DJ Tony 438",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aac631c5fdfc37c05202b6ef422d0851/250x250-000000-80-0-0.jpg"
+    },
+    "lpee": {
+        "nom": "Lpee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/42dea94140184156ec3fa4e392d244df/250x250-000000-80-0-0.jpg"
+    },
+    "azur": {
+        "nom": "Azur",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/211759f8cef1e01ac8eac2c8fb22bc77/250x250-000000-80-0-0.jpg"
     }
 }
