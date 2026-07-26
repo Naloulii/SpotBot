@@ -7370,5 +7370,33 @@
     "halsey": {
         "nom": "Halsey",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dbfcb38ac398f2c09d18b16868426f41/250x250-000000-80-0-0.jpg"
+    },
+    "locsta": {
+        "nom": "LocSta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/01fe1b2f197b9bea49d0f532367b4415/250x250-000000-80-0-0.jpg"
+    },
+    "le rat": {
+        "nom": "Le Rat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/da96f99c33d077feb54d8acb4caccc3c/250x250-000000-80-0-0.jpg"
+    },
+    "khaled freak": {
+        "nom": "Khaled Freak",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/71b23a00b3a1b03e7d2a00abd011106d/250x250-000000-80-0-0.jpg"
+    },
+    "monuk": {
+        "nom": "Monuk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/28808c3a65eb02ca4bb26ddcc3937900/250x250-000000-80-0-0.jpg"
+    },
+    "dj hamida": {
+        "nom": "DJ Hamida",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e38bda642dd3fce4e4c183e4bfd832ab/250x250-000000-80-0-0.jpg"
+    },
+    "cheb rayan": {
+        "nom": "Cheb Rayan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "rj": {
+        "nom": "RJ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/50f0c09207f1123459e17bad409c9e7a/250x250-000000-80-0-0.jpg"
     }
 }
