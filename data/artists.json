@@ -8166,5 +8166,61 @@
     "kelesh": {
         "nom": "KELESH",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e13badf210b8b5bfa64e3b5c3ce79179/250x250-000000-80-0-0.jpg"
+    },
+    "honey": {
+        "nom": "honey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "riane": {
+        "nom": "riane",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d262694782b6159cddfe8f386b267861/250x250-000000-80-0-0.jpg"
+    },
+    "yaniss odua": {
+        "nom": "Yaniss Odua",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dd5520725ba1fc3a5d770b6d08ed9bf5/250x250-000000-80-0-0.jpg"
+    },
+    "jäde": {
+        "nom": "Jäde",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b0da7a643631393daec3f7d15ee93156/250x250-000000-80-0-0.jpg"
+    },
+    "le slim": {
+        "nom": "Le Slim",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/741376b007fea8176dbc3d77db099d51/250x250-000000-80-0-0.jpg"
+    },
+    "ledg": {
+        "nom": "LEDG",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/145bab282d82af18cf803746285cc8eb/250x250-000000-80-0-0.jpg"
+    },
+    "l'araignée 784": {
+        "nom": "L'Araignée 784",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ca277a0cc70fae1b407a0baa86016dd7/250x250-000000-80-0-0.jpg"
+    },
+    "somyke": {
+        "nom": "Somyke",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cb5c53eb825579c00baddc3f31d98392/250x250-000000-80-0-0.jpg"
+    },
+    "naili": {
+        "nom": "Naili",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/654e610c5b0047cd5580932fbde333e6/250x250-000000-80-0-0.jpg"
+    },
+    "dtm13z": {
+        "nom": "DTM13z",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/19c0b897c41834e73b05f4e8fea12379/250x250-000000-80-0-0.jpg"
+    },
+    "huntrill": {
+        "nom": "Huntrill",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f616db64c85e7a163f87b830dafb48a4/250x250-000000-80-0-0.jpg"
+    },
+    "alka": {
+        "nom": "Alka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/91c422c4449b49ac16aedf9a86b8fbb2/250x250-000000-80-0-0.jpg"
+    },
+    "le jèm'ss": {
+        "nom": "Le Jèm'ss",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b49e1e9d151132fdcf8791d1b97ec971/250x250-000000-80-0-0.jpg"
+    },
+    "gen": {
+        "nom": "Gen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b688e2a1283bd169efcc549e70ccd9fc/250x250-000000-80-0-0.jpg"
     }
 }
