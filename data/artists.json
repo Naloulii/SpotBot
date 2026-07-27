@@ -8350,5 +8350,25 @@
     "allt": {
         "nom": "Allt",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d801c291e0207aec61ae15f8c29d13b0/250x250-000000-80-0-0.jpg"
+    },
+    "annisokay": {
+        "nom": "Annisokay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eab0f74db967c88b1abe5b365c3bb460/250x250-000000-80-0-0.jpg"
+    },
+    "alex yarmak": {
+        "nom": "Alex Yarmak",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec14fe32533cfc8386d64862592bf804/250x250-000000-80-0-0.jpg"
+    },
+    "leo/need": {
+        "nom": "Leo/need",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/95c70ef08130a0d5a61ea248158845a4/250x250-000000-80-0-0.jpg"
+    },
+    "хейтспіч": {
+        "nom": "хейтспіч",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/54dfa90905aa95665d96387002014282/250x250-000000-80-0-0.jpg"
+    },
+    "「all music mikudemy」一同": {
+        "nom": "「All Music MIKUdemy」一同",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d55dd9ddeb4f5fdf9ada1a54f9206bcd/250x250-000000-80-0-0.jpg"
     }
 }
