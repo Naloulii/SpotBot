@@ -8154,5 +8154,17 @@
     "kairo keyz": {
         "nom": "Kairo Keyz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c5f52194e510c78eca4392124a616d15/250x250-000000-80-0-0.jpg"
+    },
+    "sayso": {
+        "nom": "sayso",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d37acee9d74a50e78514d46b9ff0ea9/250x250-000000-80-0-0.jpg"
+    },
+    "kyma": {
+        "nom": "Kyma",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86ec3bbb43cdc77a738a03f69be226d5/250x250-000000-80-0-0.jpg"
+    },
+    "kelesh": {
+        "nom": "KELESH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e13badf210b8b5bfa64e3b5c3ce79179/250x250-000000-80-0-0.jpg"
     }
 }
