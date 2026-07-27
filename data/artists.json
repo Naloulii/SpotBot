@@ -8282,5 +8282,37 @@
     "joyful": {
         "nom": "joyful",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cadadaf4430b8e89b752ecf81de7246e/250x250-000000-80-0-0.jpg"
+    },
+    "kurt hugo schneider": {
+        "nom": "Kurt Hugo Schneider",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b8794cdc38579a98695fbd048de2ab9c/250x250-000000-80-0-0.jpg"
+    },
+    "christina grimmie": {
+        "nom": "Christina Grimmie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eff5c3e45ecb3b2e221e9c10e3e0477b/250x250-000000-80-0-0.jpg"
+    },
+    "sam tsui": {
+        "nom": "Sam Tsui",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6a8676c38c4e022a3548b803d45406a2/250x250-000000-80-0-0.jpg"
+    },
+    "ben woodward": {
+        "nom": "Ben Woodward",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/61e279cf935d96cc1963c12a0b306d05/250x250-000000-80-0-0.jpg"
+    },
+    "starset": {
+        "nom": "STARSET",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/34aa3d6b8350ec7b3832efd7bd3f6e09/250x250-000000-80-0-0.jpg"
+    },
+    "kaori ishihara": {
+        "nom": "Kaori Ishihara",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1f9a58aefa784d183657ba57e04f8b00/250x250-000000-80-0-0.jpg"
+    },
+    "adam lambert": {
+        "nom": "Adam Lambert",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a89f1a358619ae8c8debd59cdff3acf7/250x250-000000-80-0-0.jpg"
+    },
+    "ashes remain": {
+        "nom": "Ashes Remain",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a3ad8a446ab368ab27e3f898b0e6274/250x250-000000-80-0-0.jpg"
     }
 }
