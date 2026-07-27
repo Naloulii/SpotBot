@@ -8386,5 +8386,21 @@
     "bb model": {
         "nom": "BB Model",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ebb4617226360c606511a5c477e2c608/250x250-000000-80-0-0.jpg"
+    },
+    "leokarlo": {
+        "nom": "LeoKarlo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3c7a26805a1722c94a3c9b9c59ac0a1/250x250-000000-80-0-0.jpg"
+    },
+    "sochromatic": {
+        "nom": "Sochromatic",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e8034da6626b7e6702fe2eb120931605/250x250-000000-80-0-0.jpg"
+    },
+    "justan oval": {
+        "nom": "justan oval",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c818e733f4c7aaa839f2f32352f21323/250x250-000000-80-0-0.jpg"
+    },
+    "heavenwraith": {
+        "nom": "Heavenwraith",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3a18f532be6a7731961103acf50ed867/250x250-000000-80-0-0.jpg"
     }
 }
