@@ -7898,5 +7898,9 @@
     "sixnen": {
         "nom": "sixnen",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6f778ffd11cb07365112baaa2047c254/250x250-000000-80-0-0.jpg"
+    },
+    "jeunesaint": {
+        "nom": "Jeunesaint",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a9b82b62bdbcc11c9c82277a5607e341/250x250-000000-80-0-0.jpg"
     }
 }
