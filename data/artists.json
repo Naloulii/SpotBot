@@ -8134,5 +8134,25 @@
     "sloful": {
         "nom": "Sloful",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8479f69e4ce94bcacf8234e5ed84147d/250x250-000000-80-0-0.jpg"
+    },
+    "kyro holmes": {
+        "nom": "Kyro Holmes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/04cfd983fc0999bd30f952aac1ccfb30/250x250-000000-80-0-0.jpg"
+    },
+    "stanwill": {
+        "nom": "StanWill",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d8a8a636d1e6289a841697be6f41c733/250x250-000000-80-0-0.jpg"
+    },
+    "deprived": {
+        "nom": "deprived",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d39a7fb6af5eeb35d3200622eac9b080/250x250-000000-80-0-0.jpg"
+    },
+    "teek4y": {
+        "nom": "Teek4y",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6b40e10354fec3562366418ebcade76a/250x250-000000-80-0-0.jpg"
+    },
+    "kairo keyz": {
+        "nom": "Kairo Keyz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c5f52194e510c78eca4392124a616d15/250x250-000000-80-0-0.jpg"
     }
 }
