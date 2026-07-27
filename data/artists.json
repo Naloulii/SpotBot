@@ -8314,5 +8314,41 @@
     "ashes remain": {
         "nom": "Ashes Remain",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4a3ad8a446ab368ab27e3f898b0e6274/250x250-000000-80-0-0.jpg"
+    },
+    "fall out boy": {
+        "nom": "Fall Out Boy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f53434390dd76ef724cdc26df7a0b64d/250x250-000000-80-0-0.jpg"
+    },
+    "carys": {
+        "nom": "CARYS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb6082dacd1e8e544aeb401127828df8/250x250-000000-80-0-0.jpg"
+    },
+    "calogero": {
+        "nom": "Calogero",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/163bf343e9be566315cf34b6f88b3211/250x250-000000-80-0-0.jpg"
+    },
+    "les cowboys fringants": {
+        "nom": "Les Cowboys Fringants",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/daca05abfeb2a86390da96d3ec892c13/250x250-000000-80-0-0.jpg"
+    },
+    "onlap": {
+        "nom": "Onlap",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0fcdd20ae73ce2605ab55e38d87a043f/250x250-000000-80-0-0.jpg"
+    },
+    "nadi": {
+        "nom": "Nadi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bc65d5f322ca201068b9d9b31ac416c9/250x250-000000-80-0-0.jpg"
+    },
+    "benidel": {
+        "nom": "Benidel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e81f4aff306fcaac420f7cdd16818961/250x250-000000-80-0-0.jpg"
+    },
+    "yuston xiii": {
+        "nom": "Yuston XIII",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1b3c95d69fd1a21effb7d94dc8b07ddf/250x250-000000-80-0-0.jpg"
+    },
+    "allt": {
+        "nom": "Allt",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d801c291e0207aec61ae15f8c29d13b0/250x250-000000-80-0-0.jpg"
     }
 }
