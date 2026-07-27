@@ -7954,5 +7954,29 @@
     "geno w.i.p.": {
         "nom": "GENO W.I.P.",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a832112fcd7f6ba11ba75bd1984ae2db/250x250-000000-80-0-0.jpg"
+    },
+    "lil suave": {
+        "nom": "Lil Suave",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/68cc735fdc297efb55bb356311b26039/250x250-000000-80-0-0.jpg"
+    },
+    "56ca$h": {
+        "nom": "56ca$h",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e5233364df91d07eb6365174d8e4bb37/250x250-000000-80-0-0.jpg"
+    },
+    "philo": {
+        "nom": "PHILO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b9053bfcd0d90ab1da5a7f953dfd19e4/250x250-000000-80-0-0.jpg"
+    },
+    "el hajji": {
+        "nom": "El Hajji",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc5b803746f3d48331fddf91d54280ab/250x250-000000-80-0-0.jpg"
+    },
+    "tweaknh": {
+        "nom": "Tweaknh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/638e0c517d6fa9af99423d134fe62cad/250x250-000000-80-0-0.jpg"
+    },
+    "rawen": {
+        "nom": "Rawen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/801e5e6d3e6ae9eb5ff98e134066d081/250x250-000000-80-0-0.jpg"
     }
 }
