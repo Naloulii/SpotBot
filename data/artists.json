@@ -8098,5 +8098,21 @@
     "b-mill": {
         "nom": "B-Mill",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7ccc04fe9b15cc25461ce8174abfbe72/250x250-000000-80-0-0.jpg"
+    },
+    "juggsi": {
+        "nom": "juggsi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bcdab08165caf0e0c343a0215a0b6421/250x250-000000-80-0-0.jpg"
+    },
+    "kyra": {
+        "nom": "kyra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a5bc3086220d1528c129ff2b0347d84a/250x250-000000-80-0-0.jpg"
+    },
+    "justvigi": {
+        "nom": "JustViGi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/99628f5b06783d402ee6ff6e8b101b76/250x250-000000-80-0-0.jpg"
+    },
+    "yvngxchris": {
+        "nom": "yvngxchris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32d30a821911fa3c5cc439db97fdcd12/250x250-000000-80-0-0.jpg"
     }
 }
