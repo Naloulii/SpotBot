@@ -7914,5 +7914,13 @@
     "denzo": {
         "nom": "DENZO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8c3c00364724eb5e87cc97cfee80d4d6/250x250-000000-80-0-0.jpg"
+    },
+    "skywave": {
+        "nom": "skywave",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d8e575363c0c550345f1cfd9a544e7d/250x250-000000-80-0-0.jpg"
+    },
+    "zo hendrixx": {
+        "nom": "Zo Hendrixx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/37aa1a4984f0d85cc4b8db411f01466b/250x250-000000-80-0-0.jpg"
     }
 }
