@@ -8250,5 +8250,9 @@
     "gemen": {
         "nom": "Gemen",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/17e272cb81defe5670d7c985b2b8735d/250x250-000000-80-0-0.jpg"
+    },
+    "goomp": {
+        "nom": "Goomp",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6896156b0b7b534df98bad9e0ca38f69/250x250-000000-80-0-0.jpg"
     }
 }
