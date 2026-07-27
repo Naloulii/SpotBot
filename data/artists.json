@@ -8254,5 +8254,9 @@
     "goomp": {
         "nom": "Goomp",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6896156b0b7b534df98bad9e0ca38f69/250x250-000000-80-0-0.jpg"
+    },
+    "vive": {
+        "nom": "Vive",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3791b52b41bb9391214ca4f23a4c2023/250x250-000000-80-0-0.jpg"
     }
 }
