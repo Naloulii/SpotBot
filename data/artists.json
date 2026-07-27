@@ -8222,5 +8222,17 @@
     "gen": {
         "nom": "Gen",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b688e2a1283bd169efcc549e70ccd9fc/250x250-000000-80-0-0.jpg"
+    },
+    "jona": {
+        "nom": "Jona",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7e1bd0d0956c48e66232902405b5b520/250x250-000000-80-0-0.jpg"
+    },
+    "jds": {
+        "nom": "JDS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba38ee33dcadd369c0bb6f4bb613aa82/250x250-000000-80-0-0.jpg"
+    },
+    "misié sadik": {
+        "nom": "Misié Sadik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0f1e0e1872501b342ba59738ac498e3c/250x250-000000-80-0-0.jpg"
     }
 }
