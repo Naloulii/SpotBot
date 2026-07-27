@@ -8258,5 +8258,17 @@
     "vive": {
         "nom": "Vive",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3791b52b41bb9391214ca4f23a4c2023/250x250-000000-80-0-0.jpg"
+    },
+    "pivi": {
+        "nom": "Pivi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fca712535181d69f44d748ee8261f8ed/250x250-000000-80-0-0.jpg"
+    },
+    "yata": {
+        "nom": "Yata",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bd10e3f622bd9affca6e187a91526c0f/250x250-000000-80-0-0.jpg"
+    },
+    "9inee": {
+        "nom": "9inee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/64ce99e3a9f821d352e9017ffe852f65/250x250-000000-80-0-0.jpg"
     }
 }
