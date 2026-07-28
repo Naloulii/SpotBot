@@ -8618,5 +8618,9 @@
     "alice duport-percier": {
         "nom": "Alice Duport-Percier",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5868aa0893567a65472ca726c55cec53/250x250-000000-80-0-0.jpg"
+    },
+    "lvusm": {
+        "nom": "lvusm",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb58a87057967a9ab1772f5bc863e1cc/250x250-000000-80-0-0.jpg"
     }
 }
