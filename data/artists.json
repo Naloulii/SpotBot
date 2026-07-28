@@ -8430,5 +8430,29 @@
     "wowaka": {
         "nom": "wowaka",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/17bbc4ff8d515c9c8c3cbd5318ee368d/250x250-000000-80-0-0.jpg"
+    },
+    "cavetown": {
+        "nom": "Cavetown",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/75a11215087b9952d40581c0c08e1eee/250x250-000000-80-0-0.jpg"
+    },
+    "草薙寧々": {
+        "nom": "草薙寧々",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b17fd19e6425926d5550822cce5e84c9/250x250-000000-80-0-0.jpg"
+    },
+    "ネネロボ": {
+        "nom": "ネネロボ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b17fd19e6425926d5550822cce5e84c9/250x250-000000-80-0-0.jpg"
+    },
+    "ミクダヨー": {
+        "nom": "ミクダヨー",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b17fd19e6425926d5550822cce5e84c9/250x250-000000-80-0-0.jpg"
+    },
+    "kagamine len": {
+        "nom": "Kagamine Len",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/917b5ce21034c1e7b560f8a7c6b16026/250x250-000000-80-0-0.jpg"
+    },
+    "kaito": {
+        "nom": "KAITO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/359e1c3011752349ac393ff728346f68/250x250-000000-80-0-0.jpg"
     }
 }
