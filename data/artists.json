@@ -8546,5 +8546,9 @@
     "alex grox": {
         "nom": "Alex Grox",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8afb323339ba820739237e46fb6966ab/250x250-000000-80-0-0.jpg"
+    },
+    "kanaria": {
+        "nom": "Kanaria",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3ee917a5fd4818dfa7d533078845799/250x250-000000-80-0-0.jpg"
     }
 }
