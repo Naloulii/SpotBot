@@ -8534,5 +8534,9 @@
     "sasakure.uk": {
         "nom": "sasakure.UK",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/30bc7218c44960ab5b4b6cbf66cc9405/250x250-000000-80-0-0.jpg"
+    },
+    "iosys": {
+        "nom": "IOSYS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e7d1d9c14a01009d179878e075d66ca2/250x250-000000-80-0-0.jpg"
     }
 }
