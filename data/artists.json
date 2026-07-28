@@ -8566,5 +8566,29 @@
     "will fox": {
         "nom": "Will Fox",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/08ee2355003085d62549b45062f59dc0/250x250-000000-80-0-0.jpg"
+    },
+    "adolf nomura": {
+        "nom": "Adolf Nomura",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef60b260e8b294e25fc8c70def0d53c0/250x250-000000-80-0-0.jpg"
+    },
+    "katya lel": {
+        "nom": "Katya Lel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/06cc19345a28a8c29c6867b85ccfc07f/250x250-000000-80-0-0.jpg"
+    },
+    "sia": {
+        "nom": "Sia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5dbd10f0ec6063bde7a78f5cb98e350d/250x250-000000-80-0-0.jpg"
+    },
+    "@mrks": {
+        "nom": "@mrks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b2545d34968e0387fa8e24f80eb879a4/250x250-000000-80-0-0.jpg"
+    },
+    "khya": {
+        "nom": "KHYA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ab2a806aea79aae8324e5b1e03bec1f0/250x250-000000-80-0-0.jpg"
+    },
+    "mirasia": {
+        "nom": "Mirasia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2f4ae20a2d2d1b1c633d8036407c84cf/250x250-000000-80-0-0.jpg"
     }
 }
