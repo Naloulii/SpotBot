@@ -8414,5 +8414,21 @@
     "gumi": {
         "nom": "GUMI",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0b52857961590cb33d11062027f4160b/250x250-000000-80-0-0.jpg"
+    },
+    "wonderful★opportunity!": {
+        "nom": "Wonderful★opportunity!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/17968597f3c900baab38f5e1ab526757/250x250-000000-80-0-0.jpg"
+    },
+    "neru": {
+        "nom": "Neru",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "spectrum": {
+        "nom": "Spectrum",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7f13ced732d5ddbd89898a46ff304bef/250x250-000000-80-0-0.jpg"
+    },
+    "wowaka": {
+        "nom": "wowaka",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/17bbc4ff8d515c9c8c3cbd5318ee368d/250x250-000000-80-0-0.jpg"
     }
 }
