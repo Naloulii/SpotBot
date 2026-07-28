@@ -8594,5 +8594,9 @@
     "blackpink": {
         "nom": "BLACKPINK",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/89675729453893a91be35bde691050ff/250x250-000000-80-0-0.jpg"
+    },
+    "wejdene": {
+        "nom": "Wejdene",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c976384c170d6ba0d47e1bbb46fa9644/250x250-000000-80-0-0.jpg"
     }
 }
