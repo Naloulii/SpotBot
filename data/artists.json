@@ -8602,5 +8602,21 @@
     "ariana grande": {
         "nom": "Ariana Grande",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3504ffe2519090026bc359b689d22e20/250x250-000000-80-0-0.jpg"
+    },
+    "neko": {
+        "nom": "neko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/186c1806c8df43fe838d23569eb440ce/250x250-000000-80-0-0.jpg"
+    },
+    "connor kauffman": {
+        "nom": "Connor Kauffman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dd7f427e410db79d2d9052c713cf59e6/250x250-000000-80-0-0.jpg"
+    },
+    "lorien testard": {
+        "nom": "Lorien Testard",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aecd1456085a6a2698c83921a8668e15/250x250-000000-80-0-0.jpg"
+    },
+    "alice duport-percier": {
+        "nom": "Alice Duport-Percier",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5868aa0893567a65472ca726c55cec53/250x250-000000-80-0-0.jpg"
     }
 }
