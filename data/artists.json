@@ -8402,5 +8402,17 @@
     "heavenwraith": {
         "nom": "Heavenwraith",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3a18f532be6a7731961103acf50ed867/250x250-000000-80-0-0.jpg"
+    },
+    "bitbreaker": {
+        "nom": "bitbreaker",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed597d6bac81bac747f05dce514990c7/250x250-000000-80-0-0.jpg"
+    },
+    "temcandoanything": {
+        "nom": "temcandoanything",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "gumi": {
+        "nom": "GUMI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b52857961590cb33d11062027f4160b/250x250-000000-80-0-0.jpg"
     }
 }
