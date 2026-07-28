@@ -8562,5 +8562,9 @@
     "3010": {
         "nom": "3010",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/26cc4bf913f05c5bea9b0e51233e188a/250x250-000000-80-0-0.jpg"
+    },
+    "will fox": {
+        "nom": "Will Fox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/08ee2355003085d62549b45062f59dc0/250x250-000000-80-0-0.jpg"
     }
 }
