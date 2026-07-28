@@ -8514,5 +8514,21 @@
     "atlus game music": {
         "nom": "ATLUS GAME MUSIC",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d750f18911cd77dde4335f36e1bd54fe/250x250-000000-80-0-0.jpg"
+    },
+    "nakimushi": {
+        "nom": "Nakimushi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c75d9c330d5dc967032b887afebb3f01/250x250-000000-80-0-0.jpg"
+    },
+    "biz": {
+        "nom": "biz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9480a2b73c25f947bc8284e0bee397d9/250x250-000000-80-0-0.jpg"
+    },
+    "iyowa": {
+        "nom": "Iyowa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/97f22add541183a4945dd732775c60bc/250x250-000000-80-0-0.jpg"
+    },
+    "rei adachi": {
+        "nom": "Rei Adachi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4fb570b41b4d5f28ea2ec3e22d232948/250x250-000000-80-0-0.jpg"
     }
 }
