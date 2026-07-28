@@ -8654,5 +8654,17 @@
     "nanoray": {
         "nom": "NANORAY",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b7c1b83886c2ef573c0d9dfb103b4207/250x250-000000-80-0-0.jpg"
+    },
+    "sick hack": {
+        "nom": "SICK HACK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b8829450b888c15c17a9b743c66cc8b3/250x250-000000-80-0-0.jpg"
+    },
+    "yoasobi": {
+        "nom": "YOASOBI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2cbfaf626a591e162bfcc2b4b0214217/250x250-000000-80-0-0.jpg"
+    },
+    "moppysound": {
+        "nom": "MoppySound",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bcd118dd4b2697c9a2397e6d56c740ee/250x250-000000-80-0-0.jpg"
     }
 }
