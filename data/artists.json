@@ -8494,5 +8494,25 @@
     "fuwamoco": {
         "nom": "FUWAMOCO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "eggオールスターズ": {
+        "nom": "eggオールスターズ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8c1aae5e29064078924471b2fca094d0/250x250-000000-80-0-0.jpg"
+    },
+    "lotus juice": {
+        "nom": "Lotus Juice",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a0b2716b74dc4d63f50563c3cacc207c/250x250-000000-80-0-0.jpg"
+    },
+    "azumi takahashi": {
+        "nom": "Azumi Takahashi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b86b6d8f8231971f151c8a904968a4a7/250x250-000000-80-0-0.jpg"
+    },
+    "アトラスサウンドチーム": {
+        "nom": "アトラスサウンドチーム",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c02a96b9fbcead2879a2e902c989e8a/250x250-000000-80-0-0.jpg"
+    },
+    "atlus game music": {
+        "nom": "ATLUS GAME MUSIC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d750f18911cd77dde4335f36e1bd54fe/250x250-000000-80-0-0.jpg"
     }
 }
