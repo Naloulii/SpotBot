@@ -8454,5 +8454,33 @@
     "kaito": {
         "nom": "KAITO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/359e1c3011752349ac393ff728346f68/250x250-000000-80-0-0.jpg"
+    },
+    "グラスワンダー (cv. 前田玲奈)": {
+        "nom": "グラスワンダー (CV. 前田玲奈)",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7e4ecb45d493ced9a42794bbece6141c/250x250-000000-80-0-0.jpg"
+    },
+    "エルコンドルパサー (cv. 髙橋ミナミ)": {
+        "nom": "エルコンドルパサー (CV. 髙橋ミナミ)",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/384b60af1c281d2e957258270aeb15ac/250x250-000000-80-0-0.jpg"
+    },
+    "キングヘイロー (cv. 佐伯伊織)": {
+        "nom": "キングヘイロー (CV. 佐伯伊織)",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/908b73873fa940635e72c6e9a8e76806/250x250-000000-80-0-0.jpg"
+    },
+    "シュヴァルグラン (cv. 夏吉ゆうこ)": {
+        "nom": "シュヴァルグラン (CV. 夏吉ゆうこ)",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/932222277cd205f59420743601517eb7/250x250-000000-80-0-0.jpg"
+    },
+    "ヴィブロス (cv. 伊藤彩沙)": {
+        "nom": "ヴィブロス (CV. 伊藤彩沙)",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/908b73873fa940635e72c6e9a8e76806/250x250-000000-80-0-0.jpg"
+    },
+    "lamazep": {
+        "nom": "LamazeP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/347f33ff13172a8dda02bf9683d62fd1/250x250-000000-80-0-0.jpg"
+    },
+    "slave.v-v-r": {
+        "nom": "SLAVE.V-V-R",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e1155513304de527f9d780d299135cc3/250x250-000000-80-0-0.jpg"
     }
 }
