@@ -8590,5 +8590,9 @@
     "mirasia": {
         "nom": "Mirasia",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2f4ae20a2d2d1b1c633d8036407c84cf/250x250-000000-80-0-0.jpg"
+    },
+    "blackpink": {
+        "nom": "BLACKPINK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/89675729453893a91be35bde691050ff/250x250-000000-80-0-0.jpg"
     }
 }
