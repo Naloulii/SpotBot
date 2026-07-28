@@ -8638,5 +8638,21 @@
     "lapsuceur": {
         "nom": "Lapsuceur",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fb328384052fdc68a98a46ad528989e0/250x250-000000-80-0-0.jpg"
+    },
+    "runtown": {
+        "nom": "Runtown",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/414cd00f16e670cd03e3ad6bc6053062/250x250-000000-80-0-0.jpg"
+    },
+    "salvia palth": {
+        "nom": "salvia palth",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f9248096c89e69e2d1f5c3ef5074f446/250x250-000000-80-0-0.jpg"
+    },
+    "sexyy red": {
+        "nom": "Sexyy Red",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5b4a7d84536a2f0edde7eca15469057d/250x250-000000-80-0-0.jpg"
+    },
+    "nanoray": {
+        "nom": "NANORAY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b7c1b83886c2ef573c0d9dfb103b4207/250x250-000000-80-0-0.jpg"
     }
 }
