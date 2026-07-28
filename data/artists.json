@@ -8482,5 +8482,17 @@
     "slave.v-v-r": {
         "nom": "SLAVE.V-V-R",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e1155513304de527f9d780d299135cc3/250x250-000000-80-0-0.jpg"
+    },
+    "kairikibear": {
+        "nom": "Kairikibear",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fd87752f75c7abdad9d92208ff3242b6/250x250-000000-80-0-0.jpg"
+    },
+    "pinocchiop": {
+        "nom": "PinocchioP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ff98fd27ec640a35733bdc0c5b1db36a/250x250-000000-80-0-0.jpg"
+    },
+    "fuwamoco": {
+        "nom": "FUWAMOCO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
     }
 }
