@@ -8538,5 +8538,13 @@
     "iosys": {
         "nom": "IOSYS",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e7d1d9c14a01009d179878e075d66ca2/250x250-000000-80-0-0.jpg"
+    },
+    "shaz": {
+        "nom": "Shaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9ea55fd26ff85ee18aabc7aa1c1d51d0/250x250-000000-80-0-0.jpg"
+    },
+    "alex grox": {
+        "nom": "Alex Grox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8afb323339ba820739237e46fb6966ab/250x250-000000-80-0-0.jpg"
     }
 }
