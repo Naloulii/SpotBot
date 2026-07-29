@@ -8710,5 +8710,25 @@
     "keeqaid": {
         "nom": "Keeqaid",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dbfd42fbc639f48017033f2611174331/250x250-000000-80-0-0.jpg"
+    },
+    "two feet": {
+        "nom": "Two Feet",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6ce2651bf72d6d06d5676cd44da19505/250x250-000000-80-0-0.jpg"
+    },
+    "sam tinnesz": {
+        "nom": "Sam Tinnesz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b380133e3c19407778d1af57000f30b/250x250-000000-80-0-0.jpg"
+    },
+    "yacht money": {
+        "nom": "Yacht Money",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3f13d2642aa4a885663d77a3c063e3f8/250x250-000000-80-0-0.jpg"
+    },
+    "k'naan": {
+        "nom": "K'NAAN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2e5f38f01eab6cdb177c642e23064622/250x250-000000-80-0-0.jpg"
+    },
+    "adam levine": {
+        "nom": "Adam Levine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d3c22401001030ccb296633472f803da/250x250-000000-80-0-0.jpg"
     }
 }
