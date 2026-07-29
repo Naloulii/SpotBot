@@ -8698,5 +8698,13 @@
     "n dirty deh": {
         "nom": "N Dirty Deh",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f67248fb29af0afd72f0c372d5997611/250x250-000000-80-0-0.jpg"
+    },
+    "10x": {
+        "nom": "10X",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2d2b3369d6c27cd20dee7ac24321da28/250x250-000000-80-0-0.jpg"
+    },
+    "adèle castillon": {
+        "nom": "Adèle Castillon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6073063bd9c66739a8722e8118d3116b/250x250-000000-80-0-0.jpg"
     }
 }
