@@ -8730,5 +8730,37 @@
     "adam levine": {
         "nom": "Adam Levine",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d3c22401001030ccb296633472f803da/250x250-000000-80-0-0.jpg"
+    },
+    "k/da": {
+        "nom": "K/DA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e347783eaab94f2bb84c55b6cad7f532/250x250-000000-80-0-0.jpg"
+    },
+    "madison beer": {
+        "nom": "Madison Beer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65eb085ed3f6bcaa07ba0017acc04767/250x250-000000-80-0-0.jpg"
+    },
+    "kim petras": {
+        "nom": "Kim Petras",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0ed25ac85e35e620c0bf02dcbcae7878/250x250-000000-80-0-0.jpg"
+    },
+    "jann": {
+        "nom": "Jann",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/74aa42ab7448e86a6c54cf329bd7e216/250x250-000000-80-0-0.jpg"
+    },
+    "lune": {
+        "nom": "Lune",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1200ab1e03cae83e483aa48461db5988/250x250-000000-80-0-0.jpg"
+    },
+    "mikeeysmind": {
+        "nom": "mikeeysmind",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3fae18af528f94051fc30bb30376969c/250x250-000000-80-0-0.jpg"
+    },
+    "unjaps": {
+        "nom": "Unjaps",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3fae18af528f94051fc30bb30376969c/250x250-000000-80-0-0.jpg"
+    },
+    "ruelle": {
+        "nom": "Ruelle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5082eabccdb9d825a1c938008ebba3bf/250x250-000000-80-0-0.jpg"
     }
 }
