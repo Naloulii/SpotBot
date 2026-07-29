@@ -3,7 +3,8 @@
         {
             "date": "29/07/2026 19:19",
             "track_id": "5ljMlD10En5rRGZU0cs2Np",
-            "status": "En cours..."
+            "status": "⏱️ Écouté pendant 2m 19s",
+            "temps_ecoute_secondes": 139.8
         },
         {
             "date": "29/07/2026 19:17",
@@ -4636,7 +4637,8 @@
         {
             "date": "29/07/2026 19:21",
             "track_id": "3lTL4LdFKVF51lseI2nk5D",
-            "status": "En cours..."
+            "status": "⏱️ Écouté pendant 0m 40s",
+            "temps_ecoute_secondes": 40.8
         },
         {
             "date": "29/07/2026 17:18",
