@@ -8678,5 +8678,17 @@
     "s-pion": {
         "nom": "S-Pion",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/36b1c0a81c04c8f8ead1b1508d9d080d/250x250-000000-80-0-0.jpg"
+    },
+    "hallow": {
+        "nom": "hallow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/acea0289f181f74ada9e648e4ecf6ff2/250x250-000000-80-0-0.jpg"
+    },
+    "castle hearts": {
+        "nom": "castle hearts",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ad3c176354a79355f7dd70a9656b6262/250x250-000000-80-0-0.jpg"
+    },
+    "sartuno": {
+        "nom": "Sartuno",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/71ad0e6e9de0ea1ca875ad5a5cf4df1e/250x250-000000-80-0-0.jpg"
     }
 }
