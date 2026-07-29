@@ -8798,5 +8798,13 @@
     "olivia": {
         "nom": "Olivia",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6ab6615f590f161c5f3b2ea1231d5590/250x250-000000-80-0-0.jpg"
+    },
+    "merryattack": {
+        "nom": "Merryattack",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2c8137ea6c377c64911dd8b159620f5b/250x250-000000-80-0-0.jpg"
+    },
+    "avanttekk": {
+        "nom": "AvantTEKK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fc5d9a1e972d0121f45f5fde05301a0a/250x250-000000-80-0-0.jpg"
     }
 }
