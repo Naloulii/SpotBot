@@ -8814,5 +8814,9 @@
     "aespa": {
         "nom": "aespa",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c963d7469a999feb764ad6f16c31dd74/250x250-000000-80-0-0.jpg"
+    },
+    "prodbysaint": {
+        "nom": "prodbysaint",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ae0e5c2da95015f41a47b5cea5d7b877/250x250-000000-80-0-0.jpg"
     }
 }
