@@ -8666,5 +8666,17 @@
     "moppysound": {
         "nom": "MoppySound",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bcd118dd4b2697c9a2397e6d56c740ee/250x250-000000-80-0-0.jpg"
+    },
+    "bizon": {
+        "nom": "Bizon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5093e2923611e233ff3e67f9affb0517/250x250-000000-80-0-0.jpg"
+    },
+    "ilinas": {
+        "nom": "Ilinas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0f5f0e176c544db5f89b5cd837e279aa/250x250-000000-80-0-0.jpg"
+    },
+    "s-pion": {
+        "nom": "S-Pion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/36b1c0a81c04c8f8ead1b1508d9d080d/250x250-000000-80-0-0.jpg"
     }
 }
