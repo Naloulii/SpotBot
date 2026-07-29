@@ -8762,5 +8762,13 @@
     "ruelle": {
         "nom": "Ruelle",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5082eabccdb9d825a1c938008ebba3bf/250x250-000000-80-0-0.jpg"
+    },
+    "lewis hanton": {
+        "nom": "Lewis Hanton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c11778bd25226a79e7628549537b1850/250x250-000000-80-0-0.jpg"
+    },
+    "bullish": {
+        "nom": "bullish",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed063216555fd5dc2cb0c7ca6aef9f92/250x250-000000-80-0-0.jpg"
     }
 }
