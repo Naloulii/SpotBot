@@ -8902,5 +8902,9 @@
     "piano zerol": {
         "nom": "Piano ZeroL",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3caa49f3c6e7cb27194fe86782491405/250x250-000000-80-0-0.jpg"
+    },
+    "noel.smt": {
+        "nom": "noel.smt",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9856ed926bd3038cfa71ba3a0f8ff575/250x250-000000-80-0-0.jpg"
     }
 }
