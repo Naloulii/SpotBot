@@ -8930,5 +8930,13 @@
     "chezile": {
         "nom": "Chezile",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b88626f2b5f40e1183dd7d3a814f4e64/250x250-000000-80-0-0.jpg"
+    },
+    "black eyed peas": {
+        "nom": "Black Eyed Peas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bacc79766e166a3280cd2d560cf1df6e/250x250-000000-80-0-0.jpg"
+    },
+    "isabel larosa": {
+        "nom": "Isabel LaRosa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1b36e61a9a3bf5eeacb5e5699b969da5/250x250-000000-80-0-0.jpg"
     }
 }
