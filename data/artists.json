@@ -8890,5 +8890,17 @@
     "moayad aljabal": {
         "nom": "Moayad Aljabal",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/26db20cd09ed1819fcdbd93e76c42737/250x250-000000-80-0-0.jpg"
+    },
+    "hanppyeompiano": {
+        "nom": "HANPPYEOMPIANO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1f5dca50c0bf0a8f47f69f379f4a9a2/250x250-000000-80-0-0.jpg"
+    },
+    "the dreamer piano": {
+        "nom": "The Dreamer Piano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a687e94bf34dc389fe6a379ae9b48525/250x250-000000-80-0-0.jpg"
+    },
+    "piano zerol": {
+        "nom": "Piano ZeroL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3caa49f3c6e7cb27194fe86782491405/250x250-000000-80-0-0.jpg"
     }
 }
