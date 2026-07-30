@@ -8922,5 +8922,13 @@
     "fonzi m": {
         "nom": "Fonzi M",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/06637b5245764dff37866936fd275199/250x250-000000-80-0-0.jpg"
+    },
+    "maroon 5": {
+        "nom": "Maroon 5",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bbb526b9666c7e31dee295bcabbbdd8e/250x250-000000-80-0-0.jpg"
+    },
+    "chezile": {
+        "nom": "Chezile",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b88626f2b5f40e1183dd7d3a814f4e64/250x250-000000-80-0-0.jpg"
     }
 }
