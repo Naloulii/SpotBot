@@ -8906,5 +8906,9 @@
     "noel.smt": {
         "nom": "noel.smt",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9856ed926bd3038cfa71ba3a0f8ff575/250x250-000000-80-0-0.jpg"
+    },
+    "gabriel piano": {
+        "nom": "Gabriel Piano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b2fdfc797cc2d35de091f154bb88ac49/250x250-000000-80-0-0.jpg"
     }
 }
