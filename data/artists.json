@@ -8910,5 +8910,13 @@
     "gabriel piano": {
         "nom": "Gabriel Piano",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b2fdfc797cc2d35de091f154bb88ac49/250x250-000000-80-0-0.jpg"
+    },
+    "alex_g_offline": {
+        "nom": "alex_g_offline",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df3363c203670a766e92e161d2356bdb/250x250-000000-80-0-0.jpg"
+    },
+    "limbus vita": {
+        "nom": "limbus vita",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9ff3def57b222693fd1bf24f19fcdb18/250x250-000000-80-0-0.jpg"
     }
 }
