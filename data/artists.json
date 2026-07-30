@@ -8870,5 +8870,9 @@
     "sail north": {
         "nom": "Sail North",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/51eaf5827bb806aba09419e9b141189e/250x250-000000-80-0-0.jpg"
+    },
+    "jsx": {
+        "nom": "JSX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/454bf621f12d91126ab05c46aefd9637/250x250-000000-80-0-0.jpg"
     }
 }
