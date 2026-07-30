@@ -8838,5 +8838,33 @@
     "栄逢凪乃 (cv.瀬戸麻沙美)": {
         "nom": "栄逢凪乃 (CV.瀬戸麻沙美)",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d54cd992e5b90765ff24f7897d18a3c2/250x250-000000-80-0-0.jpg"
+    },
+    "hide waldo": {
+        "nom": "hide waldo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b4cfe0881397b0f63e36b344008a5eeb/250x250-000000-80-0-0.jpg"
+    },
+    "almiramcs": {
+        "nom": "AlmiraMcs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2714dfbba54b0716068c764b2f4b5bd9/250x250-000000-80-0-0.jpg"
+    },
+    "slander": {
+        "nom": "SLANDER",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ac7831e650097a6862399311440ab87f/250x250-000000-80-0-0.jpg"
+    },
+    "dylan matthew": {
+        "nom": "Dylan Matthew",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d2047a3a04274997f964c81822b51128/250x250-000000-80-0-0.jpg"
+    },
+    "井上馨太": {
+        "nom": "井上馨太",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "ramin djawadi": {
+        "nom": "Ramin Djawadi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6dc9c71e0f7e821f2542fff46d2179c1/250x250-000000-80-0-0.jpg"
+    },
+    "tom morello": {
+        "nom": "Tom Morello",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3c1bfafe93a5d686f7494366d9f5926/250x250-000000-80-0-0.jpg"
     }
 }
