@@ -8874,5 +8874,21 @@
     "jsx": {
         "nom": "JSX",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/454bf621f12d91126ab05c46aefd9637/250x250-000000-80-0-0.jpg"
+    },
+    "valentino coleman": {
+        "nom": "Valentino Coleman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/052f3a7c336fd16752af1c89bba0cbbb/250x250-000000-80-0-0.jpg"
+    },
+    "penguin piano": {
+        "nom": "Penguin Piano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/104c73bd16338aa495946a130a1fce31/250x250-000000-80-0-0.jpg"
+    },
+    "freya ridings": {
+        "nom": "Freya Ridings",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d4bdd662d1f3669402d5e24f8349b62/250x250-000000-80-0-0.jpg"
+    },
+    "moayad aljabal": {
+        "nom": "Moayad Aljabal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/26db20cd09ed1819fcdbd93e76c42737/250x250-000000-80-0-0.jpg"
     }
 }
