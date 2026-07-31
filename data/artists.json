@@ -8942,5 +8942,9 @@
     "100filtre": {
         "nom": "100filtre",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/be9841e5a5a781e5bb83296fc404f70d/250x250-000000-80-0-0.jpg"
+    },
+    "francis mercier": {
+        "nom": "Francis Mercier",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c7826ea06c80c19ded5608cd0cf4461b/250x250-000000-80-0-0.jpg"
     }
 }
