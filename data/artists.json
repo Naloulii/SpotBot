@@ -8950,5 +8950,13 @@
     "luzyqv": {
         "nom": "Luzyqv",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4794ad0bae0ac71e2e7db14f128ee7a6/250x250-000000-80-0-0.jpg"
+    },
+    "twice": {
+        "nom": "TWICE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0429b4a65b3fb99a31f379a6b6b0d55d/250x250-000000-80-0-0.jpg"
+    },
+    "xlov": {
+        "nom": "XLOV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/556528303b96452a6b1e971fb41cfc07/250x250-000000-80-0-0.jpg"
     }
 }
