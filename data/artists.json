@@ -8978,5 +8978,13 @@
     "柊マグネタイト": {
         "nom": "柊マグネタイト",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c773dce66f7bb4c362bcf90f47dc5d47/250x250-000000-80-0-0.jpg"
+    },
+    "d2s1": {
+        "nom": "d2s1",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/523f304bb7273f04e25760ffbd64b456/250x250-000000-80-0-0.jpg"
+    },
+    "thistooshallpass": {
+        "nom": "thistooshallpass",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32e56ab81f0f614012cdacb8b15aeb37/250x250-000000-80-0-0.jpg"
     }
 }
