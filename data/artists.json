@@ -8958,5 +8958,13 @@
     "xlov": {
         "nom": "XLOV",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/556528303b96452a6b1e971fb41cfc07/250x250-000000-80-0-0.jpg"
+    },
+    "bl8m": {
+        "nom": "BL8M",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2db83da218346996e1c66c213c0186af/250x250-000000-80-0-0.jpg"
+    },
+    "rubyeye": {
+        "nom": "Rubyeye",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1c14aa7e8ad0e5476912e7ebbd5eff31/250x250-000000-80-0-0.jpg"
     }
 }
