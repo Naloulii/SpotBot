@@ -8986,5 +8986,13 @@
     "thistooshallpass": {
         "nom": "thistooshallpass",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/32e56ab81f0f614012cdacb8b15aeb37/250x250-000000-80-0-0.jpg"
+    },
+    "fifth harmony": {
+        "nom": "Fifth Harmony",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/77c245632646ec9245f6233e61d78da2/250x250-000000-80-0-0.jpg"
+    },
+    "kid ink": {
+        "nom": "Kid Ink",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32bb7346025eda3250ca0756c79926d7/250x250-000000-80-0-0.jpg"
     }
 }
