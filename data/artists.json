@@ -9002,5 +9002,9 @@
     "ruoma": {
         "nom": "ruoma",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f9cb0f93fe6cbd959584d080df01d249/250x250-000000-80-0-0.jpg"
+    },
+    "owata-p": {
+        "nom": "Owata-P",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/99ea97e80b7225166fa33f87d4d1f694/250x250-000000-80-0-0.jpg"
     }
 }
