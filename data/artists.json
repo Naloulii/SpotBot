@@ -9022,5 +9022,21 @@
     "junel": {
         "nom": "Junel",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b6353bfcbb1484bdcd9787e547a701f1/250x250-000000-80-0-0.jpg"
+    },
+    "jkdm": {
+        "nom": "JKDM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e1a88c7375c078284f49421eac6da4b8/250x250-000000-80-0-0.jpg"
+    },
+    "negrito": {
+        "nom": "Negrito",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "elams": {
+        "nom": "Elams",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb492b57d9afd5ac4e16b48221782ecc/250x250-000000-80-0-0.jpg"
+    },
+    "ohmondieusalva": {
+        "nom": "Ohmondieusalva",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f13dececb555c935976c2529c3ca2c9e/250x250-000000-80-0-0.jpg"
     }
 }
