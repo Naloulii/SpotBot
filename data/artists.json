@@ -9106,5 +9106,21 @@
     "sam's": {
         "nom": "Sam's",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2b9eb32c25963db0c474be9424bb7d63/250x250-000000-80-0-0.jpg"
+    },
+    "katseye": {
+        "nom": "KATSEYE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f0f93a0c5ce76e26144880c17568736d/250x250-000000-80-0-0.jpg"
+    },
+    "maple": {
+        "nom": "Maple",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c97cd24203fbda25830ed086fa0bd917/250x250-000000-80-0-0.jpg"
+    },
+    "meghan trainor": {
+        "nom": "Meghan Trainor",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cce89f3297e257613eea9c090bab6b02/250x250-000000-80-0-0.jpg"
+    },
+    "loren gray": {
+        "nom": "Loren Gray",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
