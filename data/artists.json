@@ -9122,5 +9122,21 @@
     "loren gray": {
         "nom": "Loren Gray",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "kelis": {
+        "nom": "Kelis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d32fa4e3753e81b7844acc1db80ca14/250x250-000000-80-0-0.jpg"
+    },
+    "vendredi sur mer": {
+        "nom": "Vendredi sur Mer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/59ad9eb9f118d0bcaf9bff49e59f09b7/250x250-000000-80-0-0.jpg"
+    },
+    "4rxh1v3": {
+        "nom": "4rxh1v3",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/745a88f9acf288fcb59648cbbdc98852/250x250-000000-80-0-0.jpg"
+    },
+    "highvyn": {
+        "nom": "Highvyn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8f92e23f1d1621e35e2bb764dd0df70/250x250-000000-80-0-0.jpg"
     }
 }
