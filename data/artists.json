@@ -9038,5 +9038,25 @@
     "ohmondieusalva": {
         "nom": "Ohmondieusalva",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f13dececb555c935976c2529c3ca2c9e/250x250-000000-80-0-0.jpg"
+    },
+    "sencoprod": {
+        "nom": "sencoprod",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9e68681d372fc83554f6a763c051e89/250x250-000000-80-0-0.jpg"
+    },
+    "sermx": {
+        "nom": "Sermx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "hood sauce": {
+        "nom": "HOOD SAUCE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec8790a99a21c3f042e5f31a6b29e240/250x250-000000-80-0-0.jpg"
+    },
+    "hoodtrapie": {
+        "nom": "hoodtrapie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec8790a99a21c3f042e5f31a6b29e240/250x250-000000-80-0-0.jpg"
+    },
+    "mylancore": {
+        "nom": "mylancore",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec8790a99a21c3f042e5f31a6b29e240/250x250-000000-80-0-0.jpg"
     }
 }
