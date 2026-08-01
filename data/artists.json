@@ -9058,5 +9058,17 @@
     "mylancore": {
         "nom": "mylancore",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ec8790a99a21c3f042e5f31a6b29e240/250x250-000000-80-0-0.jpg"
+    },
+    "sviral.": {
+        "nom": "Sviral.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/016a68c407e2ab5647adabf35011c98a/250x250-000000-80-0-0.jpg"
+    },
+    "sunji": {
+        "nom": "SUNJI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5da6f0eaeaf4c4a36933d6a0462d2360/250x250-000000-80-0-0.jpg"
+    },
+    "kolansky": {
+        "nom": "Kolansky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9e842a23150227c69b23b66b4222f7e/250x250-000000-80-0-0.jpg"
     }
 }
