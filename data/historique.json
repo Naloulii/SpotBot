@@ -2419,7 +2419,8 @@
         {
             "date": "01/08/2026 21:21",
             "track_id": "6hK9rzweEnK3kQEGFUW7Im",
-            "status": "En cours..."
+            "status": "⏱️ Écouté pendant 2m 10s",
+            "temps_ecoute_secondes": 130.1
         },
         {
             "date": "01/08/2026 20:46",
