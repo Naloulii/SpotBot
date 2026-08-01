@@ -9070,5 +9070,21 @@
     "kolansky": {
         "nom": "Kolansky",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c9e842a23150227c69b23b66b4222f7e/250x250-000000-80-0-0.jpg"
+    },
+    "azurreh": {
+        "nom": "azurreh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/778f71c8a5d8f9daa75fd4d5efd4e5c0/250x250-000000-80-0-0.jpg"
+    },
+    "kyla": {
+        "nom": "Kyla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "dj paleface": {
+        "nom": "DJ Paleface",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/772831e2e145ff3c693367ef7aef3950/250x250-000000-80-0-0.jpg"
+    },
+    "crazy cousinz": {
+        "nom": "Crazy Cousinz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e6025cc125d98ca9b5266d63a4f0903/250x250-000000-80-0-0.jpg"
     }
 }
