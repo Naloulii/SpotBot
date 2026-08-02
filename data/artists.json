@@ -9138,5 +9138,9 @@
     "highvyn": {
         "nom": "Highvyn",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c8f92e23f1d1621e35e2bb764dd0df70/250x250-000000-80-0-0.jpg"
+    },
+    "cornelius": {
+        "nom": "Cornelius",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/286db510bf2f02df461e6376c195b5f5/250x250-000000-80-0-0.jpg"
     }
 }
