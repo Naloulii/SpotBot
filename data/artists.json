@@ -9142,5 +9142,9 @@
     "cornelius": {
         "nom": "Cornelius",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/286db510bf2f02df461e6376c195b5f5/250x250-000000-80-0-0.jpg"
+    },
+    "adrian": {
+        "nom": "Adrian",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7dcb3b5aa2300a2ebda091286e05915/250x250-000000-80-0-0.jpg"
     }
 }
