@@ -9150,5 +9150,17 @@
     "frizk": {
         "nom": "Frizk",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fca21ebf5963004f007f4f4755f3f267/250x250-000000-80-0-0.jpg"
+    },
+    "iluvern!": {
+        "nom": "iluvern!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0119f442f48c9e0bee80b3380f54018a/250x250-000000-80-0-0.jpg"
+    },
+    "lonepi": {
+        "nom": "LonePi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0023c6a36818805d8f33f8054ba34194/250x250-000000-80-0-0.jpg"
+    },
+    "yvng1haze": {
+        "nom": "Yvng1haze",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ad47b0a65a2fae061c9235e24f9a38e9/250x250-000000-80-0-0.jpg"
     }
 }
