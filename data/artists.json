@@ -9166,5 +9166,33 @@
     "kln": {
         "nom": "KLN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7172ef3f091f4d0f6fcfcefd1f7968df/250x250-000000-80-0-0.jpg"
+    },
+    "fr0zen": {
+        "nom": "fr0zen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba48ceef573f7cc9cfffb08248739c5a/250x250-000000-80-0-0.jpg"
+    },
+    "k3tamine": {
+        "nom": "k3tamine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0cc011b502d5ba62aba5eb93cdb5c9ce/250x250-000000-80-0-0.jpg"
+    },
+    "lumo": {
+        "nom": "Lumo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fe9974fd198c2731806d12a48c80b220/250x250-000000-80-0-0.jpg"
+    },
+    "sköne": {
+        "nom": "Sköne",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bc9a4f469568dd960152e24da861c787/250x250-000000-80-0-0.jpg"
+    },
+    "panicbaby": {
+        "nom": "panicbaby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d3c6d8fc292220efa634e2d4d33c3035/250x250-000000-80-0-0.jpg"
+    },
+    "matt maltese": {
+        "nom": "Matt Maltese",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ca78655e5babcb84572863547ae342b3/250x250-000000-80-0-0.jpg"
+    },
+    "hardstylerzz": {
+        "nom": "Hardstylerzz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f98c7bd6c4c9de9466fb60966ae728e0/250x250-000000-80-0-0.jpg"
     }
 }
