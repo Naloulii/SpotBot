@@ -9146,5 +9146,9 @@
     "adrian": {
         "nom": "Adrian",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d7dcb3b5aa2300a2ebda091286e05915/250x250-000000-80-0-0.jpg"
+    },
+    "frizk": {
+        "nom": "Frizk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fca21ebf5963004f007f4f4755f3f267/250x250-000000-80-0-0.jpg"
     }
 }
