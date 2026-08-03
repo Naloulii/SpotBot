@@ -9398,5 +9398,17 @@
     "kin$oul": {
         "nom": "Kin$oul",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0c28e5c122883022c4b8b24883fa40cc/250x250-000000-80-0-0.jpg"
+    },
+    "lil eazzyy": {
+        "nom": "Lil Eazzyy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/953a8fdf4d18a7c1a4c49a7e90053da2/250x250-000000-80-0-0.jpg"
+    },
+    "spotemgottem": {
+        "nom": "SpotemGottem",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d5fb64d0d443322d9cab0aeac8917306/250x250-000000-80-0-0.jpg"
+    },
+    "jaydayoungan": {
+        "nom": "JayDaYoungan",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/db2a0b17e8f18093c456e0a914668600/250x250-000000-80-0-0.jpg"
     }
 }
