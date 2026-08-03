@@ -9246,5 +9246,21 @@
     "yena": {
         "nom": "YENA",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "catch your breath": {
+        "nom": "Catch Your Breath",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc47030e9c5c7e26a651f4c1a1ab1086/250x250-000000-80-0-0.jpg"
+    },
+    "paramore": {
+        "nom": "Paramore",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/60dc1956a36a5e552384b4a32b0cbf9b/250x250-000000-80-0-0.jpg"
+    },
+    "ilona mitrecey": {
+        "nom": "Ilona Mitrecey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86b5c289b7eca7bd8323dba986913c7c/250x250-000000-80-0-0.jpg"
+    },
+    "pulcino pio": {
+        "nom": "Pulcino Pio",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7f2d7ed0f9c304b427bc1491381ffbf8/250x250-000000-80-0-0.jpg"
     }
 }
