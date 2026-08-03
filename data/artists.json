@@ -9230,5 +9230,9 @@
     "tjo zenny": {
         "nom": "TJO ZENNY",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b1f3f5d1ad35cbb7b9b57f4bfd74d533/250x250-000000-80-0-0.jpg"
+    },
+    "normani": {
+        "nom": "Normani",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/52a9c5a4e478f9be8535a7e2aa35d5a2/250x250-000000-80-0-0.jpg"
     }
 }
