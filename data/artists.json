@@ -9342,5 +9342,17 @@
     "prince royce": {
         "nom": "Prince Royce",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/34c4613ef715fdae5afec5b8da10485f/250x250-000000-80-0-0.jpg"
+    },
+    "enrique iglesias": {
+        "nom": "Enrique Iglesias",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7c0f867fb50b6c9302f991521e42e764/250x250-000000-80-0-0.jpg"
+    },
+    "wisin": {
+        "nom": "Wisin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c66afc8b2577dc7356e43422e5138ad0/250x250-000000-80-0-0.jpg"
+    },
+    "manuel turizo": {
+        "nom": "Manuel Turizo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/72bb383c1872be5312b29a859001d66a/250x250-000000-80-0-0.jpg"
     }
 }
