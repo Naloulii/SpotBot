@@ -9234,5 +9234,9 @@
     "normani": {
         "nom": "Normani",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/52a9c5a4e478f9be8535a7e2aa35d5a2/250x250-000000-80-0-0.jpg"
+    },
+    "ashzone": {
+        "nom": "AshZone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b54775af25621a1e7c777ef57897beb0/250x250-000000-80-0-0.jpg"
     }
 }
