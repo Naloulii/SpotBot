@@ -9382,5 +9382,21 @@
     "lobo rico": {
         "nom": "Lobo Rico",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ffcf710f15913a2ab0ed28567ecb5fa0/250x250-000000-80-0-0.jpg"
+    },
+    "pooh shiesty": {
+        "nom": "Pooh Shiesty",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6b2a313828769d34405c57a802cc836/250x250-000000-80-0-0.jpg"
+    },
+    "bass santana": {
+        "nom": "Bass Santana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b98e0efb2ced7d3414a98ff0ea39a427/250x250-000000-80-0-0.jpg"
+    },
+    "cooliecut": {
+        "nom": "Cooliecut",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7ce4dc29dd49dd88583667e823814bd/250x250-000000-80-0-0.jpg"
+    },
+    "kin$oul": {
+        "nom": "Kin$oul",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0c28e5c122883022c4b8b24883fa40cc/250x250-000000-80-0-0.jpg"
     }
 }
