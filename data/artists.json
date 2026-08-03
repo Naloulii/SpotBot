@@ -9262,5 +9262,49 @@
     "pulcino pio": {
         "nom": "Pulcino Pio",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7f2d7ed0f9c304b427bc1491381ffbf8/250x250-000000-80-0-0.jpg"
+    },
+    "amel bent": {
+        "nom": "Amel Bent",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f96a4a7a3e320363bcfa665badf5b12b/250x250-000000-80-0-0.jpg"
+    },
+    "mc roger": {
+        "nom": "MC Roger",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "nerod": {
+        "nom": "Nerod",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c06eb6e567178f4341e8adf519d2590/250x250-000000-80-0-0.jpg"
+    },
+    "michele morrone": {
+        "nom": "Michele Morrone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8fd5cc527fa0b2e2f2b37ca026faa710/250x250-000000-80-0-0.jpg"
+    },
+    "carl orff": {
+        "nom": "Carl Orff",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e9f3a0a3f9ce73e66e369a4e55619a4/250x250-000000-80-0-0.jpg"
+    },
+    "michael tilson thomas": {
+        "nom": "Michael Tilson Thomas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/853a977b61d11560d827248cc3a375d9/250x250-000000-80-0-0.jpg"
+    },
+    "the cleveland orchestra chorus": {
+        "nom": "The Cleveland Orchestra Chorus",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9ab865a35e2b130a1d8dcf00ab5e91f5/250x250-000000-80-0-0.jpg"
+    },
+    "the cleveland orchestra": {
+        "nom": "The Cleveland Orchestra",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c1081ad50ee59ab385ebe3db8aefbfec/250x250-000000-80-0-0.jpg"
+    },
+    "kana-boon": {
+        "nom": "KANA-BOON",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3839b9c6ccf7029945ac29c157be4fcc/250x250-000000-80-0-0.jpg"
+    },
+    "les jones": {
+        "nom": "Les Jones",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2cb6ad9b6f63f0862568b7ddaec26460/250x250-000000-80-0-0.jpg"
+    },
+    "aminematue": {
+        "nom": "AmineMaTue",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/04327aebb928b67e926b11d903ac322f/250x250-000000-80-0-0.jpg"
     }
 }
