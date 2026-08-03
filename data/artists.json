@@ -9210,5 +9210,25 @@
     "the american dawn": {
         "nom": "The American Dawn",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b303879466596621a39d0ac87ed87d34/250x250-000000-80-0-0.jpg"
+    },
+    "esprit 空想": {
+        "nom": "ESPRIT 空想",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/61eea75218c37f8d214e2cf71c939f6f/250x250-000000-80-0-0.jpg"
+    },
+    "george clanton": {
+        "nom": "George Clanton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb154ae2aabb9fea999afe3b2ca51420/250x250-000000-80-0-0.jpg"
+    },
+    "kaash paige": {
+        "nom": "Kaash Paige",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cac3b9af914239edb364c8b63b091657/250x250-000000-80-0-0.jpg"
+    },
+    "pierre jean": {
+        "nom": "Pierre Jean",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8429bd1f9e47034bf5613d98e2524e0/250x250-000000-80-0-0.jpg"
+    },
+    "tjo zenny": {
+        "nom": "TJO ZENNY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1f3f5d1ad35cbb7b9b57f4bfd74d533/250x250-000000-80-0-0.jpg"
     }
 }
