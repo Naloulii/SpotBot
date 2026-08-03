@@ -9238,5 +9238,13 @@
     "ashzone": {
         "nom": "AshZone",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b54775af25621a1e7c777ef57897beb0/250x250-000000-80-0-0.jpg"
+    },
+    "loona": {
+        "nom": "LOONA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4e2e93a1af07bf48ec74d7ccb0d05b2b/250x250-000000-80-0-0.jpg"
+    },
+    "yena": {
+        "nom": "YENA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
