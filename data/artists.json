@@ -9358,5 +9358,9 @@
     "cnco": {
         "nom": "CNCO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/655bbbe1e1c568733451bad5fea7b43c/250x250-000000-80-0-0.jpg"
+    },
+    "kano choir": {
+        "nom": "Kano Choir",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6364dcbe3436b723aa844aff15768f3/250x250-000000-80-0-0.jpg"
     }
 }
