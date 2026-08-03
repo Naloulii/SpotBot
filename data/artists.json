@@ -9374,5 +9374,13 @@
     "syml": {
         "nom": "SYML",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bd0895beeb134cd4af68e5fdb96758a5/250x250-000000-80-0-0.jpg"
+    },
+    "dasha": {
+        "nom": "Dasha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8b9a174d06846ecc1a70a70fe290ec33/250x250-000000-80-0-0.jpg"
+    },
+    "lobo rico": {
+        "nom": "Lobo Rico",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ffcf710f15913a2ab0ed28567ecb5fa0/250x250-000000-80-0-0.jpg"
     }
 }
