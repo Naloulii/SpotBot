@@ -9306,5 +9306,41 @@
     "aminematue": {
         "nom": "AmineMaTue",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/04327aebb928b67e926b11d903ac322f/250x250-000000-80-0-0.jpg"
+    },
+    "palmashow": {
+        "nom": "PALMASHOW",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/59920e6419546c1b67e2e1d98e9ac8da/250x250-000000-80-0-0.jpg"
+    },
+    "charles ludig": {
+        "nom": "Charles Ludig",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/68062fc752ce1a643097353de67668ba/250x250-000000-80-0-0.jpg"
+    },
+    "vgr": {
+        "nom": "VGR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/08b0d79d9c2561017d0e91d9862d9626/250x250-000000-80-0-0.jpg"
+    },
+    "nolo flows yo": {
+        "nom": "Nolo Flows Yo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a3653399aad57ce731c34a0ae6602c3/250x250-000000-80-0-0.jpg"
+    },
+    "frankieredhots": {
+        "nom": "Frankieredhots",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "rené la taupe": {
+        "nom": "René La Taupe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba801294a871c646e4e7a44b866a831f/250x250-000000-80-0-0.jpg"
+    },
+    "carla": {
+        "nom": "Carla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/60c12d5b151511a35193d8f754e83da7/250x250-000000-80-0-0.jpg"
+    },
+    "norman": {
+        "nom": "Norman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f81e9d3704b453c60ba75289954826cc/250x250-000000-80-0-0.jpg"
+    },
+    "prince royce": {
+        "nom": "Prince Royce",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/34c4613ef715fdae5afec5b8da10485f/250x250-000000-80-0-0.jpg"
     }
 }
