@@ -9434,5 +9434,9 @@
     "adturnup": {
         "nom": "ADTurnUp",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ff26160c102a764d61755f09d01c3029/250x250-000000-80-0-0.jpg"
+    },
+    "feist": {
+        "nom": "Feist",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/02c041dd42c16798cadd8747e32469f5/250x250-000000-80-0-0.jpg"
     }
 }
