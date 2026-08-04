@@ -3431,6 +3431,30 @@
     ],
     "1196099524385570936": [
         {
+            "date": "04/08/2026 16:27",
+            "track_id": "398ssTgK5aTWImwTbYDtWM",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 322.4
+        },
+        {
+            "date": "04/08/2026 16:27",
+            "track_id": "398ssTgK5aTWImwTbYDtWM",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 110.6
+        },
+        {
+            "date": "04/08/2026 16:26",
+            "track_id": "398ssTgK5aTWImwTbYDtWM",
+            "status": "⏱️ Écouté pendant 1m 01s",
+            "temps_ecoute_secondes": 61.5
+        },
+        {
+            "date": "04/08/2026 16:24",
+            "track_id": "1VxdwLheymN92eIhVhNJ8c",
+            "status": "⏱️ Écouté pendant 1m 49s",
+            "temps_ecoute_secondes": 109.3
+        },
+        {
             "date": "04/08/2026 15:00",
             "track_id": "6RoDauxGlKd2OFzw7V0GJX",
             "status": "⏱️ Écouté pendant 0m 43s",
@@ -4005,30 +4029,6 @@
             "track_id": "46ZFuxrYY3ar9Jdf6RDMDP",
             "status": "⏱️ Écouté pendant 0m 48s",
             "temps_ecoute_secondes": 48.4
-        },
-        {
-            "date": "30/07/2026 17:09",
-            "track_id": "56EEPjNVNBxc9GUsROZPwO",
-            "status": "⏱️ Écouté pendant 0m 24s",
-            "temps_ecoute_secondes": 24.3
-        },
-        {
-            "date": "30/07/2026 15:16",
-            "track_id": "266aD2CkfU9jb2m6u8nmf8",
-            "status": "⏱️ Écouté pendant 0m 59s",
-            "temps_ecoute_secondes": 59.8
-        },
-        {
-            "date": "30/07/2026 09:54",
-            "track_id": "6sutxiq0dIw77z0rCB3Ekk",
-            "status": "⏱️ Écouté pendant 2m 47s",
-            "temps_ecoute_secondes": 167.0
-        },
-        {
-            "date": "30/07/2026 09:04",
-            "track_id": "5LYRIyhmlrDAQsYdHEvP0f",
-            "status": "⏱️ Écouté pendant 1m 57s",
-            "temps_ecoute_secondes": 117.1
         }
     ],
     "702545968951722084": [

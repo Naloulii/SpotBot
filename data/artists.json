@@ -9450,5 +9450,9 @@
     "three days grace": {
         "nom": "Three Days Grace",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2ffbb6971279cc57ba1c029178ac6ed3/250x250-000000-80-0-0.jpg"
+    },
+    "q.l.m": {
+        "nom": "Q.L.M",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0097762b00c901f25b201f5c7b6b166d/250x250-000000-80-0-0.jpg"
     }
 }
