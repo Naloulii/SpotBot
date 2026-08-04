@@ -9430,5 +9430,9 @@
     "poodee": {
         "nom": "POODEE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5207dbb35ed2f9273bdb159b3ca67ace/250x250-000000-80-0-0.jpg"
+    },
+    "adturnup": {
+        "nom": "ADTurnUp",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ff26160c102a764d61755f09d01c3029/250x250-000000-80-0-0.jpg"
     }
 }
