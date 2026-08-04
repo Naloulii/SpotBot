@@ -9438,5 +9438,9 @@
     "feist": {
         "nom": "Feist",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/02c041dd42c16798cadd8747e32469f5/250x250-000000-80-0-0.jpg"
+    },
+    "dj digital": {
+        "nom": "DJ Digital",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ecb13fa7d0781b4a88c94a14bb4dfad4/250x250-000000-80-0-0.jpg"
     }
 }
