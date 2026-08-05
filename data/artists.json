@@ -9542,5 +9542,13 @@
     "angelicca": {
         "nom": "Angelicca",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/292e45fe5e1c7451c5a84a610770cbcb/250x250-000000-80-0-0.jpg"
+    },
+    "clovis reyes": {
+        "nom": "Clovis Reyes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cae630f19982893ab1d30c9463c41aff/250x250-000000-80-0-0.jpg"
+    },
+    "vdycd": {
+        "nom": "VDYCD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13acd5f8abd6529edd8436b2b6885fe7/250x250-000000-80-0-0.jpg"
     }
 }
