@@ -9550,5 +9550,17 @@
     "vdycd": {
         "nom": "VDYCD",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/13acd5f8abd6529edd8436b2b6885fe7/250x250-000000-80-0-0.jpg"
+    },
+    "internet money": {
+        "nom": "Internet Money",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ac31c5e8323891887567be6338811938/250x250-000000-80-0-0.jpg"
+    },
+    "nav": {
+        "nom": "NAV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "kavinsky": {
+        "nom": "Kavinsky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e080ec9d0825c855d38d08705c37bea/250x250-000000-80-0-0.jpg"
     }
 }
