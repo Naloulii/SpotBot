@@ -9614,5 +9614,13 @@
     "blood orange": {
         "nom": "Blood Orange",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/63ee5c28add70150aaff4f33371ab5a5/250x250-000000-80-0-0.jpg"
+    },
+    "antihoney": {
+        "nom": "antihoney",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/50f0347091a1e17b4ea21dac3524e324/250x250-000000-80-0-0.jpg"
+    },
+    "jason derulo": {
+        "nom": "Jason Derulo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/955a40075bfd5d5501f266bd0cc79381/250x250-000000-80-0-0.jpg"
     }
 }
