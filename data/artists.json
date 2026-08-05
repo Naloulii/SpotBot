@@ -9474,5 +9474,25 @@
     "gips": {
         "nom": "Gips",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/63b1c31c3c6c5c5a375c1872ce2708dd/250x250-000000-80-0-0.jpg"
+    },
+    "cinnamons": {
+        "nom": "cinnamons",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/02385abdacdff5a00a7c120d4a3f9d4b/250x250-000000-80-0-0.jpg"
+    },
+    "evening cinema": {
+        "nom": "evening cinema",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3cd642818d3a287939b89f29be4e0075/250x250-000000-80-0-0.jpg"
+    },
+    "ohayo": {
+        "nom": "OHAYO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1048c2e44ffbe5ddf878e61e065e18fc/250x250-000000-80-0-0.jpg"
+    },
+    "shake pepper": {
+        "nom": "Shake Pepper",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "yvngboi p": {
+        "nom": "Yvngboi P",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4976dda26bee8648b9e9710b9fdce727/250x250-000000-80-0-0.jpg"
     }
 }
