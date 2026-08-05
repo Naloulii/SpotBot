@@ -9522,5 +9522,25 @@
     "the upsetters": {
         "nom": "The Upsetters",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9bef11a8d32886e78cad21a403d9e97b/250x250-000000-80-0-0.jpg"
+    },
+    "kim": {
+        "nom": "Kim",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/142bc8f9a74a0cadd85691b3862cb77f/250x250-000000-80-0-0.jpg"
+    },
+    "bryansanon": {
+        "nom": "Bryansanon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47b8d276ed20a9649719031165a74317/250x250-000000-80-0-0.jpg"
+    },
+    "vonoff1700": {
+        "nom": "VonOff1700",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bfa91cf4557d345fa365880cdf7e4d77/250x250-000000-80-0-0.jpg"
+    },
+    "nicholas bonnin": {
+        "nom": "Nicholas Bonnin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/292e45fe5e1c7451c5a84a610770cbcb/250x250-000000-80-0-0.jpg"
+    },
+    "angelicca": {
+        "nom": "Angelicca",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/292e45fe5e1c7451c5a84a610770cbcb/250x250-000000-80-0-0.jpg"
     }
 }
