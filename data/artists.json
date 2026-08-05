@@ -9502,5 +9502,21 @@
     "xion orion": {
         "nom": "XION ORION",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/464177a33ad2fb325ff0196b132784af/250x250-000000-80-0-0.jpg"
+    },
+    "aests": {
+        "nom": "Aests",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/254bcdb4ed65d9e2641659269c3da321/250x250-000000-80-0-0.jpg"
+    },
+    "ice cube": {
+        "nom": "Ice Cube",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "ziahfyah": {
+        "nom": "Ziahfyah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1d6ab06b74669c2ca5d30a95080e9eaa/250x250-000000-80-0-0.jpg"
+    },
+    "sjmadeit": {
+        "nom": "sjmadeit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1d6ab06b74669c2ca5d30a95080e9eaa/250x250-000000-80-0-0.jpg"
     }
 }
