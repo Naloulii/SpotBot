@@ -9606,5 +9606,13 @@
     "willow": {
         "nom": "WILLOW",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a0221011989d9c58bb8173ed42d06e40/250x250-000000-80-0-0.jpg"
+    },
+    "late night drive home": {
+        "nom": "late night drive home",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4914452d297295cb46b5713c1e38dec1/250x250-000000-80-0-0.jpg"
+    },
+    "blood orange": {
+        "nom": "Blood Orange",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/63ee5c28add70150aaff4f33371ab5a5/250x250-000000-80-0-0.jpg"
     }
 }
