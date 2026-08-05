@@ -9598,5 +9598,13 @@
     "harmless": {
         "nom": "Harmless",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4f3f2348c0887d56597819d62ea72796/250x250-000000-80-0-0.jpg"
+    },
+    "nivek fforhs": {
+        "nom": "NIVEK FFORHS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c38f1163762db33538920d0657ff43da/250x250-000000-80-0-0.jpg"
+    },
+    "willow": {
+        "nom": "WILLOW",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a0221011989d9c58bb8173ed42d06e40/250x250-000000-80-0-0.jpg"
     }
 }
