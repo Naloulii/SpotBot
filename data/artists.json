@@ -9466,5 +9466,13 @@
     "rageix": {
         "nom": "RAGEIX",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9e06aee4362563a584f502b42c5df253/250x250-000000-80-0-0.jpg"
+    },
+    "zabuza": {
+        "nom": "ZABUZA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ad3f64ba309181fd544b8f965a5a0b2a/250x250-000000-80-0-0.jpg"
+    },
+    "gips": {
+        "nom": "Gips",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/63b1c31c3c6c5c5a375c1872ce2708dd/250x250-000000-80-0-0.jpg"
     }
 }
