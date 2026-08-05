@@ -9578,5 +9578,25 @@
     "jba": {
         "nom": "JBA",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f97cafd64918c142db34c5aed2bfd6d6/250x250-000000-80-0-0.jpg"
+    },
+    "her's": {
+        "nom": "Her's",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/39e492001b214fc51ba15e98689e3407/250x250-000000-80-0-0.jpg"
+    },
+    "pastel ghost": {
+        "nom": "Pastel Ghost",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d03a8b6cfb3925d6342ab3d0a451f00/250x250-000000-80-0-0.jpg"
+    },
+    "alxndre": {
+        "nom": "ALXNDRE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/50630920bc394140cb74974ec603fd35/250x250-000000-80-0-0.jpg"
+    },
+    "persx": {
+        "nom": "PERSX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/50630920bc394140cb74974ec603fd35/250x250-000000-80-0-0.jpg"
+    },
+    "harmless": {
+        "nom": "Harmless",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f3f2348c0887d56597819d62ea72796/250x250-000000-80-0-0.jpg"
     }
 }
