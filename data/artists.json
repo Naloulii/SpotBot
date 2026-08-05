@@ -9562,5 +9562,21 @@
     "kavinsky": {
         "nom": "Kavinsky",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3e080ec9d0825c855d38d08705c37bea/250x250-000000-80-0-0.jpg"
+    },
+    "jdior": {
+        "nom": "Jdior",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/90bf5642f2cb8087ec0591124f84f5c8/250x250-000000-80-0-0.jpg"
+    },
+    "alyzée": {
+        "nom": "Alyzée",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d6c97c060853f0186b2f3d4d401b381/250x250-000000-80-0-0.jpg"
+    },
+    "shaw00p": {
+        "nom": "shaw00p",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47396a74e487379fd3b137641b79a244/250x250-000000-80-0-0.jpg"
+    },
+    "jba": {
+        "nom": "JBA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f97cafd64918c142db34c5aed2bfd6d6/250x250-000000-80-0-0.jpg"
     }
 }
