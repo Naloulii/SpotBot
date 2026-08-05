@@ -9494,5 +9494,13 @@
     "yvngboi p": {
         "nom": "Yvngboi P",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4976dda26bee8648b9e9710b9fdce727/250x250-000000-80-0-0.jpg"
+    },
+    "русский размер": {
+        "nom": "Русский размер",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/666b9013e97285d4dad525a4ab5753c4/250x250-000000-80-0-0.jpg"
+    },
+    "xion orion": {
+        "nom": "XION ORION",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/464177a33ad2fb325ff0196b132784af/250x250-000000-80-0-0.jpg"
     }
 }
