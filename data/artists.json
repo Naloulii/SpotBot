@@ -9694,5 +9694,9 @@
     "lloyd": {
         "nom": "Lloyd",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b8184b6a7034b9d29e7890a7d48d295d/250x250-000000-80-0-0.jpg"
+    },
+    "sade": {
+        "nom": "Sade",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/61ef9f8e27a31325d45f8623fe3000c6/250x250-000000-80-0-0.jpg"
     }
 }
