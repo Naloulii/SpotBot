@@ -9654,5 +9654,13 @@
     "zaza": {
         "nom": "Zaza",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ead751b783fc4a8bea463b0a5e9660b4/250x250-000000-80-0-0.jpg"
+    },
+    "hus": {
+        "nom": "HUS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1d558ff0d6e8fec2478d05e28119573/250x250-000000-80-0-0.jpg"
+    },
+    "mila j": {
+        "nom": "Mila J",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/417de318e2cf35fb18c60338d3ed8bea/250x250-000000-80-0-0.jpg"
     }
 }
