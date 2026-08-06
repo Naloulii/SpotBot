@@ -9842,5 +9842,29 @@
     "freddie dredd": {
         "nom": "Freddie Dredd",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8becee54612482c4ff5b37546199971f/250x250-000000-80-0-0.jpg"
+    },
+    "lil yawh": {
+        "nom": "Lil Yawh",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c3cceee5d24c053441cd4195fc159ca/250x250-000000-80-0-0.jpg"
+    },
+    "cryjng": {
+        "nom": "Cryjng",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c3cceee5d24c053441cd4195fc159ca/250x250-000000-80-0-0.jpg"
+    },
+    "hxvsage": {
+        "nom": "HXVSAGE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4366964be89483c5238a5a763806885e/250x250-000000-80-0-0.jpg"
+    },
+    "duduzinho": {
+        "nom": "Duduzinho",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e2b932ec1576cf0fa15abe0475a32374/250x250-000000-80-0-0.jpg"
+    },
+    "nagatoro": {
+        "nom": "Nagatoro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/657a63345d84b1d4a632a1e0f29f8455/250x250-000000-80-0-0.jpg"
+    },
+    "t.i.": {
+        "nom": "T.I.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/77f8109f2a8f6bf0ebaf7214d9e964ab/250x250-000000-80-0-0.jpg"
     }
 }
