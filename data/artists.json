@@ -9730,5 +9730,13 @@
     "xv": {
         "nom": "XV",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "black brut": {
+        "nom": "Black Brut",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/63a53455dc425a0aa4e82d6d8ced52be/250x250-000000-80-0-0.jpg"
+    },
+    "kozi": {
+        "nom": "Kozi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
