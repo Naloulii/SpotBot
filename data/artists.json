@@ -9678,5 +9678,13 @@
     "red velvet": {
         "nom": "Red Velvet",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0ab9b143b0b0088987ec777029915bab/250x250-000000-80-0-0.jpg"
+    },
+    "kima": {
+        "nom": "Kima",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8841784b3759ff8e5253dcdc43598e03/250x250-000000-80-0-0.jpg"
+    },
+    "north west": {
+        "nom": "North West",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47acdd969d9972ebb5860aed8b35c136/250x250-000000-80-0-0.jpg"
     }
 }
