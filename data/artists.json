@@ -9750,5 +9750,13 @@
     "rocket": {
         "nom": "Rocket",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6c778eac1003d76e37afb9ca56877bcc/250x250-000000-80-0-0.jpg"
+    },
+    "juicy p": {
+        "nom": "Juicy P",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ac388986fba9dd942f893f55eec5db1/250x250-000000-80-0-0.jpg"
+    },
+    "grödash": {
+        "nom": "Grödash",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e90862ce3d06d2f330fd7e6fc5f4cb7c/250x250-000000-80-0-0.jpg"
     }
 }
