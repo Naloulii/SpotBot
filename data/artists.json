@@ -9638,5 +9638,21 @@
     "lexycat": {
         "nom": "lexycat",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/53602a983565fd2a31a0553b0bf033ff/250x250-000000-80-0-0.jpg"
+    },
+    "mf music": {
+        "nom": "MF Music",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dd74477d64cc06a7e3d9ce4669640e50/250x250-000000-80-0-0.jpg"
+    },
+    "miimii": {
+        "nom": "MiiMii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b9a1689e2fbb7776af95d24603cf964b/250x250-000000-80-0-0.jpg"
+    },
+    "eloo": {
+        "nom": "Eloo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/914452e156748efd8ba3491c246c102d/250x250-000000-80-0-0.jpg"
+    },
+    "zaza": {
+        "nom": "Zaza",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ead751b783fc4a8bea463b0a5e9660b4/250x250-000000-80-0-0.jpg"
     }
 }
