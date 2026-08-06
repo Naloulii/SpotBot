@@ -9698,5 +9698,9 @@
     "sade": {
         "nom": "Sade",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/61ef9f8e27a31325d45f8623fe3000c6/250x250-000000-80-0-0.jpg"
+    },
+    "britney spears": {
+        "nom": "Britney Spears",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/caea45732bb52679494602c60430435a/250x250-000000-80-0-0.jpg"
     }
 }
