@@ -9718,5 +9718,17 @@
     "t-ara": {
         "nom": "T-ARA",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/24667f5048fe19a52a2237ea8de04152/250x250-000000-80-0-0.jpg"
+    },
+    "ixzo": {
+        "nom": "Ixzo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/51164deba3e4e42e18be1b747df7e6da/250x250-000000-80-0-0.jpg"
+    },
+    "i-dle": {
+        "nom": "i-dle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e98182f2b8ba9ac671c945211e6c624/250x250-000000-80-0-0.jpg"
+    },
+    "xv": {
+        "nom": "XV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
