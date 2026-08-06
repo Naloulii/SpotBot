@@ -9686,5 +9686,13 @@
     "north west": {
         "nom": "North West",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/47acdd969d9972ebb5860aed8b35c136/250x250-000000-80-0-0.jpg"
+    },
+    "video game players": {
+        "nom": "Video Game Players",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b80ffe0a857e2e8a548759447fd3d90/250x250-000000-80-0-0.jpg"
+    },
+    "lloyd": {
+        "nom": "Lloyd",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b8184b6a7034b9d29e7890a7d48d295d/250x250-000000-80-0-0.jpg"
     }
 }
