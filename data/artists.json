@@ -9626,5 +9626,13 @@
     "heavy weight": {
         "nom": "Heavy Weight",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/827157d91b68a4b59c98f2b03f0abacb/250x250-000000-80-0-0.jpg"
+    },
+    "dent may": {
+        "nom": "Dent May",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/55f6dde36e4c061f8ef07c5ebebeb56d/250x250-000000-80-0-0.jpg"
+    },
+    "jacal": {
+        "nom": "jacal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ff8464bc9690c1073c22b721b979b645/250x250-000000-80-0-0.jpg"
     }
 }
