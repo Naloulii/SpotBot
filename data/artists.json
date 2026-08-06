@@ -9702,5 +9702,13 @@
     "britney spears": {
         "nom": "Britney Spears",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/caea45732bb52679494602c60430435a/250x250-000000-80-0-0.jpg"
+    },
+    "stray kids": {
+        "nom": "Stray Kids",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5cba9e96cd7a44955d47ff3d7eb16ef3/250x250-000000-80-0-0.jpg"
+    },
+    "babymonster": {
+        "nom": "BABYMONSTER",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f7d0eb99e4e405533aa0e5e0a08042e/250x250-000000-80-0-0.jpg"
     }
 }
