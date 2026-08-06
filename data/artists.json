@@ -9798,5 +9798,17 @@
     "lucidbeatz": {
         "nom": "lucidbeatz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a048b550239868b98ec9917d3cd01a68/250x250-000000-80-0-0.jpg"
+    },
+    "team bwè tou sa": {
+        "nom": "Team Bwè Tou Sa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/914366d57699be561edb79bb0e104fcc/250x250-000000-80-0-0.jpg"
+    },
+    "prodkaz": {
+        "nom": "prodkaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8c767688139e20dc07bdab46a0be18c/250x250-000000-80-0-0.jpg"
+    },
+    "shottaàs": {
+        "nom": "Shottaàs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/85dfd3a2488d8a8fde00bcedc58a773b/250x250-000000-80-0-0.jpg"
     }
 }
