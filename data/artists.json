@@ -9666,5 +9666,17 @@
     "matt martians": {
         "nom": "Matt Martians",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/29e2a0774819e05c635c22e0eb8c1106/250x250-000000-80-0-0.jpg"
+    },
+    "cult member": {
+        "nom": "Cult Member",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45f0f10df9b07a42826843c122192603/250x250-000000-80-0-0.jpg"
+    },
+    "mia martina": {
+        "nom": "Mia Martina",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a667db5ff4be4bd29b61b80c10a47487/250x250-000000-80-0-0.jpg"
+    },
+    "red velvet": {
+        "nom": "Red Velvet",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0ab9b143b0b0088987ec777029915bab/250x250-000000-80-0-0.jpg"
     }
 }
