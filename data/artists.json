@@ -9710,5 +9710,13 @@
     "babymonster": {
         "nom": "BABYMONSTER",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9f7d0eb99e4e405533aa0e5e0a08042e/250x250-000000-80-0-0.jpg"
+    },
+    "illit": {
+        "nom": "ILLIT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fc9af226576dd0244593dff0c10bebf0/250x250-000000-80-0-0.jpg"
+    },
+    "t-ara": {
+        "nom": "T-ARA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/24667f5048fe19a52a2237ea8de04152/250x250-000000-80-0-0.jpg"
     }
 }
