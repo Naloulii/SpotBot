@@ -9810,5 +9810,21 @@
     "shottaàs": {
         "nom": "Shottaàs",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/85dfd3a2488d8a8fde00bcedc58a773b/250x250-000000-80-0-0.jpg"
+    },
+    "lilithzplug": {
+        "nom": "Lilithzplug",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eaaa43c7982403bd2b1636f611d04217/250x250-000000-80-0-0.jpg"
+    },
+    "32ki": {
+        "nom": "32ki",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b31a357e1bceb7e5e8b756abf47e7ad8/250x250-000000-80-0-0.jpg"
+    },
+    "重音テト": {
+        "nom": "重音テト",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11da5a44b1210282edb1a6425fb5c615/250x250-000000-80-0-0.jpg"
+    },
+    "jeff buckley": {
+        "nom": "Jeff Buckley",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
