@@ -9634,5 +9634,9 @@
     "jacal": {
         "nom": "jacal",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ff8464bc9690c1073c22b721b979b645/250x250-000000-80-0-0.jpg"
+    },
+    "lexycat": {
+        "nom": "lexycat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/53602a983565fd2a31a0553b0bf033ff/250x250-000000-80-0-0.jpg"
     }
 }
