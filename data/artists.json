@@ -9738,5 +9738,17 @@
     "kozi": {
         "nom": "Kozi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "d2l": {
+        "nom": "D2L",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fe7707f5d9c22a31f7b27af1976598e0/250x250-000000-80-0-0.jpg"
+    },
+    "yadley": {
+        "nom": "Yadley",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94d2b16c24fd9c8a461775a213c89127/250x250-000000-80-0-0.jpg"
+    },
+    "rocket": {
+        "nom": "Rocket",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6c778eac1003d76e37afb9ca56877bcc/250x250-000000-80-0-0.jpg"
     }
 }
