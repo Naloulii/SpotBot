@@ -9758,5 +9758,41 @@
     "grödash": {
         "nom": "Grödash",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e90862ce3d06d2f330fd7e6fc5f4cb7c/250x250-000000-80-0-0.jpg"
+    },
+    "ne-yo": {
+        "nom": "Ne-Yo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "spookyvic": {
+        "nom": "SpookyVic",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fe1a622d504f24703e39161c870387c1/250x250-000000-80-0-0.jpg"
+    },
+    "smhslasha": {
+        "nom": "smhslasha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f7e04deaba9da23f801a5327b26fb779/250x250-000000-80-0-0.jpg"
+    },
+    "prodshxxny": {
+        "nom": "ProdShxxny",
+        "image_url": null
+    },
+    "qkreign": {
+        "nom": "QKReign",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f3e08b792d350e066b01ff1e66376c17/250x250-000000-80-0-0.jpg"
+    },
+    "sonicreations!": {
+        "nom": "sonicreations!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c069a6f4bfb52cc8a66bcfcf8e6988ef/250x250-000000-80-0-0.jpg"
+    },
+    "tiitii nba": {
+        "nom": "TiiTii NBA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/820e5d7a5940af7b7af4219f423df837/250x250-000000-80-0-0.jpg"
+    },
+    "2ke": {
+        "nom": "2KE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d2cea111a4b73231f43aa5f033353cd/250x250-000000-80-0-0.jpg"
+    },
+    "808iuli": {
+        "nom": "808iuli",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/08eb54773934418a6eac848c5425fc3b/250x250-000000-80-0-0.jpg"
     }
 }
