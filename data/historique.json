@@ -1153,6 +1153,17 @@
     ],
     "968499201967276092": [
         {
+            "date": "07/08/2026 22:45",
+            "track_id": "29QAPQkjqokFyQZ18VKAdy",
+            "status": "En cours..."
+        },
+        {
+            "date": "07/08/2026 22:44",
+            "track_id": "29QAPQkjqokFyQZ18VKAdy",
+            "status": "⏱️ Écouté pendant 0m 47s",
+            "temps_ecoute_secondes": 47.6
+        },
+        {
             "date": "05/08/2026 21:45",
             "track_id": "25HWHrOdBp7hWF1iRgHaZD",
             "status": "⏱️ Écouté pendant 4m 20s",
