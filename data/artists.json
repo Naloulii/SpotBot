@@ -10026,5 +10026,37 @@
     "marcus layton": {
         "nom": "Marcus Layton",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4694d008ab019e4373ee3f496bbec13b/250x250-000000-80-0-0.jpg"
+    },
+    "zero": {
+        "nom": "ZERO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d5075851c7893857969537a70c4d58e/250x250-000000-80-0-0.jpg"
+    },
+    "sassy scene": {
+        "nom": "Sassy Scene",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c4d7f6df58a3c4edc253e7f15ee24964/250x250-000000-80-0-0.jpg"
+    },
+    "6arelyhuman": {
+        "nom": "6arelyhuman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aad145aa8f8c09d9a4d8e1fd07cd3fb8/250x250-000000-80-0-0.jpg"
+    },
+    "遠野高志": {
+        "nom": "遠野高志",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "加島優": {
+        "nom": "加島優",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6983ad3d7deef43f29a324e253a6c531/250x250-000000-80-0-0.jpg"
+    },
+    "矢口恭介": {
+        "nom": "矢口恭介",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "ジミー": {
+        "nom": "ジミー",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d18baed163d2a9d2d47db1b4dcef3830/250x250-000000-80-0-0.jpg"
+    },
+    "百合絢斗": {
+        "nom": "百合絢斗",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
     }
 }
