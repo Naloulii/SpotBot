@@ -9902,5 +9902,25 @@
     "dj swat": {
         "nom": "DJ Swat",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1a5b2ccbb6f84b62a664875d5dad553d/250x250-000000-80-0-0.jpg"
+    },
+    "flight facilities": {
+        "nom": "Flight Facilities",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb6ac17a250f44744280da3dfe53ff8a/250x250-000000-80-0-0.jpg"
+    },
+    "giselle": {
+        "nom": "Giselle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bec93d0660b5187fb5a05674dadbf258/250x250-000000-80-0-0.jpg"
+    },
+    "bossa": {
+        "nom": "Bossa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ceb02539d1dcc947fcec2c7efcf8970b/250x250-000000-80-0-0.jpg"
+    },
+    "kanii archive": {
+        "nom": "Kanii Archive",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f24f8792a42e4e55e819e4f39f2232c9/250x250-000000-80-0-0.jpg"
+    },
+    "uglyburger0": {
+        "nom": "Uglyburger0",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0085e16a735bb1b7bc8b5a638f3a48c0/250x250-000000-80-0-0.jpg"
     }
 }
