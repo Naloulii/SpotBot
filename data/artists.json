@@ -9866,5 +9866,13 @@
     "t.i.": {
         "nom": "T.I.",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/77f8109f2a8f6bf0ebaf7214d9e964ab/250x250-000000-80-0-0.jpg"
+    },
+    "charli xcx": {
+        "nom": "Charli xcx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5a4f593c65c71292b4389e871f76c023/250x250-000000-80-0-0.jpg"
+    },
+    "caroline polachek": {
+        "nom": "Caroline Polachek",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b88bb0f94458986d78685af32a328c68/250x250-000000-80-0-0.jpg"
     }
 }
