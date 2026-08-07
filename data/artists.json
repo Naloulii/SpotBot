@@ -9970,5 +9970,13 @@
     "mad tsai": {
         "nom": "Mad Tsai",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/09cf959990d4f3a37e9d56b36c5b2c1d/250x250-000000-80-0-0.jpg"
+    },
+    "miguel": {
+        "nom": "Miguel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b4eaa7598be58064836db4fbb8ec98c9/250x250-000000-80-0-0.jpg"
+    },
+    "yoyle cake": {
+        "nom": "Yoyle Cake",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/525af7144a0683a25bed4d878fb79d1c/250x250-000000-80-0-0.jpg"
     }
 }
