@@ -9958,5 +9958,17 @@
     "mikito p": {
         "nom": "Mikito P",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2f230ca59f7f511ee0e05366058a5dd0/250x250-000000-80-0-0.jpg"
+    },
+    "more more jump!": {
+        "nom": "MORE MORE JUMP!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f58503b4797823b3ca00d62d219ddbf2/250x250-000000-80-0-0.jpg"
+    },
+    "melanie martinez": {
+        "nom": "Melanie Martinez",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f093ca110598a29d39dfffdaabdcdf54/250x250-000000-80-0-0.jpg"
+    },
+    "mad tsai": {
+        "nom": "Mad Tsai",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/09cf959990d4f3a37e9d56b36c5b2c1d/250x250-000000-80-0-0.jpg"
     }
 }
