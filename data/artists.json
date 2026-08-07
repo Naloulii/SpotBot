@@ -9994,5 +9994,25 @@
     "drexxst": {
         "nom": "drexxst",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6e1796e13c37f8f0c4cd74625fc4dbb6/250x250-000000-80-0-0.jpg"
+    },
+    "ase manual": {
+        "nom": "Ase Manual",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d6e8f6b45e417979b31f4117c4270dd/250x250-000000-80-0-0.jpg"
+    },
+    "lvcky fem": {
+        "nom": "Lvcky Fem",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/587c3332e5d31fd10bc4313f62a4bd07/250x250-000000-80-0-0.jpg"
+    },
+    "sbf": {
+        "nom": "SBF",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/619a57a901278c4908e5578b2e2b1055/250x250-000000-80-0-0.jpg"
+    },
+    "dj soulchild ac": {
+        "nom": "DJ SoulChild AC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f297e3b45c81fe2d50a6a932498ae394/250x250-000000-80-0-0.jpg"
+    },
+    "zutomayo": {
+        "nom": "ZUTOMAYO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/61bcbf8296b1669499064406c534d39d/250x250-000000-80-0-0.jpg"
     }
 }
