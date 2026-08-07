@@ -10014,5 +10014,9 @@
     "zutomayo": {
         "nom": "ZUTOMAYO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/61bcbf8296b1669499064406c534d39d/250x250-000000-80-0-0.jpg"
+    },
+    "akugetsu": {
+        "nom": "AKUGETSU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e623470f048bf0486bb9bc549fddf600/250x250-000000-80-0-0.jpg"
     }
 }
