@@ -10058,5 +10058,33 @@
     "百合絢斗": {
         "nom": "百合絢斗",
         "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "lotus": {
+        "nom": "LOTUS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1bc93e2d6c3c0b9818829d65de65ecb5/250x250-000000-80-0-0.jpg"
+    },
+    "karmadiesz": {
+        "nom": "Karmadiesz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5937edc180ad5c998cb2e975c6262791/250x250-000000-80-0-0.jpg"
+    },
+    "rae!": {
+        "nom": "rae!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86a12854bf8b6278e08383e07d5751b2/250x250-000000-80-0-0.jpg"
+    },
+    "mikevince": {
+        "nom": "mikevince",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6c249f50c94b43a8b751b09419804050/250x250-000000-80-0-0.jpg"
+    },
+    "syko": {
+        "nom": "SyKo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9f3cd997fc0b97460035b40164cd18e0/250x250-000000-80-0-0.jpg"
+    },
+    "removeface": {
+        "nom": "removeface",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/be9670df15fa54b6c1b369fedf56b1e3/250x250-000000-80-0-0.jpg"
+    },
+    "xoni": {
+        "nom": "xoni",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/be9670df15fa54b6c1b369fedf56b1e3/250x250-000000-80-0-0.jpg"
     }
 }
