@@ -9922,5 +9922,9 @@
     "uglyburger0": {
         "nom": "Uglyburger0",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0085e16a735bb1b7bc8b5a638f3a48c0/250x250-000000-80-0-0.jpg"
+    },
+    "pixy": {
+        "nom": "PIXY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef0b1e0ef14f9ba66008676fd6d616f9/250x250-000000-80-0-0.jpg"
     }
 }
