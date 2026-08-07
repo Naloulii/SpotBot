@@ -9926,5 +9926,17 @@
     "pixy": {
         "nom": "PIXY",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ef0b1e0ef14f9ba66008676fd6d616f9/250x250-000000-80-0-0.jpg"
+    },
+    "s-pece": {
+        "nom": "S-pece",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/02333c6561610b1787dbe52cec2c3849/250x250-000000-80-0-0.jpg"
+    },
+    "lebeey": {
+        "nom": "Lebeey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/63099905d458a5e998f48a979aa408a5/250x250-000000-80-0-0.jpg"
+    },
+    "来兎": {
+        "nom": "来兎",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/737744eab5fc0f7ff37d5772692cd2f5/250x250-000000-80-0-0.jpg"
     }
 }
