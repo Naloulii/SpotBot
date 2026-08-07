@@ -10018,5 +10018,13 @@
     "akugetsu": {
         "nom": "AKUGETSU",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e623470f048bf0486bb9bc549fddf600/250x250-000000-80-0-0.jpg"
+    },
+    "chromance": {
+        "nom": "CHROMANCE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1b7c52df2b90886d6dd51c783ef0e55c/250x250-000000-80-0-0.jpg"
+    },
+    "marcus layton": {
+        "nom": "Marcus Layton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4694d008ab019e4373ee3f496bbec13b/250x250-000000-80-0-0.jpg"
     }
 }
