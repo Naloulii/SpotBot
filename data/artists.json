@@ -9874,5 +9874,33 @@
     "caroline polachek": {
         "nom": "Caroline Polachek",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b88bb0f94458986d78685af32a328c68/250x250-000000-80-0-0.jpg"
+    },
+    "ilysam": {
+        "nom": "ilysam",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a9b2317103ef921d3db92565f84d5e54/250x250-000000-80-0-0.jpg"
+    },
+    "mc ster": {
+        "nom": "Mc Ster",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/63b483be9319344519610361961d2bef/250x250-000000-80-0-0.jpg"
+    },
+    "static-p": {
+        "nom": "Static-P",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/30782cd7a46180072c15f08fc0cafccb/250x250-000000-80-0-0.jpg"
+    },
+    "cloud 80": {
+        "nom": "cloud 80",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dc391c82419901d5f1dce0499d609dae/250x250-000000-80-0-0.jpg"
+    },
+    "mc l da vinte": {
+        "nom": "MC L da Vinte",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ca8d1e0649ecde5d59df5e02c8a69cbe/250x250-000000-80-0-0.jpg"
+    },
+    "mc gury": {
+        "nom": "MC Gury",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/093c1f77ff2d7d6846490e77cbc4e63e/250x250-000000-80-0-0.jpg"
+    },
+    "dj swat": {
+        "nom": "DJ Swat",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a5b2ccbb6f84b62a664875d5dad553d/250x250-000000-80-0-0.jpg"
     }
 }
