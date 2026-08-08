@@ -10242,5 +10242,9 @@
     "the bird and the bee": {
         "nom": "the bird and the bee",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9e85698607eb72cdbc8f5c35549d0caa/250x250-000000-80-0-0.jpg"
+    },
+    "jack stauber": {
+        "nom": "Jack Stauber",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8631126ad40d2cabec4d92692ef9da24/250x250-000000-80-0-0.jpg"
     }
 }
