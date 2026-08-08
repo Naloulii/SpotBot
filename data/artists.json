@@ -10222,5 +10222,13 @@
     "adele": {
         "nom": "Adele",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ed5666c7c1a7115190d5115d04084f80/250x250-000000-80-0-0.jpg"
+    },
+    "sl4¥d": {
+        "nom": "SL4¥D",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/88bb713efdddb7df221fc5b82107c290/250x250-000000-80-0-0.jpg"
+    },
+    "jackboys": {
+        "nom": "JACKBOYS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f176af8276343713f9f41aace9faf8cc/250x250-000000-80-0-0.jpg"
     }
 }
