@@ -10218,5 +10218,9 @@
     "onibi": {
         "nom": "ONIBI",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/13dd8c45156d3cc52b85ce40114f927b/250x250-000000-80-0-0.jpg"
+    },
+    "adele": {
+        "nom": "Adele",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed5666c7c1a7115190d5115d04084f80/250x250-000000-80-0-0.jpg"
     }
 }
