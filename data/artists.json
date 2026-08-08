@@ -10086,5 +10086,41 @@
     "xoni": {
         "nom": "xoni",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/be9670df15fa54b6c1b369fedf56b1e3/250x250-000000-80-0-0.jpg"
+    },
+    "shluzov": {
+        "nom": "Shluzov",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bc5d8c0dd1c477ace14236ebe13518ec/250x250-000000-80-0-0.jpg"
+    },
+    "masonn deforest": {
+        "nom": "Masonn Deforest",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aa7007a9ac62287a8fcedd8f1d024ddb/250x250-000000-80-0-0.jpg"
+    },
+    "vtze archive": {
+        "nom": "vtze archive",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d6144f803db6c93b24aa9642bc0f376/250x250-000000-80-0-0.jpg"
+    },
+    "asteria": {
+        "nom": "asteria",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f0faa5226aabe1aeda9ef9e94cf7a311/250x250-000000-80-0-0.jpg"
+    },
+    "e-40": {
+        "nom": "E-40",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "the click": {
+        "nom": "The Click",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/340705a67180a2fd7d5075abd24029fe/250x250-000000-80-0-0.jpg"
+    },
+    "suga t": {
+        "nom": "Suga T",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3dccf4d29601df7079a5d9fb86d80fdf/250x250-000000-80-0-0.jpg"
+    },
+    "d-shott": {
+        "nom": "D-Shott",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d83b582d97e876c740f645b04e3dc93e/250x250-000000-80-0-0.jpg"
+    },
+    "b-legit": {
+        "nom": "B-Legit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3fc8d669bed6839ac0091878b5a2033/250x250-000000-80-0-0.jpg"
     }
 }
