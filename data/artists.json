@@ -10166,5 +10166,21 @@
     "masters of sound": {
         "nom": "Masters of Sound",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ac6628fb55c49aec2e9cfe3ce8951a02/250x250-000000-80-0-0.jpg"
+    },
+    "jean bonal": {
+        "nom": "Jean Bonal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6db1ce9fe101fc7bce661683157a7243/250x250-000000-80-0-0.jpg"
+    },
+    "the cranberries": {
+        "nom": "The Cranberries",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8e57c9fe64a7d1c3ed241e16f4c0f154/250x250-000000-80-0-0.jpg"
+    },
+    "osrsbeatz": {
+        "nom": "OSRSBeatz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7d9bd08034e79c0bd4a79f779dc24b7f/250x250-000000-80-0-0.jpg"
+    },
+    "jhené aiko": {
+        "nom": "Jhené Aiko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c336a353852d62e2664f2df3461b052/250x250-000000-80-0-0.jpg"
     }
 }
