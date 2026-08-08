@@ -10198,5 +10198,25 @@
     "summer walker": {
         "nom": "Summer Walker",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/986786f971b3ce755da272982632092b/250x250-000000-80-0-0.jpg"
+    },
+    "dynamicduo": {
+        "nom": "Dynamicduo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "dj premier": {
+        "nom": "DJ Premier",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0dedafd87150dd9f3d28d93cab2b9a17/250x250-000000-80-0-0.jpg"
+    },
+    "deadman 死人": {
+        "nom": "deadman 死人",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c750373a217f079bed6497052d5a824a/250x250-000000-80-0-0.jpg"
+    },
+    "imxgine": {
+        "nom": "ImXgine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8437038306aba5e1d2f1f918f61eb7b9/250x250-000000-80-0-0.jpg"
+    },
+    "onibi": {
+        "nom": "ONIBI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13dd8c45156d3cc52b85ce40114f927b/250x250-000000-80-0-0.jpg"
     }
 }
