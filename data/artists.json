@@ -10154,5 +10154,13 @@
     "scott": {
         "nom": "Scott",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "shoko nakagawa": {
+        "nom": "Shoko Nakagawa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c28eaff1042eceddfd48c07bf9e1e6e/250x250-000000-80-0-0.jpg"
+    },
+    "tran phat linh": {
+        "nom": "TRAN PHAT LINH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ef1d3dbcdf8f298de7053d798d37e87a/250x250-000000-80-0-0.jpg"
     }
 }
