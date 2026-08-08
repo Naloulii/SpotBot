@@ -10238,5 +10238,9 @@
     "stan getz": {
         "nom": "Stan Getz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/26f5eb1d353125562e585ba2cd8fb06f/250x250-000000-80-0-0.jpg"
+    },
+    "the bird and the bee": {
+        "nom": "the bird and the bee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9e85698607eb72cdbc8f5c35549d0caa/250x250-000000-80-0-0.jpg"
     }
 }
