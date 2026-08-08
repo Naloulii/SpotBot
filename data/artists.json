@@ -10182,5 +10182,21 @@
     "jhené aiko": {
         "nom": "Jhené Aiko",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9c336a353852d62e2664f2df3461b052/250x250-000000-80-0-0.jpg"
+    },
+    "prodzay": {
+        "nom": "ProdZay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f5c48ad3c76d7341d67813e64b52a25/250x250-000000-80-0-0.jpg"
+    },
+    "j balvin": {
+        "nom": "J Balvin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/325eaa46bc25052d0e3d549d60cc8225/250x250-000000-80-0-0.jpg"
+    },
+    "willy william": {
+        "nom": "Willy William",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dfa89b69b401d69f6a7e75b178f37e0a/250x250-000000-80-0-0.jpg"
+    },
+    "summer walker": {
+        "nom": "Summer Walker",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/986786f971b3ce755da272982632092b/250x250-000000-80-0-0.jpg"
     }
 }
