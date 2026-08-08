@@ -10134,5 +10134,13 @@
     "ginuwine": {
         "nom": "Ginuwine",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0294c3885ebbd4f193d7ec2c3f425db2/250x250-000000-80-0-0.jpg"
+    },
+    "angst!": {
+        "nom": "angst!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de402c44aa861476ab4459c5fbdd8b34/250x250-000000-80-0-0.jpg"
+    },
+    "exitus999": {
+        "nom": "Exitus999",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fb94223675a552f9099d246a8a3d26b7/250x250-000000-80-0-0.jpg"
     }
 }
