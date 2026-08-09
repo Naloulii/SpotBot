@@ -10358,5 +10358,13 @@
     "eclipse": {
         "nom": "Eclipse",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "foulek": {
+        "nom": "FOULEK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3691ed1d408eb913f292acb866a7161b/250x250-000000-80-0-0.jpg"
+    },
+    "gremlin$": {
+        "nom": "Gremlin$",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9692931cf8465f0f94b44bfbb6dacf60/250x250-000000-80-0-0.jpg"
     }
 }
