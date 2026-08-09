@@ -10418,5 +10418,9 @@
     "echos": {
         "nom": "Echos",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7c3a06a3905f9861ea1e377de6c8cb2c/250x250-000000-80-0-0.jpg"
+    },
+    "nelly furtado": {
+        "nom": "Nelly Furtado",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47b4d4c66c9fd9d6c49f08e2d5699aaf/250x250-000000-80-0-0.jpg"
     }
 }
