@@ -10398,5 +10398,17 @@
     "jack uzi": {
         "nom": "Jack Uzi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0fc52e8966aa31a91bd76f463feecd23/250x250-000000-80-0-0.jpg"
+    },
+    "vaporgod": {
+        "nom": "VaporGod",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c0142c6a48983ad9f04133dff768a678/250x250-000000-80-0-0.jpg"
+    },
+    "harmxny": {
+        "nom": "harmxny",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8783571de4efe5021a0b594f4fae8de0/250x250-000000-80-0-0.jpg"
+    },
+    "prod. rollie": {
+        "nom": "prod. Rollie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0f97e03f01d6f041cde11a1eae41336d/250x250-000000-80-0-0.jpg"
     }
 }
