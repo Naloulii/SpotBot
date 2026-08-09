@@ -10314,5 +10314,29 @@
     "fuze iii": {
         "nom": "Fuze III",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4dd2da369476db67209197b87d29c7bf/250x250-000000-80-0-0.jpg"
+    },
+    "prof. kush": {
+        "nom": "Prof. Kush",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/464d2b9077734076fe6da1acbf4eef32/250x250-000000-80-0-0.jpg"
+    },
+    "studio bastiano": {
+        "nom": "Studio Bastiano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5ba86fc9a232f4864af2736c83342828/250x250-000000-80-0-0.jpg"
+    },
+    "black m": {
+        "nom": "Black M",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/882fb1103c91eec45cc23cbb34a90f26/250x250-000000-80-0-0.jpg"
+    },
+    "dr. beriz": {
+        "nom": "Dr. Beriz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/efa8ac9aab8f872c7526de0bcb2c6636/250x250-000000-80-0-0.jpg"
+    },
+    "dj vt da rua larga": {
+        "nom": "DJ VT DA RUA LARGA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7afe41fb23c96f8ba75421564c49f563/250x250-000000-80-0-0.jpg"
+    },
+    "mc pânico": {
+        "nom": "MC Pânico",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/438d2d7f6c41d7959e8a665def51a0ba/250x250-000000-80-0-0.jpg"
     }
 }
