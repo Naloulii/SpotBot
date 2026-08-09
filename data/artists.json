@@ -10290,5 +10290,29 @@
     "francky vincent": {
         "nom": "Francky Vincent",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9d32bc352ed21f113fcdc6552ada586e/250x250-000000-80-0-0.jpg"
+    },
+    "marinanus": {
+        "nom": "Marinanus",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a2d0e12d5e8b9cf9f489db3b64c20533/250x250-000000-80-0-0.jpg"
+    },
+    "wu zing": {
+        "nom": "Wu Zing",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f9464740dedc4fbde23d4201451e3801/250x250-000000-80-0-0.jpg"
+    },
+    "lilian bolle": {
+        "nom": "Lilian Bolle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c55a46b8d8db883befd8b7414af71e4e/250x250-000000-80-0-0.jpg"
+    },
+    "staysolidrocky": {
+        "nom": "StaySolidRocky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7704f29a66c13b6a6f0d4b251dec6502/250x250-000000-80-0-0.jpg"
+    },
+    "2sdoublea": {
+        "nom": "2sDoubleA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/14dde812cfd09f5806f85f59e8d5c599/250x250-000000-80-0-0.jpg"
+    },
+    "fuze iii": {
+        "nom": "Fuze III",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4dd2da369476db67209197b87d29c7bf/250x250-000000-80-0-0.jpg"
     }
 }
