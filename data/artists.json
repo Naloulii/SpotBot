@@ -10378,5 +10378,21 @@
     "vernex": {
         "nom": "Vernex",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/691f091a379eab3ef5aa5dcd6efa0ebe/250x250-000000-80-0-0.jpg"
+    },
+    "internet dreamers": {
+        "nom": "Internet Dreamers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/669c9a29583a355abd004325cc3fb42b/250x250-000000-80-0-0.jpg"
+    },
+    "ozwaa": {
+        "nom": "Ozwaa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/abbad1b1e24499b7527d2785743ef8cf/250x250-000000-80-0-0.jpg"
+    },
+    "simcourbe": {
+        "nom": "Simcourbe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e4cc7336fb00f8cb63e9c3212649b357/250x250-000000-80-0-0.jpg"
+    },
+    "doigby": {
+        "nom": "Doigby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0e53647c6184caa39c2d43589045d75/250x250-000000-80-0-0.jpg"
     }
 }
