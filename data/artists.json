@@ -10338,5 +10338,17 @@
     "mc pânico": {
         "nom": "MC Pânico",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/438d2d7f6c41d7959e8a665def51a0ba/250x250-000000-80-0-0.jpg"
+    },
+    "bamby": {
+        "nom": "Bamby",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/89879e133cdcc4f6febd5310001cb14f/250x250-000000-80-0-0.jpg"
+    },
+    "kofs": {
+        "nom": "Kofs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c5661c438528160ad5c33f7a2b98055e/250x250-000000-80-0-0.jpg"
+    },
+    "dj tfiish": {
+        "nom": "DJ TFIISH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d4af30b52b8340db16f9646bcfb2c4c3/250x250-000000-80-0-0.jpg"
     }
 }
