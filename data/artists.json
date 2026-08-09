@@ -10354,5 +10354,9 @@
     "teriyaki boyz": {
         "nom": "Teriyaki Boyz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f398bb31bd60162c8c1b14183301f866/250x250-000000-80-0-0.jpg"
+    },
+    "eclipse": {
+        "nom": "Eclipse",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
