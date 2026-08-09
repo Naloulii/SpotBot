@@ -10410,5 +10410,13 @@
     "prod. rollie": {
         "nom": "prod. Rollie",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0f97e03f01d6f041cde11a1eae41336d/250x250-000000-80-0-0.jpg"
+    },
+    "aoa": {
+        "nom": "AOA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ee3474554b02808b787d3e701292a836/250x250-000000-80-0-0.jpg"
+    },
+    "echos": {
+        "nom": "Echos",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7c3a06a3905f9861ea1e377de6c8cb2c/250x250-000000-80-0-0.jpg"
     }
 }
