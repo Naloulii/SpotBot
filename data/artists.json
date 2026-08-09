@@ -10366,5 +10366,17 @@
     "gremlin$": {
         "nom": "Gremlin$",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/9692931cf8465f0f94b44bfbb6dacf60/250x250-000000-80-0-0.jpg"
+    },
+    "lil mosey": {
+        "nom": "Lil Mosey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5937e6901842bba6e891672e31674780/250x250-000000-80-0-0.jpg"
+    },
+    "sasio": {
+        "nom": "Sasio",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/72ccb9093f2df57f3f1e2ef8def3dc63/250x250-000000-80-0-0.jpg"
+    },
+    "vernex": {
+        "nom": "Vernex",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/691f091a379eab3ef5aa5dcd6efa0ebe/250x250-000000-80-0-0.jpg"
     }
 }
