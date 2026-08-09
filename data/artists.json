@@ -10270,5 +10270,25 @@
     "dj viber": {
         "nom": "DJ VIBER",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/613e59349d0f8b3c26eb9b330cd263e4/250x250-000000-80-0-0.jpg"
+    },
+    "big ali": {
+        "nom": "Big Ali",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7275c1627b60af555e562b2a8cb1dcbb/250x250-000000-80-0-0.jpg"
+    },
+    "chris prolls": {
+        "nom": "Chris Prolls",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5dac1a48c4e07862940bbbdf25fe36f2/250x250-000000-80-0-0.jpg"
+    },
+    "dogg soso": {
+        "nom": "Dogg Soso",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/43f1d990fae63f39bd6875593256ddd8/250x250-000000-80-0-0.jpg"
+    },
+    "perceval": {
+        "nom": "PERCEVAL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb0ecbef861b4aab0e68f2c02a8910b0/250x250-000000-80-0-0.jpg"
+    },
+    "francky vincent": {
+        "nom": "Francky Vincent",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9d32bc352ed21f113fcdc6552ada586e/250x250-000000-80-0-0.jpg"
     }
 }
