@@ -10454,5 +10454,9 @@
     "la famax": {
         "nom": "La Famax",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b5bfdedb56481b5f66ec977e85cccd2d/250x250-000000-80-0-0.jpg"
+    },
+    "saisai": {
+        "nom": "Saisai",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/baecec4cebef44bd72e0e5e6d985c2d2/250x250-000000-80-0-0.jpg"
     }
 }
