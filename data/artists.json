@@ -10538,5 +10538,9 @@
     "vivace l 'exilé": {
         "nom": "vivace l 'exilé",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/24d3e624de47150bd7fc22cdc94da890/250x250-000000-80-0-0.jpg"
+    },
+    "kaffu": {
+        "nom": "Kaffu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7c6f0720f4406bf7fdf2c8e893ba0d64/250x250-000000-80-0-0.jpg"
     }
 }
