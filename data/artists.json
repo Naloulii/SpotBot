@@ -10546,5 +10546,9 @@
     "axie": {
         "nom": "AXIE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2e7f246930b30df819424cf18ed28255/250x250-000000-80-0-0.jpg"
+    },
+    "kami kehoe": {
+        "nom": "Kami Kehoe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/410cd68d04012e98b2bfb661e1b0fdd8/250x250-000000-80-0-0.jpg"
     }
 }
