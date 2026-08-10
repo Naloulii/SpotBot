@@ -10438,5 +10438,17 @@
     "ashe 22": {
         "nom": "ASHE 22",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c0825d8331f939cc676d33fea7dbdcce/250x250-000000-80-0-0.jpg"
+    },
+    "kpri": {
+        "nom": "Kpri",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e3835dfeecd6cb149149774b5c370fe7/250x250-000000-80-0-0.jpg"
+    },
+    "frenetik": {
+        "nom": "Frenetik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "gianni": {
+        "nom": "Gianni",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
