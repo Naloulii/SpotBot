@@ -10450,5 +10450,9 @@
     "gianni": {
         "nom": "Gianni",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "la famax": {
+        "nom": "La Famax",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b5bfdedb56481b5f66ec977e85cccd2d/250x250-000000-80-0-0.jpg"
     }
 }
