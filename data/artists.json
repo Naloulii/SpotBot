@@ -10570,5 +10570,13 @@
     "attachingboy": {
         "nom": "Attachingboy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/11899fac54920f066d945430f7487448/250x250-000000-80-0-0.jpg"
+    },
+    "caballero & jeanjass": {
+        "nom": "Caballero & JeanJass",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e8bfc10326543050161030a2080d838d/250x250-000000-80-0-0.jpg"
+    },
+    "stony stone": {
+        "nom": "Stony Stone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d2c2818cb00941602da6a117712bc441/250x250-000000-80-0-0.jpg"
     }
 }
