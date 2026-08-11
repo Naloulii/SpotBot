@@ -10578,5 +10578,9 @@
     "stony stone": {
         "nom": "Stony Stone",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d2c2818cb00941602da6a117712bc441/250x250-000000-80-0-0.jpg"
+    },
+    "luciano": {
+        "nom": "Luciano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b9c115878fdbaac2c7f00265338d4df2/250x250-000000-80-0-0.jpg"
     }
 }
