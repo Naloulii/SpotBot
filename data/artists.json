@@ -10550,5 +10550,17 @@
     "kami kehoe": {
         "nom": "Kami Kehoe",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/410cd68d04012e98b2bfb661e1b0fdd8/250x250-000000-80-0-0.jpg"
+    },
+    "dj zynx": {
+        "nom": "DJ Zynx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/54f586c7e7b9e5bfb057d2f1fa457434/250x250-000000-80-0-0.jpg"
+    },
+    "rsfi": {
+        "nom": "RSFI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/54f586c7e7b9e5bfb057d2f1fa457434/250x250-000000-80-0-0.jpg"
+    },
+    "mc toy": {
+        "nom": "Mc Toy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4e52b63234fcc6e6488b689683349ff1/250x250-000000-80-0-0.jpg"
     }
 }
