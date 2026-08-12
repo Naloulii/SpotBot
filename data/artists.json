@@ -10586,5 +10586,9 @@
     "phendste": {
         "nom": "phendste",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7ea5e46b8c19b07e5dd57197389ac830/250x250-000000-80-0-0.jpg"
+    },
+    "anri": {
+        "nom": "Anri",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d6fb73cffaac2acaea3af8d2aaedd379/250x250-000000-80-0-0.jpg"
     }
 }
