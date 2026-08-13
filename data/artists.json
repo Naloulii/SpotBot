@@ -10694,5 +10694,29 @@
     "king gnu": {
         "nom": "King Gnu",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/eab5445c9e15a77ed8a92fac13546d86/250x250-000000-80-0-0.jpg"
+    },
+    "i prevail": {
+        "nom": "I Prevail",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/23b9fca5abb1791a572f052d98943f50/250x250-000000-80-0-0.jpg"
+    },
+    "vanessa paradis": {
+        "nom": "Vanessa Paradis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/31655524a3b9b0e668cc2ebcfc1df274/250x250-000000-80-0-0.jpg"
+    },
+    "-m-": {
+        "nom": "-M-",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f62385c89d9ea32a2b8fe165eaba5219/250x250-000000-80-0-0.jpg"
+    },
+    "grégory lemarchal": {
+        "nom": "Grégory Lemarchal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8a9eedab1c5f0082498867b16a47db26/250x250-000000-80-0-0.jpg"
+    },
+    "mozart opera rock": {
+        "nom": "Mozart Opera Rock",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c6f1d48b664a19c988d0bf1e73d7c898/250x250-000000-80-0-0.jpg"
+    },
+    "florent mothe": {
+        "nom": "Florent Mothe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/baf23bbda09e7e83dd7fd54740daee60/250x250-000000-80-0-0.jpg"
     }
 }
