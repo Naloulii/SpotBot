@@ -10618,5 +10618,13 @@
     "ozuna": {
         "nom": "Ozuna",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/df2030b9e796f55f58d2c4b68aecb18f/250x250-000000-80-0-0.jpg"
+    },
+    "jorja smith": {
+        "nom": "Jorja Smith",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2b5f1c784cf28a2b2196ead31dc04208/250x250-000000-80-0-0.jpg"
+    },
+    "macabre plaza": {
+        "nom": "Macabre Plaza",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/56d1db6e80630a36ad7e299df301a235/250x250-000000-80-0-0.jpg"
     }
 }
