@@ -10610,5 +10610,13 @@
     "younha": {
         "nom": "Younha",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c87e41731ae8a3d22aa6dda0fb967327/250x250-000000-80-0-0.jpg"
+    },
+    "nicky jam": {
+        "nom": "Nicky Jam",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1fb6dc2c446495917b88a1c63b4a0e3/250x250-000000-80-0-0.jpg"
+    },
+    "ozuna": {
+        "nom": "Ozuna",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df2030b9e796f55f58d2c4b68aecb18f/250x250-000000-80-0-0.jpg"
     }
 }
