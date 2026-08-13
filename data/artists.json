@@ -10762,5 +10762,9 @@
     "bibi": {
         "nom": "BIBI",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8533c0218fc4b4ff8a9386a779d5d81b/250x250-000000-80-0-0.jpg"
+    },
+    "jennie": {
+        "nom": "JENNIE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
