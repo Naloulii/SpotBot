@@ -10626,5 +10626,17 @@
     "macabre plaza": {
         "nom": "Macabre Plaza",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/56d1db6e80630a36ad7e299df301a235/250x250-000000-80-0-0.jpg"
+    },
+    "netta": {
+        "nom": "Netta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b0e9e346b1d41407d305a8e89a0db715/250x250-000000-80-0-0.jpg"
+    },
+    "timmy wadley": {
+        "nom": "Timmy Wadley",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/15d7b6fd104958aefe4cf415a476ef1c/250x250-000000-80-0-0.jpg"
+    },
+    "rocco": {
+        "nom": "Rocco",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/21f73ee6121fc7414da379dfec5c1a29/250x250-000000-80-0-0.jpg"
     }
 }
