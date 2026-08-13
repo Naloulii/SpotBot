@@ -10718,5 +10718,17 @@
     "florent mothe": {
         "nom": "Florent Mothe",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/baf23bbda09e7e83dd7fd54740daee60/250x250-000000-80-0-0.jpg"
+    },
+    "$werve": {
+        "nom": "$werve",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/81895d4d27183eb0c2406fb0a51e2c7b/250x250-000000-80-0-0.jpg"
+    },
+    "railovesu": {
+        "nom": "raiLovesU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/704e6e08e1abbf859ec7f973223ad045/250x250-000000-80-0-0.jpg"
+    },
+    "carly rae jepsen": {
+        "nom": "Carly Rae Jepsen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/da0d64480c889b5cc6bbf7e0acd37642/250x250-000000-80-0-0.jpg"
     }
 }
