@@ -10638,5 +10638,17 @@
     "rocco": {
         "nom": "Rocco",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/21f73ee6121fc7414da379dfec5c1a29/250x250-000000-80-0-0.jpg"
+    },
+    "yc banks": {
+        "nom": "YC Banks",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7b3ae75fe1f0aca54d90ae7e5081caf5/250x250-000000-80-0-0.jpg"
+    },
+    "b. smyth": {
+        "nom": "B. Smyth",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d795d8a764f2d59f8b3a0c9c194b21f1/250x250-000000-80-0-0.jpg"
+    },
+    "reona": {
+        "nom": "ReoNa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/826ddc7aeae90b47ce86edefe4e6db51/250x250-000000-80-0-0.jpg"
     }
 }
