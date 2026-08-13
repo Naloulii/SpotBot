@@ -10766,5 +10766,17 @@
     "jennie": {
         "nom": "JENNIE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "yeonjun": {
+        "nom": "YEONJUN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df34359d17b04c20cd1a4d6a5966468f/250x250-000000-80-0-0.jpg"
+    },
+    "daniela avanzini": {
+        "nom": "Daniela Avanzini",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/898d12ea3ded543e88043942fa916498/250x250-000000-80-0-0.jpg"
+    },
+    "hearts2hearts": {
+        "nom": "Hearts2Hearts",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/722d1bdb0ea3b0bb9581409b022a71e1/250x250-000000-80-0-0.jpg"
     }
 }
