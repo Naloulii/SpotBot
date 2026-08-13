@@ -10730,5 +10730,17 @@
     "carly rae jepsen": {
         "nom": "Carly Rae Jepsen",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/da0d64480c889b5cc6bbf7e0acd37642/250x250-000000-80-0-0.jpg"
+    },
+    "afrojack": {
+        "nom": "AFROJACK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73ac0571eb4a75e4158b146b44b02f7b/250x250-000000-80-0-0.jpg"
+    },
+    "bebe rexha": {
+        "nom": "Bebe Rexha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/315f8e20f0cd18735e6b9a9f5fd9adda/250x250-000000-80-0-0.jpg"
+    },
+    "selena gomez & the scene": {
+        "nom": "Selena Gomez & The Scene",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/657e97bc7f3e0a3c3f5aa2b4a56e1f09/250x250-000000-80-0-0.jpg"
     }
 }
