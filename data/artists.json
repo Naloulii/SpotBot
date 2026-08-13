@@ -10750,5 +10750,9 @@
     "bring me the horizon": {
         "nom": "Bring Me The Horizon",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d159e783c1f419ae27fd2deca5b89b54/250x250-000000-80-0-0.jpg"
+    },
+    "shirel": {
+        "nom": "Shirel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dbb06e50cc9af3e8d03ef9d9eac7386f/250x250-000000-80-0-0.jpg"
     }
 }
