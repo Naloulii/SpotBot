@@ -10686,5 +10686,13 @@
     "escape the fate": {
         "nom": "Escape the Fate",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b83ab807a1482acd58100b56f47bcb42/250x250-000000-80-0-0.jpg"
+    },
+    "oklahooch & the moonshiners": {
+        "nom": "Oklahooch & The Moonshiners",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3760ada1f04bac8312fbe9ed107ece3b/250x250-000000-80-0-0.jpg"
+    },
+    "king gnu": {
+        "nom": "King Gnu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eab5445c9e15a77ed8a92fac13546d86/250x250-000000-80-0-0.jpg"
     }
 }
