@@ -10602,5 +10602,13 @@
     "berryblue": {
         "nom": "berryblue",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2143335b3c46d3418fa97d6804c47840/250x250-000000-80-0-0.jpg"
+    },
+    "jonghyun": {
+        "nom": "JONGHYUN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aabbb395899666cd6729d07a0fc54a06/250x250-000000-80-0-0.jpg"
+    },
+    "younha": {
+        "nom": "Younha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c87e41731ae8a3d22aa6dda0fb967327/250x250-000000-80-0-0.jpg"
     }
 }
