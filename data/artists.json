@@ -10650,5 +10650,13 @@
     "reona": {
         "nom": "ReoNa",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/826ddc7aeae90b47ce86edefe4e6db51/250x250-000000-80-0-0.jpg"
+    },
+    "pti moha": {
+        "nom": "Pti Moha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/99ceb52f16c96db8d8e6d595b5f03784/250x250-000000-80-0-0.jpg"
+    },
+    "f430": {
+        "nom": "F430",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a19ba7b6b1bc3317d6f98241003be37d/250x250-000000-80-0-0.jpg"
     }
 }
