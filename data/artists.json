@@ -10658,5 +10658,33 @@
     "f430": {
         "nom": "F430",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a19ba7b6b1bc3317d6f98241003be37d/250x250-000000-80-0-0.jpg"
+    },
+    "khaos": {
+        "nom": "KHAOS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a2d997fec5cc8a67e29fdb16134c57ec/250x250-000000-80-0-0.jpg"
+    },
+    "jmilton": {
+        "nom": "Jmilton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ae636929f99c7c5307c9d06b0a91a24/250x250-000000-80-0-0.jpg"
+    },
+    "mc jajá": {
+        "nom": "Mc Jajá",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ae636929f99c7c5307c9d06b0a91a24/250x250-000000-80-0-0.jpg"
+    },
+    "spice": {
+        "nom": "Spice",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/73534ef1737eece3861d05908075e5a5/250x250-000000-80-0-0.jpg"
+    },
+    "shaggy": {
+        "nom": "Shaggy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "slipknot": {
+        "nom": "Slipknot",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d1a3db36015dd98615f42a5441dcf2f5/250x250-000000-80-0-0.jpg"
+    },
+    "escape the fate": {
+        "nom": "Escape the Fate",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b83ab807a1482acd58100b56f47bcb42/250x250-000000-80-0-0.jpg"
     }
 }
