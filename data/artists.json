@@ -10758,5 +10758,9 @@
     "kid cudi": {
         "nom": "Kid Cudi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b963abc4bdf0a24b68529bdfb517a1fe/250x250-000000-80-0-0.jpg"
+    },
+    "bibi": {
+        "nom": "BIBI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8533c0218fc4b4ff8a9386a779d5d81b/250x250-000000-80-0-0.jpg"
     }
 }
