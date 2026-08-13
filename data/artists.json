@@ -10742,5 +10742,13 @@
     "selena gomez & the scene": {
         "nom": "Selena Gomez & The Scene",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/657e97bc7f3e0a3c3f5aa2b4a56e1f09/250x250-000000-80-0-0.jpg"
+    },
+    "kevin jz prodigy": {
+        "nom": "Kevin Jz Prodigy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/66b8ca581760a2a561dbba8f73872f25/250x250-000000-80-0-0.jpg"
+    },
+    "bring me the horizon": {
+        "nom": "Bring Me The Horizon",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d159e783c1f419ae27fd2deca5b89b54/250x250-000000-80-0-0.jpg"
     }
 }
