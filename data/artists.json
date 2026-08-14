@@ -10794,5 +10794,25 @@
     "ronisia": {
         "nom": "Ronisia",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a78f67c2b5dd0f4797961e565e1e8949/250x250-000000-80-0-0.jpg"
+    },
+    "avril lavigne": {
+        "nom": "Avril Lavigne",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b6910349178701af19d401213e8c279/250x250-000000-80-0-0.jpg"
+    },
+    "partyraiser": {
+        "nom": "Partyraiser",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ac4c1f540f4865f10a95bb21fbc35e0c/250x250-000000-80-0-0.jpg"
+    },
+    "s-kill": {
+        "nom": "S-KILL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ff1d0421f771b90836cfc39ce572199/250x250-000000-80-0-0.jpg"
+    },
+    "irradiate": {
+        "nom": "Irradiate",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b2cb7d55927b4d4fb82e8a9f8743f1c0/250x250-000000-80-0-0.jpg"
+    },
+    "deadly guns": {
+        "nom": "Deadly Guns",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9645cee02926df23a3ee6cb7a44902cf/250x250-000000-80-0-0.jpg"
     }
 }
