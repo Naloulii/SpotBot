@@ -10822,5 +10822,13 @@
     "tiishe": {
         "nom": "Tiishe",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8b63ec943eeb7a7ef025e0a0ef812688/250x250-000000-80-0-0.jpg"
+    },
+    "alej": {
+        "nom": "Alej",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/adf24ef0224c3f0805d3b5971b241667/250x250-000000-80-0-0.jpg"
+    },
+    "guti": {
+        "nom": "Guti",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/efe09ded0706dec48b6c27210dca08ac/250x250-000000-80-0-0.jpg"
     }
 }
