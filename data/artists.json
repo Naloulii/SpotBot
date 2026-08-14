@@ -10778,5 +10778,9 @@
     "hearts2hearts": {
         "nom": "Hearts2Hearts",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/722d1bdb0ea3b0bb9581409b022a71e1/250x250-000000-80-0-0.jpg"
+    },
+    "romsii": {
+        "nom": "Romsii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e7c5a0717be54ff9076c586beca5ae5/250x250-000000-80-0-0.jpg"
     }
 }
