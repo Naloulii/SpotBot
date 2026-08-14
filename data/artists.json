@@ -10782,5 +10782,13 @@
     "romsii": {
         "nom": "Romsii",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0e7c5a0717be54ff9076c586beca5ae5/250x250-000000-80-0-0.jpg"
+    },
+    "noisetripper": {
+        "nom": "noisetripper",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ee2920e0632cb5273e24d67444d8c09e/250x250-000000-80-0-0.jpg"
+    },
+    "diabarha": {
+        "nom": "Diabarha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ebe2c56e022f8ab92bbe03a6f936785d/250x250-000000-80-0-0.jpg"
     }
 }
