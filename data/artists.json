@@ -10850,5 +10850,17 @@
     "saraunh0ly": {
         "nom": "saraunh0ly",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/75214cba9da0925e342e7ed1145474b2/250x250-000000-80-0-0.jpg"
+    },
+    "rosenfeld": {
+        "nom": "Rosenfeld",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0d29969628fb2ab7f9cf4eb16ba273a/250x250-000000-80-0-0.jpg"
+    },
+    "fitz and the tantrums": {
+        "nom": "Fitz and The Tantrums",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4f846d3da4b9238e3d5df7a7d8fbec26/250x250-000000-80-0-0.jpg"
+    },
+    "beabadoobee": {
+        "nom": "beabadoobee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a677342b08c4ce2ed2d75e8ebfd5b85/250x250-000000-80-0-0.jpg"
     }
 }
