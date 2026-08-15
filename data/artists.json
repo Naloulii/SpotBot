@@ -10834,5 +10834,13 @@
     "b goodie": {
         "nom": "B Goodie",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/88758bc88ece3f58ae97ccb09c4a64f7/250x250-000000-80-0-0.jpg"
+    },
+    "camila cabello": {
+        "nom": "Camila Cabello",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4591e8a49868c2494652767f47695a90/250x250-000000-80-0-0.jpg"
+    },
+    "lily-rose depp": {
+        "nom": "Lily-Rose Depp",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f016ad615a7117339f474ee37dca9f38/250x250-000000-80-0-0.jpg"
     }
 }
