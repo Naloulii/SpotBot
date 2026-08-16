@@ -10950,5 +10950,33 @@
     "nayer": {
         "nom": "Nayer",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/36c7e74567d49cf1883da274a7d6547c/250x250-000000-80-0-0.jpg"
+    },
+    "jeremiah denis": {
+        "nom": "Jeremiah Denis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11220210ee48c0c669962d1cf508f1b2/250x250-000000-80-0-0.jpg"
+    },
+    "alximo": {
+        "nom": "Alximo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cd63e219d7c75de970b68db9fea2d185/250x250-000000-80-0-0.jpg"
+    },
+    "usher": {
+        "nom": "USHER",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3ec6ccca154ced983a5ff05ffd123afc/250x250-000000-80-0-0.jpg"
+    },
+    "ava max": {
+        "nom": "Ava Max",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "stacyeveline": {
+        "nom": "stacyeveline",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2da7184f7abc063d39c71d5be39fb680/250x250-000000-80-0-0.jpg"
+    },
+    "real madrid": {
+        "nom": "Real Madrid",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/128223f06786d6b30c172e50b4b84e87/250x250-000000-80-0-0.jpg"
+    },
+    "redone": {
+        "nom": "RedOne",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7773aea52d6037175b3c133559ccc71/250x250-000000-80-0-0.jpg"
     }
 }
