@@ -10914,5 +10914,21 @@
     "dysmane": {
         "nom": "DYSMANE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6cb19e4f4ab5daef334c450a79dfca1c/250x250-000000-80-0-0.jpg"
+    },
+    "dj v12": {
+        "nom": "DJ V12",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a148609b1c6ca417d67be778351059c/250x250-000000-80-0-0.jpg"
+    },
+    "sxid": {
+        "nom": "SXID",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e096f14d45593421ea8e30c66bbab397/250x250-000000-80-0-0.jpg"
+    },
+    "nulteex": {
+        "nom": "Nulteex",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2aab0adcc73891078b2f1166c3918e98/250x250-000000-80-0-0.jpg"
+    },
+    "zxvren": {
+        "nom": "ZXVREN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c8e845adefdbf7d0e88391b5c6200b59/250x250-000000-80-0-0.jpg"
     }
 }
