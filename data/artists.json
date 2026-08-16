@@ -10882,5 +10882,37 @@
     "krys": {
         "nom": "Krys",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2ec11e33eef267916a308ab063c5da79/250x250-000000-80-0-0.jpg"
+    },
+    "akxneshiva": {
+        "nom": "AKXNESHIVA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47c4ba84d533a965f2e2f9640aa12feb/250x250-000000-80-0-0.jpg"
+    },
+    "avenxir": {
+        "nom": "Avenxir",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5da6f0eaeaf4c4a36933d6a0462d2360/250x250-000000-80-0-0.jpg"
+    },
+    "hamibeats": {
+        "nom": "HamiBeats",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47c4ba84d533a965f2e2f9640aa12feb/250x250-000000-80-0-0.jpg"
+    },
+    "rubikdice": {
+        "nom": "Rubikdice",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/78a167969829e7e027ec36bcade1af7f/250x250-000000-80-0-0.jpg"
+    },
+    "chilx": {
+        "nom": "Chilx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/78a167969829e7e027ec36bcade1af7f/250x250-000000-80-0-0.jpg"
+    },
+    "waa": {
+        "nom": "WAA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/78a167969829e7e027ec36bcade1af7f/250x250-000000-80-0-0.jpg"
+    },
+    "icedmane": {
+        "nom": "ICEDMANE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6cb19e4f4ab5daef334c450a79dfca1c/250x250-000000-80-0-0.jpg"
+    },
+    "dysmane": {
+        "nom": "DYSMANE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6cb19e4f4ab5daef334c450a79dfca1c/250x250-000000-80-0-0.jpg"
     }
 }
