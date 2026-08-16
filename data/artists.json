@@ -10982,5 +10982,17 @@
     "oenn": {
         "nom": "OENN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d9530c39e3334437abdbde2b50fd3ac8/250x250-000000-80-0-0.jpg"
+    },
+    "cursedevil": {
+        "nom": "CURSEDEVIL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/815c358c093d1d7fffce12c7c338d56d/250x250-000000-80-0-0.jpg"
+    },
+    "skorde": {
+        "nom": "Skorde",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/815c358c093d1d7fffce12c7c338d56d/250x250-000000-80-0-0.jpg"
+    },
+    "yb wasg'ood": {
+        "nom": "Yb Wasg'ood",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8f4902d519ca6a967d0bd3d99b09f0ba/250x250-000000-80-0-0.jpg"
     }
 }
