@@ -11018,5 +11018,9 @@
     "columbine": {
         "nom": "Columbine",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/edb317972de2527eacf88c4d7510c532/250x250-000000-80-0-0.jpg"
+    },
+    "julia wolf": {
+        "nom": "Julia Wolf",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7a60ce347796a4fc69ccfe28d4aee719/250x250-000000-80-0-0.jpg"
     }
 }
