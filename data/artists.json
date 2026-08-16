@@ -10930,5 +10930,25 @@
     "zxvren": {
         "nom": "ZXVREN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c8e845adefdbf7d0e88391b5c6200b59/250x250-000000-80-0-0.jpg"
+    },
+    "wyclef jean": {
+        "nom": "Wyclef Jean",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "sean kingston": {
+        "nom": "Sean Kingston",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "secret potion": {
+        "nom": "Secret Potion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2420c7318040182965e7513fdb580ddf/250x250-000000-80-0-0.jpg"
+    },
+    "lofi beats to chill study sleep": {
+        "nom": "Lofi Beats To Chill Study Sleep",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2420c7318040182965e7513fdb580ddf/250x250-000000-80-0-0.jpg"
+    },
+    "nayer": {
+        "nom": "Nayer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/36c7e74567d49cf1883da274a7d6547c/250x250-000000-80-0-0.jpg"
     }
 }
