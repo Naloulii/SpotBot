@@ -10866,5 +10866,21 @@
     "portishead": {
         "nom": "Portishead",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a78ec8e6fa844b473c4cea87b8ebfcf5/250x250-000000-80-0-0.jpg"
+    },
+    "mr plata": {
+        "nom": "Mr Plata",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/182f483e7c07706c1645eac780eab31e/250x250-000000-80-0-0.jpg"
+    },
+    "el americano 4kt": {
+        "nom": "El Americano 4KT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a41cd014e60b78cb67658e8ef52eb7ff/250x250-000000-80-0-0.jpg"
+    },
+    "kryssy": {
+        "nom": "Kryssy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6921ad29a0418c89688a79dde9b4b27/250x250-000000-80-0-0.jpg"
+    },
+    "krys": {
+        "nom": "Krys",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ec11e33eef267916a308ab063c5da79/250x250-000000-80-0-0.jpg"
     }
 }
