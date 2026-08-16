@@ -10994,5 +10994,29 @@
     "yb wasg'ood": {
         "nom": "Yb Wasg'ood",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8f4902d519ca6a967d0bd3d99b09f0ba/250x250-000000-80-0-0.jpg"
+    },
+    "lumix": {
+        "nom": "LUMIX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d1f69c718a8128ebe85516a438cc0d63/250x250-000000-80-0-0.jpg"
+    },
+    "kxrsed": {
+        "nom": "KXRSED",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/887924d0e49f9748a4caaaa8f14550ac/250x250-000000-80-0-0.jpg"
+    },
+    "sma$her": {
+        "nom": "sma$her",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f5da2fbebcaf44a1774e098685317ee7/250x250-000000-80-0-0.jpg"
+    },
+    "mxzi": {
+        "nom": "MXZI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/775afa758d54003753c674d744ce0361/250x250-000000-80-0-0.jpg"
+    },
+    "spiritbox": {
+        "nom": "Spiritbox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/52727a5b5ac0ec49a0857e08ce4417c1/250x250-000000-80-0-0.jpg"
+    },
+    "columbine": {
+        "nom": "Columbine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/edb317972de2527eacf88c4d7510c532/250x250-000000-80-0-0.jpg"
     }
 }
