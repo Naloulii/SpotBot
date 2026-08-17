@@ -2708,9 +2708,33 @@
     ],
     "1086742511361466370": [
         {
+            "date": "18/08/2026 00:04",
+            "track_id": "1wNmBZcYBdIf3Dp6P96Vn8",
+            "status": "En cours..."
+        },
+        {
+            "date": "18/08/2026 00:01",
+            "track_id": "24biJVqtB883uv7JlR8u0h",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 169.5
+        },
+        {
+            "date": "17/08/2026 23:59",
+            "track_id": "0olIsX30wtauqp2NbLlu7S",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 166.1
+        },
+        {
+            "date": "17/08/2026 23:54",
+            "track_id": "7bxaFZ1O3cHkgLKMsdC3xR",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 226.6
+        },
+        {
             "date": "17/08/2026 23:50",
             "track_id": "3GDssdiukyRw4OQuH7m6MX",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 206.3
         },
         {
             "date": "17/08/2026 20:31",
@@ -3280,30 +3304,6 @@
             "track_id": "3U1P14iVC6PIK0V6giZt6o",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 142.4
-        },
-        {
-            "date": "09/08/2026 14:30",
-            "track_id": "2bGOJzAf7FsCz7V3AV4Azv",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 238.0
-        },
-        {
-            "date": "09/08/2026 14:27",
-            "track_id": "5FnI4e7m5WCf0bih4fY6v1",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 201.9
-        },
-        {
-            "date": "09/08/2026 14:24",
-            "track_id": "1mZq6H0qifkmjJKqT6Kwc7",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 183.7
-        },
-        {
-            "date": "09/08/2026 14:22",
-            "track_id": "17pMT4RIeRWlQiuErirVic",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 128.4
         }
     ],
     "1058679270425247864": [
