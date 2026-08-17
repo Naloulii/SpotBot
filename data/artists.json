@@ -11030,5 +11030,17 @@
     "jennifer lopez": {
         "nom": "Jennifer Lopez",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2fa1c95948cf111e38aed58b64b49556/250x250-000000-80-0-0.jpg"
+    },
+    "bahari": {
+        "nom": "Bahari",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "nxght!": {
+        "nom": "NXGHT!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f20a45735292316e8360f45ff33f4dda/250x250-000000-80-0-0.jpg"
+    },
+    "kgj": {
+        "nom": "KGJ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8420e1562959a59e65b1b7fa752e3939/250x250-000000-80-0-0.jpg"
     }
 }
