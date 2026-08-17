@@ -2106,9 +2106,33 @@
     ],
     "822158052240785458": [
         {
+            "date": "17/08/2026 15:02",
+            "track_id": "0oS08Ba9MrJ4gj5UEoDpXk",
+            "status": "En cours..."
+        },
+        {
+            "date": "17/08/2026 14:58",
+            "track_id": "4JUoQxflbZ4DH21s2Pp6Tq",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 258.1
+        },
+        {
+            "date": "17/08/2026 14:55",
+            "track_id": "7rA5tlA3YoHwv1tOxDbxwF",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 207.7
+        },
+        {
+            "date": "17/08/2026 14:51",
+            "track_id": "21gtso7RmFpu9051Ec2feu",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 201.4
+        },
+        {
             "date": "17/08/2026 14:48",
             "track_id": "5XmTbgYnDwjcSH3fBHTLdR",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 184.8
         },
         {
             "date": "17/08/2026 14:45",
@@ -2677,30 +2701,6 @@
             "track_id": "4p1d2p4AFPA45IEUXSPt6Z",
             "status": "⏱️ Écouté pendant 0m 17s",
             "temps_ecoute_secondes": 17.6
-        },
-        {
-            "date": "16/08/2026 18:39",
-            "track_id": "65DDvGuE4txnH5H1Glskii",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 252.5
-        },
-        {
-            "date": "16/08/2026 18:35",
-            "track_id": "0WMCmlpPH050YsEFGDssPs",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 254.8
-        },
-        {
-            "date": "16/08/2026 18:33",
-            "track_id": "63XJqys3SyNGLHxeA5Ufda",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 138.3
-        },
-        {
-            "date": "16/08/2026 18:29",
-            "track_id": "5avVpUakfMHD6qGpaH26CF",
-            "status": "⏱️ Écouté pendant 4m 23s",
-            "temps_ecoute_secondes": 263.2
         }
     ],
     "1086742511361466370": [
