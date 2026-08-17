@@ -11026,5 +11026,9 @@
     "il etait une fois": {
         "nom": "Il Etait Une Fois",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a4e985346dd91023146af0c0bb63eda8/250x250-000000-80-0-0.jpg"
+    },
+    "jennifer lopez": {
+        "nom": "Jennifer Lopez",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2fa1c95948cf111e38aed58b64b49556/250x250-000000-80-0-0.jpg"
     }
 }
