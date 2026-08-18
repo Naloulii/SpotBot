@@ -11042,5 +11042,17 @@
     "kgj": {
         "nom": "KGJ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8420e1562959a59e65b1b7fa752e3939/250x250-000000-80-0-0.jpg"
+    },
+    "forts": {
+        "nom": "Forts",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e096145e984f5b5b074ae6d3c3f1ed64/250x250-000000-80-0-0.jpg"
+    },
+    "2wei": {
+        "nom": "2WEI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e83d7df98e780f18b1da8bcb12190565/250x250-000000-80-0-0.jpg"
+    },
+    "tiffany aris": {
+        "nom": "Tiffany Aris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e260d3178b0ff63088442b220b7fcc08/250x250-000000-80-0-0.jpg"
     }
 }
