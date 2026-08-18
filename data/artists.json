@@ -11054,5 +11054,13 @@
     "tiffany aris": {
         "nom": "Tiffany Aris",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e260d3178b0ff63088442b220b7fcc08/250x250-000000-80-0-0.jpg"
+    },
+    "ally nicholas": {
+        "nom": "Ally Nicholas",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e063bf1a8006b5986239fda933f398a8/250x250-000000-80-0-0.jpg"
+    },
+    "bad wolves": {
+        "nom": "Bad Wolves",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/158271fa7338316b24f67209702f38ba/250x250-000000-80-0-0.jpg"
     }
 }
