@@ -11078,5 +11078,9 @@
     "beast in black": {
         "nom": "Beast In Black",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a7f415d63d86cdcb969eac1a5a2ebdbd/250x250-000000-80-0-0.jpg"
+    },
+    "фрози": {
+        "nom": "фрози",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/06423906ce4397c15bb6e48a4742f3fd/250x250-000000-80-0-0.jpg"
     }
 }
