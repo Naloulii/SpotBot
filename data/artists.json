@@ -11062,5 +11062,17 @@
     "bad wolves": {
         "nom": "Bad Wolves",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/158271fa7338316b24f67209702f38ba/250x250-000000-80-0-0.jpg"
+    },
+    "state of mine": {
+        "nom": "State of Mine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3877e1a608b8d6208cb4755fe714de4/250x250-000000-80-0-0.jpg"
+    },
+    "sable": {
+        "nom": "Sable",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d238e35b34b08a4bc02525efd4a4ef3/250x250-000000-80-0-0.jpg"
+    },
+    "crimson vale": {
+        "nom": "Crimson Vale",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4402463fff7fc51717199ba32e55a4ee/250x250-000000-80-0-0.jpg"
     }
 }
