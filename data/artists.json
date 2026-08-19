@@ -11086,5 +11086,13 @@
     "it boys!": {
         "nom": "It Boys!",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b5846b9c40f9e2bf98d05cc49eeef94c/250x250-000000-80-0-0.jpg"
+    },
+    "mohombi": {
+        "nom": "Mohombi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/36ec12c262698fce67566f9cb6a23c06/250x250-000000-80-0-0.jpg"
+    },
+    "shaka ponk": {
+        "nom": "Shaka Ponk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d621528e9b1926fec7fd442659f94d6/250x250-000000-80-0-0.jpg"
     }
 }
