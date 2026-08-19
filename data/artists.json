@@ -11094,5 +11094,13 @@
     "shaka ponk": {
         "nom": "Shaka Ponk",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0d621528e9b1926fec7fd442659f94d6/250x250-000000-80-0-0.jpg"
+    },
+    "helloromix": {
+        "nom": "HelloROMIX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/68f3c380952769457810bf2074212079/250x250-000000-80-0-0.jpg"
+    },
+    "empire of the sun": {
+        "nom": "Empire Of The Sun",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7a91845938492af3644e7152a661ca95/250x250-000000-80-0-0.jpg"
     }
 }
