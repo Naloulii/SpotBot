@@ -11118,5 +11118,17 @@
     "nakiso": {
         "nom": "NAKISO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0fec65e81452765210155f9e9352c048/250x250-000000-80-0-0.jpg"
+    },
+    "needy girl overdose": {
+        "nom": "NEEDY GIRL OVERDOSE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6add13217a9fab3449f2b900a4612a50/250x250-000000-80-0-0.jpg"
+    },
+    "kotoko": {
+        "nom": "KOTOKO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/37f8ffa87737b8a39be830f19397ed0a/250x250-000000-80-0-0.jpg"
+    },
+    "aiobahn +81": {
+        "nom": "Aiobahn +81",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7090abc1b8d341f1e4a1c2145af0b102/250x250-000000-80-0-0.jpg"
     }
 }
