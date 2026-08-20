@@ -11138,5 +11138,9 @@
     "montell fish": {
         "nom": "Montell Fish",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "katozai": {
+        "nom": "Katozai",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e83a2dd9c04bf61c8c7cea586faeb94/250x250-000000-80-0-0.jpg"
     }
 }
