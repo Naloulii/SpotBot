@@ -11130,5 +11130,13 @@
     "aiobahn +81": {
         "nom": "Aiobahn +81",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7090abc1b8d341f1e4a1c2145af0b102/250x250-000000-80-0-0.jpg"
+    },
+    "denden": {
+        "nom": "Denden",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4702252757d54453a32a6f91391839af/250x250-000000-80-0-0.jpg"
+    },
+    "montell fish": {
+        "nom": "Montell Fish",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
