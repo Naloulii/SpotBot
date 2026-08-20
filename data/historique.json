@@ -1154,9 +1154,27 @@
     ],
     "968499201967276092": [
         {
+            "date": "20/08/2026 22:19",
+            "track_id": "0cf1gWT1VpWrxxgjjIiH4V",
+            "status": "En cours..."
+        },
+        {
+            "date": "20/08/2026 22:15",
+            "track_id": "1q9UfGqscV5U8fqleN3qzK",
+            "status": "⏱️ Écouté pendant 3m 46s",
+            "temps_ecoute_secondes": 226.5
+        },
+        {
+            "date": "20/08/2026 22:10",
+            "track_id": "25HWHrOdBp7hWF1iRgHaZD",
+            "status": "⏱️ Écouté pendant 4m 35s",
+            "temps_ecoute_secondes": 275.8
+        },
+        {
             "date": "20/08/2026 22:06",
             "track_id": "1eltgjLnAQTEsV9WaxL2qR",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 167.9
         },
         {
             "date": "20/08/2026 22:02",
@@ -1732,24 +1750,6 @@
             "track_id": "4cgjA7B4fJBHyB9Ya2bu0t",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 246.9
-        },
-        {
-            "date": "15/07/2026 11:28",
-            "track_id": "4cgjA7B4fJBHyB9Ya2bu0t",
-            "status": "⏱️ Écouté pendant 0m 05s",
-            "temps_ecoute_secondes": 5.3
-        },
-        {
-            "date": "15/07/2026 11:24",
-            "track_id": "1YLFhWhjkosyZihsEQYmV7",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 272.9
-        },
-        {
-            "date": "15/07/2026 11:24",
-            "track_id": "7dpeIa50CT6DEV6wIaOmOX",
-            "status": "⏱️ Écouté pendant 0m 14s",
-            "temps_ecoute_secondes": 14.2
         }
     ],
     "1295089920620101788": [
@@ -3916,7 +3916,8 @@
         {
             "date": "20/08/2026 22:06",
             "track_id": "6GZ0Duy3doqv0NATfyfN8p",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 119.1
         },
         {
             "date": "20/08/2026 20:53",
