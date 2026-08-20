@@ -11154,5 +11154,13 @@
     "lonni": {
         "nom": "Lonni",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1b5490cbe1fde134f4ae2e73df35dc57/250x250-000000-80-0-0.jpg"
+    },
+    "zequin": {
+        "nom": "Zequin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3b7ab9ad6535418904acac1bae6d2c09/250x250-000000-80-0-0.jpg"
+    },
+    "sacce": {
+        "nom": "Sacce",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/37dcfa68b0f45036fc84e0abb976d526/250x250-000000-80-0-0.jpg"
     }
 }
