@@ -11142,5 +11142,17 @@
     "katozai": {
         "nom": "Katozai",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0e83a2dd9c04bf61c8c7cea586faeb94/250x250-000000-80-0-0.jpg"
+    },
+    "souffrance": {
+        "nom": "Souffrance",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13f373976240ce31465a4117c9911a68/250x250-000000-80-0-0.jpg"
+    },
+    "evanv": {
+        "nom": "EvanV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5bdda4bd16a4482e6b453bc1e3051d83/250x250-000000-80-0-0.jpg"
+    },
+    "lonni": {
+        "nom": "Lonni",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1b5490cbe1fde134f4ae2e73df35dc57/250x250-000000-80-0-0.jpg"
     }
 }
