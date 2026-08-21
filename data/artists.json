@@ -11182,5 +11182,9 @@
     "indila": {
         "nom": "Indila",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d24d498af970c6feda6c2069cfdff56b/250x250-000000-80-0-0.jpg"
+    },
+    "byorn": {
+        "nom": "BYORN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf9f427035f8144ecdb692ae287c83f8/250x250-000000-80-0-0.jpg"
     }
 }
