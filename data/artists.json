@@ -11246,5 +11246,21 @@
     "timal": {
         "nom": "Timal",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "4keus": {
+        "nom": "4Keus",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5f49ed18d4fcc5609ce1c89d0f4a848d/250x250-000000-80-0-0.jpg"
+    },
+    "melina": {
+        "nom": "Melina",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e23066163f21176a822b54001ee648a2/250x250-000000-80-0-0.jpg"
+    },
+    "djamila": {
+        "nom": "Djamila",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/44691fc58ec59c7cdc5398dbd868d450/250x250-000000-80-0-0.jpg"
+    },
+    "salim": {
+        "nom": "Salim",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/be11c240aa9bb2afc5322eeaca6ae67d/250x250-000000-80-0-0.jpg"
     }
 }
