@@ -11210,5 +11210,37 @@
     "narfos": {
         "nom": "Narfos",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1c29de804468b5fb9f57bd463601227a/250x250-000000-80-0-0.jpg"
+    },
+    "skrillex": {
+        "nom": "Skrillex",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0075f053766d7d0e12e4a7be22b85e6a/250x250-000000-80-0-0.jpg"
+    },
+    "sirah": {
+        "nom": "Sirah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/addad01a5e065b753dae10dc97d44afb/250x250-000000-80-0-0.jpg"
+    },
+    "holy priest": {
+        "nom": "HOLY PRIEST",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/69cdaf42371c7b5182f592ad90f51e10/250x250-000000-80-0-0.jpg"
+    },
+    "elmefti": {
+        "nom": "elMefti",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f41a8d305cad48c7886513324a922cbf/250x250-000000-80-0-0.jpg"
+    },
+    "restricted": {
+        "nom": "Restricted",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a9a2d862c1094c5451aae7dad4c78b7/250x250-000000-80-0-0.jpg"
+    },
+    "nik sitz": {
+        "nom": "Nik Sitz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0b917ff44ff5e5a5531f3e4b51f8d2e1/250x250-000000-80-0-0.jpg"
+    },
+    "89ers": {
+        "nom": "89ers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c32e9d0bab648e2604baa8e3a1904a5c/250x250-000000-80-0-0.jpg"
+    },
+    "the prodigy": {
+        "nom": "The Prodigy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d884e6864623a3446040eaa8e9fb18d/250x250-000000-80-0-0.jpg"
     }
 }
