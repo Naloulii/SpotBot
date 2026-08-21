@@ -11162,5 +11162,17 @@
     "sacce": {
         "nom": "Sacce",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/37dcfa68b0f45036fc84e0abb976d526/250x250-000000-80-0-0.jpg"
+    },
+    "maretu": {
+        "nom": "Maretu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9789a6010865c0647077c5a26b9e8d1/250x250-000000-80-0-0.jpg"
+    },
+    "caravan palace": {
+        "nom": "Caravan Palace",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c21b8be75fa4fbcdc63ce2664694c36c/250x250-000000-80-0-0.jpg"
+    },
+    "jay rock": {
+        "nom": "Jay Rock",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c5805037a35e6a8f819e7771c6ed2264/250x250-000000-80-0-0.jpg"
     }
 }
