@@ -11242,5 +11242,9 @@
     "the prodigy": {
         "nom": "The Prodigy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4d884e6864623a3446040eaa8e9fb18d/250x250-000000-80-0-0.jpg"
+    },
+    "timal": {
+        "nom": "Timal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
