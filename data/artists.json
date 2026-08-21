@@ -11186,5 +11186,17 @@
     "byorn": {
         "nom": "BYORN",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/bf9f427035f8144ecdb692ae287c83f8/250x250-000000-80-0-0.jpg"
+    },
+    "samuel moriero": {
+        "nom": "Samuel Moriero",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/706dc87c390c12989f1b2fcaa8ce1a78/250x250-000000-80-0-0.jpg"
+    },
+    "teletech": {
+        "nom": "Teletech",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dec13a1e08ab77150ead601c5387c04b/250x250-000000-80-0-0.jpg"
+    },
+    "le wanski": {
+        "nom": "Le Wanski",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6b68e290cf70132a2f629126e37ed41e/250x250-000000-80-0-0.jpg"
     }
 }
