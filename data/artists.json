@@ -11198,5 +11198,17 @@
     "le wanski": {
         "nom": "Le Wanski",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6b68e290cf70132a2f629126e37ed41e/250x250-000000-80-0-0.jpg"
+    },
+    "dopamax": {
+        "nom": "DOPAMAX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4485357376ff557efd88162c01301b16/250x250-000000-80-0-0.jpg"
+    },
+    "salut c'est cool": {
+        "nom": "Salut C'est Cool",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ebd5edf0ffe0d8a73cf74f405652020e/250x250-000000-80-0-0.jpg"
+    },
+    "narfos": {
+        "nom": "Narfos",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1c29de804468b5fb9f57bd463601227a/250x250-000000-80-0-0.jpg"
     }
 }
