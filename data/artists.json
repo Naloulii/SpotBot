@@ -11270,5 +11270,13 @@
     "cardi b": {
         "nom": "Cardi B",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/055c52aa195cc8130132d7c450d70fde/250x250-000000-80-0-0.jpg"
+    },
+    "masego": {
+        "nom": "Masego",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/81c695c8e099a49f64f8df13dece3eaf/250x250-000000-80-0-0.jpg"
+    },
+    "fkj": {
+        "nom": "FKJ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6b0868f02b5ae7dd35a0767f2afd2cdd/250x250-000000-80-0-0.jpg"
     }
 }
