@@ -11262,5 +11262,13 @@
     "salim": {
         "nom": "Salim",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/be11c240aa9bb2afc5322eeaca6ae67d/250x250-000000-80-0-0.jpg"
+    },
+    "jeune aber": {
+        "nom": "Jeune Aber",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/457eff700d0f79608cccb65054ff85c1/250x250-000000-80-0-0.jpg"
+    },
+    "cardi b": {
+        "nom": "Cardi B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/055c52aa195cc8130132d7c450d70fde/250x250-000000-80-0-0.jpg"
     }
 }
