@@ -11278,5 +11278,9 @@
     "fkj": {
         "nom": "FKJ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6b0868f02b5ae7dd35a0767f2afd2cdd/250x250-000000-80-0-0.jpg"
+    },
+    "marcus": {
+        "nom": "Marcus",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cb2c60a3a98e1847dde30eb3225ac30d/250x250-000000-80-0-0.jpg"
     }
 }
