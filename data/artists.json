@@ -11322,5 +11322,9 @@
     "marc lavoine": {
         "nom": "Marc Lavoine",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c35e71a623c486a6b93cf90258ebffdc/250x250-000000-80-0-0.jpg"
+    },
+    "dabs": {
+        "nom": "Dabs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b238d65a8f89cfe16378d41cab8a1035/250x250-000000-80-0-0.jpg"
     }
 }
