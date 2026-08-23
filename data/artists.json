@@ -11310,5 +11310,17 @@
     "r2bz": {
         "nom": "R2BZ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8527bba8162527abe6d4404fcbc36076/250x250-000000-80-0-0.jpg"
+    },
+    "smith": {
+        "nom": "SMITH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/aee91451e32f5a5e6c2980cf626bf3ef/250x250-000000-80-0-0.jpg"
+    },
+    "n'dji": {
+        "nom": "N'Dji",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3caa0ae2cd452f0d8f369bb89a8cda90/250x250-000000-80-0-0.jpg"
+    },
+    "marc lavoine": {
+        "nom": "Marc Lavoine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c35e71a623c486a6b93cf90258ebffdc/250x250-000000-80-0-0.jpg"
     }
 }
