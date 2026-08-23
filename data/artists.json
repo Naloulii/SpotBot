@@ -11346,5 +11346,9 @@
     "112": {
         "nom": "112",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/80bccb144058c52eec1517fad4a67c4c/250x250-000000-80-0-0.jpg"
+    },
+    "debrouya": {
+        "nom": "Debrouya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2c42b13f7c6e2fd9b9f0d06cb6f9aa08/250x250-000000-80-0-0.jpg"
     }
 }
