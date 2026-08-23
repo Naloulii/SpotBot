@@ -11334,5 +11334,17 @@
     "k-rim": {
         "nom": "K-RIM",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6a86a02980ae12fcef1d99652f57e20b/250x250-000000-80-0-0.jpg"
+    },
+    "mase": {
+        "nom": "Mase",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7f28e3ff2e67ef3ccf4db5d9396cd38e/250x250-000000-80-0-0.jpg"
+    },
+    "diddy": {
+        "nom": "Diddy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/086e46bf5a88e64e11c661a81385a686/250x250-000000-80-0-0.jpg"
+    },
+    "112": {
+        "nom": "112",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/80bccb144058c52eec1517fad4a67c4c/250x250-000000-80-0-0.jpg"
     }
 }
