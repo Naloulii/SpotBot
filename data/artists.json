@@ -11286,5 +11286,21 @@
     "chappell roan": {
         "nom": "Chappell Roan",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/14ca3aea25950189f30efe0fa79ac4f9/250x250-000000-80-0-0.jpg"
+    },
+    "m i l o": {
+        "nom": "M I L O",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e23066163f21176a822b54001ee648a2/250x250-000000-80-0-0.jpg"
+    },
+    "max vizion": {
+        "nom": "Max Vizion",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8464a1d3def150319df1be12cdf34baf/250x250-000000-80-0-0.jpg"
+    },
+    "swedish house mafia": {
+        "nom": "Swedish House Mafia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bae3a6abb59c25a18a2a84d1700527bf/250x250-000000-80-0-0.jpg"
+    },
+    "daft punk": {
+        "nom": "Daft Punk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/638e69b9caaf9f9f3f8826febea7b543/250x250-000000-80-0-0.jpg"
     }
 }
