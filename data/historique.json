@@ -7245,6 +7245,18 @@
     ],
     "1114517573283881020": [
         {
+            "date": "23/08/2026 11:12",
+            "track_id": "5rib11uv1ds5gNYLYn8B1u",
+            "status": "⏱️ Écouté pendant 1m 35s",
+            "temps_ecoute_secondes": 95.1
+        },
+        {
+            "date": "23/08/2026 11:09",
+            "track_id": "5rib11uv1ds5gNYLYn8B1u",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 100.1
+        },
+        {
             "date": "22/08/2026 17:28",
             "track_id": "5rib11uv1ds5gNYLYn8B1u",
             "status": "⏱️ Écouté pendant 1m 40s",
