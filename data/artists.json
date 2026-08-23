@@ -11326,5 +11326,13 @@
     "dabs": {
         "nom": "Dabs",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b238d65a8f89cfe16378d41cab8a1035/250x250-000000-80-0-0.jpg"
+    },
+    "nairod": {
+        "nom": "NAIROD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e6545c98a4dac1b2b0eab52d9948357/250x250-000000-80-0-0.jpg"
+    },
+    "k-rim": {
+        "nom": "K-RIM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6a86a02980ae12fcef1d99652f57e20b/250x250-000000-80-0-0.jpg"
     }
 }
