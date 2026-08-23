@@ -4946,6 +4946,12 @@
     ],
     "1260775109736529950": [
         {
+            "date": "23/08/2026 07:07",
+            "track_id": "1fqpUqtqVLbDZXrtmFK1eW",
+            "status": "⏱️ Écouté pendant 1m 43s",
+            "temps_ecoute_secondes": 103.4
+        },
+        {
             "date": "23/08/2026 07:01",
             "track_id": "6FVGpjWpDNmyghdrNGjIif",
             "status": "🎉 Écouté en entier",
@@ -5538,12 +5544,6 @@
             "track_id": "3bc0aFrQ5EDJUDq1D15do5",
             "status": "⏱️ Écouté pendant 0m 31s",
             "temps_ecoute_secondes": 31.0
-        },
-        {
-            "date": "16/08/2026 06:02",
-            "track_id": "3bc0aFrQ5EDJUDq1D15do5",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 166.4
         }
     ],
     "1066377293490040903": [
