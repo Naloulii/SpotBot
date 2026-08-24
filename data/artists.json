@@ -11542,5 +11542,9 @@
     "20225": {
         "nom": "20225",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fb5ba7faa4d5b7a7b264a57d4a2ddceb/250x250-000000-80-0-0.jpg"
+    },
+    "richie rich": {
+        "nom": "Richie Rich",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a4de4c09b505b57231d634592a66108e/250x250-000000-80-0-0.jpg"
     }
 }
