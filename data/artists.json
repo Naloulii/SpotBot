@@ -11366,5 +11366,13 @@
     "h.e.r.": {
         "nom": "H.E.R.",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/43ceb1d48e2184a4b2ccbcf2f6a03152/250x250-000000-80-0-0.jpg"
+    },
+    "lay bankz": {
+        "nom": "Lay Bankz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9ea7e93049495064f7d517880f04841/250x250-000000-80-0-0.jpg"
+    },
+    "david kushner": {
+        "nom": "David Kushner",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/34a844c8a45f0696c66c292d50c92808/250x250-000000-80-0-0.jpg"
     }
 }
