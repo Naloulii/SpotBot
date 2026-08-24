@@ -11450,5 +11450,9 @@
     "third world beatz": {
         "nom": "Third World Beatz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0ed96de9de868abab58486305c7679bd/250x250-000000-80-0-0.jpg"
+    },
+    "mig": {
+        "nom": "Mig",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6d1a4b38c74f1d422eddafe10df63d40/250x250-000000-80-0-0.jpg"
     }
 }
