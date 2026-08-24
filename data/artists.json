@@ -11402,5 +11402,17 @@
     "aminé": {
         "nom": "Aminé",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8ccc323a65c9f7f7db2c4c61efd521ba/250x250-000000-80-0-0.jpg"
+    },
+    "zacari": {
+        "nom": "Zacari",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2b6d6de0a38b694facfae021c29b82f2/250x250-000000-80-0-0.jpg"
+    },
+    "2 chainz": {
+        "nom": "2 Chainz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/873921e514293393713418ecfe96ea81/250x250-000000-80-0-0.jpg"
+    },
+    "bad meets evil": {
+        "nom": "Bad Meets Evil",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/10230c42ecad283c850d0ab451e525f5/250x250-000000-80-0-0.jpg"
     }
 }
