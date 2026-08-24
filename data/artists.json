@@ -11442,5 +11442,13 @@
     "rik rok": {
         "nom": "Rik Rok",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4fa774a74d18968cc00862dbf83ca060/250x250-000000-80-0-0.jpg"
+    },
+    "roots incorporated": {
+        "nom": "Roots Incorporated",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e9924b87f9803c69c8c3ac0b16815e33/250x250-000000-80-0-0.jpg"
+    },
+    "third world beatz": {
+        "nom": "Third World Beatz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0ed96de9de868abab58486305c7679bd/250x250-000000-80-0-0.jpg"
     }
 }
