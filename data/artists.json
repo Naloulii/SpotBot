@@ -11522,5 +11522,21 @@
     "xxxxmlz": {
         "nom": "XXXXMLZ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7168c4dd987dfcc3396fb077bd65d009/250x250-000000-80-0-0.jpg"
+    },
+    "omerta": {
+        "nom": "Omerta",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "indahood": {
+        "nom": "INDAHOOD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/70416bc56ca6604f9d5afc0b51e8ecf8/250x250-000000-80-0-0.jpg"
+    },
+    "slaï king": {
+        "nom": "Slaï King",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94821683397727dc234e1f09fe9e1fb9/250x250-000000-80-0-0.jpg"
+    },
+    "killi": {
+        "nom": "Killi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6b913dc1b33de4a8f8ee38f37f956622/250x250-000000-80-0-0.jpg"
     }
 }
