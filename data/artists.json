@@ -11546,5 +11546,33 @@
     "richie rich": {
         "nom": "Richie Rich",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a4de4c09b505b57231d634592a66108e/250x250-000000-80-0-0.jpg"
+    },
+    "daz dillinger": {
+        "nom": "Daz Dillinger",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/af1923e4ee021faa7d36483c3d6302cb/250x250-000000-80-0-0.jpg"
+    },
+    "method man": {
+        "nom": "Method Man",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c7289da89fe958a619e3e9a4c4cd814e/250x250-000000-80-0-0.jpg"
+    },
+    "redman": {
+        "nom": "Redman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6be58f191359ca4ba2fcf1e229e6e8de/250x250-000000-80-0-0.jpg"
+    },
+    "kurupt": {
+        "nom": "Kurupt",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/36a8be5673f76ea844f803cd9e660dca/250x250-000000-80-0-0.jpg"
+    },
+    "yaki kadafi": {
+        "nom": "Yaki Kadafi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "nate dogg": {
+        "nom": "Nate Dogg",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "fatal": {
+        "nom": "Fatal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f168d8e6e628e3d31d3e8c92d4cbc2e1/250x250-000000-80-0-0.jpg"
     }
 }
