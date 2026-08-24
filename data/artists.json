@@ -11362,5 +11362,9 @@
     "tyga": {
         "nom": "Tyga",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/94f19f580600ea7d1c603e8794c04dd6/250x250-000000-80-0-0.jpg"
+    },
+    "h.e.r.": {
+        "nom": "H.E.R.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/43ceb1d48e2184a4b2ccbcf2f6a03152/250x250-000000-80-0-0.jpg"
     }
 }
