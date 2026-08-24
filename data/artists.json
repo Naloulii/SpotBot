@@ -11454,5 +11454,25 @@
     "mig": {
         "nom": "Mig",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6d1a4b38c74f1d422eddafe10df63d40/250x250-000000-80-0-0.jpg"
+    },
+    "kebe x hyma": {
+        "nom": "kebe x hyma",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ce95d4e533a85d979852e0166c68bb52/250x250-000000-80-0-0.jpg"
+    },
+    "1tm": {
+        "nom": "1TM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2fd65687893ffb1d2cdd63683d1935d8/250x250-000000-80-0-0.jpg"
+    },
+    "timoun": {
+        "nom": "Timoun",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/258b38c49a891e7f95fdff19d6c7463d/250x250-000000-80-0-0.jpg"
+    },
+    "blvko": {
+        "nom": "Blvko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41099cf86104b8dfd36e1448fb28b4cc/250x250-000000-80-0-0.jpg"
+    },
+    "fumier": {
+        "nom": "Fumier",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5a33987bc3242c3a9acd98d1d1524530/250x250-000000-80-0-0.jpg"
     }
 }
