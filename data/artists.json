@@ -11478,5 +11478,9 @@
     "zokush": {
         "nom": "Zokush",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/af418eaba32854d1f65068bdb354008c/250x250-000000-80-0-0.jpg"
+    },
+    "sueilo": {
+        "nom": "SUEILO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c243c92187ffbf927ea3de1847858217/250x250-000000-80-0-0.jpg"
     }
 }
