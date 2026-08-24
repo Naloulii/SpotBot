@@ -11482,5 +11482,17 @@
     "sueilo": {
         "nom": "SUEILO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c243c92187ffbf927ea3de1847858217/250x250-000000-80-0-0.jpg"
+    },
+    "eskro": {
+        "nom": "Eskro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0a7094b09958b9325724008b75edc2fc/250x250-000000-80-0-0.jpg"
+    },
+    "selera": {
+        "nom": "Selera",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6e1eb6d5fa06d76e6fc869eea4510d4e/250x250-000000-80-0-0.jpg"
+    },
+    "kidflash 240": {
+        "nom": "KidFlash 240",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3aa4aff0b4f12dd6f74da68618fa47dc/250x250-000000-80-0-0.jpg"
     }
 }
