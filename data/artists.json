@@ -11398,5 +11398,9 @@
     "young money": {
         "nom": "Young Money",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f81c44b128acdaeb431aabc5530af8e2/250x250-000000-80-0-0.jpg"
+    },
+    "aminé": {
+        "nom": "Aminé",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8ccc323a65c9f7f7db2c4c61efd521ba/250x250-000000-80-0-0.jpg"
     }
 }
