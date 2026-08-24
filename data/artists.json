@@ -11390,5 +11390,13 @@
     "roses gabor": {
         "nom": "Roses Gabor",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1b538685e94d3fcdf6c72defc50bccb6/250x250-000000-80-0-0.jpg"
+    },
+    "daniel pemberton": {
+        "nom": "Daniel Pemberton",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "young money": {
+        "nom": "Young Money",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f81c44b128acdaeb431aabc5530af8e2/250x250-000000-80-0-0.jpg"
     }
 }
