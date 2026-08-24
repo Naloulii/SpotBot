@@ -11350,5 +11350,17 @@
     "debrouya": {
         "nom": "Debrouya",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2c42b13f7c6e2fd9b9f0d06cb6f9aa08/250x250-000000-80-0-0.jpg"
+    },
+    "c!nah": {
+        "nom": "C!naH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5841fd3715aabc845010acf0959469eb/250x250-000000-80-0-0.jpg"
+    },
+    "justine skye": {
+        "nom": "Justine Skye",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/503067963c69e91db418dcf6d11a89bd/250x250-000000-80-0-0.jpg"
+    },
+    "tyga": {
+        "nom": "Tyga",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94f19f580600ea7d1c603e8794c04dd6/250x250-000000-80-0-0.jpg"
     }
 }
