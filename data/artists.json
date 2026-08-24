@@ -11494,5 +11494,33 @@
     "kidflash 240": {
         "nom": "KidFlash 240",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3aa4aff0b4f12dd6f74da68618fa47dc/250x250-000000-80-0-0.jpg"
+    },
+    "landonbeck": {
+        "nom": "LandonBeck",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5e3d7826c9f1c197f0e95507816d5a98/250x250-000000-80-0-0.jpg"
+    },
+    "yung kabin": {
+        "nom": "yung kabin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ae940e790df2b8ad5278f85d284c5fc/250x250-000000-80-0-0.jpg"
+    },
+    "anxti": {
+        "nom": "ANxTI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a566177f52df785fd69cd70e74e3948e/250x250-000000-80-0-0.jpg"
+    },
+    "roger": {
+        "nom": "Roger",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/21ebed7a103937c157f8fec5d4981d6e/250x250-000000-80-0-0.jpg"
+    },
+    "dr. dre": {
+        "nom": "Dr. Dre",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5af98b093efb7b818e4e084621c76b85/250x250-000000-80-0-0.jpg"
+    },
+    "outlawz": {
+        "nom": "Outlawz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c501730f7bd34adb5cf157571afc017/250x250-000000-80-0-0.jpg"
+    },
+    "xxxxmlz": {
+        "nom": "XXXXMLZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7168c4dd987dfcc3396fb077bd65d009/250x250-000000-80-0-0.jpg"
     }
 }
