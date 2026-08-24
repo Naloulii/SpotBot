@@ -11378,5 +11378,17 @@
     "destiny rogers": {
         "nom": "Destiny Rogers",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "gorillaz": {
+        "nom": "Gorillaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ebbb1c133ed0220c714b9ed5d254561f/250x250-000000-80-0-0.jpg"
+    },
+    "shaun ryder": {
+        "nom": "Shaun Ryder",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ad0eca0c8d1bef2982c25e2d74fab8b/250x250-000000-80-0-0.jpg"
+    },
+    "roses gabor": {
+        "nom": "Roses Gabor",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1b538685e94d3fcdf6c72defc50bccb6/250x250-000000-80-0-0.jpg"
     }
 }
