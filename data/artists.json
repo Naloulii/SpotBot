@@ -11414,5 +11414,33 @@
     "bad meets evil": {
         "nom": "Bad Meets Evil",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/10230c42ecad283c850d0ab451e525f5/250x250-000000-80-0-0.jpg"
+    },
+    "master kg": {
+        "nom": "Master KG",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d59e7069dc54809cab23c7a4775faece/250x250-000000-80-0-0.jpg"
+    },
+    "nomcebo zikode": {
+        "nom": "Nomcebo Zikode",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/77d843028890ba38ad89c1ccbda1c780/250x250-000000-80-0-0.jpg"
+    },
+    "bankroll mafia": {
+        "nom": "Bankroll Mafia",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/098074587044b1096cfba051025d63e4/250x250-000000-80-0-0.jpg"
+    },
+    "t.i.p": {
+        "nom": "T.I.P",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/17bc3dbc97b45849fb8ba1a94e37731a/250x250-000000-80-0-0.jpg"
+    },
+    "shad da god": {
+        "nom": "Shad Da God",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de9eda89899fbebfa66478e0195a0e45/250x250-000000-80-0-0.jpg"
+    },
+    "london jae": {
+        "nom": "London Jae",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1d9658561f4bb66368562e194a3cbe9a/250x250-000000-80-0-0.jpg"
+    },
+    "rik rok": {
+        "nom": "Rik Rok",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4fa774a74d18968cc00862dbf83ca060/250x250-000000-80-0-0.jpg"
     }
 }
