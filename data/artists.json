@@ -11606,5 +11606,21 @@
     "高嶺のなでしこ": {
         "nom": "高嶺のなでしこ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e97553a26eee955d5bc034187767f3f5/250x250-000000-80-0-0.jpg"
+    },
+    "arlene mc": {
+        "nom": "Arlene MC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/898b5a733422c8074195c5de73a87e2f/250x250-000000-80-0-0.jpg"
+    },
+    "dj chulo nyc": {
+        "nom": "DJ Chulo NYC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65440cd6dad8949cfdb1fc6dd33506a4/250x250-000000-80-0-0.jpg"
+    },
+    "el cherry scom": {
+        "nom": "El Cherry Scom",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/234359515acfc03a0ab0bd59626e7505/250x250-000000-80-0-0.jpg"
+    },
+    "la greña": {
+        "nom": "La Greña",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65440cd6dad8949cfdb1fc6dd33506a4/250x250-000000-80-0-0.jpg"
     }
 }
