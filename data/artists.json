@@ -11622,5 +11622,13 @@
     "la greña": {
         "nom": "La Greña",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/65440cd6dad8949cfdb1fc6dd33506a4/250x250-000000-80-0-0.jpg"
+    },
+    "chaki bley": {
+        "nom": "Chaki Bley",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5ffc2098715a814ce7e0580b43890aaa/250x250-000000-80-0-0.jpg"
+    },
+    "plan b": {
+        "nom": "Plan B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/32e1173b02620c90a2530fec69af71c9/250x250-000000-80-0-0.jpg"
     }
 }
