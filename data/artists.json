@@ -11658,5 +11658,9 @@
     "zl50": {
         "nom": "ZL50",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/16bebd2b27e6bc3f17fbbb6529e58f8b/250x250-000000-80-0-0.jpg"
+    },
+    "roman eskow": {
+        "nom": "Roman Eskow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8f9d7532a5db580d343e335048390d80/250x250-000000-80-0-0.jpg"
     }
 }
