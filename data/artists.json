@@ -11634,5 +11634,17 @@
     "huan62": {
         "nom": "Huan62",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/39e2a58b4ae50ca6724000a0d32f906f/250x250-000000-80-0-0.jpg"
+    },
+    "tragédie": {
+        "nom": "Tragédie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c3b5e31a6f9da09ecfab77e2b3d9f3eb/250x250-000000-80-0-0.jpg"
+    },
+    "sabina": {
+        "nom": "SABINA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/900eeeade2ae0d5d90c56566da5fab8a/250x250-000000-80-0-0.jpg"
+    },
+    "home made kazoku": {
+        "nom": "Home Made Kazoku",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/03fcd80dc5a36b18308d9f8f12e58a0c/250x250-000000-80-0-0.jpg"
     }
 }
