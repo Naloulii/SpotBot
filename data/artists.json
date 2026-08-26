@@ -11654,5 +11654,9 @@
     "dy-nïce": {
         "nom": "Dy-Nïce",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2b001b9150a342ee297284cb7781fdb1/250x250-000000-80-0-0.jpg"
+    },
+    "zl50": {
+        "nom": "ZL50",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/16bebd2b27e6bc3f17fbbb6529e58f8b/250x250-000000-80-0-0.jpg"
     }
 }
