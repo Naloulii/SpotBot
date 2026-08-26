@@ -11646,5 +11646,13 @@
     "home made kazoku": {
         "nom": "Home Made Kazoku",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/03fcd80dc5a36b18308d9f8f12e58a0c/250x250-000000-80-0-0.jpg"
+    },
+    "warped": {
+        "nom": "Warped",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d53e870c9fac0afe79708a62b54318f6/250x250-000000-80-0-0.jpg"
+    },
+    "dy-nïce": {
+        "nom": "Dy-Nïce",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2b001b9150a342ee297284cb7781fdb1/250x250-000000-80-0-0.jpg"
     }
 }
