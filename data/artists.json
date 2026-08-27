@@ -11686,5 +11686,9 @@
     "deco*27": {
         "nom": "DECO*27",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/08e046c2732aa0b6dc9ad2763c24fb7a/250x250-000000-80-0-0.jpg"
+    },
+    "shiki-tmns": {
+        "nom": "Shiki-TMNS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/df01906847e74e0889b2b08360a526f7/250x250-000000-80-0-0.jpg"
     }
 }
