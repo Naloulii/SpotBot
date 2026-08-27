@@ -5036,6 +5036,30 @@
     ],
     "1260775109736529950": [
         {
+            "date": "27/08/2026 17:18",
+            "track_id": "01Fyk7TF6G3w967aU3w33c",
+            "status": "⏱️ Écouté pendant 0m 07s",
+            "temps_ecoute_secondes": 7.8
+        },
+        {
+            "date": "27/08/2026 17:15",
+            "track_id": "6AIbc1cExT6NRaoPesvPZ1",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 255.9
+        },
+        {
+            "date": "27/08/2026 17:14",
+            "track_id": "6AIbc1cExT6NRaoPesvPZ1",
+            "status": "⏱️ Écouté pendant 0m 50s",
+            "temps_ecoute_secondes": 50.8
+        },
+        {
+            "date": "27/08/2026 17:14",
+            "track_id": "7rPKtXBW35rSQH1i6QAvyk",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 136.3
+        },
+        {
             "date": "27/08/2026 16:50",
             "track_id": "7rPKtXBW35rSQH1i6QAvyk",
             "status": "🎉 Écouté en entier",
@@ -5610,30 +5634,6 @@
             "track_id": "21qg0IBZf8R12qHd9A3AA4",
             "status": "⏱️ Écouté pendant 2m 42s",
             "temps_ecoute_secondes": 162.7
-        },
-        {
-            "date": "19/08/2026 19:41",
-            "track_id": "4keoRXcdwFkP8OzuJQ3ScK",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 118.2
-        },
-        {
-            "date": "19/08/2026 19:39",
-            "track_id": "2DbDefRFJ5YOfXCKOeCJJh",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 133.0
-        },
-        {
-            "date": "19/08/2026 19:34",
-            "track_id": "7gEH5vQK5u2vAUpEUF5IJM",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 290.6
-        },
-        {
-            "date": "19/08/2026 19:31",
-            "track_id": "3bc0aFrQ5EDJUDq1D15do5",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 194.7
         }
     ],
     "1066377293490040903": [
