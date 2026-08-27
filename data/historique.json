@@ -3318,6 +3318,30 @@
     ],
     "1058679270425247864": [
         {
+            "date": "27/08/2026 15:32",
+            "track_id": "4QbFbIBN9ZgboChpjUzmjx",
+            "status": "⏱️ Écouté pendant 0m 07s",
+            "temps_ecoute_secondes": 7.4
+        },
+        {
+            "date": "27/08/2026 15:32",
+            "track_id": "13QuJ2EUf7JUJOuDY7q6LR",
+            "status": "⏱️ Écouté pendant 1m 47s",
+            "temps_ecoute_secondes": 108.0
+        },
+        {
+            "date": "27/08/2026 15:27",
+            "track_id": "13QuJ2EUf7JUJOuDY7q6LR",
+            "status": "⏱️ Écouté pendant 1m 44s",
+            "temps_ecoute_secondes": 104.9
+        },
+        {
+            "date": "27/08/2026 15:27",
+            "track_id": "3fAoIdLPmPrwVu0Gop7TtD",
+            "status": "⏱️ Écouté pendant 0m 04s",
+            "temps_ecoute_secondes": 4.2
+        },
+        {
             "date": "27/08/2026 14:46",
             "track_id": "6De8sirPzVyAoBDlQpcutY",
             "status": "🎉 Écouté en entier",
@@ -3891,30 +3915,6 @@
             "track_id": "6De8sirPzVyAoBDlQpcutY",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 167.3
-        },
-        {
-            "date": "21/08/2026 18:19",
-            "track_id": "4lsOsGMzO1yCjGVucoWOZ1",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 217.1
-        },
-        {
-            "date": "21/08/2026 17:23",
-            "track_id": "7817NMRER7fiqPmGu94KL6",
-            "status": "⏱️ Écouté pendant 0m 07s",
-            "temps_ecoute_secondes": 7.7
-        },
-        {
-            "date": "21/08/2026 17:22",
-            "track_id": "1ZOydBID4223S2g6lsnRmy",
-            "status": "⏱️ Écouté pendant 0m 38s",
-            "temps_ecoute_secondes": 38.0
-        },
-        {
-            "date": "21/08/2026 17:20",
-            "track_id": "7817NMRER7fiqPmGu94KL6",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 161.1
         }
     ],
     "1196099524385570936": [
