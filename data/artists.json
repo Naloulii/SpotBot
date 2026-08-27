@@ -11702,5 +11702,13 @@
     "otomania": {
         "nom": "Otomania",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b34dbf631e3f27e3d4307f4a2bbb6964/250x250-000000-80-0-0.jpg"
+    },
+    "umicha": {
+        "nom": "Umicha",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/84c9422255b76301ae3b3a87598b3eda/250x250-000000-80-0-0.jpg"
+    },
+    "kotonoha akane&aoi": {
+        "nom": "Kotonoha Akane&Aoi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1e40a88a40dfca4bb8fce0c4954df915/250x250-000000-80-0-0.jpg"
     }
 }
