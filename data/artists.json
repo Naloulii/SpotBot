@@ -11690,5 +11690,13 @@
     "shiki-tmns": {
         "nom": "Shiki-TMNS",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/df01906847e74e0889b2b08360a526f7/250x250-000000-80-0-0.jpg"
+    },
+    "siinamota": {
+        "nom": "Siinamota",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b6278ddcfa64c61fc26695d677bf41d9/250x250-000000-80-0-0.jpg"
+    },
+    "miki matsubara": {
+        "nom": "Miki Matsubara",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/131655446cc1d947d4e7791fd37ef2ff/250x250-000000-80-0-0.jpg"
     }
 }

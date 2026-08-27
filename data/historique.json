@@ -5036,6 +5036,30 @@
     ],
     "1260775109736529950": [
         {
+            "date": "27/08/2026 17:49",
+            "track_id": "2BHj31ufdEqVK5CkYDp9mA",
+            "status": "⏱️ Écouté pendant 4m 09s",
+            "temps_ecoute_secondes": 249.9
+        },
+        {
+            "date": "27/08/2026 17:47",
+            "track_id": "2BHj31ufdEqVK5CkYDp9mA",
+            "status": "⏱️ Écouté pendant 0m 13s",
+            "temps_ecoute_secondes": 13.8
+        },
+        {
+            "date": "27/08/2026 17:43",
+            "track_id": "2DMlu3yzDZkUXXBu8YpkkD",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 222.9
+        },
+        {
+            "date": "27/08/2026 17:43",
+            "track_id": "4cpEwUqg9QIjSJ2m5giV20",
+            "status": "⏱️ Écouté pendant 2m 03s",
+            "temps_ecoute_secondes": 123.8
+        },
+        {
             "date": "27/08/2026 17:18",
             "track_id": "01Fyk7TF6G3w967aU3w33c",
             "status": "⏱️ Écouté pendant 0m 07s",
@@ -5610,30 +5634,6 @@
             "track_id": "7G19YO3m77NNF8wlDkRmi0",
             "status": "⏱️ Écouté pendant 0m 22s",
             "temps_ecoute_secondes": 22.2
-        },
-        {
-            "date": "19/08/2026 21:45",
-            "track_id": "7AMGgAPFczs3wJgMqu6Eqi",
-            "status": "⏱️ Écouté pendant 1m 47s",
-            "temps_ecoute_secondes": 107.9
-        },
-        {
-            "date": "19/08/2026 21:41",
-            "track_id": "38tXZcL1gZRfbqfOG0VMTH",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 219.9
-        },
-        {
-            "date": "19/08/2026 21:40",
-            "track_id": "3ZP1AbM0rurWtqQIhTVcln",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 241.0
-        },
-        {
-            "date": "19/08/2026 19:43",
-            "track_id": "21qg0IBZf8R12qHd9A3AA4",
-            "status": "⏱️ Écouté pendant 2m 42s",
-            "temps_ecoute_secondes": 162.7
         }
     ],
     "1066377293490040903": [
