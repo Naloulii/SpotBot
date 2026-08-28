@@ -11726,5 +11726,9 @@
     "aurora": {
         "nom": "AURORA",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7fef695420addf643a51c02092176079/250x250-000000-80-0-0.jpg"
+    },
+    "harry styles": {
+        "nom": "Harry Styles",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1151dba9b3edc0633adf35b64c21713f/250x250-000000-80-0-0.jpg"
     }
 }
