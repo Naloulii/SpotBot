@@ -11714,5 +11714,9 @@
     "mac miller": {
         "nom": "Mac Miller",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d868d87e47d0597e6ba36d49eadec848/250x250-000000-80-0-0.jpg"
+    },
+    "gigi perez": {
+        "nom": "Gigi Perez",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/13d2d6a66674cb9a1c4fdb1a7d014863/250x250-000000-80-0-0.jpg"
     }
 }
