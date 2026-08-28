@@ -11718,5 +11718,13 @@
     "gigi perez": {
         "nom": "Gigi Perez",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/13d2d6a66674cb9a1c4fdb1a7d014863/250x250-000000-80-0-0.jpg"
+    },
+    "tom odell": {
+        "nom": "Tom Odell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b8ac75b41eb8f74a3bef612a5fe8043c/250x250-000000-80-0-0.jpg"
+    },
+    "aurora": {
+        "nom": "AURORA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7fef695420addf643a51c02092176079/250x250-000000-80-0-0.jpg"
     }
 }
