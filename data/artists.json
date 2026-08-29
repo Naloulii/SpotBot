@@ -11754,5 +11754,17 @@
     "israel kamakawiwo'ole": {
         "nom": "Israel Kamakawiwo'ole",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/82eae07e8eda8a91ff1bcc0919807a71/250x250-000000-80-0-0.jpg"
+    },
+    "chavvi": {
+        "nom": "Chavvi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9385b5a4b69ef1a9d974240b6e4c6f17/250x250-000000-80-0-0.jpg"
+    },
+    "wc": {
+        "nom": "WC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8afae2863233e0e5506f43745e309e56/250x250-000000-80-0-0.jpg"
+    },
+    "mack 10": {
+        "nom": "Mack 10",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/71591b6ef98bb8509a65abe7ac5d776a/250x250-000000-80-0-0.jpg"
     }
 }
