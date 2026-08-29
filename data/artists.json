@@ -11770,5 +11770,17 @@
     "chakal": {
         "nom": "Chakal",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f7ab9592a453e27595c515efa7f8f2c4/250x250-000000-80-0-0.jpg"
+    },
+    "kendji girac": {
+        "nom": "Kendji Girac",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8937abf847aeabbaa7b8ec908c1509d4/250x250-000000-80-0-0.jpg"
+    },
+    "kodes": {
+        "nom": "Kodes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "meleonk": {
+        "nom": "MeleonK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/70b7c9d4d78c11856976f37c5a9a8726/250x250-000000-80-0-0.jpg"
     }
 }
