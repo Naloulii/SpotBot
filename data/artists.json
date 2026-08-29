@@ -11806,5 +11806,17 @@
     "pierce the veil": {
         "nom": "Pierce The Veil",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8fce2d17e548bebe0f9c7455008f0ac0/250x250-000000-80-0-0.jpg"
+    },
+    "chevelle": {
+        "nom": "Chevelle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/41f41e5899f74d5a3732aa37d0aadc5e/250x250-000000-80-0-0.jpg"
+    },
+    "muse": {
+        "nom": "Muse",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/524df130b17c9cffee378b61264037f7/250x250-000000-80-0-0.jpg"
+    },
+    "dioscures": {
+        "nom": "Dioscures",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/747d87066091bf4984f494f97e93171a/250x250-000000-80-0-0.jpg"
     }
 }
