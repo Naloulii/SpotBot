@@ -11818,5 +11818,21 @@
     "dioscures": {
         "nom": "Dioscures",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/747d87066091bf4984f494f97e93171a/250x250-000000-80-0-0.jpg"
+    },
+    "kery james": {
+        "nom": "Kery James",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/204d0395b9be1f5586808572d7477473/250x250-000000-80-0-0.jpg"
+    },
+    "l'vstro x": {
+        "nom": "L'VSTRO X",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8313ecfeb1b0fe6002e2f2359482a116/250x250-000000-80-0-0.jpg"
+    },
+    "flyleaf": {
+        "nom": "Flyleaf",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4a61c6d06a32824d9c6ede4b69e3561f/250x250-000000-80-0-0.jpg"
+    },
+    "kellin quinn": {
+        "nom": "Kellin Quinn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f8c65e8f06afa97d66cba75f5c784a3c/250x250-000000-80-0-0.jpg"
     }
 }
