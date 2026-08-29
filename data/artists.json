@@ -11766,5 +11766,9 @@
     "mack 10": {
         "nom": "Mack 10",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/71591b6ef98bb8509a65abe7ac5d776a/250x250-000000-80-0-0.jpg"
+    },
+    "chakal": {
+        "nom": "Chakal",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f7ab9592a453e27595c515efa7f8f2c4/250x250-000000-80-0-0.jpg"
     }
 }
