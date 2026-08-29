@@ -11886,5 +11886,17 @@
     "archangel": {
         "nom": "archangel",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0d34d72e8d8c61c0663dcb359c4e402a/250x250-000000-80-0-0.jpg"
+    },
+    "dkj": {
+        "nom": "dkj",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d2bda6910779ffa52584a521fd29025/250x250-000000-80-0-0.jpg"
+    },
+    "xxanteria": {
+        "nom": "xxanteria",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ee683a68ba2e7f74e42e6dce768f712/250x250-000000-80-0-0.jpg"
+    },
+    "dwele": {
+        "nom": "Dwele",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ab9f09ea18d4a5a3dfe2a2108c73d23e/250x250-000000-80-0-0.jpg"
     }
 }
