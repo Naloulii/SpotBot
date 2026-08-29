@@ -11730,5 +11730,17 @@
     "harry styles": {
         "nom": "Harry Styles",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1151dba9b3edc0633adf35b64c21713f/250x250-000000-80-0-0.jpg"
+    },
+    "bishop briggs": {
+        "nom": "Bishop Briggs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "pr1svx": {
+        "nom": "PR1SVX",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/618be70cc87deef3573ed34604c664a4/250x250-000000-80-0-0.jpg"
+    },
+    "nxcvt": {
+        "nom": "NXCVT",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d64d2a843677135d0c000a6d1e846f2/250x250-000000-80-0-0.jpg"
     }
 }
