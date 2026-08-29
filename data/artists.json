@@ -11834,5 +11834,13 @@
     "kellin quinn": {
         "nom": "Kellin Quinn",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f8c65e8f06afa97d66cba75f5c784a3c/250x250-000000-80-0-0.jpg"
+    },
+    "amira elfeky": {
+        "nom": "Amira Elfeky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bf9dab097f8fb03a3a7774218f323e6e/250x250-000000-80-0-0.jpg"
+    },
+    "him": {
+        "nom": "HIM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8fd2cc4ea6b6ec6681a7c1468546cffb/250x250-000000-80-0-0.jpg"
     }
 }
