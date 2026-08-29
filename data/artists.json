@@ -11942,5 +11942,17 @@
     "taeko onuki": {
         "nom": "Taeko Onuki",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/498b4300eee3bdf83a5133101d3c55df/250x250-000000-80-0-0.jpg"
+    },
+    "kikiyama": {
+        "nom": "Kikiyama",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9e9289d08c311214cb193a6c735ad9e0/250x250-000000-80-0-0.jpg"
+    },
+    "dinho": {
+        "nom": "Dinho",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6761057ae02a7fa87dffe1a713ae7fba/250x250-000000-80-0-0.jpg"
+    },
+    "binksdrick": {
+        "nom": "Binksdrick",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b2f4a2deb40a6ef080edf1088ceadeb1/250x250-000000-80-0-0.jpg"
     }
 }
