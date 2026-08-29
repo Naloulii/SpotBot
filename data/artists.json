@@ -11874,5 +11874,17 @@
     "fedo dj": {
         "nom": "fedo DJ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7216b7479461d1526391381b3af8562c/250x250-000000-80-0-0.jpg"
+    },
+    "dopuu": {
+        "nom": "dopuu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/afbd94980d292a3892f05d821bb6c2e7/250x250-000000-80-0-0.jpg"
+    },
+    "vip": {
+        "nom": "VIP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9280ee9a7f40ff3588f5846b9bcd5c89/250x250-000000-80-0-0.jpg"
+    },
+    "archangel": {
+        "nom": "archangel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0d34d72e8d8c61c0663dcb359c4e402a/250x250-000000-80-0-0.jpg"
     }
 }
