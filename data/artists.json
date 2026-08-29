@@ -11958,5 +11958,17 @@
     "ive": {
         "nom": "IVE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "jisoo": {
+        "nom": "JISOO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ec0a57a4fcfda09449455b948f4e2b40/250x250-000000-80-0-0.jpg"
+    },
+    "enhypen": {
+        "nom": "ENHYPEN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "ikon": {
+        "nom": "iKON",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/78648d90c6ecbbf6ffcb081ddbdcbafb/250x250-000000-80-0-0.jpg"
     }
 }
