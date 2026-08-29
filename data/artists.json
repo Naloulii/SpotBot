@@ -11798,5 +11798,13 @@
     "ilykimchi": {
         "nom": "ilykimchi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/04d241ab197fb3c203cd78782ebc06e3/250x250-000000-80-0-0.jpg"
+    },
+    "violent vira": {
+        "nom": "VIOLENT VIRA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f3b31f1b76f5c74cc5f4b1e63d88252f/250x250-000000-80-0-0.jpg"
+    },
+    "pierce the veil": {
+        "nom": "Pierce The Veil",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8fce2d17e548bebe0f9c7455008f0ac0/250x250-000000-80-0-0.jpg"
     }
 }
