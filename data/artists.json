@@ -11854,5 +11854,25 @@
     "marluxiam": {
         "nom": "Marluxiam",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/09fdd1d934fa3ac8911ee2ad3db24ca5/250x250-000000-80-0-0.jpg"
+    },
+    "madeintyo": {
+        "nom": "MadeinTYO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/afa54c8c4bfa60309f101c9543abcb3f/250x250-000000-80-0-0.jpg"
+    },
+    "fallen angel": {
+        "nom": "fallen angel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3a751b8755aa60782773cf8f57ed5ff1/250x250-000000-80-0-0.jpg"
+    },
+    "slowed down audioss": {
+        "nom": "slowed down audioss",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6463c93717c428346087b646241bfffe/250x250-000000-80-0-0.jpg"
+    },
+    "void": {
+        "nom": "void",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/438a586169b9027a197803bc5b8642f4/250x250-000000-80-0-0.jpg"
+    },
+    "fedo dj": {
+        "nom": "fedo DJ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7216b7479461d1526391381b3af8562c/250x250-000000-80-0-0.jpg"
     }
 }
