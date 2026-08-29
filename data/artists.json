@@ -11746,5 +11746,9 @@
     "mazenko": {
         "nom": "Mazenko",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8b0c2ef65bdd559d70f80a31edaf03a7/250x250-000000-80-0-0.jpg"
+    },
+    "furax barbarossa": {
+        "nom": "Furax Barbarossa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1922ce13db6ed633a712a13ce6a0da1d/250x250-000000-80-0-0.jpg"
     }
 }
