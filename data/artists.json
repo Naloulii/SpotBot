@@ -11922,5 +11922,25 @@
     "maria mena": {
         "nom": "Maria Mena",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5395799237bc100fe1858aeecbf96068/250x250-000000-80-0-0.jpg"
+    },
+    "uniqe": {
+        "nom": "uniqe",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f395a76527eab444b454e9ce964461d6/250x250-000000-80-0-0.jpg"
+    },
+    "nkeeei": {
+        "nom": "nkeeei",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f5182d001388ecc9f2d9f1d0c3705ed1/250x250-000000-80-0-0.jpg"
+    },
+    "artem shilovets": {
+        "nom": "ARTEM SHILOVETS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f395a76527eab444b454e9ce964461d6/250x250-000000-80-0-0.jpg"
+    },
+    "wipo": {
+        "nom": "Wipo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/060623ec9edb5a4a9b50bc8b91672ad5/250x250-000000-80-0-0.jpg"
+    },
+    "taeko onuki": {
+        "nom": "Taeko Onuki",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/498b4300eee3bdf83a5133101d3c55df/250x250-000000-80-0-0.jpg"
     }
 }
