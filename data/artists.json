@@ -11898,5 +11898,29 @@
     "dwele": {
         "nom": "Dwele",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ab9f09ea18d4a5a3dfe2a2108c73d23e/250x250-000000-80-0-0.jpg"
+    },
+    "larry tee": {
+        "nom": "Larry Tee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3e2ffbf86449eb909021f2d251ed7faa/250x250-000000-80-0-0.jpg"
+    },
+    "princess superstar": {
+        "nom": "Princess Superstar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9c317dbe4dfaa8c4b37bf9751b728a52/250x250-000000-80-0-0.jpg"
+    },
+    "roomtone": {
+        "nom": "RoomTone",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/51ec13bfcd12941cd99323c3b30918d9/250x250-000000-80-0-0.jpg"
+    },
+    "cruz": {
+        "nom": "CRUZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/832c4e605033020db41661bbf76c2981/250x250-000000-80-0-0.jpg"
+    },
+    "umpa": {
+        "nom": "Umpa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/93fb31ae22c91b0e02ee24f158b768f7/250x250-000000-80-0-0.jpg"
+    },
+    "maria mena": {
+        "nom": "Maria Mena",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5395799237bc100fe1858aeecbf96068/250x250-000000-80-0-0.jpg"
     }
 }
