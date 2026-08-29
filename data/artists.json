@@ -11794,5 +11794,9 @@
     "static major": {
         "nom": "Static Major",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6a253dcb754866575b74bcc361a4e2a5/250x250-000000-80-0-0.jpg"
+    },
+    "ilykimchi": {
+        "nom": "ilykimchi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/04d241ab197fb3c203cd78782ebc06e3/250x250-000000-80-0-0.jpg"
     }
 }
