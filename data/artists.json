@@ -12046,5 +12046,17 @@
     "lola young": {
         "nom": "Lola Young",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a83cfb420ba83297330ddcf9c6cfccdc/250x250-000000-80-0-0.jpg"
+    },
+    "jedis": {
+        "nom": "Jedis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1df1040498182a4c0defdba8452110c3/250x250-000000-80-0-0.jpg"
+    },
+    "gote": {
+        "nom": "Gote",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fe33fb895ede51c782563d9944d8c568/250x250-000000-80-0-0.jpg"
+    },
+    "nolep": {
+        "nom": "Nolep",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0efe81ee5d71e8ef0474463283ecee5f/250x250-000000-80-0-0.jpg"
     }
 }
