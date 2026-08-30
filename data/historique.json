@@ -1158,9 +1158,33 @@
     ],
     "968499201967276092": [
         {
+            "date": "30/08/2026 22:35",
+            "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
+            "status": "En cours..."
+        },
+        {
+            "date": "30/08/2026 22:26",
+            "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 488.3
+        },
+        {
+            "date": "30/08/2026 22:26",
+            "track_id": "75H0knnBQQ5gK2T0CDnUCx",
+            "status": "⏱️ Écouté pendant 0m 13s",
+            "temps_ecoute_secondes": 13.8
+        },
+        {
+            "date": "30/08/2026 22:22",
+            "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 163.6
+        },
+        {
             "date": "30/08/2026 22:19",
             "track_id": "6M4nkEPZMj58acftDRTuKL",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 212.4
         },
         {
             "date": "30/08/2026 22:15",
@@ -1731,30 +1755,6 @@
             "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 164.3
-        },
-        {
-            "date": "29/08/2026 11:56",
-            "track_id": "22PnLGUuJWCmIbgfOsd63Y",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 179.6
-        },
-        {
-            "date": "29/08/2026 11:56",
-            "track_id": "65X7IUg2rPy57wK7mnVNqS",
-            "status": "⏱️ Écouté pendant 0m 32s",
-            "temps_ecoute_secondes": 32.6
-        },
-        {
-            "date": "29/08/2026 11:55",
-            "track_id": "7sKt5Y2zJpYw78iAxndB8y",
-            "status": "⏱️ Écouté pendant 0m 22s",
-            "temps_ecoute_secondes": 22.5
-        },
-        {
-            "date": "28/08/2026 23:28",
-            "track_id": "0uxSUdBrJy9Un0EYoBowng",
-            "status": "⏱️ Écouté pendant 1m 09s",
-            "temps_ecoute_secondes": 69.2
         }
     ],
     "1295089920620101788": [
