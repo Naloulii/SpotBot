@@ -12014,5 +12014,13 @@
     "tyla": {
         "nom": "Tyla",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/24a1f0e2b55a08734fd38cc82089246c/250x250-000000-80-0-0.jpg"
+    },
+    "the oh hellos": {
+        "nom": "The Oh Hellos",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c6ae68004f3e5fa7e28065784e2cab3/250x250-000000-80-0-0.jpg"
+    },
+    "regina spektor": {
+        "nom": "Regina Spektor",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5de0567b0a6ae6b700b7fcd42a7ebc15/250x250-000000-80-0-0.jpg"
     }
 }
