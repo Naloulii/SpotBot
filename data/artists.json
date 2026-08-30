@@ -12074,5 +12074,13 @@
     "conan gray": {
         "nom": "Conan Gray",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dbd4df70ee3bfa7a3a4806fa69edf543/250x250-000000-80-0-0.jpg"
+    },
+    "everything but the girl": {
+        "nom": "Everything But The Girl",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ddc9ee1ecbad97222f0d3cdf43a5fd73/250x250-000000-80-0-0.jpg"
+    },
+    "todd terry": {
+        "nom": "Todd Terry",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8f61f7ab63cb6461c9274046f9a51a4e/250x250-000000-80-0-0.jpg"
     }
 }
