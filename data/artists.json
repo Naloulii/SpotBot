@@ -12086,5 +12086,13 @@
     "social house": {
         "nom": "Social House",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a5f1ee4b089a711d260731c9e0b01e07/250x250-000000-80-0-0.jpg"
+    },
+    "$undown": {
+        "nom": "$undown",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/81a3a815040e36fab6cdb635c6fb375b/250x250-000000-80-0-0.jpg"
+    },
+    "moliy": {
+        "nom": "MOLIY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7a62065cd47110d8e7cab634bcdee9ec/250x250-000000-80-0-0.jpg"
     }
 }
