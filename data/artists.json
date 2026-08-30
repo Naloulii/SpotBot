@@ -12022,5 +12022,17 @@
     "regina spektor": {
         "nom": "Regina Spektor",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5de0567b0a6ae6b700b7fcd42a7ebc15/250x250-000000-80-0-0.jpg"
+    },
+    "ckay": {
+        "nom": "CKay",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/032e7d03d75414baf8b73411e6679a13/250x250-000000-80-0-0.jpg"
+    },
+    "dj yo!": {
+        "nom": "Dj Yo!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/552e82bab6dc6ee17a12ebabd5aebeac/250x250-000000-80-0-0.jpg"
+    },
+    "ax'el": {
+        "nom": "AX'EL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f062b593c5913988424eb53344da5f0d/250x250-000000-80-0-0.jpg"
     }
 }
