@@ -11994,5 +11994,17 @@
     "soichi terada": {
         "nom": "Soichi Terada",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "carimi": {
+        "nom": "Carimi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/240616f8d3b8d7828ca756469f970a17/250x250-000000-80-0-0.jpg"
+    },
+    "omgkawaiiangel": {
+        "nom": "OMGkawaiiAngel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1b6c21019b391b096ed8eb96ee4d66cf/250x250-000000-80-0-0.jpg"
+    },
+    "haraguchi sasuke": {
+        "nom": "Haraguchi Sasuke",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a444174c3946718544e7d1c2bd52c05b/250x250-000000-80-0-0.jpg"
     }
 }
