@@ -12034,5 +12034,17 @@
     "ax'el": {
         "nom": "AX'EL",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f062b593c5913988424eb53344da5f0d/250x250-000000-80-0-0.jpg"
+    },
+    "mili": {
+        "nom": "Mili",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "maiku tachibana": {
+        "nom": "Maiku Tachibana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cec7d913729ba758ebdd362b305350ba/250x250-000000-80-0-0.jpg"
+    },
+    "lola young": {
+        "nom": "Lola Young",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a83cfb420ba83297330ddcf9c6cfccdc/250x250-000000-80-0-0.jpg"
     }
 }
