@@ -12098,5 +12098,9 @@
     "sofaygo": {
         "nom": "SoFaygo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a8c5fe348eac43f6cf1f84a4d0386dc1/250x250-000000-80-0-0.jpg"
+    },
+    "deyo": {
+        "nom": "Deyo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
