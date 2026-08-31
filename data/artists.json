@@ -12118,5 +12118,17 @@
     "charlotte day wilson": {
         "nom": "Charlotte Day Wilson",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6dd7da4198610d016ad99116116a36ef/250x250-000000-80-0-0.jpg"
+    },
+    "sonder": {
+        "nom": "Sonder",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4828cb3c848c485963a59ca0a673f5bb/250x250-000000-80-0-0.jpg"
+    },
+    "joe rem": {
+        "nom": "Joe Rem",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5dc14cd80b698877bce08e253bce4e92/250x250-000000-80-0-0.jpg"
+    },
+    "le moonjor": {
+        "nom": "Le Moonjor",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d5dbf1581ea5d694886cdcd57f227eea/250x250-000000-80-0-0.jpg"
     }
 }
