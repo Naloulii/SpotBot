@@ -1158,6 +1158,23 @@
     ],
     "968499201967276092": [
         {
+            "date": "31/08/2026 15:22",
+            "track_id": "75H0knnBQQ5gK2T0CDnUCx",
+            "status": "En cours..."
+        },
+        {
+            "date": "31/08/2026 15:20",
+            "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 162.2
+        },
+        {
+            "date": "31/08/2026 15:19",
+            "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 111.0
+        },
+        {
             "date": "31/08/2026 13:29",
             "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
             "status": "⏱️ Écouté pendant 1m 48s",
@@ -1738,24 +1755,6 @@
             "track_id": "3eGnvpFOpf2CEffcKjbC5m",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 245.2
-        },
-        {
-            "date": "29/08/2026 15:06",
-            "track_id": "5ida702wFYrsUG0LBlUMTX",
-            "status": "⏱️ Écouté pendant 1m 48s",
-            "temps_ecoute_secondes": 108.1
-        },
-        {
-            "date": "29/08/2026 15:03",
-            "track_id": "4sFO3ztXlKyO0yUICgs500",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 171.9
-        },
-        {
-            "date": "29/08/2026 15:01",
-            "track_id": "42CpJH7ssF3cIkpiWJVCDC",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 126.1
         }
     ],
     "1295089920620101788": [
@@ -4522,6 +4521,36 @@
     ],
     "702545968951722084": [
         {
+            "date": "31/08/2026 15:18",
+            "track_id": "5Gr7L38hFMwkMCwKTtvpis",
+            "status": "⏱️ Écouté pendant 0m 31s",
+            "temps_ecoute_secondes": 31.6
+        },
+        {
+            "date": "31/08/2026 15:15",
+            "track_id": "01AQ6GPPorCLZssMiZ50nl",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 164.9
+        },
+        {
+            "date": "31/08/2026 15:12",
+            "track_id": "5TVOGVhEQNEdnkVYCtE5p5",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 161.1
+        },
+        {
+            "date": "31/08/2026 15:12",
+            "track_id": "5p7j0PQ2WCQ3EuXqm1rW3O",
+            "status": "⏱️ Écouté pendant 0m 22s",
+            "temps_ecoute_secondes": 22.2
+        },
+        {
+            "date": "31/08/2026 15:11",
+            "track_id": "7nyTS2KHElKeQo4F7WcDSo",
+            "status": "⏱️ Écouté pendant 1m 23s",
+            "temps_ecoute_secondes": 83.8
+        },
+        {
             "date": "31/08/2026 13:56",
             "track_id": "5ZQnPa5rQhCCJrqGvLSkgx",
             "status": "⏱️ Écouté pendant 2m 12s",
@@ -5089,36 +5118,6 @@
             "track_id": "1NirAeIcu7L2lsEu4SoPtc",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 165.2
-        },
-        {
-            "date": "22/07/2026 16:39",
-            "track_id": "4RRbiLqiUAPIjWXn3kTUdE",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 186.1
-        },
-        {
-            "date": "22/07/2026 16:37",
-            "track_id": "0vXBmU9Zus9ZtbR4kvZAjH",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 162.1
-        },
-        {
-            "date": "22/07/2026 16:37",
-            "track_id": "0vXBmU9Zus9ZtbR4kvZAjH",
-            "status": "⏱️ Écouté pendant 0m 17s",
-            "temps_ecoute_secondes": 17.9
-        },
-        {
-            "date": "22/07/2026 16:34",
-            "track_id": "0uHD7UrwxsqPmtG25USTa6",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 162.3
-        },
-        {
-            "date": "22/07/2026 16:31",
-            "track_id": "5wFaWLXGAqDvkjw1XYQDXd",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 154.0
         }
     ],
     "1260775109736529950": [
