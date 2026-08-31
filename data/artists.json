@@ -12102,5 +12102,9 @@
     "deyo": {
         "nom": "Deyo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "panchiko": {
+        "nom": "Panchiko",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fd457104147efc84c2d5e5dd1f3d1063/250x250-000000-80-0-0.jpg"
     }
 }
