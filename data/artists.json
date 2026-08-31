@@ -12158,5 +12158,9 @@
     "lybro": {
         "nom": "Lybro",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "spiro": {
+        "nom": "Spiro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e6be5af85988ebf4c5e8d008782c3d1/250x250-000000-80-0-0.jpg"
     }
 }
