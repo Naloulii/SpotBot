@@ -12130,5 +12130,25 @@
     "le moonjor": {
         "nom": "Le Moonjor",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d5dbf1581ea5d694886cdcd57f227eea/250x250-000000-80-0-0.jpg"
+    },
+    "a$ap ferg": {
+        "nom": "A$AP Ferg",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/184a9d3c214117727e2fbe3ac8d849e7/250x250-000000-80-0-0.jpg"
+    },
+    "salaam remi": {
+        "nom": "Salaam Remi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/44974c212e4c132e24ab415c07ff7f36/250x250-000000-80-0-0.jpg"
+    },
+    "busta rhymes": {
+        "nom": "Busta Rhymes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "mariah carey": {
+        "nom": "Mariah Carey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/818c27b3e5a6179d4cd2f053df9abaf1/250x250-000000-80-0-0.jpg"
+    },
+    "flipmode squad": {
+        "nom": "Flipmode Squad",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cb390a45f19f78677cd58c0a4137c7ed/250x250-000000-80-0-0.jpg"
     }
 }
