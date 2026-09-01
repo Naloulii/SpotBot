@@ -12202,5 +12202,9 @@
     "blandine": {
         "nom": "Blandine",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "omar apollo": {
+        "nom": "Omar Apollo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2806d34fdf6232d9cbd47ce41c78c7e9/250x250-000000-80-0-0.jpg"
     }
 }
