@@ -12198,5 +12198,9 @@
     "olazermi": {
         "nom": "Olazermi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e9da633c454037ba87e5db081b4bf22a/250x250-000000-80-0-0.jpg"
+    },
+    "blandine": {
+        "nom": "Blandine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
