@@ -7911,5 +7911,13 @@
             "status": "⏱️ Écouté pendant 2m 01s",
             "temps_ecoute_secondes": 121.1
         }
+    ],
+    "768421353845555211": [
+        {
+            "date": "01/09/2026 08:08",
+            "track_id": "0ATSQ504GlQDgw1igKGOFx",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 124.8
+        }
     ]
 }
