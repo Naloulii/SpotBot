@@ -12162,5 +12162,33 @@
     "spiro": {
         "nom": "Spiro",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0e6be5af85988ebf4c5e8d008782c3d1/250x250-000000-80-0-0.jpg"
+    },
+    "mandopony": {
+        "nom": "MandoPony",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/52d30fa08e4ef4636f5175f7c3a782bf/250x250-000000-80-0-0.jpg"
+    },
+    "cochu": {
+        "nom": "Cochu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a065aee41d4779c9698e4951a94bb595/250x250-000000-80-0-0.jpg"
+    },
+    "itsjokerable": {
+        "nom": "ItsJokerable",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/370250e5b255f27c7f89488564675294/250x250-000000-80-0-0.jpg"
+    },
+    "kamex": {
+        "nom": "Kamex",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e695ce567a0d4a13c6097538d8e1ae1e/250x250-000000-80-0-0.jpg"
+    },
+    "saymaxwell": {
+        "nom": "SayMaxWell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/46aedb7074a7784e8aa4a5840b421e51/250x250-000000-80-0-0.jpg"
+    },
+    "arcade player": {
+        "nom": "Arcade Player",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/79f4330aa9257cf91e2b64110fe713d2/250x250-000000-80-0-0.jpg"
+    },
+    "kibo": {
+        "nom": "Kibo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ada15adbe5e0d376844b38ded0355798/250x250-000000-80-0-0.jpg"
     }
 }
