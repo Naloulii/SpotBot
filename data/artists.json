@@ -12354,5 +12354,13 @@
     "muni long": {
         "nom": "Muni Long",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ac22b695d99a4fbe5a8024fca00c0c77/250x250-000000-80-0-0.jpg"
+    },
+    "kyary pamyu pamyu": {
+        "nom": "Kyary Pamyu Pamyu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a6677e43523472ea2e7aae44e58e519f/250x250-000000-80-0-0.jpg"
+    },
+    "enjambre": {
+        "nom": "Enjambre",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
     }
 }
