@@ -12310,5 +12310,13 @@
     "aaliyah": {
         "nom": "Aaliyah",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/42c7ede13067c70b40599b1a0f01399e/250x250-000000-80-0-0.jpg"
+    },
+    "cumulus.": {
+        "nom": "Cumulus.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/90abe332bc39a7969e765787e8fdd1e8/250x250-000000-80-0-0.jpg"
+    },
+    "blou feet": {
+        "nom": "BLOU FEET",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b4688b8636c75dd53ef45594229c466/250x250-000000-80-0-0.jpg"
     }
 }
