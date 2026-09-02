@@ -12386,5 +12386,21 @@
     "veneris": {
         "nom": "veneris",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/86d94ed6935c827ff8652e8aa0274b1c/250x250-000000-80-0-0.jpg"
+    },
+    "mamamoo": {
+        "nom": "MAMAMOO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c7a142a623105235451f419b18ca9ef6/250x250-000000-80-0-0.jpg"
+    },
+    "studio killers": {
+        "nom": "Studio Killers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c19ac738bc18860d61b5889d69cc2898/250x250-000000-80-0-0.jpg"
+    },
+    "luke chiang": {
+        "nom": "Luke Chiang",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/54663b577bbfceaf378f26a743fec86c/250x250-000000-80-0-0.jpg"
+    },
+    "koronba": {
+        "nom": "koronba",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0a722c2670282fe2adbd8d2dcc01e872/250x250-000000-80-0-0.jpg"
     }
 }
