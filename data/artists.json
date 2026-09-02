@@ -12418,5 +12418,13 @@
     "yungatita": {
         "nom": "yungatita",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1c3a753b098d73b7ba5bad8ce724355e/250x250-000000-80-0-0.jpg"
+    },
+    "iambillies": {
+        "nom": "iambillies",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3261b2987a0912eabc53f76e9136ae0c/250x250-000000-80-0-0.jpg"
+    },
+    "charly black": {
+        "nom": "Charly Black",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/61a047063d2c56cc61f1697863f0ec4e/250x250-000000-80-0-0.jpg"
     }
 }
