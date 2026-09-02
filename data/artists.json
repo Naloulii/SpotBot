@@ -12246,5 +12246,25 @@
     "epica": {
         "nom": "Epica",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/afde0ae4dfa05e0a0facf342af168f00/250x250-000000-80-0-0.jpg"
+    },
+    "iamh3x": {
+        "nom": "IAMH3X",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/24ea758e9d8aecf621ead3c739db0392/250x250-000000-80-0-0.jpg"
+    },
+    "from ashes to new": {
+        "nom": "From Ashes to New",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f22bca7c96b2ca684cb354c68923dc14/250x250-000000-80-0-0.jpg"
+    },
+    "neoni": {
+        "nom": "Neoni",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/26c8557d44c69b37f89e13b7ebeed068/250x250-000000-80-0-0.jpg"
+    },
+    "ciara": {
+        "nom": "Ciara",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "petey pablo": {
+        "nom": "Petey Pablo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ece9526c71e304812795b09afdbf19ab/250x250-000000-80-0-0.jpg"
     }
 }
