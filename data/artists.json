@@ -12370,5 +12370,9 @@
     "jack stauber's micropop": {
         "nom": "Jack Stauber's Micropop",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8e69467ca5bd04f6df0dade221348524/250x250-000000-80-0-0.jpg"
+    },
+    "fourezine": {
+        "nom": "FOUREZINE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e1d4ede957312a2272f46d1da79348c4/250x250-000000-80-0-0.jpg"
     }
 }
