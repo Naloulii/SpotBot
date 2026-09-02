@@ -5126,6 +5126,30 @@
     ],
     "1260775109736529950": [
         {
+            "date": "02/09/2026 20:21",
+            "track_id": "2hMk3VNicbCoV8I81m7Z3q",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 254.5
+        },
+        {
+            "date": "02/09/2026 20:19",
+            "track_id": "2hMk3VNicbCoV8I81m7Z3q",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 216.7
+        },
+        {
+            "date": "02/09/2026 20:18",
+            "track_id": "2hMk3VNicbCoV8I81m7Z3q",
+            "status": "⏱️ Écouté pendant 1m 32s",
+            "temps_ecoute_secondes": 92.8
+        },
+        {
+            "date": "02/09/2026 20:13",
+            "track_id": "1Tfl1OLWRg2l2gmrLudDEL",
+            "status": "⏱️ Écouté pendant 0m 52s",
+            "temps_ecoute_secondes": 52.9
+        },
+        {
             "date": "02/09/2026 17:36",
             "track_id": "2H4MC4UVMBqDmv7pd8jX1v",
             "status": "🎉 Écouté en entier",
@@ -5700,30 +5724,6 @@
             "track_id": "2DbDefRFJ5YOfXCKOeCJJh",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 21583.2
-        },
-        {
-            "date": "30/08/2026 00:22",
-            "track_id": "6aJn7Cst74cj4lNIiPRgav",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 130.5
-        },
-        {
-            "date": "30/08/2026 00:19",
-            "track_id": "4Ws314Ylb27BVsvlZOy30C",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 195.6
-        },
-        {
-            "date": "30/08/2026 00:17",
-            "track_id": "0znsc67nMhP4X9hjhvoyeP",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 130.0
-        },
-        {
-            "date": "30/08/2026 00:13",
-            "track_id": "0eFMbKCRw8KByXyWBw8WO7",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 240.3
         }
     ],
     "1066377293490040903": [

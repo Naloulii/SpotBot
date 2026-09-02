@@ -12298,5 +12298,17 @@
     "jessie j": {
         "nom": "Jessie J",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a3bdd5018c0b557e1d740daac57f800a/250x250-000000-80-0-0.jpg"
+    },
+    "lil candy paint": {
+        "nom": "Lil Candy Paint",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9e96097b9083003ca2d0503ffea213c1/250x250-000000-80-0-0.jpg"
+    },
+    "bhad bhabie": {
+        "nom": "Bhad Bhabie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c9cf62601413952a116833244ae4822/250x250-000000-80-0-0.jpg"
+    },
+    "aaliyah": {
+        "nom": "Aaliyah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/42c7ede13067c70b40599b1a0f01399e/250x250-000000-80-0-0.jpg"
     }
 }
