@@ -12242,5 +12242,9 @@
     "dj portu": {
         "nom": "DJ PORTU",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2902e00b234fe2ae73fa2ff85972c1c0/250x250-000000-80-0-0.jpg"
+    },
+    "epica": {
+        "nom": "Epica",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/afde0ae4dfa05e0a0facf342af168f00/250x250-000000-80-0-0.jpg"
     }
 }
