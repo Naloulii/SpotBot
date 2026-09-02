@@ -12402,5 +12402,21 @@
     "koronba": {
         "nom": "koronba",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0a722c2670282fe2adbd8d2dcc01e872/250x250-000000-80-0-0.jpg"
+    },
+    "piki": {
+        "nom": "PiKi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7ab4b991a557a9ce242c963f6f0c64a/250x250-000000-80-0-0.jpg"
+    },
+    "karmin": {
+        "nom": "Karmin",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b10e03d3f33426a6843243775bdde2e/250x250-000000-80-0-0.jpg"
+    },
+    "daffdzn": {
+        "nom": "DaffDzn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/54c925dd0f5069175b96986aad932e50/250x250-000000-80-0-0.jpg"
+    },
+    "yungatita": {
+        "nom": "yungatita",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1c3a753b098d73b7ba5bad8ce724355e/250x250-000000-80-0-0.jpg"
     }
 }
