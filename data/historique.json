@@ -5126,6 +5126,18 @@
     ],
     "1260775109736529950": [
         {
+            "date": "02/09/2026 20:53",
+            "track_id": "2gSNBigeWMVtY3QBIvPAEc",
+            "status": "⏱️ Écouté pendant 1m 32s",
+            "temps_ecoute_secondes": 92.5
+        },
+        {
+            "date": "02/09/2026 20:53",
+            "track_id": "6YrHfbkE98R6rsLVn2nZSt",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 93.7
+        },
+        {
             "date": "02/09/2026 20:46",
             "track_id": "2Iv2LfBnh1oNKqqTg8AaSY",
             "status": "⏱️ Écouté pendant 0m 21s",
@@ -5712,18 +5724,6 @@
             "track_id": "2Hg6JQr80HfDgb8T9s28g1",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 154.7
-        },
-        {
-            "date": "30/08/2026 00:54",
-            "track_id": "5HiSc2ZCGn8L3cH3qSwzBT",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 211.7
-        },
-        {
-            "date": "30/08/2026 00:51",
-            "track_id": "5H1sKFMzDeMtXwND3V6hRY",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 165.3
         }
     ],
     "1066377293490040903": [
@@ -7461,9 +7461,27 @@
     ],
     "1114517573283881020": [
         {
+            "date": "02/09/2026 21:04",
+            "track_id": "2c3qbaJOJ0npyutGZSLbg2",
+            "status": "En cours..."
+        },
+        {
+            "date": "02/09/2026 21:00",
+            "track_id": "4AaD8bB3ZMA9Q1e8KgUIjZ",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 259.2
+        },
+        {
+            "date": "02/09/2026 20:56",
+            "track_id": "6FrloDPAljx5FSc6Lgsun6",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 240.3
+        },
+        {
             "date": "02/09/2026 20:51",
             "track_id": "1nThz7yEG2vbyI4UmInj5z",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 289.5
         },
         {
             "date": "30/08/2026 18:20",
