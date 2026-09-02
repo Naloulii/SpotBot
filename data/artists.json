@@ -12374,5 +12374,17 @@
     "fourezine": {
         "nom": "FOUREZINE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e1d4ede957312a2272f46d1da79348c4/250x250-000000-80-0-0.jpg"
+    },
+    "725": {
+        "nom": "725",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/408f89e1bc02cd5a7e291330c60c144b/250x250-000000-80-0-0.jpg"
+    },
+    "aiscream": {
+        "nom": "AiScReam",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba5eb1b46f52e0e74b46c96c85e55392/250x250-000000-80-0-0.jpg"
+    },
+    "veneris": {
+        "nom": "veneris",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86d94ed6935c827ff8652e8aa0274b1c/250x250-000000-80-0-0.jpg"
     }
 }
