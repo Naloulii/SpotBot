@@ -12226,5 +12226,21 @@
     "rick ross": {
         "nom": "Rick Ross",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a3c20b1578dd62cab2c271ecd9d9f273/250x250-000000-80-0-0.jpg"
+    },
+    "k2_sp": {
+        "nom": "K2_sp",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a69e0fdb2903af0c1a4aa4a972d80ab/250x250-000000-80-0-0.jpg"
+    },
+    "dj vz7": {
+        "nom": "DJ Vz7",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2902e00b234fe2ae73fa2ff85972c1c0/250x250-000000-80-0-0.jpg"
+    },
+    "h3mnyy": {
+        "nom": "h3mnyy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/59c2d9f2fc00ca6bf232b9a98f703e10/250x250-000000-80-0-0.jpg"
+    },
+    "dj portu": {
+        "nom": "DJ PORTU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2902e00b234fe2ae73fa2ff85972c1c0/250x250-000000-80-0-0.jpg"
     }
 }
