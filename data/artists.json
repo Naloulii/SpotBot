@@ -12426,5 +12426,17 @@
     "charly black": {
         "nom": "Charly Black",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/61a047063d2c56cc61f1697863f0ec4e/250x250-000000-80-0-0.jpg"
+    },
+    "santana": {
+        "nom": "Santana",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5818ac7fde768a487007a1132f18308b/250x250-000000-80-0-0.jpg"
+    },
+    "the product g&b": {
+        "nom": "The Product G&B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b09761ece7df581128c6fcf62c896003/250x250-000000-80-0-0.jpg"
+    },
+    "superorganism": {
+        "nom": "Superorganism",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/53bb59a1ddfdae19f46429ea5024fa96/250x250-000000-80-0-0.jpg"
     }
 }
