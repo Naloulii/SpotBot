@@ -12442,5 +12442,17 @@
     "fly boi keno": {
         "nom": "Fly Boi Keno",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f1487f0cc5a5d78352aa2a87b7b0b6a4/250x250-000000-80-0-0.jpg"
+    },
+    "resonance hub": {
+        "nom": "Resonance Hub",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c7f175ef3092b2874e271fa625eec62b/250x250-000000-80-0-0.jpg"
+    },
+    "gabriawll": {
+        "nom": "gabriawll",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb56e423c39b1804d92f781af1917444/250x250-000000-80-0-0.jpg"
+    },
+    "adrian rosca": {
+        "nom": "Adrian Rosca",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c1cda8a3f6975f64f6534a071821b3b8/250x250-000000-80-0-0.jpg"
     }
 }
