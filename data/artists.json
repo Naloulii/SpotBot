@@ -12334,5 +12334,13 @@
     "hazel fernandes": {
         "nom": "Hazel Fernandes",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/79f4d32d59bfdeb62f544ca7c6bb4890/250x250-000000-80-0-0.jpg"
+    },
+    "mitski": {
+        "nom": "Mitski",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/95f0e0a39d7dd9eda8239c96d054527a/250x250-000000-80-0-0.jpg"
+    },
+    "1600j": {
+        "nom": "1600j",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/62cc0840ef4c2204b53d42643ccfc17a/250x250-000000-80-0-0.jpg"
     }
 }
