@@ -12266,5 +12266,37 @@
     "petey pablo": {
         "nom": "Petey Pablo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ece9526c71e304812795b09afdbf19ab/250x250-000000-80-0-0.jpg"
+    },
+    "boub'z": {
+        "nom": "BOUB'Z",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc9aabdd0b70da6cfc27a0ef963034c1/250x250-000000-80-0-0.jpg"
+    },
+    "macklemore & ryan lewis": {
+        "nom": "Macklemore & Ryan Lewis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7b626fd854d98dc1d98b7062ff8b4b0b/250x250-000000-80-0-0.jpg"
+    },
+    "macklemore": {
+        "nom": "Macklemore",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7b626fd854d98dc1d98b7062ff8b4b0b/250x250-000000-80-0-0.jpg"
+    },
+    "ryan lewis": {
+        "nom": "Ryan Lewis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a52682af9f5ff157c9950af0dd221e03/250x250-000000-80-0-0.jpg"
+    },
+    "wanz": {
+        "nom": "Wanz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3d78ab0c9baac77de7c35567f7b8bc51/250x250-000000-80-0-0.jpg"
+    },
+    "edward maya": {
+        "nom": "Edward Maya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0477f8981cb9e1ed1e132c3c86b6eb7f/250x250-000000-80-0-0.jpg"
+    },
+    "vika jigulina": {
+        "nom": "Vika Jigulina",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6cfa05090efca95b3c4a49087b5c1ae3/250x250-000000-80-0-0.jpg"
+    },
+    "jessie j": {
+        "nom": "Jessie J",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3bdd5018c0b557e1d740daac57f800a/250x250-000000-80-0-0.jpg"
     }
 }
