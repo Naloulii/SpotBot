@@ -12318,5 +12318,21 @@
     "blou feet": {
         "nom": "BLOU FEET",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/4b4688b8636c75dd53ef45594229c466/250x250-000000-80-0-0.jpg"
+    },
+    "noir": {
+        "nom": "Noir",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cf810c2dbaaba71c2d1f021c06819dc0/250x250-000000-80-0-0.jpg"
+    },
+    "vanna rainelle": {
+        "nom": "Vanna Rainelle",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3317eca56b1a7d875fb831d109fcde44/250x250-000000-80-0-0.jpg"
+    },
+    "shiro sagisu": {
+        "nom": "Shiro SAGISU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c1cdc9e3212627b86d567ea2623d154/250x250-000000-80-0-0.jpg"
+    },
+    "hazel fernandes": {
+        "nom": "Hazel Fernandes",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/79f4d32d59bfdeb62f544ca7c6bb4890/250x250-000000-80-0-0.jpg"
     }
 }
