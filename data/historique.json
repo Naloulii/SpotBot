@@ -2118,7 +2118,8 @@
         {
             "date": "02/09/2026 17:35",
             "track_id": "3cWQDKcIhP74CTfkxoCN0J",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 195.1
         },
         {
             "date": "02/09/2026 17:32",
@@ -5126,7 +5127,8 @@
         {
             "date": "02/09/2026 17:36",
             "track_id": "2H4MC4UVMBqDmv7pd8jX1v",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 303.2
         },
         {
             "date": "02/09/2026 16:28",
