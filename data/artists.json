@@ -12362,5 +12362,9 @@
     "enjambre": {
         "nom": "Enjambre",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "griffinilla": {
+        "nom": "Griffinilla",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e34f815eccb82b1795959676d5bfe390/250x250-000000-80-0-0.jpg"
     }
 }
