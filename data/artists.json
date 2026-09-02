@@ -12218,5 +12218,13 @@
     "nxxkz": {
         "nom": "Nxxkz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6e69f948d9eed0ddc7c18d1f0ff785a4/250x250-000000-80-0-0.jpg"
+    },
+    "dj khaled": {
+        "nom": "DJ Khaled",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c9157de87a18015b5a898cf4d0d867d8/250x250-000000-80-0-0.jpg"
+    },
+    "rick ross": {
+        "nom": "Rick Ross",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a3c20b1578dd62cab2c271ecd9d9f273/250x250-000000-80-0-0.jpg"
     }
 }
