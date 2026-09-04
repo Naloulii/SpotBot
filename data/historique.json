@@ -2718,9 +2718,33 @@
     ],
     "1086742511361466370": [
         {
+            "date": "04/09/2026 19:49",
+            "track_id": "0oxYB9GoOIDrdzniNdKC44",
+            "status": "En cours..."
+        },
+        {
+            "date": "04/09/2026 19:46",
+            "track_id": "0RiRZpuVRbi7oqRdSMwhQY",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 165.0
+        },
+        {
+            "date": "04/09/2026 19:43",
+            "track_id": "3iEUDvanZwQhLCIqUmCR7N",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 203.4
+        },
+        {
+            "date": "04/09/2026 19:38",
+            "track_id": "0TDLuuLlV54CkRRUOahJb4",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 251.2
+        },
+        {
             "date": "04/09/2026 19:34",
             "track_id": "5Az8KU81g2aLBbJN67F2CI",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 252.0
         },
         {
             "date": "04/09/2026 19:29",
@@ -3291,30 +3315,6 @@
             "track_id": "0UbEeYuehzUktmPlhMtfA8",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 170.5
-        },
-        {
-            "date": "29/08/2026 17:43",
-            "track_id": "1PTve7nyGUJJinHGrxhIbP",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 156.7
-        },
-        {
-            "date": "29/08/2026 17:39",
-            "track_id": "44FeMWf96yh69xdn25FZFy",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 247.8
-        },
-        {
-            "date": "29/08/2026 17:38",
-            "track_id": "2rwDp4DBw7AojTCBLhUmQ5",
-            "status": "⏱️ Écouté pendant 0m 50s",
-            "temps_ecoute_secondes": 50.4
-        },
-        {
-            "date": "29/08/2026 17:38",
-            "track_id": "1xO3PpGchMqMmmF6OEtH5Y",
-            "status": "⏱️ Écouté pendant 0m 22s",
-            "temps_ecoute_secondes": 22.5
         }
     ],
     "1058679270425247864": [

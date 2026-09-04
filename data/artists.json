@@ -12486,5 +12486,9 @@
     "young the giant": {
         "nom": "Young the Giant",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/076cb4ef35cac3a9592583e7b01b34ea/250x250-000000-80-0-0.jpg"
+    },
+    "slowdive": {
+        "nom": "Slowdive",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/16417737fe6efb615f826ef4902e7faf/250x250-000000-80-0-0.jpg"
     }
 }
