@@ -12462,5 +12462,9 @@
     "kpoint": {
         "nom": "Kpoint",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/250x250-000000-80-0-0.jpg"
+    },
+    "bobby caldwell": {
+        "nom": "Bobby Caldwell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0e6fc07cc41f21b375731ab4f8ccf0f8/250x250-000000-80-0-0.jpg"
     }
 }
