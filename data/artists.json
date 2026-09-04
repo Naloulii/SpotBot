@@ -12506,5 +12506,13 @@
     "bedroom": {
         "nom": "Bedroom",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/715393638a956fa92e4767439b29eae1/250x250-000000-80-0-0.jpg"
+    },
+    "dj anxvar": {
+        "nom": "DJ ANXVAR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a3abc2af366cbc7e857596149014a86/250x250-000000-80-0-0.jpg"
+    },
+    "mc lone": {
+        "nom": "MC LONE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9a3abc2af366cbc7e857596149014a86/250x250-000000-80-0-0.jpg"
     }
 }
