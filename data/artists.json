@@ -12502,5 +12502,9 @@
     "pusha t": {
         "nom": "Pusha T",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/929152574024969e8da71228c5e3fc44/250x250-000000-80-0-0.jpg"
+    },
+    "bedroom": {
+        "nom": "Bedroom",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/715393638a956fa92e4767439b29eae1/250x250-000000-80-0-0.jpg"
     }
 }
