@@ -12490,5 +12490,13 @@
     "slowdive": {
         "nom": "Slowdive",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/16417737fe6efb615f826ef4902e7faf/250x250-000000-80-0-0.jpg"
+    },
+    "f1 the album": {
+        "nom": "F1 The Album",
+        "image_url": null
+    },
+    "venny": {
+        "nom": "venny",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/17ceee2e12957b7d5bfd461f0461e949/250x250-000000-80-0-0.jpg"
     }
 }
