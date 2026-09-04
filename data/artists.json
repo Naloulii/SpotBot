@@ -12518,5 +12518,13 @@
     "the flamingos": {
         "nom": "The Flamingos",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/59d973e387b10874016a6d037bfbb002/250x250-000000-80-0-0.jpg"
+    },
+    "美波": {
+        "nom": "美波",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ed4c4576f4472922d925021a5c3ecdea/250x250-000000-80-0-0.jpg"
+    },
+    "aviva": {
+        "nom": "AViVA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/16d84db991398b2f650c87a28216f36c/250x250-000000-80-0-0.jpg"
     }
 }
