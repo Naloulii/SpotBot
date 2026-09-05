@@ -12558,5 +12558,9 @@
     "manusa": {
         "nom": "Manusa",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/127f0af6832f14b3715c68229982802c/250x250-000000-80-0-0.jpg"
+    },
+    "bradnight": {
+        "nom": "Bradnight",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/05b1cd0e0ca5ef17f67c6f678371bbb2/250x250-000000-80-0-0.jpg"
     }
 }
