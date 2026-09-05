@@ -12622,5 +12622,9 @@
     "chaps": {
         "nom": "Chaps",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f45515ca4bc3f6c0f04681a24fb7e2f8/250x250-000000-80-0-0.jpg"
+    },
+    "seizur": {
+        "nom": "Seizur",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/88b605229bfe401d2f1e74566a15663a/250x250-000000-80-0-0.jpg"
     }
 }
