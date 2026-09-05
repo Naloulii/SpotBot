@@ -12546,5 +12546,9 @@
     "mc xangai": {
         "nom": "MC Xangai",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/dc0f4c4b4ff986b9121dbafaedd21cc3/250x250-000000-80-0-0.jpg"
+    },
+    "tidem": {
+        "nom": "Tidem",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/24ef41e51bd12dd3cf8c1882f5e75b74/250x250-000000-80-0-0.jpg"
     }
 }
