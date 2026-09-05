@@ -12730,5 +12730,13 @@
     "ash island": {
         "nom": "ASH ISLAND",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c279e84434198f1d3eb4ff1599ab4724/250x250-000000-80-0-0.jpg"
+    },
+    "yvng ej": {
+        "nom": "Yvng EJ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/269e1cb2b7919938821624c557859a97/250x250-000000-80-0-0.jpg"
+    },
+    "ti lliam": {
+        "nom": "TI LLIAM",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2250c740b9f2497287f6c92311e8a7a6/250x250-000000-80-0-0.jpg"
     }
 }
