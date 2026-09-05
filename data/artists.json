@@ -12714,5 +12714,21 @@
     "sofia karlberg": {
         "nom": "Sofia Karlberg",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3c54b46b901ddd79fc35864b4b2383d2/250x250-000000-80-0-0.jpg"
+    },
+    "cikey": {
+        "nom": "Cikey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f1e37eccc9033e746d0ce684e736bce5/250x250-000000-80-0-0.jpg"
+    },
+    "syb": {
+        "nom": "SYB",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9057dab19dfe898f6447347291772ee0/250x250-000000-80-0-0.jpg"
+    },
+    "yongyong": {
+        "nom": "YongYong",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1f1831c5a57a936647025bc3c4b20642/250x250-000000-80-0-0.jpg"
+    },
+    "ash island": {
+        "nom": "ASH ISLAND",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c279e84434198f1d3eb4ff1599ab4724/250x250-000000-80-0-0.jpg"
     }
 }
