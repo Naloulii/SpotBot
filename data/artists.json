@@ -12574,5 +12574,9 @@
     "tlc": {
         "nom": "TLC",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ba63238c2a33dd5ed1f44b165bbee945/250x250-000000-80-0-0.jpg"
+    },
+    "vyreli": {
+        "nom": "vyreli",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/421548a9d1f223705a330d86445226ae/250x250-000000-80-0-0.jpg"
     }
 }
