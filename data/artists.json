@@ -12774,5 +12774,45 @@
     "skinny": {
         "nom": "Skinny",
         "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "corpse": {
+        "nom": "CORPSE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/84b0caf90e461846bb90775634cca270/250x250-000000-80-0-0.jpg"
+    },
+    "seafret": {
+        "nom": "Seafret",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4697555683091d66d20459c592a7bf37/250x250-000000-80-0-0.jpg"
+    },
+    "daddy yankee": {
+        "nom": "Daddy Yankee",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a4f77d40d68cf544e74883b2bd904fce/250x250-000000-80-0-0.jpg"
+    },
+    "heartsteel": {
+        "nom": "HEARTSTEEL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ddfd05d4792e49e54e0043aa1b3f2703/250x250-000000-80-0-0.jpg"
+    },
+    "baekhyun": {
+        "nom": "BAEKHYUN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e5494f41b143337ff053aaadb4d197bb/250x250-000000-80-0-0.jpg"
+    },
+    "tobi lou": {
+        "nom": "tobi lou",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/23de800e822c46c0ad9c4d5a9a40e328/250x250-000000-80-0-0.jpg"
+    },
+    "øzi": {
+        "nom": "ØZI",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d0d735b51d675e890806ccf510e6e78e/250x250-000000-80-0-0.jpg"
+    },
+    "magic system": {
+        "nom": "Magic System",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/de7ce17218a913079da4d45d53ada004/250x250-000000-80-0-0.jpg"
+    },
+    "l'algérino": {
+        "nom": "L'Algérino",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5898cee032513664ddb789535c403902/250x250-000000-80-0-0.jpg"
+    },
+    "yelle et christelle": {
+        "nom": "Yelle et Christelle",
+        "image_url": null
     }
 }
