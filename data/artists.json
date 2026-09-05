@@ -12814,5 +12814,13 @@
     "yelle et christelle": {
         "nom": "Yelle et Christelle",
         "image_url": null
+    },
+    "onera": {
+        "nom": "ONERA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6fbcadcbb96bb8344e9ca1681b5f3e86/250x250-000000-80-0-0.jpg"
+    },
+    "2vsk": {
+        "nom": "2Vsk",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6fbcadcbb96bb8344e9ca1681b5f3e86/250x250-000000-80-0-0.jpg"
     }
 }
