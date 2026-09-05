@@ -12578,5 +12578,21 @@
     "vyreli": {
         "nom": "vyreli",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/421548a9d1f223705a330d86445226ae/250x250-000000-80-0-0.jpg"
+    },
+    "artsolidaire": {
+        "nom": "ArtSolidaire",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/86b5e9fa931c12a332f478e5e76ad3d6/250x250-000000-80-0-0.jpg"
+    },
+    "zéon squad": {
+        "nom": "Zéon Squad",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ce672f82ab59ecde7818a6c4ff66264c/250x250-000000-80-0-0.jpg"
+    },
+    "nayrok": {
+        "nom": "Nayrok",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e20a60628461be05eefe9fd095279a9e/250x250-000000-80-0-0.jpg"
+    },
+    "yuno miles": {
+        "nom": "Yuno Miles",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7cd66e93626bbb90c45a6201b690ed41/250x250-000000-80-0-0.jpg"
     }
 }
