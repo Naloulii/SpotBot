@@ -12766,5 +12766,13 @@
     "bill withers": {
         "nom": "Bill Withers",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/3d6efd55377baa6322530e103da6d164/250x250-000000-80-0-0.jpg"
+    },
+    "zensery": {
+        "nom": "Zensery",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/74f3d01f2f52d76ed35ddc448fb1ec37/250x250-000000-80-0-0.jpg"
+    },
+    "skinny": {
+        "nom": "Skinny",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
     }
 }
