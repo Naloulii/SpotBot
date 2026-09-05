@@ -12594,5 +12594,33 @@
     "yuno miles": {
         "nom": "Yuno Miles",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7cd66e93626bbb90c45a6201b690ed41/250x250-000000-80-0-0.jpg"
+    },
+    "lvz": {
+        "nom": "LVZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/915b68c029016398d0431bfca3c1472a/250x250-000000-80-0-0.jpg"
+    },
+    "foda c": {
+        "nom": "Foda C",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5f5bb71da7aeba3982a9a185c240fd78/250x250-000000-80-0-0.jpg"
+    },
+    "yro": {
+        "nom": "Yro",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/69800c357412da0f5402288627dfc485/250x250-000000-80-0-0.jpg"
+    },
+    "chaman": {
+        "nom": "Chaman",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6836790b9365eefd808ec73be9ec75ae/250x250-000000-80-0-0.jpg"
+    },
+    "klem schen": {
+        "nom": "Klem Schen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/69c8242285da05ffc4edd8a439aba5af/250x250-000000-80-0-0.jpg"
+    },
+    "fenekot": {
+        "nom": "fenekot",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/680edeae57dc8defd54f9701699f13b4/250x250-000000-80-0-0.jpg"
+    },
+    "chaps": {
+        "nom": "Chaps",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f45515ca4bc3f6c0f04681a24fb7e2f8/250x250-000000-80-0-0.jpg"
     }
 }
