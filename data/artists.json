@@ -12562,5 +12562,17 @@
     "bradnight": {
         "nom": "Bradnight",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/05b1cd0e0ca5ef17f67c6f678371bbb2/250x250-000000-80-0-0.jpg"
+    },
+    "dove cameron": {
+        "nom": "Dove Cameron",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d87abf237c3f2c978bc1cba4cfaa070/250x250-000000-80-0-0.jpg"
+    },
+    "disney": {
+        "nom": "Disney",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c832e7ca87f15510b90c7d0b53a95402/250x250-000000-80-0-0.jpg"
+    },
+    "tlc": {
+        "nom": "TLC",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ba63238c2a33dd5ed1f44b165bbee945/250x250-000000-80-0-0.jpg"
     }
 }
