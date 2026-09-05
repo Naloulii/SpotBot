@@ -12538,5 +12538,9 @@
     "nine inch nails": {
         "nom": "Nine Inch Nails",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/cb15e0065ad89b90f688a250f46001f4/250x250-000000-80-0-0.jpg"
+    },
+    "wizkid": {
+        "nom": "Wizkid",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/171332ffcaa66c2b5583d7630297be88/250x250-000000-80-0-0.jpg"
     }
 }
