@@ -12738,5 +12738,33 @@
     "ti lliam": {
         "nom": "TI LLIAM",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2250c740b9f2497287f6c92311e8a7a6/250x250-000000-80-0-0.jpg"
+    },
+    "nosky": {
+        "nom": "Nosky",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c85c6e2c41069ab37083c4e6751bc3aa/250x250-000000-80-0-0.jpg"
+    },
+    "sv": {
+        "nom": "SV",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e60e065bddd9b9616e5838956fd9f64a/250x250-000000-80-0-0.jpg"
+    },
+    "sonya belousova": {
+        "nom": "Sonya Belousova",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/740cada5c6508c1002c04390b1672dbc/250x250-000000-80-0-0.jpg"
+    },
+    "giona ostinelli": {
+        "nom": "Giona Ostinelli",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/323fa3c14325422874e211ac72691e3f/250x250-000000-80-0-0.jpg"
+    },
+    "joey batey": {
+        "nom": "Joey Batey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/08cc074988ed2d54ca2a331151ecf15a/250x250-000000-80-0-0.jpg"
+    },
+    "grover washington, jr.": {
+        "nom": "Grover Washington, Jr.",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ae4c9f6fd6becbf89f5de5ddfbceaa50/250x250-000000-80-0-0.jpg"
+    },
+    "bill withers": {
+        "nom": "Bill Withers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3d6efd55377baa6322530e103da6d164/250x250-000000-80-0-0.jpg"
     }
 }
