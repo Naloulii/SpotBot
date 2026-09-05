@@ -12678,5 +12678,41 @@
     "little sis nora": {
         "nom": "Little Sis Nora",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/efb8aa0ef89c841941e6510f1c8ae623/250x250-000000-80-0-0.jpg"
+    },
+    "the prophet": {
+        "nom": "The Prophet",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/55b4493ac37e4cfb7ab54874524e641c/250x250-000000-80-0-0.jpg"
+    },
+    "b.o.b": {
+        "nom": "B.o.B",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6a338538b8c4db7fadb26abe941c9df3/250x250-000000-80-0-0.jpg"
+    },
+    "hayley williams": {
+        "nom": "Hayley Williams",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5db2e7f4e82e0ceb93b1f475a29569ab/250x250-000000-80-0-0.jpg"
+    },
+    "lp": {
+        "nom": "LP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/05fcc2ca871cb7c60d6215530c1c7a75/250x250-000000-80-0-0.jpg"
+    },
+    "anderex": {
+        "nom": "Anderex",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/818564f84c51d135910b10b7384c2d25/250x250-000000-80-0-0.jpg"
+    },
+    "so juice": {
+        "nom": "So Juice",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6955c7cacfcb92a4badc9702715ebf67/250x250-000000-80-0-0.jpg"
+    },
+    "deezl": {
+        "nom": "DEEZL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/50902bac6ec49dee3ab8851beb41be3b/250x250-000000-80-0-0.jpg"
+    },
+    "the cab": {
+        "nom": "The Cab",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5afb867b928a3618a9c5ff87bc5502b5/250x250-000000-80-0-0.jpg"
+    },
+    "sofia karlberg": {
+        "nom": "Sofia Karlberg",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c54b46b901ddd79fc35864b4b2383d2/250x250-000000-80-0-0.jpg"
     }
 }
