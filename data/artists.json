@@ -12830,5 +12830,13 @@
     "xavier picardo": {
         "nom": "Xavier Picardo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/abe2b713abc8af226d08d58d25c25ceb/250x250-000000-80-0-0.jpg"
+    },
+    "chloe ament": {
+        "nom": "Chloe Ament",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e6acb29e45494e9857d0d0e37f4c8af7/250x250-000000-80-0-0.jpg"
+    },
+    "shadow": {
+        "nom": "Shadow",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47b907084c75c835deea91657c46880d/250x250-000000-80-0-0.jpg"
     }
 }
