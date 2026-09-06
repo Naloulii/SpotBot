@@ -12966,5 +12966,25 @@
     "lvbel c5": {
         "nom": "Lvbel C5",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/55eba79b292dbef8e65d5b7b6873b9e8/250x250-000000-80-0-0.jpg"
+    },
+    "tiagz": {
+        "nom": "Tiagz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/db7eb77c2259035df675e7661a256b3d/250x250-000000-80-0-0.jpg"
+    },
+    "alt!": {
+        "nom": "alt!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1ea55c8159328321da2964877149309a/250x250-000000-80-0-0.jpg"
+    },
+    "bizzey": {
+        "nom": "Bizzey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ce3404c3b43d2630b14d94bd32b4c192/250x250-000000-80-0-0.jpg"
+    },
+    "jozo": {
+        "nom": "Jozo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/069be3e6ac29ab5239d46907a8f70edf/250x250-000000-80-0-0.jpg"
+    },
+    "kraantje pappie": {
+        "nom": "Kraantje Pappie",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3a45f52abff07d0f41c86cbfb985fb78/250x250-000000-80-0-0.jpg"
     }
 }
