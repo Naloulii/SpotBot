@@ -12906,5 +12906,17 @@
     "smily": {
         "nom": "Smily",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ea8382b6699f6e108feddb92e512ae36/250x250-000000-80-0-0.jpg"
+    },
+    "baron black": {
+        "nom": "Baron Black",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/339063226a851fcc91535c56cd100aed/250x250-000000-80-0-0.jpg"
+    },
+    "auer": {
+        "nom": "Auer",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9ef35d90b8afdb2d6637b41c54b02ce7/250x250-000000-80-0-0.jpg"
+    },
+    "baron celine": {
+        "nom": "Baron Celine",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
     }
 }
