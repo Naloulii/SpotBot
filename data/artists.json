@@ -12838,5 +12838,13 @@
     "shadow": {
         "nom": "Shadow",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/47b907084c75c835deea91657c46880d/250x250-000000-80-0-0.jpg"
+    },
+    "hoobastank": {
+        "nom": "Hoobastank",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cc73698ecf7d3ce03f3b1079888d9c03/250x250-000000-80-0-0.jpg"
+    },
+    "ed sheeran": {
+        "nom": "Ed Sheeran",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d6bb84390641d8ae9118228d9544e53d/250x250-000000-80-0-0.jpg"
     }
 }
