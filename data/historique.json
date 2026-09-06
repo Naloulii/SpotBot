@@ -2178,9 +2178,33 @@
     ],
     "822158052240785458": [
         {
+            "date": "06/09/2026 23:57",
+            "track_id": "3zVn26V8jSSYfaGCsS7DKO",
+            "status": "En cours..."
+        },
+        {
+            "date": "06/09/2026 23:56",
+            "track_id": "1xKMSHgGIQ26RhDDxmIjan",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 103.5
+        },
+        {
+            "date": "06/09/2026 23:54",
+            "track_id": "68QcoAZ31mcJmRwhQo1GSe",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 91.7
+        },
+        {
+            "date": "06/09/2026 23:53",
+            "track_id": "3fRdMAcgOPDCxLjZWJkpUO",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 90.9
+        },
+        {
             "date": "06/09/2026 23:51",
             "track_id": "5vAye7nOiCHDOHj9Y2Yu2M",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 84.7
         },
         {
             "date": "06/09/2026 23:49",
@@ -2750,30 +2774,6 @@
             "track_id": "5hUsNbx643rSw4B8LwAyK1",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 206.4
-        },
-        {
-            "date": "06/09/2026 16:11",
-            "track_id": "4ffqxU54Ll4YRz5NVBe77w",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 164.7
-        },
-        {
-            "date": "06/09/2026 16:09",
-            "track_id": "79q41HUqvdrDwJWgSGLy2j",
-            "status": "⏱️ Écouté pendant 2m 22s",
-            "temps_ecoute_secondes": 142.3
-        },
-        {
-            "date": "06/09/2026 16:06",
-            "track_id": "3Iafx7gbBPALIZkNfAEQTz",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 192.4
-        },
-        {
-            "date": "06/09/2026 16:03",
-            "track_id": "5PXHWb7plr43VDkPdX4djf",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 173.5
         }
     ],
     "1086742511361466370": [
