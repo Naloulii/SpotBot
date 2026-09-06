@@ -13038,5 +13038,13 @@
     "admiral t & tairo": {
         "nom": "Admiral T & Tairo",
         "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "tristesse au soleil": {
+        "nom": "Tristesse au Soleil",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "repix": {
+        "nom": "Repix",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5d1124bccd9ae8cb8fca62fd2f2d4c87/250x250-000000-80-0-0.jpg"
     }
 }
