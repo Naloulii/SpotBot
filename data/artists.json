@@ -12894,5 +12894,13 @@
     "o-zone": {
         "nom": "O-Zone",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/04ee30db2df194d7b19fc49f53a1c773/250x250-000000-80-0-0.jpg"
+    },
+    "perns": {
+        "nom": "Perns",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/bb97094e7031816d90d842c4b76a5d6b/250x250-000000-80-0-0.jpg"
+    },
+    "sosa bsk": {
+        "nom": "Sosa BSK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/952578113627bfe45824b7e03ed93487/250x250-000000-80-0-0.jpg"
     }
 }
