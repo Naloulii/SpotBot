@@ -12878,5 +12878,17 @@
     "bnyx®": {
         "nom": "BNYX®",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d0b232d8a1ad9fa87025cc35b51dfce4/250x250-000000-80-0-0.jpg"
+    },
+    "mcqueen": {
+        "nom": "McQueen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fd0b2863a1481b83b8cadf549705d327/250x250-000000-80-0-0.jpg"
+    },
+    "yung oogway": {
+        "nom": "Yung Oogway",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6c34f13f7456e85b8c7816a013529937/250x250-000000-80-0-0.jpg"
+    },
+    "master oogway": {
+        "nom": "Master Oogway",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6c34f13f7456e85b8c7816a013529937/250x250-000000-80-0-0.jpg"
     }
 }
