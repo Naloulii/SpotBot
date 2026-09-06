@@ -12866,5 +12866,17 @@
     "agony": {
         "nom": "AGONY",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/e03c227800a6adae9947e1131a42293f/250x250-000000-80-0-0.jpg"
+    },
+    "hidup": {
+        "nom": "Hidup",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/11fbf41014cf9faff5f64fc4858c4d0d/250x250-000000-80-0-0.jpg"
+    },
+    "camo23": {
+        "nom": "CAMO23",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/84c275d0887cd372513c498cf1deffcd/250x250-000000-80-0-0.jpg"
+    },
+    "bnyx®": {
+        "nom": "BNYX®",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d0b232d8a1ad9fa87025cc35b51dfce4/250x250-000000-80-0-0.jpg"
     }
 }
