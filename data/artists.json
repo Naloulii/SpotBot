@@ -12846,5 +12846,21 @@
     "ed sheeran": {
         "nom": "Ed Sheeran",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d6bb84390641d8ae9118228d9544e53d/250x250-000000-80-0-0.jpg"
+    },
+    "five finger death punch": {
+        "nom": "Five Finger Death Punch",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/91608981108504a58c929b987d6e5987/250x250-000000-80-0-0.jpg"
+    },
+    "nanowar of steel": {
+        "nom": "NanowaR of Steel",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f6a60e467f29900b64c1b1caea24827e/250x250-000000-80-0-0.jpg"
+    },
+    "charly glamour": {
+        "nom": "Charly Glamour",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "gigatron": {
+        "nom": "Gigatron",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d447fe5680d73167d09ec93048cbef70/250x250-000000-80-0-0.jpg"
     }
 }
