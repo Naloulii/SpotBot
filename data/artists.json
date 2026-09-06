@@ -12918,5 +12918,13 @@
     "baron celine": {
         "nom": "Baron Celine",
         "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "getter jaani": {
+        "nom": "Getter Jaani",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/47ed523a768c0920b39321d0a0ce1bd3/250x250-000000-80-0-0.jpg"
+    },
+    "高橋　洋子": {
+        "nom": "高橋　洋子",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5f00dfbbfba851ce06d79d062f7830e7/250x250-000000-80-0-0.jpg"
     }
 }
