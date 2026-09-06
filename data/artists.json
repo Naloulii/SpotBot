@@ -12950,5 +12950,21 @@
     "slori": {
         "nom": "Slori",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/2184ac30bd9aca8b62f4a581a1c8ba96/250x250-000000-80-0-0.jpg"
+    },
+    "zak conner": {
+        "nom": "Zak Conner",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/9397b72c7b486ed63de18bf2b8de4177/250x250-000000-80-0-0.jpg"
+    },
+    "tokya": {
+        "nom": "Tokya",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e5cfce9211fd8fa489d977c86cc4dfce/250x250-000000-80-0-0.jpg"
+    },
+    "kayson": {
+        "nom": "Kayson",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5905047d0cfe7b265274b768588d6a4b/250x250-000000-80-0-0.jpg"
+    },
+    "lvbel c5": {
+        "nom": "Lvbel C5",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/55eba79b292dbef8e65d5b7b6873b9e8/250x250-000000-80-0-0.jpg"
     }
 }
