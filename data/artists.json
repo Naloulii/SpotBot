@@ -12902,5 +12902,9 @@
     "sosa bsk": {
         "nom": "Sosa BSK",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/952578113627bfe45824b7e03ed93487/250x250-000000-80-0-0.jpg"
+    },
+    "smily": {
+        "nom": "Smily",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea8382b6699f6e108feddb92e512ae36/250x250-000000-80-0-0.jpg"
     }
 }
