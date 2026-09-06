@@ -12862,5 +12862,9 @@
     "gigatron": {
         "nom": "Gigatron",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d447fe5680d73167d09ec93048cbef70/250x250-000000-80-0-0.jpg"
+    },
+    "agony": {
+        "nom": "AGONY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e03c227800a6adae9947e1131a42293f/250x250-000000-80-0-0.jpg"
     }
 }
