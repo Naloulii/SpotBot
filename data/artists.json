@@ -13026,5 +13026,17 @@
     "zombiwebz": {
         "nom": "zombiwebz",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/36cdcb9a80af93b855716e2c71ef6365/250x250-000000-80-0-0.jpg"
+    },
+    "4.4.2": {
+        "nom": "4.4.2",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/beb760a105c54d03e7447e72ce39f3cf/250x250-000000-80-0-0.jpg"
+    },
+    "chiendenis": {
+        "nom": "ChienDenis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4d695d1596c6ad74fb4139bad3f74ff2/250x250-000000-80-0-0.jpg"
+    },
+    "admiral t & tairo": {
+        "nom": "Admiral T & Tairo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
     }
 }
