@@ -13006,5 +13006,21 @@
     "elysian.": {
         "nom": "elysian.",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/73427542bfa176eb75e0516b10d00907/250x250-000000-80-0-0.jpg"
+    },
+    "f.hero": {
+        "nom": "F.HERO",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/296d449992dee41f80750580eac930db/250x250-000000-80-0-0.jpg"
+    },
+    "татьяна куртукова": {
+        "nom": "Татьяна Куртукова",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/078b351740d8b9a6d1deb53a4cabe36e/250x250-000000-80-0-0.jpg"
+    },
+    "thomas bergersen": {
+        "nom": "Thomas Bergersen",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b1d7d7a0d0c99d1b0e5f029e24c4f5ff/250x250-000000-80-0-0.jpg"
+    },
+    "two steps from hell": {
+        "nom": "Two Steps from Hell",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/89c148d9ed7ea8302560e7b98f99a23b/250x250-000000-80-0-0.jpg"
     }
 }
