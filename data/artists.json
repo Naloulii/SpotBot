@@ -13054,5 +13054,13 @@
     "nevertel": {
         "nom": "Nevertel",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/119747c0e50e5932b2087a7c26cfa1d3/250x250-000000-80-0-0.jpg"
+    },
+    "ankor": {
+        "nom": "Ankor",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b41f9e37f4e8df6275babc4d35d131a1/250x250-000000-80-0-0.jpg"
+    },
+    "youth never dies": {
+        "nom": "Youth Never Dies",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4ae597d1d4b2a48e5ab5dd7268d2990c/250x250-000000-80-0-0.jpg"
     }
 }
