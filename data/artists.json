@@ -13070,5 +13070,17 @@
     "anga": {
         "nom": "ANGA",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6d4495fadca9b3620cf86a5f9cf42756/250x250-000000-80-0-0.jpg"
+    },
+    "sleep theory": {
+        "nom": "Sleep Theory",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3102b247e86bd44d4483030729041e6f/250x250-000000-80-0-0.jpg"
+    },
+    "nate vickers": {
+        "nom": "Nate Vickers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d7b4fecb533bf871107cfd3379e88c88/250x250-000000-80-0-0.jpg"
+    },
+    "efyliph": {
+        "nom": "EfylipH",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/cac90a3ac84bf15d81f3eeb64ccfa808/250x250-000000-80-0-0.jpg"
     }
 }
