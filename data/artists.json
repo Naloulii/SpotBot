@@ -13122,5 +13122,13 @@
     "disgracemode": {
         "nom": "DISGRACEMODE",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/283bf0b5a1fe0a859b6b2120cf06b2c6/250x250-000000-80-0-0.jpg"
+    },
+    "ridge": {
+        "nom": "Ridge",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c4ee144863a08090f96761e31fdaa25e/250x250-000000-80-0-0.jpg"
+    },
+    "dirty dawg pudaz": {
+        "nom": "Dirty Dawg Pudaz",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e0e4c1df0cb338cb1a07f39d3f9be51b/250x250-000000-80-0-0.jpg"
     }
 }
