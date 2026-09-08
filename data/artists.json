@@ -13106,5 +13106,13 @@
     "memphis may fire": {
         "nom": "Memphis May Fire",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/1b6b1b451cf3cbd76ff8b30bb327a820/250x250-000000-80-0-0.jpg"
+    },
+    "lauren babic": {
+        "nom": "Lauren Babic",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/10fc34032630cbc92d5e64dc9cfcc155/250x250-000000-80-0-0.jpg"
+    },
+    "seraphim": {
+        "nom": "Seraphim",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c5605274d2fb03c60fe0cc246baeb47c/250x250-000000-80-0-0.jpg"
     }
 }
