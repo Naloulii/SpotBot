@@ -13114,5 +13114,13 @@
     "seraphim": {
         "nom": "Seraphim",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c5605274d2fb03c60fe0cc246baeb47c/250x250-000000-80-0-0.jpg"
+    },
+    "stakillaz": {
+        "nom": "STAKILLAZ",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/283bf0b5a1fe0a859b6b2120cf06b2c6/250x250-000000-80-0-0.jpg"
+    },
+    "disgracemode": {
+        "nom": "DISGRACEMODE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/283bf0b5a1fe0a859b6b2120cf06b2c6/250x250-000000-80-0-0.jpg"
     }
 }
