@@ -13142,5 +13142,17 @@
     "zmajor": {
         "nom": "ZMAJOR",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/fcd0c8639bd71a539150deae100f01f7/250x250-000000-80-0-0.jpg"
+    },
+    "ichiko aoba": {
+        "nom": "Ichiko Aoba",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/316b739ed0ed796fa76bbae449d380d8/250x250-000000-80-0-0.jpg"
+    },
+    "la honda 19": {
+        "nom": "La Honda 19",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ae1310c94777a6a7ed950a093bab8279/250x250-000000-80-0-0.jpg"
+    },
+    "atic": {
+        "nom": "Atic",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/5de7ae0912a45217fae01ee901c1cab7/250x250-000000-80-0-0.jpg"
     }
 }
