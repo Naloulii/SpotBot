@@ -13134,5 +13134,13 @@
     "interworld": {
         "nom": "INTERWORLD",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/983ca9673268b4ad9f3b49317ab8a0ee/250x250-000000-80-0-0.jpg"
+    },
+    "-prey": {
+        "nom": "-Prey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1eae5aeb258777efec491225c6320ac3/250x250-000000-80-0-0.jpg"
+    },
+    "zmajor": {
+        "nom": "ZMAJOR",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/fcd0c8639bd71a539150deae100f01f7/250x250-000000-80-0-0.jpg"
     }
 }
