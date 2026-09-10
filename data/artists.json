@@ -13170,5 +13170,13 @@
     "faouzia": {
         "nom": "Faouzia",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ccefd28970ea9633721c6a512fb93c39/250x250-000000-80-0-0.jpg"
+    },
+    "ti lk": {
+        "nom": "TI LK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/94d2d17f9f53780a6e17b5031c66ec25/250x250-000000-80-0-0.jpg"
+    },
+    "lofy": {
+        "nom": "Lofy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a277efeaf9b9266401180baba49342d8/250x250-000000-80-0-0.jpg"
     }
 }
