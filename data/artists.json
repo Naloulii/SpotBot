@@ -13154,5 +13154,17 @@
     "atic": {
         "nom": "Atic",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/5de7ae0912a45217fae01ee901c1cab7/250x250-000000-80-0-0.jpg"
+    },
+    "bj lips": {
+        "nom": "BJ Lips",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c2c344a9dbb1f1cd9994ed18c2cd874/250x250-000000-80-0-0.jpg"
+    },
+    "princess paparazzi": {
+        "nom": "princess paparazzi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45e966326dfaeff48eb07096047b7585/250x250-000000-80-0-0.jpg"
+    },
+    "bj lips hdd": {
+        "nom": "BJ Lips HDD",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/45e966326dfaeff48eb07096047b7585/250x250-000000-80-0-0.jpg"
     }
 }
