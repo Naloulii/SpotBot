@@ -13194,5 +13194,21 @@
     "matt proxy": {
         "nom": "matt proxy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0e61b77be75c44d47edeb0e571ff1a0e/250x250-000000-80-0-0.jpg"
+    },
+    "clubcamo sjmadeit chris mula": {
+        "nom": "ClubCamo sjmadeit Chris Mula",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b58c126c856a78752b271ce10a000431/250x250-000000-80-0-0.jpg"
+    },
+    "juju": {
+        "nom": "JuJu",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c4c6890b0396ac1deea4d75289ee8913/250x250-000000-80-0-0.jpg"
+    },
+    "the stranglers": {
+        "nom": "The Stranglers",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3d98a0b9039f2307c7ec91923846a467/250x250-000000-80-0-0.jpg"
+    },
+    "atarashii gakko!": {
+        "nom": "ATARASHII GAKKO!",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/dffb2d5a869c2761899c6bca03b0cde2/250x250-000000-80-0-0.jpg"
     }
 }
