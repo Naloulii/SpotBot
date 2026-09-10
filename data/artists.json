@@ -13178,5 +13178,17 @@
     "lofy": {
         "nom": "Lofy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a277efeaf9b9266401180baba49342d8/250x250-000000-80-0-0.jpg"
+    },
+    "dal av": {
+        "nom": "Dal Av",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/92377a6b11c48c3f936e7732a9ec6ebc/250x250-000000-80-0-0.jpg"
+    },
+    "jackson rose": {
+        "nom": "Jackson Rose",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/92377a6b11c48c3f936e7732a9ec6ebc/250x250-000000-80-0-0.jpg"
+    },
+    "kyle cox": {
+        "nom": "Kyle Cox",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/588941ca50280a682fdbe9a99101ea34/250x250-000000-80-0-0.jpg"
     }
 }
