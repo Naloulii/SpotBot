@@ -13238,5 +13238,13 @@
     "apple echoess": {
         "nom": "Apple Echoess",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/31af4495b587e0758775d50d9446221e/250x250-000000-80-0-0.jpg"
+    },
+    "ans": {
+        "nom": "ANS",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/548796f386b6582b7e1608c8791449aa/250x250-000000-80-0-0.jpg"
+    },
+    "base 221": {
+        "nom": "Base 221",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d0d10da703c6226d881f970215c43a8/250x250-000000-80-0-0.jpg"
     }
 }
