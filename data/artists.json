@@ -13254,5 +13254,25 @@
     "lithio": {
         "nom": "lithio",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/00c0d8e46def1242df0481530781607a/250x250-000000-80-0-0.jpg"
+    },
+    "mp3beige": {
+        "nom": "mp3beige",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/588fc839dadcd4619b1ea310cb15387b/250x250-000000-80-0-0.jpg"
+    },
+    "bunii": {
+        "nom": "bunii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7a4a2e528c8e5cd1b5a12644a85a4fb6/250x250-000000-80-0-0.jpg"
+    },
+    "ayowitty": {
+        "nom": "ayowitty",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d34b59bc7df52c28e861177d81d99e92/250x250-000000-80-0-0.jpg"
+    },
+    "esgo": {
+        "nom": "Esgo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1fd8d21d940ebafb504bd892be23d19d/250x250-000000-80-0-0.jpg"
+    },
+    "beige": {
+        "nom": "beige",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/287e015339789732521c35b07368900d/250x250-000000-80-0-0.jpg"
     }
 }
