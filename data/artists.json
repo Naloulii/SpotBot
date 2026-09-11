@@ -13286,5 +13286,13 @@
     "shawn wasabi": {
         "nom": "Shawn Wasabi",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/eb8156d56c12ac9535b40e6bdf89d0a0/250x250-000000-80-0-0.jpg"
+    },
+    "kaskou": {
+        "nom": "KASKOU",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e919bc5ef5cac34aa9fe48d952a614b5/250x250-000000-80-0-0.jpg"
+    },
+    "adriatik": {
+        "nom": "Adriatik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/d88bff3a5bd4ba8055121e346ccc80c2/250x250-000000-80-0-0.jpg"
     }
 }
