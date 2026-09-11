@@ -13246,5 +13246,13 @@
     "base 221": {
         "nom": "Base 221",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8d0d10da703c6226d881f970215c43a8/250x250-000000-80-0-0.jpg"
+    },
+    "deceptionsxx": {
+        "nom": "deceptionsxx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f73c08d050c6b19f7aab4be2e9c696e5/250x250-000000-80-0-0.jpg"
+    },
+    "lithio": {
+        "nom": "lithio",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/00c0d8e46def1242df0481530781607a/250x250-000000-80-0-0.jpg"
     }
 }
