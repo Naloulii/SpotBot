@@ -13274,5 +13274,17 @@
     "beige": {
         "nom": "beige",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/287e015339789732521c35b07368900d/250x250-000000-80-0-0.jpg"
+    },
+    "pusher": {
+        "nom": "Pusher",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/060d5b3d273e34432ae67668db394ec2/250x250-000000-80-0-0.jpg"
+    },
+    "mothica": {
+        "nom": "MOTHICA",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ab363a3266b2b2494473286592206238/250x250-000000-80-0-0.jpg"
+    },
+    "shawn wasabi": {
+        "nom": "Shawn Wasabi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eb8156d56c12ac9535b40e6bdf89d0a0/250x250-000000-80-0-0.jpg"
     }
 }
