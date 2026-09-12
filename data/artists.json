@@ -13310,5 +13310,13 @@
     "valentinik": {
         "nom": "Valentinik",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ea5412738dfcaf1df3606a5dd3e77e0e/250x250-000000-80-0-0.jpg"
+    },
+    "coexister": {
+        "nom": "Coexister",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/93e8dce03ae589ff1f7c1f2f558199ee/250x250-000000-80-0-0.jpg"
+    },
+    "skylar grey": {
+        "nom": "Skylar Grey",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/0c1e55d06a7d081ebbf811175754a8f0/250x250-000000-80-0-0.jpg"
     }
 }
