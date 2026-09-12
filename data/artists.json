@@ -13342,5 +13342,17 @@
     "yanamko": {
         "nom": "YANAMKO",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/ccdbd1998f7481c83923e5934ece6c05/250x250-000000-80-0-0.jpg"
+    },
+    "luci4": {
+        "nom": "Luci4",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2ac1f760110ccd64dd5de574e1e80698/250x250-000000-80-0-0.jpg"
+    },
+    "svlient": {
+        "nom": "svlient",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c44da9ceccd27fe3148996dc580bf50b/250x250-000000-80-0-0.jpg"
+    },
+    "baby hayabusa": {
+        "nom": "baby hayabusa",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/184f5d5cf26ce66cec5cd92b577ed3b3/250x250-000000-80-0-0.jpg"
     }
 }
