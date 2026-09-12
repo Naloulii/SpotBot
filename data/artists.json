@@ -13422,5 +13422,17 @@
     "no1-noah": {
         "nom": "NO1-NOAH",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/29dbcdac52fa844686dc456a9b9b6a82/250x250-000000-80-0-0.jpg"
+    },
+    "ic3peak": {
+        "nom": "IC3PEAK",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e1a9ebaccd279078282d51eb05d37944/250x250-000000-80-0-0.jpg"
+    },
+    "zillakami": {
+        "nom": "ZillaKami",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4c94b6ff65b046f81192ae4a2a269292/250x250-000000-80-0-0.jpg"
+    },
+    "overscorn": {
+        "nom": "overscorn",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/b535a9a638a55512669a0cf894886c1c/250x250-000000-80-0-0.jpg"
     }
 }
