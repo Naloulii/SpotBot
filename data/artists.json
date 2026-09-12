@@ -13302,5 +13302,13 @@
     "nans": {
         "nom": "nans",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/7ce0868412739d8f68513be9c13e0479/250x250-000000-80-0-0.jpg"
+    },
+    "sebok": {
+        "nom": "sebok",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"
+    },
+    "valentinik": {
+        "nom": "Valentinik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/ea5412738dfcaf1df3606a5dd3e77e0e/250x250-000000-80-0-0.jpg"
     }
 }
