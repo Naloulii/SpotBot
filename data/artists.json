@@ -13294,5 +13294,13 @@
     "adriatik": {
         "nom": "Adriatik",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/d88bff3a5bd4ba8055121e346ccc80c2/250x250-000000-80-0-0.jpg"
+    },
+    "kacy hill": {
+        "nom": "Kacy Hill",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/671578a33a8c5d5f18d581f41e1d6ae2/250x250-000000-80-0-0.jpg"
+    },
+    "nans": {
+        "nom": "nans",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7ce0868412739d8f68513be9c13e0479/250x250-000000-80-0-0.jpg"
     }
 }
