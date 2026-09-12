@@ -13458,5 +13458,13 @@
     "betsy": {
         "nom": "Betsy",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a0e3c0e4231c6597dd304461e848e628/250x250-000000-80-0-0.jpg"
+    },
+    "blaiz fayah": {
+        "nom": "Blaiz Fayah",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f6c12991f458bf7911639d0bddbb8d58/250x250-000000-80-0-0.jpg"
+    },
+    "dj glad": {
+        "nom": "Dj Glad",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e602649710c22386dc75a636da4dfaba/250x250-000000-80-0-0.jpg"
     }
 }
