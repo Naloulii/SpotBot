@@ -13406,5 +13406,17 @@
     "latex fruit": {
         "nom": "latex fruit",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/f23eec032d1d1cc1d97b95c93e16e620/250x250-000000-80-0-0.jpg"
+    },
+    "it's different": {
+        "nom": "It's Different",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/684cf9fe8fc1f524b16217b38d2f0bd1/250x250-000000-80-0-0.jpg"
+    },
+    "fat papi": {
+        "nom": "Fat Papi",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/905b2e3747a37c06bd1ce9fd6a2587c6/250x250-000000-80-0-0.jpg"
+    },
+    "prodshushy": {
+        "nom": "prodshushy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e69f956c170f954f9763aeb49c99953c/250x250-000000-80-0-0.jpg"
     }
 }
