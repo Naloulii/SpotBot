@@ -13434,5 +13434,29 @@
     "overscorn": {
         "nom": "overscorn",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b535a9a638a55512669a0cf894886c1c/250x250-000000-80-0-0.jpg"
+    },
+    "chris travis": {
+        "nom": "Chris Travis",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c66a4a36c19d684cff0da0b564672eb6/250x250-000000-80-0-0.jpg"
+    },
+    "heapper": {
+        "nom": "heapper",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c35ea855d3a4beff6ca0fd6be3bbba29/250x250-000000-80-0-0.jpg"
+    },
+    "dj juan": {
+        "nom": "DJ JUAN",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c35ea855d3a4beff6ca0fd6be3bbba29/250x250-000000-80-0-0.jpg"
+    },
+    "mc luizinho": {
+        "nom": "Mc Luizinho",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c35ea855d3a4beff6ca0fd6be3bbba29/250x250-000000-80-0-0.jpg"
+    },
+    "m&a": {
+        "nom": "M&A",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/db33d340d27eaa5c4123d3adf34430b0/250x250-000000-80-0-0.jpg"
+    },
+    "betsy": {
+        "nom": "Betsy",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a0e3c0e4231c6597dd304461e848e628/250x250-000000-80-0-0.jpg"
     }
 }
