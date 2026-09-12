@@ -13390,5 +13390,21 @@
     "alaza": {
         "nom": "Alaza",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/737445d592ab425c92694b8da61ad0f4/250x250-000000-80-0-0.jpg"
+    },
+    "pinpin osp": {
+        "nom": "Pinpin OSP",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3733f9120e306f190043e2255cc9579e/250x250-000000-80-0-0.jpg"
+    },
+    "tenslay": {
+        "nom": "TENSLAY",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4b462bb245aac402438b0f2d18c22cb2/250x250-000000-80-0-0.jpg"
+    },
+    "mo beats": {
+        "nom": "Mo Beats",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/62e509a4b605afbede98f2f86ae7859b/250x250-000000-80-0-0.jpg"
+    },
+    "latex fruit": {
+        "nom": "latex fruit",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/f23eec032d1d1cc1d97b95c93e16e620/250x250-000000-80-0-0.jpg"
     }
 }
