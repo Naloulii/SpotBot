@@ -13322,5 +13322,13 @@
     "w&w": {
         "nom": "W&W",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/8f2db1b73277a67cc17a4a0aeaba7ae7/250x250-000000-80-0-0.jpg"
+    },
+    "tone": {
+        "nom": "TONE",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/368c0b36a6d24b618d9d4585e4386e65/250x250-000000-80-0-0.jpg"
+    },
+    "初音ミク": {
+        "nom": "初音ミク",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/a8ae1f81a330ec74a710150f315134ce/250x250-000000-80-0-0.jpg"
     }
 }
