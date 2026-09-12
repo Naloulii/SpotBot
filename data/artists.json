@@ -13330,5 +13330,9 @@
     "初音ミク": {
         "nom": "初音ミク",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a8ae1f81a330ec74a710150f315134ce/250x250-000000-80-0-0.jpg"
+    },
+    "jrolx": {
+        "nom": "jrolx",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8f3c0adc4c12ab103dba873615879631/250x250-000000-80-0-0.jpg"
     }
 }
