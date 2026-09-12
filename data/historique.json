@@ -3412,9 +3412,22 @@
     ],
     "1058679270425247864": [
         {
+            "date": "12/09/2026 17:57",
+            "track_id": "2zsVbP8r8bvmq7HkCpZr7f",
+            "status": "⏱️ Écouté pendant 1m 34s",
+            "temps_ecoute_secondes": 95.0
+        },
+        {
+            "date": "12/09/2026 17:55",
+            "track_id": "6qvyN6NTUpdfOJRYjtSSd7",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 150.9
+        },
+        {
             "date": "12/09/2026 17:51",
             "track_id": "5hpTKhdmN5JzrHt2Rhi9vM",
-            "status": "En cours..."
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 129.4
         },
         {
             "date": "12/09/2026 17:49",
@@ -3997,21 +4010,15 @@
             "track_id": "6De8sirPzVyAoBDlQpcutY",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 167.7
-        },
-        {
-            "date": "30/08/2026 13:46",
-            "track_id": "4lsOsGMzO1yCjGVucoWOZ1",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 216.1
-        },
-        {
-            "date": "30/08/2026 13:43",
-            "track_id": "2zpcE21SuB8FsuwcYZMArD",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 180.6
         }
     ],
     "1196099524385570936": [
+        {
+            "date": "12/09/2026 17:58",
+            "track_id": "1tslc6ZhUofclA1Y4Hp8K5",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 206.6
+        },
         {
             "date": "12/09/2026 14:16",
             "track_id": "22vniuPDlM7ajfviPALGX6",
@@ -4604,12 +4611,6 @@
             "track_id": "7jUeurloPULnhaXqbw6RGn",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 244.0
-        },
-        {
-            "date": "01/09/2026 22:41",
-            "track_id": "7jUeurloPULnhaXqbw6RGn",
-            "status": "⏱️ Écouté pendant 1m 53s",
-            "temps_ecoute_secondes": 113.8
         }
     ],
     "702545968951722084": [
