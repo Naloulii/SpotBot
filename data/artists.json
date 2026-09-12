@@ -13382,5 +13382,13 @@
     "black-t": {
         "nom": "Black-T",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6f41f97c5a353162e1c7f9290316dcf5/250x250-000000-80-0-0.jpg"
+    },
+    "rvzmo": {
+        "nom": "Rvzmo",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1be9965725b3e03d65249b132cdcd49c/250x250-000000-80-0-0.jpg"
+    },
+    "alaza": {
+        "nom": "Alaza",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/737445d592ab425c92694b8da61ad0f4/250x250-000000-80-0-0.jpg"
     }
 }
