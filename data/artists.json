@@ -13318,5 +13318,9 @@
     "skylar grey": {
         "nom": "Skylar Grey",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/0c1e55d06a7d081ebbf811175754a8f0/250x250-000000-80-0-0.jpg"
+    },
+    "w&w": {
+        "nom": "W&W",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8f2db1b73277a67cc17a4a0aeaba7ae7/250x250-000000-80-0-0.jpg"
     }
 }
