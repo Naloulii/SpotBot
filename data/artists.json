@@ -13378,5 +13378,9 @@
     "マサラダ": {
         "nom": "マサラダ",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/c46ef3cb365f4e574001598a3befe6d4/250x250-000000-80-0-0.jpg"
+    },
+    "black-t": {
+        "nom": "Black-T",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6f41f97c5a353162e1c7f9290316dcf5/250x250-000000-80-0-0.jpg"
     }
 }
