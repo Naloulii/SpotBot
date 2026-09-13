@@ -13482,5 +13482,17 @@
     "machine girl": {
         "nom": "Machine Girl",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6482fc8b31280076fb95805caf2ad8bf/250x250-000000-80-0-0.jpg"
+    },
+    "minuano": {
+        "nom": "Minuano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7f85aa472dfefb87f90f3dbc653504d0/250x250-000000-80-0-0.jpg"
+    },
+    "cuco": {
+        "nom": "Cuco",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/eed373fc030db47a3c9d285d61f1fa57/250x250-000000-80-0-0.jpg"
+    },
+    "temachii": {
+        "nom": "Temachii",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e20c003432aacdce1a4b218914026e4d/250x250-000000-80-0-0.jpg"
     }
 }
