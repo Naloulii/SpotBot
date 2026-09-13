@@ -13518,5 +13518,13 @@
     "amber van day": {
         "nom": "Amber Van Day",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/6dc337751fc7dd797587971e0169ee15/250x250-000000-80-0-0.jpg"
+    },
+    "dj sliink": {
+        "nom": "DJ Sliink",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/e179f8d92ec7c89b42b9deb2aaf56114/250x250-000000-80-0-0.jpg"
+    },
+    "tones and i": {
+        "nom": "Tones And I",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/7b9ba9e0270547736f3eab22ed3a40de/250x250-000000-80-0-0.jpg"
     }
 }
