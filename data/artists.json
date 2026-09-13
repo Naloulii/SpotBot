@@ -13474,5 +13474,13 @@
     "gaëlle": {
         "nom": "Gaëlle",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/b2bf55fb7a42715eb57db78dbed2e2d7/250x250-000000-80-0-0.jpg"
+    },
+    "janet jackson": {
+        "nom": "Janet Jackson",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/2d2d36f89a7281fe0a8f6a5dd274505e/250x250-000000-80-0-0.jpg"
+    },
+    "machine girl": {
+        "nom": "Machine Girl",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6482fc8b31280076fb95805caf2ad8bf/250x250-000000-80-0-0.jpg"
     }
 }
