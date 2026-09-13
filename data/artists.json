@@ -13502,5 +13502,21 @@
     "very cool tutorials": {
         "nom": "very cool tutorials",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/492a55630e9664715ba66f3f949c1506/250x250-000000-80-0-0.jpg"
+    },
+    "cyber$tar": {
+        "nom": "cyber$tar",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/1a646ec8541417abe240561c1baae07d/250x250-000000-80-0-0.jpg"
+    },
+    "kate havnevik": {
+        "nom": "Kate Havnevik",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/4fb07d1cdd26924fd9e915c73a05e2dc/250x250-000000-80-0-0.jpg"
+    },
+    "hugel": {
+        "nom": "HUGEL",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/3c13af28b7ea160a4e844c16e5109d18/250x250-000000-80-0-0.jpg"
+    },
+    "amber van day": {
+        "nom": "Amber Van Day",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/6dc337751fc7dd797587971e0169ee15/250x250-000000-80-0-0.jpg"
     }
 }
