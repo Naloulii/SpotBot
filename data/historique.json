@@ -5217,6 +5217,59 @@
     ],
     "1260775109736529950": [
         {
+            "date": "13/09/2026 03:07",
+            "track_id": "1q2Eg6vur4gYk8ePcB0Qig",
+            "status": "En cours..."
+        },
+        {
+            "date": "13/09/2026 03:05",
+            "track_id": "1q2Eg6vur4gYk8ePcB0Qig",
+            "status": "⏱️ Écouté pendant 0m 57s",
+            "temps_ecoute_secondes": 57.8
+        },
+        {
+            "date": "13/09/2026 03:05",
+            "track_id": "6EAxaAk1eZx0aqqH4ff4rP",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 218.1
+        },
+        {
+            "date": "13/09/2026 03:02",
+            "track_id": "6EAxaAk1eZx0aqqH4ff4rP",
+            "status": "⏱️ Écouté pendant 1m 32s",
+            "temps_ecoute_secondes": 92.1
+        },
+        {
+            "date": "13/09/2026 03:02",
+            "track_id": "6EAxaAk1eZx0aqqH4ff4rP",
+            "status": "⏱️ Écouté pendant 0m 26s",
+            "temps_ecoute_secondes": 26.8
+        },
+        {
+            "date": "13/09/2026 03:02",
+            "track_id": "6EAxaAk1eZx0aqqH4ff4rP",
+            "status": "⏱️ Écouté pendant 0m 04s",
+            "temps_ecoute_secondes": 4.2
+        },
+        {
+            "date": "13/09/2026 03:00",
+            "track_id": "35Xw1BCOJxh8RHN441jO2V",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 119.3
+        },
+        {
+            "date": "13/09/2026 02:57",
+            "track_id": "7jm2PueKmv4EOHfdbdXMKT",
+            "status": "⏱️ Écouté pendant 2m 44s",
+            "temps_ecoute_secondes": 164.1
+        },
+        {
+            "date": "13/09/2026 02:55",
+            "track_id": "1Bhm5HNO1cq8olDbBmokyL",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 172.5
+        },
+        {
             "date": "13/09/2026 02:50",
             "track_id": "1Bhm5HNO1cq8olDbBmokyL",
             "status": "⏱️ Écouté pendant 1m 24s",
@@ -5761,60 +5814,6 @@
             "track_id": "0f8eRy9A0n6zXpKSHSCAEp",
             "status": "⏱️ Écouté pendant 0m 37s",
             "temps_ecoute_secondes": 37.5
-        },
-        {
-            "date": "12/09/2026 22:46",
-            "track_id": "6yV3akSoxxh006bFLHPfVW",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 115.8
-        },
-        {
-            "date": "12/09/2026 22:43",
-            "track_id": "4UQijskfH7GRycjz77buzW",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 103.1
-        },
-        {
-            "date": "12/09/2026 22:42",
-            "track_id": "4UQijskfH7GRycjz77buzW",
-            "status": "⏱️ Écouté pendant 0m 58s",
-            "temps_ecoute_secondes": 58.0
-        },
-        {
-            "date": "12/09/2026 22:41",
-            "track_id": "2UhbCSrBaDe2QgDEuha9od",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 125.6
-        },
-        {
-            "date": "12/09/2026 22:40",
-            "track_id": "2UhbCSrBaDe2QgDEuha9od",
-            "status": "⏱️ Écouté pendant 0m 05s",
-            "temps_ecoute_secondes": 5.8
-        },
-        {
-            "date": "12/09/2026 22:40",
-            "track_id": "3aMn5TCpnxY0YBgMmMld9V",
-            "status": "⏱️ Écouté pendant 2m 07s",
-            "temps_ecoute_secondes": 127.6
-        },
-        {
-            "date": "12/09/2026 22:40",
-            "track_id": "3aMn5TCpnxY0YBgMmMld9V",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 106.6
-        },
-        {
-            "date": "12/09/2026 22:38",
-            "track_id": "3aMn5TCpnxY0YBgMmMld9V",
-            "status": "⏱️ Écouté pendant 1m 26s",
-            "temps_ecoute_secondes": 86.1
-        },
-        {
-            "date": "12/09/2026 22:38",
-            "track_id": "6l5tPugDyyRtkQTtDF0kyK",
-            "status": "⏱️ Écouté pendant 0m 29s",
-            "temps_ecoute_secondes": 29.7
         }
     ],
     "1066377293490040903": [
