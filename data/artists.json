@@ -13558,5 +13558,21 @@
     "diddi trix": {
         "nom": "Diddi Trix",
         "image_url": "https://cdn-images.dzcdn.net/images/artist/a0bb54dc6642fda53fff19c27948179a/250x250-000000-80-0-0.jpg"
+    },
+    "los olimareños": {
+        "nom": "Los Olimareños",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/c046c5427447fe5c1514efe7e4e8428e/250x250-000000-80-0-0.jpg"
+    },
+    "dj muggs": {
+        "nom": "DJ Muggs",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/8d8bf9b404675900ce607e2c71d042a0/250x250-000000-80-0-0.jpg"
+    },
+    "roc marciano": {
+        "nom": "Roc Marciano",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/85417adc5a39e862f7b90b2f8f6b7e5d/250x250-000000-80-0-0.jpg"
+    },
+    "d12": {
+        "nom": "D12",
+        "image_url": "https://cdn-images.dzcdn.net/images/artist/65327f3c61452fb7957963e910fe63e0/250x250-000000-80-0-0.jpg"
     }
 }
