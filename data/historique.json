@@ -1168,6 +1168,30 @@
     ],
     "968499201967276092": [
         {
+            "date": "13/09/2026 13:44",
+            "track_id": "5zyoh62Mc5rpKOshEHTR71",
+            "status": "⏱️ Écouté pendant 2m 03s",
+            "temps_ecoute_secondes": 123.4
+        },
+        {
+            "date": "13/09/2026 13:40",
+            "track_id": "3bwwIbo3BDWFBZcFjAcSi4",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 160.7
+        },
+        {
+            "date": "13/09/2026 13:40",
+            "track_id": "1q9UfGqscV5U8fqleN3qzK",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 230.9
+        },
+        {
+            "date": "13/09/2026 13:39",
+            "track_id": "1q9UfGqscV5U8fqleN3qzK",
+            "status": "🎉 Écouté en entier",
+            "temps_ecoute_secondes": 214.9
+        },
+        {
             "date": "13/09/2026 12:35",
             "track_id": "1q9UfGqscV5U8fqleN3qzK",
             "status": "⏱️ Écouté pendant 3m 19s",
@@ -1742,30 +1766,6 @@
             "track_id": "7inCeq8nQ5RMnbNU5Beu3g",
             "status": "🎉 Écouté en entier",
             "temps_ecoute_secondes": 243.0
-        },
-        {
-            "date": "06/09/2026 12:17",
-            "track_id": "7inCeq8nQ5RMnbNU5Beu3g",
-            "status": "⏱️ Écouté pendant 0m 10s",
-            "temps_ecoute_secondes": 10.8
-        },
-        {
-            "date": "06/09/2026 12:13",
-            "track_id": "7xfE1P0du2UZFbtrhZ3DT1",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 199.2
-        },
-        {
-            "date": "06/09/2026 12:08",
-            "track_id": "6fI56wJCJGWQKdufHuj55s",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 240.5
-        },
-        {
-            "date": "06/09/2026 12:05",
-            "track_id": "7rgW3DbEYOJhihIe4DjajN",
-            "status": "🎉 Écouté en entier",
-            "temps_ecoute_secondes": 201.7
         }
     ],
     "1295089920620101788": [
